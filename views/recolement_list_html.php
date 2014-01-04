@@ -24,17 +24,67 @@ if (!isset($campagnes) || !$campagnes) {
 	}
 	progress::-webkit-progress-value {
 		border-radius: 5px;
-		background-color: #a5d62f;
+		background-color: #1ab4c8;
 		background-size: 40px 40px;
 	}
 	progress::-moz-progress-bar {
 		border-radius: 5px;
-		background-color: #a5d62f;
+		background-color: #1ab4c8;
 		background-size: 40px 40px;
 		-moz-animation: progress 8s linear infinite;
 		animation: progress 8s linear infinite;
 	}
 </style>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+	google.load("visualization", "1", {packages:["corechart"]});
+	google.setOnLoadCallback(drawChart);
+	function drawChart() {
+		var data = google.visualization.arrayToDataTable([
+			['Récolés', 'Récolés', 'A récoler', { role: 'annotation' } ],
+<?php
+foreach ($campagnes as $campagne) :
+?>
+			['<?php print $campagne["name"]; ?>', <?php print (int) $campagne["recolements_done"]; ?>, <?php print $campagne["recolements_total"] - $campagne["recolements_done"]; ?>,  '<?php print $campagne["idno"]; ?>'],
+<?php
+endforeach;
+?>
+		]);
+
+		var options = {
+			width: 744,
+			height: 200,
+			legend: { position: 'none', maxLines: 3 },
+			bar: { groupWidth: '75%' },
+			isStacked: true,
+			colors:['#1ab4c8','#d4d4d4'],
+			chartArea:{left:0,top:0,width:'100%',height:'90%'},
+			hAxis: {
+				textStyle: {
+					color: "#cccccc"
+				},
+				textPosition:'out',
+				gridlines: {
+					color: "#EEEEEE"
+				},
+				baselineColor: '#EEEEEE'
+			},
+			vAxis: {
+				textPosition: 'none',
+				gridlines: {
+					color: "#EEEEEE"
+				},
+				baselineColor: '#EEEEEE'
+			}
+		};
+
+		var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+		chart.draw(data, options);
+	}
+</script>
+<h2>Suivi graphique</h2>
+<div id="chart_div" style="width: 744px; height: 220px;"></div>
+<h2>Tableau de progression</h2>
 <table class="listtable">
 	<tr>
 		<th></th>
