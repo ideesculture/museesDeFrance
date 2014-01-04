@@ -1,7 +1,7 @@
 <?php
 
-require_once __CA_BASE_DIR__.'/app/lib/core/PHPExcel/PHPExcel.php';
-require_once __CA_BASE_DIR__.'/app/lib/core/PHPExcel/PHPExcel/Writer/Excel2007.php';
+require_once __CA_BASE_DIR__.'/app/lib/core/Parsers/PHPExcel/PHPExcel.php';
+require_once __CA_BASE_DIR__.'/app/lib/core/Parsers/PHPExcel/PHPExcel/Writer/Excel2007.php';
 	
 $vo_phpexcel = new PHPExcel();
 
@@ -109,7 +109,7 @@ if (!isset($campagnes) || !$campagnes) {
 }
 
 $vo_phpexcel_writer = new PHPExcel_Writer_Excel2007($vo_phpexcel);
-$vo_phpexcel_writer->save(__CA_BASE_DIR__."/app/tmp/tableau-suivi.xlsx");
+$vo_phpexcel_writer->save(__CA_BASE_DIR__."/app/plugins/museesDeFrance/download/tableau-suivi.xlsx");
 	
 ?>
 
@@ -117,9 +117,9 @@ $vo_phpexcel_writer->save(__CA_BASE_DIR__."/app/tmp/tableau-suivi.xlsx");
 
 <p>Vous pouvez télécharger depuis cette page le fichier au format .xls (Microsoft Excel).<br/> Ce fichier est lisible également avec OpenOffice ou LibreOffice.</p>
 
-<a class="form-button" href="<?php print __CA_URL_ROOT__;?>/app/tmp/tableau-suivi.xlsx">
+<a class="form-button" href="<?php print __CA_URL_ROOT__;?>/app/plugins/museesDeFrance/download/tableau-suivi.xlsx">
 	<span class="form-button">
-		<img class="form-button-left" src="<?php print __CA_URL_ROOT__;?>/app/plugins/recolementSmf/views/images/page_white_excel.png" align=center>  
+		<img class="form-button-left" src="<?php print __CA_URL_ROOT__;?>/app/plugins/museesDeFrance/views/images/page_white_excel.png" align=center>
 		&nbsp; télécharger
 	</span>
 </a>
