@@ -10,6 +10,34 @@ $InfosPv = $this->getVar('InfosPv');
 	<img src="<?php print __CA_URL_ROOT__; ?>/themes/default/graphics/buttons/edit.png"></a>
 	<?php print $InfosPv["info"]["campagne_nom"] ?>
 </h2>
+
+<style>
+	progress {
+		display: block;
+		width: 100%;
+		height: 2em;
+		margin: .5em 0;
+		border-radius: 5px;
+		background-color: #d4d4d4;
+	}
+	progress::-webkit-progress-bar {
+		border-radius: 5px;
+		background-color: #d4d4d4;
+	}
+	progress::-webkit-progress-value {
+		border-radius: 5px;
+		background-color: #a5d62f;
+		background-size: 40px 40px;
+	}
+	progress::-moz-progress-bar {
+		border-radius: 5px;
+		background-color: #a5d62f;
+		background-size: 40px 40px;
+		-moz-animation: progress 8s linear infinite;
+		animation: progress 8s linear infinite;
+	}
+</style>
+
 <table class="listtable">
 	<tr><td>Numéro de campagne</td><td><?php print $InfosPv["info"]["idno"]; ?></td></tr>
 	<tr class="odd"><td>Date de campagne</td><td><?php print $InfosPv["info"]["campagne_date"]; ?></td></tr>
@@ -18,8 +46,9 @@ $InfosPv = $this->getVar('InfosPv');
 	<tr><td>Champs couverts</td><td><?php print $InfosPv["info"]["campagne_champs_champs"]; ?></td></tr>
 	<tr><td>Contenu scientifique de la campagne</td><td><?php print $InfosPv["info"]["contenu_scientifique"]; ?></td></tr>
 	<tr class="odd"><td><small>Note</small></td><td><small><?php print $InfosPv["info"]["campagne_champs_note"]; ?></small></td></tr>
-	<tr><td>Objets vus</td><td><?php print (int)$InfosPv["nb"]["objets_vus"]; ?></td></tr>
-	<tr class="odd"><td>Objets manquants</td><td><?php print (int)$InfosPv["nb"]["objets_manquants"]; ?></td></tr>
+	<tr><td>Avancement</td><td><progress id="avancement" value="<?php print (int) $InfosPv["info"]["recolements_done"]; ?>" max="<?php print $InfosPv["info"]["recolements_total"]; ?>"></progress></td></tr>
+	<tr class="odd"><td>Objets vus</td><td><?php print (int)$InfosPv["nb"]["objets_vus"]; ?></td></tr>
+	<tr><td>Objets manquants</td><td><?php print (int)$InfosPv["nb"]["objets_manquants"]; ?></td></tr>
 	<tr class="odd"><td>Objets non vus</td><td><?php print (int)$InfosPv["nb"]["objets_non_vus"]; ?></td></tr>
 	<tr><td>Objets détruits</td><td><?php print (int)$InfosPv["nb"]["objets_detruits"]; ?></td></tr>
 	<tr class="odd"><td>Objets non inventoriés</td><td><?php print (int)$InfosPv["nb"]["objets_non_inventories"]; ?></td></tr>
@@ -30,9 +59,7 @@ $InfosPv = $this->getVar('InfosPv');
 	<tr><td>Objets en réserve</td><td><?php print (int)$InfosPv["nb"]["objets_en_reserve"];?></td></tr>
 	<tr class="odd"><td>Total objets récolés</td><td><?php print (int)$InfosPv["nb"]["objets_recoles"]; ?></td></tr>
 </table>
-<?php
-var_dump($InfosPv["constatEtat"]);
-?>
+
 <a class="form-button" href="<?php print __CA_URL_ROOT__; ?>/index.php/recolementSmf/Recolement/PvWord/?idno=<?php print $InfosPv["info"]["idno"]; ?>">
 	<span class="form-button">
 	Générer le procès-verbal
@@ -41,4 +68,3 @@ var_dump($InfosPv["constatEtat"]);
 <br/><br/>
 <?php print $InfosPv["liste_objets_html"]; ?>
 <br/><br/><br/><br/><br/><br/><br/><br/>
-<?php var_dump($InfosPv["nb"]); ?>
