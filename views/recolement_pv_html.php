@@ -26,12 +26,12 @@ $InfosPv = $this->getVar('InfosPv');
 	}
 	progress::-webkit-progress-value {
 		border-radius: 5px;
-		background-color: #a5d62f;
+		background-color: #1ab4c8;
 		background-size: 40px 40px;
 	}
 	progress::-moz-progress-bar {
 		border-radius: 5px;
-		background-color: #a5d62f;
+		background-color: #1ab4c8;
 		background-size: 40px 40px;
 		-moz-animation: progress 8s linear infinite;
 		animation: progress 8s linear infinite;
