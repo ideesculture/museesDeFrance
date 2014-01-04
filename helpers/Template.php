@@ -27,7 +27,7 @@
 
 /* 
  * 
- * Classe personnalisée PHPWord_Template pour le plugin museesDeFrance pour CollectiveAccess *
+ * Classe personnalisée PHPWord_Template pour le plugin recolementSmf pour CollectiveAccess *
  * 
  */
 
@@ -80,6 +80,7 @@ class PHPWord_Template {
      * @param mixed $replace
      */
     public function setValue($search, $replace) {
+	    //$replace = str_replace("\n","#####<w:br/>",$replace);
         $this->_documentXML = str_replace($search, $replace, $this->_documentXML);
     }
 
