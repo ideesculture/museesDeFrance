@@ -1,9 +1,8 @@
 <?php 
 
 	$InfosPv = $this->getVar('InfosPv');
-	//var_dump($InfosPv);die();
-	require_once __CA_BASE_DIR__ . '/app/plugins/museesDeFrance/helpers/Template.php';
-	$template = new PHPWord_Template(__CA_BASE_DIR__."/app/plugins/museesDeFrance/conf/PV_recolement.docx");
+	require_once __CA_BASE_DIR__.'/app/plugins/recolementSmf/helpers/Template.php';
+	$template = new PHPWord_Template(__CA_BASE_DIR__."/app/plugins/recolementSmf/conf/PV_recolement.docx");
 	
 	/*
 	 * Définition des valeurs
@@ -40,10 +39,30 @@
 	
 	//var_dump($InfosPv["liste_objets_non_vus"]);die();
 	
+	$word_xml_after_etat_value = '</w:t></w:r></w:p><w:p><w:pPr><w:pStyle w:val="style28"/><w:suppressLineNumbers/><w:spacing w:after="57" w:before="57"/><w:ind w:hanging="0" w:left="57" w:right="57"/><w:contextualSpacing w:val="false"/></w:pPr><w:r><w:rPr></w:rPr><w:t>';
+	
+	
 	foreach($InfosPv["constatEtat"] as $etat) {
-		$template->setValue("etat_collection.".$etat["idno"].".nb", $etat["count"]);
+		if (isset($etat["count"]) && ($etat["count"]>0)) {
+			if ($etat["label"] == "") {
+				$etat_collections_categories .= 
+				$word_xml_after_etat_value."Non renseigné : ".$etat["count"].$word_xml_after_etat_value;				
+			} else {
+				$etat_collections_categories .= 
+				$etat["label"]." : ".$etat["count"].$word_xml_after_etat_value;				
+			}
+		}
 	}
+	$template->setValue("etat_collections_categorie",$etat_collections_categories);
 	//$template->setValue("")
+
+	foreach($InfosPv["etat_global"] as $etat_global) {
+		if (isset($etat_global["count"]) && ($etat_global["count"]>0)) {
+			$etat_collections_global .= 
+				$etat_global["label"]." : ".$etat_global["count"].$word_xml_after_etat_value;				
+		}
+	}
+	$template->setValue("etat_collections_global",$etat_collections_global);
 
 	$template->save(__CA_BASE_DIR__."/app/tmp/PV_recolement_".$InfosPv["info"]["idno"].".docx");
 	
@@ -55,7 +74,7 @@
 
 <a class="form-button" href="<?php print __CA_URL_ROOT__;?>/app/tmp/PV_recolement_<?php print $InfosPv["info"]["idno"];?>.docx">
 	<span class="form-button">
-		<img class="form-button-left" src="<?php print __CA_URL_ROOT__;?>/app/plugins/museesDeFrance/views/page_white_word.png" align=center>
+		<img class="form-button-left" src="<?php print __CA_URL_ROOT__;?>/app/plugins/recolementSmf/views/images/page_white_word.png" align=center>  
 		&nbsp; télécharger
 	</span>
 </a>
