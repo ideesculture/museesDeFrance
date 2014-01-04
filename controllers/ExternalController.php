@@ -18,22 +18,22 @@
  				return;
  			}
  			
- 			$this->opo_config = Configuration::load(__CA_APP_DIR__.'/plugins/museesDeFrance/conf/museesDeFrance.conf');
+ 			$this->opo_config = Configuration::load(__CA_APP_DIR__.'/plugins/recolementSmf/conf/recolementSmf.conf');
  		}
  		# -------------------------------------------------------
  		public function Index() {
- 			$this->view->setVar('url', $this->opo_config->get('ExternalURLBiens'));
- 			$this->redirect($this->opo_config->get('ExternalURLBiens'));
+ 			$this->view->setVar('url', $this->opo_config->get('ExternalURLInventaire'));
+ 			$this->redirect($this->opo_config->get('ExternalURLInventaire'));
  		}
  		# -------------------------------------------------------
  		public function Biens() {
- 			$this->view->setVar('url', $this->opo_config->get('ExternalURLBiens'));
- 			$this->redirect($this->opo_config->get('ExternalURLBiens'));
+ 			$this->view->setVar('url', $this->opo_config->get('ExternalURLInventaire'));
+ 			$this->redirect($this->opo_config->get('ExternalURLInventaire'));
  		}
  		# -------------------------------------------------------
  		public function Depots() {
- 			$this->view->setVar('url', $this->opo_config->get('ExternalURLDepots'));
- 			$this->redirect($this->opo_config->get('ExternalURLDepots'));
+ 			$this->view->setVar('url', $this->opo_config->get('ExternalURLDepot'));
+ 			$this->redirect($this->opo_config->get('ExternalURLDepot'));
 		}
  		# -------------------------------------------------------
  	 	public function Inventaire() {
