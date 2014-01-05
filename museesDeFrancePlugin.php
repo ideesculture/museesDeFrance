@@ -160,8 +160,22 @@
 	
 			return $pa_role_list;
 		}
-				
-		
+
+		public function hookRenderWidgets($pa_widgets_config) {
+			$pa_widgets_config["museesDeFranceRecolementInfo"] = array(
+				"domain" => array(
+					"module" => "museesDeFrance",
+					"controller"=>"Recolement"),
+				"handler"=> array(
+					"module" => "museesDeFrance",
+					"controller" => "Recolement",
+					"action" => 'Info',
+					"isplugin" => true),
+				"requires" => array(),
+				"parameters" => array()
+			);
+			return $pa_widgets_config;
+		}
 		# -------------------------------------------------------
 		/**
 		 * Get plugin user actions
