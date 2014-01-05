@@ -48,7 +48,7 @@
 
             $vs_table_name = $t_item->tableName();
             $vn_item_id = $t_item->getPrimaryKey();
-            $vs_code = $t_item->getTypeCode();
+            $vn_code = $t_item->getTypeCode();
 
             $vs_inventaire_url = $this->opo_config->get('ExternalURLInventaire');
             $vs_depot_url = $this->opo_config->get('ExternalURLDepot');
@@ -72,7 +72,7 @@
                     $vs_action = "afficherObjet/".$vn_item_id;
                 }
 
-                $vs_buf = "<a href=\"".$vs_url."/".$vs_action."\" style=\"text-decoration:none;margin:10px 0px;display:inline-block;\" target='_blank'>"
+                if ($vs_inventaire_link_text) $vs_buf = "<a href=\"".$vs_url."/".$vs_action."\" style=\"text-decoration:none;margin:10px 0px;display:inline-block;\" target='_blank'>"
                         ."<img src=\"".__CA_URL_ROOT__."/app/plugins/museesDeFrance/views/images/inventaire_16x16.png\" border='0' class='form-button-left' style=\"margin-left:15px;margin-right:10px;\" >"
                         .$vs_inventaire_link_text
                         ."</a>";
