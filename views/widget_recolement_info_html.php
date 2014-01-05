@@ -35,7 +35,7 @@ $va_global= $this->getVar('global');
 			<?php print (int) $va_global["recolements_done"]; ?> récolements enregistrés<br/>
 			<?php print (int) $va_global["recolements_left"]; ?> récolements en attente<br/>
 			<?php print (int) $va_global["recolements_total"]; ?> objets dans les campagnes<br/>
-			<?php print round($va_global["recolements_done"] / $va_global["recolements_total"] * 100, 2); ?>% réalisé<br/>
+			<?php if ($va_global["recolements_total"] > 0) print round($va_global["recolements_done"] / $va_global["recolements_total"] * 100, 2); ?>% réalisé<br/>
 		</div>
 	</h3>
 <h3>Documentation :
