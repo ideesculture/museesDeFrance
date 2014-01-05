@@ -161,6 +161,12 @@
 			return $pa_role_list;
 		}
 
+		public function hookJavascriptCssLoadManager($pa_javascript_css_list) {
+			$pa_javascript_css_list[] = "/museesDeFrance/assets/css/museesDeFrance.css";
+
+			return $pa_javascript_css_list;
+		}
+
 		public function hookRenderWidgets($pa_widgets_config) {
 			$pa_widgets_config["museesDeFranceRecolementInfo"] = array(
 				"domain" => array(
