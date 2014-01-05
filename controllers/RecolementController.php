@@ -9,6 +9,8 @@
  	class RecolementController extends ActionController {
  		# -------------------------------------------------------
  		protected $opo_config;		// plugin configuration file
+	    protected $opa_infos_campagnes;
+	    protected $opa_infos_global;
  		# -------------------------------------------------------
  		#
  		# -------------------------------------------------------
@@ -21,6 +23,10 @@
  			}
  			
  			$this->opo_config = Configuration::load(__CA_APP_DIR__.'/plugins/museesDeFrance/conf/museesDeFrance.conf');
+
+		    $va_infos = $this->_computeInfos();
+		    $this->opa_infos_global = $va_infos["global"];
+		    $this->opa_infos_campagnes = $va_infos["campagnes"];
  		}
 
 	    private function _copyAttributes($t_instance_from, $t_instance_to, $va_element_codes) {
@@ -47,6 +53,46 @@
 			    return join('; ', $t_instance_to->getErrors());
 		    }
 		    return true;
+	    }
+
+	    private function _computeInfos () {
+		    $o_search = new OccurrenceSearch();
+		    $qr_hits = $o_search->search("ca_occurrences.type_id:118");
+		    while($qr_hits->nextHit()){
+			    $global["nb_campagnes"]++;
+			    $idno = $qr_hits->get('ca_occurrences.idno');
+			    //print $idno."\n";
+			    $campagne = new ca_occurrences();
+			    $campagne->load(array('idno' => $idno));
+			    $campagnes[$idno]["occurrence_id"] = $campagne->get("occurrence_id");
+			    $campagnes[$idno]["localisation"] = $campagne->get("ca_storage_locations.preferred_labels");
+			    $campagnes[$idno]["localisation_code"] = $campagne->get("ca_storage_locations.idno");
+			    $campagnes[$idno]["caracterisation"] = $campagne->get("campagne_caracterisation",array("convertCodesToDisplayText"=>true));
+			    $campagnes[$idno]["champs"] = $campagne->get("campagne_champs_c");
+			    $campagnes[$idno]["conditionnement"] = $campagne->get("campagne_conditionnement");
+			    $campagnes[$idno]["nombre"] = "A CALCULER";
+			    $campagnes[$idno]["accessibilite"] = $campagne->get("campagne_accessibilite");
+			    $campagnes[$idno]["idno"] = $campagne->get("idno");
+			    $campagnes[$idno]["name"] = $campagne->get("preferred_labels");
+			    $campagnes[$idno]["date_campagne"] = $campagne->get("date_campagne_c");
+			    $campagnes[$idno]["date_campagne_prev"] = $campagne->get("campagne_date_prev");
+			    $campagnes[$idno]["intervenants"] = $campagne->get("ca_entities");
+			    $campagnes[$idno]["date_campagne_pv"] = $campagne->get("campagne_date_pv");
+			    $va_recolements_idnos = $campagne->get("ca_occurrences.related.idno",array("returnAsArray" => 1));
+			    $campagnes[$idno]["recolements_total"] = count($va_recolements_idnos);
+			    $global["recolements_total"] = $global["recolements_total"] + $campagnes[$idno]["recolements_total"];
+			    $vn_recolements = 0;
+			    foreach($va_recolements_idnos as $vs_recolement_idno) {
+				    $t_recolement = new ca_occurrences();
+				    $t_recolement->load(array('idno' => $vs_recolement_idno));
+				    $vs_done = $t_recolement->get('done',array("convertCodesToDisplayText"=>true));
+				    if ($vs_done == "oui") $vn_recolements++;
+			    }
+			    $campagnes[$idno]["recolements_done"] = $vn_recolements;
+			    $global["recolements_done"] = $global["recolements_done"] + $campagnes[$idno]["recolements_done"];
+		    }
+		    $global["recolements_left"] = $global["recolements_total"] - $global["recolements_done"];
+		    return array("global"=>$global,"campagnes"=>$campagnes);
 	    }
 
  		private function extractFirstElementOfArray($array) {
@@ -235,41 +281,7 @@
  		}
  		# -------------------------------------------------------
  		public function Index() {
- 			$o_search = new OccurrenceSearch();
- 			$qr_hits = $o_search->search("ca_occurrences.type_id:118");
- 			while($qr_hits->nextHit()){
- 				$idno = $qr_hits->get('ca_occurrences.idno');
- 				//print $idno."\n";
- 				$campagne = new ca_occurrences();
- 				$campagne->load(array('idno' => $idno));
- 				$campagnes[$idno]["occurrence_id"] = $campagne->get("occurrence_id");
- 				$campagnes[$idno]["localisation"] = $campagne->get("ca_storage_locations.preferred_labels");
- 				$campagnes[$idno]["localisation_code"] = $campagne->get("ca_storage_locations.idno");
- 				$campagnes[$idno]["caracterisation"] = $campagne->get("campagne_caracterisation",array("convertCodesToDisplayText"=>true));
- 				$campagnes[$idno]["champs"] = $campagne->get("campagne_champs_c");
- 				$campagnes[$idno]["conditionnement"] = $campagne->get("campagne_conditionnement");
- 				$campagnes[$idno]["nombre"] = "A CALCULER";
- 				$campagnes[$idno]["accessibilite"] = $campagne->get("campagne_accessibilite"); 				
- 				$campagnes[$idno]["idno"] = $campagne->get("idno");
- 				$campagnes[$idno]["name"] = $campagne->get("preferred_labels");
- 				$campagnes[$idno]["date_campagne"] = $campagne->get("date_campagne_c");
- 				$campagnes[$idno]["date_campagne_prev"] = $campagne->get("campagne_date_prev");
- 				$campagnes[$idno]["intervenants"] = $campagne->get("ca_entities");
- 				$campagnes[$idno]["date_campagne_pv"] = $campagne->get("campagne_date_pv");
-			    $va_recolements_idnos = $campagne->get("ca_occurrences.related.idno",array("returnAsArray" => 1));
- 				$campagnes[$idno]["recolements_total"] = count($va_recolements_idnos);
-			    $vn_recolements = 0;
-			    foreach($va_recolements_idnos as $vs_recolement_idno) {
-				    $t_recolement = new ca_occurrences();
-				    $t_recolement->load(array('idno' => $vs_recolement_idno));
-					$vs_done = $t_recolement->get('done',array("convertCodesToDisplayText"=>true));
-				    if ($vs_done == "oui") $vn_recolements++;
-			    }
-			    $campagnes[$idno]["recolements_done"] = $vn_recolements;
- 				//var_dump($t_occurrence);die();
- 			}
- 			//var_dump($campagnes);die();
- 			$this->view->setVar('campagnes', $campagnes);
+ 			$this->view->setVar('campagnes', $this->opa_infos_campagnes);
  			$this->render('recolement_list_html.php');
  		}
  		# -------------------------------------------------------
@@ -287,8 +299,7 @@
  				$campagnes[$idno]["caracterisation"] = $campagne->get("campagne_caracterisation",array("convertCodesToDisplayText"=>true));
  				$campagnes[$idno]["champs"] = $campagne->get("campagne_champs_c");
  				$campagnes[$idno]["conditionnement"] = $campagne->get("campagne_conditionnement");
- 				$campagnes[$idno]["nombre"] = "A CALCULER";
- 				$campagnes[$idno]["accessibilite"] = $campagne->get("campagne_accessibilite"); 				
+ 				$campagnes[$idno]["accessibilite"] = $campagne->get("campagne_accessibilite");
  				$campagnes[$idno]["idno"] = $campagne->get("idno");
  				$campagnes[$idno]["name"] = $campagne->get("preferred_labels");
  				$campagnes[$idno]["date_campagne"] = $campagne->get("date_campagne_c");
@@ -438,19 +449,13 @@
  			$this->render('recolement_pv_word_html.php');
  		}
 
-	    public function Test() {
-		    global $g_ui_locale_id;
-		    $t_object = new ca_objects(24);
-			$t_occurrence = new ca_occurrences(1);
-		    $result = $this->_copyAttributes($t_object,$t_occurrence,array('dimensions'));
-
-		    if ($result !== true) {
-			    var_dump($result);
-			    die("Erreur : la copie d'attributs a échoué.");
-		    }
-		    $this->view->setVar('RecolementsCrees', 1);
-			$this->render('preparer_campagne_results_html.php');
-        }
-
+		# -------------------------------------------------------
+		# Sidebar info handler
+		# -------------------------------------------------------
+		public function Info($pa_parameters) {
+			$this->view->setVar('campagnes', $this->opa_infos_campagnes);
+			$this->view->setVar('global', $this->opa_infos_global);
+			return $this->render('widget_recolement_info_html.php', true);
+		}
  	}
  ?>
