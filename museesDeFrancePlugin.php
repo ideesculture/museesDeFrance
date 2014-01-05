@@ -29,10 +29,6 @@
         /**
          * Insert into ObjectEditor info (side bar)
          */
-
-        public function hookCanHandleGetAsLinkTarget(array $va_params = array()) {
-            return array(1=>"zorg");
-        }
         public function hookAppendToEditorInspector(array $va_params = array()) {
             $t_item = $va_params["t_item"];
 
@@ -72,10 +68,12 @@
                     $vs_action = "afficherObjet/".$vn_item_id;
                 }
 
-                if ($vs_inventaire_link_text) $vs_buf = "<a href=\"".$vs_url."/".$vs_action."\" style=\"text-decoration:none;margin:10px 0px;display:inline-block;\" target='_blank'>"
-                        ."<img src=\"".__CA_URL_ROOT__."/app/plugins/museesDeFrance/views/images/inventaire_16x16.png\" border='0' class='form-button-left' style=\"margin-left:15px;margin-right:10px;\" >"
-                        .$vs_inventaire_link_text
-                        ."</a>";
+                if ($vs_inventaire_link_text)
+	                $vs_buf = "<div style=\"text-align:center;width:100%;margin-top:10px;\">"
+		                ."<a href=\"".$vs_inventaire_url."/".$action."\" target='_blank' class='form-button-gradient'>"
+		                ."<img class='form-button-left' src=\"".__CA_URL_ROOT__."/app/plugins/museesDeFrance/views/images/inventaire_16x16.png\" border='0'>"
+		                .$vs_inventaire_link_text
+		                ."</a></div>";
 
             }
 
@@ -84,12 +82,14 @@
                 if($t_item->get("table_num") == "57") {
                     $vs_action = "updateSet/".$vn_item_id;
 
-                    $vs_buf = "<div style=\"text-decoration:none;margin:10px 10px;\">"
-                          ."<img class='form-button-left' src=\"".__CA_URL_ROOT__."/app/plugins/museesDeFrance/views/images/inventaire_16x16.png\" border='0' class='form-button-left' style=\"margin:5px 10px 50px 0px;\">"
-                          ."<a href=\"".$vs_inventaire_url."/".$action."\" target='_blank'>Importer dans l'inventaire des <b>biens affectés</b></a>"
-                          ."<hr style=\"border: 1px solid white;\" />"
-                          ."<a href=\"".$vs_depot_url."/".$action."\" target='_blank'>Importer dans l'inventaire des <b>biens déposés</b></a>"
-                          ."</div>";
+                    $vs_buf = "<div style=\"text-align:center;width:100%;margin-top:10px;\">"
+                          ."<a href=\"".$vs_inventaire_url."/".$action."\" target='_blank' class='form-button-gradient'>"
+	                      ."<img class='form-button-left' src=\"".__CA_URL_ROOT__."/app/plugins/museesDeFrance/views/images/inventaire_16x16.png\" border='0'>"
+	                      ."Importer dans l'inventaire<br/> des <b>biens affectés</b>"
+                          ."</a><a href=\"".$vs_depot_url."/".$action."\" target='_blank' class='form-button-gradient'>"
+	                      ."<img class='form-button-left' src=\"".__CA_URL_ROOT__."/app/plugins/museesDeFrance/views/images/inventaire_16x16.png\" border='0'>"
+	                      ."Importer dans l'inventaire<br/> des <b>biens déposés</b>"
+                          ."</a></div>";
                 }
             }
 
@@ -98,7 +98,7 @@
 
         }
 
-            # -------------------------------------------------------
+        # -------------------------------------------------------
 		/**
 		 * Insert activity menu
 		 */
