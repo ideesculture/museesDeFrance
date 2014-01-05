@@ -1,0 +1,14 @@
+/* rubriques réglementaires */
+/* ajouter <img class=rr /> dans l'interface utilisateur pour faire apparaître l'icône */
+img.rr {
+    width:96px;
+    height:12px;
+    border:none;
+    padding:0;
+    margin:0;
+    display:inline-block;
+    overflow:hidden;
+    background-image: url('rr.png');
+    background-repeat: no-repeat;
+    text-indent: 96px;
+}
