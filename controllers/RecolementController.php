@@ -1,6 +1,7 @@
 <?php
 
 require_once(__CA_LIB_DIR__ . '/core/Configuration.php');
+require_once(__CA_MODELS_DIR__ . '/ca_objects.php');
 require_once(__CA_MODELS_DIR__ . '/ca_occurrences.php');
 require_once(__CA_LIB_DIR__ . '/ca/Search/OccurrenceSearch.php');
 require_once(__CA_LIB_DIR__ . '/ca/Search/SetSearch.php');
@@ -283,13 +284,12 @@ class RecolementController extends ActionController
 			$pv_info["liste_objets_html"] = "<table class=\"listtable\">" .
 				"<tr><th></th><th>Titre</th><th>Récolé</th><th>Vu/non vu</th><th>Emplacement</th></tr>";
 			// Affichage des X premières lignes
-			foreach ($campagne->get("ca_occurrences.related.idno", array("returnAsArray" => 1)) as $idno) {
-				$recolement = new ca_occurrences();
-				$recolement->load(array('idno' => $idno));
+			foreach ($campagne->get("ca_occurrences.related.occurrence_id", array("returnAsArray" => 1)) as $occurrence_id) {
+				$recolement = new ca_occurrences($occurrence_id);
 
 				$line++;
 				$pv_info["liste_objets_html"] .=
-					"<tr " . ($line == 1 ? " class=odd" : "") . "><td><a href=\"" . __CA_URL_ROOT__ . "/index.php/editor/occurrences/OccurrenceEditor/Edit/occurrence_id/" . $recolement->get("occurrence_id") . "\"><img src=\"" . __CA_URL_ROOT__ . "/themes/default/graphics/buttons/edit.png\"></td>" .
+					"<tr " . ($line == 1 ? " class=odd" : "") . "><td><a href=\"" . __CA_URL_ROOT__ . "/index.php/editor/occurrences/OccurrenceEditor/Edit/occurrence_id/" . $occurrence_id . "\"><img src=\"" . __CA_URL_ROOT__ . "/themes/default/graphics/buttons/edit.png\"></td>" .
 					"<td><b>" . $recolement->get("preferred_labels") . "</b></td>" .
 					"<td>" . $recolement->get("recolement", array("convertCodesToDisplayText" => 1)) . "</td>" .
 					"<td>" . $recolement->get("presence_bien", array("convertCodesToDisplayText" => 1)) . "</td>" .
@@ -368,7 +368,7 @@ class RecolementController extends ActionController
 	}
 
 	# -------------------------------------------------------
-	private function _createRecolement($vn_object_id = null, $vn_campagne_id = null)
+	private function _createRecolementFromObject($vn_object_id = null, $vn_campagne_id = null)
 	{
 		if (!$vn_object_id) return false;
 
@@ -377,7 +377,7 @@ class RecolementController extends ActionController
 		$t_locale = new ca_locales();
 		$vn_rel_occ_occ = $t_rel_types->getRelationshipTypeID('ca_occurrences_x_occurrences', 'related');
 		$vn_recole_obj_occ = $t_rel_types->getRelationshipTypeID('ca_objects_x_occurrences', 'recole');
-		$vn_marbre = $t_list->getItemIDFromList('occurrence_types', 'recolement');
+		$vn_recolement_type = $t_list->getItemIDFromList('occurrence_types', 'recolement');
 		$pn_locale_id = $t_locale->loadLocaleByCode('fr_FR');
 
 		$t_object = new ca_objects($vn_object_id);
@@ -392,7 +392,7 @@ class RecolementController extends ActionController
 		$t_recolement->set('idno', $t_object->get("idno") . "RECOL" . $campagne_idno);
 		$t_recolement->set('status', 0);
 		$t_recolement->set('access', 1);
-		$t_recolement->set('type_id', $vn_marbre);
+		$t_recolement->set('type_id', $vn_recolement_type);
 
 
 		$vn_recolement_id = $t_recolement->insert();
@@ -404,6 +404,67 @@ class RecolementController extends ActionController
 			var_dump($result);
 			print "Erreur : la copie d'attributs a échoué.";
 			return false;
+		}
+
+		if ($vn_campagne_id) {
+			$t_recolement->addRelationship('ca_occurrences', $vn_campagne_id, $vn_rel_occ_occ);
+		}
+		$t_recolement->addRelationship('ca_objects', $vn_object_id, $vn_recole_obj_occ);
+		$t_recolement->update();
+		$t_recolement->addLabel(array('name' => $vs_label), $pn_locale_id, null, true);
+		$t_recolement->update();
+		if ($t_recolement->numErrors()) {
+			print "ERROR INSERTING :" . join('; ', $t_recolement->getErrors()) . "\n";
+			return false;
+		}
+
+		return true;
+	}
+	# -------------------------------------------------------
+	private function _createRecolement($vn_object_id = null, $vn_campagne_id = null, $vn_former_recolement_id = null)
+	{
+		if (!$vn_object_id) return false;
+
+		$t_rel_types = new ca_relationship_types();
+		$t_list = new ca_lists();
+		$t_locale = new ca_locales();
+		$vn_rel_occ_occ = $t_rel_types->getRelationshipTypeID('ca_occurrences_x_occurrences', 'related');
+		$vn_recole_obj_occ = $t_rel_types->getRelationshipTypeID('ca_objects_x_occurrences', 'recole');
+		$vn_recolement_type = $t_list->getItemIDFromList('occurrence_types', 'recolement');
+		$pn_locale_id = $t_locale->loadLocaleByCode('fr_FR');
+
+		$t_object = new ca_objects($vn_object_id);
+		$vs_label = $t_object->get('ca_objects.preferred_labels.name');
+
+		$t_recolement = new ca_occurrences();
+		$t_recolement->setMode(ACCESS_WRITE);
+		if ($vn_campagne_id) {
+			$campagne = new ca_occurrences($vn_campagne_id);
+			$campagne_idno = $campagne->get('idno');
+		}
+		$t_recolement->set('idno', $t_object->get("idno") . "RECOL" . $campagne_idno);
+		$t_recolement->set('status', 0);
+		$t_recolement->set('access', 1);
+		$t_recolement->set('type_id', $vn_recolement_type);
+
+
+		$vn_recolement_id = $t_recolement->insert();
+		if ($t_recolement->numErrors()) print "ERROR INSERTING :" . join('; ', $t_recolement->getErrors()) . "\n";
+
+		if ($vn_former_recolement_id) {
+			// we have a forme recolement, copy some data from
+			$result = $t_recolement->copyAttributesFrom($vn_former_recolement_id, array('restrictToAttributesByCodes'=>array(
+				'dimensions', 'constatEtat', 'domaine', 'materiaux_tech_c', 'datePeriod', 'dateMillesime', 'objectProductionDate', 'useMethod', 'credits_photo',
+				'mention_localisation', 'presence_bien', 'recol_presence_inventaire_c', 'numinventaire_expertise', 'recol_presence_num_c', 'conformite',
+				'source_type', 'inscription_recolement', 'recolement_suites_c', 'recol_suites_plaintes_c', 'recol_ensemble_complexe'
+			)));
+			$t_recolement->update();
+			// refaire relation avec ca_storage_locations liés
+		} else {
+			// no former recolement, copy some data from the object
+			$result = $this->_copyAttributes($t_object, $t_recolement, array(
+				'dimensions', 'constatEtat', 'domaine', 'materiaux_tech_c', 'datePeriod', 'dateMillesime', 'objectProductionDate', 'useMethod', 'credits_photo'
+			));
 		}
 
 		if ($vn_campagne_id) {
@@ -460,8 +521,22 @@ class RecolementController extends ActionController
 			// do a search and create Recolement for all found objects
 			$set = new ca_sets($vs_set_id);
 			$va_object_ids = $set->getItemRowIDs();
+			$va_recolements_related = array();
 			foreach ($va_object_ids as $vn_object_id => $nil) {
-				$this->_createRecolement($vn_object_id, $vn_campagne_id);
+				$t_object = new ca_objects($vn_object_id);
+				// Check and get occurrences linked to this object to this if we have a former recolement
+				$va_occurrences_related = reset($t_object->get("ca_occurrences.related", array("returnAsArray" => 1)));
+				foreach($va_occurrences_related as $vs_ref => $va_occurrence_related) {
+					if($va_occurrence_related["item_type_id"] != 119) continue;
+					// $va_recolement_related contains id of the recolement occurrences linked
+					$va_recolements_related[] = $va_occurrence_related["occurrence_id"];
+				}
+				if (sizeof($va_occurrences_related)) {
+					// create a new recolement occurrence from last recolement added to the objet
+					arsort($va_recolements_related);
+					$vn_recolement_id = reset($va_recolements_related);
+				}
+				$this->_createRecolement($vn_object_id, $vn_campagne_id, $vn_recolement_id);
 			}
 			// do the calc
 			// print the results
