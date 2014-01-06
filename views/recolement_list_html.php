@@ -6,7 +6,7 @@ $campagnes = $this->getVar('campagnes');
 if (!isset($campagnes) || !$campagnes) {
 	?>
 	<p>Aucune campagne de récolement n'est accessible.</p>
-	<p>Si vous avez bien créé des campagnes de récolement mais que celles-ci ne sont pas visibles dans cet écran, veuillez <a href="<?php print __CA_URL_BASE__; ?>/index.php/administrate/maintenance/SearchReindex/Index">réindexer la base</a>.</p>
+	<p>Si vous avez bien créé des campagnes de récolement mais que celles-ci ne sont pas visibles dans cet écran, veuillez <a href="<?php print __CA_URL_ROOT__; ?>/index.php/administrate/maintenance/SearchReindex/Index">réindexer la base</a>.</p>
 	<?php
 } else {
 	?>
