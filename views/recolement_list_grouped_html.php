@@ -154,15 +154,15 @@ if (!isset($campagnes_par_rd) || !$campagnes_par_rd) {
 							if ($campagne["recolements_total"] == 0) :
 								?>
 								<span style="float:right;">
-			<a class="form-button"
-			   href="<?php print __CA_URL_ROOT__ . "/index.php/museesDeFrance/Recolement/PreparerCampagne/?idno=" . $campagne["idno"]; ?>"
-			   title="Générer des fiches de récolements depuis un ensemble d'objets">
-				<span class="form-button">Générer les fiches</span>
-			</a>
-		</span>
+									<a class="form-button"
+									   href="<?php print __CA_URL_ROOT__ . "/index.php/museesDeFrance/Recolement/PreparerCampagne/?idno=" . $campagne["idno"]; ?>"
+									   title="Générer des fiches de récolements depuis un ensemble d'objets">
+										<span class="form-button">Générer les fiches</span>
+									</a>
+								</span>
 							<?php
-							else :
-								?>
+								else :
+							?>
 								<a href="<?php print __CA_URL_ROOT__ . "/index.php/museesDeFrance/Recolement/Pv/?idno=" . $campagne["idno"]; ?>"
 								   title="Accéder aux fiches ou générer le PV">
 									<progress id="avancement" value="<?php print (int)$campagne["recolements_done"]; ?>"
@@ -170,11 +170,11 @@ if (!isset($campagnes_par_rd) || !$campagnes_par_rd) {
 								</a>
 								<?php print $campagne["recolements_done"]; ?>/<?php print $campagne["recolements_total"]; ?>
 								<span style="float:right;">
-			<a href="<?php print __CA_URL_ROOT__ . "/index.php/museesDeFrance/Recolement/PreparerCampagne/?idno=" . $campagne["idno"]; ?>"
-			   title="Générer des fiches de récolements depuis un ensemble d'objets">
-				<img src="<?php print __CA_URL_ROOT__ ?>/themes/default/graphics/buttons/add.png"/>
-			</a>
-		</span>
+									<a href="<?php print __CA_URL_ROOT__ . "/index.php/museesDeFrance/Recolement/PreparerCampagne/?idno=" . $campagne["idno"]; ?>"
+									   title="Générer des fiches de récolements depuis un ensemble d'objets">
+										<img src="<?php print __CA_URL_ROOT__ ?>/themes/default/graphics/buttons/add.png"/>
+									</a>
+								</span>
 							<?php
 							endif;
 							?>
