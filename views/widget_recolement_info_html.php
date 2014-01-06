@@ -26,26 +26,31 @@
  * ----------------------------------------------------------------------
  */
 
-$va_campagnes= $this->getVar('campagnes');
-$va_global= $this->getVar('global');
+$va_campagnes = $this->getVar('campagnes');
+$va_global = $this->getVar('global');
 ?>
-	<h3>Statistiques :
-		<div>
-			<?php print (int) $va_global["nb_campagnes"]; ?> campagnes<br/>
-			<?php print (int) $va_global["recolements_done"]; ?> récolements enregistrés<br/>
-			<?php print (int) $va_global["recolements_left"]; ?> récolements en attente<br/>
-			<?php print (int) $va_global["recolements_total"]; ?> objets dans les campagnes<br/>
-			<?php if ($va_global["recolements_total"] > 0) print round($va_global["recolements_done"] / $va_global["recolements_total"] * 100, 2); ?>% réalisé<br/>
-		</div>
-	</h3>
+<h3>Statistiques :
+	<div>
+		<?php print (int)$va_global["nb_campagnes"]; ?> campagnes<br/>
+		<?php print (int)$va_global["recolements_done"]; ?> récolements enregistrés<br/>
+		<?php print (int)$va_global["recolements_left"]; ?> récolements en attente<br/>
+		<?php print (int)$va_global["recolements_total"]; ?> objets dans les campagnes<br/>
+		<?php if ($va_global["recolements_total"] > 0) print round($va_global["recolements_done"] / $va_global["recolements_total"] * 100, 2); ?>
+		% réalisé<br/>
+	</div>
+</h3>
 <h3>Documentation :
 	<div>Service des musées de France :<br/>
-	<a  class='button' href="http://www.culture.gouv.fr/documentation/joconde/fr/partenaires/AIDEMUSEES/recolement-informatise.htm">Récolement informatisé</a><br/>
-	<a  class='button' href="http://www.culture.gouv.fr/documentation/joconde/fr/partenaires/AIDEMUSEES/dossier-inp-inv-rec.pdf">Dossier de l'INP</a>
-		</div>
+		<a class='button'
+		   href="http://www.culture.gouv.fr/documentation/joconde/fr/partenaires/AIDEMUSEES/recolement-informatise.htm">Récolement
+			informatisé</a><br/>
+		<a class='button'
+		   href="http://www.culture.gouv.fr/documentation/joconde/fr/partenaires/AIDEMUSEES/dossier-inp-inv-rec.pdf">Dossier
+			de l'INP</a>
+	</div>
 </h3>
 <h3>Assistance :
 	<div>idéesculture :<br/>
-		<a  class='button' href="mailto:contact@ideesculture.com">contact@ideesculture.com</a><br/>
+		<a class='button' href="mailto:contact@ideesculture.com">contact@ideesculture.com</a><br/>
 	</div>
 </h3>
