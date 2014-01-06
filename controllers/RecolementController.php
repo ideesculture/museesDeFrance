@@ -329,31 +329,9 @@ class RecolementController extends ActionController
 	# -------------------------------------------------------
 	public function TableauSuivi()
 	{
-		$o_search = new OccurrenceSearch();
-		$qr_hits = $o_search->search("ca_occurrences.type_id:118");
-		while ($qr_hits->nextHit()) {
-			$idno = $qr_hits->get('ca_occurrences.idno');
-			//print $idno."\n";
-			$campagne = new ca_occurrences();
-			$campagne->load(array('idno' => $idno));
-			$campagnes[$idno]["occurrence_id"] = $campagne->get("occurrence_id");
-			$campagnes[$idno]["localisation"] = $campagne->get("ca_storage_locations.preferred_labels");
-			$campagnes[$idno]["localisation_code"] = $campagne->get("ca_storage_locations.idno");
-			$campagnes[$idno]["caracterisation"] = $campagne->get("campagne_caracterisation", array("convertCodesToDisplayText" => true));
-			$campagnes[$idno]["champs"] = $campagne->get("campagne_champs_c");
-			$campagnes[$idno]["conditionnement"] = $campagne->get("campagne_conditionnement");
-			$campagnes[$idno]["accessibilite"] = $campagne->get("campagne_accessibilite");
-			$campagnes[$idno]["idno"] = $campagne->get("idno");
-			$campagnes[$idno]["name"] = $campagne->get("preferred_labels");
-			$campagnes[$idno]["date_campagne"] = $campagne->get("date_campagne_c");
-			$campagnes[$idno]["date_campagne_prev"] = $campagne->get("campagne_date_prev");
-			$campagnes[$idno]["intervenants"] = $campagne->get("ca_entities");
-			$campagnes[$idno]["date_campagne_pv"] = $campagne->get("campagne_date_pv");
-			$campagnes[$idno]["nombre"] = count($campagne->get("ca_occurrences.related.idno", array("returnAsArray" => 1)));
-			//var_dump($t_occurrence);die();
-		}
-		//var_dump($campagnes);die();
-		$this->view->setVar('campagnes', $campagnes);
+		$ps_rd = $this->request->getParameter('rd', pString);
+
+		$this->view->setVar('campagnes', $this->opa_infos_campagnes_par_recolement_decennal[$ps_rd]["recolements"]);
 		$this->render('recolement_tableau_suivi_html.php');
 	}
 
@@ -506,7 +484,7 @@ class RecolementController extends ActionController
 			// and ask for validation
 			$sets = new ca_sets();
 			$set_search = new SetSearch();
-			$qr_results = $set_search->search("*"); // ... or whatever text you like
+			$qr_results = $set_search->search("*");
 
 			while ($qr_results->nextHit()) {
 				if ($qr_results->get('table_num') == 57) {
