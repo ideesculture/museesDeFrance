@@ -1,7 +1,7 @@
 <h1>Campagnes de récolement</h1>
 
 <?php
-$campagnes = $this->getVar('campagnes');
+$campagnes_ts_recolements = $this->getVar('campagnes');
 
 if (!isset($campagnes) || !$campagnes) {
 	?>
@@ -37,6 +37,13 @@ if (!isset($campagnes) || !$campagnes) {
 	}
 </style>
 <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+
+<?php foreach ($campagnes_ts_recolements as $vs_nom_recolement => $campagnes) {
+		$vn_num_recolement_decennal++;
+		?>
+
+<h2><?php print $vs_nom_recolement; ?></h2>
+
 <script type="text/javascript">
 	google.load("visualization", "1", {packages:["corechart"]});
 	google.setOnLoadCallback(drawChart);
@@ -79,12 +86,12 @@ endforeach;
 			}
 		};
 
-		var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+		var chart = new google.visualization.BarChart(document.getElementById('<?php "chart_div".(int) $vn_num_recolement_decennal; ?>'));
 		chart.draw(data, options);
 	}
 </script>
 <h2>Suivi graphique</h2>
-<div id="chart_div" style="width: 744px; height: 220px;"></div>
+<div id="<?php "chart_div".(int) $vn_num_recolement_decennal; ?>" style="width: 744px; height: 220px;"></div>
 <h2>Tableau de progression</h2>
 <table class="listtable">
 	<tr>
@@ -157,6 +164,7 @@ foreach ($campagnes as $campagne) :
 	</span>
 </a>
 <?php
+	}
 }
 ?>
 

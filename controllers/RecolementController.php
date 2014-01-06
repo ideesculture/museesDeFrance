@@ -64,23 +64,24 @@
 			    //print $idno."\n";
 			    $campagne = new ca_occurrences();
 			    $campagne->load(array('idno' => $idno));
-			    $campagnes[$idno]["occurrence_id"] = $campagne->get("occurrence_id");
-			    $campagnes[$idno]["localisation"] = $campagne->get("ca_storage_locations.preferred_labels");
-			    $campagnes[$idno]["localisation_code"] = $campagne->get("ca_storage_locations.idno");
-			    $campagnes[$idno]["caracterisation"] = $campagne->get("campagne_caracterisation",array("convertCodesToDisplayText"=>true));
-			    $campagnes[$idno]["champs"] = $campagne->get("campagne_champs_c");
-			    $campagnes[$idno]["conditionnement"] = $campagne->get("campagne_conditionnement");
-			    $campagnes[$idno]["nombre"] = "A CALCULER";
-			    $campagnes[$idno]["accessibilite"] = $campagne->get("campagne_accessibilite");
-			    $campagnes[$idno]["idno"] = $campagne->get("idno");
-			    $campagnes[$idno]["name"] = $campagne->get("preferred_labels");
-			    $campagnes[$idno]["date_campagne"] = $campagne->get("date_campagne_c");
-			    $campagnes[$idno]["date_campagne_prev"] = $campagne->get("campagne_date_prev");
-			    $campagnes[$idno]["intervenants"] = $campagne->get("ca_entities");
-			    $campagnes[$idno]["date_campagne_pv"] = $campagne->get("campagne_date_pv");
+			    $recolement_decennal = $campagne->get("recolement_decennal",array("convertCodesToDisplayText"=>true));
+			    $campagnes[$recolement_decennal][$idno]["occurrence_id"] = $campagne->get("occurrence_id");
+			    $campagnes[$recolement_decennal][$idno]["localisation"] = $campagne->get("ca_storage_locations.preferred_labels");
+			    $campagnes[$recolement_decennal][$idno]["localisation_code"] = $campagne->get("ca_storage_locations.idno");
+			    $campagnes[$recolement_decennal][$idno]["caracterisation"] = $campagne->get("campagne_caracterisation",array("convertCodesToDisplayText"=>true));
+			    $campagnes[$recolement_decennal][$idno]["champs"] = $campagne->get("campagne_champs_c");
+			    $campagnes[$recolement_decennal][$idno]["conditionnement"] = $campagne->get("campagne_conditionnement");
+			    $campagnes[$recolement_decennal][$idno]["nombre"] = "A CALCULER";
+			    $campagnes[$recolement_decennal][$idno]["accessibilite"] = $campagne->get("campagne_accessibilite");
+			    $campagnes[$recolement_decennal][$idno]["idno"] = $campagne->get("idno");
+			    $campagnes[$recolement_decennal][$idno]["name"] = $campagne->get("preferred_labels");
+			    $campagnes[$recolement_decennal][$idno]["date_campagne"] = $campagne->get("date_campagne_c");
+			    $campagnes[$recolement_decennal][$idno]["date_campagne_prev"] = $campagne->get("campagne_date_prev");
+			    $campagnes[$recolement_decennal][$idno]["intervenants"] = $campagne->get("ca_entities");
+			    $campagnes[$recolement_decennal][$idno]["date_campagne_pv"] = $campagne->get("campagne_date_pv");
 			    $va_recolements_idnos = $campagne->get("ca_occurrences.related.idno",array("returnAsArray" => 1));
-			    $campagnes[$idno]["recolements_total"] = count($va_recolements_idnos);
-			    $global["recolements_total"] = $global["recolements_total"] + $campagnes[$idno]["recolements_total"];
+			    $campagnes[$recolement_decennal][$idno]["recolements_total"] = count($va_recolements_idnos);
+			    $global[$recolement_decennal]["recolements_total"] = $global["recolements_total"] + $campagnes[$idno]["recolements_total"];
 			    $vn_recolements = 0;
 			    foreach($va_recolements_idnos as $vs_recolement_idno) {
 				    $t_recolement = new ca_occurrences();
@@ -89,9 +90,9 @@
 				    if ($vs_done == "oui") $vn_recolements++;
 			    }
 			    $campagnes[$idno]["recolements_done"] = $vn_recolements;
-			    $global["recolements_done"] = $global["recolements_done"] + $campagnes[$idno]["recolements_done"];
+			    $global[$recolement_decennal]["recolements_done"] = $global[$recolement_decennal]["recolements_done"] + $campagnes[$recolement_decennal][$idno]["recolements_done"];
 		    }
-		    $global["recolements_left"] = $global["recolements_total"] - $global["recolements_done"];
+		    $global[$recolement_decennal]["recolements_left"] = $global["recolements_total"] - $global["recolements_done"];
 		    return array("global"=>$global,"campagnes"=>$campagnes);
 	    }
 
