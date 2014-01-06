@@ -14,7 +14,7 @@ $InfosPv = $this->getVar('InfosPv');
 <style>
 	progress {
 		display: block;
-		width: 100%;
+		width: 90%;
 		height: 2em;
 		margin: .5em 0;
 		border-radius: 5px;
@@ -77,8 +77,14 @@ $InfosPv = $this->getVar('InfosPv');
 	<tr>
 		<td>Avancement</td>
 		<td>
-			<progress id="avancement" value="<?php print (int)$InfosPv["info"]["recolements_done"]; ?>"
-			          max="<?php print $InfosPv["info"]["recolements_total"]; ?>"></progress>
+			<progress id="avancement" value="<?php print (int)$campagne["recolements_done"]; ?>"
+				    max="<?php print $campagne["recolements_total"]; ?>" style="float:left;"></progress>
+			<span style="float:right;margin:10px;">
+				<a href="<?php print __CA_URL_ROOT__ . "/index.php/museesDeFrance/Recolement/PreparerCampagne/?idno=" .$InfosPv["info"]["idno"]; ?>"
+					title="Générer des fiches de récolements depuis un ensemble d'objets">
+				<img src="<?php print __CA_URL_ROOT__ ?>/themes/default/graphics/buttons/add.png"/>
+				</a>
+			</span>
 		</td>
 	</tr>
 	<tr class="odd">
