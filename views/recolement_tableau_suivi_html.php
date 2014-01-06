@@ -107,15 +107,19 @@ if (!isset($campagnes) || !$campagnes) {
         ), 'A4:L256');	
 
 }
-header("Pragma: public");
-header("Expires: 0");
-header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
-header("Content-Type: application/force-download");
-header("Content-Type: application/octet-stream");
-header("Content-Type: application/download");;
-header("Content-Disposition: attachment;filename=$filename.xls");
-header("Content-Transfer-Encoding: binary ");
+
 $vo_phpexcel_writer = new PHPExcel_Writer_Excel2007($vo_phpexcel);
-$vo_phpexcel_writer->save('php://output');
+$vo_phpexcel_writer->save(__CA_BASE_DIR__."/app/plugins/museesDeFrance/download/tableau-suivi.xlsx");
 	
 ?>
+
+<h1>Tableau de suivi</h1>
+
+<p>Vous pouvez télécharger depuis cette page le fichier au format .xls (Microsoft Excel).<br/> Ce fichier est lisible également avec OpenOffice ou LibreOffice.</p>
+
+<a class="form-button" href="<?php print __CA_URL_ROOT__;?>/app/plugins/museesDeFrance/download/tableau-suivi.xlsx">
+	<span class="form-button">
+		<img class="form-button-left" src="<?php print __CA_URL_ROOT__;?>/app/plugins/museesDeFrance/views/images/page_white_excel.png" align=center>
+		&nbsp; télécharger
+	</span>
+</a>

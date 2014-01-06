@@ -311,7 +311,7 @@
  			}
  			//var_dump($campagnes);die();
  			$this->view->setVar('campagnes', $campagnes);
- 			$this->render('recolement_tableau_suivi_xlsx.php');
+ 			$this->render('recolement_tableau_suivi_html.php');
  		}
 	    # -------------------------------------------------------
 	    public function Pv() {
