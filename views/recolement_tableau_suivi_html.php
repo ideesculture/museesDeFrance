@@ -29,7 +29,7 @@ if (!isset($campagnes) || !$campagnes) {
 	$sheet->SetCellValue('B3', "Localisation (code)");
 	$sheet->SetCellValue('C3', "Caractérisation espace");
 	$sheet->SetCellValue('D3', "Type de collection\n(champ couvert)");
-	$sheet->SetCellValue('E3', "Conditionnement");
+	$sheet->SetCellValue('E3', "Conditionnement des biens à récoler");
 	$sheet->SetCellValue('F3', "Nombre\nd'objets");
 	$sheet->SetCellValue('G3', "Accessibilité");
 	$sheet->SetCellValue('H3', "Campagne");
