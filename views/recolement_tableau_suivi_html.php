@@ -3,6 +3,9 @@
 require_once __CA_BASE_DIR__ . '/app/lib/core/Parsers/PHPExcel/PHPExcel.php';
 require_once __CA_BASE_DIR__ . '/app/lib/core/Parsers/PHPExcel/PHPExcel/Writer/Excel2007.php';
 
+$campagnes = $this->getVar('campagnes');
+$rd = $this->getVar('rd');
+
 $vo_phpexcel = new PHPExcel();
 
 $vo_phpexcel->getProperties()->setCreator("CollectiveAccess - recolement SMF");
@@ -16,9 +19,8 @@ $vo_phpexcel->setActiveSheetIndex(0);
 $sheet = $vo_phpexcel->getActiveSheet();
 $sheet->setTitle('tableau de suivi');
 
-$sheet->SetCellValue('A1', 'Tableau de suivi');
+$sheet->SetCellValue('A1', 'Tableau de suivi '.$rd);
 
-$campagnes = $this->getVar('campagnes');
 
 if (!isset($campagnes) || !$campagnes) {
 	$sheet->SetCellValue('A3', "Aucune campagne de récolement n'est accessible.");
@@ -113,7 +115,8 @@ $vo_phpexcel_writer->save(__CA_BASE_DIR__ . "/app/plugins/museesDeFrance/downloa
 
 ?>
 
-<h1>Tableau de suivi</h1>
+<h1><?php print $rd; ?></h1>
+<h2>Tableau de suivi</h2>
 
 <p>Vous pouvez télécharger depuis cette page le fichier au format .xls (Microsoft Excel).<br/> Ce fichier est lisible
 	également avec OpenOffice ou LibreOffice.</p>
