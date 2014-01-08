@@ -79,6 +79,7 @@ class RecolementController extends ActionController
 			$campagne = new ca_occurrences();
 			$campagne->load(array('idno' => $idno));
 			$recolement_decennal = $campagne->get("recolement_decennal", array("convertCodesToDisplayText" => true));
+			/*
 			$campagnes[$idno]["recolement_decennal"] = $campagne->get("recolement_decennal", array("convertCodesToDisplayText" => true));
 			$campagnes[$idno]["occurrence_id"] = $campagne->get("occurrence_id");
 			$campagnes[$idno]["localisation"] = $campagne->get("ca_storage_locations.preferred_labels");
@@ -94,9 +95,15 @@ class RecolementController extends ActionController
 			$campagnes[$idno]["date_campagne_prev"] = $campagne->get("campagne_date_prev");
 			$campagnes[$idno]["intervenants"] = $campagne->get("ca_entities");
 			$campagnes[$idno]["date_campagne_pv"] = $campagne->get("campagne_date_pv");
-			$va_recolements_idnos = $campagne->get("ca_occurrences.related.idno", array("returnAsArray" => 1));
+			
 			$campagnes[$idno]["recolements_total"] = count($va_recolements_idnos);
 			$global["recolements_total"] = $global["recolements_total"] + $campagnes[$idno]["recolements_total"];
+			*/
+
+			// freaky thing just to be sure we always have the recolement_decennal value, even inside infos of a recolement via $idno
+			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["recolement_decennal"] = $recolement_decennal;
+
+			$va_recolements_idnos = $campagne->get("ca_occurrences.related.idno", array("returnAsArray" => 1));
 			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["localisation"] = $campagne->get("ca_storage_locations.preferred_labels");
 			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["recolement_decennal"] = $campagne->get("recolement_decennal", array("convertCodesToDisplayText" => true));
 			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["occurrence_id"] = $campagne->get("occurrence_id");
@@ -105,7 +112,6 @@ class RecolementController extends ActionController
 			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["caracterisation"] = $campagne->get("campagne_caracterisation", array("convertCodesToDisplayText" => true));
 			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["champs"] = $campagne->get("campagne_champs_c");
 			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["conditionnement"] = $campagne->get("campagne_conditionnement");
-			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["nombre"] = "A CALCULER";
 			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["accessibilite"] = $campagne->get("campagne_accessibilite");
 			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["idno"] = $campagne->get("idno");
 			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["name"] = $campagne->get("preferred_labels");
@@ -114,6 +120,7 @@ class RecolementController extends ActionController
 			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["intervenants"] = $campagne->get("ca_entities");
 			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["date_campagne_pv"] = $campagne->get("campagne_date_pv");
 			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["recolements_total"] = count($va_recolements_idnos);
+			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["nombre"] = count($va_recolements_idnos);
 			$campagnes_rd[$recolement_decennal]["global"]["recolements_total"] = $campagnes_rd[$recolement_decennal]["global"]["recolements_total"] + count($va_recolements_idnos);
 			$vn_recolements = 0;
 			foreach ($va_recolements_idnos as $vs_recolement_idno) {
@@ -156,6 +163,7 @@ class RecolementController extends ActionController
 		// Calcul du nb de récolements liés à la campagne
 		$nb_recolements = count($campagne->get("ca_occurrences.related.idno", array("returnAsArray" => 1)));
 		$pv_info = array();
+		$pv_info["info"]["recolement_decennal"] = $campagne->get("recolement_decennal", array("convertCodesToDisplayText" => true));
 		$pv_info["info"]["idno"] = $idno;
 		$pv_info["info"]["occurrence_id"] = $campagne->get("occurrence_id");
 		$campagne_methode_c = $campagne->get("campagne_methode_c", array("returnAsArray" => 1));
@@ -305,6 +313,7 @@ class RecolementController extends ActionController
 		$va_recolements_idnos = $campagne->get("ca_occurrences.related.idno", array("returnAsArray" => 1));
 		$pv_info["info"]["recolements_total"] = count($va_recolements_idnos);
 		$vn_recolements = 0;
+		//var_dump($va_recolements_idnos);die();
 		foreach ($va_recolements_idnos as $vs_recolement_idno) {
 			$t_recolement = new ca_occurrences();
 			$t_recolement->load(array('idno' => $vs_recolement_idno));
@@ -329,9 +338,10 @@ class RecolementController extends ActionController
 	# -------------------------------------------------------
 	public function TableauSuivi()
 	{
-		$ps_rd = $this->request->getParameter('rd', pString);
+		$ps_rd = $this->request->getParameter('rd_name', pString);
 
 		$this->view->setVar('campagnes', $this->opa_infos_campagnes_par_recolement_decennal[$ps_rd]["recolements"]);
+		$this->view->setVar('rd', $ps_rd);
 		$this->render('recolement_tableau_suivi_html.php');
 	}
 
