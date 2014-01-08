@@ -26,17 +26,24 @@
  * ----------------------------------------------------------------------
  */
 
-$va_campagnes = $this->getVar('campagnes');
 $va_global = $this->getVar('global');
+$va_campagnes_rd = $this->getVar('campagnes_rd');
+
+//var_dump($va_campagnes_rd);die();
 ?>
 <h3>Statistiques :
 	<div>
-		<?php print (int)$va_global["nb_campagnes"]; ?> campagnes<br/>
-		<?php print (int)$va_global["recolements_done"]; ?> récolements enregistrés<br/>
-		<?php print (int)$va_global["recolements_left"]; ?> récolements en attente<br/>
-		<?php print (int)$va_global["recolements_total"]; ?> objets dans les campagnes<br/>
-		<?php if ($va_global["recolements_total"] > 0) print round($va_global["recolements_done"] / $va_global["recolements_total"] * 100, 2); ?>
-		% réalisé<br/>
+		<?php foreach($va_campagnes_rd as $rd => $va_campagnes) : ?>
+		<p>
+			<b><?php print $rd; ?></b><br/>
+			<?php print (int)count($va_campagnes["recolements"]); ?> campagnes<br/>
+			<?php print (int)$va_campagnes["global"]["recolements_done"]; ?> récolements enregistrés<br/>
+			<?php print (int)$va_campagnes["global"]["recolements_total"] - $va_campagnes["global"]["recolements_done"]; ?> récolements en attente<br/>
+			<?php print (int)$va_campagnes["global"]["recolements_total"]; ?> objets à récoler<br/>
+			<?php if ($va_campagnes["global"]["recolements_total"] > 0) print round($va_campagnes["global"]["recolements_done"] / $va_campagnes["global"]["recolements_total"] * 100); ?>
+			% réalisé<br/>
+		</p>
+		<?php endforeach; ?>
 	</div>
 </h3>
 <h3>Documentation :

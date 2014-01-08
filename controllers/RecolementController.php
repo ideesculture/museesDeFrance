@@ -11,8 +11,6 @@ class RecolementController extends ActionController
 {
 	# -------------------------------------------------------
 	protected $opo_config; // plugin configuration file
-	protected $opa_infos_campagnes;
-	protected $opa_infos_global;
 	protected $opa_infos_campagnes_par_recolement_decennal;
 	# -------------------------------------------------------
 	#
@@ -34,8 +32,6 @@ class RecolementController extends ActionController
 		}
 
 		$va_infos = $this->_computeInfos();
-		$this->opa_infos_global = $va_infos["global"];
-		$this->opa_infos_campagnes = $va_infos["campagnes"];
 		$this->opa_infos_campagnes_par_recolement_decennal = $va_infos["campagnes_par_recolement_decennal"];
 	}
 
@@ -79,26 +75,6 @@ class RecolementController extends ActionController
 			$campagne = new ca_occurrences();
 			$campagne->load(array('idno' => $idno));
 			$recolement_decennal = $campagne->get("recolement_decennal", array("convertCodesToDisplayText" => true));
-			/*
-			$campagnes[$idno]["recolement_decennal"] = $campagne->get("recolement_decennal", array("convertCodesToDisplayText" => true));
-			$campagnes[$idno]["occurrence_id"] = $campagne->get("occurrence_id");
-			$campagnes[$idno]["localisation"] = $campagne->get("ca_storage_locations.preferred_labels");
-			$campagnes[$idno]["localisation_code"] = $campagne->get("ca_storage_locations.idno");
-			$campagnes[$idno]["caracterisation"] = $campagne->get("campagne_caracterisation", array("convertCodesToDisplayText" => true));
-			$campagnes[$idno]["champs"] = $campagne->get("campagne_champs_c");
-			$campagnes[$idno]["conditionnement"] = $campagne->get("campagne_conditionnement");
-			$campagnes[$idno]["nombre"] = "A CALCULER";
-			$campagnes[$idno]["accessibilite"] = $campagne->get("campagne_accessibilite");
-			$campagnes[$idno]["idno"] = $campagne->get("idno");
-			$campagnes[$idno]["name"] = $campagne->get("preferred_labels");
-			$campagnes[$idno]["date_campagne"] = $campagne->get("date_campagne_c");
-			$campagnes[$idno]["date_campagne_prev"] = $campagne->get("campagne_date_prev");
-			$campagnes[$idno]["intervenants"] = $campagne->get("ca_entities");
-			$campagnes[$idno]["date_campagne_pv"] = $campagne->get("campagne_date_pv");
-			
-			$campagnes[$idno]["recolements_total"] = count($va_recolements_idnos);
-			$global["recolements_total"] = $global["recolements_total"] + $campagnes[$idno]["recolements_total"];
-			*/
 
 			// freaky thing just to be sure we always have the recolement_decennal value, even inside infos of a recolement via $idno
 			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["recolement_decennal"] = $recolement_decennal;
@@ -129,14 +105,11 @@ class RecolementController extends ActionController
 				$vs_done = $t_recolement->get('done', array("convertCodesToDisplayText" => true));
 				if ($vs_done == "oui") $vn_recolements++;
 			}
-			$campagnes[$idno]["recolements_done"] = $vn_recolements;
 			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["recolements_done"] = $vn_recolements;
-			$global["recolements_done"] = $global["recolements_done"] + $campagnes[$idno]["recolements_done"];
 			$campagnes_rd[$recolement_decennal]["global"]["recolements_done"] = $campagnes_rd[$recolement_decennal]["global"]["recolements_done"] + $vn_recolements;
 		}
-		$global["recolements_left"] = $global["recolements_total"] - $global["recolements_done"];
 		$campagnes_rd[$recolement_decennal]["global"]["recolements_left"] = $campagnes_rd[$recolement_decennal]["global"]["recolements_left"] - $campagnes_rd[$recolement_decennal]["global"]["recolements_done"];
-		return array("global" => $global, "campagnes" => $campagnes, "campagnes_par_recolement_decennal" => $campagnes_rd);
+		return array("campagnes_par_recolement_decennal" => $campagnes_rd);
 	}
 
 	private function extractFirstElementOfArray($array)
@@ -330,7 +303,7 @@ class RecolementController extends ActionController
 	# -------------------------------------------------------
 	public function Index()
 	{
-		$this->view->setVar('campagnes', $this->opa_infos_campagnes);
+		//$this->view->setVar('campagnes', $this->opa_infos_campagnes);
 		$this->view->setVar('campagnes_par_rd', $this->opa_infos_campagnes_par_recolement_decennal);
 		$this->render('recolement_list_grouped_html.php');
 	}
@@ -574,8 +547,7 @@ class RecolementController extends ActionController
 	# -------------------------------------------------------
 	public function Info($pa_parameters)
 	{
-		$this->view->setVar('campagnes', $this->opa_infos_campagnes);
-		$this->view->setVar('global', $this->opa_infos_global);
+		$this->view->setVar('campagnes_rd', $this->opa_infos_campagnes_par_recolement_decennal);
 		return $this->render('widget_recolement_info_html.php', true);
 	}
 }
