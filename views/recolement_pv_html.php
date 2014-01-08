@@ -14,9 +14,9 @@ $InfosPv = $this->getVar('InfosPv');
 <style>
 	progress {
 		display: block;
-		width: 90%;
+		width: 100%;
 		height: 2em;
-		margin: .5em 0;
+		margin: .5em 0 -5px 0;
 		border-radius: 5px;
 		background-color: #d4d4d4;
 	}
@@ -42,6 +42,10 @@ $InfosPv = $this->getVar('InfosPv');
 </style>
 
 <table class="listtable">
+	<tr class="odd">
+		<td>Récolement décennal</td>
+		<td><?php print $InfosPv["info"]["recolement_decennal"]; ?></td>
+	</tr>
 	<tr>
 		<td>Numéro de campagne</td>
 		<td><?php print $InfosPv["info"]["idno"]; ?></td>
@@ -77,14 +81,15 @@ $InfosPv = $this->getVar('InfosPv');
 	<tr>
 		<td>Avancement</td>
 		<td>
-			<progress id="avancement" value="<?php print (int)$campagne["recolements_done"]; ?>"
-				    max="<?php print $campagne["recolements_total"]; ?>" style="float:left;"></progress>
-			<span style="float:right;margin:10px;">
-				<a href="<?php print __CA_URL_ROOT__ . "/index.php/museesDeFrance/Recolement/PreparerCampagne/?idno=" .$InfosPv["info"]["idno"]; ?>"
-					title="Générer des fiches de récolements depuis un ensemble d'objets">
-				<img src="<?php print __CA_URL_ROOT__ ?>/themes/default/graphics/buttons/add.png"/>
-				</a>
-			</span>
+			<progress id="avancement" value="<?php print (int)$InfosPv["info"]["recolements_done"]; ?>"
+				    max="<?php print $InfosPv["info"]["recolements_total"]; ?>"></progress>
+			<br/>
+			<?php print (int)$InfosPv["info"]["recolements_done"]."/".$InfosPv["info"]["recolements_total"]; ?>
+			<?php print "(".round($InfosPv["info"]["recolements_done"] / $InfosPv["info"]["recolements_total"] * 100)."%)"; ?>
+			<a href="<?php print __CA_URL_ROOT__ . "/index.php/museesDeFrance/Recolement/PreparerCampagne/?idno=" .$InfosPv["info"]["idno"]; ?>"
+				title="Générer des fiches de récolements depuis un ensemble d'objets" style="float:right;">
+			<img src="<?php print __CA_URL_ROOT__ ?>/themes/default/graphics/buttons/add.png"/>
+			</a>
 		</td>
 	</tr>
 	<tr class="odd">
