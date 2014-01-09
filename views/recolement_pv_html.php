@@ -12,6 +12,19 @@ $InfosPv = $this->getVar('InfosPv');
 </h2>
 
 <style>
+	span.done, span.todo {
+		display: inline-block;
+		width:18px;
+		height:18px;
+		border-radius: 5px;
+		float:right;
+	}
+	span.done {
+		background-color: #1ab4c8;
+	}
+	span.todo {
+		background-color: #d4d4d4;
+	}
 	progress {
 		display: block;
 		width: 100%;
