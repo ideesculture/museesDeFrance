@@ -375,7 +375,6 @@ class RecolementController extends ActionController
 			)));
 			$t_recolement->update();
 			$t_former_recolement = new ca_occurrences($vn_former_recolement_id);
-			print "here";
 			$result = $this->_copyAttributes($t_former_recolement,$t_recolement,
 				array('presence_bien','mention_localisation'),
 				array('presence_bien_precedent','mention_localisation_precedent'));
