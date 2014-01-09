@@ -35,12 +35,15 @@ class RecolementController extends ActionController
 		$this->opa_infos_campagnes_par_recolement_decennal = $va_infos["campagnes_par_recolement_decennal"];
 	}
 
-	private function _copyAttributes($t_instance_from, $t_instance_to, $va_element_codes)
+	private function _copyAttributes($t_instance_from, $t_instance_to, $va_element_codes_from, $va_element_codes_to = null)
 	{
 		global $g_ui_locale_id;
 
+		// if no target setp or target not similar to source, target element = source element
+		if ( !$va_element_codes_to ) $va_element_codes_to=$va_element_codes_from;
+		if ( count($va_element_codes_to) != count($va_element_codes_from) ) return false;
 		$vs_table = $t_instance_from->tableName();
-		foreach ($va_element_codes as $vs_element_code) {
+		foreach ($va_element_codes_from as $vs_num => $vs_element_code) {
 			$va_values = $t_instance_from->get("{$vs_table}.{$vs_element_code}", array("returnAsArray" => true, "returnAllLocales" => true, 'forDuplication' => true));
 			if (!is_array($va_values)) {
 				continue;
@@ -50,7 +53,9 @@ class RecolementController extends ActionController
 				foreach ($va_values_by_locale as $vn_locale_id => $va_values_by_attr_id) {
 					foreach ($va_values_by_attr_id as $vn_attribute_id => $va_val) {
 						$va_val['locale_id'] = ($vn_locale_id) ? $vn_locale_id : $g_ui_locale_id;
-						$t_instance_to->addAttribute($va_val, $vs_element_code);
+						$va_val[$va_element_codes_to[$vs_num]] = $va_val[$va_element_codes_from[$vs_num]];
+						unset($va_val[$va_element_codes_from[$vs_num]]);
+						$t_instance_to->addAttribute($va_val, $va_element_codes_to[$vs_num]);
 					}
 				}
 			}
@@ -59,6 +64,8 @@ class RecolementController extends ActionController
 		$t_instance_to->update();
 
 		if ($t_instance_to->numErrors()) {
+			var_dump(join('; ', $t_instance_to->getErrors()));
+			die();
 			return join('; ', $t_instance_to->getErrors());
 		}
 		return true;
@@ -271,7 +278,9 @@ class RecolementController extends ActionController
 				$line++;
 				$pv_info["liste_objets_html"] .=
 					"<tr " . ($line == 1 ? " class=odd" : "") . "><td><a href=\"" . __CA_URL_ROOT__ . "/index.php/editor/occurrences/OccurrenceEditor/Edit/occurrence_id/" . $occurrence_id . "\"><img src=\"" . __CA_URL_ROOT__ . "/themes/default/graphics/buttons/edit.png\"></td>" .
-					"<td><b>" . $recolement->get("preferred_labels") . "</b></td>" .
+					"<td><b>" . $recolement->get("preferred_labels") . "</b>" .
+					($recolement->get('done', array("convertCodesToDisplayText" => true)) == "oui" ? "<span class='done'></span>" : "<span class='todo'></span>").
+					"</td>" .
 					"<td>" . $recolement->get("recolement", array("convertCodesToDisplayText" => 1)) . "</td>" .
 					"<td>" . $recolement->get("presence_bien", array("convertCodesToDisplayText" => 1)) . "</td>" .
 					"<td>" . $recolement->get("mention_localisation", array("convertCodesToDisplayText" => 1)) . "</b></td>";
@@ -317,7 +326,6 @@ class RecolementController extends ActionController
 		$this->view->setVar('rd', $ps_rd);
 		$this->render('recolement_tableau_suivi_html.php');
 	}
-
 	# -------------------------------------------------------
 	public function Pv()
 	{
@@ -326,60 +334,6 @@ class RecolementController extends ActionController
 
 		$this->view->setVar('InfosPv', $InfosPv);
 		$this->render('recolement_pv_html.php');
-	}
-
-	# -------------------------------------------------------
-	private function _createRecolementFromObject($vn_object_id = null, $vn_campagne_id = null)
-	{
-		if (!$vn_object_id) return false;
-
-		$t_rel_types = new ca_relationship_types();
-		$t_list = new ca_lists();
-		$t_locale = new ca_locales();
-		$vn_rel_occ_occ = $t_rel_types->getRelationshipTypeID('ca_occurrences_x_occurrences', 'related');
-		$vn_recole_obj_occ = $t_rel_types->getRelationshipTypeID('ca_objects_x_occurrences', 'recole');
-		$vn_recolement_type = $t_list->getItemIDFromList('occurrence_types', 'recolement');
-		$pn_locale_id = $t_locale->loadLocaleByCode('fr_FR');
-
-		$t_object = new ca_objects($vn_object_id);
-		$vs_label = $t_object->get('ca_objects.preferred_labels.name');
-
-		$t_recolement = new ca_occurrences();
-		$t_recolement->setMode(ACCESS_WRITE);
-		if ($vn_campagne_id) {
-			$campagne = new ca_occurrences($vn_campagne_id);
-			$campagne_idno = $campagne->get('idno');
-		}
-		$t_recolement->set('idno', $t_object->get("idno") . "RECOL" . $campagne_idno);
-		$t_recolement->set('status', 0);
-		$t_recolement->set('access', 1);
-		$t_recolement->set('type_id', $vn_recolement_type);
-
-
-		$vn_recolement_id = $t_recolement->insert();
-		if ($t_recolement->numErrors()) print "ERROR INSERTING :" . join('; ', $t_recolement->getErrors()) . "\n";
-
-		// Recopie des attributs Dimensions et Constat d'état depuis l'objet lié au récolement
-		$result = $this->_copyAttributes($t_object, $t_recolement, array('dimensions', 'constatEtat'));
-		if ($result !== true) {
-			var_dump($result);
-			print "Erreur : la copie d'attributs a échoué.";
-			return false;
-		}
-
-		if ($vn_campagne_id) {
-			$t_recolement->addRelationship('ca_occurrences', $vn_campagne_id, $vn_rel_occ_occ);
-		}
-		$t_recolement->addRelationship('ca_objects', $vn_object_id, $vn_recole_obj_occ);
-		$t_recolement->update();
-		$t_recolement->addLabel(array('name' => $vs_label), $pn_locale_id, null, true);
-		$t_recolement->update();
-		if ($t_recolement->numErrors()) {
-			print "ERROR INSERTING :" . join('; ', $t_recolement->getErrors()) . "\n";
-			return false;
-		}
-
-		return true;
 	}
 	# -------------------------------------------------------
 	private function _createRecolement($vn_object_id = null, $vn_campagne_id = null, $vn_former_recolement_id = null)
@@ -416,11 +370,46 @@ class RecolementController extends ActionController
 			// we have a forme recolement, copy some data from
 			$result = $t_recolement->copyAttributesFrom($vn_former_recolement_id, array('restrictToAttributesByCodes'=>array(
 				'dimensions', 'constatEtat', 'domaine', 'materiaux_tech_c', 'datePeriod', 'dateMillesime', 'objectProductionDate', 'useMethod', 'credits_photo',
-				'mention_localisation', 'presence_bien', 'recol_presence_inventaire_c', 'numinventaire_expertise', 'recol_presence_num_c', 'conformite',
+				'recol_presence_inventaire_c', 'numinventaire_expertise', 'recol_presence_num_c', 'conformite',
 				'source_type', 'inscription_recolement', 'recolement_suites_c', 'recol_suites_plaintes_c', 'recol_ensemble_complexe'
 			)));
 			$t_recolement->update();
-			// refaire relation avec ca_storage_locations liés
+			$t_former_recolement = new ca_occurrences($vn_former_recolement_id);
+			print "here";
+			$result = $this->_copyAttributes($t_former_recolement,$t_recolement,
+				array('presence_bien','mention_localisation'),
+				array('presence_bien_precedent','mention_localisation_precedent'));
+
+			// patchy solution for date parsing needed to go DD/MM/YYYY
+			$vs_date_recolement = $t_former_recolement->get('recolement_date');
+			$vs_locale = setlocale(LC_TIME, 0);
+			setlocale(LC_TIME, 'fr_FR');
+			foreach(range(1, 12) as $i){
+				$month = strftime('%B', mktime(0, 0, 0, $i));
+				$vs_date_recolement = str_ireplace(" ".$month." ","/".$i."/",$vs_date_recolement);
+			}
+			setlocale(LC_TIME, $vs_locale);
+			$t_recolement->addAttribute(array("recolement_date_precedent"=>$vs_date_recolement),"recolement_date_precedent");
+			$t_recolement->update();
+
+			// Copy storage locations relations
+			$va_storage_locations_rel = $t_former_recolement->get("ca_storage_locations",array("returnAsArray" => 1));
+			foreach($va_storage_locations_rel as $va_storage_location_rel) {
+				$t_recolement->addRelationship(
+					"ca_storage_locations", // relation table name
+					$va_storage_location_rel["location_id"], // row id to link
+					$va_storage_location_rel["relationship_type_id"] // type id
+				);
+				$t_recolement->update();
+			}
+
+			// Creating a relation former/new
+			$t_recolement->addRelationship(
+				"ca_occurrences",
+				$vn_former_recolement_id,
+				"related"
+			);
+			$t_recolement->update();
 		} else {
 			// no former recolement, copy some data from the object
 			$result = $this->_copyAttributes($t_object, $t_recolement, array(
