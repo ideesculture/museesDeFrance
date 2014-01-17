@@ -376,8 +376,15 @@ class RecolementController extends ActionController
 			$t_recolement->update();
 			$t_former_recolement = new ca_occurrences($vn_former_recolement_id);
 			$result = $this->_copyAttributes($t_former_recolement,$t_recolement,
-				array('presence_bien','mention_localisation'),
-				array('presence_bien_precedent','mention_localisation_precedent'));
+				array('presence_bien'),
+				array('presence_bien_precedent'));
+
+			// getting older value of mention_localisation, as it is a container we need to map old value to new ones
+			$va_mention_localisation_prec = reset($t_former_recolement->get("mention_localisation", array("returnAsArray" => true, 'forDuplication' => true)));
+			$va_mention_localisation_prec["mention_localisation_prec_loc"] = $va_mention_localisation_prec["mention_localisation_loc"];
+			unset($va_mention_localisation_prec["mention_localisation_loc"]);
+			$va_mention_localisation_prec["mention_localisation_prec_date"] = $va_mention_localisation_prec["mention_localisation_date"];
+			unset($va_mention_localisation_prec["mention_localisation_date"]);
 
 			// patchy solution for date parsing needed to go DD/MM/YYYY
 			$vs_date_recolement = $t_former_recolement->get('recolement_date');
@@ -385,9 +392,16 @@ class RecolementController extends ActionController
 			setlocale(LC_TIME, 'fr_FR');
 			foreach(range(1, 12) as $i){
 				$month = strftime('%B', mktime(0, 0, 0, $i));
+				// Date cleaning for recolement and mention_localisation
 				$vs_date_recolement = str_ireplace(" ".$month." ","/".$i."/",$vs_date_recolement);
+				$va_mention_localisation_prec["mention_localisation_prec_date"] = str_ireplace(" ".$month." ","/".$i."/",
+					$va_mention_localisation_prec["mention_localisation_prec_date"]);
 			}
 			setlocale(LC_TIME, $vs_locale);
+			
+			$t_recolement->addAttribute($va_mention_localisation_prec,"mention_localisation_precedent");
+			$t_recolement->update();
+				
 			$t_recolement->addAttribute(array("recolement_date_precedent"=>$vs_date_recolement),"recolement_date_precedent");
 			$t_recolement->update();
 
