@@ -129,7 +129,7 @@ class museesDeFrancePlugin extends BaseApplicationPlugin
 				$va_menu_items = array();
 			}
 			$va_menu_items['recolementsmf'] = array(
-				'displayName' => _t('PV de récolement'),
+				'displayName' => _t('Suivi du récolement'),
 				"default" => array(
 					'module' => 'museesDeFrance',
 					'controller' => 'Recolement',
