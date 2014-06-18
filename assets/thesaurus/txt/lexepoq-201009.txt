@@ -1,0 +1,796 @@
+Liste des époques / styles
+
+Mise à jour semtembre 2010
+
+époque
+	préhistoire Europe occidentale
+		paléolithique
+			paléolithique ancien = paléolithique inférieur
+				pebble culture
+				abbevillien
+				acheuléen
+					acheuléen ancien
+					acheuléen moyen
+					acheuléen supérieur
+			paléolithique moyen
+				clactonien
+				moustérien
+				moustéro levalloisien
+			paléolithique supérieur
+				sébilien
+				périgordien inférieur
+				périgordien final
+				aurignacien
+				gravettien
+				solutréen
+				protomagdalénien
+				magdalénien
+					magdalénien ancien
+					magdalénien moyen
+					magdalénien supérieur
+				style I
+				style II
+				style III
+				style IV
+		mésolithique
+			azilien
+		néolithique
+			badarien
+			néolithique ancien
+				cardial
+				épicardial
+				michelsberg
+			néolithique moyen
+				chasséen
+			néolithique final
+				campaniforme
+			néolithique récent
+		chalcolithique = âge du cuivre
+		âge du bronze
+			bronze ancien
+				bronze ancien A2
+			bronze moyen
+				bronze moyen atelier zone atlantique
+				bronze moyen C
+			bronze récent
+			bronze final
+				bronze final atelier zone atlantique
+				bronze final atelier zone continentale
+				bronze final I
+				bronze final II
+					bronze final IIa
+					bronze final IIb
+				bronze final III
+					bronze final IIIa
+					bronze final IIIb
+		âge du fer = âges du fer
+			premier âge du fer = 1er âge du fer
+				Hallstatt
+					Hallstatt ancien
+					Hallstatt final
+			second âge du fer = 2ème âge du fer
+				Tène
+					Tène ancienne
+					Tène moyenne
+					Tène finale
+					Tène I
+					Tène II
+					Tène III
+					Tène A
+					Tène B
+						Tène B 1
+						Tène B 2
+					Tène C
+						Tène C 1
+						Tène C 2
+					Tène D
+						Tène D 1
+						Tène D 2
+			celte
+			gaulois
+	Chypre = chypriote
+		néolithique à céramique peignée
+		chalcolithique I
+		chalcolithique II
+		âge du bronze chypriote
+			bronze chypriote ancien
+				bronze chypriote ancien I
+				bronze chypriote ancien II
+				bronze chypriote ancien III
+			bronze chypriote moyen
+				bronze chypriote moyen I
+				bronze chypriote moyen II
+				bronze chypriote moyen III
+			bronze chypriote récent
+				bronze chypriote récent I
+				bronze chypriote récent II
+				bronze chypriote récent III
+		âge du fer chypriote
+			chypro-géométrique
+				chypro-géométrique I
+				chypro-géométrique II
+				chypro-géométrique III
+				chypro-archaïque
+					chypro-archaïque I
+					chypro-archaïque II
+			chypro-classique
+				chypro-classique I
+				chypro-classique II
+		hellénistique chypriote
+		romain chypriote
+	Egypte = époque égyptienne
+		époque prédynastique
+			Nagada
+				Nagada I = amratien
+					Nagada I A
+					Nagada I B
+					Nagada I C
+				Nagada II = gerzéen
+					Nagada II A
+					Nagada II B
+					Nagada II C
+					Nagada II D
+						Nagada II D 2
+				Nagada III = dynastie 0 = époque préthinite
+					Nagada III B
+		époque thinite
+			Ière dynastie = Ière dyn
+				Roi scorpion
+				Roi ka
+				Menès
+				Narmer
+				Aha
+				Djer
+				Djet
+				Ouadji
+				Roi serpent
+				Den
+				Oudimou
+				Adjib
+				Semerkhet
+				Qa
+			IIe dynastie = IIe dyn
+				Hotepsekhemoui
+				Raneb
+				Nineter
+				Ouneg
+				Senedj
+				Peribsen
+				Aka
+				Neferkasokar
+				Khasekhem
+				Kkhasekhemoui
+		ancien empire
+			IIIe dynastie = IIIe dyn
+				Sanakht nebka
+				Djeser neterierkhet
+				Sekhemkhet
+				Khaba
+				Houni
+				Qahedjet
+			IVe dynastie = IVe dyn
+				Séfrou
+				Chéops
+				Didoufri
+				Chéphren
+				Baoufre
+				Mycérinous
+				Chepseskaf
+				Dedefptah
+			Ve dynastie = Ve dyn
+				Ouserkaf
+				Sahoure
+				Néferirkare Kakai
+				Chepseskare Isi
+				Néferefre
+				Niouserre
+				Menkaouhor Akaouhor
+				Djedkare Isesi
+				Ounas
+			VIe dynastie = VIe dyn
+				Teti
+				Ouserkare
+				Pepi I
+				Merenre Antiemsaf I
+				Pepi II
+				Merenre Antiemsaf II
+				Neterikare
+				Nitocris
+		1ère période intermédiaire = 1ère per inter
+			VIIe dynastie = VIIe dyn
+				Neferkare le jeune
+				Neferkare Nebi
+				Djedkare Chemai
+				Neferkare Khendou
+				Merienhor
+				Neferkamin
+				Nikare
+				Neferkare tererou
+				Neferkahor
+			VIIIe dynastie = VIIIe dyn
+				Ouadjkare pepiseneb
+				Neferkamin anou
+				Kakare ibi
+				Neferkare V
+				Neferkaouhor Kapouibi
+				Neferirkare
+			dynasties hérakléopolitaines
+				IXe dynastie = IXe dyn
+					Meriibre kheti
+					Neferkare vi
+					Nebkaoure kheti
+					Setout
+				Xe dynastie = Xe dyn
+					Merihathor
+					Neferkare VII
+					Ouahkare kheti
+					Merikare
+		moyen empire
+			XIe dynastie = XIe dyn
+				Sehertaoui Antef I
+				Mentouhotep I
+				Ouahankh Antef II
+				Nakhtnebtepnefer Antef III
+				Nebhepetre Mentouhotep II
+				Seankhkare Mentouhotep III
+				Nebtaouire Mentouhotep IV
+			XIIe dynastie = XIIe dyn
+				début XIIe dynastie = début XIIe dyn
+					Amenemhat I
+					Sesostris I
+					Amenemhat II
+					Sesostris II
+				fin XIIe dynastie = fin XIIe dyn
+				Sesostris III
+					Amenemhat III
+					Amenemhat IV
+					Nefrousebek
+		2e période intermédiaire = 2e per inter
+			XIIIe dynastie et XIVe dynastie = XIIIe dyn et XIVe dyn
+				XIIIe dynastie = XIIIe dyn
+				Sekhemre Khoutaoui Amenemhat Sebekhotep
+				Seankhtaoui Sekhemkare
+				Sekhemre Khoutaoui Penten
+				Sekhemkare Amenemhat Senbouf
+				Heribchedet Amenemhat
+				Sehetepibre Amenemhat
+				Seankhibre Ameni Antef Amenemhat
+				Hotepibre Amou Sahornedjheriotef
+				Sebekhotep fils de Mentouhotep
+				Renseneb
+				Aouibre Hor
+				Sedjefakare Kai Amenemhat
+				Khoutaouire Ougaf
+				Seneferibre Sesostris IV
+				Ouserkare Khendjer
+				Nikhanimaatre Khendjer
+				Semenkhkare Mermecha
+				Seneferkare Iby
+				Sethkare
+				Sekhemre Ouadjkhaou Sebekemsaf
+				Sekhemre Seouadjtaoui Sebekhotep
+				Khasekhemre Neferhotep
+				Khaneferre Sebekhotep
+				Khaankhre Sebekhotep
+				Mersekhemre Neferhotep
+				Merkare
+				Khahetepre Sebekhotep
+				Sekhemre Seankhtaoui Neferhotep
+				Ouahibre Yayebi
+				Merneferre Iy
+				Merhetepre Ini
+				Mersekhemre Ined
+				Merkaoure Sebekhotep
+				Djedneferre Didoumes
+				Djedhetepre Didoumes
+				Seouahenre Senebmiou
+				Meriankhre Mentouhotep
+				Djedankhre Mentouemsaf
+				Menkhaoure Senaaib
+				Nehesi
+			époque hyksos
+				XVe dynastie = XVe dyn
+					Maibre Chechi
+					Merouserre Yakoubher
+					Seouserenre Khian
+					Aouserre Apopi
+					Aqenenre Apopi
+					Asehre Khamoudi
+				XVIe dynastie = XVIe dyn
+					Anather
+					Semqen
+					Khaouserre
+					Seket
+					Ahetepre
+					Sekhaenre
+					Amou
+					Nebkhepechre Apopi
+			reconquête thébaine
+				XVIIe dynastie = XVIIe dyn
+					Sekhemre Ouahkhaou Rahotep
+					Sekhemre Oupmaat Antef l'ainé
+					Sekhemre Herouhermaat Antef
+					Sekhemre Chedtaoui Sebekemsaf
+					Sekhemre Sementaoui Djehouti
+					Seankhenre Mentouhotep
+					Seouadjenre Nebirieraout
+					Neferkare Nebirieraout
+					Semenmedjatre
+					Seouserenre
+					Sekhemre Chedouast
+					Nebkheperre Antef
+					Senakhtenre
+					Seqenenre Taa
+					Kamose
+		nouvel empire
+			second empire thébain
+				XVIIIe dynastie = XVIIIe dyn
+					début XVIIIe dynastie = début XVIIIe dyn
+						Amosis
+						Aménophis I
+						Thoutmosis I
+						Thoutmosis II
+						Hatchepsout
+						Thoutmosis III
+					milieu XVIIIe dynastie = milieu XVIIIe dyn
+						Aménophis II
+						Thoutmosis IV
+						Aménophis III
+					époque amarnienne
+						Aménophis IV Akhénaton
+						Sémenkhkare
+					fin XVIII dynastie = fin XVIIIe dyn
+						Toutankhamon
+						Ay
+						Horemheb
+			époque ramesside
+				XIXe dynastie = XIXe dyn
+					Ramsès I
+					Sethi I
+					Ramsès II
+					Minéptah
+					Amenmes
+					Séthi II
+					Mineptah Siptah
+					Ramsès Siptah
+					Siptah
+					Taousert
+				XXe dynastie = XXe dyn
+					Sethnakht
+					Ramsès III
+					Ramsès IV
+					Ramsès V
+					Ramsès VI
+					Ramsès VII
+					Ramsès VIII
+					Ramsès IX
+					Ramsès X
+					Ramsès XI
+						ère de la renaissance
+						Hérihor
+		basse époque
+			3e période intermédiaire = 3e per inter
+				XXIe dynastie = XXIe dyn
+					rois tanites
+						Smendès I
+						Aménèmnesou
+						Psousennes I
+						Aménémope
+						Osochor
+						Siamon
+						Psousennes II
+					grands prêtres et rois prêtres
+						Piankh
+						Pinedjem I
+						Masaharte
+						Djedkhonsouioufankh
+						Menkheperre
+						Smendes II
+						Pinedjem II
+						psousennes III
+				XXIIe dynastie = XXIIe dyn
+					Chechonq I
+					Osorkon I
+					Chechonq II
+					Takelot I
+					Osorkon II
+					Harsiese
+					Takelot II
+					Chechonq III
+					Pami
+					Chechonq V
+					Osorkon IV
+				XXIIIe dynastie = XXIIIe dyn
+					Pedoubast I
+					Ioupout I
+					Chechonq IV
+					Osorkon III
+					Takelot III
+					Roudamon
+					Ioupout II
+					Chechonq VI
+				XXIVe dynastie = XXIVe dyn
+					Tefnakht
+					Bocchoris
+				XXVe dynastie = XXVe dyn = époque éthiopienne
+					Piankhi
+					Chabaka
+					Chabataka
+					fin XXVe dynastie = fin XXVe dyn
+						Taharqa
+						Tanoutamon
+			XXVIe dynastie = XXVIe dyn = époque saïte
+				début XXVIe dynastie = début XXVIe dyn
+					Psammétique I
+					Nékao II
+				fin XXVIe dynastie = fin XXVIe dyn
+					psammétique II
+					Apriès
+					Amasis
+					Psammétique III
+					Pédoubast II
+			XXVIIe dynastie = XXVIIe dyn
+			1ère domination perse = 1ère dom perse
+				Cambyse
+				Darius I
+				Xerxès
+				Artaxerxès
+				Darius II
+			XXVIII dynastie = XXVIIIe dyn
+				Amyrtée
+			XXIXe dynastie = XXIXe dyn
+				Néphérites I
+				Mouthis
+				Psammouthis
+				Achoris
+				Néphérites II
+			XXXe dynastie = XXXe dyn = époque sébennytique
+				Nectanebo I
+				Téos
+				Nectanébo II
+			2e domination perse = 2e dom perse
+				Artaxerxès III Ochos
+				Arsès
+				Darius III Codoman
+			époque ptolémaïque
+				Alexandre le Grand
+				Philippe Arrhidée
+				Alexandre IV
+				Ptolémée I Soter I
+				Ptolémée II Philadelphe
+				Ptolémée III Evergète I
+				Ptolémée IV Philopatôr
+				Ptolémée V Epiphane
+					Harmachis
+					Anchmachis
+				Ptolémée VI Philometor
+				Ptolémée VII Néos Philopâtor
+				Ptolémée VIII Evergète II
+					Harsiesis
+				Ptolémée IX Soter II
+				Ptolémée X Alexandre I
+				Ptolémée XI Alexandre II
+				Ptolémée XII Néos Dionysos
+				Cléopâtre VII Philopâtor
+				Ptolémée XIII
+				Ptolémée XIV
+				Ptolémée XV César
+	civilisations italiques
+		âge du bronze italique
+		âge du fer italique
+			protovillanovien
+			villanovien
+		étrusque
+			orientalisant étrusque
+			classique étrusque = intermédiaire étrusque
+			hellénistique étrusque
+		romain = époque romaine
+			romain républicain
+			romain impérial
+				Auguste
+				Tibère
+				Caligula
+				Claude I
+				Néron
+				Vespasien
+				Titus
+				Domitien
+				Nerva
+				Trajan
+				Hadrien
+				Antonin le pieux
+				Marc Aurèle
+				Commode
+				Pescennius Niger
+				Septime Sévère
+				Caracalla
+				Macrin
+				Elagabale
+				Sévère Alexandre
+				Maximin I
+				Gordien III
+				Philippe I
+				Trajan Dece
+				Trebonien Galle
+				Volusien
+				Valérien I
+				Gallien
+				Claude II
+				Aurélien
+				Tacite
+				Probus
+				Carin
+				Numerien
+				Dioclétien
+				Maximien
+				Constance
+				Galère
+				Maxence
+				Licinius
+				Maximin II
+				Constantin I
+				Constantin II
+				Constan
+				Constance II
+				Magnence
+				Julien II
+				Valentinien I
+				Gratien
+				Valens
+				Valentinien II
+				Théodose I
+				Arcadius
+				Maxime
+				Victor
+				Eugène
+				Honorius
+				Théodose II
+				Jean
+				Valentinien III
+				Marcien
+				Avitus
+				Majorian
+				Leo I
+				Severus III
+				Anthemius
+				Zeno
+				Julus Nepos
+				Basiliscus
+				Marcus
+				Romulus Augustus
+			bas-empire
+			haut-empire
+			antiquité tardive
+				romain tardif
+		gallo-romain = gallo romain
+	Grèce = époque grecque
+		âge du bronze grec
+			âge du bronze grec ancien
+				cycladique
+					cycladique I
+					cycladique II
+					cycladique III
+			âge du bronze grec moyen
+				minoen = crétois
+					minoen I
+					minoen moyen III
+					minoen récent I
+						minoen récent I B
+					minoen récent II
+					minoen récent III
+						minoen récent III A
+						minoen récent III B
+			âge du bronze grec récent
+				mycénien = helladique
+					mycénien II
+					mycénien III
+					mycénien récent
+						mycénien récent II
+							mycénien récent II A
+							mycénien récent II B
+						mycénien récent III
+							mycénien récent III A
+							mycénien récent III B
+							mycénien récent III C
+					submycénien
+		âge du fer grec
+			protogéométrique
+			géométrique
+				géométrique ancien
+				géométrique moyen
+				géométrique récent
+					géométrique récent I
+					géométrique récent II
+				subgéométrique
+		orientalisant
+			protocorinthien
+		archaïque
+		classique
+		hellénistique
+	Iran
+		Suse
+			Suse I
+		Epoque des Dynasties archaïques
+		âge du fer
+			âge du fer I
+			âge du fer II
+	Talyche
+		âge du bronze
+			bronze récent III
+	époque aztèque
+		Tulamazapan
+		Teotihuacan
+	époque byzantine = byzantin
+	gréco romain = gréco-romain
+	époque arabe
+	époque copte
+	époque chrétienne = chrétien
+	moyen âge = époque médiévale
+		haut moyen âge
+			mérovingien
+			carolingien
+		bas moyen âge
+	époque moderne
+		Renaissance
+		époque Louis XIII
+		époque Louis XIV
+		époque Régence
+		époque Louis XV
+		époque Louis XVI
+	époque contemporaine
+		époque Directoire
+		époque premier Empire
+		époque Restauration
+		époque Louis-Philippe = époque Louis Philippe
+		époque second Empire = époque Napoléon III
+		époque deuxième République
+		époque troisième République
+	cultures nubiennes et soudanaises
+	époque kouchite
+	époque méroïtique
+	époque sassanide
+	Chine = époque chinoise
+		Cinq Dynasties = époque Cinq Dynasties
+		Jiajing = époque Jiajing
+		Kangxi = époque Kangxi
+		Liao = époque Liao
+		Ming = époque Ming
+		Qing = époque Qing
+			Qianlong = époque Qianlong
+		Royaumes combattants = époque des Royaumes combattants
+		Shang = époque Shang
+		Song = époque Song
+			Song du Nord = époque Song du Nord
+			Song du Sud = époque Song du Sud
+		Tang = époque Tang
+		Tang du Sud = époque Tang du Sud
+		Wanli = époque Wanli
+			Yongzheng = époque Yongzheng
+		Yuan = époque Yuan
+	Japon = époque japonaise
+		Edo = époque Edo
+
+mouvement
+	Académisme
+	Bande Noire
+	Baroque
+	Cézannisme
+	Classicisme
+	Cubisme
+	Fauvisme
+	Impressionnisme
+	Luminisme
+	Nabis
+	Naturalisme
+	Néo-Classicisme
+	Néo-Impressionnisme
+	Orientalisme
+	Post-Impressionnisme
+	Pré-Fauvisme
+	Pré-Impressionnisme
+	Réalisme
+	Romantisme
+	Symbolisme
+style
+	alexandrin
+	égyptisant
+	islamique
+	hellénisant (ce qui s'inspire de la Grèce)
+		néo attique
+		style de Cales
+		style de Gnathia
+		vernis noir
+			vernis noir campanien
+				campanienne A
+				campanienne B
+				campanienne C
+		peinture murale romaine
+			1er style
+			2e style
+			3e style
+			4e style
+	style grec et italique
+		apulianisant
+		atticisant
+		archaïsant
+		bucchero
+			bucchero ancien
+			bucchero moyen
+			bucchero récent
+			bucchero gris = bucchero éolien
+		classicisant
+		corinthianisant
+		daunien
+		figures noires
+			corinthien
+				corinthien style de transition
+				corinthien ancien
+				corinthien moyen
+				corinthien récent
+					corinthien récent I
+					corinthien récent II
+			style de Fikellura
+			style du Cabirion
+			technique de six
+			figures noires étrusques = étrusco corinthien
+		figures rouges
+			style de Kertch
+		fond blanc
+			fond blanc I
+			fond blanc II
+		décor non figuré
+			argien monochrome
+			céramique ionienne à bande
+			figures rouges étrusques
+				figures rouges à peinture superposée
+		impasto
+			impasto ancien
+			impasto récent
+		ionien
+			style des chèvres sauvages
+		italiote
+		italique
+	style Art déco = Art déco
+	style Art nouveau = Art nouveau
+	style Biedermeier
+	style Byzantin
+	style chinois
+		style Qing
+	style Charles X
+	style Directoire
+	style Empire
+	style Gothique
+		style Gothique primitif = Gothique primitif
+		style Gothique tardif = Gothique tardif
+	style hispano-mauresque
+	style japonisant Imari
+	style Jugendstil = Jugendstil
+	style Kakiemon
+	style Kangxi
+	style Louis XIV
+	style Louis XV
+	style Louis XVI
+	style Louis Philippe
+	style Mosan
+	style néo-Classique = style néo Classique
+	style néo-Louis XIII = style néo Louis XIII
+	style néo-Renaissance = style néo Renaissance
+	style néo-Rocaille = style néo Rocaille
+	style Renaissance
+	style Restauration
+	style Restauration anglaise
+	style Rocaille = style Rococo
+	style Roman = art Roman
+	style transition Louis XV-Louis XVI
+	style Troubadour
+
+affixe
+	antiquité
+	époque indéterminée
+	moyen
+	récent
+	tardif
+	début
+	fin
+	?
+

@@ -1,0 +1,2900 @@
+Liste des techniques et matériaux
+
+Mise à jour septembre 2010
+
+
+technique bois_ivoire
+	abrasé
+		abrasé douci
+		abrasé limé râpé
+		abrasé poli
+	ajouré
+		ajouré à l'emporte pièce
+		orbevoie
+		percé
+	application
+	argenté
+		argenté bruni
+		argenté réparé
+		articulé
+		collé = collage 
+		clouté = cloutage 
+		ligature
+		chevillé
+		queue d'aronde
+		tenon et mortaise = assemblé par tenon et mortaise  = assemblage par tenon et mortaise 
+	biseauté
+	cerclé
+	cintré
+	ciré
+	chantourné
+	courbé
+		courbé moulé
+	cranté
+	découpé
+	doré
+		dorure à la feuille
+		doré bruni
+		doré réparé
+	durci au feu
+	en éclisse
+	enduit
+	évidé
+	faux doré
+	galbé
+		débillardé
+	incrustation
+		impastation
+	laque
+		laque du Japon
+	lustré
+	marqueterie
+	monoxyle
+	mouluré
+		cannelé
+			cannelé torsadé
+		côtelé
+		godronné
+	noirci
+	ondé
+	peint
+		badigeon
+		cérusé
+		peint à l'éponge
+		peint au peigne
+		peint au pochoir
+		peint au tampon
+		peint au vaporisateur
+		peint sur apprêt
+		polychrome
+	placage
+		frisage = plaqué-marqueté à frisage 
+			frisage à la pointe de diamant
+			frisage en carré
+			frisage en croix
+			frisage en fougère
+		placage uni
+	platiné
+		platiné bruni
+	pointillé
+	raclé = raclage 
+	réchampi = rechampi 
+	sciage = scié 
+	stratifié
+	strié
+	stuqué
+	surmodelé
+	taillé
+		bloc partiellement dégrossi
+		taille avec mise aux points
+		taille directe
+		taille en réserve
+			taille en réserve à fond de cuvette
+	teinté
+	tourné = tournage 
+	tracé
+		décoré à la roulette
+		pyrogravé
+		tracé ciselé
+		tracé gravé
+	vernis
+		vernis Martin
+		vernis noir
+	vissé
+technique céramique
+	cuisson
+		avant cuisson
+		coeur noir
+		cuisson à l'air libre
+		cuisson en oxydation
+		cuisson en réduction
+		dégourdi
+		enfumé = enfumage 
+		recuit
+	dégraissant
+		dégraissant végétal
+		dégraissant minéral
+	façonnage = façonné 
+		coulage = coulé 
+		façonnage à la main = façonné à la main 
+			façonnage au colombin = façonné au colombin 
+		façonnage au tour = façonné au tour 
+			façonnage à la tournette = façonné à la tournette 
+		façonnage sur noyau = façonné sur noyau 
+		façonnage à la plaque = façonné à la plaque 
+		façonnage au battoir = façonné au battoir 
+		façonnage au galet = façonné au galet 
+		foré
+			moulage bivalve
+			moulage monovalve
+			moulé calibré = calibré 
+		tournassé = façonné au tournasin 
+	revêtement et décor
+		argenté
+			argenté bruni
+		barbotine = pâte d'application  = pâte sur pâte 
+		bucchero
+		chatironné
+		coulure
+			coulure dirigée
+			coulure peignée
+		crépissage
+		décor à froid
+			application
+			cloisonné
+				grain de riz = jours cloisonnés 
+			découpé
+			dépressions
+			excision
+				ajouré
+				champlevé
+			grattage
+				gravé au trait
+					gravé à la pointe
+					gravé au peigne
+				lithophanie
+				sgraffite = vernis gratté  = sgraffiti 
+					a sgraffiato
+					double sgraffite
+			guilloché
+			impression = par impression  = impressionné 
+				impression simple = estampé 
+					estampé en relief
+					estampé en creux
+						estampé à l'ongle
+						estampé à la corde
+						estampé à la coquille
+						estampé à la pointe
+						estampé au doigt
+						estampé au peigne
+						estampé au pouce
+					estampé matrice
+						estampé au cachet
+						estampé au sceau
+				impression basculée = rocker-stamping  = rocking 
+					impression à la coquille
+					impression au poinçon
+				impression roulée
+					impression à la molette
+					impression au rouleau
+				moulé estampé
+					sigillée
+			incision = incisé 
+				pseudo incision
+			incrustation = décor incrusté 
+			lissage = lissé 
+				lissé bruni
+			lustré = lustrage  = lustrée 
+			marbrure dans la masse
+				décor plastique
+					bosselage
+					bouton
+					cordon
+				décor par colombins apparents
+					décor de colombins ondulés
+				modelage à facettes = modelé à facettes 
+			repercé
+				repercé comblé
+			repoussé
+				godronné
+			taillé
+		décor à l'éponge
+		décor à la corne = décor au barolet 
+		décor de grand feu = grand feu 
+		décor de petit feu = feu de moufle  = petit feu 
+		décor en réserve
+		décor sous couverte
+		décor sur couverte
+		doré
+			bruni à l'effet
+		engobe
+			engobe juxtaposé
+			engobe partiel
+			engobe simple
+			engobes superposés grattés = peint engobe double 
+		filé
+			filé rubané
+			filé or
+		fond
+			fond agate = fond agatisé 
+			fond blanc
+			fond bleu
+				fond bleu agate
+				fond bleu azur
+				fond beau bleu
+				fond bleu d'empoi
+				fond bleu lapis
+				fond bleu marbré
+				fond bleu pâle
+				fond bleu persan
+				fond bleu turquoise
+			fond brun
+			fond caillouté = fond caillou 
+				fond caillou d'Egypte
+			fond céladon
+			fond corail
+			fond d'or
+				fond d'or laminé
+			fond écaille
+			fond flambé
+			fond gris
+			fond gros vert
+			fond jaspé
+			fond jaune
+			fond lavande
+			fond lilas
+			fond nankin
+			fond nigoshide = fond crème 
+			fond noir
+			fond poudré
+			fond pourpre
+			fond rose
+			fond rouge
+			fond vert
+				fond vert antique
+				fond vert de chrome
+			fond violet
+		glaçure = couverte 
+			a berrettino
+			cristallisation
+			émail monochrome
+				bianco
+				bianco sopra bianco
+			glaçure à l'étain = glaçure stannifère 
+				glaçure à l'étain colorée
+			glaçure à la cendre
+				glaçure à nucléation
+			glaçure argileuse mixte
+			glaçure champlevée = champlevé glacé 
+				mitrahineh
+			glaçure au plomb
+			glaçure au sel
+			glaçure à l'oxyde de plomb
+			glaçure craquelée colorée
+			glaçure craquelée incolore
+			glaçure cristallisée colorée
+			glaçure cristallisée incolore
+			glaçure opaque
+			glaçure plombifère = plommure  = vernissé 
+			glaçure transparente
+				glaçure transparente colorée
+				glaçure transparente incolore
+			coperta = kwaart 
+			goutte d'huile = tache d'huile 
+			lustre burgos
+			lustre métallique
+				lustre de platine
+			superposition
+			tressaillage = craquelure 
+		graphitage
+		grenetis
+		impasto
+		imprimé
+			imprimé argenté
+			imprimé couleur
+				chromolithographie
+				sérigraphie
+			imprimé craquelé
+			imprimé doré
+			imprimé platiné
+		kakiemon
+		micacé = micacée 
+		oeil-de-perdrix
+		peint
+			peint à l'éponge
+			peint au peigne
+			peint au pinceau
+				chatiron
+				trek
+			peint au pochoir
+			peint au poncif
+			peint au tampon
+			peinture blanche
+				blanc fixe
+			peinture brillante
+			peinture laque
+			peinture mate
+			peinture superposée
+			rehaut
+		pointillé
+		polissage = poli 
+		préparation
+			préparation blanche
+		rapporté
+			rapporté modelé
+			rapporté moulé = moulé rapporté 
+		stralucido
+technique dessin
+	aquarelle
+	bambou taillé
+	brou de noix
+	café
+	compas
+	crayon
+		crayon à bille = stylo bille 
+		crayon blanc
+		crayon Conté
+		crayon de couleur
+		crayon feutre
+		crayon graphite
+		crayon gras
+		crayon marqueur = marqueur 
+		crayon noir
+		dessin au trait
+		dessin aux trois crayons
+		dessin en silhouette
+		graphite
+		mine d'argent
+		mine de plomb
+	encre
+		encre blanche
+		encre bleue
+			encre indigo
+		encre brune
+			encre brun-noir
+			encre brun-rouge
+			encre brun-vert
+		encre grise
+			encre gris-brun
+		encre jaune
+		encre mauve
+		encre noire
+			encre de Chine
+		encre orange
+		encre rose
+		encre rouge
+		encre verte
+		encre violette
+	fusain
+		fusain huilé
+	gomme arabique
+	gouache
+		gouache blanche
+		gouache orange
+		gouache rose
+	grattoir
+	lavis
+		lavis beige
+		lavis blanc
+		lavis bleu
+			lavis bleu-gris
+			lavis bleu clair
+			lavis d'indigo
+		lavis brun
+			lavis brun-clair
+			lavis brun-gris
+			lavis brun-jaune
+			lavis brun-mauve
+			lavis brun-rose
+			lavis brun-rouge
+			lavis brun-roux
+			lavis brun-violet
+		lavis d'aquarelle
+		lavis d'encre
+			lavis d'encre brune
+			lavis d'encre de Chine
+			lavis d'encre grise
+			lavis d'encre noire
+			lavis d'encre rouge
+			lavis d'encre violette
+		lavis de bistre
+		lavis de fusain
+		lavis de sanguine
+		lavis de sépia
+		lavis gris
+			lavis gris-beige
+			lavis gris-bleu
+			lavis gris-brun
+			lavis gris-mauve
+			lavis gris-vert
+			lavis gris-violet
+		lavis indigo
+		lavis jaune
+			lavis jaune clair
+		lavis mauve
+		lavis noir
+		lavis ocre
+		lavis orange
+		lavis parme
+		lavis rose
+		lavis rouge
+			lavis carmin
+		lavis sépia
+		lavis vert
+		lavis violet
+	pastel
+		pastel gras
+	pierre
+		craie
+			craie blanche
+			craie grasse
+			craie noire
+		pierre brune
+		pierre noire
+	pinceau
+	plume
+		plume d'oiseau = duvet 
+		plume de métal
+		plume de roseau
+	pointe de métal
+		pointe d'argent
+		pointe d'or
+		pointe de cuivre
+		pointe de plomb
+	procédé chromographique
+	procédé dilophane
+	règle
+	stylet
+	suie
+	tire-ligne
+technique estampe
+	procédé en relief = taille d'épargne 
+		bois de fil
+		bois de bout
+		criblé
+		chalcotypie
+		chrysoglyphie
+		gaufrage
+		linogravure
+		xylographie
+	procédé de gravure en creux = taille-douce  = taille douce 
+		attaque directe aux outils
+			burin
+			manière noire
+				manière noire mezzo-tinto
+			papier de verre
+			pointe sèche
+			roulette
+			trois pointes
+		utilisation de vernis et d'acide
+			aquatinte
+			carborandum
+			eau-forte = eau forte 
+			manière de crayon
+			manière de pastel
+			vernis dur
+			vernis mou
+	procédé de gravure à plat
+		algraphie
+		lithographie
+			chromolithographie
+		monotype
+		pochoir
+		sérigraphie
+		zincographie
+	procédé d'imitation photomécanique
+		en à plat
+			offset
+			lithographie photomécanique
+			phototypie
+			stéréotypie
+		en creux
+		en relief
+			cliché typographique
+			impression typographique
+			similigravure
+			typogravure
+	impression monochrome
+		impression monochrome coloriée = colorié 
+			colorié à main levée
+			colorié au pinceau
+			colorié au pochoir
+	impression polychrome
+		procédé à la poupée
+		procédé au repérage
+technique imprimerie = typographie (516)
+	chromotypie = chromotypographie 
+technique métal
+	abrasé
+		abrasé douci
+		abrasé limé râpé
+		abrasé meulé = meulé 
+		abrasé poli
+	agrafé = agrafe 
+	aiguisé
+	ajouré
+		ajouré emporte pièce
+		percé
+	argenté
+		argenté bruni
+		articulé
+		chevillé = chevillage 
+		plié = assemblé par pliage  = pliage 
+		riveté = rivetage 
+		serti = sertissage 
+		soudé = soudure 
+	basse taille
+	batik
+	battage
+	biseauté
+	boulonné
+	bronzage
+	champlevé
+	chromage = chromé 
+	ciselé = ciselure 
+		ciselé à l'os
+		ciselé guilloché
+		ciselé maté
+		ciselé tracé
+	cloisonné
+		cloisonné enfoncé
+		cloisonné en résille
+		cloisonné filigrané
+	cuivrage = cuivré 
+	coquillé
+	damasquiné
+	damassé
+		pression
+	découpé
+	déployé
+	doré
+		dorure à la feuille
+		doré bruni
+		fausse dorure
+	ébarbé
+	écroui
+	émaillé = émail 
+		émail opaque
+		émail semi-translucide
+		émail translucide
+	embouti = emboutissage 
+	étamé
+	étiré
+		étiré en fil
+		étiré mouluré
+	fonte = coulé fondu  = fondu 
+		fonte à la cire perdue
+		fonte au sable
+		fonte en creux = fonte creuse 
+		fonte pleine
+	foré
+	forgé
+	frappé
+	galvanoplastie
+		galvanisé
+	granulation
+	grenetis
+	guilloché
+	imprimé
+	gravé = gravure 
+		gravé à la damasquine
+		gravé au trait
+		gravé pointe sèche
+	incrustation
+		incrustation cloisonnée
+		incrustation en relief
+	laminé
+		laminé au marteau
+		laminé mécaniquement
+	lissé bruni
+	martelé = martelage  = martelé-battu 
+	matrice
+	nickelage = nickelé 
+	niellé
+	patiné
+	peint
+		peint à l'éponge
+		peint au pochoir
+	perforé
+	piqueté
+	placage
+	plané
+	plique-à-jour
+	pointillé
+	poli
+	raboté
+	refoulé
+	repercé
+	repoussé
+		repoussé avec mise aux points
+		repoussé direct
+		repoussé estampé
+		repoussé ciselé
+		repoussé sur plaque
+	rétreinte
+	tordu
+		fil tordu
+	torsadé
+		fil torsadé
+	tourné
+	travail en feuille
+	tréfilé = tréfilage 
+	trempé
+	usiné
+	vernis brun
+technique papier_carton-pâte
+	ajouré
+		ajouré emporte pièce
+	argenté
+	brodé
+	cartonné
+	découpé
+	déployé
+	doré
+	imprimé
+	incrustation
+	laqué
+	marbrure
+		à spires
+		peigné
+		marbrure queue de paon
+	peint = peinte 
+	teinté
+	tontissé
+	vernis
+technique papier peint
+	détrempe
+	flexogravure
+	gaufrage
+		gaufrage à la plaque
+		gaufrage au cylindre
+		gaufrage au rouleau
+	héliogravure
+	impression à la planche
+		impression à la planche 1 couleur
+		impression à la planche 2 couleurs
+	impression au cadre
+		impression au cadre 1 couleur
+		impression au cadre 2 couleurs
+	impression au cylindre
+		impression au cylindre 1 couleur
+		impression au cylindre 2 couleurs
+		impression au cylindre 5 couleurs
+	impression tontissé
+	imprimé
+	pochoir papier peint
+	repiqué
+	satiné
+	velouté
+	vernis
+technique peaux_cuir
+	à damasquine
+	à filets
+	ajouré
+		ajouré emporte pièce
+	argenté
+	assemblage = assemblé 
+		collé
+		cloué
+		clouté
+		épinglage
+		ligature
+		courtepointe
+		cousu = couture 
+	bourré
+	brodé
+	décor à la pointe
+	décor à la roulette
+	décor au fer
+	décor de clous
+	décor par application = décor appliqué 
+	découpé
+	doré
+		or gratté
+	gaufré
+		gaufré à l'outil
+		gaufré à la plaque
+	grainé
+	imprimé
+	peint
+	teinté
+		jaspé
+	tontissé
+	vernis
+technique peinture = peinture (516)
+	détrempe
+	emploi d'argent
+		fond d'argent
+		maki-e d'argent
+		rehaut d'argent
+	emploi d'or
+		filet d'or
+		fond d'or
+		maki-e d'or
+		rehaut d'or
+	emploi de platine
+	peinture à fresque = fresque 
+		buon fresco
+	peinture à la caséine
+	peinture à la colle
+	peinture à l'essence
+	peinture à l'huile = huile 
+	peinture à l'huile et à l'essence
+	peinture à la cire
+		peinture à l'encaustique
+	peinture à liants résineux
+		peinture acrylique
+		peinture vinylique
+	peinture à tempera = tempera 
+	peinture glycérophtalique
+	peinture polyuréthane
+	peinture vinylique
+	pigment
+	projection
+	rehaut
+technique photographie = photographie (516)
+	procédé non argentique
+		procédé métallique
+			cyanotype
+			platinotype
+			palladiotype
+		procédé pigmentaire
+			charbon = tirage au charbon 
+				charbon de bois
+			gomme bichromatée
+		procédé photomécanique
+			woodburytype = photoglypte 
+	procédé argentique
+		négatif
+			calotype
+			albumine
+			collodion humide
+			gélatino-bromure = gélatino bromure 
+				gélatino-bromure d'argent = gélatino bromure d'argent 
+			gélatino-chlorure
+				gélatino-chlorure d'argent
+		positif
+			papier salé
+			papier albuminé
+			arisotype
+		positif direct
+			cibachrome
+			daguérréotype
+			ferrotype = tyntinotype  = mélanotype 
+			ambrotype
+			autochrome
+			polaroïd
+			diapositive
+			Agfachrome
+			Ektachrome
+			Kodachrome
+			panotype
+			impression à jet d'encre
+	photocopie
+	numérisation
+	photomontage
+	stéréophotographie
+	tirage
+		tirage cibachrome
+	monochrome
+		bistre
+		noir et blanc
+		sépia
+	photographie couleur
+	colorisé
+	agrandissement
+technique pierre_ciment_plâtre_cire
+	abrasé
+		abrasé douci
+		abrasé poli
+	acrolithe
+	ajouré
+	appareillé
+	application = appliqué 
+		application de céramique
+		application de métal
+	argenté = argenture 
+	badigeon
+	biseauté
+	bouchardé
+	bronzage
+	chantourné
+	cuivrage
+	débitage
+		percussion
+			percussion directe
+			percussion dure
+			percussion indirecte
+			percussion tendre
+	décor rapporté
+	découpé
+		découpé à la pince
+		découpé à la scie
+		découpé au pointeau
+		travaillé à la gradine
+	doré
+		dorure à la feuille
+	enduit
+	épannelé
+	évidé
+	foré
+	galbé
+	gravé
+		gravé à l'acide
+	incrustation = incrusté 
+		impastation
+		incrustation à relief
+		incrustation cloisonnée
+	monolithe
+	modelé = modelage 
+	mosaïque
+		emblema
+		micro-mosaïque
+		opus alexandrinum
+		opus certum
+		opus incertum
+		opus interassile
+		opus lapilli
+		opus musivum
+		opus reticulatum
+		opus scutulatum
+		opus sectile
+		opus segmentutum
+		opus signinum
+		opus tessellatum
+		opus vermiculatum
+	moulé
+	mouluré
+		cannelé
+		côtelé
+		godronné
+	orbevoie
+	peint
+	piqueté = piquetage 
+	placage
+	pointillé
+	poli = polissage  = polie 
+	taillé = taille 
+		bloc partiellement dégrossi
+		taille à facettes
+		taille avec mise aux points
+		taille directe
+		taille en camée
+		taille en intaille
+		taille en réserve
+	trépan
+	vernis
+technique textile/ tissu
+	reps
+	textile
+		broderie
+			broderie à l'aiguille
+				broderie à fils comptés = tapisserie au point 
+					broderie d'Assise
+					broderie marocaine
+					demi-point de croix
+					petit point
+					point de croix
+					point Gobelin
+				broderie blanche
+					broderie ajourée
+						broderie anglaise
+						broderie Colbert
+						broderie de Madère
+						broderie Hedebo
+						broderie Renaissance
+						broderie Richelieu
+						broderie vénitienne
+				broderie de Marseille
+			broderie au crochet
+				broderie de Lunéville
+				point de Beauvais
+			broderie d'application
+			broderie mécanique
+				broderie à la machine Cornély
+					broderie à la machine à broder la ganse
+				broderie à la machine multitêtes
+			points de base
+				entrelacs maltais
+				jours à fils tirés = trapunto 
+					fils tirés dits broderies de Saxe = points de Dresde 
+					jours échelle
+					jours turcs
+				point diamanté
+				point natté
+				point tissé
+					point d'épine
+					point de bourdon
+					point de chaînette
+					point de cordonne
+					point de devant
+					point de feston
+				points de ligne
+					point de tige
+					point de trait
+				points de remplissage
+					passé empiétant
+					passé épargné
+					passé plat
+					plumetis
+					point couché
+					point d'ombre
+					point de grille
+					point de sable
+					point fendu
+					point lancé
+				points noués
+					point d'armes
+					point de nœud
+			procédés complexes
+				broderie en gaufrure
+				broderie en guipure
+				broderie en or nué
+				broderie en satiné
+		crochet
+		dentelle
+			dentelle à l'aiguille
+				dentelle à l'aiguille type Bruxelles
+					dentelle mélangée
+					point d'Angleterre
+					point de gaze
+				dentelle à l'aiguille type Espagne
+				dentelle à l'aiguille type France
+					dentelle type Alençon
+					dentelle type Argentan
+					point de Colbert
+					point de France
+						dentelle type Sedan
+				dentelle à l'aiguille type Irlande
+					dentelle type Youghal
+				dentelle à l'aiguille type Venise
+					coralline
+					dentelle type Burano
+					gros point
+					point à la rose
+					point de neige
+					point plat
+					réseau Venise
+				dentelle à l'aiguille XXe siècle
+					dentelle XXe siècle type Belgique
+					dentelle XXe siècle type Burano
+					dentelle XXe siècle type Chypre
+					dentelle XXe siècle type Hong-Hong
+					dentelle XXe siècle type Irlande
+				punto in aria = point en l'air 
+				reticella
+			dentelle au crochet
+				dentelle au crochet dite d'Irlande
+			dentelle au lacet
+				dentelle au lacet type Venise
+				dentelle Renaissance
+					dentelle type Luxeuil
+			dentelle aux fuseaux
+				techniques dentelle aux fuseaux
+					dentelle aux fuseaux à fils continus
+					dentelle aux fuseaux à pièces rapportées
+						pièces rapportées à l'aiguille
+						pièces rapportées aux fuseaux
+						pièces rapportées aux fuseaux et à l'aiguille
+				types dentelle aux fuseaux
+					dentelle aux fuseaux type Angleterre
+						dentelle type Honiton
+					dentelle aux fuseaux type Bruxelles
+						application de dentelle
+							application d'Angleterre sur tulle mécanique
+							application de dentelle fuseaux et aiguille
+							application de dentelle à l'aiguille
+							application de dentelle aux fuseaux
+							application sur réseau droschel
+						dentelle duchesse
+							duchesse de Bruges
+							duchesse de Bruxelles
+						dentelle type Bruges
+						Rosaline
+					dentelle aux fuseaux type Espagne
+					dentelle aux fuseaux type Europe centrale
+					dentelle aux fuseaux type France
+						dentelle type Arras
+						dentelle type Caen
+							blonde de Caen
+						dentelle type Chantilly
+						dentelle type Dieppe
+						dentelle type Le Puy
+							dentelle type Cluny
+						dentelle type Lille
+						dentelle type Valenciennes
+					dentelle aux fuseaux type Hollande et Flandres
+						dentelle d'Angleterre
+						dentelle type Anvers
+						dentelle type Binche
+						dentelle type Brabant
+						dentelle type Flandres XVIIe siècle
+						dentelle type Flandres XVIIIe siècle
+						dentelle type Hollande
+						dentelle type Malines
+						dentelle type Valenciennes XVIIIe siècle
+					dentelle aux fuseaux type Italie
+						dentelle type décor à lacet
+						dentelle type Gênes
+						dentelle type Malte
+						dentelle type Milan
+						dentelle type Sicile
+						dentelle type Venise
+			dentelle chimique
+			dentelle mécanique
+				dentelle mécanique The Barmen machine
+				dentelle mécanique The Bobbin Net machine
+				dentelle mécanique The Lace Curtain machine
+				dentelle mécanique The Levers machine
+				dentelle mécanique The Pusher machine
+				dentelle mécanique The Warp Frame
+			filet
+			fonds de dentelle
+				fond à brides
+					fond à brides dentelle à l'aiguille
+						brides hexagonales festonnées non picotées
+						brides hexagonales festonnées picotées
+						brides hexagonales tortillées
+						petites brides
+					fond à brides dentelle à pièces rapportées
+						snatchpin
+						type Flandres à brides
+						type Milan à brides
+						type slave sans brides
+					fond à brides dentelle fuseaux à fils continus
+						fond type Cluny à brides
+						fond type Le Puy à brides
+						fond type Malte à brides
+					fond à réseau
+						fond à réseau dentelle à l'aiguille
+							fond point de gaze
+							réseau Alençon
+							réseau Argentella
+							réseau carré de Burano
+						fond à réseau dentelle fuseaux à fils continus
+							fond carré de Valençiennes
+							fond d'armure
+							fond d'Espagne
+							fond de Lille
+							fond de maille à cinq trous
+							fond de Malines
+							fond de neige
+								fond oeil-de-perdrix
+							fond de Paris
+							fond de torchon
+							fond rond de Valenciennes
+							Honeycomb
+						fond à réseau dentelles fuseaux à pièces rapportées
+							fond d'armure dentelle Bruxelles
+							réseau à mailles carrées de Valenciennes
+							réseau à mailles rondes de Valenciennes
+							réseau droschel
+							tulle mécanique
+		fibre textile
+		frivolité
+		macramé
+		maille
+			points de tricot
+				côtes
+				Jersey
+				mailles à l'endroit
+				mailles à l'envers
+				point mousse
+			tricot main
+			tricot mécanique
+				éponge velours
+				fausse fourrure
+				tricot Jacquard
+		tapisserie sur métier
+			tapisserie de basse-lisse = basse-lisse  = basse lisse  = tapisserie de basse lisse 
+			tapisserie de haute-lisse = haute-lisse  = haute lisse  = tapisserie de haute lisse 
+	sprang = meshwork 
+		sprang à larges mailles
+		sprang à mailles losangiques
+		sprang à mailles obliques
+		sprang à mailles réticulées
+		sprang à mailles rondes
+		sprang à mailles serrées
+	tissu = tissé  = tissage 
+		absence d'armure
+			feutre
+				feutre taupé
+				feutrine
+			non tissé
+				tyvek
+		décor de l'armure
+			adjonction d'éléments
+				tontissé
+			chaîne
+				double-face chaîne
+			chaîne supplémentaire
+				effet de chaîne poil
+					à poil traînant
+				piqué
+					nid d'abeilles
+				chemins
+					bordures à retour
+					bordures suivies
+					dessins à chatières
+					dessin à n chemins suivis
+					dessin à n pointes
+					dessin à retour = dessin à pointe 
+					dessin à retour avec bâtard
+					dessin à un chemin
+				disposition du dessin
+					dessin à ramages
+					dessin pékiné
+						dessin pékiné à retour
+						dessin pékiné suivi
+					dessin semé
+						dessin semé à retour
+						dessin semé contresemplé
+						dessin semé sauté
+						dessin semé suivi
+				nombre de corps
+					simple corps
+					plusieurs corps
+						double corps
+						triple corps
+						quadruple corps
+						quintuple corps
+				trame
+					à deux lats
+						à deux lats suivis
+					battage
+					crapaud
+						crapautage
+							crapautage à deux fils
+							crapautage à trois fils
+							crapautage composé
+							crapautage simple
+					double-face trame
+					fil volant
+					lat interrompu
+					latté
+					trame de fond
+						liseré
+					trame supplémentaire
+						bouclé par la trame
+						broché
+						lancé
+							lancé découpé
+					relais
+		décor par couleur après tissage
+			décor imprimé
+				imprimé à la planche
+				imprimé au cadre
+				imprimé au rouleau
+			décor peint
+				peint à la main
+			décor teint
+				teint avec réserve
+					batik
+				teint en pièce
+		décor par couleur avant et pendant tissage
+			couleur par disposition de fils de chaîne et de trame
+				changeant
+				quadrillé
+			couleur par application = couleur appliquée 
+				imprimé sur chaîne
+				peint sur chaîne
+					velours Grégoire
+			couleur par constitution du fil
+				chiné
+				écru
+				jaspé
+					jaspé à la flotte
+					jaspé par décoloration
+				ombré
+				teint en fil
+			couleur par disposition des fils de chaîne
+				nuancé
+				rayé
+			couleur par disposition des fils de trame
+				barré
+				lamé
+				latté
+			teint par réserve
+				chiné à la branche
+				double ikat
+				ikat chaîne
+				ikat trame
+		décor sans apport de couleur
+			cloqué
+			dévoré
+			épilé
+			flocké
+			frappé
+			froissé
+			gaufré
+				ruché = ruche 
+			glacé
+				glacé au cuivre
+				glacé à la cendre
+				glacé au sel
+			gratté
+			huilé
+			imperméabilisé
+			lavé
+			moiré
+			découpure chaîne
+			découpure trame
+		proportion
+			proportion chaîne
+			proportion trame
+		réduction
+			réduction chaîne
+			réduction trame
+				réduction trame du décor
+				réduction trame du fond
+		sens de la chaîne
+			chaîne sens de la hauteur
+			chaîne sens de la largeur
+			chaîne sens de lecture du décor
+			chaîne sens perpendiculaire au sens de lecture du décor
+			chaîne sens vertical
+		tissu façonné
+			façonné à deux armures indépendantes ou plus
+				pékin façonné
+				satin à aspect damassé
+				sergé à aspect damassé
+			façonné à deux chaînes et plus
+				brocatelle
+				dauphine
+				droguet
+				lampas
+				mexicaine
+				samit façonné
+				taqueté façonné
+			façonné à une chaîne
+				damas
+					damas à deux armures
+						damas gros de Tours
+						damas louisine
+					damas à une armure chaîne et trame
+						damas satin de 5
+						damas sergé de 3 lie 1
+				gaze façonnée
+				lampassette
+			satin façonné
+			sergé façonné
+			taffetas façonné
+			velours
+				velours façonné
+					velours façonné à une chaîne
+					velours façonné à deux chaînes
+						velours broderie
+						velours façonné ciselé
+						velours façonné coupé
+						velours façonné frisé
+						velours façonné relevé
+		tissu uni
+			tissu uni à deux armures ou plus
+				bayadère
+				double étoffe uni
+				gaze
+				pékin
+				petit façonné
+			tissu uni à faces différentes
+				cannelé à faces différentes
+					cannelé alternatif
+					cannelé simpleté
+					cannetillé
+				reps alternatif
+				reps lancé
+				samit
+				satin
+					satin irrégulier
+					satin régulier
+				sergé
+					chevron
+						chevron sens chaîne
+						chevron sens trame
+					sergé sens chaîne
+					sergé sens trame
+				velours
+					velours uni
+						velours au sabre
+						velours coupé
+						velours frisé
+						velours peluche
+			tissu uni à faces identiques
+				cannelé à faces identiques
+					cannelé à côtes égales
+						gros de Tours
+					cannelé à côtes inégales
+					faille française
+					ottoman
+				louisine
+				natté
+				taffetas
+					tussor
+				taffetas doublé
+				canevas
+				crêpe
+				faille
+				mousseline
+		torsion
+			calibre variable
+			filé simple S
+			filé simple Z
+			retors
+				retors S
+				retors Z
+			torsion faible
+			torsion forte
+			torsion moyenne
+		traitements divers
+			apprêté
+				amidonné
+				foulé
+				lainé
+				tondu
+			cardé
+			chargé
+			cousu
+			cru
+			déchiré
+			découpé = découpure 
+			décreusé
+			grège
+			matelassé
+			peigné
+			perfilé = perfilage 
+				perfilage compensé
+				perfilage groupé
+				perfilage simple
+			plissé
+			plissé à l'ongle
+			tuyauté
+		teinture
+			colorants
+				colorants artificiels
+					aniline
+						bleu d'aniline
+						éosine
+						fuchsine
+						jaune d'aniline
+						orangé d'aniline
+						vert d'aniline
+						violet d'aniline
+				colorants naturels
+					colorants animaux
+						coquillages
+							pourpre phénicienne
+						insectes
+							cochenille
+							kermès
+					colorants minéraux
+						bleu de Prusse
+						chromate de plomb
+						oxyde de chrome
+						oxyde de fer
+						oxyde de manganèse
+						oxyde de plomb
+					colorants végétaux
+						bois de Brésil
+						bois de campêche
+						bois jaune
+						cachou
+						carthame
+						chica
+						curcuma
+						épine-vinette
+						fustet
+						garance
+						gaude
+						graine d'Avignon
+						graine de Perse jaune
+						indigo
+							vert de France
+						noix de galle
+						orcanette
+						orseille
+						pastel
+						quercitron
+						rocou
+						safran
+						santal
+						sumac
+				colorants synthétiques
+					alizarine
+					murexide
+	appellations historico-commerciales
+		barège
+		basin
+		batiste
+		boutis
+		brocart
+		cachemire
+		chambray
+		charmeuse
+		chintz
+		cloqué
+		coutil
+		crêpe de Chine
+		crêpe Georgette
+		crêpe marocain
+		crêpe romain
+		crêpe satin
+		crépon
+		cretonne
+		drap
+		duvetine
+		étamine
+		feutre mélusine
+		fil à fil
+		finette
+		flanelle
+		foulard
+		gabardine
+		gazar
+		grain de poudre
+		grenadine
+		gros grain
+		indienne
+		jaconas
+		kasha
+		lambswool
+		lamé
+		liberty
+		linon
+		loden
+		madras
+		marabout
+		marquisette
+		métis
+		moleskine
+		molleton
+		nankin
+		nansouk
+		opus anglicanum
+		organdi
+		organza
+		ouate
+		ouatine
+		panne de velours
+		peluche
+		percale
+		pilou
+		piqué
+		pongé
+		popeline
+		poult-de-soie
+		radzimir
+		ratine
+		satin duchesse
+		satin fermière
+		satinette
+		seersucker
+		serge
+		shantung
+		shirting
+		siamoise
+		stretch
+		tarlatane
+		taupé
+		tissu jean
+		tricotine
+		tulle
+			tulle illusion
+			tulle point d'esprit
+		tweed
+		twill
+		velours jardinière
+		voile
+		whipcord
+		zénana
+		zéphir
+technique vannerie_paille
+	armure
+		armure crocane
+			armure crocane à deux brins
+		armure croisée
+		armure satin
+		armure sergée
+		armure toile
+		point d'épi
+	arrêt
+		arrêt à bord ajouté = arrêt à bords ajoutés 
+			arrêt à bord ajouté lié = arrêt à bords ajoutés liés 
+		arrêt à bord arrêté = arrêt à bords arrêtés 
+			arrêt à bord arrêté couché = arrêt à bords arrêtés couchés 
+			arrêt à bord arrêté renversé = arrêt à bords arrêtés renversés 
+			arrêt à bord arrêté tressé = arrêt à bords arrêtés tressés 
+		arrêt à bord libre = arrêt à bords libres 
+	brins = éclisses 
+		brins cordés
+			brins cordés croisés
+			brins cordés sergés
+			brins cordés simples
+			brins cordés tressés
+		brins cousus = éclisses cousues 
+			brins cousus serrés
+		brins groupés
+			brins groupés par deux
+		brins liés = éclisses liées 
+			brins liés cousus
+			brins liés demi-clefs
+			brins liés noués
+			brins liés roulés
+			brins liés tournés
+		brins tissés
+			brins en mèches
+			brins individuels
+			brins tissés sur champ
+		brins torsadés
+	départ
+		départ ajouté
+			départ ajouté en demi-rameau
+		départ en nappes
+		départ en spirale
+		départ rayonnant
+			départ rayonnant en mèches
+			départ rayonnant superposé
+			départ rayonnant sur croisée
+	décor
+		brodé
+		doré
+		en éclisse
+		en rameau
+			en rameaux parallèles
+		gravé
+		marqueterie de paille
+			marqueterie de paille en relief
+		peint
+		teint en buff
+		vernis
+	montants
+		montant spiralé
+			montant spiralé à faisceaux
+			montant spiralé à spires
+				montant spiralé à grosses spires
+				montant spiralé à petites spires
+			montant spiralé en rameau
+		montants en arceaux
+		montants parallèles = montants clayonnés 
+			montants parallèles groupés par deux
+	nappes
+		à une seule nappe
+			une seule nappe enchevêtrée
+			une seule nappe en spirale
+		à plusieurs nappes
+			nappes enchevêtrées
+				nappes diagonales enchevêtrées
+					tresse
+					lacerie
+				nappes perpendiculaires enchevêtrées = natte 
+			nappes superposées
+				nappes diagonales superposées
+				nappes perpendiculaires superposées
+			nappes tissées
+				nappes perpendiculaires et diagonales tissées
+					cannage = canné 
+	autres modes d'assemblage
+		cablé
+		double lacerie
+		enroulé
+		paillé = paillage 
+	préparation
+		brut
+		cintré
+		courbé
+		écorcé
+		fendu
+	texture
+		texture en clair
+		texture en plein
+technique verre_vitrail_plastique
+	abrasé
+		abrasé meulé
+	à filets colorés
+	à plusieurs couches
+	à train
+	armé
+	biseauté
+	bord rebrûlé
+	bordé
+		verre anglais
+		coulé moulé
+	craquelé
+		craquelé givré = givré 
+	d'un seul morceau
+	décor rapporté modelé
+	décor rapporté moulé
+	découpé = découpage 
+	dépoli
+		dépoli à l'acide
+		dépoli à la molette
+	doré = dorure 
+	double = doublé 
+	émail sur verre
+		émail relief sur verre
+	étiré
+		étiré à la lampe
+	fausse argenture sous verre
+	fausse dorure sous verre
+	filé
+	filé rubané
+	gravé = décor gravé 
+		gravé à l'acide
+			gravé dépoli à l'acide
+		gravé à l'outil
+			gravé diamant
+		gravé au sable
+			gravé dépoli au sable
+	grisaille sur verre = grisaille 
+	imprimé
+	inclusions = à sulfure 
+		inclusions métalliques
+	jaune d'argent
+	laminé
+		verre américain
+		verre antique
+		verre à reliefs
+		verre cathédrale
+	lustré métallique
+	marbrure
+	marqueterie de verre
+	modelé à la pince
+		modelé poinçonné à la pince
+	montage en chef-d'oeuvre
+	mosaïque
+		emblema
+		micro-mosaïque
+		opus alexandrinum
+		opus certum
+		opus incertum
+		opus interassile
+		opus lapilli
+		opus musivum
+		opus reticulatum
+		opus scutulatum
+			opus sectile
+		opus segmentutum
+		opus signinum
+		opus tessellatum
+		opus vermiculatum
+	moulé = moulage 
+		moulage bivalve
+		moulage monovalve
+	pastillé = pastillage 
+	patine sur verre
+	pincé
+	pointillé
+	polychrome
+		millefiori = verre mosaïqué 
+	pressé
+	sanguine sur verre = sanguine 
+	soufflé
+		soufflé à la volée
+		soufflé cylindrique
+		soufflé disque
+		soufflé moulé = soufflage en moule 
+	structure interne
+		intérieur creux
+		intérieur plein
+	taillé
+		taille à motifs
+			taille à facettes
+	teinté dans la masse
+	triple
+technique mixte
+précisions techniques
+	à chaud
+	à froid
+	ancien = ancienne 
+	application et incrustation
+		biais
+		cabochon
+		cannetille
+			bouillon
+			cannetille frisée
+			cannetille jonc
+			cannetille laine
+			cannetille ronde
+			frisure
+			jaseron
+		cartisane
+		chaton
+		cordon
+			cordonnet
+		croquet
+		damasquinure
+		fixé = fixée 
+		fond décoré
+		frange
+		galon
+			padou
+		ganse
+		gland
+		guipure
+		impastation
+		lacet
+			lacet plat
+			lacet rond
+		mastic
+		niellure
+		paillettte
+			cuvette
+			paillette découpée
+			paillon
+			sequin
+		pampille
+		passementerie
+		passepoil
+		pâte gaufrée
+		pompon
+		résille
+		ruban
+		soutache
+		tresse
+			tresse plate
+			tresse ronde
+		tube
+			tube rond
+			tube soufflé
+		verroterie
+	à réserve de glycérine
+	articulé
+	association d'autres matériaux
+	autocollant
+	broyé
+	brûlé = brûlée 
+	calciné
+	ciré = cirée 
+	collé en plein
+		matériaux collés l'un sur l'autre
+	compressé
+	coupé
+	dactylographié
+	doublé = doublée 
+	élément
+		aiguille
+		âme
+		armature
+		bâte
+		bâti
+		boîtier
+		cadran
+		carrure
+		ceinture
+		charnière
+		côté
+		couvercle
+		cuvette
+		décor
+		dessus
+		doublure
+		extérieur
+		intérieur
+		mouvement
+		pied
+		plateau
+		structure
+		support
+		tablette
+		tirette
+		tiroir
+	estompé = estompe 
+	filigrané
+	fixé sous verre
+	fossilisé = fossilisée 
+	huilé = huilée 
+	inclusion
+	lacéré
+	lavé = lavée 
+	ligaturé
+	marouflé = marouflée 
+	minéralisé = minéralisée 
+	pétrifié = pétrifiée 
+	polychrome
+	préparé
+	quadrillé = quadrillée 
+	rayé = rayée 
+	récent = récente 
+	relief
+		bas relief = bas-relief 
+			bas relief saillant
+			bas relief creux
+		demi relief = demi-relief 
+		demi ronde bosse = demi ronde-bosse 
+		haut relief = haut-relief 
+		relief ajouré
+		relief à fond en cuvette
+		relief à fond plat
+		relief découpé
+			relief découpé biface
+			relief découpé et ajouré
+		relief engagé
+		relief en réserve
+		relief écrasé
+		relief méplat
+		semi relief méplat
+		relief pictural
+		ronde bosse = ronde-bosse 
+	revers
+		revers travaillé
+			revers partiellement travaillé
+		revers non travaillé
+			revers arrondi
+			revers plat
+		revers évidé
+			revers partiellement évidé
+			revers totalement évidé
+			revers avec logette
+			évidement obturé au revers
+	revêtement teinture
+		bronzine
+		bronzure
+		coloration = coloré 
+		enduit
+			enduit de gomme-laque
+			enduit de mortier
+			enduit de plâtre
+			enduit de stuc
+		estoffage
+		patine
+		sous couverte
+		sur couverte
+		traces de peinture
+			peinture monochrome
+			polychromie
+	rouillé
+	séché
+	sparterie
+	structure interne
+		armature bois
+		armature métallique
+		sans armature
+		intérieur creux
+			intérieur partiellement évidé
+			intérieur totalement évidé
+		intérieur plein
+		présence d'évents
+		présence d'un noyau
+		présence d'une âme
+		trou d'évent
+	support composé de plusieurs feuilles assemblées
+	tanné
+	tressé
+	vidé
+matériau d'origine animale
+	ambre gris
+	boyau
+		boyau de mouton
+	cheveu = cheveux 
+	cire
+	coquille
+		coquille d'escargot
+	coquillage
+		coquillage bivalve
+			coquille d'huître
+			coquille de moule
+		coquillage univalve
+			burgau
+			cauris
+			haliotis
+			troque = troca 
+		coquille de nautile
+		nacre
+			nacre blanche
+			nacre grise
+		perle de coquillage
+			perle fine
+	corail
+	corne
+		fanon de baleine
+	crin
+		crin de cheval
+	écaille
+		écaille de tortue
+			écaille blonde
+			écaille brune
+			écaille demi-blonde
+			écaille jaspée
+	éponge
+	élytre
+		élytre de scarabée
+	fil d'araignée = toile d'araignée 
+	fourrure
+		agneau
+			astrakan
+		castor
+		cheval
+			poulain
+		chinchilla
+		hermine
+		lapin
+		panthère
+			jaguar
+			léopard
+			once
+		loup
+		loutre
+		lynx
+		martre
+		ocelot
+		peau de mouton retournée
+		petit-gris = vair 
+		phoque
+			bébé phoque
+		putois
+		ragondin
+		renard
+			renard argenté
+			renard gris
+			renard roux
+		singe
+		skunks
+		vison
+	gélatine
+	graisse
+		suif
+	griffe
+		griffe de jaguar
+	ivoire = dent 
+		dent de cerf
+		dent de félin
+		ivoire d'éléphant = défense d'éléphant 
+		ivoire d'hippopotame
+		ivoire de cachalot
+		ivoire de jaguar
+		ivoire de morse
+		ivoire de narval
+		ivoire de pékari
+		ivoire de phacochère = dent de phacochère 
+		ivoire de requin = dent de requin 
+		dent de sanglier
+		dent humaine
+	laine
+		alpaga
+		angora
+		cachemire
+		chameau
+		cheviotte
+		lama
+		mérinos
+		mohair
+		shetland
+		fil de laine
+	matière sacrificielle
+	oeuf
+		coquille d'oeuf
+			coquille d'oeuf d'autruche
+	ongle
+		ongle de tatou
+	os
+		bois de cervidé
+			bois de cerf
+			bois de chevreuil
+			bois de renne
+		crâne
+		os d'oiseau
+		os d'ours
+		os de cachalot
+		os de cervidé
+		os de lièvre
+		os de loup
+		os de mouton
+		os de renard
+		os de tatou
+	peau = cuir 
+		peau de mammifère
+			cuir d'aignelin
+			cuir de basane
+			cuir de bison = peau de bison 
+			cuir de boeuf
+			cuir de buffle
+			cuir de cervidé = peau de cervidé 
+				cuir de cerf
+			cuir de chameau
+			cuir de chèvre = peau de chèvre 
+			cuir de chevreau = chevreau 
+			cuir de daim = daim 
+			cuir d'antilope = peau d'antilope 
+			cuir d'élan
+			cuir de mouton = peau de mouton 
+				parchemin
+					parchemin vierge
+			cuir de nubuck = peau de nubuck  = nubuck 
+			cuir d'orignal = peau d'orignal 
+			cuir de phoque = peau de phoque 
+			cuir de poulain = peau de poulain 
+			cuir de singe = peau de singe 
+			cuir de porc = peau de porc 
+			cuir de porc-épic = peau de porc-épic 
+			cuir de vache
+				vachette
+			cuir de veau = veau 
+				box = box-calf 
+				vélin
+					cabretille
+					vélin Chine
+					vélin BFK Rives
+					vélin d'Arches
+						vélin d'Arches Fidelis
+					vélin Mourlot
+					vélin Van Gelder Zonen
+					vélin vergé
+			maroquin
+			peau de chamois
+			peau de pécari
+		peau d'oiseau
+			peau d'autruche = cuir d'autruche 
+		peau de poisson
+			peau de raie = galuchat 
+			peau de requin
+			peau de roussette
+		peau de reptile
+			peau de crocodile = crocodile 
+			peau de lézard = lézard 
+			peau de serpent
+				peau de python
+	piquant
+		piquant de porc-épic
+			piquant de coendou
+		piquant d'oursin
+	plume d'oiseau
+		plume d'aigrette
+		plume d'autruche
+		plume de canard
+		plume de coq
+		plume de cygne
+		plume de faisan
+		plume de martin-pêcheur
+		plume d'oie
+		plume d'oiseau exotique
+			plume d'oiseau mouche
+			plume de lophophore
+			plume de paradisier
+		plume de paon
+		plume de pintade
+		plume de toucan
+	poil
+		poil d'élan
+		poil d'orignal
+		poil de lapin angora
+		poil de blaireau
+		poil de roussette
+		poil de singe
+	serre
+	tendon
+	soie
+		soie moulinée
+		soie tussah
+		fil de soie
+	stéarine
+matériau d'origine minérale
+	bakélite
+	béton
+		béton armé
+		béton cellulaire
+	bitume
+		pierre bitumeuse
+	carbone
+		fibre de carbone
+	cellophane
+	celluloïd
+	ciment
+		fibrociment
+	fritte
+	goudron
+	lave
+		andésite
+	linoléum
+	mâchefer
+	mastic
+	matière plastique
+		fausse écaille
+		ivoirine
+		imitation jais
+		plexiglas
+		polystyrène
+		PVC
+	matière synthétique
+		acétate
+			fibranne acétate = albène 
+			rayonne acétate
+		altuglas
+		bakélite
+		caoutchouc synthétique
+		cellophane
+		celluloïd
+		cupro
+		élasthanne
+			lycra
+		élastomère
+		galalithe
+		mousse synthétique
+		polyacrylique
+			crylor
+			orlon
+		polyamide
+			nylon
+		polyester
+			dacron
+			tergal
+			térylène
+		polyéthylène
+		polyuréthane
+		résine synthétique
+			résine polyester
+		rhovyl
+		vinyle
+		viscose
+			fibranne
+			rayonne
+	métal
+		alliage
+			acier
+				acier brossé
+				acier corten
+				acier inoxydable = inox 
+			alliage binaire
+				bronze
+					fil de bronze
+			alliage cuivreux
+			alliage ferreux
+			alliage non ferreux
+			alliage ternaire
+			alliage terreux
+			billon
+			electrum
+			fonte
+			laiton
+			maillechort
+			métail
+			métal cuivreux
+			potin
+			ruolz
+			vermeil
+		aluminium
+		argent
+			argent massif
+			fil d'argent
+		chrome
+		cuivre
+			cuivre jaune
+			cuivre rouge
+			métal base cuivre
+		étain
+		fer
+			fer à béton
+			fer étamé = fer blanc 
+			fil de fer
+		fibrométal
+		fil de métal
+			grillage
+		minerai
+		nickel
+		or
+			feuille d'or
+			fil d'or
+		platine
+		plomb
+			câble en plomb
+		tôle
+		zinc
+	miroir
+	mortier
+	pierre
+		albâtre
+			albâtre calcaire
+			albâtre gypseux
+		amazonite
+		amphibolite
+			amphibolite calcique
+		aphanite
+		aragonite
+		basalte
+		basanite
+			grauwacke
+		bélemnite
+		brèche
+			brèche verte
+		calcaire
+			calcaire coquillier
+			calcaire gris
+			calcaire lithographique
+			calcaire oolithique
+			craie
+			molasse
+			tuf
+		calcite
+		chaux
+		chlorite
+		chloristoschiste
+			chloristoschiste grauwacke = grauwacke chloritisée 
+		diorite
+			microdiorite
+			gabbrodiorite = gabbro-dioritique 
+			diorite porphyrique
+		dolérite
+			dolérite A
+			métadolérite A
+		éclogite
+		feldspath
+			pegmatite
+		fibrolite = fibrolithe  = sillimanite 
+		fluorite
+		gabbro
+			gabbro porphyrique
+			gabbro serpentinisé
+			microgabbro serpentinisé
+		galet
+		glaucophanite
+			glaucophanite à épidote
+		gneiss
+		granit = granite 
+			granit gris = granite gris 
+			granit rose = granite rose 
+		granodiorite
+		grauwacke
+		grès
+			arkose
+			grès de plage = beach rock 
+			grès cristallin
+			grès lithique
+			grès lustré
+			grès quartzite
+			molasse
+		greywacke
+		gypse
+			plâtre
+		hématite
+			limonite
+		heulandit
+		lave
+		lignite
+		malachite
+		marbre
+			marbre blanc
+			marbre de couleur
+				marbre bleu
+				marbre noir
+		métagabbro
+			métagabbro coronitique
+			métagabbro éclogitique
+		mica
+		micaschiste
+		nenfro
+		obsidienne
+		olivine
+			olivine-gabbro
+		opale
+			opale résinite
+		peridotite serpentinisée
+		pierre fétide
+		poros
+		porphyre
+		prasinite
+		pyrite
+		pyroxénite
+			pyroxénite sodique
+		quartz
+		quartzite
+		roche
+			roche dure
+			roche volcanique
+		sable
+		sel
+			sel gemme
+		shyolite
+		schiste
+			ardoise
+		serpentine
+		serpentinite
+		shale
+		silex
+			silex blond
+			silex d'Olendon
+			silex de Mormoiron
+			silex de Rijckholt
+			silex de Spiennes
+			silex du Grand-Pressigny = silex du Grand Pressigny  = silex GP 
+			silex tertiaire
+		silice
+		soufre
+		stéaschiste
+		stéatite
+		trachyte
+	pierre précieuse et semi-précieuse
+		aigue marine
+		alumine
+		améthyste
+		béryl
+		brillant
+		calcédoine
+			agate
+				chrysoprase
+			cornaline
+			jaspe
+			onyx
+		citrine
+		cristal de roche
+		diamant
+		émeraude
+		grenat
+		jade
+			chloromélanite
+			jadéite
+			néphrite
+		jais = jayet 
+		lapis-lazuli
+		nicolo
+		pierre fine
+		racine d'émeraude
+		rubis
+		saphir
+		saphirine
+		sardoine
+		sardonyx
+		topaze
+		turquoise
+		variscite
+			callais
+	pierre synthétique
+		perle synthétique = fausse perle 
+	plastiline
+	résine
+		poix
+		silicone
+	rhodoïd
+	skaï
+	staff
+	stuc
+	sulfate de magnésie
+	téflon
+	torchis
+	verre
+		cristal
+		fibre de verre
+		opaline
+		pâte de verre
+		perle de verre
+		pyrex
+		strass
+		faux jais = jais artificiel 
+		verre d'urane
+		verre optique
+	terre
+		argile
+			kaolin
+			limon
+			marne
+		pisé
+		pouzzolane
+		terre chamottée
+		terre crue
+		terre cuite = poterie 
+			céramique
+				brique
+				faïence
+					delftware
+					faïence égyptienne
+					faïence fine = grès anglais  = terre de pipe 
+						cream ware
+						faïence fine feldspathique
+						kaolina
+						pétro-cérame
+						terre de Lorraine
+					faïence siliceuse
+					faïence stannifère
+					majolique
+					salt glaze ware
+					vitreous
+				grès céramique
+					grès au sel
+					grès céramé
+					grès chamotté
+					grès porcelainier
+					jasper ware = grès blanc 
+					terre d'Egypte
+					terre carmélite
+					terre de Naples
+				porcelaine
+					biscuit
+						biscuit dur
+						biscuit tendre
+					imari
+					porcelaine dure
+						porcelaine dure nouvelle = pâte Laught-Vogt 
+					porcelaine phosphatique = bone-china 
+					porcelaine opaque
+					porcelaine siliceuse
+					porcelaine tendre
+						porcelaine tendre nouvelle
+			raku
+			terre demi-cuite
+				yakishimé
+matériau d'origine synthétique
+	alcool
+	adhésif
+	glycérine
+	lino
+	mousse
+	plexiglass
+	polycarbonate
+	toile cirée
+	zamak
+matériau d'origine organique
+matériau d'origine végétale
+	alfa
+	algue
+	aloès
+	amarante
+	arouman
+	bambou
+	blé
+	bois
+		acacia
+		acajou
+		amandier
+		arbre de Judée
+		aulne
+			aulne noir
+			bourdaine
+		balsa
+		bois de rose
+		bois de violette
+		bois fruitier
+			amandier
+			abricotier
+			arbousier
+			cerisier
+			citronnier
+			figuier
+			poirier
+			pommier
+			prunier
+		bouleau
+		buis
+		caroubier
+		charme
+		châtaignier
+		chêne
+		chêne vert
+		citise
+		conifère = résineux 
+			cèdre
+			épicéa
+			genévrier
+			grenadille
+				grenadille d'Afrique
+			mélèze
+			pin
+				pin arolle
+				pin maritime = Pin des Landes 
+				pin montagnard
+				pin pignon = pin parasol 
+				pin sylvestre
+			sapin
+			séquoia
+		ébène
+		érable
+		ficus
+		frêne
+		fusain
+		gaïac
+		genévrier
+		hêtre
+		houx
+		if
+		jujubier
+		karité
+		marronnier
+		merisier
+		noisetier
+		noyer
+		okoumé
+		olivier
+		orme
+			ormeau
+		padouk
+		palissandre
+		palmier
+			cocotier
+		pernambouc
+		persea
+		peuplier
+		platane
+		québracho
+		saule
+		sorbier
+			cormier
+		sureau
+		sycomore
+		tamaris
+		teck
+		tilleul
+		tulipier
+		viorne
+	caoutchouc
+		caoutchouc gutta-percha
+	cafeier
+	calebassier
+		calebasse
+	carton
+		carton de moulage
+			carton-pâte = carton pâte 
+			carton-pierre = carton pierre 
+		carton à gratter
+		carton plume
+	cellulose
+		nitrate de cellulose = nitrocellulose 
+			gel de nitrocellulose = collodion 
+	cendre
+	coca
+	corde
+	cordelette
+	dérivé du bois
+		aggloméré
+		contreplaqué = contre-plaqué 
+		isorel
+		lamellé collé
+		latté
+		MDF = medium density fibre board 
+		sciure
+	élément de végétal
+		coquille de végétal
+			coquille de noix
+		cosse
+		écorce
+			liège
+			sagoutier
+			tapa
+		épine
+			épine de porc-épic
+		feuile
+			feuille de bananier
+			feuille de figuier
+			feuille de pandanus
+		fibre végétale
+			bourre
+			chanvre
+			coton
+			fibre d'ananas
+			fibre de cocotier
+			fibre de courge
+			fibre de noix de coco
+			fibre de palmier
+			fibre de pandanus
+			ficelle
+			futaine
+			jute
+			kapok
+			lin
+			ramie
+			sisal
+		fleur
+		fruit
+			amande
+			noix de coco
+			noix de corozo
+				corozo
+		graine
+		latex
+		légume
+			citrouille
+		moelle d'aralia payrifera
+		paille
+			paille de bois
+			paille d'alfa
+			paille de céréale
+				paille d'Italie = paille de blé 
+				paille de riz
+				paille de seigle
+			paille exotique
+				bali
+				balibuntal
+				paille de christophine
+				manama
+		perle végétale
+		racine
+		résine
+			résine végétale
+				ambre
+					ambre jaune
+		ronce
+		tige
+			tige de pandanus
+	étoffe
+		étoffe stuquée
+			étoffe agglomérée et stuquée
+	jonc
+	lichen
+	mie de pain
+	noix
+	osier
+	matière ligneuse
+	palétuvier
+	papier
+		papier Arches
+		papier baryté
+		papier bristol = bristol 
+		papier buvard
+		papier calque
+		papier Canson
+		papier Canson et Montgolfier
+		papier cartonné
+		papier chiffon
+		papier couché
+		papier de Chine
+		papier de riz
+		papier de serpente
+		papier de soie
+		papier entoilé
+		papier glacé
+		papier gommé
+		papier Hollande
+			papier Hollande van Gelder
+		papier huilé
+		papier impondérable
+		papier ingres
+		papier Japon
+			papier Japon impérial
+		papier Job
+		papier journal
+		papier Kraft
+		papier Lafuma-Navarre
+		papier ligné = papier à lignes 
+		papier lithographique
+		papier mâché
+		papier Madagascar
+		papier maïs
+		papier mat
+		papier mécanique
+		papier peint
+		papier pelure
+		papier pur chiffon de Lana
+		papier pur fil du marais
+		papier quadrillé
+		papier toilé
+		papier vélin
+			papier vélin BFK Rives
+			papier vélin bouffant
+				papier vélin bouffant d'alfa
+			papier vélin chine
+			papier vélin crèvecoeur
+			papier vélin d'alfa
+			papier vélin d'Arches
+				papier vélin d'Arches fidelis
+				papier vélin d'Arches pur chiffon
+			papier vélin Daguerre
+			papier vélin de Corvol l'Orgueilleux
+			papier vélin de Hollande
+			papier vélin de Lana
+			papier vélin de Renage
+			papier vélin de Rives
+			papier vélin du Marais
+			papier vélin hélio-mat
+			papier vélin Lepage-Pain
+			papier vélin Mourlot
+			papier vélin offset supérieur
+			papier vélin pur fil
+				papier vélin pur fil Lafuma-Navarre
+			papier vélin torchon Le page
+			papier vélin Van Gelder zonen
+			papier vélin vergé
+		papier vergé
+			papier vergé Arches
+			papier vergé bouffant
+			papier vergé de Hollande
+				papier vergé de Hollande Pannekoek
+			papier vergé de Mongolfier
+			papier vergé des papeteries de Navarre
+			papier vergé Lafuma-Navarre
+		pâte à papier
+	papyrus
+	pâte végétale
+		pâte de guarana
+		pâte de riz
+	raphia
+	roseau
+	rotin
+	toile
+matériau d'origine diverse
+	monture de lunette
+	verre de lunette
+précisions matériaux
+	application et incrustation
+		biais
+		cabochon
+		cannetille
+			bouillon
+			cannetille frisée
+			cannetille jonc
+			cannetille laine
+			cannetille ronde
+			frisure
+			jaseron
+		cartisane
+		chaton
+		cordon
+			cordonnet
+		croquet
+		damasquinure
+		fixé
+		fond décoré
+		frange
+		galon
+			padou
+		ganse
+		gland
+		guipure
+		impastation
+		lacet
+			lacet plat
+			lacet rond
+		mastic
+		niellure
+		paillette
+			cuvette
+			paillette découpée
+			paillon
+			sequin
+		pampille
+		passepoil
+		patchwork
+		pâte gaufrée
+		pompon
+		résille
+		ruban
+		soutache
+		trace
+		tresse
+			tresse plate
+			tresse ronde
+		tube
+			tube rond
+			tube soufflé
+		verroterie
+	élément
+		aiguille
+		âme
+		armature
+		bâte
+		bâti
+		boîtier
+		cadran
+		carrure
+		ceinture
+		charnière
+		côté
+		couvercle
+		cuvette
+		décor
+		dessus
+		doublure
+		extérieur
+		garniture
+		intérieur
+		mouvement
+		pied
+		plateau
+		structure
+		support
+		tablette
+		tirette
+		tiroir
+	fil
+		bourrette
+		chenille
+		cordeline
+		coton mercerisé
+		crêpe
+		fil à gant
+		fil d'Ecosse
+		fil élastique
+		fil métallique
+			clinquant
+			fil métallique filé
+			fil métallique frisé
+			lame
+			lamelle
+			laminette
+			lumex
+			trait
+		organsin
+		schappe
+		trame
+affixe couleur
+	blanc = blanche 
+		blanc de Chine
+		blanc de céruse
+		blanc gris coquille
+		blanc jaune ivoire
+	couleur
+		ambré = ambrée 
+		beige
+		bichromie
+		bis
+		bleu = bleue 
+			bleu de cobalt
+			bleu de fer = céladon bleu 
+			bleu clair
+			bleu foncé
+			bleu-gris
+			bleu verdâtre
+			bleu-vert
+			bleu-violet
+			bleuté
+			indigo
+		brun = brune 
+			brun-beige
+			brun clair
+			brun foncé
+			brun orangé
+			brun-gris
+			brun-jaune
+			brun-rose
+			brun-rouge
+			brun-roux
+			brun-violet
+		camaïeu
+		céladon
+		chamois
+		clair = claire 
+		crème
+		gris = grise 
+			gris-beige
+			gris-bleu
+			gris-brun
+			gris-jaune
+			gris-mauve
+			gris-rose
+			gris-vert
+			gris clair
+			gris foncé
+		jaune
+			jaune-beige
+			jaune-brun
+			jaune clair
+			jaune soufre
+		manganèse
+			manganèse brun
+			manganèse noir
+			manganèse violet
+		marron
+		mauve
+		ocre
+			ocre jaune
+			ocre niellé
+			ocre rouge
+		orange
+			kaki
+			orange saumoné
+			orangé = orangée 
+		rose
+			rose orangé
+			rose pâle
+			rose saumon
+		rouge
+			rouge brique
+			rouge-brun
+			rouge de cuivre
+			rouge de fer
+			rouge orangé
+			rouge sombre
+		roux = rousse 
+		saumon
+		translucide
+		transparent
+		trichromie
+		verdâtre
+		vert = verte 
+			vert clair
+			vert foncé
+			vert-gris
+			vert-jaune
+			vert turquoise
+			vert de cuivre
+		violet = violette 
+		violine
+	incolore
+	noir = noire 
+		noir de fumée
+		tenmoku
+	?
+

@@ -1,0 +1,454 @@
+Liste des écoles
+
+Mise à jour septembre 2010
+
+
+Afrique = africaine
+	Algérie = algérienne 
+	Cameroun
+	Congo
+	Copte
+	Egypte = égyptienne 
+	Maroc = marocaine 
+	Mozambique
+	Nigéria
+	Sénégal
+	Soudan = soudanaise 
+	Tunisie = tunisienne 
+Allemagne = allemande
+	République fédérale d'Allemagne
+	Allemagne du centre
+		Francfort-sur-le-Main
+		Saxe
+			Meissen
+		Thuringe
+	Allemagne du nord
+		Allemagne du nord-ouest
+		Berlin
+		Hambourg
+	Allemagne du sud
+		Bavière = bavaroise 
+			Augsbourg
+			Bamberg
+			Bayreuth
+			Nuremberg
+			Wurzbourg
+			Haute-Bavière
+		Constance
+			Messkirch
+		Ludwigsburg
+		Souabe
+	Ansbach
+	Forêt noire
+	Hubertsbourg
+	Vallée du Rhin = Rhin 
+		Rhin inférieur
+		Rhin moyen = Mittelrhein 
+		Rhin supérieur
+		Franconie
+		Rhénanie = rhénane 
+			Cologne
+			Düsseldorf
+			Frechen
+			Munster
+			Trèves
+	Westerwald
+	Westphalie
+Amérique du sud
+	Argentine
+	Bolivie = bolivienne 
+	Brésil = brésilienne 
+	Chili = chilienne 
+	Colombie = colombienne 
+	Cuba = cubaine 
+	Dominique = République Dominicaine 
+	Equateur
+	Haïti = haïtienne 
+	Pérou = péruvienne 
+		Cuzco
+	Uruguay = urugayenne 
+	Venezuela = vénézuélienne 
+Antioche
+Antiquité gréco-romaine
+	Antiquité grecque
+	Antiquité romaine
+	Antiquité tardive
+	Pompéi
+Arménie = arménienne
+Australie = australienne
+Autriche = autrichienne
+	Tyrol = tyrolienne 
+	Vienne
+Balkan
+Basque
+Biélorussie
+Bohême
+	Bohême du nord
+	Bohême du sud
+Bulgarie = bulgare
+Byzance = Constantinople = byzantine
+Cambodge = cambodgienne
+Canada = canadienne
+	Québec = québecoise 
+Chine = chinoise = République populaire de Chine
+	Chine septentrionale
+	Chine méridionale
+Chypre = chypriote
+Corée = République de Corée = coréenne
+Corfou
+Crête = crêtoise
+Croatie
+Espagne = espagnole
+	Andalousie = andalouse 
+		Grenade
+	Séville = sévillane 
+	Aragon = aragonaise 
+		Teruel
+	Castille = castillane 
+		Burgos
+		Nouvelle Castille = Castilla-la-Mancha 
+	Catalogne = catalane 
+		Barcelone = barcelonaise 
+		Gérone
+	Madrid = madrilène 
+	Manisès
+	Valence
+Etats-Unis = américaine
+Etrusque
+Europe
+Europe centrale
+Europe du Nord
+	Scandinavie
+	Danemark = danoise 
+		Copenhague
+	Finlande = finlandaise 
+	Norvège = norvégienne 
+	Suède = suédoise 
+		Marieberg
+		Röstrand = Rohrstrand 
+		Stockholm
+Flandre = flamande = Flandres = Belgique = Pays-Bas du sud = belge
+	Anvers = anversoise 
+	Brabant
+	Bruges
+	Bruxelles
+	Gand
+	Herlingen
+	Jemmapes
+	Liège
+	Louvain
+	Malines
+	Mons
+	Nimy
+	Tournai
+Géorgie
+Grande-Bretagne = Royaume-Uni
+	Angleterre = anglaise 
+		Londres
+		Nottingham
+		Staffordshire
+			Stoke-on-Trent
+		Worcester
+		Yorkshire
+	anglo-saxonne
+	Ecosse = écossaise 
+	Irlande = irlandaise 
+	Jersey
+Grèce = grecque
+	Crète
+	Mistra
+Hongrie = hongroise
+Inde = indienne
+Iran = iranienne
+Iraq = irakien = Irak
+Islande = islandaise
+Israël = israélienne
+Italie = italienne
+	Castel Durante
+	Italie du Nord
+		Ligurie
+			Gênes = génoise 
+			Savone
+		Lombardie = lombarde 
+			Bergame
+			Brescia
+			Crémone
+			Mantoue
+			Milan = milanaise 
+		Piémont = piémontaise 
+			Turin
+		Piémont-Sarde
+		Vénétie
+			Padoue
+			Venise = vénitienne 
+			Vérone
+	Italie centrale
+			Bologne = bolonaise 
+			Faenza
+			Ferrare = ferraraise 
+			Parme
+			Plaisance
+		Latium
+			Viterbe
+		Marches
+			Urbino = urbin 
+		Ombrie = ombrienne 
+			Deruta
+			Pérouse
+		Romagne = romagnole 
+			Ravenne
+			Rimini
+		Rome = romaine 
+		Toscane
+			Arezzo
+			Florence = florentine 
+			Lucques
+			Montelupo
+			Pise
+			Pistoia
+		Sienne = siennoise 
+	Italie du Sud
+		Abruzzes
+			Castelli
+		Campanie
+			Naples = napolitaine 
+Japon = japonaise
+Java
+Kalkar
+Laos = laotienne
+Liban = libanaise
+Lituanie = lituanienne
+Luxembourg = luxembourgeoise
+	Echternach
+	Septfontaines
+	Vaudrevanges
+Malaisie
+Mexique
+Monaco = principauté de Monaco
+Monténégro
+Moyen-Orient
+Orient
+Palestine
+Pays-Bas = Hollande = hollandaise = néerlandaise = Pays-Bas du nord
+	Amsterdam
+	Delft
+	Haarlem
+	Harlingen
+	La Haye
+	Leyde
+	Rotterdam
+	Rozenburg
+	Utrecht
+Pays-Bas anciens = anciens Pays-Bas
+Perse
+Philippines
+Pologne = polonaise
+Portugal = portugaise
+	Braga
+Prusse
+Raeren
+Roumanie = roumaine
+Russie = russe
+	Moscou
+	Novgorod
+	Palekh
+	Strogonoff
+Europe orientale
+Savoie
+	Maurienne
+Serbie
+Siam = Thaïlande = thaïlandaise
+Sicile = sicilienne
+	Palerme
+	Sciacca
+Slovaquie = slovaque
+Slovénie
+Suisse
+	Genève = genevoise 
+	Heimberg
+	Lucerne
+	Thunn
+Syrie = syrienne
+	Damas
+Tchécoslovaquie = tchécoslovaque = tchèque = République Tchèque
+Tchèquie
+Turquie = turque
+	Bursa
+	Iznik
+	Kutahya
+URSS = U.R.S.S.
+Ukraine = ukrainienne
+Vietnam
+Yougoslavie
+	Pec
+	Prizren
+France = française
+Albi = albigeoise
+Alsace = alsacienne
+	Bas-Rhin
+		Strasbourg = strasbourgeoise 
+		Obernai
+	Haut-Rhin
+		Colmar
+	Oberammergau
+Amiens = amiénoise
+Angoulême = angoumoise
+Anjou
+Aprey
+Argonne
+Arras
+Aude
+Auvergne = auvergnate
+	Puy-de-Dôme
+Avignon
+Bailleul
+Barbizon
+Beauvais
+Bordeaux = bordelaise
+Bourbonnais = bourbonnaise
+Bourg-la-Reine
+Bourgogne = bourguignonne
+	Auxerre
+	Auxerrois
+	Dijon
+	Nivernais
+Bresse = bressanne
+	Bourg-en-Bresse
+Bretagne = bretonne
+	Basse-Bretagne
+	Pont-Aven
+	Rennes
+Berry = berrichonne
+Calais
+Castres = castraise
+Centre
+Champagne = champenoise
+Chantilly
+Chevannes
+Choisy-le-Roi
+Creil
+Desvres
+Dieppe
+Douai
+Epinal
+Fontainebleau = bellifontaine
+Ferrière-la-Petite
+Forges-les-Eaux
+France de l'Est = Est de la France
+France de l'Ouest = Ouest de la France
+France du Centre = Centre de la France
+France du Nord = Nord de la France
+France du Sud = Sud de la France
+France du Sud-Ouest = Sud-Ouest de la France
+Franche-Comté = franc-comtoise
+	Besançon = bisontine 
+franco-italien = franco-italienne
+franco-russe
+franco-suisse
+Gien
+Ile-de-France
+Ile Maurice
+Jura
+La Rochelle
+La Tronche
+Languedoc = languedocienne
+Le Croisic
+Le Havre
+Le Puy-en-Velay
+Les Islettes
+Ligron
+Lille
+Limousin = limousine
+	Aubusson
+	Limoges
+Loire
+Lorraine
+	Longwy
+	Lunéville
+	Sarreguemines
+Lyon = lyonnaise
+Mâcon
+Maine
+Marseille
+Massif central
+Meillonnas
+Meurthe-et-Moselle
+	Nancy
+Meuse = mosane
+Midi de la France
+Midi-Pyrénées
+Montereau
+Montpellier
+Montreuil
+Montrouge
+Moselle
+	Sarreguemines
+Moulins
+Moustiers
+Moustiers-Sainte-Marie
+Moyen
+Neuvy-sur-Loire
+Nevers
+Nice = niçoise
+Niderviller
+Normandie = normande
+	Haute-Normandie
+		Seine-Maritime
+			Aumale
+		Vallée de la Bresle
+	Basse-Normandie
+		Manerbe
+			Le Pré d'Auge
+Paris
+Picardie
+Poitou = poitevine
+Pont-de-Vaux
+Provence = provençale
+Onnaing
+Quimper = quimpéroise
+Rambervillers
+Région parisienne
+Roanne
+Rouen = rouennaise
+Roussillon
+Saint-Amand-les-Eaux
+Saint-Clément
+Saint-Cloud
+Saint-Jean-du-Désert
+Saint-Omer
+Saint-Porchaire
+Saintonge = saintongeaise
+Savignies
+Sceaux
+Sèvres
+Sinceny
+Toulouse = toulousaine
+	premier atelier de la daurade
+	second atelier de la daurade
+	troisième atelier de la daurade
+Touraine
+Tours
+Troyes = troyenne
+Val de Loire
+Valenciennes
+Vallée du Rhône
+Vaucluse
+Velay
+Vincennes
+Vosges
+Waly
+Yonne
+affixe
+	à la naissance
+	apatride
+	atelier
+	attribué
+	d'après
+	école de = école d' = école 
+	école étrangère
+	école inconnue
+	façon de
+	imitation
+	?
+
+

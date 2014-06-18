@@ -1,0 +1,21 @@
+Liste des méthodes de collecte, types de sites et lieux géographiques de découverte
+
+Mise à jour septembre 2010
+
+
+méthode de collecte
+	collecte ethnologique
+	découverte fortuite
+		travaux
+	fouilles
+		fouilles clandestines
+		fouilles de sauvetage
+		fouilles programmées
+		fouilles sous-marines
+		fouilles subaquatiques
+	prospection
+		prospection aérienne
+		prospection au sol
+		prospection subaquatique
+			dragage
+	sondage

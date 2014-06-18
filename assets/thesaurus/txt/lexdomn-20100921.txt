@@ -1,0 +1,177 @@
+	Liste des domaines
+	
+	Mise à jour septembre 2010
+	
+	
+	Les termes entre <>, et en gras, ne sont pas à utiliser
+	
+	Important : le champ domaine peut tout à fait être multivalué
+	Ex : orfèvrerie ; médiéval
+	Ex : peinture ; Asie orientale
+	Ex : vie domestique ; néolithique
+	Ex : sculpture ; Océanie
+	Ex : textile ; copte
+	Ex : métrologie – instruments de mesure ; médecine – hygiène - santé
+	
+	
+I. domaine par support de conservation
+	art mobilier
+	art pariétal
+	dessin
+	enluminure
+	estampe
+		élément d'impression
+	imprimé
+	manuscrit
+	métallurgie
+	miniature
+	<objet (au sens large)>
+		armurerie
+		céramique
+		chaudronnerie
+		dinanderie
+		ébénisterie
+		émaillerie
+		ferronnerie
+		glyptique
+		horlogerie
+		industrie lithique
+		industrie osseuse
+		ivoirerie
+		lutherie
+		menuiserie
+		mosaïque
+		orfèvrerie
+		pelleterie
+		sellerie
+		serrurerie
+		tabletterie
+		tapisserie
+		textile
+			broderie
+			dentellerie
+			œuvre textile
+		vannerie
+		verrerie
+			vitrail
+	œuvre en 3 dimensions
+	peinture
+	photographie (comprend les plaques de verre et les cartes postales)
+	plumasserie
+	sculpture
+	
+II. domaine par type de fonction
+	agriculture - élevage
+	ameublement = mobilier
+	artisanat - industrie
+	chasse - pêche - cueillette
+	commerce - économie – finances
+	construction
+	costume - accessoires du costume
+	croyances - coutumes
+	énergie
+	enseignement
+	environnement
+	hygiène - médecine - santé
+	jeux - sports - loisirs
+		balnéaire
+	métrologie - instruments de mesure
+	musique - chant - danse
+	spectacle - fête
+	transports - communications
+		batellerie
+		marine
+	vie domestique
+	vie militaire = militaria
+	vie politique - administrative
+	vie professionnelle
+	vie sociale - culturelle
+	
+III. domaine par chronologie/civilisation/géographie
+	< chronologie>
+		âge du bronze
+		âge du fer
+		chalcolithique
+		épipaléolithique
+		médiéval = Moyen-Age
+		mésolithique
+		moderne
+		néolithique
+		paléolithique
+		précolombien
+		temps modernes
+	< civilisation>
+		amérindien
+		assyrien
+		aztèque
+		byzantin
+		basque
+		carolingien
+		chypriote
+		copte
+		égyptien
+		étrusque
+		gallo-romain
+		gaulois
+		grec
+		hittite
+		ibérique
+		inca
+		indus
+		inuit
+		italique
+		jomon
+		khmer
+		maya
+		mède
+		mérovingien
+		mésopotamien
+		omeyade
+		ottoman
+		parthe
+		perse
+		phénicien
+		punique
+		romain
+		scythe
+		toltèque
+	...
+	< géographie>
+		Afrique
+			Afrique du Nord
+			Afrique Subsaharienne = Afrique Noire
+		Amérique
+			Amérique du Nord
+			Amérique Centrale
+			Amérique du Sud
+		Asie
+			Asie centrale
+			Asie du sud-est
+			Asie méridionale
+			Asie occidentale
+			Asie orientale = Extrême-Orient
+			Océanie
+	
+IV domaine disciplinaire
+	anthropologie
+	archéologie
+	architecture
+	beaux-arts
+	cartes - plans
+	design
+	épigraphie
+	ethnologie
+	héraldique
+	hippiqua
+	histoire
+	numismatique
+	phaléristique
+	philatélie
+	sciences naturelles
+	botanique (= flore)
+	faune
+	géologie
+		minéralogie
+		paléontologie
+	sciences – techniques
+	sigillographie

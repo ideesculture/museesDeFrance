@@ -1,0 +1,249 @@
+Liste des types d'inscriptions
+
+Mise à jour septembre 2010
+
+	date = daté
+	échelle
+	écriteau
+	emblématique
+		armoiries
+			chiffre emblématique
+		devise
+			écu
+		emblème
+	graffiti
+	inscription
+		acclamation
+		adresse
+		annotation
+			annotation concernant la représentation
+		article
+		autographe
+		bulle
+		calligraphie
+		citation
+		date apocryphe
+		décret
+		dédicace
+		épitaphe
+		ex-libris
+		en-tête
+			en-tête imprimé
+		hiéroglyphe
+		idéogramme
+		immatriculation
+		initiale
+		inscription concernant la représentation
+			inscription donnant l'identité du modèle
+		inscription concernant la vente
+			lieu de vente inscrit
+		inscription concernant le commanditaire
+			monogramme du commanditaire
+		inscription concernant le dédicataire
+		inscription concernant le destinataire
+			nom du destinataire
+		inscription concernant le donataire
+		inscription concernant le donateur
+		inscription concernant l'exécutant
+			nom d'éditeur inscrit
+			nom d'imprimeur inscrit
+		inscription concernant le lieu de conservation
+		inscription concernant le lieu de destination
+		inscription concernant le lieu d'émission
+		inscription concernant le lieu d'exécution
+			lieu d'édition inscrit
+			lieu d'exécution inscrit
+			lieu d'impression inscrit
+		inscription concernant le lieu de provenance
+		inscription concernant la technique
+		inscription concernant les bateaux
+			immatriculant
+			nom du bateau = nom du navire
+			port d'attache
+		inscription concernant les collections
+		inscription concernant l'épreuve
+		inscription définissant le contenu
+		inscription patronymique
+		inscription votive
+		invocation
+		légende
+		lettre
+		liste
+		mesure
+		mode d'emploi
+		paraphe
+			paraphe d'un collectionneur
+			paraphe d'un conservateur
+		phylactère
+		poème
+		prière
+		rébus
+		règle du jeu
+		signature apocryphe
+			monogramme apocryphe
+		signe
+		texte
+			cantique
+			chanson
+			chant
+			complainte
+			oraison
+			texte historique
+			texte manuscrit
+			texte religieux
+		titre
+			sous-titre
+	marque
+		cachet
+			cachet de collectionneur
+			cachet de douane
+			cachet de fondeur
+			cachet de marchand de couleurs
+			cachet de manufacture
+			cachet de vente
+			cachet d'atelier
+				cachet d'atelier usurpé
+		estampille
+			griffe
+		logo
+		marque concernant le support
+		marque concernant les collections = marque de collection
+		marque concernant les collections publiques
+			marque de musée
+			marque de bibliothèque
+		marque d'atelier
+		marque de décorateur
+		marque de décoration
+		marque de doreur
+		marque de fabricant
+		marque de fabrique = marque de fabrication
+		marque de façonnage
+		marque de fondeur
+		marque d'orfèvre
+		marque de manufacture
+		marque de monteur
+		marque de potier
+		marque de résidence
+		marque de série
+		marque de tailleur
+		marque du propriétaire
+		marque postale
+			cachet à date
+				oblitération Prermier Jour
+			cachet d'ambulant
+			cachet d'entrée
+			cachet de départ
+			cachet de port
+				port dû
+				port payé
+			cachet de recette
+			cachet d'entrée
+			cachet d'oblitération
+				grille sans fin
+				losange oblitérant
+					losange grille
+					losange gros chiffres
+					losange petits chiffres
+			cachet octogonal
+			cachet paquebot
+			étoile à numéro
+			étoile muette
+			marque d'armée
+				marque d'armée en déboursé
+			marque de déboursé
+			marque de purification
+			marque de taxation = chiffre-taxe
+			marque de transit
+			marque linéaire
+		marque publicitaire
+		poinçon
+			poinçon de charge
+			poinçon de communauté = poinçon de jurande
+				lettre-date
+			poinçon de décharge
+			poinçon de fabricant
+			poinçon de garantie
+			poinçon de maître
+			poinçon de recense
+			poinçon de titre
+			poinçon de ville
+			poinçon d'importation
+			poinçon d'orfèvre
+			sceau
+		sigle
+		tampon
+			tampon sec
+		timbre
+			timbre de colportage
+			timbre humide
+			timbre sec
+	numéro
+		numéro d'inventaire
+		numéro de décor
+		numéro de modèle
+		numéro peint
+		numéro d'ordre
+		numéro de série
+	signature = signé (520)
+		monogramme = monogrammé
+			monogramme en caractères typographiques
+		signature de l'exécutant
+		signature emblématique
+		signature en caractères typographiques
+		signature échoppée
+	visa de censure
+	affixe
+		alphabet
+			cunéiforme
+		justification
+			ancien = ancienne
+			d'origine
+			faux = fausse
+			récent = récente
+		langue
+			allemand
+			anglais
+			arabe
+			basque
+			catalan
+			celtique
+			chinois
+			cyrillique
+			danois
+			égyptien
+				égyptien ancien
+					hiéroglyphique
+			espagnol
+			français
+				vieux français
+			gothique
+			grec
+			hébraïque
+			hébreu
+			hollandais
+			hongrois
+			italien
+			japonais
+			latin
+			ottoman
+			portugais
+			provençal
+			roumain
+			russe
+			slavon
+			sumérien
+			turc
+		emplacement
+			côté
+			côté droit
+			côté gauche
+			face = recto = avers
+			face du montage = face montage
+			face reliure
+			dos = verso = revers
+			revers du montage = revers montage
+			sur cadre
+			sur fond
+			sur l'objet
+		?
+

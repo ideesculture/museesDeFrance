@@ -1,0 +1,69 @@
+Liste des termes autorisés du statut juridique de l'objet
+
+Mise à jour septembre 2010
+
+	statut juridique
+		statut de la propriété
+			propriété publique
+				propriété de l'Etat
+				propriété de la collectivité locale
+				propriété du département
+				propriété de la communauté d'agglomération
+				propriété de la communauté de communes
+				propriété de la commune
+				propriété de la région
+				propriété du territoire
+				propriété d'un syndicat mixte
+			propriété privée
+				propriété de l'artiste
+				propriété privée personne morale
+			propriété d'un état étranger
+				propriété de l'Etat algérien
+		conditions de prêt ou de dépôt
+			interdiction de prêt
+			interdiction de dépôt
+			interdiction de prêt et de dépôt
+			interdiction de prêt à l'étranger
+		propriétaires
+			conseil général de la Vendée
+			conseil général des Yvelines
+		protection = protection MH
+			classé MH
+			inscrit MH
+		mode d'acquisition
+			achat
+				achat après commande
+				achat après arrêt en douane
+				achat au salon
+				achat en vente publique
+				achat avec participation
+					achat avec participation du FRAM
+				achat sous réserve d'usufruit
+				achat sur les arrérages d'un legs
+				achat sur les arrérages d'une donation
+				achat sur les arrérages d'une fondation
+				achat par préemption
+					achat par préemption en vente publique
+					achat par préemption en douane
+			ancien fonds
+			attribution par l'office des biens privés
+			cession
+			changement d'affectation
+			dation
+			dévolution
+			donation
+				don
+				don enquête
+				don fouilles
+				donation sous réserve d'usufruit
+			échange
+			legs
+				legs sous réserve d'usufruit
+			mode d'acquisition inconnu
+			mode d'acquisition non renseigné
+			mode d'acquisition particulier
+			saisie
+				saisie révolutionnaire
+				saisie en douane
+				conquête militaire
+			transfert de propriété de l'Etat à titre gratuit

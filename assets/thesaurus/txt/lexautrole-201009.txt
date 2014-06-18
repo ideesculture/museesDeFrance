@@ -1,0 +1,203 @@
+Liste des rôles des auteurs/exécutants
+
+Mise à jour septembre 2010
+
+
+rôle
+	adaptateur
+	affichiste
+	agence
+	aquafortiste
+	aquarelliste
+	archetier
+	architecte
+	architecte-concepteur
+	architecte-designer
+	armurier
+	arquebusier
+	artisan
+	astronome
+	atelier = atelier des 
+		atelier artistique
+		atelier de céramique
+		atelier indéterminé
+	attribué = attribué à
+	auteur
+		auteur de la traduction
+	auteur de la forme
+	auteur de la patine
+	auteur des ornements
+	auteur du décor
+	auteur du graffiti
+	auteur du modèle
+	bijoutier
+		joaillier
+	bottier
+	brodeur
+	bronzier
+	bureau de style
+	cadranier
+	calligraphe
+	caricaturiste
+	cartier
+	cartographe
+	cartonnier
+	cercle de
+	céramiste
+	chantier naval
+	charron
+	chimiste
+	chromotypographe
+	cloutier
+	ciseleur
+	collaborateur
+	commanditaire
+	compassier-poullieur
+	concepteur
+	copiste
+	coroplathe
+	constructeur
+	coutelier
+	créateur
+	créatrice
+	d'après
+	décorateur = décoratrice
+	designer
+	dessinateur
+	diagraphe
+	diffuseur
+	dinandier
+	direction
+	distributeur
+	dominotier
+	doreur
+	ébéniste
+	école = école de
+	écrivain
+	éditeur
+	élève
+	entrepreneur
+	entreprise
+	émailleur
+	émaillographe
+	émetteur
+	encadreur
+	enlumineur
+	entourage = entourage de
+	établissements
+	ethnie = population
+	exécutant
+	expéditeur
+	fabricant
+	fabrique = manufacture
+		cristallerie
+		faïencerie
+		fabrique de vêtements liturgiques
+		manufacture indéterminée
+		poterie
+	facteur d'instrument
+		facteur de clavecins
+		facteur de pianos
+		facteur d'orgues
+	faïencier
+	ferblantier
+	ferronnier
+	firme
+	fondeur = fondeurs
+	forgeron
+	genre de
+	géographe
+	graveur
+		1er graveur
+		2e graveur
+		graveur sur bois
+	héliograveur
+	homme de lettres
+	horloger
+	illustrateur
+	imitateur de
+	imitation
+	imprimeur
+	indéterminé
+	indienneur
+	ingénieur
+	ingénieur-constructeur
+	inspiré par
+	inventeur
+	ivoirier
+	joailler
+	laboratoire
+	laqueur
+	libraire
+	lingère
+	lissier
+	lithographe
+	lunetier
+	luthier
+	maison
+	maître d'ouvrage
+	maquettiste
+	manière de = façon de
+	marbrerie
+	marchand
+	maroquinier
+	mécanicien
+	menuisier
+	miniaturiste
+	modeleur
+	mouleur
+		mouleur-répareur
+	négociant
+	orfèvre
+	ornemaniste
+	ouvrier lunetier
+	pantographe
+	papetier
+	pastelliste
+	peintre
+		peintre de figures
+		peintre de paysage
+		peintre de porcelaine
+		peintre sur faïence
+		peintre-copiste
+	photographe
+	photograveur
+	phototypie
+	plâtrier
+	plommier
+	potier
+		maître-potier
+	potier d'étain
+	praticien
+	préparateur
+	publiciste
+	relieur
+	résinier
+	restaurant
+	sabotier
+	sculpteur
+		sculpteur-répareur
+	sellier
+	société
+	style
+	styliste
+	suite de
+	suiveur
+	tabac
+	tapissier
+	tireur
+	tourneur
+		tourneur sur bois
+	tuilier
+	typographe
+	usine
+	vannier
+	vernisseur
+	verrier
+affixe
+	?
+	dit
+	dite
+	née
+	patronyme
+	renvoi

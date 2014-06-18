@@ -1,0 +1,1044 @@
+Liste des techniques et matériaux
+
+Mise à jour septembre 2010
+
+
+matériau d'origine animale
+	ambre gris
+	boyau
+		boyau de mouton
+	cheveu = cheveux 
+	cire
+	coquille
+		coquille d'escargot
+	coquillage
+		coquillage bivalve
+			coquille d'huître
+			coquille de moule
+		coquillage univalve
+			burgau
+			cauris
+			haliotis
+			troque = troca 
+		coquille de nautile
+		nacre
+			nacre blanche
+			nacre grise
+		perle de coquillage
+			perle fine
+	corail
+	corne
+		fanon de baleine
+	crin
+		crin de cheval
+	écaille
+		écaille de tortue
+			écaille blonde
+			écaille brune
+			écaille demi-blonde
+			écaille jaspée
+	éponge
+	élytre
+		élytre de scarabée
+	fil d'araignée = toile d'araignée 
+	fourrure
+		agneau
+			astrakan
+		castor
+		cheval
+			poulain
+		chinchilla
+		hermine
+		lapin
+		panthère
+			jaguar
+			léopard
+			once
+		loup
+		loutre
+		lynx
+		martre
+		ocelot
+		peau de mouton retournée
+		petit-gris = vair 
+		phoque
+			bébé phoque
+		putois
+		ragondin
+		renard
+			renard argenté
+			renard gris
+			renard roux
+		singe
+		skunks
+		vison
+	gélatine
+	graisse
+		suif
+	griffe
+		griffe de jaguar
+	ivoire = dent 
+		dent de cerf
+		dent de félin
+		ivoire d'éléphant = défense d'éléphant 
+		ivoire d'hippopotame
+		ivoire de cachalot
+		ivoire de jaguar
+		ivoire de morse
+		ivoire de narval
+		ivoire de pékari
+		ivoire de phacochère = dent de phacochère 
+		ivoire de requin = dent de requin 
+		dent de sanglier
+		dent humaine
+	laine
+		alpaga
+		angora
+		cachemire
+		chameau
+		cheviotte
+		lama
+		mérinos
+		mohair
+		shetland
+		fil de laine
+	matière sacrificielle
+	oeuf
+		coquille d'oeuf
+			coquille d'oeuf d'autruche
+	ongle
+		ongle de tatou
+	os
+		bois de cervidé
+			bois de cerf
+			bois de chevreuil
+			bois de renne
+		crâne
+		os d'oiseau
+		os d'ours
+		os de cachalot
+		os de cervidé
+		os de lièvre
+		os de loup
+		os de mouton
+		os de renard
+		os de tatou
+	peau = cuir 
+		peau de mammifère
+			cuir d'aignelin
+			cuir de basane
+			cuir de bison = peau de bison 
+			cuir de boeuf
+			cuir de buffle
+			cuir de cervidé = peau de cervidé 
+				cuir de cerf
+			cuir de chameau
+			cuir de chèvre = peau de chèvre 
+			cuir de chevreau = chevreau 
+			cuir de daim = daim 
+			cuir d'antilope = peau d'antilope 
+			cuir d'élan
+			cuir de mouton = peau de mouton 
+				parchemin
+					parchemin vierge
+			cuir de nubuck = peau de nubuck  = nubuck 
+			cuir d'orignal = peau d'orignal 
+			cuir de phoque = peau de phoque 
+			cuir de poulain = peau de poulain 
+			cuir de singe = peau de singe 
+			cuir de porc = peau de porc 
+			cuir de porc-épic = peau de porc-épic 
+			cuir de vache
+				vachette
+			cuir de veau = veau 
+				box = box-calf 
+				vélin
+					cabretille
+					vélin Chine
+					vélin BFK Rives
+					vélin d'Arches
+						vélin d'Arches Fidelis
+					vélin Mourlot
+					vélin Van Gelder Zonen
+					vélin vergé
+			maroquin
+			peau de chamois
+			peau de pécari
+		peau d'oiseau
+			peau d'autruche = cuir d'autruche 
+		peau de poisson
+			peau de raie = galuchat 
+			peau de requin
+			peau de roussette
+		peau de reptile
+			peau de crocodile = crocodile 
+			peau de lézard = lézard 
+			peau de serpent
+				peau de python
+	piquant
+		piquant de porc-épic
+			piquant de coendou
+		piquant d'oursin
+	plume d'oiseau
+		plume d'aigrette
+		plume d'autruche
+		plume de canard
+		plume de coq
+		plume de cygne
+		plume de faisan
+		plume de martin-pêcheur
+		plume d'oie
+		plume d'oiseau exotique
+			plume d'oiseau mouche
+			plume de lophophore
+			plume de paradisier
+		plume de paon
+		plume de pintade
+		plume de toucan
+	poil
+		poil d'élan
+		poil d'orignal
+		poil de lapin angora
+		poil de blaireau
+		poil de roussette
+		poil de singe
+	serre
+	tendon
+	soie
+		soie moulinée
+		soie tussah
+		fil de soie
+	stéarine
+matériau d'origine minérale
+	bakélite
+	béton
+		béton armé
+		béton cellulaire
+	bitume
+		pierre bitumeuse
+	carbone
+		fibre de carbone
+	cellophane
+	celluloïd
+	ciment
+		fibrociment
+	fritte
+	goudron
+	lave
+		andésite
+	linoléum
+	mâchefer
+	mastic
+	matière plastique
+		fausse écaille
+		ivoirine
+		imitation jais
+		plexiglas
+		polystyrène
+		PVC
+	matière synthétique
+		acétate
+			fibranne acétate = albène 
+			rayonne acétate
+		altuglas
+		bakélite
+		caoutchouc synthétique
+		cellophane
+		celluloïd
+		cupro
+		élasthanne
+			lycra
+		élastomère
+		galalithe
+		mousse synthétique
+		polyacrylique
+			crylor
+			orlon
+		polyamide
+			nylon
+		polyester
+			dacron
+			tergal
+			térylène
+		polyéthylène
+		polyuréthane
+		résine synthétique
+			résine polyester
+		rhovyl
+		vinyle
+		viscose
+			fibranne
+			rayonne
+	métal
+		alliage
+			acier
+				acier brossé
+				acier corten
+				acier inoxydable = inox 
+			alliage binaire
+				bronze
+					fil de bronze
+			alliage cuivreux
+			alliage ferreux
+			alliage non ferreux
+			alliage ternaire
+			alliage terreux
+			billon
+			electrum
+			fonte
+			laiton
+			maillechort
+			métail
+			métal cuivreux
+			potin
+			ruolz
+			vermeil
+		aluminium
+		argent
+			argent massif
+			fil d'argent
+		chrome
+		cuivre
+			cuivre jaune
+			cuivre rouge
+			métal base cuivre
+		étain
+		fer
+			fer à béton
+			fer étamé = fer blanc 
+			fil de fer
+		fibrométal
+		fil de métal
+			grillage
+		minerai
+		nickel
+		or
+			feuille d'or
+			fil d'or
+		platine
+		plomb
+			câble en plomb
+		tôle
+		zinc
+	miroir
+	mortier
+	pierre
+		albâtre
+			albâtre calcaire
+			albâtre gypseux
+		amazonite
+		amphibolite
+			amphibolite calcique
+		aphanite
+		aragonite
+		basalte
+		basanite
+			grauwacke
+		bélemnite
+		brèche
+			brèche verte
+		calcaire
+			calcaire coquillier
+			calcaire gris
+			calcaire lithographique
+			calcaire oolithique
+			craie
+			molasse
+			tuf
+		calcite
+		chaux
+		chlorite
+		chloristoschiste
+			chloristoschiste grauwacke = grauwacke chloritisée 
+		diorite
+			microdiorite
+			gabbrodiorite = gabbro-dioritique 
+			diorite porphyrique
+		dolérite
+			dolérite A
+			métadolérite A
+		éclogite
+		feldspath
+			pegmatite
+		fibrolite = fibrolithe  = sillimanite 
+		fluorite
+		gabbro
+			gabbro porphyrique
+			gabbro serpentinisé
+			microgabbro serpentinisé
+		galet
+		glaucophanite
+			glaucophanite à épidote
+		gneiss
+		granit = granite 
+			granit gris = granite gris 
+			granit rose = granite rose 
+		granodiorite
+		grauwacke
+		grès
+			arkose
+			grès de plage = beach rock 
+			grès cristallin
+			grès lithique
+			grès lustré
+			grès quartzite
+			molasse
+		greywacke
+		gypse
+			plâtre
+		hématite
+			limonite
+		heulandit
+		lave
+		lignite
+		malachite
+		marbre
+			marbre blanc
+			marbre de couleur
+				marbre bleu
+				marbre noir
+		métagabbro
+			métagabbro coronitique
+			métagabbro éclogitique
+		mica
+		micaschiste
+		nenfro
+		obsidienne
+		olivine
+			olivine-gabbro
+		opale
+			opale résinite
+		peridotite serpentinisée
+		pierre fétide
+		poros
+		porphyre
+		prasinite
+		pyrite
+		pyroxénite
+			pyroxénite sodique
+		quartz
+		quartzite
+		roche
+			roche dure
+			roche volcanique
+		sable
+		sel
+			sel gemme
+		shyolite
+		schiste
+			ardoise
+		serpentine
+		serpentinite
+		shale
+		silex
+			silex blond
+			silex d'Olendon
+			silex de Mormoiron
+			silex de Rijckholt
+			silex de Spiennes
+			silex du Grand-Pressigny = silex du Grand Pressigny  = silex GP 
+			silex tertiaire
+		silice
+		soufre
+		stéaschiste
+		stéatite
+		trachyte
+	pierre précieuse et semi-précieuse
+		aigue marine
+		alumine
+		améthyste
+		béryl
+		brillant
+		calcédoine
+			agate
+				chrysoprase
+			cornaline
+			jaspe
+			onyx
+		citrine
+		cristal de roche
+		diamant
+		émeraude
+		grenat
+		jade
+			chloromélanite
+			jadéite
+			néphrite
+		jais = jayet 
+		lapis-lazuli
+		nicolo
+		pierre fine
+		racine d'émeraude
+		rubis
+		saphir
+		saphirine
+		sardoine
+		sardonyx
+		topaze
+		turquoise
+		variscite
+			callais
+	pierre synthétique
+		perle synthétique = fausse perle 
+	plastiline
+	résine
+		poix
+		silicone
+	rhodoïd
+	skaï
+	staff
+	stuc
+	sulfate de magnésie
+	téflon
+	torchis
+	verre
+		cristal
+		fibre de verre
+		opaline
+		pâte de verre
+		perle de verre
+		pyrex
+		strass
+		faux jais = jais artificiel 
+		verre d'urane
+		verre optique
+	terre
+		argile
+			kaolin
+			limon
+			marne
+		pisé
+		pouzzolane
+		terre chamottée
+		terre crue
+		terre cuite = poterie 
+			céramique
+				brique
+				faïence
+					delftware
+					faïence égyptienne
+					faïence fine = grès anglais  = terre de pipe 
+						cream ware
+						faïence fine feldspathique
+						kaolina
+						pétro-cérame
+						terre de Lorraine
+					faïence siliceuse
+					faïence stannifère
+					majolique
+					salt glaze ware
+					vitreous
+				grès céramique
+					grès au sel
+					grès céramé
+					grès chamotté
+					grès porcelainier
+					jasper ware = grès blanc 
+					terre d'Egypte
+					terre carmélite
+					terre de Naples
+				porcelaine
+					biscuit
+						biscuit dur
+						biscuit tendre
+					imari
+					porcelaine dure
+						porcelaine dure nouvelle = pâte Laught-Vogt 
+					porcelaine phosphatique = bone-china 
+					porcelaine opaque
+					porcelaine siliceuse
+					porcelaine tendre
+						porcelaine tendre nouvelle
+			raku
+			terre demi-cuite
+				yakishimé
+matériau d'origine synthétique
+	alcool
+	adhésif
+	glycérine
+	lino
+	mousse
+	plexiglass
+	polycarbonate
+	toile cirée
+	zamak
+matériau d'origine organique
+matériau d'origine végétale
+	alfa
+	algue
+	aloès
+	amarante
+	arouman
+	bambou
+	blé
+	bois
+		acacia
+		acajou
+		amandier
+		arbre de Judée
+		aulne
+			aulne noir
+			bourdaine
+		balsa
+		bois de rose
+		bois de violette
+		bois fruitier
+			amandier
+			abricotier
+			arbousier
+			cerisier
+			citronnier
+			figuier
+			poirier
+			pommier
+			prunier
+		bouleau
+		buis
+		caroubier
+		charme
+		châtaignier
+		chêne
+		chêne vert
+		citise
+		conifère = résineux 
+			cèdre
+			épicéa
+			genévrier
+			grenadille
+				grenadille d'Afrique
+			mélèze
+			pin
+				pin arolle
+				pin maritime = Pin des Landes 
+				pin montagnard
+				pin pignon = pin parasol 
+				pin sylvestre
+			sapin
+			séquoia
+		ébène
+		érable
+		ficus
+		frêne
+		fusain
+		gaïac
+		genévrier
+		hêtre
+		houx
+		if
+		jujubier
+		karité
+		marronnier
+		merisier
+		noisetier
+		noyer
+		okoumé
+		olivier
+		orme
+			ormeau
+		padouk
+		palissandre
+		palmier
+			cocotier
+		pernambouc
+		persea
+		peuplier
+		platane
+		québracho
+		saule
+		sorbier
+			cormier
+		sureau
+		sycomore
+		tamaris
+		teck
+		tilleul
+		tulipier
+		viorne
+	caoutchouc
+		caoutchouc gutta-percha
+	cafeier
+	calebassier
+		calebasse
+	carton
+		carton de moulage
+			carton-pâte = carton pâte 
+			carton-pierre = carton pierre 
+		carton à gratter
+		carton plume
+	cellulose
+		nitrate de cellulose = nitrocellulose 
+			gel de nitrocellulose = collodion 
+	cendre
+	coca
+	corde
+	cordelette
+	dérivé du bois
+		aggloméré
+		contreplaqué = contre-plaqué 
+		isorel
+		lamellé collé
+		latté
+		MDF = medium density fibre board 
+		sciure
+	élément de végétal
+		coquille de végétal
+			coquille de noix
+		cosse
+		écorce
+			liège
+			sagoutier
+			tapa
+		épine
+			épine de porc-épic
+		feuile
+			feuille de bananier
+			feuille de figuier
+			feuille de pandanus
+		fibre végétale
+			bourre
+			chanvre
+			coton
+			fibre d'ananas
+			fibre de cocotier
+			fibre de courge
+			fibre de noix de coco
+			fibre de palmier
+			fibre de pandanus
+			ficelle
+			futaine
+			jute
+			kapok
+			lin
+			ramie
+			sisal
+		fleur
+		fruit
+			amande
+			noix de coco
+			noix de corozo
+				corozo
+		graine
+		latex
+		légume
+			citrouille
+		moelle d'aralia payrifera
+		paille
+			paille de bois
+			paille d'alfa
+			paille de céréale
+				paille d'Italie = paille de blé 
+				paille de riz
+				paille de seigle
+			paille exotique
+				bali
+				balibuntal
+				paille de christophine
+				manama
+		perle végétale
+		racine
+		résine
+			résine végétale
+				ambre
+					ambre jaune
+		ronce
+		tige
+			tige de pandanus
+	étoffe
+		étoffe stuquée
+			étoffe agglomérée et stuquée
+	jonc
+	lichen
+	mie de pain
+	noix
+	osier
+	matière ligneuse
+	palétuvier
+	papier
+		papier Arches
+		papier baryté
+		papier bristol = bristol 
+		papier buvard
+		papier calque
+		papier Canson
+		papier Canson et Montgolfier
+		papier cartonné
+		papier chiffon
+		papier couché
+		papier de Chine
+		papier de riz
+		papier de serpente
+		papier de soie
+		papier entoilé
+		papier glacé
+		papier gommé
+		papier Hollande
+			papier Hollande van Gelder
+		papier huilé
+		papier impondérable
+		papier ingres
+		papier Japon
+			papier Japon impérial
+		papier Job
+		papier journal
+		papier Kraft
+		papier Lafuma-Navarre
+		papier ligné = papier à lignes 
+		papier lithographique
+		papier mâché
+		papier Madagascar
+		papier maïs
+		papier mat
+		papier mécanique
+		papier peint
+		papier pelure
+		papier pur chiffon de Lana
+		papier pur fil du marais
+		papier quadrillé
+		papier toilé
+		papier vélin
+			papier vélin BFK Rives
+			papier vélin bouffant
+				papier vélin bouffant d'alfa
+			papier vélin chine
+			papier vélin crèvecoeur
+			papier vélin d'alfa
+			papier vélin d'Arches
+				papier vélin d'Arches fidelis
+				papier vélin d'Arches pur chiffon
+			papier vélin Daguerre
+			papier vélin de Corvol l'Orgueilleux
+			papier vélin de Hollande
+			papier vélin de Lana
+			papier vélin de Renage
+			papier vélin de Rives
+			papier vélin du Marais
+			papier vélin hélio-mat
+			papier vélin Lepage-Pain
+			papier vélin Mourlot
+			papier vélin offset supérieur
+			papier vélin pur fil
+				papier vélin pur fil Lafuma-Navarre
+			papier vélin torchon Le page
+			papier vélin Van Gelder zonen
+			papier vélin vergé
+		papier vergé
+			papier vergé Arches
+			papier vergé bouffant
+			papier vergé de Hollande
+				papier vergé de Hollande Pannekoek
+			papier vergé de Mongolfier
+			papier vergé des papeteries de Navarre
+			papier vergé Lafuma-Navarre
+		pâte à papier
+	papyrus
+	pâte végétale
+		pâte de guarana
+		pâte de riz
+	raphia
+	roseau
+	rotin
+	toile
+matériau d'origine diverse
+	monture de lunette
+	verre de lunette
+précisions matériaux
+	application et incrustation
+		biais
+		cabochon
+		cannetille
+			bouillon
+			cannetille frisée
+			cannetille jonc
+			cannetille laine
+			cannetille ronde
+			frisure
+			jaseron
+		cartisane
+		chaton
+		cordon
+			cordonnet
+		croquet
+		damasquinure
+		fixé
+		fond décoré
+		frange
+		galon
+			padou
+		ganse
+		gland
+		guipure
+		impastation
+		lacet
+			lacet plat
+			lacet rond
+		mastic
+		niellure
+		paillette
+			cuvette
+			paillette découpée
+			paillon
+			sequin
+		pampille
+		passepoil
+		patchwork
+		pâte gaufrée
+		pompon
+		résille
+		ruban
+		soutache
+		trace
+		tresse
+			tresse plate
+			tresse ronde
+		tube
+			tube rond
+			tube soufflé
+		verroterie
+	élément
+		aiguille
+		âme
+		armature
+		bâte
+		bâti
+		boîtier
+		cadran
+		carrure
+		ceinture
+		charnière
+		côté
+		couvercle
+		cuvette
+		décor
+		dessus
+		doublure
+		extérieur
+		garniture
+		intérieur
+		mouvement
+		pied
+		plateau
+		structure
+		support
+		tablette
+		tirette
+		tiroir
+	fil
+		bourrette
+		chenille
+		cordeline
+		coton mercerisé
+		crêpe
+		fil à gant
+		fil d'Ecosse
+		fil élastique
+		fil métallique
+			clinquant
+			fil métallique filé
+			fil métallique frisé
+			lame
+			lamelle
+			laminette
+			lumex
+			trait
+		organsin
+		schappe
+		trame
+affixe couleur
+	blanc = blanche 
+		blanc de Chine
+		blanc de céruse
+		blanc gris coquille
+		blanc jaune ivoire
+	couleur
+		ambré = ambrée 
+		beige
+		bichromie
+		bis
+		bleu = bleue 
+			bleu de cobalt
+			bleu de fer = céladon bleu 
+			bleu clair
+			bleu foncé
+			bleu-gris
+			bleu verdâtre
+			bleu-vert
+			bleu-violet
+			bleuté
+			indigo
+		brun = brune 
+			brun-beige
+			brun clair
+			brun foncé
+			brun orangé
+			brun-gris
+			brun-jaune
+			brun-rose
+			brun-rouge
+			brun-roux
+			brun-violet
+		camaïeu
+		céladon
+		chamois
+		clair = claire 
+		crème
+		gris = grise 
+			gris-beige
+			gris-bleu
+			gris-brun
+			gris-jaune
+			gris-mauve
+			gris-rose
+			gris-vert
+			gris clair
+			gris foncé
+		jaune
+			jaune-beige
+			jaune-brun
+			jaune clair
+			jaune soufre
+		manganèse
+			manganèse brun
+			manganèse noir
+			manganèse violet
+		marron
+		mauve
+		ocre
+			ocre jaune
+			ocre niellé
+			ocre rouge
+		orange
+			kaki
+			orange saumoné
+			orangé = orangée 
+		rose
+			rose orangé
+			rose pâle
+			rose saumon
+		rouge
+			rouge brique
+			rouge-brun
+			rouge de cuivre
+			rouge de fer
+			rouge orangé
+			rouge sombre
+		roux = rousse 
+		saumon
+		translucide
+		transparent
+		trichromie
+		verdâtre
+		vert = verte 
+			vert clair
+			vert foncé
+			vert-gris
+			vert-jaune
+			vert turquoise
+			vert de cuivre
+		violet = violette 
+		violine
+	incolore
+	noir = noire 
+		noir de fumée
+		tenmoku
+	?
+

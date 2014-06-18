@@ -1,0 +1,1189 @@
+Liste des utilisations - destinations
+
+Mise à jour septembre 2010
+
+
+	abattage des animaux
+	affichage des prix
+	alimentation
+		alimentation des nourrissons
+			allaitement
+				allaitement artificiel
+				allaitement naturel
+		conservation des aliments
+			salaison
+		conservation des liquides
+			conservation des boissons
+		consommation des aliments
+			couvert
+			vaisselle
+		consommation des boissons
+			récipient pour la boisson
+				récipient à eau
+				récipient à vin
+		préparation des aliments
+			cuisson
+		préparation des boissons
+			fabrication d'alcool
+				distillation
+	alimentation électrique
+	ameublement
+		meuble
+			accessoire du meuble
+		garniture de meuble
+	apparat
+	armement
+		arme
+			arme à feu
+				accessoire d'arme à feu
+			arme blanche
+				accessoire d'arme blanche
+			arme d'hast
+			arme de coup
+			arme de jet
+				accessoire d'arme de jet
+		équipement
+	artisanat
+	assemblage
+		assemblage des membrures
+	astronomie
+	attache
+	attelage
+	battage
+		battage de faux
+	bibelot
+	bijouterie
+	bonneterie
+	boucherie
+	boulangerie
+	bourrellerie
+	boutonnage
+	boutonnerie
+	brasserie
+	cadeau
+	canalisation
+	cavalerie
+		équipement du cavalier & du cheval
+			éperonnerie
+			harnachement
+		équipement du chamelier & du chameau
+	chandellerie
+	chant
+	charcuterie
+	chasse
+		chasse à courre
+		chasse aux engins
+		chasse à tir
+		vènerie
+	chauffage
+	cirerie
+	coiffure
+	combustion
+	commémoration
+	commerce
+	comptabilité
+		comptabilité commerciale & artisanale
+		comptabilité domestique
+	concours
+	confection
+	confiserie
+	contrôle
+	conservation
+		conservation des grains
+	construction
+		construction de bateau = construction navale 
+	corderie
+	cordonnerie
+	correspondance
+	coupe
+	course
+	cueillette
+	danse
+	débourrage
+	décor
+		décor d'architecture
+			décor d'appartement
+			décor de boutique
+			décor de cirque
+			décor d'église
+		décor de jardin
+		décor de poterie
+		décor de théâtre
+	décoration
+	décoration florale
+	décoration militaire
+	découpe
+	décrassage
+	distribution
+	drainage
+	dressage
+	écaillage
+	échange
+	échantillonnage
+	éclairage
+	écriture
+	égouttage
+	emboutissage
+	ensachage
+	enseignement
+	entretien des vêtements
+		entretien des chaussures
+		entretien du linge
+			blanchisserie
+			lessive
+			repassage
+	entretien du feu
+	épicerie
+	épouvantail
+	évaporation
+	expérimentation
+		expérimentation scientifique
+	exportation
+	exposition
+		exposition artistique
+		exposition coloniale
+		exposition commerciale
+		exposition industrielle
+		exposition internationale
+		exposition nationale
+		exposition régionale
+		exposition universelle
+	fabrication de beurre
+	fabrication de perles
+		fabrication de fils de perles
+	fête
+		carnaval
+		cavalcade
+	fermeture
+	fétichisme
+	fixation
+	fraisage
+	franc-maçonnerie = franc maçonnerie
+	fromagerie
+		fabrication de fromage = production de fromage 
+		séchage de fromage
+		vente de fromage
+	guerre
+		guerre de 39-45
+	horlogerie
+	hôtellerie
+	hydraulique
+	illustration
+	infanterie
+	instrument de dessin
+	jeu
+		attraction foraine
+		jeu d'adresse
+		jeu de balle
+			cesta punta
+			grand chistera
+			jeu de laxua = laxua 
+			jeu de paume
+			jeu de sare
+			joko garbi
+			pasaka
+			pelote basque
+			punta volea
+			rebot
+			remonte
+			tennis
+		jeu de boules
+		jeu de boulet
+		jeu de butte
+		jeu de cerf-volant
+		jeu de l'oie
+		jeu de loto
+		jeu de loterie
+		jeu de parcours
+		jeu de patience
+		jeu de quilles
+			jeu de quilles asphalte
+		jeu de rabat
+		jeu de société
+	jouet
+		jouet articulé
+		jouet mécanique
+	levage
+	loisir
+	maçonnerie
+	magistrature
+	manutention
+	marche
+	maroquinerie
+	mécanique
+	mercerie
+	mesure = instrument de mesure
+		mesure de direction
+		mesure de la contenance
+		mesure de la distance
+		mesure de l'épaisseur
+		mesure de l'espace
+		mesure de l'intensité de la couleur
+		mesure de l'orientation
+		mesure de la longueur
+		mesure de la pression
+		mesure de la température
+		mesure des angles
+		mesure du poids
+		mesure du temps
+	meunerie
+	mobilisation
+	mode
+		accessoire de mode
+	moulage
+		moulage dentaire
+	musique
+		accessoire de musique
+		instrument de musique
+			accessoire d'instrument de musique
+	navigation
+		instrument de navigation
+	orfèvrerie
+	osiériculture
+	outil
+	patriotisme
+	pêche
+		pêche en mer
+			pêche à la morue
+		type de bateau
+			doris
+	pédagogie
+		matériel scolaire
+	percement des oreilles
+	pesée
+	plomberie
+	portage
+	porte-photographies
+	pratique de la santé
+		médecine
+			anatomie
+			anesthésie
+				anesthésie générale
+			antiseptie = aseptie 
+			auscultation
+			cardiologie
+			chirurgie
+				amputation
+				chirurgie dentaire
+					extraction dentaire
+				chirurgie maxillo-faciale
+				chirurgie osseuse
+			dentisterie
+			électrothérapie
+			gynécologie
+			laryngologie
+			lavage
+			lavement
+			obstétrique
+			ophtalmologie
+			optique
+				instrument d'optique
+			orthoptie
+			oto-rhino-laryngologie
+			phrénologie
+			ponction
+			puériculture
+			réanimation
+			saignée
+			stérilisation
+			transfusion
+			trépanation
+			urologie
+			vaccination
+		pharmacie
+		soins aux animaux
+		hygiène
+			toilette
+	pratique religieuse
+		baptême
+		cérémonie
+		communion
+		culte
+			culte de la Vierge = culte marial 
+			culte des saints
+			culte du Christ
+			objet du culte
+		fiançailles
+		mariage
+		messe
+		naissance
+		pèlerinage
+		pratique divinatoire
+			divination
+			magie
+		pratique funéraire
+			culte des morts
+				enterrement
+			deuil
+		pratique rituelle
+			dépôt de fondation
+		pratique votive
+			ex-voto = ex voto 
+			piété populaire
+				fétiche
+				mascotte
+				porte-bonheur
+				talisman
+		procession
+	présentation
+	presse
+	projet
+	propagande
+	protection
+		protection solaire
+	publicité
+		marque
+			A la Belle Jardinière
+			A la Botte Rouge
+			A la Fauvette
+			A la Française
+			A la Flotte Française
+			A la Gerbe d'Or
+			A la Grande Maison de blanc
+			A la Maison dorée
+			A la Ménagère
+			A la Nouvelle Eloïse
+			A la Providence
+			A la Samaritaine
+			A la Scabieuse
+			A la Source des Rubans
+			A la Tentation
+			A la Tour de Jean-sans-Peur
+			A la Tour Saint-Aubin
+			A la ville de Lyon
+			A la ville de Paris
+			A la ville de Saint-Denis
+			A la ville des Ternes
+			A l'Ancre
+			A l'Hérissé
+			A l'Etoile d'Or
+			A l'Hérisse
+			A Saint-Jacques
+			A Saint-Joseph
+			Aiguebelle
+			Allez Frères
+			Amieux Frères
+			Amora
+			Arlatte
+			Armand Bizouard
+			Au Bon Goût
+			Au Camélia
+			Au Canard Sauvage
+			Au Cardinal Fesch
+			Au Coin de la Rue
+			Au Fourmilier
+			Au Général Marceau
+			Au Grand Condé
+			Au Grand Cornet
+			Au Grand Monge
+			Au Grand St Paul = Au Grand Saint-Paul 
+			Au Marché Ménilmontant
+			Au Nouveau Paris
+			Au Patriote
+			Au Panthéon
+			Au Paradis des Enfants
+			Au Paradis des Dames
+			Au Paris Nouveau
+			Au Pèlerin Saint Jean
+			Au Petit Matelot
+			Au Petit St Pierre = Au Petit Saint-Pierre 
+			Au Phénix
+			Au Planteur
+			Au Pont Notre-Dame
+			Au Portail Saint-Julien
+			Au Prince Eugène
+			Au Printemps
+			Au Progrès
+			Aux Quatre Frères
+			Au Roi Dagobert
+			Au Soldat Laboureur
+			Au Soleil
+			Au Soulier d'Or
+			Au Souvenir de Béranger
+			Au Souvenir de Béran
+			Au Tapis Rouge
+			Au Vrai Bon Marché
+			Aux 100
+			Aux Classes Laborieuses
+			Aux Deux Nations
+			Aux Deux Orphelines
+			Aux Deux Passagers
+			Aux Deux Villageois
+			Aux Frères Provençaux
+			Aux Phares de la Bastille
+			Aux Soeurs de Charité
+			Aux Tissus
+			Aux Travailleurs
+			Aux Tuileries
+			Achery Veuve = Veuve Achery 
+			Arlatte & Cie
+			Auger Charles
+			Aurelle Just = Just Aurelle 
+			Bahezre Henri de
+			Bains Turcs
+			Bailly
+			Barlerin
+			Bauché Henri
+			Bazar de l'Hôtel-de-Ville
+			Bazar de la Belle Fermière
+			Bee's Polish
+			Belle Jardinière
+			Bénédictine
+			Bengaline
+			Benoist Auguste = Auguste Benoist 
+			Bériot C = C Bériot 
+			Berthaut
+			Bertrand
+			Bertrand & Rivière
+			Besnier
+			Bessède
+			Besson
+			Bi-Lessive Végétale
+			Biscuiterie Nantaise
+			Bisquit
+			Blanzy-Ouest
+			Bleu-Argent
+			Blondat
+			Bordin
+			Bornier
+			Bornier-Céry
+			Bouchain
+			Boudrot Ernest = Ernest Boudrot 
+			Boucquemont E = E Boucquemont 
+			Bourgeois
+			Bourgeois B
+			Bouvier G = G Bouvier 
+			Braillon
+			Brantford Canadian
+			Braquier & Boivin
+			Byrrh
+			Café des Gourmets
+			Cally
+			Candeliez & Deveau
+			Carenoutur
+			Carabana
+			Carrère
+			Cartier-Bresson
+			Casiez-Bourgeois
+			Caves du Roi
+			Cauvel Charles
+			Cédea
+			Chambon E
+			Champigneulles
+			Champion A
+			Chapu A
+			Charles Dumont = Dumont Charles 
+			Chemins de Fer de Brighton
+			Chemins de Fer de l'Etat
+			Chemins de Fer de l'Ouest
+			Chemins de Fer d'Orléans
+			Chemins de Fer du Nord
+			Chevalier
+			Chicorée Cambrésienne
+			Chicorée d'Alsace
+			Chicorée Extra
+			Chicorées du Docteur
+			Chocolat de la Marine
+			Chocolat des Pyrénées
+			Chocolat du Planteur
+			Clair d'Acier
+			Coca-Cola
+			Combier Hermanos = Combier Frères 
+			Compagnie Anglo-Suisse
+			Compagnie Française
+			Compagnie Générale Transatlantique
+			Concorde
+			Coquelu-Miquey
+			Cordonnerie des deux passages
+			Cordonnerie du Salon
+			Cordonnerie Française
+			Cottereau
+			Crédit Saint-Germain
+			Crème Express
+			Cusenier
+			D'Elbeuf
+			d'Aiguebelle
+			Dagommer
+			Danvers H = H Danvers 
+			Daumy A
+			Debauve & Gallais
+			Decraienne
+			De Dijon
+			De l'Etoile
+			De l'Exposition
+			Delmas
+			Derra
+			Des Gourmets
+			Descartes-Guibert
+			Deschamps-Langlois
+			Devinck
+			Diaphane
+			Docteur Franck
+			Douchet-Brévière
+			Dubonnet = Edouard Dubonnet & Labussière  = Edouard Dubonnet 
+			Duchat
+			Duhoux P
+			Duran & Chancel
+			Durand A & Célarié
+			Durand-Mézerette
+			Duroyon & Petit
+			Duroyon & Ramette
+			Duvinage
+			Esders Henri = Henri Esders 
+			Eudlitz Maurice
+			Euréka
+			Excelsior
+			Express
+			Facq Henri = Henri Facq 
+			Fagart Jules
+			Falconnet-Perodeaud
+			Fallot & Cie
+			Faure P
+			Félix Potin
+			Fichot
+			Fidèle A = A Fidèle 
+			Floquet
+			Folies Dramatiques
+			Fondeur E = E Fondeur 
+			Fournier Charles = Charles Fournier 
+			Fournier L F & Cie
+			Forest H
+			Foussès L
+			Fremiet
+			Galeries Artistiques
+			Galeries Rémoises
+			Gallia
+			Gamelin
+			Garnier
+			Gasse A
+			Gérald L
+			Gérard
+			Gevrey François = François Gevrey 
+			Gibrat-Petit
+			Gilson P
+			Girardot Emile
+			Giroud Charles = Charles Giroud 
+			Giroux
+			Giroux-Devinage
+			Globe
+			Godchau Ad = Ad Godchau 
+			Goldenberg
+			Gourmets Trébuctien
+			Goursat Léon
+			Grand Bazar des Batignolles
+			Grand Bazar du Soleil d'Or
+			Grand Bazar Paul Parnaudeau
+			Grand Magasin
+			Grande Cordonnerie de l'Epoque
+			Grands Marchés de Russie
+			Grapp
+			Gras Th
+			Grey
+			Grey-Poupon
+			Gringoire
+			Grolleau
+			Grondard
+			Gros Frères = Frères Gros 
+			Groult Maxime Fils
+			Guérin-Boutron
+			Guesdon Paul = Paul Guesdon 
+			Guichard
+			Guillout
+			Guyard
+			Guyard-Robergeot
+			Hachette & Cie
+			Héritier-Guyot
+			Hetzel J & Cie
+			Heuze
+			Howe Elias
+			Humber Beeston
+			Huntley & Palmers
+			Ibled
+			Jacob
+			Jacquemart
+			Jacquemin Paul = Paul Jacquemin 
+			Jacquemin Pierre & Fils = Pierre Jacquemin 
+			Jannot
+			Jean sans Peur
+			Jockey-Club
+			Jouan Cadet
+			Julien Mack
+			Jumelle Eugène
+			Kaiffa d'Orient
+			Kendall N
+			Kub
+			L'Audierne
+			L'Olympienne
+			La Belle Jardinière
+			La Béthunoise
+			La Charmeuse
+			La Kabiline
+			La Laitière
+			La Ménagère
+			La Parisienne
+			La Pâte Flamande
+			La Préférée
+			Le Rationnel
+			La Sans Rivale
+			La Violette
+			Le Balfresco
+			Le Basilex
+			Le Délicieux
+			Le Grand
+			Le Miroir
+			Le Nil
+			Le Petit Chat
+			Le Tellier
+			Les Grands Moulins
+			Lefebvre G
+			Lefèvre-Utile = Lu 
+			Lefort-Sucer
+			Lemarié & Leconte
+			Lervilles Joseph = Joseph Lervilles 
+			L'Idéale
+			Ladiette
+			Langlois A
+			Lanty J
+			Larzillière
+			Liebig
+			Lepage Maxime
+			Leroux Emile
+			Leveau-Godbert
+			Liberator
+			Loisel = Loisel A 
+			Lombard
+			Lombart
+			Louis Broux
+			Louit
+			Lucas E
+			Luciline
+			Maggi
+			Maille
+			Mairesse Paul = Paul Mairesse 
+			Maison A Brouillaud
+			Maison A Fourain
+			Maison de la Belle Jardinière
+			Maison du Grand Saint Denis
+			Maison du Petit St Thomas = Maison du Petit Saint-Thomas 
+			Maison du Pont-Neuf
+			Maison Gallanty
+			Maison Henriquet
+			Maison L Pegot
+			Maison Marie & Soeur Emile Leroux
+			Maison Modèle A Brouillaud
+			Maison Samuelson & Cie
+			Maltrait
+			Marguery
+			Maris Boutreux
+			Marquet Martin = Martin Marquet 
+			Martin Auguste
+			Massey Harris
+			Masson
+			Mattoni
+			Mauprivez-Tassart
+			Ménestrier
+			Métropole
+			Milon Aîné
+			Moine Saint-Martin = Maison du Moine-Saint-Martin  =  Moine Saint Martin 
+			Montagne Verte
+			Morel E
+			Moreuil
+			Motte-Bergeot A
+			Mouillard
+			Moulin Rouge
+			Munier Gabriel = Gabriel Munier 
+			Musgrave
+			Naigeon
+			Nérot
+			New Home
+			Nubian
+			Oberthür Charles
+			Odelin
+			Olibet
+			Orlia Passerel
+			Papillon Noir
+			Parant-Deroche
+			Paris-Progrès
+			Paris-Voltaire
+			Parizot Jules = Parizot  = Jules Parizot 
+			Pasq E = E Pasq 
+			Pasquier
+			Patriote A = A Patriote 
+			Paul J = J Paul 
+			Payraud
+			Pelé A = A Pelé 
+			Pelletier
+			Pellieux-Tourin
+			Percebois-Cochart
+			Père Jacobert
+			Perfecta
+			Pernot
+			Pernot-Gille
+			Perraton
+			Peron-Rival
+			Petit & Cie
+			Petit Paris
+			Phénix
+			Philbée
+			Phoscao
+			Pigeon F = F Pigeon 
+			Poignée de mains
+			Poirrotte
+			Pothier Joseph = Joseph Pothier 
+			Poulain
+			Protez-Delâtre
+			Pygmalion A = A Pygmalion 
+			Premier Fils
+			Raycel
+			Raoul
+			Redon Fils
+			Reine de Dijon
+			Remy
+			Reverdy-Ricard
+			Ricard
+			Ricqlès
+			Ripolin
+			Rouchier-Bazel
+			Rouf Frères
+			Royal Cipodor
+			Sabot Rouge
+			Saint-Jacques
+			Saint-Joseph
+			Saint-Michel
+			Saint-Rémy Eugène
+			Saint-Vincent
+			Salvy
+			Sarret & Bitsch
+			Saxoléine
+			Sester
+			Sigaut
+			Siméon
+			Simon
+			Simon Ch
+			Simonnot A
+			Singer
+			Socquard
+			Sodex
+			Sporting-Club Tailor
+			St Raphaël-Quinuina
+			Sta Paul
+			Stella
+			Sublimior-Pieron
+			Suchard
+			Sumangala
+			Suprême Pernot
+			Tambour
+			Tapioca de l'Etoile
+			Tapioca des Familles
+			Tapioca Richelieu
+			Tapioka da Estrella
+			Terrot & Cie
+			Théo
+			Thomas & C
+			Tivollier de Gourjon
+			Trablit
+			Trébucien
+			Trémeau & Cie
+			Truchot Alexandre = Alexandre Truchot 
+			Truchot Théodore = Théodore Truchot 
+			Theveniaud Georges & Fils = Georges Theveniaud & Fils 
+			Urion G
+			Utzschneider & Cie
+			Van Houten
+			Véchot
+			Vendroux & Cie
+			Vingeanne
+			Viton A = A Viton 
+			Voelcker Daniel = Daniel Voelcker 
+			Voxeur Gustave
+			Yoplait
+			Williot Fils
+			Zan
+		produit
+			aliment
+				biscuit
+				confiserie
+					chocolat
+					réglisse
+				confiture
+				conserve
+					sardines
+						sardines à l'huile
+					moutarde
+					champignons
+				extrait de viande
+				farine
+				galette
+				gâteau
+				glace
+				moka
+				pain d'épice
+				pâtes
+				pâtisserie
+				perles du Japon
+				tapioca
+			amidon
+			automobile
+				automobile agricole
+			balai
+			banque
+			bicyclette
+			boisson
+				absinthe
+				alcool
+				alcool de menthe
+				bière
+				bouillon
+					consommé
+				cacao
+				café
+				cassis
+				champagne
+				chicorée
+				cognac
+				cointreau
+				lait
+				limonade
+				liqueur
+				pastis
+				potage = soupe 
+				quinquina
+				thé
+				vin
+			bougie
+				bougie à 5 trous
+				bougie à pied cannelé
+				boulet de charbon
+			bretelles
+			brosse à laver
+			casino
+			cassis
+			chapeau
+			chaussure = chaussures 
+			chemise
+			cirage
+			collier
+			crême
+			droguerie
+			eau
+			eau à détacher
+			élixir
+			encaustique
+			essence
+			essence de café
+			estampe
+			extincteur
+			faïence
+			fil
+			fourneau
+			gluten
+			jardin zoologique
+			jouet
+				étincelle électrique
+				fleur électrique
+			lessive
+			librairie
+			lingerie
+			loterie
+			machine à coudre
+			maquette
+				maquette d'arsenal
+				maquette d'armateur
+				maquette d'exposition
+				maquette de chantier
+			matériel agricole
+			médicament
+			mobilier
+			moto
+			paillasson
+			papeterie
+			papier à cigarette
+			parapluie
+			parfumerie
+			peinture
+				peinture à l'eau
+				peinture émail
+				peinture laquée
+			pelote de fil
+			pétrole
+				pétrole à brûler
+			plumeau
+			pneu = pneumatique 
+			poële
+			porcelaine
+			produit à polir
+			roman
+				Cartouche
+				La Belle Gabrielle
+				La Comtesse Paule
+				La Porteuse de Pain
+				Les demi-vieilles
+				Les Quatre Sergents de la Rochelle
+				Sabre au Clair
+			sauce
+			savon
+			serviette
+			support de vêtement
+			suspension d'objet
+			teinture
+			textile
+			tissu
+			village suisse
+			voiture d'enfant
+			volet
+		lieu
+			Europe
+				France
+					Aquitaine
+						Gironde = 33 
+							Bordeaux
+					Auvergne
+						Puy-de-Dôme = Puy de Dôme  = 63 
+							La Bourboule = Bourboule 
+					Bourgogne
+						Côte-d'Or = Côte d'Or  = 21 
+							Beaune
+							Dijon
+							Semur-en-Auxois = Semur en Auxois 
+						Yonne = 89 
+							Arcy-sur-Cure = Arcy sur Cure 
+					Bretagne
+						Côtes-d'Armor = Côtes d'Armor  = 22 
+							Lannion
+							Saint-Malo = Saint Malo 
+							Perros-Guirec
+							Saint-Brieuc = Saint Brieuc 
+						Finistère = 29 
+							Camaret-sur-Mer = Camaret sur Mer 
+							Crozon
+							La Roche-Maurice = La Roche Maurice 
+							Quimper
+							Pointe du Raz
+							Saint-Thégonnec = Saint Thégonnec 
+							Saint-Jean-du-Doigt = Saint Jean du Doigt 
+						Ille-et-Vilaine = 35 
+							Fougères
+							Rennes
+						Morbihan = 56 
+							Saint-Pierre-en-Quiberon = Saint Pierre en Quiberon 
+					Centre
+						Cher = 18 
+							Bourges
+					Ile-de-France = Ile de France 
+						Paris = 75 
+					Languedoc-Roussillon = Languedoc Roussillon 
+						Pyrénées-Orientales = Pyrénées Orientales 
+							Vernet-les-Bains = Vernet les Bains 
+					Normandie
+						Basse-Normandie = Basse Normandie 
+							Calvados = 14 
+							Manche = 50 
+								Cherbourg
+						Haute-Normandie = Haute Normandie 
+						Seine-Maritime = Seine Maritime  = 76 
+							Rouen
+					Pays-de-la-Loire = Pays de la Loire 
+						Loire-Atlantique = Loire Atlantique  = 44 
+							Saint-Nazaire = Saint Nazaire 
+						Maine-et-Loire
+							Angers
+						Vendée = 85 
+							Les Sables d'Olonne
+					Poitou-Charentes = Poitou Charente 
+						Charente-Maritime = Charente Maritime  = 17 
+							Royan
+					Rhône-Alpes = Rhône Alpes 
+						Brides-les-Bains
+						Divonne-les-Bains
+						Salins-Moutiers
+				Hollande
+		personne
+			Caynon Fernande = Ouvrard Mme 
+			Consul
+			Dalila
+			Daniellis
+			Davidos Battistos
+			Dechaume Violette
+			Depford Charles
+			Dianda Alice
+			Djim Bill and Schlax
+			Dranem
+			Gallici Henri
+			Goncourt Edmond de
+			Grimm Frères
+			Guilbert Yvette
+			Guyon Alexandre
+			Hacker & Lester
+			Harmington
+			Hippodrome
+			Isoline
+			Jack de Fer
+			Jean le Cric
+			La Belle Fatma
+			Les Contois
+			Les Dante
+			Les Riforzendo
+			Les Walton
+			Lockhart Sam
+			Long H Fils
+			Manetti G
+			Mary Rose
+			Mayol Félix
+			Michaëlla
+			Miniggio
+			Mlle Dorothée
+			Mystag
+			Noblett Gidon de
+			Olympia
+			Paulus Henriette
+			Perrault Charles
+			Pickman
+			Pinder
+			Polin
+			Réjane
+			Renard
+			The Dilecta
+			The Sterzelly's
+			Trio Gamon
+			Vallo
+			Vésiner Pierre
+	purge
+	quincaillerie
+	rangement
+	récompense
+	recrutement
+	repos
+	santé
+	scellement
+	siège
+	signalétique
+	signalisation
+	sinapisme
+	soutien
+	souvenir
+	spectacle
+		acrobatie
+		café-concert
+		cinéma
+			film
+				Le Fils d'Hercule
+				Madame Sans Gêne
+		cirque
+		funambulisme
+		marionnettes
+		music-hall
+		opérette
+			Mam'zelle 5 Louis
+		pantomime
+		prestidigitation
+		spectacle équestre
+		théâtre
+			pièce de théâtre
+				La Bonne à tout faire
+				La Casserole
+				La Tour de Nesle
+				Le Coup de Jarnac
+				L'Enfant du Miracle
+				L'Orpheline des Halles
+				Une Nuit de Noces
+	sport
+		équitation
+		cyclisme
+		natation
+		sport de quilles = bowling 
+			sport de quilles asphalte = bowling classic 
+	stockage
+	support
+	tatouage
+	taxation
+	teinturerie
+	thermalisme
+	tonnellerie
+	tourisme
+	traite
+	transport
+		transport par air = transport aérien 
+			aviation
+				aéronautique
+		transport par eau
+			transport fluvial
+			transport maritime
+		transport par terre = transport terrestre 
+			train
+	travail de l'argile
+		poterie
+		tuilerie
+	travail de l'agriculture & de l'élevage
+		arboriculture
+		agriculture
+			fanage
+			fenaison
+			moisson
+			récolte
+			semailles
+		apiculture
+		élevage
+			tonte
+		viticulture
+			vendanges = vendange 
+	travail du bois
+		bûcheronnage
+		charpenterie
+		ébénisterie
+		lutherie
+		menuiserie
+		saboterie
+	travail du métal
+		charronnage
+		dinanderie
+		forge
+		maréchalerie
+		travail du fer
+			ferronnerie
+		travail du bronze
+		travail du plomb
+	travail de la pierre
+		briqueterie
+		taille de la pierre
+	travail du sel
+		production de sel
+			production de sel ignigène
+		tirage du sel
+	travail du textile
+		chapellerie
+		couture
+		filage
+		ganterie
+		impression sur textile
+		rubanerie
+		teinturerie
+		tissage
+		tricot
+	usage lié au tabac
+		conservation du tabac
+		consommation du tabac
+		fabrication de cigarettes
+		fabrication de pipes
+		préparation du tabac
+	vente
+	ventilation
+	vêtement = costume
+		accessoire du vêtement = accessoire du costume 
+			fermeture de vêtement
+			parure
+				bijou
+		accessoire de la chaussure
+		couvre-chef
+	vannerie
+	vision
+	voierie
+	voyage
+	affixe
+		?
+		destination
+		fonction
+		utilisation
+			utilisation primaire
+			utilisation secondaire
+			utilisation supposée
+

@@ -1,0 +1,1689 @@
+Liste des sources de la représentation
+
+Mise à jour septembre 2010
+
+
+	nature du texte
+		genre littéraire
+			correspondance
+			cris
+			dialogue
+			éloquence
+				discours
+				sermon
+			formule d'esprit
+				devinette
+				histoire drôle
+				jeu de mots
+					charade
+				trait d'esprit
+			genre critique
+				commentaire
+				critique
+				pamphlet
+				parodie
+					burlesque
+				satire
+			genre didactique
+				essai
+				fable
+				prophétie
+				sentence
+					proverbe
+				traité
+			genre dramatique
+				comédie
+					farce
+					moralité
+				drame
+				mystère
+				opéra
+				opéra-comique
+				opérette
+				théâtre lyrique
+				tragédie
+			genre narratif
+				conte
+					conte merveilleux
+				historiette
+				nouvelle
+				récit
+					récit légendaire
+						légende
+						mémorable
+							fait divers
+				roman
+			genre poétique
+				chanson
+					complainte
+					Noël
+					vaudeville
+				épopée
+				poésie didactique
+				poésie lyrique
+			impromptu
+			science-fiction
+		genre du texte
+			document
+				cartulaire
+				charte
+				document administratif
+					statut
+				document diplomatique
+				document foncier
+				document juridique
+					contrat
+						contrat de mariage
+					testament
+				document nécrologique
+			ouvrage didactique
+				abécédaire
+				dictionnaire
+				grammaire
+			ouvrage éducatif
+			ouvrage historique
+				annales
+				armorial
+				biographie
+					autobiographie
+				chronique
+				chronologie
+				généalogie
+				mémoires
+			ouvrage juridique
+				code
+				coutumier
+			ouvrage liturgique
+				antiphonaire
+				bréviaire
+				livre d'heures
+				martyrologue
+				missel
+					lectionnaire
+						épistolaire
+						évangéliaire
+					sacramentaire
+						collectaire
+						graduel
+				pontifical
+				prière
+				rituel
+			ouvrage pratique
+				calendrier = calendriers 
+				guide
+				programme
+				règle
+				tables
+			ouvrage religieux
+				catéchisme
+				exemplum
+				manuel de confession
+				texte religieux
+				texte de prière
+					cantique
+					litanie
+					neuvaine
+					oraison
+				texte hagiographique
+					cantique spirituel
+					vie de saint
+			partition
+		matière du texte
+			sur l'administration
+			sur l'alimentation
+				sur la cuisine
+				sur le vin
+			sur l'art militaire
+				sur la guerre
+					sur Joffre
+			sur les arts
+				sur la musique
+				sur la prestidigitation
+			sur le droit
+				sur le droit canon
+				sur le droit civil
+				sur le droit coutumier
+			sur la littérature
+			sur la morale
+			sur la mort
+			sur la mythologie
+			sur la nature
+			sur la philosophie
+			sur la politique
+			sur la religion
+				sur la liturgie
+				sur la pénitence
+				sur les saints
+				sur la théologie
+					sur la mystique
+				sur la vie monastique
+			sur les sciences
+				sur l'astronomie
+				sur la biologie
+					sur la biologie humaine
+						sur la médecine
+					sur la zoologie
+						sur la médecine vétérinaire
+					sur la botanique
+				sur la chimie
+				sur la géographie
+					sur la Bretagne
+				sur la géologie
+				sur la physique
+			sur les sciences humaines
+				sur l'héraldique
+				sur l'histoire
+				sur le langage
+					sur la grammaire
+				sur la psychologie
+					sur le songe
+			sur les sciences occultes
+				sur l'alchimie
+				sur l'astrologie
+				sur la magie
+				sur la sorcellerie
+			sur la vie économique
+				sur l'agriculture
+					sur la culture
+						sur le jardinage
+					sur l'élevage
+				sur l'argent
+				sur l'artisanat
+				sur la chasse
+				sur le commerce
+				sur l'industrie
+				sur la pêche
+				sur les transports
+			sur la vie sociale
+				sur l'amour
+				sur le civisme
+				sur la condition sociale
+				sur l'éducation
+				sur les femmes
+				sur le jeu
+				sur le mariage
+				sur le savoir-vivre
+				sur le sport
+			sur les voyages
+	auteur titre
+		texte sacré
+			Coran
+			Bible
+				Ancien Testament
+					Pentateuque
+						Genèse
+						Exode
+						Lévitique
+						Nombres
+						Deutéronome
+					Livre historique
+						Livre de Josué
+						Livre des Juges
+						Livre de Ruth
+						Ier livre de Samuel
+						IIe livre de Samuel
+						Ier livre des Rois
+						IIe livre des Rois
+						Ier livre des chroniques
+						IIe livre des chroniques
+						Livre d'Esdras
+						Livre de Néhémie
+						Livre de Tobie
+						Livre de Judith
+						Livre d'Esther
+						Ier livre des Maccabées
+						IIe livre des Maccabées
+					Livre poétique ou Sapiential
+						Livre de Job
+						Les Psaumes
+							Psaume
+						Les proverbes
+						L'ecclésiaste
+						Cantique des cantiques
+						Livre de la sagesse
+						L'ecclésiastique
+					Livre prophétique
+						Livre d'Isaïe
+						Livre de Jérémie
+						Livre des Lamentations
+						Livre de Baruch
+						Livre d'Ezéchiel
+						Livre de Daniel
+						Livre d'Osée
+						Livre de Joël
+						Livre d'Amos
+						Livre d'Abdias
+						Livre de Jonas
+						Livre de Michée
+						Livre de Nahum
+						Livre d'Habacuc
+						Livre de Sophonie
+						Livre d'Aggée
+						Livre de Zacharie
+						Livre de Malachie
+				Nouveau Testament
+					Evangile
+						Selon Matthieu
+						Selon Marc
+						Selon Luc
+						Selon Jean
+					Actes des Apôtres
+					Epître
+						Epître de Paul
+							Epître aux romains
+							Ière épître aux corinthiens
+							IIe épître aux corinthiens
+							Epître aux galates
+							Epître aux éphésiens
+							Epître aux philippiens
+							Epître aux colossiens
+							Ière épître aux thessaloniciens
+							IIe épître aux thessaloniciens
+							Ière épître à Timothée
+							IIe épître à Timothée
+							Epître à Tite
+							Epître à Philémon
+							Epître aux hébreux
+						Epître de Jacques
+						Epître de Pierre
+							Ière épître de Pierre
+							IIe épître de Pierre
+						Epître de Jean
+							Ière épître de Jean
+							IIe épître de Jean
+							IIIe épître de Jean
+						Epître de Jude
+					Livre de l'Apocalypse
+				Apocryphe de la Bible
+					Actes de Pierre
+					Actes de Thomas
+					Apocalypse de Baruch
+					Assomption de Moïse
+					Evangile de Nicodème
+					Evangile de Pierre
+					Livre d'Enoch
+					Protévangile de Jacques
+		oeuvre antique
+			oeuvre chinoise antique
+				Sûtra
+					Hariti Sûtra
+					Prajnâpâramitâsûtra
+					Saddharmapundarîkasûtra
+					Samyuktaratna-Pitaka
+					Samyuktavastu
+					Sukhâvatîvyûha sûtra
+			oeuvre grecque antique
+				Anacréon
+					Odes d'Anacréon
+				Appien Alexandrin = Appianos 
+					Histoire romaine d'Appien
+						Guerre civile
+				Appolodore
+					Bibliothèque
+				Aristophane
+					Les nuées
+				Athénée
+					Banquet des savants
+				Callimaque
+					Hymnes
+				Esope
+					Le satyre et le paysan
+				Euripide
+					Alceste
+					Iphigénie à Aulis
+					Iphigénie en Tauride
+					Médée
+				Héliodore d'Emèse
+					Les Ethiopiques
+				Hérodote
+				Homère
+					L'Iliade
+					L'Odyssée
+				Longus
+					Daphnis et Chloé
+				Lucien de Samosate
+					Lucien
+					Toxaris
+				Ménandre
+				Musée poète = Mousaios 
+					Héro et Léandre
+				Pausanias
+					Description de la Grèce = Periegêsis 
+				Philostrate
+					Images
+					Vie d'Apollonios de Tyane
+				Philostrate = Philostrate de Lemnos 
+				Platon
+					Le banquet
+				Plutarque de Chéronée = Plutarque 
+					De mulierum virtutibus
+					Vies parallèles = Vies des hommes illustres 
+						Vie de publicola
+					De rebus utrius que fortunae
+				Sophocle
+					Antigone
+					Electre
+					Oedipe roi
+				Xénophon d'Athènes
+					La Cyropédie
+					Mémorables
+			oeuvre indienne antique
+				Valmiki
+					Ramayana
+			oeuvre latine antique
+				Apulée de Madaura
+					Les Métamorphoses d'Apulée = L'âne d'or 
+				Catulle
+					Poèmes
+				Cicéron
+					De finibus = De la vieillesse 
+				Claudien
+					Enlèvement de Proserpine
+				Donat = Aelius donatus 
+					Commentaire de Virgile
+				Flavius Josèphe
+					Histoire des Juifs = Histoire de la guerre des Juifs contre les Romains 
+				Horace
+					Odes
+				Hygin = Hyginus Gaius Julius 
+					Fables d'Hygin
+				Juvenal
+				Ovide
+					Fastes
+					L'art d'aimer
+					Les héroïdes
+					Les Métamorphoses d'Ovide
+				Pline l'Ancien
+					Histoire naturelle
+				Prudence
+					Psychomachie
+				Quinte-curce
+					Histoires d'Alexandre le Grand
+				Sénèque
+					Les tragédies de Sénèque
+				Suetone
+					Vies des douze César
+				Tacite
+					Annales
+					Histoires
+				Tertullien
+				Tite-Live
+					Ab urbe condita
+					Histoire romaine de Tite-Live
+				Valère Maxime
+					Faits et dits mémorables
+				Virgile
+					Bucoliques = Eglogues 
+					L'Enéide = Enéide 
+					Géorgiques
+		oeuvre aztèque
+			Valeriano Antonio
+				Nican Mopohua
+		oeuvre des Pères de l'Eglise
+			Père grec
+				Origène
+					Sur les principes
+				Saint Justin
+			Père latin
+				Saint Ambroise
+					Acte de saint Sébastien
+				Saint Augustin d'Hippone
+					La cité de Dieu
+					Les confessions de saint Augustin
+				Saint Eucher
+					Histoire des martyrs de la légion thébaine
+				Saint Grégoire le Grand
+				Saint Jérôme
+			Père occident
+				Grégoire Ier
+					Moralia in Job = Morales de saint Grégoire pape sur le Livre de Job 
+			Père oriental
+				Jean Chrysostome
+					Homélies
+		oeuvre médiévale
+			oeuvre allemande médiévale
+				anonyme = anonyme allemand médiéval 
+					Der rattenfanger von hammeln
+			oeuvre anglaise médiévale
+			oeuvre arabe médiévale
+				Les mille et une nuits
+					Aladin ou la lampe merveilleuse
+			oeuvre byzantine médiévale
+				Procope de cesaree
+					Histoire secrète = Histoire des guerres de l'empereur Justinien 
+			oeuvre française médiévale
+				anonyme = anonyme français médiéval 
+					Chanson de Roland
+					Chronique du religieux de Saint-Denis
+					Les Apocryphes de la Bible
+					Les quatre fils Aymon
+					Roman de Renart
+					Tristan et Iseult = Tristan et Yseult 
+				Chrétien de Troyes
+					Lancelot = Le chevalier à la charrette 
+					Yvain ou le Chevalier au lion
+				Marie de France
+					Lai du Laustic
+				Raymond de Macy
+				Villon François
+					Le grand Testament
+			oeuvre grecque médiévale
+			oeuvre italienne médiévale
+				Boccace Jean = Boccaccio Giovanni  = Boccace
+					Le Decameron
+				Dante Alighieri = Dante 
+					La divine comédie
+						L'Enfer
+				Jacques de Voragine = Voragine Jacques de 
+					La Légende dorée
+				Pétrarque François = Petrarca Francesco 
+					Canzonière
+			oeuvre japonaise médiévale
+				Dit du Genji
+		oeuvre moderne
+			oeuvre allemande moderne
+				anonyme = anonyme allemand moderne 
+					Abc die katze lief im schnee
+					Ade zur guten nacht
+					Alle meine entchen
+					Alles schweigt
+					Als ich bei meinen schafen wart
+					Auf ihr wandersleut zum wandern kommt die zeit
+					Auf de schwab'sche eisebahne
+					Auf einem baum ein kuckuck sass
+					Backe backe kuchen
+					Bruder Jakob = Frère Jacques 
+					Bruder Reicht die hand zum bunde
+					Der wachter auf dem turme sass
+					Der winter ist vergangen
+					Des knaben wunderhorn
+						Bettelmanns hochzeit
+						Morgen muss ich fort von hier
+						Morgen kinder wird's was geben
+						Muss i denn muss i denn zum stadtele'naus
+						Nun will der lenz uns grussen
+						O Strassburg o Strassburg
+						Schön ist die welt
+						Spannenlanger hansel
+						Trara das tont wie jagdgesang
+						Trarira der sommer der ist da
+						Unser leben gleicht der reise
+						Was macht der fuhrmann
+						Wenn alle brunnlein fliessen
+						Wenn der topp aber nun'n loch hat
+						Wer will fleissige handwerker sehn
+						Winde wehn schiffe gehn
+						Wohlan die zeit ist kommen
+						Zeigt her eure fusschen
+						Ringel ringel reihe
+						Schlaf kindchen schlaf
+						Tanz kindchen tanz
+						Wenn ich ein voglein war
+						Will ich in mein gartlein gehn
+					Die blumlein sie schlafen
+					Die gedanken sind frei
+					Die luft ist blau
+					Die tiroler sind lustig
+					Drei gans im haberstroh
+					Drei zigeuner fand ich einmal
+					Ei wie so toricht ist
+					Ein jager aus kurpfalz
+					Ein jager langs dem weiher ging
+					Es blies ein jager wohl in sein horn
+					Es ist ein ros'entsprungen
+					Es regnet
+					Es tanzt ein bi-ba-butzemann
+					Es war eine mutter
+					Es waren zwei konigskinder
+					Es es es und es
+					Fuchs du hast die gans gestohlen
+					Grun grun grun sind alle meine kleider
+					Gruss gott du schoner maien
+					Guten abend gut'nacht
+					Hab'mein'wage voll gelade
+					Hans spielmann
+					Hanschen klein / alles neu macht der mai
+					Hejo spannt den wagen an
+					Himmel und erde mussen vergehn
+					Himmelsau licht und blau
+					Horch was kommt von draussen rein
+					Hort ihr die drescher
+					Hort ihr herrn
+					I fahr I fahr
+					Ich bin ein musikante
+					Ich geh mit meiner laterne
+					Jeanne benita azais
+					Joseph lieber Joseph mein
+					Kein schoner land in dieser zeit
+					Kindlein mein
+					Kommt ein vogel geflogen
+					Lasst uns froh und munter sein
+					Le festin de Pierre
+					Ourson et Valentin
+					Victor ou l'enfant de la forêt
+					Lustig ist das zigeunerleben
+					Mein hausgesind
+					Mein hut der hat drei ecken
+						O cara mamma mia
+					Morgen fruh um sechs
+					Till eulenspiegel = Till l'espiègle 
+					Wieder ist nach dunkler nacht
+				Anschutz ernst
+					Es klappert die muhle am rauschenden bach
+					O tannenbaum
+				Baumann hans
+					Es geht eine helle flote
+					So frohlich wie der morgenwind
+				Bornemann wilhelm
+					Im wald und auf der heide
+				Brachvogel albert emil
+					Kein halmlein wachst auf erden
+				Brandt sebastien
+					La nef des fous
+				Burger gottfried august
+					Lenore
+				Chamisso adalbert von
+					Hab'oft im kreise der lieben
+				Claudius Matthias
+					Der mond ist aufgegangen
+					Der winter ist ein rechter mann
+				Dieffenbach georg ch.
+					Frau schwalbe ist'ne schwatzerin
+				Disselhoff august
+					Nun ade du mein lieb'heimatland
+				Eichendorff joseph von
+					In einem kuhlen grunde
+					Mich brennt's in meinen reiseschuh'n
+				Falk johannes
+					O du frohliche
+				Fallersleben hoffmann von
+					Alle vogel sind schon da
+					Als unser mops ein mopschen war
+					Ein mannlein steht im walde
+					Eine kleine geige mocht ich haben
+					Kuckuck kuckuck
+					Summ summ summ bienchen
+					Winter ade
+				Ganzhorn wilhelm
+					Im schonsten wiesengrunden
+				Garfinkel bernard
+					Tauschen
+				Gerhardt paul
+					Die guldne sonne
+					Geh aus mein herz und suche freud
+					Nun ruhen alle walder
+				Gluck Christoph Willibald von
+					Iphigenie en tauride de gluck
+				Goethe Johann Wolfgang von
+					Der zauberlehrling
+					Es war ein konig in thule
+					Goetz de berlichingen
+					Les souffrances du jeune Werther
+					Faust
+					Ich ging im walde so fur mich hin
+					Sah ein knab'ein roslein stehn
+				Grimm Jacob et Wilhelm
+					Blanche Neige
+					Cendrillon
+					Das kluge Gretel = La sage Margot 
+					Dornroschen = La Belle au bois dormant 
+					Hansel und Gretel = Jeannot et Margoton 
+					Tischchen deck dich = Petite table couvre toi 
+				Grunow Heinz
+					Ich brach drei durre reiselein
+				Hahn Karl
+					Hopp hopp hopp
+				Heine Heinrich
+					Lorelei
+				Hensel Walther
+					Auf du junger Wandersmann
+					Im fruhtau zu berge
+					Im marzen der bauer
+				Hering Karl Gottlieb
+					C-a-f-f-e-e
+					Ein sehr harter winter ist
+				Herman Nikolaus
+					Die helle sonn leucht'jetzt herfur
+				Holzschuher Johann C.
+					O du fröhliche
+				Humperdinck Engelbert
+					Hansel und Gretel
+						Bruderchen komm tanz mit mir
+				Lowenstein Richard
+					Auf unser wiese gehet was
+					Stille nacht heilige nacht
+				Meyerbeer Giacomo
+					Robert le Diable
+				Mohr Joseph
+				Muller Wilhelm
+					Am brunnen vor dem tore
+					Das wandern ist des mullers lust
+				Neander Joachim
+					Lobe den herren
+				Nicolai Philipp
+					Wie schön leuchtet der morgenstern
+				Nietzsche Friedrich
+					Par-delà le bien et le mal
+				Overbeck Christian A.
+					Komm lieber mai
+				Raspe Rudolf Eric
+					Les aventures du baron de Münchhausen
+				Riedel Hans
+					Aus grauer stadte mauern
+				Rodenberg Julius
+					Wohlauf in gottes schöne welt
+				Roelli Hans
+					Sonne erstrahlt und die vogel pfeifen
+				Salis-Seewis J.G. von
+					Bunt sind schon die walder
+				Schaad Reinhold
+					Heute wollen wir das ranzlein schnuren
+				Neumark Georg
+					Wer nur den lieben gott lasst walten
+					Jetzt fahrn wir ubern see
+				Schiller Friedrich von
+					La conjuration de fiesque à Gènes
+					Contes et ballades
+					Mit dem pfeil dem bogen
+				Schmidt Christoph von
+					Ihr kinderlein kommet
+					Wie lieblich schallt durch bursch und wald
+				Tieck Ludwig
+					Wohlauf es ruft der sonnenschein
+				Uhland Ludwig
+					Bei einem wirte wundermild
+					Ich hatt'einen kameraden
+				Wachsmann Johann Jakob
+					Wachet auf wachet auf
+				Wagner Richard
+					Le Vaisseau Fantôme
+					Lohengrin
+					Parsifal
+				Wilke Karola
+					Bald ist nun weihnachtszeit
+				Zarnack Joachim A.
+					O Tannebaum
+				Zwick Johannes
+					All morgen ist ganz frisch und neu
+			oeuvre américaine moderne
+				Hazen Barbara
+					The sorcerer's apprentice
+				Hemans Felicia Dorothy
+				Longfellow Henry wadsworth
+					Evangeline
+				Poe Edgar Allan
+					Les aventures d'Arthur Gordon Pym
+				Williams Jay
+					Petronella
+			oeuvre anglaise moderne
+				Jerrold Blanchard
+					A Pilgrimage
+				Byron George Gordon Noël = Byron Lord = Byron Geoge Gordon
+					Caïn
+					Don Juan satire épique
+					Lara
+					La fiancée d'Abydos
+					Le Giaour
+					Le prisonnier de Chillon
+					Manfred
+					Mazeppa
+				Coleridge Samuel Taylor
+					La chanson du vieux marin = The rime of the ancient mariner 
+				Defoe Daniel
+					Robinson Crusoé
+				Howel James
+					Dendrologie ou la forest de Dodone
+				Kirby Joshua
+					Perspective of architecture
+				Macpherson James
+					Poèmes d'Ossian
+				Milton John
+					Le paradis perdu
+				Poe Edgar Allan
+					Histoires extraordinaires
+				Rowe Nicholas
+					Jane Shore
+				Scott Walter
+					Ivanhoe
+					L'officier de fortune
+					La dame du lac
+					La fiancée de Lammermoor
+					Les fiancés de Lammermoor
+					Les puritains d'Ecosse
+					Quentin Durward
+					Richard Coeur de Lion
+				Shakespeare William
+					Hamlet
+					La mégère apprivoisée
+					La tempête
+					Le songe d'une nuit d'été
+					Macbeth
+					Othello = Othello le maure de Venise 
+					Roméo et Juliette
+			oeuvre autrichienne moderne
+				Lenau Nikolaus = Lenau Nikolaus Niembsch von Strehlenau 
+					Les trois Tziganes
+				Mozart Wolfgang Amadeus
+					Die zauberflote = La flûte enchantée 
+						Bald sprangt den morgen zu verkunden
+				Rilke Rainer Maria
+					Chant de l'amour et de la mort du cornette Christophe Rilke
+			oeuvre arabe moderne
+			oeuvre belge moderne
+				Maeterlinck Maurice
+					L'oiseau bleu
+				Verhaeren Emile
+			oeuvre brésilienne
+				Gomez Carlos
+					Guarany
+			oeuvre chinoise moderne
+				Changhenke = Chant du long regret 
+				Liji
+				Yuan Zhen
+					Xixiangji = Chambre de l'aile ouest 
+			oeuvre danoise moderne
+				Andersen Hans Christian
+					La petite fille aux allumettes
+					Le briquet = Das feuerzeug 
+			oeuvre espagnole moderne
+				Cervantes = Cervantes y Saavedra Miguel de 
+					Don Quichotte
+				Quevedo y Villegas Francisco Gomez de
+					L'heure de tous = La hora de todos 
+				San Pedro Diego di
+					Carcel de Amor
+			oeuvre française moderne
+				About Edmont
+					Le roi des montagnes
+				Ajalbert Jean
+					Fille de ferme
+				Alciat
+					Les emblèmes
+				Allais Alphonse
+					Captain Cap
+				Arnauld Antoine
+					Histoire et concorde des quatre évangélistes
+				Arnauld d'Andilly Robert
+					Les vies des saints pères des déserts
+				Audran Edmond
+					Miss Helyett
+				anonyme = anonyme français moderne 
+					Au clair de la lune
+					Cadet Rousselle
+					Compère Guilleri
+					Joli Tambour
+					L'innocent
+					La belle coupable
+					La biche au bois
+					La corde du pendu
+					La dame de St Tropez
+					La fille hussarde
+					La mère Michel
+					La péri
+					La tour prends garde
+					La sirène
+					Lady Seymour
+					Le Chamboran
+					Le maçon
+					Le roi Patapouf
+					Malbrough
+					Marie-Stuart
+					Meunier tu dors
+					Rebecca
+					Silvandire
+				Apollinaire Guillaume
+					La chanson du mal-aimé
+				Arene Paul
+					Domaine
+				Aubanel Théodore
+				Auber Daniel François Esprit
+					Fra Diavolo
+				Audé Joseph
+				Aulnoy madame d'
+					La Belle aux Cheveux d'Or
+					La bonne petite souris
+					Le cabinet des fées
+					Le cabinet des médailles
+					Le Nain Jaune
+					Les souhaits ridicules
+					L'Oiseau bleu
+				Ballanche Pierre Simon
+					Le sac de Rome
+				Balzac Honoré de
+					Contes drôlatiques
+					Splendeurs et misères des courtisanes
+				Banville Théodore de
+					Gringoire
+				Barante Prosper Brugiere
+					Histoire des ducs de Bourgogne
+				Barbey d'Aurevilly Jules Amédée
+					Les diaboliques
+				Barrès Maurice
+					Du Sang de la Volupté et de la Mort
+				Barthélemy Jean Jacques
+					Voyage du jeune Anacharsis
+				Baudelaire Charles
+					Le spleen de Paris
+					Les fleurs du mal
+				Bertot Jean
+					La France en bicyclette de Paris à Grenoble et Marseille
+				Beaujoint de Grandpré Jules
+					Cartouche
+					Les Quatre Sergents de la Rochelle
+				Beaumarchais Pierre Augustin = Caron de Beaumarchais Pierre Augustin 
+					Le barbier de Séville
+				Bergerat Emile
+					Plus que reine
+				Bernard Tristan
+					Le petit café
+				Bernardin de Saint-Pierre Jacques Henri
+					Paul et Virginie
+				Beroalde de Verville François
+					Le moyen de parvenir
+				Bèze Théodore de
+					Abraham sacrifiant
+				Bizet Georges
+					Carmen de Bizet
+					Bossuet Jacques Benigne
+					Discours sur l'histoire universelle
+				Blanc Jacques
+					Le livre de la pierre
+				Boileau Nicolas
+					Oeuvres diverses du sieur Despréaux
+				Botrel Théodore
+					La Paimpolaise
+				Boukay Maurice
+				Brassens Georges
+					Quand Margot dégrafait son corsage
+				Brébeuf Georges de
+					La Pharsale de Lucain
+				Bréviaire R
+					Une fête à Séville
+				Brizeux Auguste
+					Marie
+				Bruant Aristide
+					A Montmartre
+				Bruneau Alfred
+					L'ouragan
+				Bujault Jacques
+				Caignet Antoine
+					L'année pastorale
+				Cailhava Jean François
+					Etudes sur Molière
+				Capus Alfred
+					La Veine
+				Cardoz Jules
+					Jenny l'Ouvrière
+				Char René
+					Poèmes
+				Charpentier Gustave
+					Louise
+				Chateaubriand François René de
+					Atala
+					Les Martyrs
+				Chenier André
+					La jeune Tarentine
+				Coëffeteau Nicolas
+					Histoire romaine depuis le commencement de l'empire d'Auguste
+				Colette
+					La paix chez les bêtes
+				Collé Charles
+					Partie de chasse d'Henri IV
+				Corneille Pierre
+					Andromède
+					La mort de Pompée
+					Le Cid
+					Rodogune princesse des Parthes
+				Corneille Thomas
+					Ariane
+				Coste Gautier de
+					Faramond ou l'histoire de France
+				Courteline Georges
+					La Viveuse
+					Les Gaîetés de l'escadron
+				Crémieux Hector
+					Decourcelle Pierre
+				Curel François de
+				d'Indy Vincent
+					Fervaal
+				Dacier Anne = Tanneguy-Lefèbvre Anne 
+					Les poésies d'Anacréon et de Sapho
+				Dancourt = Carton Florent 
+					Les trois cousines
+				Danrit
+					La Guerre de Demain
+				Daubenton Marguerite
+					Zélie dans le désert
+				Debu-Bridel Jacques
+					Heure chaude à Djibouti
+				Desmarets de Saint-Sorlin Jean
+					Ariane
+					Clovis ou la France chrétienne
+					La vérité des fables ou l'histoire des dieux de l'Antiquité
+					Les délices de l'esprit dialogues dédiés aux beaux esprits du monde
+					L'office de la Vierge Marie mis en vers
+				Depré Ernest
+					Madame X
+				Desrousseaux
+					Le p'tit Quinquin
+				Destouches André Cardinal
+					Issé
+				Dézallier d'Argenville Antoine Joseph
+					Abrégé de la vie des plus fameux peintres
+				Donnay Maurice
+					Amants
+					Lysistrata
+				Doré Gustave
+				Dreux du Radier
+					L'Europe illustre contenant l'histoire abrégée des souverains des princes
+				Du Bosc Jacques
+					La femme héroïque
+				Dumas Alexandre Fils
+					La vie d'artiste
+				Dumas Alexandre Père
+					La tour de Nesle
+					Le comte de Monte-Cristo
+					Les Trois Mousquetaires
+				Enault Louis
+					Londres
+				Favre de Vaugelas Claude
+					Remarques sur la langue françoise
+				Fénelon = Salignac de la Mothe-Fénelon François de 
+					Aventures de Télémaque
+				Feydeau Georges
+					Champignol malgré lui
+				Flaubert Gustave
+					La légende de Saint-Julien-l'Hospitalier = La légende de saint Julien l'Hospitalier 
+					Madame Bovary
+					Salammbo
+				Flers Robert de
+					Ilsée princesse de Tripoli
+				Florian Jean Pierre Claris de
+					L'aveugle et le paralytique
+					La carpe et les carpillons
+					La mère l'enfant et les sarigues
+					Le château de cartes
+					Le danseur de corde et le balancier
+					Le lapin et la sarcelle
+					Le roi et les deux bergers
+					Le singe qui montre la lanterne magique
+					Le vacher et le garde-chasse
+					Les deux bacheliers
+					Les deux paysans et le nuage
+				France Anatole
+					Abeille
+					L'affaire Crainquebille
+					Thaïs
+					Vie de Jeanne d'Arc
+				Frapie Léon
+					La maternelle
+				Gaillardet Frédéric
+					La tour de Nesle
+				Gautier Théophile
+					Capitaine Fracasse
+				Gebhart Emile
+					La dernière nuit de Judas
+				Georges Alexandre
+					Miarka
+				Germond de Lavigne
+					L'Espagne
+				Gilblas
+					Petite Reine
+				Glück Christoph Willibald
+					Orfeo et Euridice
+				Godeau Antoine
+					Les tableaux de la pénitence
+				Goncourt Edmond de
+					La Faustin
+					La fille Elisa
+				Goudeau E
+				Gounod Charles
+					Faust
+					Rédemption de Gounod
+				Gresset Jean Baptiste
+					Vert-vert
+				Guez de Balzac Jean-Louis
+					Le barbon
+				Guilbert Yvette
+					Les Trottins
+				Halevy Jacques Fromental Elie
+					La juive
+				Hammer J. de
+					Histoire de l'empire ottoman
+				Haraucourt Edmond d'
+					Le roi Robert
+				Haureau Jean Barthélemy
+					Bernard délicieux et l'inquisition albigeoise
+				Hauteroche
+					Crispin médecin
+				Hédelin François
+					Macarise ou la reyne des Isles fortunées
+				Holmès Augusta
+					Ogier le Danois
+				Houdar de la Motte Antoine
+					La ronce et le jardinier
+					La rose et le papillon
+					Les abeilles
+				Houel Nicolas
+					Histoire de la reine Artémise
+						L'éducation du prince
+				Hugo Victor
+					Amy Robsart
+					La légende des siècles
+					Les Burgraves
+					Les Châtiments
+					Les contemplations
+					Les feuilles d'automne
+					Les orientales
+					Les travailleurs de la mer
+					Les voix intérieures
+					Notre-Dame de Paris
+				Janmot Louis
+					Le poème de l'âme
+					Le poème de l'art
+				Jarry Alfred
+					Ubu roi
+				La Fontaine Jean de
+					A femme avare galant escroc
+					A Madame de La Sablière
+					Belphégor
+					Bertrand et raton
+					Conseil tenu par les rats
+					Contre ceux qui ont le goût difficile
+					Daphnis et Alcimadure
+					Démocrite et les Abdéritains
+					Du thésauriseur et du singe
+					Histoire d'Adonis
+					Jupiter et le métayer
+					Jupiter et le passager
+					Jupiter et les tonnerres
+					L'aigle et l'escarbot
+					L'aigle et la pie
+					L'aigle et le hibou
+					L'aigle la laie et la chatte
+					L'alouette et ses petits avec le maître d'un champ
+					L'amour et la folie
+					L'âne chargé d'éponges et l'âne chargé de sel
+					L'âne et le chien
+					L'âne et le petit chien
+					L'âne et ses maîtres
+					L'âne portant des reliques
+					L'âne vêtu de la peau du lion
+					L'araignée et l'hirondelle
+					L'astrologue qui se laisse tomber dans un puits
+					L'avantage de la science
+					L'avare qui a perdu son trésor
+					L'écolier le pédant et le maître d'un jardin
+					L'écrevisse et sa fille
+					L'éducation
+					L'éléphant et le singe de Jupiter
+					L'enfant et le maître d'école
+					L'enfouisseur et son compère
+					L'hirondelle et les petits oiseaux
+					L'Hymée et l'Amour
+					L'homme entre deux âges et ses deux maîtresses
+					L'homme et la couleuvre
+					L'homme et la puce
+					L'homme et l'idole de bois
+					L'homme et son image
+					L'homme qui court après la fortune et l'homme qui l'attend dans son lit
+					L'horoscope
+					L'huître et les plaideurs
+					L'ingratitude et l'injustice des hommes envers la fortune
+					L'ivrogne et sa femme
+					L'oeil du maître
+					L'oiseau blessé d'une flèche
+					L'oiseleur l'autour et l'alouette
+					L'oracle et l'impie
+					L'ours et l'amateur des jardins
+					L'ours et les deux compagnons
+					La belette entrée dans un grenier
+					La besace
+					La chatte métamorphosée en femme
+					La chauve-souris et les deux belettes
+					La chauve-souris le buisson et le canard
+					La cigale et la fourmi
+					La colombe et la fourmi
+					La cour du lion
+					La courtisane amoureuse
+					La discorde
+					La femme noyée
+					La fille
+					La grenouille qui se veut faire aussi grosse que le boeuf = La grenouille qui voulait se faire aussi grosse que le boeuf 
+					La forêt et le bûcheron
+					La fortune et le jeune enfant
+					La génisse la chèvre et la brebis en société avec le lion
+					La goutte et l'araignée
+					La grenouille et le rat
+Jean de (507)
+					La jeune veuve
+					La laitière et le pot au lait
+					La lice et sa compagne
+					La ligue des rats
+					La lionne et l'ourse
+					La matrone d'Ephèse
+					Le milan et le rossignol
+					La montagne qui accouche
+					La mort et le bûcheron
+					La mort et le laboureur
+					La mort et le malheureux
+					La mouche et la fourmi
+					La parole de Socrate
+					La perdrix
+					La perdrix et les coqs
+					La poule aux oeufs d'or
+					La querelle des chiens et des chats et celle des chats et des souris
+					La servante justifiée
+					La souris métamorphosée en fille
+					La tête et la queue du serpent
+					La tortue et les deux canards
+					La vieille et les deux servantes
+					Le bassa et le marchand
+					Le berger et la mer
+					Le berger et le roi
+					Le berger et son troupeau
+					Le bûcheron et Mercure
+					Le cerf et la vigne
+					Le cerf malade
+					Le cerf se voyant dans l'eau
+					Le chameau et les bâtons flottants
+					Le charlatan
+					Le charretier embourbé
+					Le chat et le rat
+					Le chat et le renard
+					Le chat et les deux moineaux
+					Le chat et un vieux rat
+					Le chat la belette et le petit lapin
+					Le chêne et le roseau
+					Le cheval et l'âne
+					Le cheval et le loup
+					Le cheval s'étant voulu venger du cerf
+					Le chien à qui on a coupé les oreilles
+					Le chien qui lâche sa proie pour l'ombre
+					Le chien qui porte à son cou le dîner de son maître
+					Le cierge
+					Le coche et la mouche
+					Le cochet le chat et le souriceau
+					Le combat des rats et des belettes
+					Le cochon la chèvre et le mouton
+					Le coq et la perle
+					Le coq et le renard
+					Le corbeau et le renard
+					Le corbeau la gazelle la tortue et le rat
+					Le corbeau voulant imiter l'aigle
+					Le curé et la mort
+					Le curé et le mort
+					Le cygne et le cuisinier
+					Le dépositaire infidèle
+					Le dragon à plusieurs têtes et le dragon à plusieurs queues
+					Le faucon et le chapon
+					Le fermier le chien et le renard
+					Le fou qui vend la sagesse
+					Le gascon puni
+					Le geai paré des plumes du paon
+					Le gland et la citrouille
+					Le héron
+					Le jardinier et son seigneur
+					Le juge arbitre l'hospitalier et le solitaire
+					Le laboureur et ses enfants
+					Le lièvre et la perdrix
+					Le lièvre et la sarcelle
+					Le lièvre et la tortue
+					Le lièvre et les grenouilles
+					Le lion
+					Le lion abattu par l'homme
+					Le lion amoureux
+					Le lion devenu vieux
+					Le lion et l'âne chassant
+					Le lion et le chasseur
+					Le lion et le moucheron
+					Le lion et le rat
+					Le lion le loup et le renard
+					Le lion le singe et les deux ânes
+					Le lion malade et le renard
+					Le lion s'en allant en guerre
+					Le loup devenu berger
+					Le loup et l'agneau
+					Le loup et la cigogne
+					Le loup et le chasseur
+					Le loup et le chien
+					Le loup et le chien maigre
+					Le loup et le renard
+					Le loup et les bergers
+					Le loup et les brebis
+					Le loup la chèvre et le chevreau
+					Le loup la mère et l'enfant
+					Le loup plaidant contre le renard par devant le singe
+					Le magnifique
+					Le mal marié
+					Le marchand le gentilhomme le pâtre et le fils du roi
+					Le mari la femme et le voleur
+					Le meunier son fils et l'âne
+					Le milan le roi et le chasseur
+					Le mulet se vantant de sa généalogie
+					Le paon se plaignant de Junon
+					Le pâtre et le lion
+					Le paysan du Danube
+					Le pêcheur et le petit poisson
+					Le petit chien qui secoue de l'argent
+					Le petit poisson et le pêcheur
+					Le philosophe scythe
+					Le pot de terre et le pot de fer
+					Le pouvoir des fables
+					Le rat et l'éléphant
+					Le rat et l'huître
+					Le rat qui s'est retiré du monde
+					Le rat de ville et le rat des champs
+					Le renard anglais
+					Le renard et la cigogne
+					Le renard et le bouc
+					Le renard et le buste
+					Le renard et les poulets d'Inde
+					Le renard et les raisins
+					Le renard le loup et le cheval
+					Le renard le singe et les animaux
+					Le renard les mouches et le hérisson
+					Le renard qui a la queue coupée
+					Le rieur et les poissons
+					Le satyre et le passant
+					Le savetier et le financier
+					Le serpent et la lime
+					Le singe
+					Le singe et le chat
+					Le singe et le dauphin
+					Le singe et le léopard
+					Le singe et le rat
+					Le soleil et les grenouilles
+					Le songe d'un habitant du Mogol
+					Le statuaire et la statue de Jupiter
+					Le testament expliqué par Esope
+					Le thésauriseur et le singe
+					Le torrent et la rivière
+					Le trésor et les deux hommes
+					Le vieillard et l'âne
+					Le vieillard et les trois jeunes hommes
+					Le vieillard et ses enfants
+					Le vieux chat et la jeune souris
+					Le villageois et le serpent
+					Léda et le cygne
+					Les amours de Psyché et de Cupidon
+					Les animaux malades de la peste
+					Les compagnons d'Ulysse
+					Les deux amis
+					Les deux aventuriers et le talisman
+					Les deux chèvres
+					Les deux chiens et l'âne mort
+					Les deux coqs
+					Les deux mulets
+					Les deux perroquets le roi et son fils
+					Les deux pigeons
+					Les deux rats le renard et l'oeuf
+					Les deux taureaux et une grenouille
+					Les devineresses
+					Les dieux voulant instruire un fils de Jupiter
+					Les femmes et le secret
+					Les filles de Minée
+					Les frelons et les mouches à miel
+					Les grenouilles qui demandent un roi
+					Les lapins
+					Les loups et les brebis
+					Les médecins
+					Les membres et l'estomac
+					Les obsèques de la lionne
+					Les oreilles du lièvre
+					Les poissons et le berger qui joue de la flûte
+					Les poissons et le cormoran
+					Les souhaits
+					Les souris et le chat-huant
+					Les vautours et les pigeons
+					Les voleurs et l'âne
+					Nicaise
+					Philémon et Baucis
+					Philomèle et Progné
+					Phoebus et Boré = Phébus et Borée 
+					Rien de trop
+					Simonide préservé par les dieux
+					Tircis et Amarante
+					Tribut envoyé par les animaux à Alexandre
+					Un animal dans la lune
+					Un fou et un sage
+				La Landelle G de
+					La Gorgone
+				La Motte-Houdar Antoine de
+				La Roche-Chandieu Antoine
+					Histoire des persécutions de l'Eglise de Paris
+				La Varende Jean Mallard de
+					En parcourant la Normandie
+				Lamartine Alphonse de
+					Confidences
+					Graziella
+				Le Braz Anatole
+					L'innocente
+				Lecocq Charles
+					La fille de Mme Angot
+				Le Laboureur Jean
+					Histoire du maréchal de Guébriant
+				Lepelletier Edmond
+					La Closerie des Genets
+				L'Epine Ernest
+					La légende du Croque-Mitaine
+				Leprince de Beaumont
+					La Belle et la Bête
+					Le Prince Chéri
+				L'Ermite Tristan
+					Panthée
+				Lesage Alain René
+					Histoire de Gil Blas de Santillane
+				Lesclache Louis de
+					Abrégé de la philosophie en tables
+					La philosophie expliquée en tables
+				Lesfargues Bernard
+					David poème héroïque
+				Lhomond Charles François
+					De Viris illustribus urbis romae
+				Lubin Augustin
+					Orbis augustinianus
+				Luini Gemma
+					L'insaisissable bonheur
+				Lully Jean-Baptiste
+					Armide
+				Mac Orlan = Dumarchey Pierre 
+					Marguerite de la nuit
+				Maimbourg Louis
+					Histoire de l'hérésie des iconoclastes
+				Mallarmé Stéphane = Mallarmé Etienne 
+					Ad Astra
+					L'après-midi d'un faune
+				Maquet Auguste-Jules
+					La Belle Gabrielle
+				Marmontel Jean François
+					Bélisaire
+					Les Incas
+				Marolles Michel de
+					Les mémoires de Michel de Marolles
+				Marot Gaston
+					Madame X
+				Mary Jules
+					Sabre au clair
+				Mendès Catulle
+					La reine Fiammette
+				Mérimée Prosper
+					Carmen
+					Colomba
+				Messager André
+					La basoche
+				Mezeray François Eudes de
+				Mirbeau Octave
+					Le jardin des supplices
+				Mistral Frédéric
+					Mireille
+				Molière = Poquelin Jean-Baptiste 
+					L'Etourdi
+					Le bourgeois gentilhomme
+					Le dépit amoureux
+					Le malade imaginaire
+					Le misanthrope
+					Les femmes savantes
+					Les fourberies de Scapin
+					Les précieuses ridicules
+					Psyché
+					Tartuffe
+				Montépin Xavier de
+					La Porteuse de Pain
+				Montesquieu
+					De l'esprit des lois
+				Monvel Mr
+					Raoul sire de Créqui
+				Moreau Emile
+					Madame Sans-Gêne
+				Mourey Gabriel
+					Coeurs en détresse
+				Musset Alfred de
+					La nuit de mai
+					Rolla
+				Nadal abbé
+					Histoire des vestales
+				Ortigue Pierre d'
+					Faramond ou l'histoire de France
+				Paladilhe Emile
+					Patrie
+				Pascal Blaise
+					Les Pensées
+				Patin Charles
+					Familiae romanae
+				Perefixe Hardouin de Beaumont de
+					Histoire d'Henri le Grand
+				Perrault Charles
+					Barbe Bleue
+					Cendrillon
+					La Belle au Bois Dormant
+					Le Chat botté
+					Le Petit Chaperon Rouge
+					Le Petit Poucet
+					Les hommes illustres qui ont paru en France pendant ce siècle
+					Peau d'Ane
+					Riquet à la Houppe
+				Perrot A M-Aupick J
+					Département de l'Aube
+				Perrot d'Ablancourt Nicolas
+					Lucien
+				Pierné Gabriel
+					La fille de Tabarin
+				Pierre Joseph Bernard
+					Phrosine et Mélidore
+				Poussin Nicolas
+					Nouveau livre de dessin
+				Pouvillon Emile
+					Les Antibel
+				Prévost abbé
+					Histoire générale des voyages
+				Puget de la Serre Jean
+					Amours des déesses
+				Quinet Edgar
+					Ahasverus
+				Rabelais François
+					Gargantua et Pantagruel
+				Racine Jean
+					Andromaque
+					Athalie
+					Bajazet
+					Bérénice
+					Esther
+					Iphigénie
+					Mithridate
+					Phèdre
+				Rapin René
+					Hortorum Libri IV
+				Raynal Th.
+					Histoire philosophique et politique des établissements et du commerce
+				Renard Jules
+					Les Philippe
+					Poil de Carotte
+				Reyer Ernest
+					Salammbô
+					Sigurd
+				Richebourg Emile
+					La comtesse Paule
+				Richepin Jean
+					La chanson des gueux
+				Rictus Jehan
+					Les soliloques du pauvre
+				Rimbaud Arthur
+					Le bateau ivre
+				Rochard Emile
+					Sonnez Clairons
+				Rodin Auguste
+					Les cathédrales de France
+				Rollin Charles
+					Histoire ancienne
+				Roman-Descaves Lucien
+					Barabbas
+				Ronsard Pierre de
+					Les hymnes
+				Rostand Edmond
+					Chantecler
+					L'Aiglon
+				Rouget de Lisle Claude
+					La Marseillaise
+				Rousseau Jean-Jacques
+					Discours sur l'inégalité
+					Julie ou La Nouvelle Héloïse
+					Emile ou de l'Education
+					L'Engagement Téméraire
+				Saint-Saëns Camille
+					Déjanire
+					Samson et Dalila
+				Sainte-Marie Anselme de
+					Histoire de la maison royale de France et des grands officiers de la couronne
+				Sales Pierre
+					Viviane
+				Sand George = Dupin Armandine Lucie Aurore = Dudevant baronne
+					Lelia
+				Sardou Victorien
+					Madame Sans-Gêne
+					Patrie
+					Théodora
+				Scarron Paul
+					Le roman comique
+				Scudéry Georges de
+					Discours politique des rois
+				Scudéry Madeleine de
+					Artamène ou le grand Cyrus
+				Sibert Gautier de
+				Staats Leo
+					La Maladetta
+				Staël Mme de = Staël-Holstein Anne Louise Germaine de 
+					Corinne ou l'Italie
+				Sully = Béthune Maximilien de 
+					Economie royale
+				Taine Hippolyte
+					Voyage aux eaux des Pyrénées
+				Talon Nicolas
+					L'histoire sainte les roys
+					L'histoire sainte du Nouveau Testament
+				Taxil Léo
+					La Vie de Jésus
+				Tessin comte de
+					Faunillane ou L'Infante jaune
+				Thierry Augustin
+					Récits des temps mérovingiens
+				Thiers Louis Adolphe
+					Histoire de la révolution
+				Ungerer Jean Thomas = Tomi Ungerer 
+					Allumette
+					Heute hier morgen fort
+					La grosse bête de Monsieur Racine = The biest of Monsieur Racine = Das biest des Monsieur Racine
+					Le chapeau volant = The hat = Der hut
+					Le géant de Zéralda = Zeralda's ogre = Zeraldas riese
+					Le petit chaperon rouge = Rotkappchen 
+					Les histoires farfelues de Papaski = I am papa snap and these are my favorite no such stories  = Papa schnapp und seine noch-nie-dagewesen geschichten
+					No kiss for mother = Pas de baiser pour maman  = Kein kuss fur mutter
+				Velly Paul François de
+					Recueil des portraits des hommes illustres dans l'Histoire de France
+				Verne Jules
+					Michel Strogoff
+				Vésiner Pierre
+					Les amours secrètes de Napoléon III
+				Vias Balthazar de
+					Charitum libri tres
+				Vidal Paul
+					La Maladetta
+				Voltaire = Arouet François Marie 
+					La Henriade
+					Tancrède
+					Zaïre
+				Wolff Pierre
+					Le secret de Polichinelle
+				Zacharie de Lisieux
+					Gyges Gallus
+				Zola Emile
+					La Faute de l'Abbé Mouret
+					La Terre
+					Le Rêve
+			oeuvre grecque moderne
+			oeuvre hollandaise moderne
+				Hooft pieter
+					Granida
+			oeuvre italienne moderne
+				Bellini Vicenzo
+					Les puritains d'Ecosse
+				Bentivoglio Guido
+					Della gverra di fiandra descritta dal cardinal bentivoglio
+				Catalani Alfredo
+					Loreley
+				Caulibus Jean de
+					Méditations franciscaines
+				Colonna Francesco
+					Le songe de Poliphile
+				Da ponte Lorenzo
+					Don Giovanni
+				Donizetti Gaetano
+					Bélisaire
+				Franchetti
+					Asraël
+					Christophe Colomb
+					Daland
+				Guarini Gian Battista
+					Il Pastor fido = Le Pasteur fidèle 
+				L'Arioste = Ariosto Ludovico 
+					Roland furieux
+				Le Tasse = Torcato Tasso 
+					Aminta
+					La Jérusalem délivrée
+				Marino Giambattista
+					L'Adone
+					Lamento di Leandro
+				Mercadante Saverio
+					Virginie
+				Ripa Cesare
+					Iconologia = Iconologie 
+				Rossini Gioacchino
+					Il barbiere di Siviglia
+					Otello
+				Sangrinum
+					Vie de saint Benoît
+				Scalvo Bartolommeo
+					Rosariae preces
+				Tansillo Luigi
+					Les larmes de saint Pierre
+				Verdi Giuseppe
+					Aïda
+					Hernani
+			oeuvre polonaise moderne
+				Sienkiewicz Henryck
+					Quo vadis ?
+			oeuvre russe moderne
+				Dostoievski Fiodor Mikhailovitch = Dostoievski 
+					Souvenirs de la maison des morts
+				Rostov Dimitri de
+					La toison couverte de rosée
+			oeuvre suisse moderne
+				Gessner Salomon
+					contes moraux et nouvelles idylles
+					Idylles
+					oeuvres choisies
+				Spyri Johanna
+					Heidi
+	affixe
+		Chant 1
+		Chant 2
+		Chant 3
+		Chant 4
+		Chant 5
+		Chant 6
+		Livre 1
+		Livre 2
+		Livre 3
+		Livre 4
+		Livre 5
+		Livre 6
+		Livre 7
+		Livre 8
+		Livre 9
+		Livre 10
+		Livre 11
+		Livre 12
+		Livre 13
+		Livre 14
+	?
+
