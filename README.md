@@ -1,6 +1,9 @@
 providence-plugin-museesdefrance
 ================================
 
+Nous avons bâti autour de CollectiveAccess une application spécifique permettant de réaliser la géné- ration des registres de l'inventaire informatisé suivant les normes des musées de France.
+Tout cela dans une interface simple et agréable.
+
 ## Les fonctionnalités
 
 ### Dans CollectiveAccess
