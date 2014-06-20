@@ -136,24 +136,38 @@ class museesDeFrancePlugin extends BaseApplicationPlugin
 					'action' => 'Index'
 				)
 			);
+            if($this->opo_config->get('ExternalURLInventaire') != "") {
+                $va_menu_items['smf2'] = array(
+                    'displayName' => _t("Registre des biens affectés"),
+                    "default" => array(
+                        'module' => 'museesDeFrance',
+                        'controller' => 'External',
+                        'action' => 'biens'
+                    )
+                );
+            }
 
-			$va_menu_items['smf2'] = array(
-				'displayName' => _t("Registre des biens affectés"),
-				"default" => array(
-					'module' => 'museesDeFrance',
-					'controller' => 'External',
-					'action' => 'biens'
-				)
-			);
+            if($this->opo_config->get('ExternalURLDepot') != "") {
+                $va_menu_items['smf3'] = array(
+                    'displayName' => _t("Registre des biens déposés"),
+                    "default" => array(
+                        'module' => 'museesDeFrance',
+                        'controller' => 'External',
+                        'action' => 'depots'
+                    )
+                );
+            }
 
-			$va_menu_items['smf3'] = array(
-				'displayName' => _t("Registre des biens déposés"),
-				"default" => array(
-					'module' => 'museesDeFrance',
-					'controller' => 'External',
-					'action' => 'depots'
-				)
-			);
+            if($this->opo_config->get('installProfileThesaurus')) {
+                $va_menu_items['smf4'] = array(
+                    'displayName' => _t("Installation"),
+                    "default" => array(
+                        'module' => 'museesDeFrance',
+                        'controller' => 'InstallProfileThesaurus',
+                        'action' => 'Index'
+                    )
+                );
+            }
 
 			$pa_menu_bar['recolementsmf_menu'] = array(
 				'displayName' => _t("Procédures<br/>réglementaires"),
