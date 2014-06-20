@@ -1,0 +1,1 @@
+Ajouter dans ce répertoire le fichier museesDeFrance.conf personnalisé pour qu'il ne soit pas écrasé lors des mises à jour ultérieures.
