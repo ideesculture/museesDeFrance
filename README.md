@@ -8,6 +8,8 @@ Tout cela dans une interface simple et agréable.
 
 Une fois qu'un objet est inscrit à l'inventaire, cette ligne de l'inventaire n'est plus censée être modifiable. CollectiveAccess permet cette modification à tout moment. Nous avons donc fait le choix d'une deuxième application, qui nécessite CollectiveAccess pour fonctionner et qui ne sert qu'à figer les enregistrements des objets une fois ceux-ci inscrits dans l'inventaire.
 
+![image](http://www.ideesculture.com/idculture/inventaire2_256x256.png)
+
 Cette application Inventaire est disponible ici : [https://github.com/ideesculture/inventaire](https://github.com/ideesculture/inventaire)
 
 ## Les fonctionnalités
