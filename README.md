@@ -1,4 +1,4 @@
-providence-plugin-museesdefrance
+plugin museesDeFrance pour CollectiveAccess
 ================================
 ![image](museesDeFrance.png)
 
@@ -27,3 +27,11 @@ Une fois qu'un objet est inscrit à l'inventaire, cette ligne de l'inventaire n'
 ![image](http://www.ideesculture.com/idculture/inventaire2_256x256.png)
 
 Cette application Inventaire est disponible ici : [https://github.com/ideesculture/inventaire](https://github.com/ideesculture/inventaire)
+
+## La documentation
+
+Ce projet a un wiki sur github : https://github.com/ideesculture/museesDeFrance/wiki
+
+## Rapporter un bug
+
+Contactez nous par email à contact@ideesculture.com ou mieux, saisissez un ticket sur github : https://github.com/ideesculture/museesDeFrance/issues
