@@ -30421,7 +30421,6 @@
         <placement code="ca_occurrences_projet_expo">
           <bundle>ca_occurrences.projet_expo</bundle>
           <settings>
-            <setting name="label" locale=""/>
             <setting name="label" locale="en_US"/>
             <setting name="format"/>
             <setting name="delimiter"/>
@@ -30431,7 +30430,6 @@
         <placement code="ca_occurrences_expo_description">
           <bundle>ca_occurrences.expo_description</bundle>
           <settings>
-            <setting name="label" locale=""/>
             <setting name="label" locale="en_US"/>
             <setting name="format"/>
             <setting name="delimiter"/>
@@ -30441,7 +30439,6 @@
         <placement code="ca_occurrences_exhibitionBeginDate">
           <bundle>ca_occurrences.exhibitionBeginDate</bundle>
           <settings>
-            <setting name="label" locale=""/>
             <setting name="label" locale="en_US"/>
             <setting name="format"/>
             <setting name="delimiter"/>
@@ -30451,7 +30448,6 @@
         <placement code="ca_occurrences_exhibitionEndDate">
           <bundle>ca_occurrences.exhibitionEndDate</bundle>
           <settings>
-            <setting name="label" locale=""/>
             <setting name="label" locale="en_US"/>
             <setting name="format"/>
             <setting name="delimiter"/>
@@ -30461,7 +30457,6 @@
         <placement code="ca_objects">
           <bundle>ca_objects</bundle>
           <settings>
-            <setting name="label" locale=""/>
             <setting name="label" locale="en_US"/>
             <setting name="format"/>
             <setting name="delimiter"/>
@@ -30474,7 +30469,6 @@
         <placement code="ca_entities">
           <bundle>ca_entities</bundle>
           <settings>
-            <setting name="label" locale=""/>
             <setting name="label" locale="en_US"/>
             <setting name="format"/>
             <setting name="delimiter"/>
@@ -30487,14 +30481,12 @@
         <placement code="ca_occurrences_idno">
           <bundle>ca_occurrences.idno</bundle>
           <settings>
-            <setting name="label" locale=""/>
             <setting name="label" locale="en_US"/>
           </settings>
         </placement>
         <placement code="ca_occurrences_preferred_labels">
           <bundle>ca_occurrences.preferred_labels</bundle>
           <settings>
-            <setting name="label" locale=""/>
             <setting name="label" locale="en_US">Nom de l'exposition</setting>
             <setting name="format"/>
             <setting name="delimiter"/>
@@ -30513,7 +30505,6 @@
         <placement code="ca_objects">
           <bundle>ca_objects</bundle>
           <settings>
-            <setting name="label" locale=""/>
             <setting name="label" locale="en_US"/>
             <setting name="format"/>
             <setting name="delimiter"/>
@@ -30530,7 +30521,6 @@
         <placement code="ca_occurrences_recolement_date">
           <bundle>ca_occurrences.recolement_date</bundle>
           <settings>
-            <setting name="label" locale=""/>
             <setting name="label" locale="en_US"/>
             <setting name="format"/>
             <setting name="delimiter"/>
@@ -30540,7 +30530,6 @@
         <placement code="ca_occurrences_presence_bien">
           <bundle>ca_occurrences.presence_bien</bundle>
           <settings>
-            <setting name="label" locale=""/>
             <setting name="label" locale="en_US"/>
             <setting name="format"/>
             <setting name="delimiter"/>
@@ -30551,7 +30540,6 @@
         <placement code="ca_occurrences_constatEtat">
           <bundle>ca_occurrences.constatEtat</bundle>
           <settings>
-            <setting name="label" locale=""/>
             <setting name="label" locale="en_US"/>
             <setting name="format"/>
             <setting name="delimiter"/>
@@ -30561,7 +30549,6 @@
         <placement code="ca_occurrences_related">
           <bundle>ca_occurrences.related</bundle>
           <settings>
-            <setting name="label" locale=""/>
             <setting name="label" locale="en_US">Campagne liée</setting>
             <setting name="format"/>
             <setting name="restrict_to_types">108</setting>
@@ -30578,7 +30565,6 @@
         <placement code="ca_occurrences_dimensions">
           <bundle>ca_occurrences.dimensions</bundle>
           <settings>
-            <setting name="label" locale=""/>
             <setting name="label" locale="en_US"/>
             <setting name="format"/>
             <setting name="delimiter"/>
@@ -30588,7 +30574,6 @@
         <placement code="ca_occurrences_recoleur">
           <bundle>ca_occurrences.recoleur</bundle>
           <settings>
-            <setting name="label" locale=""/>
             <setting name="label" locale="en_US"/>
             <setting name="format"/>
             <setting name="delimiter"/>
@@ -30598,7 +30583,6 @@
         <placement code="ca_occurrences_valideur">
           <bundle>ca_occurrences.valideur</bundle>
           <settings>
-            <setting name="label" locale=""/>
             <setting name="label" locale="en_US"/>
             <setting name="format"/>
             <setting name="delimiter"/>
@@ -30608,7 +30592,6 @@
         <placement code="ca_occurrences_occurrence_media">
           <bundle>ca_occurrences.occurrence_media</bundle>
           <settings>
-            <setting name="label" locale=""/>
             <setting name="label" locale="en_US"/>
             <setting name="format"/>
             <setting name="delimiter"/>
@@ -30618,7 +30601,6 @@
         <placement code="ca_occurrences_idno">
           <bundle>ca_occurrences.idno</bundle>
           <settings>
-            <setting name="label" locale=""/>
             <setting name="label" locale="en_US"/>
             <setting name="maximum_length">100</setting>
           </settings>
@@ -30626,7 +30608,6 @@
         <placement code="ca_occurrences_preferred_labels">
           <bundle>ca_occurrences.preferred_labels</bundle>
           <settings>
-            <setting name="label" locale=""/>
             <setting name="label" locale="en_US"/>
             <setting name="format"/>
             <setting name="delimiter"/>
@@ -30975,7 +30956,6 @@
         <placement code="ca_objects_idno">
           <bundle>ca_objects.idno</bundle>
           <settings>
-            <setting name="label" locale=""/>
             <setting name="label" locale="en_US">Numéro d'inventaire</setting>
             <setting name="maximum_length">100</setting>
           </settings>
@@ -30983,14 +30963,12 @@
         <placement code="ca_objects_type_id">
           <bundle>ca_objects.type_id</bundle>
           <settings>
-            <setting name="label" locale=""/>
             <setting name="label" locale="en_US"/>
           </settings>
         </placement>
         <placement code="ca_storage_locations">
           <bundle>ca_storage_locations</bundle>
           <settings>
-            <setting name="label" locale=""/>
             <setting name="label" locale="en_US"/>
             <setting name="format"/>
             <setting name="delimiter"/>
@@ -31007,7 +30985,6 @@
         <placement code="ca_object_representations_media_icon">
           <bundle>ca_object_representations.media.icon</bundle>
           <settings>
-            <setting name="label" locale=""/>
             <setting name="label" locale="en_US">Image</setting>
             <setting name="display_mode">media</setting>
           </settings>
@@ -31018,7 +30995,6 @@
             <setting name="format"/>
             <setting name="delimiter"/>
             <setting name="maximum_length">100</setting>
-            <setting name="label" locale=""/>
             <setting name="label" locale="en_US">Titre</setting>
           </settings>
         </placement>
@@ -31035,7 +31011,6 @@
             <setting name="restrict_to_relationship_types">115</setting>
             <setting name="restrict_to_types"/>
             <setting name="show_hierarchy"/>
-            <setting name="label" locale=""/>
             <setting name="label" locale="en_US">Auteur</setting>
           </settings>
         </placement>
@@ -31045,7 +31020,6 @@
             <setting name="format"/>
             <setting name="delimiter"/>
             <setting name="maximum_length">2048</setting>
-            <setting name="label" locale=""/>
             <setting name="label" locale="en_US">Date</setting>
           </settings>
         </placement>
@@ -31055,14 +31029,12 @@
             <setting name="format"/>
             <setting name="delimiter"/>
             <setting name="maximum_length">2048</setting>
-            <setting name="label" locale=""/>
             <setting name="label" locale="en_US"/>
           </settings>
         </placement>
         <placement code="ca_objects_materiaux_tech_c">
           <bundle>ca_objects.materiaux_tech_c</bundle>
           <settings>
-            <setting name="label" locale=""/>
             <setting name="label" locale="en_US"/>
             <setting name="format"/>
             <setting name="delimiter"/>
@@ -31075,7 +31047,6 @@
             <setting name="format"/>
             <setting name="delimiter"/>
             <setting name="maximum_length">2048</setting>
-            <setting name="label" locale=""/>
             <setting name="label" locale="en_US"/>
           </settings>
         </placement>
@@ -31085,7 +31056,6 @@
             <setting name="format"/>
             <setting name="delimiter"/>
             <setting name="maximum_length">2048</setting>
-            <setting name="label" locale=""/>
             <setting name="label" locale="en_US"/>
           </settings>
         </placement>
@@ -31095,7 +31065,6 @@
             <setting name="format"/>
             <setting name="delimiter"/>
             <setting name="maximum_length">2048</setting>
-            <setting name="label" locale=""/>
             <setting name="label" locale="en_US"/>
           </settings>
         </placement>
@@ -31105,21 +31074,18 @@
             <setting name="format"/>
             <setting name="delimiter"/>
             <setting name="maximum_length">2048</setting>
-            <setting name="label" locale=""/>
             <setting name="label" locale="en_US"/>
           </settings>
         </placement>
         <placement code="ca_objects_ecole">
           <bundle>ca_objects.ecole</bundle>
           <settings>
-            <setting name="label" locale=""/>
             <setting name="label" locale="en_US"/>
           </settings>
         </placement>
         <placement code="ca_objects_acquisitionDate">
           <bundle>ca_objects.acquisitionDate</bundle>
           <settings>
-            <setting name="label" locale=""/>
             <setting name="label" locale="en_US"/>
           </settings>
         </placement>
@@ -31129,7 +31095,6 @@
             <setting name="format"/>
             <setting name="delimiter"/>
             <setting name="maximum_length">2048</setting>
-            <setting name="label" locale=""/>
             <setting name="label" locale="en_US"/>
           </settings>
         </placement>
@@ -31430,16 +31395,16 @@
         <placement code="p33">
           <bundle>ca_object_labels.name</bundle>
           <settings>
-            <setting name="label" locale="0"/>
-            <setting name="label" locale="1"/>
+            <setting name="label" locale="en_US"/>
+            <setting name="label" locale="fr_FR"/>
             <setting name="width">100px</setting>
           </settings>
         </placement>
         <placement code="p34">
           <bundle>ca_objects.objectProductionDate</bundle>
           <settings>
-            <setting name="label" locale="0"/>
-            <setting name="label" locale="1"/>
+            <setting name="label" locale="en_US"/>
+            <setting name="label" locale="fr_FR"/>
             <setting name="width">100px</setting>
           </settings>
         </placement>
@@ -31469,8 +31434,7 @@
         <placement code="p35">
           <bundle>ca_occurrences.done</bundle>
           <settings>
-            <setting name="label" locale="1"/>
-            <setting name="label" locale="2"/>
+            <setting name="label" locale="fr_FR"/>
             <setting name="width">100px</setting>
           </settings>
         </placement>
@@ -31489,8 +31453,8 @@
         <placement code="p44">
           <bundle>ca_occurrences.recol_suites_objet_inv_c</bundle>
           <settings>
-            <setting name="label" locale="1"/>
-            <setting name="label" locale="2"/>
+            <setting name="label" locale="fr_FR"/>
+            
             <setting name="width">100px</setting>
           </settings>
         </placement>
@@ -31509,8 +31473,8 @@
         <placement code="p37">
           <bundle>ca_occurrences.recol_suite_objet_photo_c</bundle>
           <settings>
-            <setting name="label" locale="1"/>
-            <setting name="label" locale="2"/>
+            <setting name="label" locale="fr_FR"/>
+            
             <setting name="width">100px</setting>
           </settings>
         </placement>
@@ -31529,8 +31493,8 @@
         <placement code="p38">
           <bundle>ca_occurrences.recol_objet_traiter_c</bundle>
           <settings>
-            <setting name="label" locale="1"/>
-            <setting name="label" locale="2"/>
+            <setting name="label" locale="fr_FR"/>
+            
             <setting name="width">100px</setting>
           </settings>
         </placement>
@@ -31549,8 +31513,8 @@
         <placement code="p39">
           <bundle>ca_occurrences.recol_suite_a_id_c</bundle>
           <settings>
-            <setting name="label" locale="1"/>
-            <setting name="label" locale="2"/>
+            <setting name="label" locale="fr_FR"/>
+            
             <setting name="width">100px</setting>
           </settings>
         </placement>
@@ -31569,8 +31533,8 @@
         <placement code="p40">
           <bundle>ca_occurrences.recol_suite_objet_loc_c</bundle>
           <settings>
-            <setting name="label" locale="1"/>
-            <setting name="label" locale="2"/>
+            <setting name="label" locale="fr_FR"/>
+            
             <setting name="width">100px</setting>
           </settings>
         </placement>
@@ -31589,8 +31553,8 @@
         <placement code="p41">
           <bundle>ca_occurrences.recol_suites_objet_marque_c</bundle>
           <settings>
-            <setting name="label" locale="1"/>
-            <setting name="label" locale="2"/>
+            <setting name="label" locale="fr_FR"/>
+            
             <setting name="width">100px</setting>
           </settings>
         </placement>
@@ -31609,8 +31573,8 @@
         <placement code="p42">
           <bundle>ca_occurrences.recol_suite_a_recol_c</bundle>
           <settings>
-            <setting name="label" locale="1"/>
-            <setting name="label" locale="2"/>
+            <setting name="label" locale="fr_FR"/>
+            
             <setting name="width">100px</setting>
           </settings>
         </placement>
@@ -31629,8 +31593,8 @@
         <placement code="p43">
           <bundle>ca_occurrences.recol_suite_rech_c</bundle>
           <settings>
-            <setting name="label" locale="1"/>
-            <setting name="label" locale="2"/>
+            <setting name="label" locale="fr_FR"/>
+            
             <setting name="width">100px</setting>
           </settings>
         </placement>
@@ -31649,8 +31613,8 @@
         <placement code="p45">
           <bundle>ca_occurrences.recol_suite_notice_c</bundle>
           <settings>
-            <setting name="label" locale="1"/>
-            <setting name="label" locale="2"/>
+            <setting name="label" locale="fr_FR"/>
+            
             <setting name="width">100px</setting>
           </settings>
         </placement>
@@ -31669,8 +31633,8 @@
         <placement code="p46">
           <bundle>ca_occurrences.recol_objet_inventorie_plsfois</bundle>
           <settings>
-            <setting name="label" locale="1"/>
-            <setting name="label" locale="2"/>
+            <setting name="label" locale="fr_FR"/>
+            
             <setting name="width">100px</setting>
           </settings>
         </placement>
