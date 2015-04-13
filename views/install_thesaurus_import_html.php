@@ -4,7 +4,7 @@
 
 <div class="control-box rounded">
     <div class="control-box-left-content">
-    <a href='<?php print __CA_URL_ROOT__; ?>/index.php/museesDeFrance/InstallProfileThesaurus/Thesaurus' class='form-button'><span class='form-button '><img src='/themes/default/graphics/buttons/cancel.png' border='0' title='Annuler' alt='Annuler'  class='form-button-left' style='padding-right: 10px;'/>Annuler</span></a></div>
+    <a href='<?php print __CA_URL_ROOT__; ?>/index.php/museesDeFrance/InstallProfileThesaurus/Thesaurus' class='form-button'><span class='form-button '><img src='<?php print __CA_URL_ROOT__; ?>/themes/default/graphics/buttons/cancel.png' border='0' title='Annuler' alt='Annuler'  class='form-button-left' style='padding-right: 10px;'/>Annuler</span></a></div>
     <div class="control-box-right-content"></div><div class="control-box-middle-content"></div></div>
 
 <h1>Installation du thésaurus <?php print $thesaurus; ?></h1>
@@ -89,6 +89,6 @@
 </div>
 <p id="message"></p>
 <p>
-<a id="launchbutton" href='#' onclick="ajax_stream();" class='form-button'><span class='form-button'><img src='/themes/default/graphics/buttons/save.png' border='0' alt='Save' class='form-button-left' style='padding-right: 10px;'/> Installer le thésaurus</span></a>
+<a id="launchbutton" href='#' onclick="ajax_stream();" class='form-button'><span class='form-button'><img src='<?php print __CA_URL_ROOT__; ?>/themes/default/graphics/buttons/save.png' border='0' alt='Save' class='form-button-left' style='padding-right: 10px;'/> Installer le thésaurus</span></a>
 <a id="backlink" style="display:none" href='<?php print __CA_URL_ROOT__; ?>/index.php/museesDeFrance/InstallProfileThesaurus/Thesaurus'>Retour à la liste des thésaurus</a>
 </p>
