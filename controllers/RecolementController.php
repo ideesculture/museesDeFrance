@@ -73,6 +73,7 @@ class RecolementController extends ActionController
 
 	private function _computeInfos()
 	{
+		if(!file_exists('rd_data.json')){
 			$o_search = new OccurrenceSearch();
 			$qr_hits = $o_search->search("ca_occurrences.type_id:118");
 			while ($qr_hits->nextHit()) {
@@ -119,8 +120,10 @@ class RecolementController extends ActionController
 		
 			//jsonify the data & saves it in a file
 			$json = json_encode(array("campagnes_par_recolement_decennal" => $campagnes_rd)); 
+			file_put_contents( 'rd_data.json' , $json); 
 		}
 		
+		$tab = json_decode(file_get_contents('rd_data.json'), true);
 		return $tab;
 	}
 
@@ -140,6 +143,7 @@ class RecolementController extends ActionController
 			$inclure_liste_annexes = true;
 		}
 
+		if(!file_exists('pvinfo.json')){
 			$campagne = new ca_occurrences();
 			$limite_liste_recolements = $this->opo_config->get('LimiteListeRecolements');
 			$load = $campagne->load(array('idno' => $idno));
@@ -311,8 +315,10 @@ class RecolementController extends ActionController
 			
 			//jsonify the data & saves it in a file
 			$json = json_encode($pv_info); 
+			file_put_contents( 'pvinfo.json' , $json); 
 		}
 		
+		$tab = json_decode(file_get_contents('pvinfo.json'), true);
 		return $tab;
 
 		//unset($pv_info["liste_objets_html"]);
