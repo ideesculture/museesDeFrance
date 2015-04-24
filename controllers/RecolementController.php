@@ -277,12 +277,13 @@ class RecolementController extends ActionController
     		WHERE occurrence_right_id=$campagne_id
     		LIMIT $page, $limite_liste_recolements
  		";
-		//var_dump($query);
+
 		$qr_result = $o_data->query($query);
-		$total = $o_data->query("SELECT count(relation_id) FROM ca_occurrences_x_occurrences WHERE occurrence_right_id=$campagne_id")->numRows();
+		$total = $o_data->query("SELECT * FROM ca_occurrences_x_occurrences WHERE occurrence_right_id=$campagne_id")->numRows();
 		if ($page > 1) $pagination = "<a href='".__CA_URL_ROOT__."/index.php/museesDeFrance/Recolement/Pv/?idno$idno&page=".($page -1 )."'><img src=".__CA_URL_ROOT__."/themes/default/graphics/arrows/arrow_left_gray.gif
 		' alt=''/> Page précédente</a> ";
-		$pagination .= "<a href='".__CA_URL_ROOT__."/index.php/museesDeFrance/Recolement/Pv/?idno=$idno&page=".($page +1 )."'>Page suivante <img src=".__CA_URL_ROOT__."/themes/default/graphics/arrows/arrow_right_gray.gif
+		if ($page*$limite_liste_recolements < $total )
+			$pagination .= "<a href='".__CA_URL_ROOT__."/index.php/museesDeFrance/Recolement/Pv/?idno=$idno&page=".($page +1 )."'>Page suivante <img src=".__CA_URL_ROOT__."/themes/default/graphics/arrows/arrow_right_gray.gif
 		' alt=''/></a>";
 
 		$pv_info["liste_objets_html"] .= $pagination;
