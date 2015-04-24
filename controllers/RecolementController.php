@@ -128,7 +128,7 @@ class RecolementController extends ActionController
 		}
 	}
 
-	private function CalculerPv($idno, $options = array())
+	private function CalculerPv($idno, $options = array(), $page = 1)
 	{
 
 		if (isset($options["liste_annexes"]) && $options["liste_annexes"]) {
@@ -181,9 +181,9 @@ class RecolementController extends ActionController
 		}
 		$pv_info["etat_global"][""]["idno"] = "[vide]";
 
-		foreach ($campagne->get("ca_occurrences.related.idno", array("returnAsArray" => 1)) as $idno) {
+		foreach ($campagne->get("ca_occurrences.related.idno", array("returnAsArray" => 1)) as $recolement_idno) {
 			$recolement = new ca_occurrences();
-			$recolement->load(array('idno' => $idno));
+			$recolement->load(array('idno' => $recolement_idno));
 			// Objets exposés/en réserve
 			switch ($recolement->get("mention_localisation", array("convertCodesToDisplayText" => 1))) {
 				case "En réserve externe" :
@@ -268,29 +268,46 @@ class RecolementController extends ActionController
 			$pv_info["constatEtat"][$constat_etat_type]["count"]++;
 		}
 
-		if ($nb_recolements <= $limite_liste_recolements) {
-			$pv_info["liste_objets_html"] = "<table class=\"listtable\">" .
-				"<tr><th></th><th>Titre</th><th>Récolé</th><th>Vu/non vu</th><th>Emplacement</th></tr>";
-			// Affichage des X premières lignes
-			foreach ($campagne->get("ca_occurrences.related.occurrence_id", array("returnAsArray" => 1)) as $occurrence_id) {
-				$recolement = new ca_occurrences($occurrence_id);
+		$campagne_id = $campagne->get("occurrence_id");
 
-				$line++;
-				$pv_info["liste_objets_html"] .=
-					"<tr " . ($line == 1 ? " class=odd" : "") . "><td><a href=\"" . __CA_URL_ROOT__ . "/index.php/editor/occurrences/OccurrenceEditor/Edit/occurrence_id/" . $occurrence_id . "\"><img src=\"" . __CA_URL_ROOT__ . "/themes/default/graphics/buttons/edit.png\"></td>" .
-					"<td><b>" . $recolement->get("preferred_labels") . "</b>" .
-					($recolement->get('done', array("convertCodesToDisplayText" => true)) == "oui" ? "<span class='done'></span>" : "<span class='todo'></span>").
-					"</td>" .
-					"<td>" . $recolement->get("recolement", array("convertCodesToDisplayText" => 1)) . "</td>" .
-					"<td>" . $recolement->get("presence_bien", array("convertCodesToDisplayText" => 1)) . "</td>" .
-					"<td>" . $recolement->get("mention_localisation", array("convertCodesToDisplayText" => 1)) . "</b></td>";
-				if ($line == 2) $line = 0;
-			}
-			$pv_info["liste_objets_html"] .= "</table>";
+		$o_data = new Db();
+		$query = "
+    		SELECT occurrence_left_id as id
+    		FROM ca_occurrences_x_occurrences
+    		WHERE occurrence_right_id=$campagne_id
+    		LIMIT $page, $limite_liste_recolements
+ 		";
+		var_dump($query);
+		$qr_result = $o_data->query($query);
+		$total = $o_data->query("SELECT count(relation_id) FROM ca_occurrences_x_occurrences WHERE occurrence_right_id=$campagne_id")->numRows();
+		if ($page > 1) $pagination = "<a href='".__CA_URL_ROOT__."/index.php/museesDeFrance/Recolement/Pv/?idno$idno&page=".($page -1 )."'><img src=".__CA_URL_ROOT__."/themes/default/graphics/arrows/arrow_left_gray.gif
+		' alt=''/> Page précédente</a> ";
+		$pagination .= "<a href='".__CA_URL_ROOT__."/index.php/museesDeFrance/Recolement/Pv/?idno=$idno&page=".($page +1 )."'>Page suivante <img src=".__CA_URL_ROOT__."/themes/default/graphics/arrows/arrow_right_gray.gif
+		' alt=''/></a>";
+
+		$pv_info["liste_objets_html"] .= $pagination;
+		$pv_info["liste_objets_html"] .= "<table class=\"listtable\">" .
+			"<tr><th></th><th>Titre</th><th>Récolé</th><th>Vu/non vu</th><th>Emplacement</th></tr>";
+		// Affichage des X premières lignes
+
+
+		while($qr_result->nextRow()) {
+			$recolement = new ca_occurrences($qr_result->get('id'));
+
+			$line++;
+			$pv_info["liste_objets_html"] .=
+				"<tr " . ($line == 1 ? " class=odd" : "") . "><td><a href=\"" . __CA_URL_ROOT__ . "/index.php/editor/occurrences/OccurrenceEditor/Edit/occurrence_id/" . $occurrence_id . "\"><img src=\"" . __CA_URL_ROOT__ . "/themes/default/graphics/buttons/edit.png\"></td>" .
+				"<td><b>" . $recolement->get("preferred_labels") . "</b>" .
+				($recolement->get('done', array("convertCodesToDisplayText" => true)) == "oui" ? "<span class='done'></span>" : "<span class='todo'></span>").
+				"</td>" .
+				"<td>" . $recolement->get("recolement", array("convertCodesToDisplayText" => 1)) . "</td>" .
+				"<td>" . $recolement->get("presence_bien", array("convertCodesToDisplayText" => 1)) . "</td>" .
+				"<td>" . $recolement->get("mention_localisation", array("convertCodesToDisplayText" => 1)) . "</b></td>";
+			if ($line == 2) $line = 0;
 		}
-		/*if ($liste_objets_non_vus) {
-			 print "<table border=1>".$liste_objets_non_vus."</table>";die();
-		 }*/
+		$pv_info["liste_objets_html"] .= "</table>";
+
+		$pv_info["liste_objets_html"] .= $pagination;
 
 		$va_recolements_idnos = $campagne->get("ca_occurrences.related.idno", array("returnAsArray" => 1));
 		$pv_info["info"]["recolements_total"] = count($va_recolements_idnos);
@@ -304,8 +321,6 @@ class RecolementController extends ActionController
 		}
 		$pv_info["info"]["recolements_done"] = $vn_recolements;
 
-		//unset($pv_info["liste_objets_html"]);
-		//var_dump($pv_info);die();
 		return $pv_info;
 	}
 
@@ -329,7 +344,12 @@ class RecolementController extends ActionController
 	# -------------------------------------------------------
 	public function Pv()
 	{
-		$InfosPv = $this->CalculerPv($_GET["idno"]);
+		if (isset($_GET["page"]) && ($_GET["page"]>1)) {
+			$page = $_GET["page"];
+		} else {
+			$page = 1;
+		}
+		$InfosPv = $this->CalculerPv($_GET["idno"],array(), $page);
 		if ($InfosPv === false) die("Impossible de récupérer les informations de la campagne de récolement " . $_GET["idno"]);
 
 		$this->view->setVar('InfosPv', $InfosPv);
