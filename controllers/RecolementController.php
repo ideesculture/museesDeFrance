@@ -33,6 +33,15 @@ class RecolementController extends ActionController
 
 		$va_infos = $this->_computeInfos();
 		$this->opa_infos_campagnes_par_recolement_decennal = $va_infos["campagnes_par_recolement_decennal"];
+		
+		$now = time(); 
+		$date = $va_infos["date"];
+		$interval = $now - $date; 
+		if($interval > 24*60*60){
+			$this->_createCache();
+		}
+
+			
 	}
 
 	private function _copyAttributes($t_instance_from, $t_instance_to, $va_element_codes_from, $va_element_codes_to = null)
@@ -70,8 +79,8 @@ class RecolementController extends ActionController
 		}
 		return true;
 	}
-
-	private function _computeInfos()
+	
+	private function _createCache()
 	{
 		$o_search = new OccurrenceSearch();
 		$qr_hits = $o_search->search("ca_occurrences.type_id:118");
@@ -87,6 +96,7 @@ class RecolementController extends ActionController
 			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["recolement_decennal"] = $recolement_decennal;
 
 			$va_recolements_idnos = $campagne->get("ca_occurrences.related.idno", array("returnAsArray" => 1));
+			
 			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["localisation"] = $campagne->get("ca_storage_locations.preferred_labels");
 			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["recolement_decennal"] = $campagne->get("recolement_decennal", array("convertCodesToDisplayText" => true));
 			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["occurrence_id"] = $campagne->get("occurrence_id");
@@ -106,19 +116,45 @@ class RecolementController extends ActionController
 			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["nombre"] = count($va_recolements_idnos);
 			$campagnes_rd[$recolement_decennal]["global"]["recolements_total"] = $campagnes_rd[$recolement_decennal]["global"]["recolements_total"] + count($va_recolements_idnos);
 			$vn_recolements = 0;
-			foreach ($va_recolements_idnos as $vs_recolement_idno) {
-				$t_recolement = new ca_occurrences();
-				$t_recolement->load(array('idno' => $vs_recolement_idno));
-				$vs_done = $t_recolement->get('done', array("convertCodesToDisplayText" => true));
-				if ($vs_done == "oui") $vn_recolements++;
+			if($va_recolements_idnos){
+				foreach ($va_recolements_idnos as $vs_recolement_idno) {
+					$t_recolement = new ca_occurrences();
+					$t_recolement->load(array('idno' => $vs_recolement_idno));
+					$vs_done = $t_recolement->get('done', array("convertCodesToDisplayText" => true));
+					if ($vs_done == "oui") $vn_recolements++;
+				}
 			}
 			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["recolements_done"] = $vn_recolements;
 			$campagnes_rd[$recolement_decennal]["global"]["recolements_done"] = $campagnes_rd[$recolement_decennal]["global"]["recolements_done"] + $vn_recolements;
 		}
 		$campagnes_rd[$recolement_decennal]["global"]["recolements_left"] = $campagnes_rd[$recolement_decennal]["global"]["recolements_left"] - $campagnes_rd[$recolement_decennal]["global"]["recolements_done"];
-		return array("campagnes_par_recolement_decennal" => $campagnes_rd);
+	
+		//jsonify the data & saves it in a file
+		$json = json_encode(array("campagnes_par_recolement_decennal" => $campagnes_rd, "date" => time())); 
+		file_put_contents(__CA_BASE_DIR__ . '/app/plugins/museesDeFrance/rd_data.json' , $json); 
 	}
 
+	//builds the cache if it does not exists and send back an array containing infos
+	private function _computeInfos()
+	{
+		if(!file_exists(__CA_BASE_DIR__ . '/app/plugins/museesDeFrance/rd_data.json')){
+			$this->_createCache();
+		}
+		$tab = json_decode(file_get_contents(__CA_BASE_DIR__ . '/app/plugins/museesDeFrance/rd_data.json'), true);
+		return $tab;
+	}
+
+	public function computeInfosAjax()
+	{
+		$this->_createCache();
+		$tab = json_decode(file_get_contents(__CA_BASE_DIR__ . '/app/plugins/museesDeFrance/rd_data.json'), true);
+		$this->opa_infos_campagnes_par_recolement_decennal = $tab["campagnes_par_recolement_decennal"];
+		
+		//echo json_encode($tab) . PHP_EOL;
+		print "{\"result\":\"ok\"}"; 
+		exit; 
+	}
+	
 	private function extractFirstElementOfArray($array)
 	{
 		if (is_array($array)) {
@@ -181,9 +217,9 @@ class RecolementController extends ActionController
 		}
 		$pv_info["etat_global"][""]["idno"] = "[vide]";
 
-		foreach ($campagne->get("ca_occurrences.related.idno", array("returnAsArray" => 1)) as $recolement_idno) {
+		foreach ($campagne->get("ca_occurrences.related.idno", array("returnAsArray" => 1)) as $idno) {
 			$recolement = new ca_occurrences();
-			$recolement->load(array('idno' => $recolement_idno));
+			$recolement->load(array('idno' => $idno));
 			// Objets exposés/en réserve
 			switch ($recolement->get("mention_localisation", array("convertCodesToDisplayText" => 1))) {
 				case "En réserve externe" :
