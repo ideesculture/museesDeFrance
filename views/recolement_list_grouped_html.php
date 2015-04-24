@@ -42,6 +42,58 @@ if (!isset($campagnes_par_rd) || !$campagnes_par_rd) {
 			animation: progress 8s linear infinite;
 		}
 	</style>
+	<button type="button" id="reload_button" onclick="ajax_stream()";>Rafraîchir</button>
+	<script>
+	  function ajax_stream()
+    {
+        console.log("ajax_stream");
+				
+        if (!window.XMLHttpRequest)
+        {
+            log_message("Your browser does not support the native XMLHttpRequest object.");
+            return;
+        }
+
+        try
+        {
+            var xhr = new XMLHttpRequest();
+            xhr.previous_text = '';
+
+            xhr.onerror = function() { log_message("[XHR] Fatal Error."); };
+            xhr.onreadystatechange = function()
+            {
+                try
+                {
+                    if (xhr.readyState > 2)
+                    {
+                        var new_response = xhr.responseText;
+                        
+                        //var result = JSON.parse( new_response );
+												//ici, il faut refaire la facade avec les nouvelles infos délivrées par le ajax
+												//result.campagnes_par_recolement_decennal
+                        window.location.reload();
+                    }
+                }
+                catch (e)
+                {
+                    //log_message("<b>[XHR] Exception: " + e + "</b>");
+                }
+
+
+            };
+            console.log("<?php print __CA_URL_ROOT__; ?>/index.php/museesDeFrance/Recolement/computeInfosAjax");
+            
+            xhr.open("GET", "<?php print __CA_URL_ROOT__; ?>/index.php/museesDeFrance/Recolement/computeInfosAjax", true);
+            xhr.send("Making request...");
+        }
+        catch (e)
+        {
+            log_message("<b>[XHR] Exception: " + e + "</b>");
+        }
+    }
+	
+	</script>
+	
 	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
 	<script src='<?php print __CA_URL_ROOT__; ?>/js/jquery/jQueryRotateCompressed.2.2.js'
 	        type='text/javascript'></script>

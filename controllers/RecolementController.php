@@ -33,6 +33,15 @@ class RecolementController extends ActionController
 
 		$va_infos = $this->_computeInfos();
 		$this->opa_infos_campagnes_par_recolement_decennal = $va_infos["campagnes_par_recolement_decennal"];
+		
+		$now = time(); 
+		$date = $va_infos["date"];
+		$interval = $now - $date; 
+		if($interval > 24*60*60){
+			$this->_createCache();
+		}
+
+			
 	}
 
 	private function _copyAttributes($t_instance_from, $t_instance_to, $va_element_codes_from, $va_element_codes_to = null)
@@ -70,63 +79,82 @@ class RecolementController extends ActionController
 		}
 		return true;
 	}
-
-	private function _computeInfos()
+	
+	private function _createCache()
 	{
-		if(!file_exists('rd_data.json')){
-			$o_search = new OccurrenceSearch();
-			$qr_hits = $o_search->search("ca_occurrences.type_id:118");
-			while ($qr_hits->nextHit()) {
-				$global["nb_campagnes"]++;
-				$idno = $qr_hits->get('ca_occurrences.idno');
-				//print $idno."\n";
-				$campagne = new ca_occurrences();
-				$campagne->load(array('idno' => $idno));
-				$recolement_decennal = $campagne->get("recolement_decennal", array("convertCodesToDisplayText" => true));
+		$o_search = new OccurrenceSearch();
+		$qr_hits = $o_search->search("ca_occurrences.type_id:118");
+		while ($qr_hits->nextHit()) {
+			$global["nb_campagnes"]++;
+			$idno = $qr_hits->get('ca_occurrences.idno');
+			//print $idno."\n";
+			$campagne = new ca_occurrences();
+			$campagne->load(array('idno' => $idno));
+			$recolement_decennal = $campagne->get("recolement_decennal", array("convertCodesToDisplayText" => true));
 
-				// freaky thing just to be sure we always have the recolement_decennal value, even inside infos of a recolement via $idno
-				$campagnes_rd[$recolement_decennal]["recolements"][$idno]["recolement_decennal"] = $recolement_decennal;
+			// freaky thing just to be sure we always have the recolement_decennal value, even inside infos of a recolement via $idno
+			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["recolement_decennal"] = $recolement_decennal;
 
-				$va_recolements_idnos = $campagne->get("ca_occurrences.related.idno", array("returnAsArray" => 1));
-				$campagnes_rd[$recolement_decennal]["recolements"][$idno]["localisation"] = $campagne->get("ca_storage_locations.preferred_labels");
-				$campagnes_rd[$recolement_decennal]["recolements"][$idno]["recolement_decennal"] = $campagne->get("recolement_decennal", array("convertCodesToDisplayText" => true));
-				$campagnes_rd[$recolement_decennal]["recolements"][$idno]["occurrence_id"] = $campagne->get("occurrence_id");
-				$campagnes_rd[$recolement_decennal]["recolements"][$idno]["localisation"] = $campagne->get("ca_storage_locations.preferred_labels");
-				$campagnes_rd[$recolement_decennal]["recolements"][$idno]["localisation_code"] = $campagne->get("ca_storage_locations.idno");
-				$campagnes_rd[$recolement_decennal]["recolements"][$idno]["caracterisation"] = $campagne->get("campagne_caracterisation", array("convertCodesToDisplayText" => true));
-				$campagnes_rd[$recolement_decennal]["recolements"][$idno]["champs"] = $campagne->get("campagne_champs_c");
-				$campagnes_rd[$recolement_decennal]["recolements"][$idno]["conditionnement"] = $campagne->get("campagne_conditionnement");
-				$campagnes_rd[$recolement_decennal]["recolements"][$idno]["accessibilite"] = $campagne->get("campagne_accessibilite");
-				$campagnes_rd[$recolement_decennal]["recolements"][$idno]["idno"] = $campagne->get("idno");
-				$campagnes_rd[$recolement_decennal]["recolements"][$idno]["name"] = $campagne->get("preferred_labels");
-				$campagnes_rd[$recolement_decennal]["recolements"][$idno]["date_campagne"] = $campagne->get("date_campagne_c");
-				$campagnes_rd[$recolement_decennal]["recolements"][$idno]["date_campagne_prev"] = $campagne->get("campagne_date_prev");
-				$campagnes_rd[$recolement_decennal]["recolements"][$idno]["intervenants"] = $campagne->get("ca_entities");
-				$campagnes_rd[$recolement_decennal]["recolements"][$idno]["date_campagne_pv"] = $campagne->get("campagne_date_pv");
-				$campagnes_rd[$recolement_decennal]["recolements"][$idno]["recolements_total"] = count($va_recolements_idnos);
-				$campagnes_rd[$recolement_decennal]["recolements"][$idno]["nombre"] = count($va_recolements_idnos);
-				$campagnes_rd[$recolement_decennal]["global"]["recolements_total"] = $campagnes_rd[$recolement_decennal]["global"]["recolements_total"] + count($va_recolements_idnos);
-				$vn_recolements = 0;
+			$va_recolements_idnos = $campagne->get("ca_occurrences.related.idno", array("returnAsArray" => 1));
+			
+			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["localisation"] = $campagne->get("ca_storage_locations.preferred_labels");
+			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["recolement_decennal"] = $campagne->get("recolement_decennal", array("convertCodesToDisplayText" => true));
+			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["occurrence_id"] = $campagne->get("occurrence_id");
+			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["localisation"] = $campagne->get("ca_storage_locations.preferred_labels");
+			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["localisation_code"] = $campagne->get("ca_storage_locations.idno");
+			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["caracterisation"] = $campagne->get("campagne_caracterisation", array("convertCodesToDisplayText" => true));
+			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["champs"] = $campagne->get("campagne_champs_c");
+			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["conditionnement"] = $campagne->get("campagne_conditionnement");
+			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["accessibilite"] = $campagne->get("campagne_accessibilite");
+			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["idno"] = $campagne->get("idno");
+			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["name"] = $campagne->get("preferred_labels");
+			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["date_campagne"] = $campagne->get("date_campagne_c");
+			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["date_campagne_prev"] = $campagne->get("campagne_date_prev");
+			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["intervenants"] = $campagne->get("ca_entities");
+			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["date_campagne_pv"] = $campagne->get("campagne_date_pv");
+			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["recolements_total"] = count($va_recolements_idnos);
+			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["nombre"] = count($va_recolements_idnos);
+			$campagnes_rd[$recolement_decennal]["global"]["recolements_total"] = $campagnes_rd[$recolement_decennal]["global"]["recolements_total"] + count($va_recolements_idnos);
+			$vn_recolements = 0;
+			if($va_recolements_idnos){
 				foreach ($va_recolements_idnos as $vs_recolement_idno) {
 					$t_recolement = new ca_occurrences();
 					$t_recolement->load(array('idno' => $vs_recolement_idno));
 					$vs_done = $t_recolement->get('done', array("convertCodesToDisplayText" => true));
 					if ($vs_done == "oui") $vn_recolements++;
 				}
-				$campagnes_rd[$recolement_decennal]["recolements"][$idno]["recolements_done"] = $vn_recolements;
-				$campagnes_rd[$recolement_decennal]["global"]["recolements_done"] = $campagnes_rd[$recolement_decennal]["global"]["recolements_done"] + $vn_recolements;
 			}
-			$campagnes_rd[$recolement_decennal]["global"]["recolements_left"] = $campagnes_rd[$recolement_decennal]["global"]["recolements_left"] - $campagnes_rd[$recolement_decennal]["global"]["recolements_done"];
-		
-			//jsonify the data & saves it in a file
-			$json = json_encode(array("campagnes_par_recolement_decennal" => $campagnes_rd)); 
-			file_put_contents( 'rd_data.json' , $json); 
+			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["recolements_done"] = $vn_recolements;
+			$campagnes_rd[$recolement_decennal]["global"]["recolements_done"] = $campagnes_rd[$recolement_decennal]["global"]["recolements_done"] + $vn_recolements;
 		}
-		
-		$tab = json_decode(file_get_contents('rd_data.json'), true);
+		$campagnes_rd[$recolement_decennal]["global"]["recolements_left"] = $campagnes_rd[$recolement_decennal]["global"]["recolements_left"] - $campagnes_rd[$recolement_decennal]["global"]["recolements_done"];
+	
+		//jsonify the data & saves it in a file
+		$json = json_encode(array("campagnes_par_recolement_decennal" => $campagnes_rd, "date" => time())); 
+		file_put_contents(__CA_BASE_DIR__ . '/app/plugins/museesDeFrance/rd_data.json' , $json); 
+	}
+
+	//builds the cache if it does not exists and send back an array containing infos
+	private function _computeInfos()
+	{
+		if(!file_exists(__CA_BASE_DIR__ . '/app/plugins/museesDeFrance/rd_data.json')){
+			$this->_createCache();
+		}
+		$tab = json_decode(file_get_contents(__CA_BASE_DIR__ . '/app/plugins/museesDeFrance/rd_data.json'), true);
 		return $tab;
 	}
 
+	public function computeInfosAjax()
+	{
+		$this->_createCache();
+		$tab = json_decode(file_get_contents(__CA_BASE_DIR__ . '/app/plugins/museesDeFrance/rd_data.json'), true);
+		$this->opa_infos_campagnes_par_recolement_decennal = $tab["campagnes_par_recolement_decennal"];
+		
+		//echo json_encode($tab) . PHP_EOL;
+		print "{\"result\":\"ok\"}"; 
+		exit; 
+	}
+	
 	private function extractFirstElementOfArray($array)
 	{
 		if (is_array($array)) {
@@ -143,7 +171,7 @@ class RecolementController extends ActionController
 			$inclure_liste_annexes = true;
 		}
 
-		if(!file_exists('pvinfo.json')){
+		//if(!file_exists(__CA_BASE_DIR__ . '/app/plugins/museesDeFrance/pvinfo.json')){
 			$campagne = new ca_occurrences();
 			$limite_liste_recolements = $this->opo_config->get('LimiteListeRecolements');
 			$load = $campagne->load(array('idno' => $idno));
@@ -314,16 +342,16 @@ class RecolementController extends ActionController
 			$pv_info["info"]["recolements_done"] = $vn_recolements;
 			
 			//jsonify the data & saves it in a file
-			$json = json_encode($pv_info); 
-			file_put_contents( 'pvinfo.json' , $json); 
-		}
+			//$json = json_encode($pv_info);
+			//file_put_contents( __CA_BASE_DIR__ . '/app/plugins/museesDeFrance/pvinfo.json' , $json);
+		//}
 		
-		$tab = json_decode(file_get_contents('pvinfo.json'), true);
-		return $tab;
+		//$tab = json_decode(file_get_contents(__CA_BASE_DIR__ . '/app/plugins/museesDeFrance/pvinfo.json'), true);
+		//return $tab;
 
 		//unset($pv_info["liste_objets_html"]);
 		//var_dump($pv_info);die();
-		//return $pv_info;
+		return $pv_info;
 	}
 
 	# -------------------------------------------------------
