@@ -277,7 +277,7 @@ class RecolementController extends ActionController
     		WHERE occurrence_right_id=$campagne_id
     		LIMIT $page, $limite_liste_recolements
  		";
-		var_dump($query);
+		//var_dump($query);
 		$qr_result = $o_data->query($query);
 		$total = $o_data->query("SELECT count(relation_id) FROM ca_occurrences_x_occurrences WHERE occurrence_right_id=$campagne_id")->numRows();
 		if ($page > 1) $pagination = "<a href='".__CA_URL_ROOT__."/index.php/museesDeFrance/Recolement/Pv/?idno$idno&page=".($page -1 )."'><img src=".__CA_URL_ROOT__."/themes/default/graphics/arrows/arrow_left_gray.gif
