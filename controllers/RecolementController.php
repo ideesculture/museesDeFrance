@@ -83,7 +83,8 @@ class RecolementController extends ActionController
 	private function _createCache()
 	{
 		$o_search = new OccurrenceSearch();
-		$qr_hits = $o_search->search("ca_occurrences.type_id:118");
+		//$qr_hits = $o_search->search("ca_occurrences.type_id:118");
+        $qr_hits = $o_search->search("ca_occurrences.type_id:121");
 		while ($qr_hits->nextHit()) {
 			$global["nb_campagnes"]++;
 			$idno = $qr_hits->get('ca_occurrences.idno');
@@ -130,7 +131,7 @@ class RecolementController extends ActionController
 		$campagnes_rd[$recolement_decennal]["global"]["recolements_left"] = $campagnes_rd[$recolement_decennal]["global"]["recolements_left"] - $campagnes_rd[$recolement_decennal]["global"]["recolements_done"];
 	
 		//jsonify the data & saves it in a file
-		$json = json_encode(array("campagnes_par_recolement_decennal" => $campagnes_rd, "date" => time())); 
+		$json = json_encode(array("campagnes_par_recolement_decennal" => $campagnes_rd, "date" => time()));
 		file_put_contents(__CA_BASE_DIR__ . '/app/plugins/museesDeFrance/rd_data.json' , $json); 
 	}
 
@@ -150,7 +151,7 @@ class RecolementController extends ActionController
 		$tab = json_decode(file_get_contents(__CA_BASE_DIR__ . '/app/plugins/museesDeFrance/rd_data.json'), true);
 		$this->opa_infos_campagnes_par_recolement_decennal = $tab["campagnes_par_recolement_decennal"];
 		
-		//echo json_encode($tab) . PHP_EOL;
+		echo json_encode($tab) . PHP_EOL;
 		print "{\"result\":\"ok\"}"; 
 		exit; 
 	}
@@ -166,7 +167,7 @@ class RecolementController extends ActionController
 
 	private function CalculerPv($idno, $options = array(), $page = 1, $filter=null)
 	{
-
+        $idno_campagne = $idno;
 		if (isset($options["liste_annexes"]) && $options["liste_annexes"]) {
 			$inclure_liste_annexes = true;
 		}
@@ -232,7 +233,7 @@ class RecolementController extends ActionController
 			}
 			// Inscriptions
 			$inscription_recolement_first = $this->extractFirstElementOfArray($recolement->get("inscription_recolement", array("convertCodesToDisplayText" => 1, "returnAsArray" => 1)));
-			$inscription_reco_marque = $inscription_recolement_first["inscription_reco_marque"];
+			if (isset($inscription_recolement_first["inscription_reco_marque"])){ $inscription_reco_marque = $inscription_recolement_first["inscription_reco_marque"]; }
 			if ($inscription_reco_marque == "oui") {
 				$pv_info["nb"]["objets_marques"]++;
 			} else {
@@ -254,11 +255,14 @@ class RecolementController extends ActionController
 						"[Fiche récolement " . $recolement->get("idno") . "] " . $recolement->get("preferred_labels") . " - numéros d'inventaire : " . $recolement->get("ca_objects.related.idno") . "<w:br/>";
 				}
 			}
-			foreach ($objets_lies as $objet_lie) {
-				$t_object = new ca_objects();
-				$t_object->load(array('idno' => $objet_lie));
-				$pv_info["nb"]["photos"] = $pv_info["nb"]["photos"] + $t_object->getRepresentationCount();
-			}
+			if (is_array($objets_lies))
+            {
+                foreach ($objets_lies as $objet_lie) {
+                    $t_object = new ca_objects();
+                    $t_object->load(array('idno' => $objet_lie));
+                    $pv_info["nb"]["photos"] = $pv_info["nb"]["photos"] + $t_object->getRepresentationCount();
+                }
+            }
 			// Objets récolés
 			if ($recolement->get("recolement", array("convertCodesToDisplayText" => 1)) == "Récolés") {
 				$pv_info["nb"]["objets_recoles"]++;
@@ -298,9 +302,9 @@ class RecolementController extends ActionController
 			// Constat d'état
 			$constat_etat_array = $recolement->get("constatEtat", array("returnAsArray" => 1, "convertCodesToDisplayText" => 0));
 			$constat_etat_array = $this->extractFirstElementOfArray($constat_etat_array);
-			$etat_global_type = $constat_etat_array["etat_global"];
+			if (isset($constat_etat_array["etat_global"])) $etat_global_type = $constat_etat_array["etat_global"];
 			$pv_info["etat_global"][$etat_global_type]["count"]++;
-			$constat_etat_type = $constat_etat_array["constat_etat"];
+            if (isset($constat_etat_array["constat_etat"]))$constat_etat_type = $constat_etat_array["constat_etat"];
 			$pv_info["constatEtat"][$constat_etat_type]["count"]++;
 		}
 
@@ -319,19 +323,19 @@ class RecolementController extends ActionController
 
 		$qr_result = $o_data->query($query);
 		$total = $o_data->query("SELECT * FROM ca_occurrences_x_occurrences WHERE occurrence_right_id=$campagne_id")->numRows();
-		if ($page > 1) $pagination = "<a href='".__CA_URL_ROOT__."/index.php/museesDeFrance/Recolement/Pv/?idno=$idno&page=".($page -1 )."&f=".$filter."'><img src=".__CA_URL_ROOT__."/themes/default/graphics/arrows/arrow_left_gray.gif
-		' alt=''/> Page précédente</a> ";
-		if ($page*$limite_liste_recolements < $total )
-			$pagination .= "<a href='".__CA_URL_ROOT__."/index.php/museesDeFrance/Recolement/Pv/?idno=$idno&page=".($page +1 )."&f=".$filter."'>Page suivante <img src=".__CA_URL_ROOT__."/themes/default/graphics/arrows/arrow_right_gray.gif
-		' alt=''/></a>";
+        /*if ($page > 1) $pagination = "<a href='".__CA_URL_ROOT__."/index.php/museesDeFrance/Recolement/Pv/?idno=${idno_campagne}&page=".($page -1 )."&f=".$filter."'><img src=".__CA_URL_ROOT__."/themes/default/graphics/arrows/arrow_left_gray.gif
+        ' alt=''/> Page précédente</a>;
+        /*if ($page*$limite_liste_recolements < $total )
+            $pagination .= "<a href='".__CA_URL_ROOT__."/index.php/museesDeFrance/Recolement/Pv/?idno=${idno_campagne}&page=".($page +1 )."&f=".$filter."'>Page suivante <img src=".__CA_URL_ROOT__."/themes/default/graphics/arrows/arrow_right_gray.gif
+        ' alt=''/></a>";*/
 
 		$pv_info["liste_objets_html"] .= $pagination;
 		if (!$filter) $pv_info["liste_objets_html"] .= "<table class=\"listtable\">" .
-			"<tr><th></th><th>Titre</th><th>Récolé <a href='".__CA_URL_ROOT__."/index.php/museesDeFrance/Recolement/Pv/?idno=$idno&f=r'>oui</a> /
-			 <a href='".__CA_URL_ROOT__."/index.php/museesDeFrance/Recolement/Pv/?idno=$idno&f=nr'>non</a>
+			"<tr><th></th><th>Identifiant</th><th>Titre</th><th>Récolé <a href='".__CA_URL_ROOT__."/index.php/museesDeFrance/Recolement/Pv/?idno=${idno_campagne}&f=r'>oui</a> /
+			 <a href='".__CA_URL_ROOT__."/index.php/museesDeFrance/Recolement/Pv/?idno=${idno_campagne}&f=nr'>non</a>
 			 </a></th><th>Vu/non vu</th><th>Emplacement</th></tr>";
 		if ($filter) $pv_info["liste_objets_html"] .= "<table class=\"listtable\">" .
-			"<tr><th></th><th>Titre</th><th>Récolé <a href='".__CA_URL_ROOT__."/index.php/museesDeFrance/Recolement/Pv/?idno=$idno'>tous</a>
+			"<tr><th></th><th>Identifiant</th><th>Titre</th><th>Récolé <a href='".__CA_URL_ROOT__."/index.php/museesDeFrance/Recolement/Pv/?idno=${idno_campagne}'>tous</a>
 			 </a></th><th>Vu/non vu</th><th>Emplacement</th></tr>";
 		// Affichage des X premières lignes
 
@@ -339,14 +343,16 @@ class RecolementController extends ActionController
 		if ($filter == "nr") $filter_value ="";
 
 		$line = 0;
-
+        $count_lines = 0;
 		while($qr_result->nextRow()) {
 			$recolement = new ca_occurrences($qr_result->get('id'));
 			if((!$filter) || ($recolement->get('done', array("convertCodesToDisplayText" => true)) == $filter_value)) {
+                $count_lines++;
 				$line++;
 				$pv_info["liste_objets_html"] .=
-					"<tr " . ($line == 1 ? " class=odd" : "") . "><td><a href=\"" . __CA_URL_ROOT__ . "/index.php/editor/occurrences/OccurrenceEditor/Edit/occurrence_id/" . $occurrence_id . "\"><img src=\"" . __CA_URL_ROOT__ . "/themes/default/graphics/buttons/edit.png\"></td>" .
-					"<td><b>" . $recolement->get("preferred_labels") . "</b>" .
+					"<tr " . ($line == 1 ? " class=odd" : "") . "><td>${count_lines}<a href=\"" . __CA_URL_ROOT__ . "/index.php/editor/occurrences/OccurrenceEditor/Edit/occurrence_id/" . $occurrence_id . "\"><img src=\"" . __CA_URL_ROOT__ . "/themes/default/graphics/buttons/edit.png\"></td>" .
+					"<td><b>" . $recolement->get("idno") . "</b>" .
+                    "<td><b>" . $recolement->get("preferred_labels") . "</b>" .
 					($recolement->get('done', array("convertCodesToDisplayText" => true)) == "oui" ? "<span class='done'></span>" : "<span class='todo'></span>").
 					"</td>" .
 					"<td>" . $recolement->get("recolement", array("convertCodesToDisplayText" => 1)) . "</td>" .
