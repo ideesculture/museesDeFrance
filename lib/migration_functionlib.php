@@ -1,4 +1,5 @@
 <?php
+require_once(__CA_LIB_DIR__."/ca/Search/EntitySearch.php");
 
 // ----------------------------------------------------------------------
 function getListID($t_list,$list_code,$list_name="") {
@@ -365,7 +366,11 @@ function getEntityID($ps_forename, $ps_surname_with_date, $pn_type_id, $pn_sourc
 	}
 	if ($VERBOSE) print "ps_forename : ".$ps_forename." / ps_surname : ".$ps_surname." / ps_profession : ".$ps_profession." / ps_date : ".$ps_date."\n";
 	$vn_date = NULL;
-	if (sizeof($va_entity_ids = $t_entity->getEntityIDsByName($ps_forename, $ps_surname)) == 0) {
+    // do a search and print out the titles of all found entities
+    $e_search = new EntitySearch();
+    $qr_results = $e_search->search(ps_forename." ".$ps_forename);
+
+    if ($qr_results->numHits() == 0) {
 		if ($VERBOSE) print "\tCREATING ENTITY  {$ps_surname},{$ps_forename}\n";
 		// insert person
 		$t_entity->setMode(ACCESS_WRITE);
@@ -409,8 +414,11 @@ function getEntityID($ps_forename, $ps_surname_with_date, $pn_type_id, $pn_sourc
 		}
 		$vn_entity_id = $t_entity->getPrimaryKey();
 	} else {
-		if ($VERBOSE) print "\tFound Entity {$ps_forename}/{$ps_surname}\n";
-		$vn_entity_id = array_shift($va_entity_ids);
+        while($qr_results->nextHit()) {
+            $vn_entity_id = $qr_results->get('ca_entities.entity_id')."<br/>\n";
+            if ($VERBOSE) print "\tFound Entity {$ps_forename}/{$ps_surname}\n";
+            break 1;
+        }
 	}
 	
 	return $vn_entity_id;
