@@ -33,19 +33,22 @@ class RecolementController extends ActionController
 
 		$va_infos = $this->_computeInfos();
 		$this->opa_infos_campagnes_par_recolement_decennal = $va_infos["campagnes_par_recolement_decennal"];
-		
-		$now = time(); 
+
+		$now = time();
 		$date = $va_infos["date"];
-		$interval = $now - $date; 
+		$interval = $now - $date;
 		if($interval > 24*60*60){
 			$this->_createCache();
 		}
 
-			
+
 	}
 
 	private function _copyAttributes($t_instance_from, $t_instance_to, $va_element_codes_from, $va_element_codes_to = null)
 	{
+		// GM 19/05/2015: Disabling this function
+		return true;
+
 		global $g_ui_locale_id;
 
 		// if no target setp or target not similar to source, target element = source element
@@ -79,7 +82,7 @@ class RecolementController extends ActionController
 		}
 		return true;
 	}
-	
+
 	private function _createCache()
 	{
 		$o_search = new OccurrenceSearch();
@@ -97,7 +100,7 @@ class RecolementController extends ActionController
 			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["recolement_decennal"] = $recolement_decennal;
 
 			$va_recolements_idnos = $campagne->get("ca_occurrences.related.idno", array("returnAsArray" => 1));
-			
+
 			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["localisation"] = $campagne->get("ca_storage_locations.preferred_labels");
 			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["recolement_decennal"] = $campagne->get("recolement_decennal", array("convertCodesToDisplayText" => true));
 			$campagnes_rd[$recolement_decennal]["recolements"][$idno]["occurrence_id"] = $campagne->get("occurrence_id");
@@ -129,10 +132,10 @@ class RecolementController extends ActionController
 			$campagnes_rd[$recolement_decennal]["global"]["recolements_done"] = $campagnes_rd[$recolement_decennal]["global"]["recolements_done"] + $vn_recolements;
 		}
 		$campagnes_rd[$recolement_decennal]["global"]["recolements_left"] = $campagnes_rd[$recolement_decennal]["global"]["recolements_left"] - $campagnes_rd[$recolement_decennal]["global"]["recolements_done"];
-	
+
 		//jsonify the data & saves it in a file
 		$json = json_encode(array("campagnes_par_recolement_decennal" => $campagnes_rd, "date" => time()));
-		file_put_contents(__CA_BASE_DIR__ . '/app/plugins/museesDeFrance/rd_data.json' , $json); 
+		file_put_contents(__CA_BASE_DIR__ . '/app/plugins/museesDeFrance/rd_data.json' , $json);
 	}
 
 	//builds the cache if it does not exists and send back an array containing infos
@@ -150,12 +153,12 @@ class RecolementController extends ActionController
 		$this->_createCache();
 		$tab = json_decode(file_get_contents(__CA_BASE_DIR__ . '/app/plugins/museesDeFrance/rd_data.json'), true);
 		$this->opa_infos_campagnes_par_recolement_decennal = $tab["campagnes_par_recolement_decennal"];
-		
+
 		echo json_encode($tab) . PHP_EOL;
-		print "{\"result\":\"ok\"}"; 
-		exit; 
+		print "{\"result\":\"ok\"}";
+		exit;
 	}
-	
+
 	private function extractFirstElementOfArray($array)
 	{
 		if (is_array($array)) {
@@ -475,10 +478,10 @@ class RecolementController extends ActionController
 					$va_mention_localisation_prec["mention_localisation_prec_date"]);
 			}
 			setlocale(LC_TIME, $vs_locale);
-			
+
 			$t_recolement->addAttribute($va_mention_localisation_prec,"mention_localisation_precedent");
 			$t_recolement->update();
-				
+
 			$t_recolement->addAttribute(array("recolement_date_precedent"=>$vs_date_recolement),"recolement_date_precedent");
 			$t_recolement->update();
 
@@ -568,13 +571,14 @@ class RecolementController extends ActionController
 			foreach ($va_object_ids as $vn_object_id => $nil) {
 				$t_object = new ca_objects($vn_object_id);
 				// Check and get occurrences linked to this object to this if we have a former recolement
-				$va_occurrences_related = reset($t_object->get("ca_occurrences.related", array("returnAsArray" => 1)));
-				foreach($va_occurrences_related as $vs_ref => $va_occurrence_related) {
-					if($va_occurrence_related["item_type_id"] != 119) continue;
-					// $va_recolement_related contains id of the recolement occurrences linked
-					$va_recolements_related[] = $va_occurrence_related["occurrence_id"];
-				}
-				if (sizeof($va_occurrences_related)) {
+				$va_former_occ_related = $t_object->get("ca_occurrences.related", array("returnAsArray" => 1));
+				if (sizeof($va_former_occ_related)) {
+					$va_occurrences_related = reset($va_former_occ_related);
+					foreach($va_occurrences_related as $vs_ref => $va_occurrence_related) {
+						if($va_occurrence_related["item_type_id"] != 119) continue;
+						// $va_recolement_related contains id of the recolement occurrences linked
+						$va_recolements_related[] = $va_occurrence_related["occurrence_id"];
+					}
 					// create a new recolement occurrence from last recolement added to the objet
 					arsort($va_recolements_related);
 					$vn_recolement_id = reset($va_recolements_related);
