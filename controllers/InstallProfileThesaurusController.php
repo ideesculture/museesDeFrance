@@ -324,13 +324,13 @@ class InstallProfileThesaurusController extends ActionController
                 $this->traiteFichierDMF("lexgene-201009.txt","lexgene","DMF : Liste des stades de création (genèse des oeuvres)",5,$limitation_fichier);
                 break;
             case "lexinsc" :
-                $this->traiteFichierDMF("lexperi-20100921.txt","lexperi","DMF : Liste des datations en siècle ou millénaire (périodes de création, d'exécution et d'utilisation)",5,$limitation_fichier);
+                $this->traiteFichierDMF("lexinsc-201009.txt","lexinsc","DMF : Liste des types d’inscriptions)",4,$limitation_fichier);
                 break;
             case "lexperi" :
                 $this->traiteFichierDMF("lexperi-20100921.txt","lexperi","DMF : Liste des datations en siècle ou millénaire (périodes de création, d'exécution et d'utilisation)",5,$limitation_fichier);
                 break;
             case "lexsrep" :
-                $this->traiteFichierDMF("lexperi-20100921.txt","lexperi","DMF : Liste des datations en siècle ou millénaire (périodes de création, d'exécution et d'utilisation)",5,$limitation_fichier);
+                $this->traiteFichierDMF("lexsrep-201009.txt","lexsrep","DMF : Liste des sources de la représentation",5,$limitation_fichier);
                 break;
             case "lexstat" :
                 $this->traiteFichierDMF("lexstat-201009.txt","lexstat","DMF : Liste des termes autorisés du statut juridique de l'objet",4,$limitation_fichier);
