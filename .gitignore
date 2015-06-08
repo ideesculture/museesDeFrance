@@ -1,3 +1,5 @@
 rd_data.json
 download/PV_*.docx
 .DS_Store
+command-line/aquarelle/*.xml
+command-line/aquarelle
