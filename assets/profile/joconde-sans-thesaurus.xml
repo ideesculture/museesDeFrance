@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="profile.xsd" useForConfiguration="1" base="base" infoUrl="">
-  <profileName>Joconde</profileName>
-  <profileDescription>Profil créé le 3 Mars 2014 à 11:30:16 par CollectiveAccess Administrator</profileDescription>
+  <profileName>Joconde (les thésaurus sont à charger depuis le plugin museesDeFrance)</profileName>
+  <profileDescription>Profil créé le 3 Mars 2014 à 11:30:16 par Gautier Michelin</profileDescription>
   <locales>
     <locale lang="en" country="US">English</locale>
     <locale lang="fr" country="FR">Français</locale>
