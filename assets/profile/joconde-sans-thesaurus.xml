@@ -24678,7 +24678,7 @@
                 <setting name="sortDirection">ASC</setting>
               </settings>
             </placement>
-            <placement code="ca_attribute_mention_localisat">
+            <placement code="ca_attribute_mention_locprec">
               <bundle>ca_attribute_mention_localisation_precedent</bundle>
               <settings>
                 <setting name="sortDirection">ASC</setting>
@@ -25444,7 +25444,7 @@
                 <setting name="readonly"/>
               </settings>
             </placement>
-            <placement code="ca_attribute_recol_suites_obje">
+            <placement code="ca_attribute_recol_suites_marq">
               <bundle>ca_attribute_recol_suites_objet_marque_c</bundle>
               <settings>
                 <setting name="sortDirection">ASC</setting>
@@ -25458,7 +25458,7 @@
                 <setting name="readonly"/>
               </settings>
             </placement>
-            <placement code="ca_attribute_recol_suite_objet">
+            <placement code="ca_attribute_recol_suite_loc">
               <bundle>ca_attribute_recol_suite_objet_loc_c</bundle>
               <settings>
                 <setting name="sortDirection">ASC</setting>
