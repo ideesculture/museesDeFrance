@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+	<RECORD>
+		<REQ>02110003079</REQ>
+		<ONLINE><![CDATA[http://www.culture.gouv.fr/public/mistral/joconde_fr?ACTION=RETROUVER&NUMBER=&REQ=02110003079%3AREF]]></ONLINE>
+		<IMAGE><![CDATA[http://www.culture.gouv.fr/Wave/image/joconde/0670/m021101_0005700_p.jpg]]></IMAGE>
+		<IMAGE><![CDATA[http://www.culture.gouv.fr/Wave/image/joconde/0670/m021101_0005701_p.jpg]]></IMAGE>
+		<FIELD NAME="Domaine"><![CDATA[dessin]]></FIELD>
+		<FIELD NAME="Titre"><![CDATA[L'Amour entre Vénus et Bacchus]]></FIELD>
+		<FIELD NAME="Auteur/exécutant"><![CDATA[HUGUET Jean François]]></FIELD>
+		<FIELD NAME="Précision auteur/exécutant"><![CDATA[HUGUET : Rennes, 1679 ; Rennes, 1749]]></FIELD>
+		<FIELD NAME="Ecole"><![CDATA[France]]></FIELD>
+		<FIELD NAME="Période création/exécution"><![CDATA[2e quart 18e siècle]]></FIELD>
+		<FIELD NAME="Millésime création/exécution"><![CDATA[1737]]></FIELD>
+		<FIELD NAME="Matériaux/techniques"><![CDATA[pierre noire ; aquarelle ; lavis noir ; gouache blanche ; papier (blanc)]]></FIELD>
+		<FIELD NAME="Mesures"><![CDATA[mesures en cm : H. 20.1 ; l. 22.1]]></FIELD>
+		<FIELD NAME="Inscriptions"><![CDATA[signé, daté ; inscription]]></FIELD>
+		<FIELD NAME="Précision inscriptions"><![CDATA[signé, daté : HUGUET IN ET DEL 1737 ; inscription d'origine : SI TOST QUE DES L'ENFANCE ON SE LIVRE A BACCUS ON COURT A TOUTE BRIDE DANS LE SEIN DE VENUS, ET CES DEUX PASSIONS APELLENT LA TROISIEME TOUT EST FUREUR, TOUT EST EXTREME EN IMITANT CE PETIT DIEU COMME LUY ON DEVIENT COMPLICES DES TROIS PLUS DETESTABLES VICES QUE CAUSENT LES FEMMES LE VIN LE JEU]]></FIELD>
+		<FIELD NAME="Sujet représenté"><![CDATA[scène mythologique (Vénus, nuée, char, colombe, Cupidon, verre à pied, Bacchus, bouteille : vin, tonneau, feuillu, carquois, flèche, chèvre, félidé, décor de jardin)]]></FIELD>
+		<FIELD NAME="Lieu de conservation"><![CDATA[Rennes ; musée des beaux-arts]]></FIELD>
+		<FIELD NAME="Statut juridique"><![CDATA[propriété de l'Etat ; saisie révolutionnaire]]></FIELD>
+		<FIELD NAME="Date acquisition"><![CDATA[1791]]></FIELD>
+		<FIELD NAME="Anciennes appartenances"><![CDATA[Collection privée, ROBIEN Christophe-Paul de]]></FIELD>
+		<FIELD NAME="Numéro d'inventaire"><![CDATA[Inv 794.1.2799]]></FIELD>
+		<FIELD NAME="Dépôt/changement affectation"><![CDATA[dépôt ; Rennes ; musée des beaux-arts]]></FIELD>
+		<FIELD NAME="Date dépôt/changement affectation"><![CDATA[1794]]></FIELD>
+		<FIELD NAME="Bibliographie"><![CDATA[Cat. 1884 C 125 n° 1]]></FIELD>
+		<FIELD NAME="Rédacteur"><![CDATA[Olivia Savatier]]></FIELD>
+		<FIELD NAME="Copyright notice"><![CDATA[© Rennes, musée des beaux-arts, © Service des musées de France, 2012]]></FIELD>
+		<FIELD NAME="Crédits photographiques"><![CDATA[© Jean-Manuel Salingue]]></FIELD>
+	</RECORD>

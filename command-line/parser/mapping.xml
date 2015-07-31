@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mappings>
+	<format>XML</format>
+	<idno>
+		<origin>REQ</origin>
+		<repeated>0</repeated>
+		<target>ca_objects.idno</target>
+	</idno>
+	<status>
+		<fixed>0</fixed>
+	</status>
+	<access>
+		<fixed>1</fixed>
+	</access>
+	<object_type>
+		<type>list-value:object_types</type>
+		<fixed>art</fixed>
+	</object_type>
+	<element>
+		<origin>IMAGE</origin>
+		<repeated>1</repeated>
+		<target>ca_object_representation.url</target>
+	</element>
+	<element>
+		<origin>FIELD:NAME="Titre"</origin>
+		<repeated>0</repeated>
+		<target>ca_object_labels.name</target>				
+	</element>
+	<element>
+		<origin>FIELD:NAME="Domaine"</origin>
+		<repeated>0</repeated>
+		<type>list-value:dmf_lexdomn</type>
+		<target>ca_objects.domaine</target>		
+	</element>
+	<element>
+		<!-- CONTENU : aearzaze (gdfgdf ; gjkgjjhk) ; azza (fsdjlfhds) -->
+		<origin>FIELD:NAME="Sujet représenté"</origin>
+		<repeated>0</repeated>
+		<extraction><![CDATA[/([^;^\(]+\([^\)]+\))/i]]></extraction>
+		<iterate>1</iterate>
+		<has_subfields>1</has_subfields>
+		<subfield>
+			<extraction><![CDATA[/([^\(]+) \([^\)]+\)/i]]></extraction>
+			<target>ca_objects.sujet#</target>
+		</subfield>
+		<subfield>
+			<extraction><![CDATA[/[^\(]+ \(([^\)]+)\)/i]]></extraction>
+			<separator> ; </separator>
+			<target>ca_objects.element#</target>
+		</subfield>
+	</element>
+	<element>
+		<origin>FIELD:NAME="Rédacteur"</origin>
+		<repeated>0</repeated>
+		<separator> ; </separator>
+		<target>ca_objects.redacteur</target>		
+	</element>
+	<element>
+		<origin>FIELD:NAME="Millésime création/exécution"</origin>
+		<repeated>0</repeated>
+		<type>date</type>
+		<target>ca_objects.objectProductionDate</target>		
+	</element>
+</mappings>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+	<RECORD>
+		<REQ>02110002376</REQ>
+		<ONLINE><![CDATA[http://www.culture.gouv.fr/public/mistral/joconde_fr?ACTION=RETROUVER&NUMBER=&REQ=02110002376%3AREF]]></ONLINE>
+		<IMAGE><![CDATA[http://www.culture.gouv.fr/Wave/image/joconde/0670/m021101_0009080_p.jpg]]></IMAGE>
+		<FIELD NAME="Domaine"><![CDATA[dessin]]></FIELD>
+		<FIELD NAME="Titre"><![CDATA[Paysage italien]]></FIELD>
+		<FIELD NAME="Auteur/exécutant"><![CDATA[anonyme]]></FIELD>
+		<FIELD NAME="Période création/exécution"><![CDATA[16e siècle]]></FIELD>
+		<FIELD NAME="Matériaux/techniques"><![CDATA[aquarelle ; plume ; encre brune ; papier (blanc)]]></FIELD>
+		<FIELD NAME="Mesures"><![CDATA[mesures en cm : H. 13.6 ; l. 17.6]]></FIELD>
+		<FIELD NAME="Inscriptions"><![CDATA[inscription]]></FIELD>
+		<FIELD NAME="Précision inscriptions"><![CDATA[inscription ancienne : BARTOLOME]]></FIELD>
+		<FIELD NAME="Sujet représenté"><![CDATA[vue d'architecture (ruines : église, Italie, maison, feuillu, rocher)]]></FIELD>
+		<FIELD NAME="Lieu de conservation"><![CDATA[Rennes ; musée des beaux-arts]]></FIELD>
+		<FIELD NAME="Statut juridique"><![CDATA[propriété de l'Etat ; saisie révolutionnaire]]></FIELD>
+		<FIELD NAME="Date acquisition"><![CDATA[1791]]></FIELD>
+		<FIELD NAME="Anciennes appartenances"><![CDATA[Collection privée, ROBIEN Christophe-Paul de]]></FIELD>
+		<FIELD NAME="Numéro d'inventaire"><![CDATA[Inv 794.1.2905]]></FIELD>
+		<FIELD NAME="Dépôt/changement affectation"><![CDATA[dépôt ; Rennes ; musée des beaux-arts]]></FIELD>
+		<FIELD NAME="Date dépôt/changement affectation"><![CDATA[1794]]></FIELD>
+		<FIELD NAME="Rédacteur"><![CDATA[Olivia Savatier]]></FIELD>
+		<FIELD NAME="Copyright notice"><![CDATA[© Rennes, musée des beaux-arts, © Service des musées de France, 2012]]></FIELD>
+		<FIELD NAME="Crédits photographiques"><![CDATA[© Jean-Manuel Salingue]]></FIELD>
+	</RECORD>

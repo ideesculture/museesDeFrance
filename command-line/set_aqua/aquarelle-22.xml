@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+	<RECORD>
+		<REQ>02110001976</REQ>
+		<ONLINE><![CDATA[http://www.culture.gouv.fr/public/mistral/joconde_fr?ACTION=RETROUVER&NUMBER=&REQ=02110001976%3AREF]]></ONLINE>
+		<IMAGE><![CDATA[http://www.culture.gouv.fr/Wave/image/joconde/0669/m021101_0005767_p.jpg]]></IMAGE>
+		<IMAGE><![CDATA[http://www.culture.gouv.fr/Wave/image/joconde/0669/m021101_0005769_p.jpg]]></IMAGE>
+		<FIELD NAME="Domaine"><![CDATA[dessin]]></FIELD>
+		<FIELD NAME="Titre"><![CDATA[Allégorie de la nuit]]></FIELD>
+		<FIELD NAME="Auteur/exécutant"><![CDATA[MANDER Karel I van]]></FIELD>
+		<FIELD NAME="Précision auteur/exécutant"><![CDATA[né en 1548 ; mort en 1606]]></FIELD>
+		<FIELD NAME="Ecole"><![CDATA[anciens Pays-Bas]]></FIELD>
+		<FIELD NAME="Période création/exécution"><![CDATA[2e moitié 16e siècle ; 1er quart 17e siècle]]></FIELD>
+		<FIELD NAME="Matériaux/techniques"><![CDATA[papier (gris), plume, encre brune, blanc (rehaut), gouache blanche, aquarelle]]></FIELD>
+		<FIELD NAME="Mesures"><![CDATA[mesures en cm : H. 18.3 ; L. 28.6]]></FIELD>
+		<FIELD NAME="Inscriptions"><![CDATA[inscription]]></FIELD>
+		<FIELD NAME="Précision inscriptions"><![CDATA[inscription ancienne, en bas à droite, à la plume : encre brune : VAN MANDEN ; inscription ancienne, en haut à droite : plume et encre brune : 50]]></FIELD>
+		<FIELD NAME="Sujet représenté"><![CDATA[scène (allégorie : nuit, homme, femme, nudité, couché, sommeil, chouette, symbole : songe, putti : dans les airs, jeu de bulles, art de la peinture, tigre, ange, corne, nuée) ; scène (personnage, torche)]]></FIELD>
+		<FIELD NAME="Lieu de conservation"><![CDATA[Rennes ; musée des beaux-arts]]></FIELD>
+		<FIELD NAME="Statut juridique"><![CDATA[propriété de l'Etat ; saisie révolutionnaire]]></FIELD>
+		<FIELD NAME="Date acquisition"><![CDATA[1791]]></FIELD>
+		<FIELD NAME="Anciennes appartenances"><![CDATA[Collection privée, ROBIEN Christophe-Paul de]]></FIELD>
+		<FIELD NAME="Numéro d'inventaire"><![CDATA[Inv 794.1.2550]]></FIELD>
+		<FIELD NAME="Dépôt/changement affectation"><![CDATA[dépôt ; Rennes ; musée des beaux-arts]]></FIELD>
+		<FIELD NAME="Date dépôt/changement affectation"><![CDATA[1794]]></FIELD>
+		<FIELD NAME="Exposition"><![CDATA[des Beaux-Arts, Musée du Louvre, cabinet des dessins, Paris 13 janvier-13 mars 1972 ; musée des beaux-arts, Rennes, 19 mai-31 octobre 1972 (n°50) ;des Beaux-Arts, Rennes, 1978 (n°168) ;Beaux-Arts Dijon, 1982-1983 (n°81) ;Musée de la dentelle, Alençon, 8 février-14 avril 1985 (n°50) ;hollandais de la collection du Président de Robien, Palais de Vendôme, Aix en Provence, 25 juin-1er octobre 1987 (n°65) ;Exposition à la Vieille Charité du 23 fév au 20 juin 1987 ;Rennes, 26 Juin-16 Septembre, 1991]]></FIELD>
+		<FIELD NAME="Bibliographie"><![CDATA[Cat. 1884 ;Cat. 1972 (n° 50) ;Wilson-Chevalier K, "Le songe dans l'art bellifontain", dans "Le Songe à la Renaissance", actes du colloque, Cannes, 1987, p. 121-122 (p. 121-122)]]></FIELD>
+		<FIELD NAME="Rédacteur"><![CDATA[Olivia Savatier]]></FIELD>
+		<FIELD NAME="Copyright notice"><![CDATA[© Rennes, musée des beaux-arts, © Service des musées de France, 2012]]></FIELD>
+		<FIELD NAME="Crédits photographiques"><![CDATA[© Jean-Manuel Salingue]]></FIELD>
+	</RECORD>

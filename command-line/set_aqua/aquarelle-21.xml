@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+	<RECORD>
+		<REQ>02110002757</REQ>
+		<ONLINE><![CDATA[http://www.culture.gouv.fr/public/mistral/joconde_fr?ACTION=RETROUVER&NUMBER=&REQ=02110002757%3AREF]]></ONLINE>
+		<FIELD NAME="Domaine"><![CDATA[dessin]]></FIELD>
+		<FIELD NAME="Titre"><![CDATA[Ruines et animaux]]></FIELD>
+		<FIELD NAME="Auteur/exécutant"><![CDATA[DOMENCHIN DE CHAVANNE Pierre]]></FIELD>
+		<FIELD NAME="Précision auteur/exécutant"><![CDATA[DOMENCHIN DE CHAVANNE : Paris, 1673 ; Paris, 1744]]></FIELD>
+		<FIELD NAME="Ecole"><![CDATA[France]]></FIELD>
+		<FIELD NAME="Période création/exécution"><![CDATA[4e quart 17e siècle ; 1ère moitié 18e siècle]]></FIELD>
+		<FIELD NAME="Matériaux/techniques"><![CDATA[papier, aquarelle, pierre noire]]></FIELD>
+		<FIELD NAME="Mesures"><![CDATA[mesures en cm : H. 17.7 ; l. 22.7]]></FIELD>
+		<FIELD NAME="Inscriptions"><![CDATA[inscription]]></FIELD>
+		<FIELD NAME="Précision inscriptions"><![CDATA[inscription ancienne : CHAVANNES]]></FIELD>
+		<FIELD NAME="Sujet représenté"><![CDATA[paysage (ruines, feuillu, cours d'eau, pêche à la ligne, vache, mouton, berger, montagne)]]></FIELD>
+		<FIELD NAME="Lieu de conservation"><![CDATA[Rennes ; musée des beaux-arts]]></FIELD>
+		<FIELD NAME="Statut juridique"><![CDATA[propriété de l'Etat ; saisie révolutionnaire]]></FIELD>
+		<FIELD NAME="Date acquisition"><![CDATA[1791]]></FIELD>
+		<FIELD NAME="Anciennes appartenances"><![CDATA[Collection privée, ROBIEN Christophe-Paul de]]></FIELD>
+		<FIELD NAME="Numéro d'inventaire"><![CDATA[Inv 794.1.2783]]></FIELD>
+		<FIELD NAME="Dépôt/changement affectation"><![CDATA[dépôt ; Rennes ; musée des beaux-arts]]></FIELD>
+		<FIELD NAME="Date dépôt/changement affectation"><![CDATA[1794]]></FIELD>
+		<FIELD NAME="Exposition"><![CDATA[(2007) Au-delà de l'image, Rennes]]></FIELD>
+		<FIELD NAME="Rédacteur"><![CDATA[Olivia Savatier]]></FIELD>
+		<FIELD NAME="Copyright notice"><![CDATA[© Rennes, musée des beaux-arts, © Service des musées de France, 2012]]></FIELD>
+	</RECORD>
