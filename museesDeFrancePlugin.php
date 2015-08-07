@@ -151,7 +151,7 @@ class museesDeFrancePlugin extends BaseApplicationPlugin
                 "default" => array(
                     'module' => 'museesDeFrance',
                     'controller' => 'InventaireBiensDeposes',
-                    'action' => 'depots'
+                    'action' => 'Index'
                 )
             );
 

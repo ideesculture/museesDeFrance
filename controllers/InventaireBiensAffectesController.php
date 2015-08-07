@@ -1,11 +1,5 @@
 <?php
-
-require_once(__CA_LIB_DIR__ . '/core/Configuration.php');
-require_once(__CA_MODELS_DIR__ . '/ca_objects.php');
-require_once(__CA_MODELS_DIR__ . '/ca_occurrences.php');
-require_once(__CA_LIB_DIR__ . '/ca/Search/OccurrenceSearch.php');
-require_once(__CA_LIB_DIR__ . '/ca/Search/SetSearch.php');
-
+require_once(__CA_APP_DIR__."/plugins/museesDeFrance/lib/inventaire/BienAffecte.php");
 
 class InventaireBiensAffectesController extends ActionController
 {
@@ -19,7 +13,26 @@ class InventaireBiensAffectesController extends ActionController
 
     public function Index()
     {
-        $this->render('coucou_html.php');
+        $this->render('inventaire_biens_affectes_index_html.php');
     }
 
+    public function Modification()
+    {
+        $vo_bienaffecte = new BienAffecte("1");
+        $vo_bienaffecte->set("epoque","Louis XV");
+        $vo_bienaffecte->save();
+    }
+
+    public function Creation()
+    {
+        $vo_bienaffecte = new BienAffecte("2");
+        $vo_bienaffecte->set("designation","Titre 2");
+        $vo_bienaffecte->set("epoque","Louis XVI");
+        $vo_bienaffecte->save();
+        $vo_bienaffecte->set("avis","bon");
+        $vo_bienaffecte->save();
+        $vo_bienaffecte->validate();
+        $vo_bienaffecte->set("avis","mauvais");
+        $vo_bienaffecte->save();
+    }
 }

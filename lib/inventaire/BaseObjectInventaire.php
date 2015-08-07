@@ -23,20 +23,20 @@ class BaseObjectInventaire implements InterfaceInventaire {
     public $provenance;
     public $validated;
 
-    private $opo_config;
-    private $opo_db;
-
     // flag on if record already in the db
     private $exists;
 
     private $tablename;
     private $fields;
 
-    function __construct($numinv) {
+    private $opo_config;
+    private $opo_db;
+
+    function __construct($numinv = null) {
 
         if (!isset($this->tablename)) {
             $this->tablename = "inventaire_inventaire";
-            $this->fields = array("id","numninv","designation","materiaux","techniques","mesures","etat","epoque","usage","provenance","validated");
+            $this->fields = array("numninv","designation","materiaux","techniques","mesures","etat","epoque","usage","provenance");
         }
 
         $ps_plugin_path = __CA_BASE_DIR__ . "/app/plugins/museesDeFrance";
@@ -54,15 +54,18 @@ class BaseObjectInventaire implements InterfaceInventaire {
             "type" =>		"mysql"
         ));
 
-        if ($this->_exists($numinv)) {
+        if (isset($numinv) && $this->_exists($numinv)) {
             $this->exists = true;
             $this->_load($numinv);
+        } else {
+            $this->numinv=$numinv;
+            $this->exists = false;
         }
 
     }
 
     private function _exists($numinv) {
-        $qr_res = $this->opo_db->query("SELECT id FROM ? WHERE numinv = ?",$this->tablename,$numinv);
+        $qr_res = $this->opo_db->query("SELECT id FROM ".$this->tablename." WHERE numinv = ?",$numinv);
         if ($qr_res->numRows() > 0) {
             return true;
         } else {
@@ -71,8 +74,9 @@ class BaseObjectInventaire implements InterfaceInventaire {
     }
 
     private function _load($numinv) {
-        $qr_res = $this->opo_db->query("SELECT * FROM ? WHERE numinv = ? LIMIT 1",$this->tablename,$numinv);
+        $qr_res = $this->opo_db->query("SELECT * FROM ".$this->tablename." WHERE numinv = ? LIMIT 1",$numinv);
         if ($qr_res->numRows() > 0) {
+            $qr_res->nextRow();
             $va_row = $qr_res->getRow();
             foreach($va_row as $name => $value) {
                 if (property_exists(get_class($this), $name)) {
@@ -110,14 +114,14 @@ class BaseObjectInventaire implements InterfaceInventaire {
         }
         if (!$this->exists) {
             // object doesn't exist, insert
-            $vs_request = "INSERT INTO ".$this->tablename." (".implode(",",$va_fields).") VALUES  (".implode(",",$va_values).")";
+            $vs_request = "INSERT INTO ".$this->tablename." (".implode(", ",$va_fields).") VALUES  (\"".implode("\", \"",$va_values)."\")";
             var_dump($vs_request);die();
             $this->opo_db->query($vs_request);
         } else {
             // object exists, update
             $vs_request = "UPDATE ".$this->tablename." SET ";
-            for ($i = 0, $size = count($va_fields); $i < $size; $i++) {
-                $vs_request .= $va_fields[$i]."=".$va_values[$i].", ";
+            for ($i = 0, $size = count($va_fields)-1; $i < $size; $i++) {
+                $vs_request .= $va_fields[$i]."=\"".$va_values[$i]."\", ";
             }
             // trick : reuse the $i loop var to finish the request without a trailing comma
             $vs_request .= $va_fields[$size]."=".$va_values[$size];
@@ -127,18 +131,28 @@ class BaseObjectInventaire implements InterfaceInventaire {
         }
     }
 
-    function Validate() {
+    function delete() {
+        if ($this->validated == true) { return false; }
+        $vs_request = "DELETE FROM ".$this->tablename." WHERE id=".$this->get("id");
+        var_dump($vs_request);die();
+        $this->opo_db->query($vs_request);
+        return true;
+    }
+
+    function validate($pb_save = true) {
         if ($this->validated == false) {
             $this->validated = true;
+            if ($pb_save) $this->save();
             return true;
         } else {
             return false;
         }
     }
 
-    function Unvalidate() {
+    function unvalidate($pb_save = true) {
         if ($this->validated == true) {
             $this->validated = false;
+            if ($pb_save) $this->save();
             return true;
         } else {
             return false;
