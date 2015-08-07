@@ -141,11 +141,11 @@ class BaseObjectInventaire implements InterfaceInventaire {
         } else {
             // object exists, update
             $vs_request = "UPDATE ".$this->tablename." SET ";
-            for ($i = 0, $size = count($va_fields)-1; $i < $size; $i++) {
+            for ($i = 0, $size = count($va_fields); $i < $size; $i++) {
                 $vs_request .= $va_fields[$i]."=\"".$va_values[$i]."\", ";
             }
             // trick : reuse the $i loop var to finish the request without a trailing comma
-            $vs_request .= $va_fields[$size]."=\"".$va_values[$size]."\"";
+            $vs_request .= "validated=\"".$this->validated."\"";
             $vs_request .= " WHERE id=".$this->get("id");
             $this->opo_db->query($vs_request);
         }
@@ -162,8 +162,7 @@ class BaseObjectInventaire implements InterfaceInventaire {
     function validate($pb_save = true) {
         if ($this->validated == false) {
             $this->validated = true;
-            if ($pb_save) $this->save();
-            return true;
+            $this->save();
         } else {
             return false;
         }

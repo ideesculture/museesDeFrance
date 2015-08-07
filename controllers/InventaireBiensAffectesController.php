@@ -33,6 +33,7 @@ class InventaireBiensAffectesController extends ActionController
 
         $this->view->setVar('idno', $vs_idno);
         $this->view->setVar('name', $vs_name);
+        $this->view->setVar('id', $vs_object_id);
         $this->render('inventaire_biens_affectes_transfer_html.php');
     }
 
@@ -42,11 +43,16 @@ class InventaireBiensAffectesController extends ActionController
 
         $vt_object = new ca_objects($vs_object_id);
         $vs_idno = $vt_object->get("idno");
+        $vs_name = $vt_object->get("ca_objects.preferred_labels.name");
 
         $vo_bienaffecte = new BienAffecte($vs_idno);
         $vo_bienaffecte->validate();
         //var_dump($vo_bienaffecte);
         //die();
+
+        $this->view->setVar('idno', $vs_idno);
+        $this->view->setVar('name', $vs_name);
+        $this->view->setVar('id', $vs_object_id);
 
         $this->render('inventaire_biens_affectes_validate_html.php');
     }

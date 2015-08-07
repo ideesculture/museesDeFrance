@@ -9,5 +9,15 @@
 <p>Attention, ces données ne seront définitivement écrites qu'à la validation de l'objet dans l'inventaire.</p>
 <p>Une fois l'objet validé, vous ne pourrez plus modifier ses informations.</p>
 <p>Voulez vous valider l'ajout de l'objet dans l'inventaire.</p>
-<?php print caNavButton($this->request, __CA_NAV_BUTTON_APPROVE__, "Valider", '', $this->request->getModulePath(), $this->request->getController(), 'Validate', array("id"=>$vn_id)); ?>
+<?php
+    print caNavButton(
+        $this->request,
+        __CA_NAV_BUTTON_APPROVE__,
+        "Valider",
+        '',
+        $this->request->getModulePath(),
+        $this->request->getController(),
+        'Validate',
+        array("id"=>$vn_id));
+?>
 
