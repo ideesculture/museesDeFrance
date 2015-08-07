@@ -141,7 +141,7 @@ class museesDeFrancePlugin extends BaseApplicationPlugin
                     'displayName' => _t("Registre des biens affectés"),
                     "default" => array(
                         'module' => 'museesDeFrance',
-                        'controller' => 'External',
+                        'controller' => 'InventaireBiensAffectes',
                         'action' => 'biens'
                     )
                 );
@@ -152,7 +152,7 @@ class museesDeFrancePlugin extends BaseApplicationPlugin
                     'displayName' => _t("Registre des biens déposés"),
                     "default" => array(
                         'module' => 'museesDeFrance',
-                        'controller' => 'External',
+                        'controller' => 'InventaireBiensDeposes',
                         'action' => 'depots'
                     )
                 );
