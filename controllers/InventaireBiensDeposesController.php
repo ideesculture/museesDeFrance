@@ -46,7 +46,7 @@ class InventaireBiensDeposesController extends ActionController
 
     public function Creation()
     {
-        $vo_biendepose = new BieDepose("2");
+        $vo_biendepose = new BienDepose("2");
         $vo_biendepose->set("designation","Titre 2");
         $vo_biendepose->set("epoque","Louis XVI");
         $vo_biendepose->save();
