@@ -116,6 +116,17 @@ class BaseObjectInventaire implements InterfaceInventaire {
         return false;
     }
 
+    function fill($pt_object) {
+        foreach($this->mapping as $field) {
+            if (($name == "validated") || ($this->validated)) return false;
+            if (property_exists(get_class($this), $name)) {
+                $this->$name = $value;
+            }
+            return true;
+        }
+        return false;
+    }
+
     function save() {
         foreach($this->fields as $vs_field) {
             if (property_exists(get_class($this),$vs_field)) {

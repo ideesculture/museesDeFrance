@@ -7,6 +7,7 @@
  */
 
 require_once("BaseObjectInventaire.php");
+require_once("helpers/mapping_biensdeposes.php");
 
 class BienDepose extends BaseObjectInventaire {
     public $numdep;
@@ -17,6 +18,7 @@ class BienDepose extends BaseObjectInventaire {
         $this->fields = array("numdep","numinv","date_ref_acte_depot","date_entree", "proprietaire", "date_ref_acte_fin" ,
             "date_inscription","designation","inscription","materiaux","techniques","mesures","etat","epoque",
             "utilisation","provenance","observations");
+        $this->mapping = getMappingBiensDeposes();
 
         parent::__construct($num);
     }
