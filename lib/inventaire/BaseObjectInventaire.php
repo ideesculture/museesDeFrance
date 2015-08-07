@@ -19,7 +19,7 @@ class BaseObjectInventaire implements InterfaceInventaire {
     public $mesure;
     public $etat;
     public $epoque;
-    public $usage;
+    public $utilisation;
     public $provenance;
     public $validated;
 
@@ -36,7 +36,7 @@ class BaseObjectInventaire implements InterfaceInventaire {
 
         if (!isset($this->tablename)) {
             $this->tablename = "inventaire_inventaire";
-            $this->fields = array("numninv","designation","materiaux","techniques","mesures","etat","epoque","usage","provenance");
+            $this->fields = array("numinv","designation","materiaux","techniques","mesures","etat","epoque","utilisation","provenance");
         }
 
         $ps_plugin_path = __CA_BASE_DIR__ . "/app/plugins/museesDeFrance";
@@ -115,7 +115,7 @@ class BaseObjectInventaire implements InterfaceInventaire {
         if (!$this->exists) {
             // object doesn't exist, insert
             $vs_request = "INSERT INTO ".$this->tablename." (".implode(", ",$va_fields).") VALUES  (\"".implode("\", \"",$va_values)."\")";
-            var_dump($vs_request);die();
+            //var_dump($vs_request);die();
             $this->opo_db->query($vs_request);
         } else {
             // object exists, update
