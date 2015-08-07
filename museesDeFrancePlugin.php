@@ -59,34 +59,35 @@ class museesDeFrancePlugin extends BaseApplicationPlugin
 
 
 		$vs_inventaire_url = caNavUrl($this->getRequest(), "museesDeFrance", "InventaireBiensAffectes", "Transfert", array("id"=>$vn_item_id));
-		$vs_depot_url = $this->opo_config->get('ExternalURLDepot');
+
+		$vs_depot_url = caNavUrl($this->getRequest(), "museesDeFrance", "InventaireBiensDeposes", "Transfert", array("id"=>$vn_item_id));
 
 		if ($vs_table_name == "ca_objects") {
 
 			if (in_array($vn_code, $this->opo_config->get('TypesInventaire'))) {
 				// biens acquis
-				$vs_url = $vs_inventaire_url;
-				$vs_inventaire_link_text = "Afficher dans l'inventaire";
-				$vs_action = "afficherObjet/" . $vn_item_id;
+				$vs_inventaire_link_text_affectes = "Afficher dans l'inventaire";
 
 			} elseif (in_array($vn_code, $this->opo_config->get('TypesEnsembleComplexe'))) {
 				// ensemble complexe
-				$vs_url = $vs_inventaire_url;
 				$vs_inventaire_link_text = "Recopier dans l'inventaire";
-				$vs_action = "afficherEnsembleComplexe/" . $vn_item_id;
 			} elseif (in_array($vn_code, $this->opo_config->get('TypesDepot'))) {
 				// biens déposés
-				$vs_url = $vs_depot_url;
-				$vs_inventaire_link_text = "Afficher dans le registre des biens&nbsp;déposés";
-				$vs_action = "afficherObjet/" . $vn_item_id;
+				$vs_inventaire_link_text_deposes = "Afficher dans le registre des biens&nbsp;déposés";
 			}
 
-			if ($vs_inventaire_link_text)
+			if ($vs_inventaire_link_text_affectes)
 				$vs_buf = "<div style=\"text-align:center;width:100%;margin-top:10px;\">"
-					. "<a href=\" " . $vs_inventaire_url . "\" target='_blank' class='form-button-gradient'>"
+					. "<a href=\" " . $vs_inventaire_url . "\" class='form-button-gradient'>"
 					. "<img class='form-button-left' src=\"" . __CA_URL_ROOT__ . "/app/plugins/museesDeFrance/views/images/inventaire_16x16.png\" border='0'>"
-					. $vs_inventaire_link_text
+					. $vs_inventaire_link_text_affectes
 					. "</a></div>";
+            if ($vs_inventaire_link_text_deposes)
+                $vs_buf = "<div style=\"text-align:center;width:100%;margin-top:10px;\">"
+                    . "<a href=\" " . $vs_depot_url . "\" class='form-button-gradient'>"
+                    . "<img class='form-button-left' src=\"" . __CA_URL_ROOT__ . "/app/plugins/museesDeFrance/views/images/inventaire_16x16.png\" border='0'>"
+                    . $vs_inventaire_link_text_deposes
+                    . "</a></div>";
 
 		}
 
