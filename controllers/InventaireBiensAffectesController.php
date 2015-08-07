@@ -23,6 +23,7 @@ class InventaireBiensAffectesController extends ActionController
     {
         $vo_bienaffecte = new BienAffecte("1");
         $vo_bienaffecte->set("epoque","Louis XV");
+        $vo_bienaffecte->set("designation","Le titre");
         $vo_bienaffecte->save();
     }
 

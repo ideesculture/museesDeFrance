@@ -43,7 +43,7 @@ class BaseObjectInventaire implements InterfaceInventaire {
     function __construct($num = null) {
 
         if (!isset($this->numtype)) {
-            $numtype = "numinv";
+            $this->numtype = "numinv";
         }
         if (!isset($this->tablename)) {
             $this->tablename = "inventaire_inventaire";
