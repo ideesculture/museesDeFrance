@@ -58,9 +58,9 @@ class museesDeFrancePlugin extends BaseApplicationPlugin
 		$vn_code = $t_item->getTypeCode();
 
 
-		$vs_inventaire_url = caNavUrl($this->getRequest(), "museesDeFrance", "InventaireBiensAffectes", "Transfert", array("id"=>$vn_item_id));
+		$vs_inventaire_url = caNavUrl($this->getRequest(), "museesDeFrance", "InventaireBiensAffectes", "Transfer", array("id"=>$vn_item_id));
 
-		$vs_depot_url = caNavUrl($this->getRequest(), "museesDeFrance", "InventaireBiensDeposes", "Transfert", array("id"=>$vn_item_id));
+		$vs_depot_url = caNavUrl($this->getRequest(), "museesDeFrance", "InventaireBiensDeposes", "Transfer", array("id"=>$vn_item_id));
 
 		if ($vs_table_name == "ca_objects") {
 
