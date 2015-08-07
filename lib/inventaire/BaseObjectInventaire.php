@@ -124,9 +124,9 @@ class BaseObjectInventaire implements InterfaceInventaire {
                 $vs_request .= $va_fields[$i]."=\"".$va_values[$i]."\", ";
             }
             // trick : reuse the $i loop var to finish the request without a trailing comma
-            $vs_request .= $va_fields[$size]."=".$va_values[$size];
+            $vs_request .= $va_fields[$size]."=\"".$va_values[$size]."\"";
             $vs_request .= " WHERE id=".$this->get("id");
-            var_dump($vs_request);die();
+            //var_dump($vs_request);die();
             $this->opo_db->query($vs_request);
         }
     }
