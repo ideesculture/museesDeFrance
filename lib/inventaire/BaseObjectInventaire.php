@@ -11,6 +11,7 @@ require_once(__CA_LIB_DIR__."/core/Db.php");
 
 class BaseObjectInventaire implements InterfaceInventaire {
 
+    // serie of basic content properties
     public $id;
     public $numinv;
     public $designation;
@@ -23,20 +24,30 @@ class BaseObjectInventaire implements InterfaceInventaire {
     public $provenance;
     public $validated;
 
+    // search field name for num, default is "numinv"
+    private $numtype;
+
     // flag on if record already in the db
     private $exists;
 
+    // db storage table name
     private $tablename;
+    // array of field names for storage, should correspond to basic content properties names
     private $fields;
 
+    // configuration facilities
     private $opo_config;
+    // db object
     private $opo_db;
 
-    function __construct($numinv = null) {
+    function __construct($num = null) {
 
+        if (!isset($this->numtype)) {
+            $numtype = "numinv";
+        }
         if (!isset($this->tablename)) {
             $this->tablename = "inventaire_inventaire";
-            $this->fields = array("numinv","designation","materiaux","techniques","mesures","etat","epoque","utilisation","provenance");
+            $this->fields = array("numinv","designation");
         }
 
         $ps_plugin_path = __CA_BASE_DIR__ . "/app/plugins/museesDeFrance";
@@ -54,18 +65,18 @@ class BaseObjectInventaire implements InterfaceInventaire {
             "type" =>		"mysql"
         ));
 
-        if (isset($numinv) && $this->_exists($numinv)) {
+        if (isset($num) && $this->_exists($num)) {
             $this->exists = true;
-            $this->_load($numinv);
+            $this->_load($num);
         } else {
-            $this->numinv=$numinv;
+            $this->numinv=$num;
             $this->exists = false;
         }
 
     }
 
-    private function _exists($numinv) {
-        $qr_res = $this->opo_db->query("SELECT id FROM ".$this->tablename." WHERE numinv = ?",$numinv);
+    private function _exists($num) {
+        $qr_res = $this->opo_db->query("SELECT id FROM ".$this->tablename." WHERE ".$this->numtype." = ?",$num);
         if ($qr_res->numRows() > 0) {
             return true;
         } else {
@@ -73,8 +84,8 @@ class BaseObjectInventaire implements InterfaceInventaire {
         }
     }
 
-    private function _load($numinv) {
-        $qr_res = $this->opo_db->query("SELECT * FROM ".$this->tablename." WHERE numinv = ? LIMIT 1",$numinv);
+    private function _load($num) {
+        $qr_res = $this->opo_db->query("SELECT * FROM ".$this->tablename." WHERE ".$this->numtype." = ? LIMIT 1",$num);
         if ($qr_res->numRows() > 0) {
             $qr_res->nextRow();
             $va_row = $qr_res->getRow();
@@ -115,7 +126,6 @@ class BaseObjectInventaire implements InterfaceInventaire {
         if (!$this->exists) {
             // object doesn't exist, insert
             $vs_request = "INSERT INTO ".$this->tablename." (".implode(", ",$va_fields).") VALUES  (\"".implode("\", \"",$va_values)."\")";
-            //var_dump($vs_request);die();
             $this->opo_db->query($vs_request);
         } else {
             // object exists, update
@@ -126,7 +136,6 @@ class BaseObjectInventaire implements InterfaceInventaire {
             // trick : reuse the $i loop var to finish the request without a trailing comma
             $vs_request .= $va_fields[$size]."=\"".$va_values[$size]."\"";
             $vs_request .= " WHERE id=".$this->get("id");
-            //var_dump($vs_request);die();
             $this->opo_db->query($vs_request);
         }
     }
