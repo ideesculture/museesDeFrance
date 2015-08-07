@@ -17,7 +17,7 @@ class InventaireBiensAffectesController extends ActionController
         $this->render('inventaire_biens_affectes_index_html.php');
     }
 
-    public function Transfert()
+    public function Transfer()
     {
         $vs_object_id = $this->request->getParameter("id",pInteger);
 
@@ -33,10 +33,25 @@ class InventaireBiensAffectesController extends ActionController
 
         $this->view->setVar('idno', $vs_idno);
         $this->view->setVar('name', $vs_name);
-        $this->render('inventaire_biens_affectes_transfert_html.php');
+        $this->render('inventaire_biens_affectes_transfer_html.php');
     }
 
-    public function Modification()
+    public function Validate()
+    {
+        $vs_object_id = $this->request->getParameter("id",pInteger);
+
+        $vt_object = new ca_objects($vs_object_id);
+        $vs_idno = $vt_object->get("idno");
+
+        $vo_bienaffecte = new BienAffecte($vs_idno);
+        $vo_bienaffecte->validate();
+        //var_dump($vo_bienaffecte);
+        //die();
+
+        $this->render('inventaire_biens_affectes_validate_html.php');
+    }
+
+    public function Modify()
     {
         $vo_bienaffecte = new BienAffecte("1");
         $vo_bienaffecte->set("epoque","Louis XV");
