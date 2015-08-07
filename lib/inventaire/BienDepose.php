@@ -9,5 +9,6 @@
 require_once("BaseObjectInventaire.php");
 
 class BienDepose extends BaseObjectInventaire {
-    
+    public $numdep;
+
 }

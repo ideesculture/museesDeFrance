@@ -7,8 +7,8 @@
  */
 
 interface InterfaceInventaire {
-    public function get();
-    public function set();
+    public function get($name);
+    public function set($name, $value);
 
     public function Validate();
     public function Unvalidate();
