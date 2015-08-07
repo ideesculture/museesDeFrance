@@ -9,9 +9,6 @@ class InventaireBiensAffectesController extends ActionController
     # -------------------------------------------------------
     public function __construct(&$po_request, &$po_response, $pa_view_paths = null)
     {
-        $this->tablename = "inventaire_inventaire";
-        $this->fields = array("numinv","designation","materiaux","techniques","mesures","etat","epoque","utilisation","provenance");
-
         parent::__construct($po_request, $po_response, $pa_view_paths);
     }
 
