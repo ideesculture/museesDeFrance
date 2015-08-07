@@ -1,5 +1,6 @@
 <?php
 require_once(__CA_APP_DIR__."/plugins/museesDeFrance/lib/inventaire/BienAffecte.php");
+require_once(__CA_MODELS_DIR__."/ca_objects.php");
 
 class InventaireBiensAffectesController extends ActionController
 {
@@ -17,6 +18,19 @@ class InventaireBiensAffectesController extends ActionController
     public function Index()
     {
         $this->render('inventaire_biens_affectes_index_html.php');
+    }
+
+    public function Transfert()
+    {
+        $vs_object_id = $this->opo_request->getParameter("id",pInteger);
+        $vt_object = new ca_objects($vs_object_id);
+        $vo_bienaffecte = new BienAffecte($vt_object->get("idno"));
+        $vo_bienaffecte->set("designation",$vt_object->get("name"));
+        $vo_bienaffecte->save();
+
+        $this->view->setVar('idno', $vt_object->get("idno"));
+        $this->view->setVar('name', $vt_object->get("name"));
+        $this->render('inventaire_biens_affectes_transfert_html.php');
     }
 
     public function Modification()
