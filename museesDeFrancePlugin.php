@@ -57,7 +57,8 @@ class museesDeFrancePlugin extends BaseApplicationPlugin
 		$vn_item_id = $t_item->getPrimaryKey();
 		$vn_code = $t_item->getTypeCode();
 
-		$vs_inventaire_url = $this->opo_config->get('ExternalURLInventaire');
+
+		$vs_inventaire_url = caNavUrl($this->getRequest(), "museesDeFrance", "InventaireBiensAffectes", "Transfert", array("id"=>$vn_item_id));
 		$vs_depot_url = $this->opo_config->get('ExternalURLDepot');
 
 		if ($vs_table_name == "ca_objects") {
@@ -67,6 +68,7 @@ class museesDeFrancePlugin extends BaseApplicationPlugin
 				$vs_url = $vs_inventaire_url;
 				$vs_inventaire_link_text = "Afficher dans l'inventaire";
 				$vs_action = "afficherObjet/" . $vn_item_id;
+
 			} elseif (in_array($vn_code, $this->opo_config->get('TypesEnsembleComplexe'))) {
 				// ensemble complexe
 				$vs_url = $vs_inventaire_url;
@@ -81,7 +83,7 @@ class museesDeFrancePlugin extends BaseApplicationPlugin
 
 			if ($vs_inventaire_link_text)
 				$vs_buf = "<div style=\"text-align:center;width:100%;margin-top:10px;\">"
-					. "<a href=\"" . $vs_inventaire_url . "/" . $vs_action . "\" target='_blank' class='form-button-gradient'>"
+					. "<a href=\" " . $vs_inventaire_url . "\" target='_blank' class='form-button-gradient'>"
 					. "<img class='form-button-left' src=\"" . __CA_URL_ROOT__ . "/app/plugins/museesDeFrance/views/images/inventaire_16x16.png\" border='0'>"
 					. $vs_inventaire_link_text
 					. "</a></div>";
