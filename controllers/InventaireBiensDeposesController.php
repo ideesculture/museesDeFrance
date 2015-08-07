@@ -1,4 +1,5 @@
 <?php
+require_once(__CA_APP_DIR__."/plugins/museesDeFrance/lib/inventaire/BienDepose.php");
 /**
  * Created by PhpStorm.
  * User: gautier
