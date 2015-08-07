@@ -22,14 +22,20 @@ class InventaireBiensAffectesController extends ActionController
 
     public function Transfert()
     {
-        $vs_object_id = $this->opo_request->getParameter("id",pInteger);
-        $vt_object = new ca_objects($vs_object_id);
-        $vo_bienaffecte = new BienAffecte($vt_object->get("idno"));
-        $vo_bienaffecte->set("designation",$vt_object->get("name"));
-        $vo_bienaffecte->save();
+        $vs_object_id = $this->request->getParameter("id",pInteger);
 
-        $this->view->setVar('idno', $vt_object->get("idno"));
-        $this->view->setVar('name', $vt_object->get("name"));
+        $vt_object = new ca_objects($vs_object_id);
+        $vs_idno = $vt_object->get("idno");
+        $vs_name = $vt_object->get("ca_objects.preferred_labels.name");
+
+        $vo_bienaffecte = new BienAffecte($vs_idno);
+        $vo_bienaffecte->set("designation",$vs_name);
+        $vo_bienaffecte->save();
+        //var_dump($vo_bienaffecte);
+        //die();
+
+        $this->view->setVar('idno', $vs_idno);
+        $this->view->setVar('name', $vs_name);
         $this->render('inventaire_biens_affectes_transfert_html.php');
     }
 
