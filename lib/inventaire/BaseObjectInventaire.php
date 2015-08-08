@@ -25,15 +25,15 @@ class BaseObjectInventaire implements InterfaceInventaire {
     public $validated;
 
     // search field name for num, default is "numinv"
-    private $numtype;
+    public $numtype;
 
     // flag on if record already in the db
     private $exists;
 
     // db storage table name
-    private $tablename;
+    public $tablename;
     // array of field names for storage, should correspond to basic content properties names
-    private $fields;
+    public $fields;
 
     // configuration facilities
     private $opo_config;
@@ -204,4 +204,6 @@ class BaseObjectInventaire implements InterfaceInventaire {
     function getJSON() {
         return true;
     }
+
+
 }

@@ -41,6 +41,8 @@ class museesDeFrancePlugin extends BaseApplicationPlugin
 	 */
 	public function hookAppendToEditorInspector(array $va_params = array())
 	{
+        MetaTagManager::addLink('stylesheet', __CA_URL_ROOT__."/app/plugins//museesDeFrance/assets/css/museesDeFrance.css",'text/css');
+
 		$t_item = $va_params["t_item"];
 
 		// basic zero-level error detection
@@ -169,6 +171,15 @@ class museesDeFrancePlugin extends BaseApplicationPlugin
                 );
             }
 
+			$va_menu_items['smf5'] = array(
+				'displayName' => _t("A propos"),
+				"default" => array(
+					'module' => 'museesDeFrance',
+					'controller' => 'InventaireBiensAffectes',
+					'action' => 'About'
+				)
+			);
+
 			$pa_menu_bar['recolementsmf_menu'] = array(
 				'displayName' => _t("Procédures<br/>réglementaires"),
 				'navigation' => $va_menu_items
@@ -190,13 +201,6 @@ class museesDeFrancePlugin extends BaseApplicationPlugin
 		);
 
 		return $pa_role_list;
-	}
-
-	public function hookJavascriptCssLoadManager($pa_javascript_css_list)
-	{
-		$pa_javascript_css_list[] = "/museesDeFrance/assets/css/museesDeFrance.css";
-
-		return $pa_javascript_css_list;
 	}
 
 	public function hookRenderWidgets($pa_widgets_config)
