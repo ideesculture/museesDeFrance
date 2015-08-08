@@ -1,5 +1,6 @@
 <?php
 require_once(__CA_APP_DIR__."/plugins/museesDeFrance/lib/inventaire/BienAffecte.php");
+require_once(__CA_APP_DIR__."/plugins/museesDeFrance/lib/inventaire/RegistreBiensAffectes.php");
 require_once(__CA_MODELS_DIR__."/ca_objects.php");
 
 class InventaireBiensAffectesController extends ActionController
@@ -10,10 +11,18 @@ class InventaireBiensAffectesController extends ActionController
     public function __construct(&$po_request, &$po_response, $pa_view_paths = null)
     {
         parent::__construct($po_request, $po_response, $pa_view_paths);
+
+        // Global vars for all children views
+        $this->view->setVar('plugin_dir', __CA_BASE_DIR__."/app/plugins/museesDeFrance");
+        $this->view->setVar('plugin_url', __CA_URL_ROOT__."/app/plugins/museesDeFrance");
+
+        $vt_registre = new RegistreBiensAffectes();
+        $this->view->setVar("registre",$vt_registre);
     }
 
     public function Index()
     {
+
         $this->render('inventaire_biens_affectes_index_html.php');
     }
 
@@ -77,5 +86,9 @@ class InventaireBiensAffectesController extends ActionController
         $vo_bienaffecte->validate();
         $vo_bienaffecte->set("avis","mauvais");
         $vo_bienaffecte->save();
+    }
+
+    public function About() {
+        $this->render('inventaire_about_html.php');
     }
 }
