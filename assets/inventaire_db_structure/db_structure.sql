@@ -7,7 +7,7 @@
 #
 # Hôte: 127.0.0.1 (MySQL 5.6.24)
 # Base de données: inventaire_annonay
-# Temps de génération: 2015-08-07 12:29:58 +0000
+# Temps de génération: 2015-08-08 13:01:43 +0000
 # ************************************************************
 
 
@@ -23,24 +23,28 @@
 # Affichage de la table inventaire_depot
 # ------------------------------------------------------------
 
-DROP TABLE IF EXISTS `inventaire_depot`;
-
 CREATE TABLE `inventaire_depot` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int(20) NOT NULL AUTO_INCREMENT,
+  `ca_id` int(20) DEFAULT NULL,
   `numdep` varchar(255) NOT NULL,
+  `numdep_sort` varchar(255) DEFAULT NULL,
+  `numdep_display` varchar(255) DEFAULT NULL,
   `numinv` text,
-  `date_ref_acte_depot` text,
-  `date_entree` date DEFAULT NULL,
+  `acte_depot` text,
+  `date_prisencharge` date DEFAULT NULL,
   `proprietaire` text,
-  `date_ref_acte_fin` text,
-  `date_inscription` date DEFAULT NULL,
+  `acte_fin_depot` text,
+  `date_inscription` text,
+  `date_inscription_display` text,
   `designation` text,
+  `designation_display` text,
   `inscription` text,
   `materiaux` text,
   `techniques` text,
   `mesures` text,
   `etat` text,
   `auteur` text,
+  `auteur_display` text,
   `epoque` text,
   `utilisation` text,
   `provenance` text,
@@ -52,21 +56,38 @@ CREATE TABLE `inventaire_depot` (
 
 
 
+# Affichage de la table inventaire_depot_photo
+# ------------------------------------------------------------
+
+CREATE TABLE `inventaire_depot_photo` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `depot_id` int(11) NOT NULL,
+  `credits` text NOT NULL,
+  `file` text NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `inventaire_id` (`depot_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
 # Affichage de la table inventaire_inventaire
 # ------------------------------------------------------------
 
-DROP TABLE IF EXISTS `inventaire_inventaire`;
-
 CREATE TABLE `inventaire_inventaire` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int(20) NOT NULL AUTO_INCREMENT,
+  `ca_id` int(20) DEFAULT NULL,
   `numinv` varchar(255) NOT NULL,
+  `numinv_sort` varchar(255) DEFAULT NULL,
+  `numinv_display` varchar(255) DEFAULT NULL,
   `designation` text,
+  `designation_display` text,
   `mode_acquisition` text,
   `donateur` text,
   `date_acquisition` text,
   `avis` text,
   `prix` text,
   `date_inscription` text,
+  `date_inscription_display` text,
   `observations` text,
   `inscription` text,
   `materiaux` text,
@@ -74,6 +95,7 @@ CREATE TABLE `inventaire_inventaire` (
   `mesures` text,
   `etat` text,
   `auteur` text,
+  `auteur_display` text,
   `epoque` text,
   `utilisation` text,
   `provenance` text,
@@ -84,36 +106,16 @@ CREATE TABLE `inventaire_inventaire` (
 
 
 
-# Affichage de la table inventaire_photo
+# Affichage de la table inventaire_inventaire_photo
 # ------------------------------------------------------------
 
-DROP TABLE IF EXISTS `inventaire_photo`;
-
-CREATE TABLE `inventaire_photo` (
+CREATE TABLE `inventaire_inventaire_photo` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `inventaire_id` int(11) NOT NULL,
   `credits` text NOT NULL,
   `file` text NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `inventaire_id` (`inventaire_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-
-
-# Affichage de la table inventaire_users
-# ------------------------------------------------------------
-
-DROP TABLE IF EXISTS `inventaire_users`;
-
-CREATE TABLE `inventaire_users` (
-  `user_id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(255) DEFAULT NULL,
-  `email` varchar(255) DEFAULT NULL,
-  `display_name` varchar(50) DEFAULT NULL,
-  `password` varchar(128) NOT NULL,
-  PRIMARY KEY (`user_id`),
-  UNIQUE KEY `username` (`username`),
-  UNIQUE KEY `email` (`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
