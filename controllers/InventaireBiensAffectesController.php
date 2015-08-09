@@ -60,8 +60,6 @@ class InventaireBiensAffectesController extends ActionController
         $vo_bienaffecte = new BienAffecte();
         $vo_bienaffecte->loadByCaID($vs_object_id);
         $vo_bienaffecte->validate();
-        //var_dump($vo_bienaffecte);
-        //die();
 
         $this->view->setVar('idno', $vs_idno);
         $this->view->setVar('name', $vs_name);
