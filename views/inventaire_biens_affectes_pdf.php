@@ -8,6 +8,7 @@
 
 // module/Inventaire
 define("__LOCALE__","fr_FR");
+$vt_registre = $this->getVar("registre");
 
 ?>
 <html>
@@ -118,15 +119,15 @@ define("__LOCALE__","fr_FR");
 
 <?php
 $labels = array("numinv" => "Numéro d'inventaire");
-$inventaires= array();
-foreach ($inventaires as $inventaire) { ?>
+foreach($vt_registre->getObjects() as $vt_object) {
+?>
     <div class="hero-unit">
         <div style="clear:both; position:relative;">
             <table class="table-content">
                 <thead>
                 <tr>
                     <th>
-                        <small>N° inventaire</small><br/><b><?php print $inventaire->numinv_display; //1 ?></b>
+                        <small>N° inventaire</small><br/><b><?php print $vt_object->numinv_display; //1 ?></b>
                     </th>
                     <th></th>
                 </tr>
@@ -134,31 +135,31 @@ foreach ($inventaires as $inventaire) { ?>
                 <tbody>
                 <tr>
                     <td class="label">Désignation</td>
-                    <td class="content"><?php print $inventaire->designation; //8?></td>
+                    <td class="content"><?php print $vt_object->designation; //8?></td>
                     <td class="photo" rowspan="6">
-                        <?php print $inventaire->numinv_display; //1 ?><br/>
-                        <?php if($inventaire->file) : ?>
-                            <img src="<?php print $imagepath; ?>/files/assets/<?php print $inventaire->file; //1 ?>" style="width:120pt;">
+                        <?php print $vt_object->numinv_display; //1 ?><br/>
+                        <?php if($vt_object->file) : ?>
+                            <img src="<?php print __CA_BASE_DIR__; ?>/app/plugins/museesDeFrance/assets/photos/<?php print $vt_object->file; //1 ?>" style="width:120pt;">
                         <?php else : ?>
-                            <img src="<?php print $imagepath; ?>/images/pas-de-vignette.jpg" style="width:120pt;">
+                            <img src="<?php print __CA_BASE_DIR__."/app/plugins/museesDeFrance/views/images/pas-de-vignette.jpg"; ?>" style="width:120pt;">
                         <?php endif; ?>
                     </td>
                 </tr>
-                <tr><td class="label">Mode d'acquisition</td><td class="content"><?php print $inventaire->mode_acquisition; //2?></td></tr>
-                <tr><td class="label">Nom du donateur, testateur ou vendeur</td><td class="content"><?php print $inventaire->donateur; //3?></td></tr>
-                <tr><td class="label">Date et références de l'acte d'acquisition et d'affectation au musée</td><td class="content"><?php print $inventaire->date_acquisition; ?></td></tr>
-                <tr><td class="label">Avis des instances scientifiques</td><td class="content"><?php print $inventaire->avis; //5?></td></tr>
-                <tr><td class="label">Prix d'achat - subvention publique</td><td class="content"><?php print $inventaire->prix; //6 ?></td></tr>
-                <tr><td class="label">Date d'inscription au registre d'inventaire</td><td class="content" colspan="2"><?php print $inventaire->date_inscription; //7 ?></td></tr>
-                <tr><td class="label">Marques et inscriptions</td><td class="content" colspan="2"><?php print $inventaire->inscription; //9?></td></tr>
-                <tr><td class="label">Matériaux/Techniques</td><td class="content"  colspan="2"><?php print $inventaire->materiaux; //10?></td></tr>
-                <tr><td class="label">Mesures</td><td class="content" colspan="2"><?php print $inventaire->mesures; //12?></td></tr>
-                <tr><td class="label">Indications particulières sur l'état du bien au moment de l'acquisition</td><td class="content" colspan="2"><?php print $inventaire->etat; //13?></td></tr>
-                <tr><td class="label">Auteur, collecteur, fabricant, commanditaire...</td><td class="content" colspan="2"><?php print $inventaire->auteur; //14 ?></td></tr>
-                <tr><td class="label">Epoque, datation ou date de récolte</td><td class="content" colspan="2"><?php print $inventaire->epoque; //15 ?></td></tr>
-                <tr><td class="label">Fonction d'usage</td><td class="content" colspan="2"><?php print $inventaire->usage; //16 ?></td></tr>
-                <tr><td class="label">Provenance géographique</td><td class="content" colspan="2"><?php print $inventaire->provenance; //17 ?></td></tr>
-                <tr><td class="label">Observations</td><td class="content" colspan="2"><?php print $inventaire->observations; //18 ?></td></tr>
+                <tr><td class="label">Mode d'acquisition</td><td class="content"><?php print $vt_object->mode_acquisition; //2?></td></tr>
+                <tr><td class="label">Nom du donateur, testateur ou vendeur</td><td class="content"><?php print $vt_object->donateur; //3?></td></tr>
+                <tr><td class="label">Date et références de l'acte d'acquisition et d'affectation au musée</td><td class="content"><?php print $vt_object->date_acquisition; ?></td></tr>
+                <tr><td class="label">Avis des instances scientifiques</td><td class="content"><?php print $vt_object->avis; //5?></td></tr>
+                <tr><td class="label">Prix d'achat - subvention publique</td><td class="content"><?php print $vt_object->prix; //6 ?></td></tr>
+                <tr><td class="label">Date d'inscription au registre d'inventaire</td><td class="content" colspan="2"><?php print $vt_object->date_inscription; //7 ?></td></tr>
+                <tr><td class="label">Marques et inscriptions</td><td class="content" colspan="2"><?php print $vt_object->inscription; //9?></td></tr>
+                <tr><td class="label">Matériaux/Techniques</td><td class="content"  colspan="2"><?php print $vt_object->materiaux; //10?></td></tr>
+                <tr><td class="label">Mesures</td><td class="content" colspan="2"><?php print $vt_object->mesures; //12?></td></tr>
+                <tr><td class="label">Indications particulières sur l'état du bien au moment de l'acquisition</td><td class="content" colspan="2"><?php print $vt_object->etat; //13?></td></tr>
+                <tr><td class="label">Auteur, collecteur, fabricant, commanditaire...</td><td class="content" colspan="2"><?php print $vt_object->auteur; //14 ?></td></tr>
+                <tr><td class="label">Epoque, datation ou date de récolte</td><td class="content" colspan="2"><?php print $vt_object->epoque; //15 ?></td></tr>
+                <tr><td class="label">Fonction d'usage</td><td class="content" colspan="2"><?php print $vt_object->utilisation; //16 ?></td></tr>
+                <tr><td class="label">Provenance géographique</td><td class="content" colspan="2"><?php print $vt_object->provenance; //17 ?></td></tr>
+                <tr><td class="label">Observations</td><td class="content" colspan="2"><?php print $vt_object->observations; //18 ?></td></tr>
                 </tbody>
             </table>
         </div>
