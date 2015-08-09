@@ -24,7 +24,11 @@ class BienAffecte extends BaseObjectInventaire {
         return "<thead><tr><th>Numéro d'inventaire</th><th>Désignation</th><th>Auteur</th><th>Date d'inscription</th><th>Fonctions</th></tr></thead>";
     }
 
-    function getHtmlTableRow() {
-        return "<tr><td>".$this->numinv_display."</td><td>".$this->designation_display."</td><td>".$this->auteur_display."</td><td>".$this->date_inscription_display."</td><td></td></tr>";
+    function getHtmlTableRowContent() {
+        return "<td>".$this->numinv_display."</td><td>".$this->designation_display."</td><td>".$this->auteur_display."</td><td>".$this->date_inscription_display."</td><td>
+        <img src='/themes/default/graphics/buttons/glyphicons_198_ok.png' alt='glyphicons_198_ok' border='0' align='middle'>
+        <img src='/themes/default/graphics/buttons/glyphicons_197_remove.png' alt='glyphicons_197_remove' border='0' align='middle'>
+        <img src='/themes/default/graphics/buttons/glyphicons_211_right_arrow.png' alt='glyphicons_211_right_arrow' border='0' align='middle'>
+        </td>";
     }
 }
