@@ -40,6 +40,7 @@ class InventaireBiensAffectesController extends ActionController
         //var_dump($vo_bienaffecte);die();
         $vo_bienaffecte->loadByCaID($vs_object_id);
         $vo_bienaffecte->fill($vt_object);
+        $vo_bienaffecte->copyPhoto($vt_object);
         $vo_bienaffecte->save();
 
         $this->view->setVar('idno', $vs_idno);

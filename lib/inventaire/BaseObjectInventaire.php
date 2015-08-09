@@ -209,6 +209,28 @@ class BaseObjectInventaire implements InterfaceInventaire {
         }
     }
 
+    function copyPhoto($pt_object) {
+        // Fetching primary media info
+        $media = $pt_object->getPrimaryRepresentation(array('large'));
+        if ($media) {
+            // if we've a media, copy it
+            $target = __CA_BASE_DIR__ . "/app/plugins/museesDeFrance/assets/photos/".basename($media["paths"]["large"]);
+            if (!copy($media["paths"]["large"], $target)) {
+                // copy has crashed
+                throw new \Exception("Impossible de recopier le fichier image dans museesDeFrance/assets/photos.");
+            }
+        } else {
+            // no media defined
+            $return["error"]="Pas de représentation primaire";
+            return $return;
+        }
+        $file = basename($media["paths"]["large"]);
+        $vs_request = "REPLACE INTO ".$this->tablename."_photo (record_id,file) VALUES (".$this->id.",\"".$file."\")";
+        $this->opo_db->query($vs_request);
+        $return["file"] = $file;
+        return $return;
+    }
+
     function delete() {
         if ($this->validated == true) { return false; }
         $vs_request = "DELETE FROM ".$this->tablename." WHERE id=".$this->get("id");

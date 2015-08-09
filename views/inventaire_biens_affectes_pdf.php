@@ -120,6 +120,7 @@ $vt_registre = $this->getVar("registre");
 <?php
 $labels = array("numinv" => "Numéro d'inventaire");
 foreach($vt_registre->getObjects() as $vt_object) {
+    if($vt_object->validated) {
 ?>
     <div class="hero-unit">
         <div style="clear:both; position:relative;">
@@ -165,6 +166,7 @@ foreach($vt_registre->getObjects() as $vt_object) {
         </div>
     </div>
     <?php
+    }
 }
 ?>
 <p class="fin-impression">
