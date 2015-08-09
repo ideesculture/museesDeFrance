@@ -217,6 +217,30 @@ class museesDeFrancePlugin extends BaseApplicationPlugin
 			"requires" => array(),
 			"parameters" => array()
 		);
+		$pa_widgets_config["museesDeFranceInventaireBiensAffectesInfo"] = array(
+			"domain" => array(
+				"module" => "museesDeFrance",
+				"controller" => "InventaireBiensAffectes"),
+			"handler" => array(
+				"module" => "museesDeFrance",
+				"controller" => "InventaireBiensAffectes",
+				"action" => 'Info',
+				"isplugin" => true),
+			"requires" => array(),
+			"parameters" => array()
+		);
+		$pa_widgets_config["museesDeFranceInventaireBiensDeposesInfo"] = array(
+			"domain" => array(
+				"module" => "museesDeFrance",
+				"controller" => "InventaireBiensDeposes"),
+			"handler" => array(
+				"module" => "museesDeFrance",
+				"controller" => "InventaireBiensDeposes",
+				"action" => 'Info',
+				"isplugin" => true),
+			"requires" => array(),
+			"parameters" => array()
+		);
 		return $pa_widgets_config;
 	}
 	# -------------------------------------------------------

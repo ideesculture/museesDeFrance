@@ -56,6 +56,16 @@ class BaseRegistre implements InterfaceRegistre {
 
     }
 
+    public function count() {
+        $qr_res = $this->opo_db->query("SELECT count(*) as number FROM ".$this->tablename);
+        if ($qr_res->numRows() > 0) {
+            $qr_res->nextRow();
+            return $qr_res->get("number");
+        } else {
+            return false;
+        }
+    }
+
     function getObjects($year = null) {
         $qr_res = $this->opo_db->query("SELECT ".$this->numtype." FROM ".$this->tablename);
         $va_results = array();

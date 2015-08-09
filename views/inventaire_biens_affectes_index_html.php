@@ -1,6 +1,7 @@
 <?php
     $vs_plugin_dir = $this->getVar("plugin_dir");
     $vt_registre = $this->getVar("registre");
+    $vn_obj_nb = $this->getVar("objects_nb");
 
     MetaTagManager::addLink('stylesheet', __CA_URL_ROOT__."/app/plugins/museesDeFrance/assets/css/museesDeFrance.css",'text/css');
     MetaTagManager::addLink('stylesheet', __CA_URL_ROOT__."/app/plugins/museesDeFrance/assets/css/themes/blue/style.css",'text/css');
@@ -26,7 +27,15 @@
         </a>
     </div>
 </div>
-<div class="searchNav">Le registre comporte X objets validés.</div>
+<?php switch ($vn_obj_nb) { ?>
+<?php case "0": ?>
+<?php break; ?>
+<?php case "1": ?>
+        <div class="searchNav">Le registre comporte 1 objet, c'est un bon début.</div>
+<?php break; ?>
+        <?php default: ?>
+<div class="searchNav">Le registre comporte <?php print $vn_obj_nb; ?> objets.</div>
+<?php } ?>
 <div class="divide"><!-- empty --></div>
 <div style="clear: both;"><!-- empty --></div>
 <div id="searchRefineBox" style="display: none;"><div class="bg">
@@ -62,13 +71,26 @@
 $i = 0;
 foreach($vt_registre->getObjects() as $vt_object) {
     print ($i % 2 == 0 ? "<tr>" : "<tr class='odd'>" );
-    print $vt_object->getHtmlTableRowContent();
+    print "<td>".$vt_object->numinv_display."</td>
+        <td>".$vt_object->designation_display."</td>
+        <td>".$vt_object->auteur_display."</td>
+        <td>".$vt_object->date_inscription_display."</td>
+        <td>
+        <img src='/themes/default/graphics/buttons/glyphicons_198_ok.png' alt='glyphicons_198_ok' border='0' align='middle'>
+        <img src='/themes/default/graphics/buttons/glyphicons_197_remove.png' alt='glyphicons_197_remove' border='0' align='middle'>
+        <a href='".caNavUrl($this->request,"editor/objects","ObjectEditor","Edit",array("object_id"=>$vt_object->get("ca_id")))."'>
+        <img src='/themes/default/graphics/buttons/glyphicons_211_right_arrow.png' alt='glyphicons_211_right_arrow' border='0' align='middle'>
+        </a>
+        </td>";
     print "</tr>";
     $i++;
 }
 ?>
 </tbody>
 </table>
+
+<?php if (!$vn_obj_nb) : ?><div class="searchNav">Le registre est vide.</div><?php endif; ?>
+
 <div id="pager" class="pager">
 <script type="text/javascript">
     jQuery(document).ready(function()

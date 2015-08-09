@@ -15,14 +15,14 @@ class InventaireBiensAffectesController extends ActionController
         // Global vars for all children views
         $this->view->setVar('plugin_dir', __CA_BASE_DIR__."/app/plugins/museesDeFrance");
         $this->view->setVar('plugin_url', __CA_URL_ROOT__."/app/plugins/museesDeFrance");
-
-        $vt_registre = new RegistreBiensAffectes();
-        $this->view->setVar("registre",$vt_registre);
     }
 
     public function Index()
     {
+        $vt_registre = new RegistreBiensAffectes();
+        $this->view->setVar("registre",$vt_registre);
 
+        $this->view->setVar('objects_nb',$vt_registre->count());
         $this->render('inventaire_biens_affectes_index_html.php');
     }
 
@@ -35,11 +35,11 @@ class InventaireBiensAffectesController extends ActionController
         $vs_idno = $vt_object->get("idno");
         $vs_name = $vt_object->get("ca_objects.preferred_labels.name");
 
-        $vo_bienaffecte = new BienAffecte($vs_idno);
+        $vo_bienaffecte = new BienAffecte();
+        //var_dump($vo_bienaffecte);die();
+        $vo_bienaffecte->loadByCaID($vs_object_id);
         $vo_bienaffecte->fill($vt_object);
         $vo_bienaffecte->save();
-        //var_dump($vo_bienaffecte);
-        //die();
 
         $this->view->setVar('idno', $vs_idno);
         $this->view->setVar('name', $vs_name);
@@ -91,4 +91,13 @@ class InventaireBiensAffectesController extends ActionController
     public function About() {
         $this->render('inventaire_about_html.php');
     }
+
+    # -------------------------------------------------------
+    # Sidebar info handler
+    # -------------------------------------------------------
+    public function Info($pa_parameters)
+    {
+        return $this->render('widget_inventaire_info_html.php', true);
+    }
+
 }

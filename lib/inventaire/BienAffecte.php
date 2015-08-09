@@ -10,6 +10,35 @@ require_once("BaseObjectInventaire.php");
 require_once("helpers/mapping_biensaffectes.php");
 
 class BienAffecte extends BaseObjectInventaire {
+    // serie of basic content properties
+    //public $id;
+    //public $ca_id;
+    //public $numinv;
+    public $numinv;
+    public $numinv_sort;
+    public $numinv_display;
+    //public $designation;
+    //public $designation_display;
+    public $mode_acquisition;
+    public $donateur;
+    public $date_acquisition;
+    public $avis;
+    public $prix;
+    public $date_inscription;
+    public $date_inscription_display;
+    public $observations;
+    public $inscriptions;
+    //public $materiaux;
+    //public $techniques;
+    //public $mesure;
+    //public $etat;
+    public $auteur;
+    public $auteur_display;
+    //public $epoque;
+    //public $utilisation;
+    //public $provenance;
+    //public $validated;
+
     function __construct($num = null)
     {
         $this->tablename = "inventaire_inventaire";
