@@ -71,19 +71,21 @@
 $i = 0;
 foreach($vt_registre->getObjects() as $vt_object) {
     print ($i % 2 == 0 ? "<tr>" : "<tr class='odd'>" );
-    print "<td>".$vt_object->numinv_display."</td>
+
+    print "<td><a href='".caNavUrl($this->request,"editor/objects","ObjectEditor","Edit",array("object_id"=>$vt_object->get("ca_id")))."'>".$vt_object->numinv_display."</a></td>
         <td>".$vt_object->designation_display."</td>
         <td>".$vt_object->auteur_display."</td>
         <td>".$vt_object->date_inscription_display."</td>
-        <td>
-        <a href='".caNavUrl($this->request,"museesDeFrance","InventaireBiensAffectes","Validate",array("object_id"=>$vt_object->get("ca_id")))."'>
+        <td>";
+    if (!$vt_object->validated) {
+        print "<a href='".caNavUrl($this->request,"museesDeFrance","InventaireBiensAffectes","Validate",array("object_id"=>$vt_object->get("ca_id")))."'>
         <img src='/themes/default/graphics/buttons/glyphicons_198_ok.png' alt='glyphicons_198_ok' border='0' align='middle'>
-        </a><a href='".caNavUrl($this->request,"museesDeFrance","InventaireBiensAffectes","Remove",array("object_id"=>$vt_object->get("ca_id")))."'>
-        <img src='/themes/default/graphics/buttons/glyphicons_197_remove.png' alt='glyphicons_197_remove' border='0' align='middle'>
-        </a><a href='".caNavUrl($this->request,"editor/objects","ObjectEditor","Edit",array("object_id"=>$vt_object->get("ca_id")))."'>
-        <img src='/themes/default/graphics/buttons/glyphicons_211_right_arrow.png' alt='glyphicons_211_right_arrow' border='0' align='middle'>
         </a>
-        </td>";
+        <a href='".caNavUrl($this->request,"museesDeFrance","InventaireBiensAffectes","Remove",array("object_id"=>$vt_object->get("ca_id")))."'>
+        <img src='/themes/default/graphics/buttons/glyphicons_197_remove.png' alt='glyphicons_197_remove' border='0' align='middle'>
+        </a>";
+    }
+        print "</td>";
     print "</tr>";
     $i++;
 }
@@ -97,7 +99,7 @@ foreach($vt_registre->getObjects() as $vt_object) {
 <script type="text/javascript">
     jQuery(document).ready(function()
         {
-            jQuery("#registre_biens_affectes").tablesorter().tablesorterPager({container: $("#pager")});
+            jQuery("#registre_biens_affectes").tablesorter();
         }
     );
 </script>
@@ -106,13 +108,7 @@ foreach($vt_registre->getObjects() as $vt_object) {
 
 <div class="control-box rounded">
     <div class="control-box-left-content">
-        <a class='form-button'>
-            <span class='form-button'>
-                <img src='/themes/default/graphics/buttons/glyphicons_359_file_export.png' border='0' class='form-button-left'
-                     style='padding-right: 10px' align='middle'/>
-                Générer le PDF
-            </span>
-        </a>
+        <?php print caNavButton($this->request,__CA_NAV_BUTTON_PDF__,"Générer le PDF","", $this->request->getModulePath(), $this->request->getController(), 'GeneratePDF'); ?>
     </div>
     <div class="control-box-right-content">
         <a class='form-button'>

@@ -8,7 +8,7 @@
 <p>Vous avez préparé les informations de l'objet <em><?php print $vs_name." [".$vs_idno."]"; ?></em> pour les transférer dans le registre d'inventaire.</p>
 <p>Attention, ces données ne seront définitivement écrites qu'à la validation de l'objet dans l'inventaire.</p>
 <p>Une fois l'objet validé, vous ne pourrez plus modifier ses informations.</p>
-<p>Voulez vous valider l'ajout de l'objet dans l'inventaire.</p>
+<p>Voulez vous valider l'ajout de l'objet dans l'inventaire ?</p>
 <?php
     print caNavButton(
         $this->request,

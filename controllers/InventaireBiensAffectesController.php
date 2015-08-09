@@ -1,6 +1,7 @@
 <?php
 require_once(__CA_APP_DIR__."/plugins/museesDeFrance/lib/inventaire/BienAffecte.php");
 require_once(__CA_APP_DIR__."/plugins/museesDeFrance/lib/inventaire/RegistreBiensAffectes.php");
+require_once(__CA_LIB_DIR__.'/core/Parsers/dompdf/dompdf_config.inc.php');
 require_once(__CA_MODELS_DIR__."/ca_objects.php");
 
 class InventaireBiensAffectesController extends ActionController
@@ -57,6 +58,7 @@ class InventaireBiensAffectesController extends ActionController
 
         $vo_bienaffecte = new BienAffecte();
         $vo_bienaffecte->loadByCaID($vs_object_id);
+        $vo_bienaffecte->validate();
         //var_dump($vo_bienaffecte);
         //die();
 
@@ -113,6 +115,27 @@ class InventaireBiensAffectesController extends ActionController
 
     public function About() {
         $this->render('inventaire_about_html.php');
+    }
+
+    public function GeneratePDF() {
+        $dompdf = new DOMPDF();
+        //$this->view->setVar('PDFRenderer', $o_pdf->getCurrentRendererCode());
+
+        $this->view->setVar('pageWidth', "210mm");
+        $this->view->setVar('pageHeight', "297mm");
+        $this->view->setVar('marginTop', '1cm');
+        $this->view->setVar('marginRight', '1cm');
+        $this->view->setVar('marginBottom', '3cm');
+        $this->view->setVar('marginLeft', '1cm');
+
+        $vs_content = $this->render("inventaire_biens_affectes_pdf.php");
+
+        //$o_pdf->setPage('A4', 'portrait', 10, 10, 10, 10);
+        //var_dump($o_pdf->getCurrentRendererCode());
+        //die();
+        $dompdf->load_html($vs_content);
+        $dompdf->render();
+        $dompdf->stream("inventaire_biens_affectes.pdf");
     }
 
     # -------------------------------------------------------
