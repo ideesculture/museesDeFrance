@@ -69,6 +69,27 @@ class InventaireBiensAffectesController extends ActionController
         $this->render('inventaire_biens_affectes_validate_html.php');
     }
 
+    public function Unvalidate()
+    {
+        $vs_object_id = $this->request->getParameter("object_id",pInteger);
+
+        $vt_object = new ca_objects($vs_object_id);
+        $vs_idno = $vt_object->get("idno");
+        $vs_name = $vt_object->get("ca_objects.preferred_labels.name");
+
+        $vo_bienaffecte = new BienAffecte();
+        $vo_bienaffecte->loadByCaID($vs_object_id);
+        $vo_bienaffecte->unvalidate();
+        //var_dump($vo_bienaffecte);
+        //die();
+
+        $this->view->setVar('idno', $vs_idno);
+        $this->view->setVar('name', $vs_name);
+        $this->view->setVar('id', $vs_object_id);
+
+        $this->render('inventaire_biens_affectes_unvalidate_html.php');
+    }
+
     public function Remove()
     {
         $vs_object_id = $this->request->getParameter("object_id",pInteger);
