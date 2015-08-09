@@ -76,9 +76,11 @@ foreach($vt_registre->getObjects() as $vt_object) {
         <td>".$vt_object->auteur_display."</td>
         <td>".$vt_object->date_inscription_display."</td>
         <td>
+        <a href='".caNavUrl($this->request,"museesDeFrance","InventaireBiensAffectes","Validate",array("object_id"=>$vt_object->get("ca_id")))."'>
         <img src='/themes/default/graphics/buttons/glyphicons_198_ok.png' alt='glyphicons_198_ok' border='0' align='middle'>
+        </a><a href='".caNavUrl($this->request,"museesDeFrance","InventaireBiensAffectes","Remove",array("object_id"=>$vt_object->get("ca_id")))."'>
         <img src='/themes/default/graphics/buttons/glyphicons_197_remove.png' alt='glyphicons_197_remove' border='0' align='middle'>
-        <a href='".caNavUrl($this->request,"editor/objects","ObjectEditor","Edit",array("object_id"=>$vt_object->get("ca_id")))."'>
+        </a><a href='".caNavUrl($this->request,"editor/objects","ObjectEditor","Edit",array("object_id"=>$vt_object->get("ca_id")))."'>
         <img src='/themes/default/graphics/buttons/glyphicons_211_right_arrow.png' alt='glyphicons_211_right_arrow' border='0' align='middle'>
         </a>
         </td>";

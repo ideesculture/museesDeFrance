@@ -49,14 +49,14 @@ class InventaireBiensAffectesController extends ActionController
 
     public function Validate()
     {
-        $vs_object_id = $this->request->getParameter("id",pInteger);
+        $vs_object_id = $this->request->getParameter("object_id",pInteger);
 
         $vt_object = new ca_objects($vs_object_id);
         $vs_idno = $vt_object->get("idno");
         $vs_name = $vt_object->get("ca_objects.preferred_labels.name");
 
-        $vo_bienaffecte = new BienAffecte($vs_idno);
-        $vo_bienaffecte->validate();
+        $vo_bienaffecte = new BienAffecte();
+        $vo_bienaffecte->loadByCaID($vs_object_id);
         //var_dump($vo_bienaffecte);
         //die();
 
@@ -66,6 +66,29 @@ class InventaireBiensAffectesController extends ActionController
 
         $this->render('inventaire_biens_affectes_validate_html.php');
     }
+
+    public function Remove()
+    {
+        $vs_object_id = $this->request->getParameter("object_id",pInteger);
+
+        $vt_object = new ca_objects($vs_object_id);
+        $vs_idno = $vt_object->get("idno");
+        $vs_name = $vt_object->get("ca_objects.preferred_labels.name");
+
+        $vo_bienaffecte = new BienAffecte();
+        $vo_bienaffecte->loadByCaID($vs_object_id);
+        $vb_result = $vo_bienaffecte->delete();
+        if (!$vb_result) die("Impossible de supprimer un objet validé.");
+        //var_dump($vo_bienaffecte);
+        //die();
+
+        $this->view->setVar('idno', $vs_idno);
+        $this->view->setVar('name', $vs_name);
+        $this->view->setVar('id', $vs_object_id);
+
+        $this->render('inventaire_biens_affectes_remove_html.php');
+    }
+
 
     public function Modify()
     {

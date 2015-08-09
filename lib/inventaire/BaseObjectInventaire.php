@@ -212,7 +212,6 @@ class BaseObjectInventaire implements InterfaceInventaire {
     function delete() {
         if ($this->validated == true) { return false; }
         $vs_request = "DELETE FROM ".$this->tablename." WHERE id=".$this->get("id");
-        var_dump($vs_request);die();
         $this->opo_db->query($vs_request);
         return true;
     }
