@@ -67,12 +67,12 @@ class BaseRegistre implements InterfaceRegistre {
     }
 
     function getObjects($year = null) {
-        $qr_res = $this->opo_db->query("SELECT ".$this->numtype." FROM ".$this->tablename);
+        $qr_res = $this->opo_db->query("SELECT ca_id FROM ".$this->tablename);
         $va_results = array();
         if ($qr_res->numRows() > 0) {
             while($qr_res->nextRow()) {
-                $object_num = $qr_res->get($this->numtype);
-                $vt_object = new $this->objectmodel($object_num);
+                $vt_object = new $this->objectmodel;
+                $vt_object->loadByCaID($qr_res->get("ca_id"));
                 $va_results[] = $vt_object;
             }
             return $va_results;
