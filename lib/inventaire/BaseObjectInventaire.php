@@ -27,6 +27,9 @@ class BaseObjectInventaire implements InterfaceInventaire {
     public $provenance;
     public $validated;
 
+    // photo asset
+    public $file;
+
     // search field name for num, default is "numinv"
     public $numtype;
 
@@ -43,7 +46,7 @@ class BaseObjectInventaire implements InterfaceInventaire {
     // db object
     private $opo_db;
 
-    function __construct($num = null) {
+    function __construct() {
 
         if (!isset($this->numtype)) {
             $this->numtype = "numinv";
@@ -67,12 +70,6 @@ class BaseObjectInventaire implements InterfaceInventaire {
             "database" =>	$this->opo_config->get("db_database"),
             "type" =>		"mysql"
         ));
-
-        if (isset($num) && $this->_exists($num)) {
-            $this->_load($num);
-        } else {
-            $this->numinv=$num;
-        }
     }
 
     /**
@@ -80,9 +77,8 @@ class BaseObjectInventaire implements InterfaceInventaire {
      * @param $num null or int : null if testing $this, int of a num if testing a non loaded object
      * @return bool true (object exists in the DB), false (object doesn't exist)
      */
-    private function _exists($num = null) {
-        if(!$num) $num=$this->{$this->numtype};
-        $qr_res = $this->opo_db->query("SELECT id FROM ".$this->tablename." WHERE ".$this->numtype." = ?",$num);
+    private function _exists() {
+        $qr_res = $this->opo_db->query("SELECT id FROM ".$this->tablename." WHERE id=".$this->id);
         if ($qr_res->numRows() > 0) {
             return true;
         } else {
@@ -95,8 +91,8 @@ class BaseObjectInventaire implements InterfaceInventaire {
      * @param $num null or int : null if testing $this, int of a num if testing a non loaded object
      * @return bool
      */
-    private function _load($num = null) {
-        if(!$num) $num=$this->{$this->numtype};
+    private function _load() {
+        $num=$this->{$this->numtype};
         $qr_res = $this->opo_db->query("SELECT * FROM ".$this->tablename." WHERE ".$this->numtype." = ? LIMIT 1",$num);
         if ($qr_res->numRows() > 0) {
             $qr_res->nextRow();
@@ -107,6 +103,20 @@ class BaseObjectInventaire implements InterfaceInventaire {
                 }
             }
             $this->id=$qr_res->get("id");
+            $this->_loadFile();
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    private function _loadFile() {
+        if(!$this->id) return false;
+        $vs_request="SELECT file FROM ".$this->tablename."_photo WHERE record_id=".$this->id;
+        $qr_res = $this->opo_db->query($vs_request);
+        if ($qr_res->numRows() == 1) {
+            $qr_res->nextRow();
+            $this->file = $qr_res->get("file");
             return true;
         } else {
             return false;
@@ -130,6 +140,7 @@ class BaseObjectInventaire implements InterfaceInventaire {
                 }
             }
             $this->id=$qr_res->get("id");
+            $this->_loadFile();
             return true;
         } else {
             return false;
