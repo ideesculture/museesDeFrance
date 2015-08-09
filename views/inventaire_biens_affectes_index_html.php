@@ -72,7 +72,11 @@ $i = 0;
 foreach($vt_registre->getObjects() as $vt_object) {
     print ($i % 2 == 0 ? "<tr>" : "<tr class='odd'>" );
 
-    print "<td><a href='".caNavUrl($this->request,"editor/objects","ObjectEditor","Edit",array("object_id"=>$vt_object->get("ca_id")))."'>".$vt_object->numinv_display."</a></td>
+    print "<td><a href='".caNavUrl($this->request,"editor/objects","ObjectEditor","Edit",array("object_id"=>$vt_object->get("ca_id")))."'>".$vt_object->numinv_display."</a>";
+    if($vt_object->file) {
+        print "<br/><img src=\"".__CA_URL_ROOT__."/app/plugins/museesDeFrance/assets/photos/".$vt_object->file."\" style=\"width:50px;\">";
+    }
+    print "</td>
         <td>".$vt_object->designation_display."</td>
         <td>".$vt_object->auteur_display."</td>
         <td>".$vt_object->date_inscription_display."</td>
