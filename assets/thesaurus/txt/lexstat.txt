@@ -1,0 +1,101 @@
+
+Liste des termes autorisés du statut juridique de l'objet
+
+Mise à jour mai 2014
+
+statut juridique
+	 archives publiques
+	 conditions de prêt ou de dépôt
+		interdiction de dépôt
+		interdiction de prêt
+		interdiction de prêt et de dépôt
+		interdiction de prêt à l'étranger
+	 mode d'acquisition
+		achat
+			achat après arrêt en douane
+			achat après commande
+			achat au salon
+			achat avec participation
+				achat avec participation d'association
+				achat avec participation du FRAM
+				achat avec participation du Fonds National du Patrimoine
+			achat en vente publique
+			achat par préemption
+				achat par préemption en douane
+				achat par préemption en vente publique
+			achat sous réserve d'usufruit
+			achat sur les arrérages d'un legs
+			achat sur les arrérages d'une donation
+			achat sur les arrérages d'une fondation
+		ancien fonds
+		attribution par l'office des biens privés
+		cession
+			cession à titre gratuit
+		changement d'affectation
+		dation
+		donation
+			don
+			don enquête
+			don fouilles
+			donation sous réserve d'usufruit
+		dévolution
+		legs
+			legs sous réserve d'usufruit
+		mode d'acquisition inconnu
+		mode d'acquisition non renseigné
+		mode d'acquisition particulier
+		saisie
+			conquête militaire
+			saisie en douane
+			saisie royale
+			saisie révolutionnaire
+		transfert de propriété de l'Etat = transfert  = transfert de propriété de l'Etat à titre gratuit 
+		transfert de propriété de l'Etat à titre gratuit/0	EM transfert de propriété de l'Etat 
+		échange
+	 propriétaires
+		Conseil général de l'Aveyron
+		Conseil général de la Marne
+		Conseil général de la Nièvre
+		Conseil général de la Vendée
+		Conseil général des Alpes de Haute-Provence = Conseil général des Alpes de Haute Provence 
+		Conseil général des Yvelines
+	 protection = protection MH 
+		classé MH
+		inscrit MH
+	 statut de la propriété
+		propriété d'un état étranger
+			propriété de l'Etat algérien
+		propriété privée
+			propriété de l'artiste
+			propriété privée personne morale
+		propriété publique
+			propriété d'un syndicat mixte
+			propriété de l'Etat
+			propriété de l'établissement public
+				propriété de l'établissement public de coopération intercommunale
+			propriété de la collectivité locale
+			propriété de la communauté d'agglomération
+			propriété de la communauté de communes
+			propriété de la commune
+			propriété de la région
+			propriété du département
+			propriété du syndicat intercommunal
+			propriété du territoire
+
+mode de dépôt - affectation - attribution
+	 affectation = affecté 
+	 attribution = attribué 
+	 dépôt = déposé  = en dépôt 
+		dépôt des oeuvres d'art de l'Etat
+		dépôt réglementaire
+
+
+particularités de conservation
+	 localisation inconnue
+		œuvre disparue
+		œuvre volée
+	 œuvre détruite
+
+
+
+

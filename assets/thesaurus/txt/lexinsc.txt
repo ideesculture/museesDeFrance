@@ -1,0 +1,265 @@
+Liste des types d'inscriptions
+
+Mise à jour mai 2014
+
+ date = daté
+ échelle
+ écriteau
+ emblématique
+	 armoiries
+		chiffre emblématique
+	 devise
+		écu
+	 emblème
+ graffiti
+ inscription
+	 acclamation
+	 adresse
+	 annotation = annoté
+		annotation concernant la représentation
+	 article
+	 autographe
+	 bulle
+	 calligraphie
+	 citation
+	 date apocryphe
+	 décret
+	 dédicace
+	 en-tête
+		en-tête imprimé
+	 ex-libris
+	 graduation
+	 hiéroglyphe
+	 idéogramme
+	 immatriculation
+	 initiale
+	 inscription concernant l'auteur
+	 inscription concernant l'exécutant
+		nom d'imprimeur inscrit
+		nom d'éditeur inscrit
+	 inscription concernant l'école
+	 inscription concernant l'épreuve
+	 inscription concernant la datation
+	 inscription concernant la représentation
+		inscription donnant l'identité du modèle
+	 inscription concernant la technique
+	 inscription concernant la vente
+		lieu de vente inscrit
+	 inscription concernant le commanditaire
+		monogramme du commanditaire
+	 inscription concernant le destinataire
+		nom du destinataire
+	 inscription concernant le donataire
+	 inscription concernant le donateur
+	 inscription concernant le dédicataire
+	 inscription concernant le fabricant
+	 inscription concernant le lieu d'exécution
+		lieu d'exécution inscrit
+		lieu d'impression inscrit
+		lieu d'édition inscrit
+	 inscription concernant le lieu d'émission
+	 inscription concernant le lieu de conservation
+	 inscription concernant le lieu de destination
+	 inscription concernant le lieu de découverte
+	 inscription concernant le lieu de provenance
+	 inscription concernant le propriétaire
+	 inscription concernant le type de modèle
+	 inscription concernant les collections = inscription concernant la collection
+	 inscription définissant le contenu
+	 inscription patronymique
+	 inscription votive
+	 invocation
+	 lettre
+	 liste
+	 légende
+	 mesure
+	 mode d'emploi
+	 paraphe
+		paraphe d'un conservateur
+		paraphe d'un collectionneur
+	 phylactère
+	 poème
+	 prière
+	 règle du jeu
+	 rébus
+	 signature apocryphe
+		monogramme apocryphe
+	 texte
+		cantique
+		chanson
+		chant
+		complainte
+		oraison
+		texte historique
+		texte manuscrit
+		texte religieux
+	 titre
+		sous-titre
+	 épitaphe
+ inscription concernant les bateaux
+	 immatriculant = matricule
+	 nom du bateau = nom de bateau  = nom du navire
+	 port d'attache
+ marque
+	 cachet
+		cachet d'atelier
+			cachet d'atelier usurpé
+		cachet de collectionneur
+		cachet de douane
+		cachet de fondeur
+		cachet de manufacture
+		cachet de marchand de couleurs
+		cachet de vente
+	 estampille
+		griffe
+	 logo
+	 marque concernant le support
+	 marque concernant les collections = marque de collection
+	 marque concernant les collections publiques
+		marque de bibliothèque
+		marque de musée
+	 marque d'atelier
+	 marque d'orfèvre
+	 marque de décorateur
+	 marque de décoration
+	 marque de fabricant
+	 marque de fabrique = marque de fabrication
+	 marque de façonnage
+	 marque de fondeur
+	 marque de jurande
+	 marque de manufacture
+	 marque de modèle
+	 marque de monteur
+	 marque de potier
+	 marque de série
+	 marque de tailleur
+	 marque du propriétaire
+	 marque postale
+		cachet d'ambulant
+		cachet d'entrée
+		cachet d'oblitération
+			grille sans fin
+			losange oblitérant
+				losange grille
+				losange gros chiffres
+				losange petits chiffres
+		cachet de départ
+		cachet de port
+			port dû
+			port payé
+		cachet de recette
+		cachet octogonal
+		cachet paquebot
+		cachet à date
+			oblitération Premier Jour
+		marque d'armée
+			marque d'armée en déboursé
+		marque de déboursé
+		marque de purification
+		marque de taxation = chiffre-taxe
+		marque de transit
+		marque linéaire
+		étoile muette
+		étoile à numéro
+	 marque publicitaire
+	 poinçon
+		poinçon d'importation
+		poinçon d'orfèvre
+		poinçon de charge
+		poinçon de communauté = poinçon de jurande
+			lettre-date
+		poinçon de décharge
+		poinçon de fabricant
+		poinçon de garantie
+		poinçon de maître
+		poinçon de recense
+		poinçon de titre
+		poinçon de ville
+		poinçon garantie et titre
+		sceau
+	 sigle
+	 tampon
+		tampon sec
+	 timbre
+		timbre de colportage
+		timbre humide
+		timbre sec
+ marque de doreur
+ marque de résidence
+ numéro
+	 numéro d'inventaire
+	 numéro d'ordre
+	 numéro de classement
+	 numéro de décor
+	 numéro de modèle
+	 numéro de série
+	 numéro de tirage
+	 numéro peint
+ signature = signé
+	 monogramme = monogrammé
+		monogramme en caractères typographiques
+	 signature de l'exécutant
+	 signature emblématique
+	 signature en caractères typographiques
+	 signature échoppée
+ visa de censure
+
+ affixe
+	 ?
+	 alphabet
+		cunéiforme
+	 emplacement
+		côté
+		côté droit
+		côté gauche
+		dos = revers  = verso
+		face = avers  = recto
+		face du montage = face montage
+		face reliure
+		revers du montage = revers montage
+		sur cadre
+		sur fond
+		sur l'objet
+	 justification
+		ancien = ancienne
+		d'origine
+		faux = fausse
+		récent = récente
+	 langue
+		allemand
+		anglais
+		arabe
+		basque
+		catalan
+		celtique = celte
+		chinois
+		cyrillique
+		danois
+		espagnol
+		français
+			vieux français
+		gothique
+		grec
+			grec ancien
+			grec cursif
+		hollandais
+		hongrois
+		hébraïque
+		hébreu
+		italien
+		japonais
+		langue d'oc
+		latin
+		ottoman
+		portugais
+		provençal
+		romain
+		roumain
+		russe
+		slavon
+		sumérien
+		turc
+		égyptien
+			égyptien ancien
+				démotique
+				hiéroglyphique

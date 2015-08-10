@@ -264,7 +264,7 @@ class InstallProfileThesaurusController extends ActionController
 	{
         if(!is_file(__CA_BASE_DIR__."/install/profiles/xml/joconde-sans-thesaurus.xml")) {
             $this->view->setVar('joconde_available', "false");
-            if(!copy(__CA_BASE_DIR__."/app/plugins/museesDeFrance/assets/profile/joconde-sans-thesaurus.xml",__CA_BASE_DIR__."/install/profiles/xml/joconde-sans-thesaurus.xml")) {
+            if(!copy(__CA_BASE_DIR__."/app/plugins/museesDeFrance/assets/profile/joconde-sans-thesaurus-archives-documentation.xml",__CA_BASE_DIR__."/install/profiles/xml/joconde-sans-thesaurus.xml")) {
                 $this->view->setVar('joconde_installed', "false");
             } else {
                 $this->view->setVar('joconde_installed', "true");
@@ -291,58 +291,58 @@ class InstallProfileThesaurusController extends ActionController
 
         switch($_GET["thesaurus"]) {
             case "lexdomn" :
-                $this->traiteFichierDMF("lexdomn-20100921.txt","lexdomn","DMF : Liste des domaines",16,$limitation_fichier);
+                $this->traiteFichierDMF("lexdomn.txt","lexdomn","DMF : Liste des domaines",16,$limitation_fichier);
                 break;
             case "lextech" :
-                $this->traiteFichierDMF("lextech-201009A.txt","lextech","DMF : Liste des techniques",5,$limitation_fichier);
+                $this->traiteFichierDMF("lextechA.txt","lextech","DMF : Liste des techniques",5,$limitation_fichier);
                 break;
             case "lexmateriaux" :
-                $this->traiteFichierDMF("lextech-201009B.txt","lexmateriaux","DMF : Liste des matériaux",5,$limitation_fichier);
+                $this->traiteFichierDMF("lextechB.txt","lexmateriaux","DMF : Liste des matériaux",5,$limitation_fichier);
                 break;
             case "lexautr" :
-                $this->traiteFichierDMF("lexautr-201009.txt","lexautr","DMF : Liste des auteurs",8,$limitation_fichier);
+                $this->traiteFichierDMF("lexautr.txt","lexautr","DMF : Liste des auteurs",6,$limitation_fichier);
                 break;
             case "lexautrole" :
-                $this->traiteFichierDMF("lexautrole-201009.txt","lexautrole","DMF : Liste des rôles des auteurs/exécutants",5,$limitation_fichier);
+                $this->traiteFichierDMF("lexautrole.txt","lexautrole","DMF : Liste des rôles des auteurs/exécutants",5,$limitation_fichier);
                 break;
             case "lexdecv" :
-                $this->traiteFichierDMF("lexdecv-201009A.txt","lexdecv","DMF : Liste des méthodes de collecte",5,$limitation_fichier);
+                $this->traiteFichierDMF("lexdecvA.txt","lexdecv","DMF : Liste des méthodes de collecte",6,$limitation_fichier);
                 break;
             case "lexsite" :
-                $this->traiteFichierDMF("lexdecv-201009B.txt","lexsite","DMF : Liste des méthodes de types de sites et lieux géographiques de découverte",5,$limitation_fichier);
+                $this->traiteFichierDMF("lexdecvB.txt","lexsite","DMF : Liste des méthodes de types de sites et lieux géographiques de découverte",5,$limitation_fichier);
                 break;
             case "lexdeno" :
-                $this->traiteFichierDMF("lexdeno-201009.txt","lexdeno","DMF : Liste des dénominations",4,$limitation_fichier);
+                $this->traiteFichierDMF("lexdeno.txt","lexdeno","DMF : Liste des dénominations",5,$limitation_fichier);
                 break;
             case "lexecol" :
-                $this->traiteFichierDMF("lexepoq-201009.txt","lexepoq","DMF : Liste des époques / styles",4,$limitation_fichier);
+                $this->traiteFichierDMF("lexecol.txt","lexecol","DMF : Liste des écoles",5,$limitation_fichier);
                 break;
             case "lexepoq" :
-                $this->traiteFichierDMF("lexepoq-201009.txt","lexepoq","DMF : Liste des époques / styles",4,$limitation_fichier);
+                $this->traiteFichierDMF("lexepoq.txt","lexepoq","DMF : Liste des époques / styles",4,$limitation_fichier);
                 break;
             case "lexgene" :
-                $this->traiteFichierDMF("lexgene-201009.txt","lexgene","DMF : Liste des stades de création (genèse des oeuvres)",5,$limitation_fichier);
+                $this->traiteFichierDMF("lexgene.txt","lexgene","DMF : Liste des stades de création (genèse des oeuvres)",5,$limitation_fichier);
                 break;
             case "lexinsc" :
-                $this->traiteFichierDMF("lexinsc-201009.txt","lexinsc","DMF : Liste des types d’inscriptions)",4,$limitation_fichier);
+                $this->traiteFichierDMF("lexinsc.txt","lexinsc","DMF : Liste des types d’inscriptions)",4,$limitation_fichier);
                 break;
             case "lexperi" :
-                $this->traiteFichierDMF("lexperi-20100921.txt","lexperi","DMF : Liste des datations en siècle ou millénaire (périodes de création, d'exécution et d'utilisation)",5,$limitation_fichier);
+                $this->traiteFichierDMF("lexperi.txt","lexperi","DMF : Liste des datations en siècle ou millénaire (périodes de création, d'exécution et d'utilisation)",6,$limitation_fichier);
                 break;
             case "lexsrep" :
-                $this->traiteFichierDMF("lexsrep-201009.txt","lexsrep","DMF : Liste des sources de la représentation",5,$limitation_fichier);
+                $this->traiteFichierDMF("lexsrep.txt","lexsrep","DMF : Liste des sources de la représentation",4,$limitation_fichier);
                 break;
             case "lexstat" :
-                $this->traiteFichierDMF("lexstat-201009.txt","lexstat","DMF : Liste des termes autorisés du statut juridique de l'objet",4,$limitation_fichier);
+                $this->traiteFichierDMF("lexstat.txt","lexstat","DMF : Liste des termes autorisés du statut juridique de l'objet",5,$limitation_fichier);
                 break;
             case "lexutil" :
-                $this->traiteFichierDMF("lexutil-201009.txt","lexutil","DMF : Liste des utilisations - destinations",5,$limitation_fichier);
+                $this->traiteFichierDMF("lexutil.txt","lexutil","DMF : Liste des utilisations - destinations",5,$limitation_fichier);
                 break;
             case "lexrepr" :
-                $this->traiteFichierDMF("lexrepr-201203.txt","lexrepr","DMF : Liste des sujets représentés",5,$limitation_fichier);
+                $this->traiteFichierDMF("lexrepr.txt","lexrepr","DMF : Liste des sujets représentés",7,$limitation_fichier);
                 break;
             case "lexlieux" :
-                $this->traiteFichierLieuDMF("txt/lexlieux-201009.txt","lexlieux",5,$limitation_fichier);
+                $this->traiteFichierLieuDMF("lexlieux.txt","lexlieux",5,$limitation_fichier);
                 break;
         }
 

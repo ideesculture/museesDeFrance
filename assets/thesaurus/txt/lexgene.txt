@@ -1,0 +1,150 @@
+Liste des stades de création (genèse des oeuvres)
+
+Mise à jour mai 2014
+
+
+contexte de création
+	 bon à tirer
+	 commande
+	 décor déposé
+		ensemble concerté
+		ensemble homogène
+	 édition originale
+	 épreuve
+		épreuve barrée
+		épreuve d'essai
+		épreuve d'état
+			1er état
+			2e état
+			3e état
+			4e état
+			5e état
+			6e état
+			7e état
+			8e état
+			9e état
+			épreuve d'artiste
+			état avant la dédicace
+			état avant la lettre
+		épreuve unique
+		première épreuve
+	 marcottage
+	 montage
+		photomontage
+	 oeuvre primée à un concours = concours
+		concours du génie rural
+		grand prix de l'école des beaux-arts de Toulouse
+		morceau d'agrément
+		morceau de réception
+		prix de Rome = prix de peinture de l'académie royale
+			premier grand prix = 1er grand prix
+			prix de Rome de paysage historique
+			prix de Rome de peinture
+			second grand prix = 2d grand prix
+				premier second grand prix
+		prix de la tête d'expression
+		prix de peinture d'après le modèle vivant
+	 pièce d'essai
+	 pièce unique
+	 prototype
+	 reconstitution
+	 tirage d'époque
+oeuvre préparatoire
+	 croquis
+	 dessin pour le report
+		dessin incisé pour le report
+		dessin mis aux carreaux
+		dessin piqué pour le report
+		dessin sur calque
+	 esquisse
+	 modèle = carton  = poncif
+		carton de broderie = modèle de broderie
+		carton de dentelle
+		carton de peinture
+		carton de tapisserie = modèle de tapisserie
+		carton de tissu = modèle de tissu
+		carton de vitrail
+		modèle d'atelier
+		modèle original = original
+	 peinture mise aux carreaux
+	 pochade
+	 projet
+		modello
+		projet d'architecture
+		projet d'illustration
+			projet d'affiche
+		projet de costume
+		projet de décor = projet de décoration
+			projet d'éventail
+			projet de décor de céramique
+			projet de décor de paquebot
+			projet de décor de tissu
+			projet de décor éphémère
+				projet de décor de théâtre
+		projet de forme
+		projet de mobilier
+		projet de mosaïque
+		projet de papier peint
+		projet de sculpture
+		projet de tapis
+		projet de tapisserie
+		projet de vitrail
+		projet pour un objet
+	 ébauche
+	 étude
+oeuvre de reproduction
+	 contretype
+	 copie
+		agrandissement
+			agrandissement mécanique
+		contre-épreuve
+		contrefaçon
+		copie d'étude
+		copie interprétée
+		copie partielle
+		copie réduite
+		copie servile
+		d'après l'antique
+	 imitation photomécanique
+	 interprétation
+	 maquette de reproduction
+	 moulage
+	 moulage d'édition
+	 pastiche
+	 relevé
+	 reproduction
+	 retirage
+	 ricordo
+	 réduction
+		réduction mécanique
+	 réplique
+		réplique agrandie
+		réplique réduite
+	 répétition
+	 réédition
+	 édition = épreuve d'édition
+		1e édition = 1ère édition
+		2e édition
+		3e édition
+		4e édition
+		édition limitée
+01 oeuvre reproduite
+	 reproduit en céramique
+	 reproduit en dessin
+	 reproduit en glace peinte
+	 reproduit en gravure
+	 reproduit en lithographie
+	 reproduit en peinture
+	 reproduit en photographie
+	 reproduit en procédé photomécanique
+	 reproduit en zincographie
+	 reproduit sur textile
+	 traduit en dentelle
+	 traduit en mosaïque
+	 traduit en sculpture
+	 traduit en tapisserie
+	 traduit en ébénisterie
+01 oeuvre en rapport = objet en rapport
+affixes
+	 oeuvre inachevée = inachevée  = objet inachevé
+	 ?

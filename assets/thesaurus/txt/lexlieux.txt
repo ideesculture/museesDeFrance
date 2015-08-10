@@ -1,0 +1,3317 @@
+Liste des lieux géographiques de création, d'exécution et d'utilisation
+
+Mise à jour mars 2012
+
+
+Afrique
+	 Afrique du nord
+		Egypte
+			Basse-Egypte = Basse Egypte  = Lower Egypt
+				Abou Mina
+				Akhmim
+				Alexandrie = Al Iskandariyah  = Al-Iskandariyah  = Alexandria
+				Bamlé
+				Gizeh
+				Ismailia
+				Le Caire = Al Qahirah  = Al-Qahirah  = Cairo
+				Naucratis = Kawm Ju'ayf  = Kom Gieif  = Naukratis
+				Nécropole memphite
+				  - Sakkarah = Saqqarah
+			Haute-Egypte = Haute Egypte
+				Denderah
+				Louxor
+				Memphis
+				Thèbes d'Egypte = Diospolis Magna  = No-Amon  = Nowe  = Nuve  = Ouaset  = Thèbes  = Wase
+			Moyenne-Egypte = Moyenne Egypte
+				Antinoë = Antinopolis  = Antinoupolis
+		Maghreb
+			Algérie = Al Jaza'ir
+				Alger[wilaya] = El Djazair  = El-Djazair
+				  - Alger = Al-Djaza'ir  = Al-Jaza'ir
+				Arba
+				Batna[wilaya]
+				  - Tazoult = Lambeasi  = Lambèse-Tazoult  = Lambèze-Tazoult  = Tazoult Lambèse
+				  - Timgad
+				Biskra
+				  - El Kantara
+				Blida[wilaya]
+				  - Blida
+				Bou-Saada = Bou Saada
+				Bône
+				Constantine
+				  - Gastonville
+				  - Guelma
+				  - Saint-Vincent
+				El Affroun
+				El Boulaida[wilaya]
+				  - Cherchell = Caesarea  = Cherchel  = Césarée  = Iol  = Iol-Césarée
+				Ghardaia
+				Hennaya
+				Hoggar
+				Kabylie
+				Mostaganem
+				Oran
+				Orléansville
+				Skikda[wilaya]
+				  - Philippeville = Rusicada  = Skikda
+				Touggourt
+				Ttlemcen[wilaya] = Tilimsen[wilaya]
+				  - Tlemcen = Tilimsen
+			Libye
+				Cyrénaique
+				  - Cyrène = Kurene
+			Maroc
+				Fez
+				Marrakech
+				Meknès
+				Tanger
+			Mauritanie
+			Tunisie = Tunis[nation]
+				Al Mahdiyah[gouvernorat]
+				  - El Djem = Djem  = El Jemm  = Thysdrus
+				Kairouan[gouvernorat]
+				  - Kairouan
+				Kasserine[gouvernorat]
+				  - Hadra = Haidra
+				Mahdia[gouvernorat]
+				  - El Jem
+				Safaqis[gouvernorat]
+				  - Sfax = Taparura  = Thenae
+				Tunis[gouvernorat]
+				  - Carthage = Carthago  = Gartajannah  = Garthadasht  = Kart Hadasht  = Kart-Hadasht
+				  - Tunis = Tunes  = Tunez  = Tunus
+				  - Utique = Utica
+				Zian
+	 Afrique noire
+		Afrique du Sud
+		Burkina-Faso = Burkina Faso
+		Bénin
+			Cotonou
+		Cameroun
+			Fontem
+			Tikak
+		Côte-d'Ivoire = Côte d'Ivoire
+			Ferkesedougou
+			Korhogo
+		Dahomey
+			Abomey
+			Whydah
+		Djibouti
+			Obock
+		Ethiopie = Abyssinie
+			Djabello
+			Harar
+		Gabon
+		Ghana
+		Guinée
+		Guinée-Bissau
+		Haute-Volta = Haute Volta
+		Madagascar
+		Mali
+			Bamako
+		Mozambique
+		Niger
+			Tombouctou
+		Nigéria = Nigeria
+			Koro
+			Sikasso
+		Oubanghi
+			Haut Oubanghi
+		République Centrafricaine
+		République de Djibouti
+		République du Congo = Congo-Brazzaville
+			Brazzaville
+			Congo français
+			Moyen-Congo = Moyen Congo
+				Souessé
+		République démocratique du Congo = Congo-Kinshasa
+			Congo belge
+			Haut-Oubangui
+			Kinshasa
+		Sierra-Leone = Sierra Leone
+		Somalie
+		Soudan
+			Fachoda
+		Sénégal
+			Casamance
+		Tanzanie
+		Tchad
+			Ouddaï
+		Zaïre
+Amérique
+	 Amérique centrale
+		Antilles
+			Guadeloupe
+				Basse-Terre
+				Pointe-à-Pitre = Pointe à Pitre
+		Costa Rica
+			Guanacaste
+			Linea Vieja
+			Nicoya
+		Cuba
+			La Havane
+		Guatemala
+		Haïti
+		Martinique
+		Mexique
+			Cuervanaca
+			Mexico
+			Santa Maria de Atzompa
+			Tonala
+			Vera Cruz
+			île des Sacrifices
+		Panama
+			Chiriqui
+		Porto-Rico = Porto Rico
+		République Dominicaine
+		Salvador
+			San Salvador
+	 Amérique du nord
+		Canada
+			Ile du Prince Edouard
+			Manitoba
+			Nouveau-Brunswick
+			Nouvelle-Ecosse = Nouvelle Ecosse
+				Great Village
+				Maitland
+			Ontario
+			Québec
+				Jeune-Lorette
+				Montréal
+			Terre-Neuve-et-Labrador
+				Harbour Grace
+				Labrador
+				Terre-Neuve
+		Etats-Unis = Etats Unis  = USA
+			Alaska
+				archipel d'Afognak = Afognak
+				archipel de Kodiak = Kodiak
+			Arkansas
+			Californie
+				Los-Angeles = Los Angeles
+				Palo Alto
+			Connecticut
+				Hartford
+				Middletown
+				New-Haven
+				Stonington
+			Dakota
+				Woonsocket
+			Etat de New-York
+				New-York = New York
+			Etat de Washington
+				Washington DC
+			Illinois
+				Chicago
+			Maine
+				Kennebunkport
+			Maryland
+				Baltimore
+			Massachusetts
+				Boston
+				Cambridge
+				Springfield
+				Worcester
+			New-Jersey
+				Paterson
+			Nouvelle-Angleterre
+			Névada
+			Pennsylvanie
+				Philadelphie
+			Texas
+			Utah
+			Virginie
+	 Amérique du sud
+		Argentine
+			Buenos Aires
+		Bolivie
+		Brésil
+			Amazonie
+			Baia
+			Recife
+			Rio de Janeiro
+		Chili
+		Colombie
+			Taïrona
+		Guyanes
+			Guyane anglaise
+			Guyane française
+				Awala
+				Cayenne
+				Coswine
+				Degrad-Savane = Degrad Savane
+				Mana
+				Rococoua
+				Yalimapo
+				Yanou-Bellevue = Yanou Bellevue
+			Guyane hollandaise = Surinam
+		Paraguay
+		Pérou
+			Chancay
+			Lima
+			Tihuanaco
+			Trujillo
+		Terre de Feu
+		Vénézuela
+			Caracas
+Asie
+	 Asie centrale
+		Afghanistan
+			Kaboul
+		Mongolie
+		Ouzbékistan
+			Boukhara
+		Turkestan
+	 Asie du Sud-Est = Asie du Sud Est
+		Bali
+			Denpasar
+		Birmanie
+		Cambodge
+		Corée
+		Indes néerlandaises
+		Indochine
+		Indonésie
+			Bornéo
+			Iles Moluques
+				Ile Kisser
+			Java
+			Sumatra
+		Malaisie
+		Philippines
+			Manille
+		Thaïlande = Siam
+			Bangkok
+		Vietnam
+			Hanoï
+			Tonkin
+	 Asie méridionale
+		Ceylan
+		Inde
+			Bengale
+				Iles Andaman
+				Murshidabad
+			Cachemire
+			Gujarat
+				Surat
+			Maharashtra
+				Bombay
+			Orissa
+			Pondichéry
+			Rajasthan
+	 Asie occidentale = Proche Orient  = Proche-Orient
+		Arabie = Arabie Saoudite
+			Hedjaz
+			Oman
+				Mascate
+		Chypre
+			Nicosia[district]
+				Idalion = Dali  = Dhali
+			Paphos[district]
+				Marion = Polis  = Arsinoé de Chypre
+		Cisjordanie
+			Jéricho
+		Emirats Arabes Unis
+		Irak
+		Iran
+			Louristan [province] = Louristan
+			Tabriz
+		Israël
+			Bethléem
+			Galilée
+			Jaffa
+			Jérusalem
+			Nazareth
+			Siloe
+			Tel Aviv-Jaffa
+			Tibériade
+		Jordanie
+		Koweit
+		Kurdistan
+		Liban = Al-Lubnan
+			Al-Biga[gouvernorat]
+				Baalbek = Ba'labakk  = Balbek  = Heliopolis du Liban
+			Al-Janub[gouvernorat]
+				Sidon = Saida  = Sayda  = Zidon
+		Pakistan
+			Lahore
+			Peshawan
+			Sind
+		Palestine
+			Gaza
+		Quatar
+		Syrie = Suriyah
+			Damas
+			Halab[gouvernorat]
+				Alep = Aleppo  = Beroea  = Halab  = Yamkhad
+			Ramleh
+		Turquie = Türkiye
+			Anatolie = Ic Anadolu
+				Konya[province]
+				  - Philomelium = Aksehir  = Philomelion
+				Ushak
+			Côte Méditerranéene = Akdeniz Kiyisi
+				Hatay Ili[province]
+				  - Antioche = Antioch  = Antioche de Cilicie  = Antioche sur Oronte  = Antioche-sur-Oronte  = Antiochia Syriae  = Antiokheia  = Hatay
+			Côte égéenne = Ege kiyilari
+				Aydin Ili[province]
+				  - Aphrodisias = Aphrodisias Cariae
+				  - Milet = Miletos  = Miletus
+				  - Priène = Samsun Kalesi  = Turunglar
+				Icel Ili[province]
+				  - Tarse = Antiochia-Tarsus  = Tarsos  = Tarsus
+				Izmir Ili[province]
+				  - Bergama
+				  - Bursa
+				  - Ephèse = Ephesos  = Ephesus
+				  - Iznik
+				  - Kutahya
+				  - Myrina = Mirina
+				  - Smyrne = Izmir  = Smyrna
+				Mugla Ili[province]
+				  - Bodrum = Halicarnasse  = Halicarnassus  = Halikarnassos  = Halikarnassus
+				  - Cnide = Cnidus Nova  = Dadya  = Knidos  = Resadiye
+			Karadeniz kiyisi
+				Karadeniz kiyisi[province]
+				  - Amisos = Samsun
+			Keresan
+			Marmara
+				Bursa[province]
+				  - Cyzique = Belkis  = Kyzikos
+				Canakkale[province]
+				  - Troie = Hisarlik  = Hissarlik  = Ilion  = Ilios  = Ilium  = Illion  = Illium  = Troe  = Troy
+				Istanbul[province]
+				  - Istanbul = Byzance  = Byzantium  = Constantinople
+			Sinope
+		Yémen
+	 Asie orientale = Extrême Orient  = Extrême-Orient
+		Chine
+			Chongqing
+			Fujian
+				Dehua
+			Guangdong
+				Canton = Guangzhou
+			Guangxi
+				Guilin
+			Guizhou
+			Henan
+				Kaifeng
+				Lingbaoxian
+				Longmen
+				Shaanzhou
+			Hong-Kong = Hong Kong
+			Hubei
+				Badong
+				Hankou
+			Hunan
+			Jiangsu
+				Nankin = Nanjing
+				Wuxi
+			Jiangxi
+				Fuzhou
+			Jingdezhen
+			Mandchourie
+				Jilin
+				Liaoning
+			Pékin = Beijing
+			Shaanxi
+				Baojixian
+				Baosilu
+				Dabashan
+				Hanzhongfu
+				Huayinmiao
+				Lintongxian
+				Nanjiang
+				Qianzhou
+				Qinling
+				Tongguan
+				Xianfu
+				Xianyang
+				Xingpingxian
+				Zhongnan
+				Zhongnanxian
+			Shandong
+				Jinanfu
+				Linqing
+				Taishan
+				Weixian
+			Shanghai
+			Shanxi
+				Pingyang
+				Tianlongshan
+				Wenxi
+			Sichuan
+				Baoningfu
+				Bazhou
+				Chengdu
+				Dajianlu
+				Dalifu
+				Delipu
+				Guangyuanxian
+				Guanyinmiao
+				Hebiancun
+				Heiyantang
+				Hejiang
+				Huangcaoba
+				Jiading
+				Jiadingfu
+				Jiajiangxian
+				Jianchang
+				Jiangkou
+				Laoluzhou
+				Lijianfu
+				Ludingqiao
+				Lushanxian
+				Meiyupu
+				Meizhou
+				Mianzhou
+				Nanjiangxian
+				Ningyuanfu
+				Nitou
+				Panlongshan
+				Pengzhou
+				Qianweixian
+				Qingxixian
+				Quxian
+				Shisuntang
+				Shunjing
+				Suifu
+				Taifang
+				Weichengyi
+				Xinduxian
+				Yahe
+				Yanjing
+				Yanyuanxian
+				Yazhou
+				Yiguanzhang
+				Yingban
+				Yundingshan
+				Zhaohuaxian
+				Zhenggongzhen
+				Zitongxian
+			Tibet
+			Tsientsin
+			Yixing
+			Yunnan
+				Dongchuan
+				Hongmenkou
+				Kunming = Yunnanfu
+				Lijiangfu
+				Yingpan
+			Zhejiang
+				Hangzhou
+				Ningbo
+				Putuo
+				Shaoxing
+				Shengxian
+				Taizhou
+				Tiantaishan
+				Xinchang
+			Zhili
+		Japon
+			Honshu
+				Tokyo
+			Kyushu
+				Hizen
+		Népal
+	 Moyen-Orient
+Europe
+	 Albanie
+	 Allemagne
+		Bade
+		Bade-Würtemberg = Bade Würtemberg
+			Baden-Baden
+			Constance
+			Heidelberg
+			Heuneburg
+			Karlsruhe
+			Ludwigsburg
+			Oberndorf-am-Neckar
+			Rastatt
+			Schramberg
+			Stuttgart
+			Uberlingen
+			Ulm
+		Basse-Saxe = Basse Saxe
+		Bavière
+			Amberg
+			Ansbach
+			Augsbourg
+			Bamberg
+			Erlang
+			Manching
+			Mittenwald
+			Münich = Munich
+			Nüremberg = Nuremberg
+			Oberammergau
+			Ratisbonne
+			Souabe
+			Würzburg
+		Berlin
+		Brandeburg = Brandebourg
+			Potsdam
+		Brême
+		Elvingen
+		Frischhof
+		Görisried
+		Hambourg = Hamburg
+		Hanovre
+		Hesse
+			Darmstadt
+			Francfort-sur-le-Main = Francfort  = Francfort sur le Main  = Frankfurt-am-Main
+			Hanau
+			Kassel
+		Mindelheim
+		Odenwald
+			Höchst
+		Palatinat
+		Ravensbrück
+		Rhénanie = Rheinland
+			Coblence
+			Friedrichsfeld
+			Mayence = Mainz
+			Oberwesel
+			Trèves = Augusta Treverorum  = Trier
+			Zweibrücken
+		Rhénanie-du-Nord-Westphalie
+			Aix-la-Chapelle = Aix la Chapelle
+			Bonn
+			Cologne
+			Düsseldorf
+			Höhr-Grenzhausen
+			Kalkar
+			Minden
+			Westerwald
+			Wüppertal
+		Ruhr
+		Sarre
+			Sarrebrück
+		Saxe
+			Dresde
+			Erzgebirge
+			Leipzig
+			Meissen
+			Wallendorf
+		Schleswig-Holstein
+			Schleswig
+		Silésie
+			Neisse
+		Thuringe
+			Erfurt
+			Rudolstadt
+			Suhl
+			Sömmerda
+			Weimar
+			Zella-Mehlis
+			Zella-St-Blasii
+		Westphalie
+			Solingen
+	 Arménie
+	 Autriche
+		Graz
+		Linz
+		Steyr
+		Tyrol
+			Innsbruck
+		Vienne A = Wien
+	 Belgique
+		Anthée
+		Anvers d
+			Anvers
+			Malines
+		Brabant
+			Bruxelles
+			Cureghem
+			Louvain
+		Flandre-occidentale
+			Bruges
+			Dixmude
+			Nieuport
+			Thielt
+		Flandre-orientale
+			Gand
+		Hainaut
+			Tournai
+		Liège d
+			Liège
+		Mons
+		Namur d
+			Namur
+		Quevaucamps
+		Wallonie
+			Herstal
+	 Bulgarie
+		Blagoevgrad
+		Breznica
+		Gabrovo
+		Goce Delcev
+		Philoppopoli
+		Rajkovo
+		Rhodopes
+		Smoljan
+	 Espagne
+		Andalousie
+			Alméria = Al Mariyat  = Al-Mariyah
+			Cadix
+			Cordoue
+			Grenade
+			Séville
+		Aragon
+			Saragosse
+		Asturies
+			Oviedo
+			Trubia
+		Avila province
+			Avila
+		Biscaye
+			Alaya
+			Bilbao
+			Guernica
+		Castille-La Manche
+		Castille-et-Léon
+		Catalogne
+			Barcelone
+				Sarria
+			Gerone
+			Gosol
+			Llivia
+			Ripoll
+		Galice
+			Lugno
+			Saint-Jacques-de-Compostelle = Saint Jacques de Compostelle  = St Jacques de Compostelle
+		Guipuscoa
+			San Sebastian = Saint-Sébastien
+		La Bisbal
+		Leon
+			Talavera de la Reina
+		Levante
+			Carthagène
+		Navarre
+			Pampelune
+		Nouvelle-Castille = Castille
+			Madrid
+			Tolède
+		Pays Basque espagnol
+			Alava
+				Vitoria
+			Eibar
+		Tolosa
+		Valence E
+			Alcora
+			Manises
+	 Estonie
+	 Finlande
+	 France
+		Alsace
+			Bas-Rhin = 67  = Bas Rhin
+				Andlau
+				Avolsheim
+				Balbronn
+				Barr
+				Beinheim
+				Bernardvillé
+				Berstett
+				Biethlenheim
+				Birlenbach
+				Bischoffsheim
+				Blaesheim
+				Brimeux
+				Brumath
+				Cleebourg
+				Diemeringen
+				Drulingen
+				Ernolsheim
+				Eschau
+				Furchhausen
+				Furdenheim
+				Geiswiller
+				Geudertheim
+				Goersdorf
+				Grendelbruch
+				Handschuheim
+				Hangenbieten
+				Hayoa
+				Hoerdt
+				Hoffen
+				Hohfrankenheim
+				Hohwiller
+				Hölschloch
+				Illkirch-Graffenstaden
+				Ittenheim
+				Jaegerthal
+				Kleingoeft
+				Klingenthal
+				Krautwiller
+				La Dollée
+				Lembach
+				Mackenheim
+				Merkwiller-Pechelbronn = Merkwiller Pechelbronn
+				Mertzwiller
+				Mietesheim
+				Mommenheim
+				Mutzig
+				Neugartheim
+				Niederbetschdorf
+				Niederbronn-les-Bains
+				Niederkutzenhouse
+				Niedermodern
+				Oberdorf-Spachbach
+				Obermodern-Zutzendorf
+				Obernai
+				Oberseebach
+				Offwiller
+				Petersbach
+				Pfaffenhoffen
+				Plobsheim
+				Reichenberg
+				Reichshoffen
+				Rott
+				Saint-Nabor = Saint Nabor
+				Sarre-Union = Sarre Union
+				Scharrachbergheim-Irmstett
+				Schiltigheim
+				Schwindratzheim
+				Seebach
+				Sessenheim
+				Soufflenheim
+				Soultz-sous-Forêts
+				Strasbourg
+				Uhrwiller
+				Waldenburg
+				Wasselonne
+				Westhoffen
+				Wickersheim-Wilshausen
+				Willgottheim
+				Wingen
+				Wissembourg
+				Woerth
+				Wolfisheim
+				Zehnacker
+				Zellwiller
+			Haut-Rhin = 68  = Haut Rhin
+				Altkirch
+				Bergholtz
+				Bergholtzzell
+				Bernwiller
+				Bouxwiller
+				Colmar
+				Dannemarie
+				Delle
+				Dornach
+				Galfingen
+				Guebwiller
+				Hartmannswillerkopf
+				Hundsbach
+				Husseren-Wesserling
+				Issenheim
+				Mulhouse
+				Munster
+				Ribeauvillé
+				Rixheim
+				Rouffach
+				Schlestadt
+				Sondernach
+				Stosswinr
+				Thann
+				Waltenheim
+				Wesserling
+		Aquitaine
+			Dordogne = 24
+				Angoisse
+				Ascain
+				Belvès
+				Bergerac
+				Bouzic
+				Cazoulès
+				Champeaux
+				Domme
+				Eymet
+				Les Eyzies-de-Tayac
+				Nontron
+				Périgueux
+				Saint-Cyprien = Saint Cyprien  = St Cyprien
+				Sarlat-la-Canéda = Sarlat la Canéda
+			Gironde = 33
+				Arcachon
+				Beautiran
+				Belin-Beliet = Belin Beliet
+				Bordeaux
+				Hostens
+				Lamarque
+				Libourne
+				Lugos
+				Macau
+				Mérignac
+				Pauillac
+				Pessac
+				Pyla-sur-Mer = Pyla sur Mer
+				Salles
+				Soulac-sur-Mer
+			Landes = 40
+				Arengosse
+				Argelouse
+				Arjuzanx
+				Aureilhan
+				Belhade
+				Bias
+				Biscarrosse
+				Cachen
+				Commensacq
+				Escource
+				Garosse
+				Gastes
+				Labouheyre
+				Labrit
+				Laharie
+				Le Muret
+				Le Sen
+				Liposthey
+				Luglon
+				Lüe
+				Mano
+				Mimizan
+				Morcenx
+				Moustey
+				Mézos
+				Ousse-Suzan = Ousse Suzan
+				Parentis
+				Pissos
+				Pontenx-les-Forges = Pontenx les Forges
+				Sabres
+				Saint-Julien-en-Born = Saint Julien en Born
+				Saint-Pandelon = Saint Pandelon
+				Saugnacq-et-Muret = Saugnac
+				Serris
+				Solferino
+				Sore
+				Soustons
+				Suzan
+				Tartas
+				Trensacq
+				Ychoux
+				Ygos-Saint-Saturnin = Ygos Saint Saturnin
+			Lot-et-Garonne = 47
+				Agen
+			Pyrénées-Atlantiques = 64  = Pyrénées Atlantiques
+				Aussurucq
+				Ayherre
+				Barcus
+				Bayonne
+				Biarritz
+				Bidart
+				Bussunarits-Sarrasquette
+				Béost
+				Cambo-les-Bains
+				Ciboure
+				Coarraze
+				Eaux-Bonnes
+				Eaux-Chaudes
+				Gelos
+				Halsou
+				Hasparren
+				Haux
+				Helette
+				Hendaye
+				Iholdy
+				Irissarry
+				Irouléguy
+				Irura
+				Labourd
+				Lahitte-Toupière = Lahitte Toupière
+				Laruns
+				Lasse
+				Lecaroz
+				Lescar
+				Lestelle-Bétharram
+				Montory
+				Morlaàs
+				Mouguerre
+				Narcastet
+				Olhette
+				Oloron-Sainte-Marie = Oloron Sainte Marie
+				Osses
+				Pau
+				Roquiague
+				Saint-Jean-de-Luz = Saint Jean de Luz  = St Jean de Luz
+				Saint-Martin-d'Arberoue = Saint Martin d'Arberoue
+				Sainte-Engrâce = Sainte Engrâce
+				Sare
+				Tardets-Sorholus
+				Urrugne
+		Auvergne
+			Allier = 03
+				Bourbon-l'Archambault = Bourbon l'Archambault
+				Chantelle
+				Commentry
+				Cusset
+				Estissac
+				Gannat
+				Lapalisse
+				Le Montet = Montet
+				Montluçon
+				Moulins
+				Néris-les-Bains = Néris les Bains
+				Saint-Gérand-le-Puy = Saint Gérand le Puy  = St Gérand le Puy
+				Saint-Pourçain-sur-Sioule = Saint Pourçain sur Sioule  = St Pourçain sur Sioule
+				Vichy
+			Cantal = 15
+				Aurillac
+				Mandailles-Saint-Julien = Mandailles St Julien  = Mandailles Saint Julien
+				Massiac
+				Murat
+				Saint-Flour
+				Salers
+				Thiézac
+			Haute-Loire = 43  = Haute Loire
+				Aiguilhe
+				Bourgeneuf
+				Brioude
+				Effiat
+				Landos
+				Lavoûte-Chilhac = Lavoûte Chilhac
+				Le Puy-en-Velay = Le Puy  = Le Puy en Velay  = Puy en Velay  = Puy-en-Velay
+				Vals-près-le-Puy = Vals près le Puy
+			Puy-de-Dôme = 63  = Puy de Dôme
+				Aigueperse
+				Ambert
+				Billom
+				Clermont-Ferrand = Clermont Ferrand
+				Issoire
+				Lezoux
+				Menat
+				Olliergues
+				Randan
+				Royat
+				Thiers
+				Vertolaye
+				Volvic
+		Bourgogne
+			Côte-d'Or = 21  = Côte d'Or
+				Agencourt
+				Aignay-le-Duc = Aignay le Duc
+				Aisy-sous-Thil = Aisy sous Thil
+				Alise-Sainte-Reine = Alise Sainte Reine
+				Argilly
+				Arnay-le-Duc = Arnay le Duc
+				Aubigny-la-Ronce = Aubigny la Ronce
+				Autricourt
+				Auvillars-sur-Saône = Auvillars sur Saône
+				Auxey-le-Grand
+				Auxonne
+				Avelanges
+				Avot
+				Beaune
+				Bligny-sur-Ouche = Bligny sur Ouche
+				Brochon
+				Buxerolles
+				Bèze
+				Cessey-sur-Tille = Cessey sur Tille
+				Chamboeuf
+				Chambolle-Musigny
+				Charny
+				Chevannes
+				Châtillon-sur-Seine = Châtillon sur Seine
+				Comblanchien
+				Corgoloin
+				Coulmier-le-Sec
+				Dijon
+				Epoisses
+				Fixin
+				Flavigny-sur-Ozerain
+				Foncegrive
+				Genlis
+				Grancey-le-Château-Neuvelle = Grancey le Château Neuvelle
+				Grignon
+				Gémeaux
+				Is-sur-Tille = Is sur Tille
+				Ivry-en-Montagne = Ivry en Montagne
+				Labergement-les-Auxonne = Labergement les Auxonne
+				Lachaume
+				Les Laumes
+				Longchamp
+				Longvic
+				Lux
+				Marigny-le-Cahouët
+				Meursault
+				Minot
+				Montbard
+				Montzeron
+				Nolay
+				Nuits-Saint-Georges = Nuits St Georges  = Nuits Saint Georges
+				Orain
+				Plombières-lès-Dijon = Plombières lès Dijon
+				Pouillenay
+				Premières
+				Précy-sous-Thil = Précy sous Thil
+				Reulle-Vergy
+				Ruffey-les-Echirey = Ruffey les Echirey
+				Sacquenay
+				Saint-Broing-les-Moines = Saint Broing les Moines
+				Saint-Emilion = Saint Emilion
+				Saint-Germain-de-Modéon = Saint Germain de Modéon  = St Germain de Modéon
+				Saint-Jean-de-Losne = Saint Jean de Losne  = St Jean de Losne
+				Saint-Seine-sur-Vingeanne
+				Saulieu
+				Selongey
+				Semur-en-Auxois = Semur en Auxois
+				Seurre
+				Spoy
+				Til-Châtel = Til Châtel
+				Velars-sur-Ouche = Velars sur Ouche
+				Villers-les-Pots = Villers les Pots
+				Vitteaux
+				Vosne-Romanée = Vosne Romanée
+				Vougeot
+			Nièvre = 58
+				Arquian
+				Beaumont-la-Ferrière = Beaumont la Ferrière
+				Champallement
+				Cosne-Cours-sur-Loire = Cosne Cours sur Loire
+				Cossaye
+				Decize
+				La Charité-sur-Loire
+				Lormes
+				Mars-sur-Allier
+				Marzy
+				Moulins-Engilbert
+				Moux
+				Neuvy-sur-Loire
+				Nevers
+				Pouilly-sur-Loire = Pouilly sur Loire
+				Prémery
+				Saint-Amand-en-Puisaye = Saint Amand en Puisaye
+				Saint-André-en-Morvan = Saint André en Morvan
+				Saint-Honoré-les-Bains = Saint Honoré les Bains  = St Honoré Les Bains
+				Saint-Maurice
+				Saint-Ouen-sur-Loire = Saint Ouen sur Loire
+				Saint-Pierre-le-Moutiers = Saint Pierre le Moutiers
+				Saint-Péreuse = Saint Péreuse
+				Saint-Vérain = Saint Vérain
+				Varzy
+				Verneuil
+			Saône-et-Loire = 71
+				Amanzé
+				Anost
+				Autun
+				Barizey
+				Barnay
+				Blanot
+				Bourbon-Lancy = Bourbon Lancy
+				Bray
+				Bussières
+				Buxy
+				Chalmoux
+				Chalon-sur-Saône = Chalon sur Saône
+				Charbonnières
+				Charnay-lès-Mâcon
+				Chevroches
+				Clamecy
+				Clessé
+				Cluny
+				Digoin
+				Dornecy
+				Flacé-lès-Mâcon
+				Gilly-sur-Loire
+				La Vineuse
+				Le Creusot
+				Le Villars
+				Louhans
+				Montbellet
+				Montceau-Les-Mines
+				Mâcon
+				Oisy
+				Pierreclos
+				Pouilloux
+				Romenay
+				Saint-Amour-Bellevue = Saint Amour Bellevue
+				Saint-Cyr-sur-Menthon = Saint Cyr sur Menthon  = St Cyr sur Menthon
+				Saint-Germain-du-Bois = Saint Germain du Bois
+				Saint-Maurice-de-Satonnay = Saint Mauricen de Satonnay
+				Saint-Maurice-en-Rivière = Saint Maurice en Rivière
+				Saint-Réverien = Saint Réverien
+				Sassenay
+				Solutré-Pouilly-Vergisson
+				Tournus
+				Uchizy
+				Viré
+			Yonne = 89
+				Ancy-le-Franc
+				Arthonnay
+				Auxerre
+				Avallon
+				Brienon-sur-Armançon = Brienon sur Armançon
+				Chablis
+				Chailley
+				Cruzy-le-Châtel = Cruzy le Châtel
+				Dissangis
+				Fleury-la-Vallée = Fleury la Vallée
+				Fulvy
+				Lavau
+				Mereuil
+				Migennes
+				Saint-Fargeau = Saint Fargeau  = St Fargeau
+				Saint-Florentin = Saint Florentin
+				Santigny
+				Seignelay
+				Sens
+				Talcy
+				Treigny
+				Venizy
+				Villeneuve-sur-Yonne
+				Vézelay
+		Bretagne
+			Côtes-d'Armor = 22  = Côtes d'Armor  = Côtes du Nord  = Côtes-du-Nord
+				Belle-Isle-en-Mer
+				Binic
+				Châtelaudren
+				Dinan
+				Erquy
+				Jugon
+				Lamballe
+				Le Faouët
+				Loudéac
+				Léhon
+				Moncontour
+				Mûr-de-Bretagne
+				Plaintel
+				Pleudihen-sur-Rance
+				Plouguenast
+				Saint-Brieuc = Saint Brieuc  = St Brieuc
+				Saint-Cast-le-Guildo = Saint Cast le Guildo
+				Saint-Quay-Portrieux = Saint Quay Portrieux  = St Quay Portrieux
+				Tréguier
+			Finistère = 29
+				Bannalec
+				Brest
+				Brignogan-Plage = Brignogan Plage
+				Bénodet
+				Camaret-sur-Mer = Camaret sur Mer
+				Carantec
+				Carhaix-Plouguer
+				Châteaulin
+				Châteauneuf-du-Faou = Châteauneuf du Faou
+				Concarneau
+				Douarnenez
+				Huelgoat
+				Ile de Sein
+				Kerfenten
+				Kerfeunteun
+				Kerlouan
+				La Feuillée
+				La Forêt-Fouesnant
+				Landrévarzec
+				Lannilis
+				Lesneven
+				Locronan
+				Loctudy
+				Léon
+				Meilars
+				Moelan-sur-Mer = Moelan sur Mer
+				Morlaix
+				Ouessant
+				Penmarc'h
+				Plabennec
+				Pleyben
+				Plogoff
+				Plonevez-Porzay = Plonevez Porzay
+				Plonévez-du-Faou = Plonévez du Faou
+				Plougastel-Daoulas = Plougastel Daoulas
+				Plougoulm
+				Plozevet
+				Pont-Aven = Pont Aven
+				Pont-Croix = Pont Croix
+				Pont-l'Abbé = Pont l'Abbé
+				Quimper
+				Quimperlé
+				Redon
+				Riec-sur-Belon = Riec sur Belon
+				Roscoff
+				Rosporden
+				Saint-Jean-Trolimon = Saint Jean Trolimon
+				Saint-Léger
+				Saint-Thois = Saint Thois
+				Saint-Thégonnec = Saint Thégonnec
+				Scaër
+				Tréboul
+			Ille-et-Vilaine = 35
+				Antrain
+				Betton
+				Bécherel
+				Cancale
+				Chartres-de-Bretagne = Chartres de Bretagne
+				Dol-de-Bretagne = Dol de Bretagne
+				Fougères
+				Gaël
+				La Guerche-de-Bretagne = La Guerche de Bretagne
+				La Selle-en-Coglès = La Selle en Coglès  = Selle en Coglès  = Selle-en-Coglès
+				Le Minihic-sur-Rance = Le Minihic sur Rance
+				Montfort-sur-Meu
+				Pacé
+				Rennes
+				Saint-Malo = Saint Malo
+				Saint-Servan-sur-Mer = Saint Servan sur Mer
+				Saint-Sulpice-la-Forêt = St Sulpice la Forêt  = Saint Sulpice la Forêt
+				Vitré
+			Morbihan = 56
+				Auray
+				Belle-Ile-en-Mer = Belle Ile  = Belle Ile en Mer  = Belle-Ile
+				Carnac
+				Gourin
+				Gussignies
+				Josselin
+				La Roche-Bernard = La Roche Bernard
+				Lauzach
+				Locmaria
+				Locminé
+				Lorient
+				Malestroit
+				Ploemeur
+				Plouay
+				Ploërmel = Ploermel
+				Pluméliau = Plumeliau
+				Port-Conleau = Port Conleau
+				Port-Louis = Port Louis
+				Rochefort-en-Terre
+				Sainte-Anne-d'Auray = Sainte Anne d'Auray
+				Vannes
+		Centre
+			Cher = 18
+				Arçay
+				Avord
+				Beffes
+				Bengy-sur-Craon = Bengy sur Craon
+				Bourges
+				Bouy
+				Brinay
+				Brinon-sur-Sauldre = Brinon sur Sauldre
+				Chavignol
+				Civray
+				Culan
+				Dun-sur-Auron = Dun sur Auron
+				Foëcy
+				Genouilly
+				Henrichemont
+				  - La Borne
+				Humbligny
+				Le Châtelet
+				  - Les Archers
+				Lury-sur-Arnon
+				Massay
+				Mehun-sur-Yèvre = Mehun sur Yèvre
+				Montigny
+				Morogues
+				Nançay
+				Neuilly-en-Sancerre = Neuilly en Sancerre
+				Neuvy-Deux-Clochers = Neuvy Deux Clochers
+				Neuvy-le-Barrois = Neuvy le Barrois
+				Neuvy-sur-Barangeon = Neuvy sur Barangeon
+				Osmery
+				Plaimpied-Givaudins = Plaimpied Givaudins
+				Plou
+				Saint-Amand-Montrond = Saint Amand Montrond
+				Saint-Ambroix-sur-Arnon = Saint Ambroix-sur-Arnon
+				Saint-Loup-des-Chaumes = Saint Loup des Chaumes
+				Saint-Palais
+				Sainte-Solange = Sainte Solange
+				Sancerre
+				Sancoins
+				Sury-en-Vaux
+				Vesdun
+				Vierzon
+				Vouzeron
+			Eure-et-Loir = 28
+				Anet
+				Béville-le-Comte
+				Chartres
+				Châteaudun
+				Dreux
+				Epernon
+				La Puisaye 28
+				Nogent-le-Phaye = Nogent le Phaye
+				Nogent-le-Rotrou = Nogent le Rotrou
+			Indre = 36
+				Ardentes
+				Briantes
+				Issoudun
+				La Châtre
+				La Puisaye 36
+				Levroux
+				Nohant-Vic = Nohant  = Nohant Vic
+				Saint-Benoit-du-Sault = Saint Benoit du Sault
+				Saint-Marcel
+				Verneuil-sur-Igneraie = Verneuil sur Igneraie
+			Indre-et-Loire = 37
+				Amboise
+				Descartes
+				Langeais
+				Saint-Laurent-en-Gâtines = Saint Laurent en Gâtines
+				Saint-Pierre-des-Corps = Saint Pierre des Corps
+				Tours
+			Loir-et-Cher = 41
+				Areines
+				Blois
+				Lavardin
+				Mazangé
+				Montoire-sur-le-Loir
+				Naveil
+				Rahart
+				Romorantin
+				Saint-Dyé-sur-Loire = Saint Dyé sur Loire
+				Saint-Jacques-des-Guérets = Saint Jacques des Guérets
+				Vendôme
+				Villeromain
+				Villiers-sur-Loir = Villiers sur Loir
+			Loiret = 45
+				Beaune-la-Rolande = Beaune la Rolande
+				Bou
+				Chalette
+				Châlette-sur-Loing
+				Coullons
+				Courtenay
+				Darvoy
+				Ferrières
+				Gien
+				Gondreville
+				Meung-sur-Loire = Meung sur Loire
+				Montargis
+				Neuville-aux-Bois
+				Nibelle
+				Orléans
+				Pithiviers
+				Sermaises-du-Loiret = Sermaises du Loiret
+				Vrigny
+		Champagne-Ardenne = Champagne Ardenne
+			Ardennes = 08
+				Attigny 08
+				Charleville-Mézières = Charleville Mézières
+				Château-Regnault-Bogny = Château Regnault Bogny
+				Givet
+				Hannogne-Saint-Rémy = Hannogne Saint Rémy
+				Neuflize
+				Nouzonville
+				Revin
+				Saint-Jean-aux-Bois = Saint Jean aux Bois  = St Jean aux Bois
+				Sedan
+				Vandy
+				Vireux
+				Vouziers
+			Aube = 10
+				Bar-sur-Aube = Bar sur Aube
+				Bar-sur-Seine
+				Boulages
+				Lirey
+				Mussy-sur-Seine = Mussy sur Seine
+				Neuville-sur-Vannes = Neuville sur Vannes
+				Nogent-sur-Seine = Nogent sur Seine
+				Romilly-sur-Seine
+				Sainte-Savine = Sainte Savine
+				Trainel
+				Troyes
+				Vendeuvre-sur-Barse = Vendeuvre sur Barse
+				Villenauxe-la-Grande = Villenauxe la Grande
+			Haute-Marne = 52  = Haute Marne
+				Aprey
+				Bourbonne-les-Bains
+				Bourg
+				Chaumont
+				Courcelles-Val-d'Esnoms = Courcelles Val d'Esnoms
+				Fayl-Billot
+				Genevrières
+				Grenant
+				Guyonvelle
+				Laferté-sur-Amance = Laferté sur Amance
+				Langres
+				Nogent
+				Osne-le-Val
+				Saint-Dizier
+				Sommevoire
+				Villars-en-Azois
+				Wassy
+			Marne = 51
+				Cauroy-lès-Hermonville = Cauroy lès Hermonville
+				Champaubert
+				Châlons-en-Champagne = Châlons en Champagne  = Châlons-sur-Marne
+				Courtisols
+				Dormans
+				Epernay
+				Fismes
+				Fromentières
+				Juvigny
+				Le Mesnil-lès-Hurlus = Le Mesnil lès Hurlus
+				Le Mesnil-sur-Oger
+				Minaucourt-le-Mesnil-lès-Hurlus = Minaucourt le Mesnil lès Hurlus
+				Morains
+				Pierry
+				Port-à-Binson = Port à Binson
+				Reims
+				Rilly-la-Montagne = Rilly la Montagne
+				Sainte-Menehould = Sainte Menehould
+				Vitry-le-François = Vitry le François
+				Voipreux
+		Corse = 20
+			Corse-du-Sud = 2A  = Corse du Sud
+				Ajaccio
+				Amago
+				Barjana
+				Bastelica
+				Filosorma
+			Haute-Corse = 2B  = Haute Corse
+				Aleria
+				Bastia
+				Campile
+				Corte
+				Costa de Campile
+				Orezza
+				Penta-Acquatella = Penta Acquatella
+				Pero-Casevecchie = Pero Casevecchie
+				Pietralba
+		Franche-Comté = Franche Comté
+			Doubs = 25
+				Amondans
+				Arc-et-Senans
+				Audincourt
+				Baume les Dames
+				Baume-les-Dames
+				Besançon
+				Cour-Saint-Maurice
+				Crouzet-Migette = Crouzet Migette
+				Etalans
+				Eternoz
+				Frambouhans
+				L'Isle-sur-le-Doubs = L'Isle sur le Doubs
+				La Vèze = Vèze
+				Le Russey = Russey
+				Lods
+				Maîche
+				Montbéliard
+				Montferrand-le-Château = Montferrand le Château
+				Morteau
+				Mouthe
+				Mouthier-Haute-Pierre = Mouthier Haute Pierre
+				Métabief
+				Naisey-les-Granges
+				Ornans
+				Pontarlier
+				Refranche
+				Rurey
+				Sainte-Suzanne
+				Sancey-le-Grand = Sancey le Grand
+				Sancey-le-Long = Sancey le Long
+				Séloncourt
+				Thoraise
+				Valdahon
+				Verrières-de-Joux = Verrières de Joux
+				Villers-Chief
+				Vuillafans
+			Haute-Saône = 70  = Haute Saône
+				Achey
+				Arc-les-Gray = Arc les Gray
+				Baignes
+				Boult
+				Broye-les-Pesmes
+				Brésilley
+				Chambornay-lès-Bellevaux = Chambornay lès Bellevaux
+				Champlitte
+				Charolles
+				Château-Lambert = Château Lambert
+				Cirey-les-Bellevaux = Cirey les Bellevaux
+				Clairefontaine
+				Combeaufontaine
+				Corre
+				Courtesoult
+				Cromary
+				Etrépigney
+				Fallon
+				Fleurey-lès-Lavoncourt
+				Fondremand
+				Fouvent-le-Haut = Fouvent le Haut
+				Francourt
+				Frotey-lès-Lure
+				Gourgeon
+				Grammont
+				Gray
+				Guyenvennes
+				Hugier
+				Jussey
+				Lavoncourt
+				Le-Haut-du-Them
+				Leffond
+				Lure
+				Luxeuil-les-Bains = Luxeuil les Bains
+				Lyoffans
+				Magny-Vernois
+				Mailleroncourt
+				Margilley
+				Marnay
+				Neuvelle-les-Champlitte
+				Percey-le-Grand = Percey le Grand
+				Pierrecourt
+				Pont-de-Planche
+				Rioz
+				Saulnot
+				Scey-sur-Saône = Scey sur Saône
+				Thieffrans
+				Vesoul
+				Villafans
+			Jura = 39
+				Darbonnay
+				Dole
+				Lons-le-Saunier
+				Mirebel
+				Monnet-la-Ville
+				Montigny-lès-Cherlieu
+				Morez
+				Passenans
+				Picarreau
+				Poligny
+				Rochefort-sur-Nenon = Rochefort sur Nenon
+				Saint-Claude
+				Saint-Hymetière
+				Salins-les-Bains = Salins les Bains
+				Sarrogna
+				Tassenière
+				Val-d'Epy
+				Voiteur
+			Territoire-de-Belfort = 90  = Territoire de Belfort
+				Belfort
+				Giromagny
+				Leval
+				Montreux-Château = Montreux Château
+		Guyane
+		Ile-de-France = Ile de France
+			Essonne = 91
+				Angervilliers
+				Arpajon
+				Bièvres
+				Brunoy
+				Chilly-Mazarin = Chilly Mazarin
+				Corbeil = Corbeil-Essonnes
+				Etampes
+				Etiolles
+				Le Val-Saint-Germain = Le Val Saint Germain  = Le Val St Germain  = Val Saint Germain  = Val St Germain  = Val-Saint-Germain
+				Mennecy
+				Orsay
+				Petit-Bourg = Petit Bourg
+				Saint-Cyr-sous-Dourdan = Saint Cyr sous Dourdan  = St Cyr sous Dourdan
+			Hauts-de-Seine = 92  = Hauts de Seine
+				Antony
+				Asnières-sur-Seine = Asnières  = Asnières sur Seine
+				Bagneux
+				Bois-Colombes
+				Boulogne-Billancourt = Boulogne Billancourt  = Boulogne-sur-Seine
+				Bourg-la-Reine = Bourg la Reine
+				Châtillon
+				Clamart
+				Clichy
+				Colombes
+				Courbevoie
+				Fontenay-aux-Roses = Fontenay aux Roses
+				Issy-les-Moulineaux = Issy les Moulineaux
+				Levallois-Perret
+				Malakoff
+				Meudon
+				Montrouge
+				Nanterre
+				Neuilly-sur-Seine = Neuilly sur Seine
+				Palaiseau
+				Puteaux
+				Saint-Cloud = Saint Cloud
+				Sceaux
+				Suresnes
+				Sèvres
+				Val-sous-Meudon
+				Vanves
+			Paris = 75  = Seine
+			Seine-Saint-Denis = Seine St Denis  = Seine Saint Denis  = 93
+				Aubervilliers
+				Aulnay-sous-Bois = Aulnay sous Bois
+				Bagnolet
+				Chantou
+				Drancy
+				Epinay-sur-Seine = Epinay sur Seine
+				Gagny
+				Le Blanc-Mesnil = Le Blanc Mesnil
+				Le Bourget
+				Le Raincy = Raincy
+				Livry-Gargan
+				Montreuil 93 = Montreuil-sous-Bois
+				Neuilly-Plaisance = Neuilly Plaisance
+				Neuilly-sur-Marne = Neuilly sur Marne
+				Noisy-le-Grand
+				Noisy-le-Sec
+				Pantin
+				Pavillons-sous-Bois = Pavillons sous Bois
+				Rosny-sous-Bois
+				Saint-Denis = Saint Denis  = St Denis
+				Saint-Ouen = Saint Ouen
+				Sevran
+				Tremblay-les-Gonesse = Tremblay-en-France
+				Villemomble
+			Seine-et-Marne = 77
+				Baillard
+				Barbizon
+				Bassevelle
+				Bellot
+				Boissettes
+				Boissy-le-Châtel
+				Boitron
+				Bussy-Saint-Georges = Bussy Saint Georges
+				By
+				Cannenet
+				Chailly-en-Brie
+				Champs-sur-Marne
+				Chaumes-en-Brie
+				Chozoy
+				Château-Landon = Château Landon
+				Châteaubleau
+				Coulommiers
+				Courcermont
+				Coutevroult
+				Crouy-sur-Ourcq = Crouy sur Ourcq
+				Dampmart
+				Donnemarie-Dontilly = Donnemarien Dontilly
+				Doucy
+				Doue
+				Etrépilly
+				Fontainebleau
+				Grand Saussoy
+				Grez-sur-Loing = Grez sur Loing
+				Joigny
+				Jouarre
+				La Basse-Croix = La Basse Croix
+				La Chapelle-Véronges = La Chapelle Véronges
+				La Ferté-sous-Jouarre = Ferté sous Jouarre  = Ferté-sous-Jouarre  = La Ferté sous Jouarre
+				Lagny = Lagny-sur-Marne
+				Larchant
+				Le Mont
+				Les Brosses
+				Les Grands Groseillers
+				Marolles-en-Brie = Marolles en Brie
+				Marvilliers
+				Meaux
+				Melun
+				Montdauphin
+				Montereau = Montereau-Fault-Yonne
+				Montflageol
+				Montigny-sur-Loing = Montigny sur Loing
+				Montreuil-aux-Lions = Montreuil aux Lions
+				Moret-sur-Loing = Moret sur Loing
+				Mécringes
+				Nemours
+				Orly-sur-Morin = Orly sur Morin
+				Penchard
+				Pierrelevée
+				Plessier
+				Provins
+				Rebais
+				Rozay-en-Brie = Rozay en Brie
+				Rubelles
+				Saincy
+				Saint-Brice = Saint Brice
+				Saint-Cyr-sur-Morin = Saint Cyr sur Morin
+				Saint-Fiacre-en-Brie = Saint Fiacre en Brie  = St Fiacre en Brie
+				Saint-Ouen-sur-Morin = Saint Ouen sur Morin  = St Ouen sur Morin
+				Saint-Soupplets = Saint Soupplets
+				Saâcy-sur-Marne
+				Souilly
+				Vendières
+				Verdelot
+				Villeneuve-sous-Dammartin = Villeneuve sous Dammartin
+				Villers-d'Aulnoy = Villers d'Aulnoy
+			Val-d'Oise = 95  = Val d'Oise
+				Argenteuil
+				Auvers-sur-Oise = Auvers sur Oise
+				Beaumont-sur-Oise = Beaumont sur Oise
+				Deuil-la-Barre
+				Eaubonne
+				Ecouen
+				Enghein-les-Bains = Enghein les Bains
+				Epiais-Rhus = Epiais Rhus
+				Eragny
+				Ermont
+				Genainville
+				Goussainville
+				Groslay
+				Herblay
+				Hodent
+				L'Isle-Adam = L'Isle Adam
+				La Roche-Guyon
+				Le Perchay = Perchay
+				Louvres
+				Luzarches
+				Mareil-en-France = Mareil en France
+				Montmorency
+				Moussy
+				Méry-sur-Oise
+				Saint-Gratien = Saint Gratien
+				Saint-Leu-la-Forêt = Saint Leu la Forêt
+				Sannois
+				Taverny
+				Villiers-le-Bel = Villiers le Bel
+				Vétheuil
+			Val-de-Marne = Val de Marne  = 94
+				Alfortville
+				Arcueil
+				Charenton-le-Pont = Charenton le Pont
+				Choisy-le-Roi = Choisy le Roi
+				Créteil
+				Fontenay-sous-Bois = Fontenay sous Bois
+				Ivry-sur-Seine = Ivry sur Seine
+				Joinville-le-Pont = Joinville le Pont
+				La Varenne-Saint-Hilaire = La Varenne Saint Hilaire
+				Le Perreux-sur-Marne = Le Perreux sur Marne
+				Maisons-Alfort
+				Nogent-sur-Marne = Nogent sur Marne
+				Saint-Mandé = Saint Mandé
+				Saint-Maur-des-Fossés = Saint Maur des Fossés  = St Maur des Fossés
+				Thiais
+				Tournan-en-Brie = Tournan en Brie
+				Vincennes
+			Yvelines = 78
+				Ablis
+				Ablon-sur-Seine = Ablon sur Seine
+				Achères
+				Bonnières-sur-Seine = Bonnières sur Seine
+				Bougival
+				Carrières-sur-Seine = Carrières sur Seine
+				Chatou
+				Croissy-sur-Seine = Croissy sur Seine
+				Freneuse
+				Gambais
+				Houilles
+				La Frette-sur-Seine = La Frette sur Seine
+				La Plaine-Saint-Denis = La Plaine Saint Denis
+				Le Pecq-sur-Seine = Le Pecq sur Seine
+				Le Vésinet
+				Les Mureaux
+				Limay
+				Louveciennes
+				Mantes-la-Jolie
+				Marly-le-Roi
+				Meulan
+				Montfort-l'Amaury = Montfort l'Amaury
+				Neauphle-le-Château = Neauphle le Château
+				Poissy
+				Porchefontaines
+				Rambouillet
+				Rueil-Malmaison
+				Saint-Cyr-l'Ecole = Saint Cyr l'Ecole
+				Saint-Germain-en-Laye = Saint Germain en Laye
+				Sartrouville
+				Septeuil
+				Thiverval-Grignon = Thiverval Grignon
+				Versailles
+		La Réunion
+		Languedoc-Roussillon = Languedoc Roussillon
+			Aude = 11
+				Axat
+				Carcassonne
+				Castelnaudary
+				Espéraza
+				Issel
+				Narbonne
+				Saint-Papoul = St Papoul  = Saint Papoul
+			Gard = 30
+				Aigues-Mortes = Aigues Mortes
+				Alès
+				Aramon
+				Arphy
+				Beaucaire
+				Beauvoisin
+				Béssèges
+				Gagnières
+				Gajan
+				Gallargues-le-Montueux = Gallargues le Montueux
+				Le Cailar
+				Le Grau-du-Roi = Le Grau du Roi
+				Nîmes
+				Pompignan
+				Pont-Saint-Esprit = Pont Saint Esprit
+				Saint-Gilles-du-Gard = Saint Gilles du Gard  = St Gilles du Gard
+				Saint-Hippolyte-du-Fort = Saint Hippolyte du Fort
+				Saint-Maximin = Saint Maximin
+				Saint-Paul-La-Coste = St Paul La Coste  = Saint Paul La Coste
+				Sainte-Anastasie
+				Sauve
+				Uchaud
+				Uzès
+				Vallabrègues
+				Vauvert
+				Vers-Pont-du-Gard = Vers Pont du Gard
+				Vestric-et-Candiac
+				Villeneuve-les-Avignon = Villeneuve les Avignon
+			Hérault = 34
+				Balaruc-les-Bains = Balaruc les Bains
+				Béziers
+				Clermont-l'Hérault = Clermont l'Hérault
+				Hérépian
+				Lodève
+				Lunel
+				Montpellier
+				Palavas-les-Flots = Palavas les Flots
+				Roujan
+				Saint-Guilhem-le-Désert = Saint Guilhem le Désert  = St Guilhem le Désert
+				Saint-Jean-de-Fos = Saint Jean de Fos
+				Saint-Pons-de-Thomières = Saint Pons de Thomières
+				Saturargues
+				Sète
+			Lozère = 48
+				Fraissinet-de-Lozère = Fraissinet de Lozère
+				La Canourgue
+				La Fage-Montivernoux = La Fage Montivernoux
+				Les Hermaux
+				Marvejols
+				Mende
+				Vébron
+			Pyrénées-Orientales = 66  = Pyrénées Orientales
+				Amélie-les-Bains-Palalda = Amélie les Bains Palada
+				Argelès-sur-Mer = Argelès sur Mer
+				Banyuls-sur-Mer = Banyuls sur Mer
+				Collioure
+				Céret
+				Osseja
+				Perpignan
+				Pia
+				Saillagouse
+		Limousin
+			Corrèze = 19
+				Argentat
+				Gimel-les-Cascades = Gimel les Cascades
+				Saint-Pardoux-La-Croisille = Saint Pardoux La Croisille
+				Tulle
+			Creuse = 23
+				Aubusson
+				Crozant
+				Felletin
+				Fresselines
+				Guéret
+				Jenzat
+				La Souterraine
+				Sainte-Thorette
+			Haute-Vienne = 87  = Haute Vienne
+				Boismandé
+				Limoges
+				Panazol
+				Razès
+				Saint-Léonard-de-Noblat = Saint Léonard de Noblat  = St Léonard de Noblat
+				Solignac
+				Thiat
+		Lorraine
+			Meurthe-et-Moselle = 54
+				Baccarat
+				Badonviller
+				Bergues 54
+				Briey
+				Custine
+				Cutry
+				Flirey
+				Labry
+				Longwy
+				Lunéville
+				Maxéville
+				Nancy
+				Pont-Saint-Vincent = Pont Saint Vincent
+				Prisches
+				Réhon
+				Saint-Clément = Saint Clément  = St Clément
+				Saint-Nicolas-de-Port = Saint Nicolas de Port  = St Nicolas de Port
+				Toul = Toul-Bellevue
+				Vannes-le-Châtel = Vannes le Châtel
+				Varangeville
+			Meuse = 55
+				Argonne
+				Bar-le-Duc = Bar le Duc
+				Clermont-en-Argonne = Clermont en Argonne
+				Commercy
+				Damvillers
+				Dun-sur-Meuse = Dun sur Meuse
+				Froidos
+				Hattonchâtel
+				Lavoye
+				Les Islettes
+				Ligny-en-Barrois
+				Montgarny
+				Montigny-les-Vaucouleurs = Montigny les Vaucouleurs
+				Montmirail
+				Rarécourt
+				Revigny
+				Salvange
+				Sampigny
+				Verdun
+				Waly
+			Moselle = 57
+				Louppy
+				Metz
+				Niderviller
+				Saint-Hubert = Saint Hubert  = St Hubert
+				Sarreguemines
+				Sierck
+			Vosges = 88
+				Baudricourt
+				Corcieux
+				Epinal
+				Gérardmer
+				Mandray
+				Mattaincourt
+				Mirecourt
+				Moyenmoutier
+				Plombières-les-Bains = Plombières les Bains
+				Portieux
+				Raon-l'Etape = Raon l'Etape
+				Remiremont
+				Saint-Dié = Saint Dié
+				Thionville
+				Val-d'Ajol
+		Midi-Pyrénées = Midi Pyrénées
+			Ariège = 09
+				Ax-les-Thermes = Ax les Thermes
+				Clermont
+				Foix
+				Niaux
+				Saint-Girons = Saint Girons  = St Girons
+			Aveyron = 12
+				Camarès
+				Clairvaux-d'Aveyron = Clairvaux d'Aveyron
+				Conques
+				Decazeville
+				Entraygues-sur-Truyère = Entraygues sur Truyère
+				Espalion
+				La Graufesenque = Graufesenque[la]
+				Laguiole
+				Laissac
+				Lassouts
+				Millau
+				Monteils
+				Olemps
+				Rodelle
+				Rodez
+				  - Aubrac
+				Saint-Affrique = Saint Affrique  = St Affrique
+				Saint-Geniez-d'Olt = Saint Geniez d'Olt  = St Geniez d'Olt
+				Saint-Jean-Bruel = Saint Jean Bruel
+				Sébazac-Concourès = Sébazac Concourès
+				Villefranche-de-Rouergue = Villefranche de Rouergue
+			Gers = 32
+				Auch
+				Auradé
+				Bezolles
+				Lectoure
+				Lombez
+				Orbessan
+			Haute-Garonne = 31  = Haute Garonne
+				Auribail
+				Bagnères-de-Luchon
+				Boulogne-sur-Gesse = Boulogne sur Gesse
+				Cox
+				Esperce
+				Luchon
+				Mancioux
+				Martres-Tolosane
+				Plaisance-du-Touch = Plaisance du Touch
+				Puységur
+				Revel
+				Saint-Bertrand-de-Comminges = Saint Bertrand de Comminges
+				Saint-Gaudens = Saint Gaudens  = St Gaudens
+				Saint-Martory = Saint Martory
+				Toulouse
+				Valentine
+				Venerque
+				Villefranche-de-Lauraguais = Villefranche de Lauraguais
+			Hautes-Pyrénées = 65  = Hautes Pyrénées
+				Argelès
+				Asté
+				Bagnères-de-Bigorre
+				Barèges
+				Betpouey
+				Cauterets
+				Comminges
+				Lourdes
+				Luz-Saint-Sauveur
+				Pierrefitte-Nestalas = Pierrefitte Nestalas
+				Pouzac
+				Tarbes
+				Villelongue
+			Lot = 46
+				Cahors
+				Gourdon
+				Rocamadour
+				Saint-Cirq-Lapopie = Saint Cirq Lapopie
+				Saint-Céré = Saint Céré  = St Céré
+			Tarn = 81
+				Albi
+				Castres
+				Gaillac
+				Giroussens
+				Guitalens
+				Maurens-Scopont
+				Puybegon
+				Salvagnac
+			Tarn-et-Garonne = 82
+				Auvillar
+				Beaumont-de-Lomagne = Beaumont de Lomagne
+				Bouillac
+				Caylus
+				Montauban
+				Valence-d'Agen = Valence d'Agen
+		Nord-Pas-de-Calais = Nord Pas de Calais
+			Nord = 59
+				Armentières
+				Bailleul
+				Bavay
+				Bergues 59
+				Bouchain
+				Bouvines
+				Briastre
+				Cambrai
+				Cartignies
+				Condé-sur-l'Escaut = Condé sur l'Escaut
+				Denain
+				Douai
+				Dunkerque
+				Escaudoeuvres
+				Etroeungt
+				Fretin
+				Halluin
+				Hautmont
+				Lambersart
+				Lambres-lez-Douai = Lambres lez Douai
+				Le Cateau-Cambrésis
+				Le Quesnoy
+				Lille
+				Louvroil
+				Lys-lez-Lannoy
+				Malo-les-Bains
+				Maubeuge
+				Pont-à-Mousson = Pont à Mousson
+				Roubaix
+				Saint-Amand-les-Eaux = Saint Amand les Eaux  = St Amand les Eaux
+				Saint-Aubert
+				Santes
+				Solesmes
+				Tourcoing
+				Valenciennes
+			Pas-de-Calais = 62  = Pas de Calais
+				Aire-sur-la-Lys = Aire sur la Lys
+				Allouagne
+				Ambleteuse
+				Ambrines
+				Arras
+				Athies
+				Aubigny-en-Artois
+				Berck = Berck-sur-Mer
+				Beuvry
+				Boulogne-sur-Mer = Boulogne sur Mer
+				Bruay-la-Buissière = Bruay la Buissière
+				Calais
+				Corbehem
+				Courrières
+				Desvres
+				Hénin-Beaumont = Hénin Beaumont
+				Héricourt
+				Inxent
+				Le Touquet-Paris-Plage = Le Touquet  = Le Touquet Paris Plage
+				Lens
+				Maroeuil
+				Montreuil 62
+				Noeux-les-Mines = Noeux les Mines
+				Saint-Omer
+				Tingry
+		Normandie
+			Basse-Normandie = Basse Normandie
+				Calvados = 14
+				  - Amfreville
+				  - Argences
+				  - Balleroy
+				  - Bavent
+				  - Bayeux
+				  - Caen
+				  - Caumont-l'Eventé = Caumont l'Eventé
+				  - Commes
+				  - Condé-sur-Noireau = Condé sur Noireau
+				  - Courseulles-sur-Mer = Courseulles sur Mer
+				  - Dampierre
+				  - Dives-sur-Mer = Dives sur Mer
+				  - Falaise
+				  - Fervaques
+				  - Honfleur
+				  - Langrune-sur-Mer = Langrune sur Mer
+				  - Le Pré-d'Auge = Le Pré d'Auge
+				  - Lisieux
+				  - Livarot
+				  - Luc-sur-Mer = Luc sur Mer
+				  - Manerbe
+				  - Noron-la-Poterie = Noiron la Poterie
+				  - Orbec
+				  - Ouistreham
+				  - Pont-l'Evêque = Pont l'Evêque
+				  - Reux
+				  - Saint-Aubin-sur-Mer = Saint Aubin sur Mer
+				  - Saint-Martin-de-Sallen = Saint Martin de Sallen  = St Martin de Sallen
+				  - Saint-Pierre-la-Vieille = St Pierre la Vieille  = Saint Pierre la Vieille
+				  - Trouville-sur-Mer
+				  - Vaux-de-Vire = Vaux de Vire
+				  - Villerville
+				  - Vire
+				Manche = 50
+				  - Avranches
+				  - Barenton
+				  - Barfleur
+				  - Cherbourg
+				  - Coutances
+				  - Ger
+				  - Golleville
+				  - Granville
+				  - Hambye
+				  - La Haye-du-Puits = La Haye du Puits
+				  - Mont-Saint-Michel = Le Mont Saint-Michel  = Mont Saint-Michel  = Mont St Michel
+				  - Pontorson
+				  - Saint-Lô = Saint Lô
+				  - Saint-Pierre-Eglise = Saint Pierre Eglise  = St Pierre Eglise
+				  - Saint-Sauveur-le-Vicomte = Saint Sauveur le Vicomte
+				  - Saint-Vaast-la-Hougue = Saint Vaast la Hougue
+				  - Sourdeval
+				  - Tourlaville
+				  - Valognes
+				  - Villedieu-les-Poêles = Villedieu les Poêles
+				  - Vindefontaine
+				Orne = 61
+				  - Alençon
+				  - Andaine
+				  - Argentan
+				  - Athis-de-l'Orne = Athis de l'Orne
+				  - Bagnoles-de-l'Orne = Bagnoles de l'Orne
+				  - Boucé
+				  - Flers
+				  - La Perrière = Perrière
+				  - Randonnai
+				  - Sées
+				  - Tinchebray
+				  - l'Aigle = Aigle
+			Haute-Normandie = Haute Normandie
+				Eure = 27
+				  - Andé
+				  - Bacqueville
+				  - Berengeville-la-Campagne = Berengeville la Campagne
+				  - Bernay
+				  - Châtel-la-Lune
+				  - Conches-en-Ouche = Conche-en-Ouche
+				  - Criquebeuf-sur-Seine = Criquebeuf sur Seine
+				  - Ecos
+				  - Etrépagny
+				  - Evreux
+				  - Ezy-sur-Eure = Ezy sur Eure
+				  - Gisors
+				  - Giverny
+				  - Harcourt
+				  - Heudebouville
+				  - Heudicourt
+				  - La Couture-Boussey = La Couture Boussey
+				  - La Croix-Saint-Leufroy = La Croix Saint Leufroy
+				  - La Haye-Malherbe = La Haye Malherbe
+				  - Le Noyer-en-Ouche
+				  - Les Andelys
+				  - Louviers
+				  - Nonancourt
+				  - Pont-Audemer = Pont Audemer
+				  - Pont-de-l'Arche = Pont de l'Arche
+				  - Romilly-sur-Andelle = Romilly sur Andelle
+				  - Saint-André-de-l'Eure = Saint André de l'Eure
+				  - Saint-Pierre-d'Autils = Saint Pierre d'Autils
+				  - Saint-Pierre-du-Vauvray = Saint Pierre du Vauvray
+				  - Vascoeuil
+				  - Vernon
+				Seine-Maritime = Seine Maritime  = 76
+				  - Aumale
+				  - Beaubec-la-Rosière = Beaubec la Rosière
+				  - Beuzeville-la-Grenier = Beuzeville la Grenier
+				  - Bolbec
+				  - Boos
+				  - Bully
+				  - Bures-en-Bray = Bures en Bray
+				  - Caudebec-en-Caux = Caudebec en Caux
+				  - Criquebeuf-en-Caux = Criquebeuf en Caux
+				  - Darnétal
+				  - Deauville
+				  - Dieppe
+				  - Déville-lès-Rouen = Déville lès Rouen
+				  - Elbeuf
+				  - Emanville
+				  - Esteville
+				  - Etretat
+				  - Eu
+				  - Forges-les-Eaux = Forges les Eaux
+				  - Foucarmont
+				  - Fécamp
+				  - Haudricourt
+				  - Jumièges
+				  - La Neuville-Chant-d'Oisel = La Neuville Chant d'Oisel
+				  - Le Caule-Sainte-Beuve = Le Caule Sainte Beuve
+				  - Le Fossé
+				  - Le Havre = Havre
+				  - Le Polais
+				  - Le Trait
+				  - Le Tréport
+				  - Maromme
+				  - Martincamp
+				  - Maulévrier-Sainte-Gertrude = Maulévrier Sainte Gertrude
+				  - Mauny
+				  - Mont-Saint-Aignan = Mont Saint Aignan
+				  - Nesle-Normandeuse = Nesle Normandeuse
+				  - Neuville-lès-Dieppe = Neuville lès Dieppe
+				  - Notre-Dame-d'Aliermont = Notre Dame d'Aliermont
+
+				  - Offranville
+				  - Pourville
+				  - Retonval
+				  - Rouen
+				  - Réalcamp
+				  - Rétival
+				  - Saint-Aubin-Celloville = Saint Aubin Celloville
+				  - Saint-Jacques-d'Aliermont = Saint Jacques d'Aliermont
+				  - Saint-Maurice-d'Etelan = Saint Maurice d'Etelan
+				  - Saint-Nicolas-d'Aliermont = Saint Nicolas d'Aliermont
+				  - Sainte-Adresse = Sainte Adresse
+				  - Sainte-Gertrude = Sainte Gertrude
+				  - Sotteville-lès-Rouen = Sotteville lès Rouen
+				  - Varengeville-sur-Mer = Varengeville sur Mer
+				  - Veules-les-Roses = Veules les Roses
+				  - Villequier
+				  - Yainville
+				  - Yport
+				  - Yvetot
+		Pays-de-la-Loire = Pays de la Loire
+			Loire-Atlantique = 44  = Loire Atlantique
+				Ancenis
+				Basse-Indre = Basse Indre
+				Batz-sur-Mer = Batz sur Mer  = Bourg de Batz  = Bourg-de-Batz  = Ile de Batz  = Ile-de-Batz
+				Châteaubriant
+				Couëron
+				Guérande
+				Herbignac
+				La Baule-Escoublac
+				Le Croisic = Croisic
+				Le Pouliguen = Pouligen
+				Nantes
+				Paimbeuf = Paimboeuf
+				Pornic
+				Pornichet
+				Prefailles
+				Rezé
+				Saint-Julien-de-Vouvantes = Saint Julien de Vouvantes  = St Julien de Vouvantes
+				Saint-Nazaire
+				Savenay
+			Maine-et-Loire = 49
+				Angers
+				Baugé
+				Beaufort-en-Vallée = Beaufort
+				Beaupréau
+				Bouchemaine
+				Béhuard
+				Chalonnes
+				Champtoceaux
+				Cholet
+				Feneu
+				Fontevraud-l'Abbaye = Fontevraud l'Abbaye
+				Gennes
+				Jallais
+				La Beaumette
+				La Meignanne
+				La Pointe
+				La Poitevinière = Poitevinière
+				Le Lion-d'Angers = Le Lion d'Angers
+				Les Ponts-de-Cé = Ponts-de-Cé
+				Les Rosiers
+				Liré
+				Longué-Jumelles
+				Luynes
+				Malicorne
+				May-sur-Evre = May sur Evre
+				Montjean-sur-Loire = Montjean  = Montjean sur Loire
+				Montreuil-Bellay
+				Montreuil-Juigné = Montreuil Juigné
+				Montsoreau
+				Mûrs-Erigné = Mûrs Erigné
+				Oudon
+				Pontigné
+				Rochefort-sur-Loire = Rochefort sur Loire
+				Saint-Florent-le-Vieil = Saint Florent le Vieil
+				Saint-Mathurin = Saint Mathurin
+				Saint-Saturnin-sur-Loire = Saint Saturnin sur Loire
+				Sainte-Gemmes-sur-Loire = Sainte Gemmes sur Loire
+				Saumur
+				Savennières
+				Seiches-sur-le-Loir = Seiches sur le Loir
+				Soucelles
+				Vernantes
+			Mayenne = 53
+				Ampoigne
+				Aron
+				Azé
+				Château-Gontier = Château Gontier
+				Cossé-le-Vivien = Cossé le Vivien
+				Grez-en-Bouère = Grez en Bouère
+				Laval
+				Le Genest-Saint-Isle = Le Genest Saint Isle
+			Sarthe = 72
+				Bonnétable
+				Fresnay-sur-Sarthe
+				La Ferté-Bernard = La Ferté Bernard
+				La Flèche
+				Le Mans
+				Ligron
+				Prévelles
+				Sablé-sur-Sarthe = Sablé sur Sarthe
+				Saint-Calais
+			Vendée = 85
+				Biossais
+				Bois-de-Cène = Bois de Cène
+				Charzais
+				Commequiers
+				Croix-de-Vie = Croix de Vie
+				Fontenay-le-Comte = Fontenay le Comte
+				Ile de Noirmoutier
+				  - Barbâtre
+				Le Mazeau = Mazeau
+				Les Sables-d'Olonne = Les Sables d'Olonne  = Sables d'Olonne  = Sables-d'Olonne
+				Longèves
+				Luçon
+				Maillezais
+				Mervent
+				Pissotte
+				Riez
+				Saint Jean de Monts
+				Saint-Gilles-sur-Vie = Saint Gilles sur Vie  = St Gilles sur Vie
+				Saint-Hilaire-de-Loulay = Saint Hilaire de Loulay
+				Saint-Jean-de-Monts
+				Saint-Martin-de-Brem = Saint Martin de Brem  = St Martin de Brem
+				Saint-Vincent-Sterlanges = St Vincent Sterlanges  = Saint Vincent Sterlanges
+				l'Orbrie
+		Picardie
+			Aisne = 02
+				Ambleny
+				Ambrief
+				Anizy-le-Château = Anizy le Château
+				Armentières-sur-Ourcq = Armentières sur Ourcq
+				Azy-sur-Marne = Azy sur Marne
+				Barzy-sur-Marne = Barzy sur Marne
+				Bazoches-sur-Vesle = Bazoches sur Vesle
+				Beautor
+				Belleau
+				Belleu
+				Berzy-le-Sec = Berzy le Sec
+				Bouconville-Vauclair
+				Bouresches
+				Bourg-et-Comin
+				Bourguignon
+				Braine
+				Brasles
+				Breny
+				Bruyères-et-Montbérault = Bruyères et Montbérault
+				Bucy-le-Long = Bucy le Long
+				Bucy-lès-Pierrepont
+				Buironfosse
+				Carla-le-Comte = Carla le Comte
+				Chacrise
+				Charly-sur-Marne = Charly sur Marne
+				Chauny
+				Chavignon
+				Chavigny
+				Chierry
+				Chouy
+				Château-Thierry = Château Thierry
+				Chézy-sur-Marne
+				Ciry-Salsogne = Ciry Salsogne
+				Coeuvres-et-Valsery
+				Colligis-Crandelain = Colligis Crandelain
+				Condé-en-Brie = Condé en Brie
+				Condé-sur-Aisne = Condé sur Aisne
+				Coucy-le-Château-Auffrique = Coucy le Château Auffrique
+				Courmelles
+				Couvron-et-Aumencourt
+				Crouy
+				Crécy-sur-Serre
+				Epagny
+				Epieds
+				Essômes-sur-Marne = Essômes sur Marne
+				Etampes-sur-Marne = Etampes sur Marne
+				Etreux
+				Etréaupont
+				Fontaine-lès-Vervins = Fontaine lès Vervins
+				Foreste
+				Fresnoy-le-Grand = Fresnoy le Grand
+				Fère-en-Tardenois
+				Gland
+				Guignicourt
+				Guise
+				Haramont
+				Hirson
+				La Capelle = Capelle
+				La Ferté-Milon = Ferté Milon  = Ferté-Milon  = La Ferté Milon
+				La Fère = Fère
+				Laon
+				Le Catelet = Catelet
+				Lemé
+				Liesse-Notre-Dame = Liesse Notre Dame
+				Longpont
+				Margival
+				Marle
+				Mercin-et-Vaux
+				Mons-en-Laonnois = Mons en Laonnois
+				Mont-Notre-Dame = Mont Notre Dame
+				Mont-Saint-Père = Mont Saint Père
+				Morsain
+				Neufchâtel-sur-Aisne = Neufchâtel sur Aisne
+				Neuilly-Saint-Front = Neuilly Saint Front  = Neuilly St Front
+				Notre-Dame-de-Liesse = Notre Dame de Liesse
+				Nouvion-en-Thiérache = Nouvion en Thiérache
+				Noyant-et-Aconin
+				Oigny-en-Valois = Oigny en Valois
+				Orbais-l'Abbaye = Orbais l'Abbaye
+				Oulchy-le-Château = Oulchy le Château
+				Pasly
+				Passy-sur-Marne = Passy sur Marne
+				Pisseleux
+				Pommiers
+				Renneval
+				Reuilly-Sauvigny = Reuilly Sauvigny
+				Roucy
+				Royaucourt-et-Chailvet
+				Rozet-Saint-Albin = Rozet Sain -Albin
+				Rozoy-Bellevalle = Rozoy Belevalle
+				Saacy-sur-Marne = Saacy sur Marne
+				Saint-Eugène = Saint Eugène
+				Saint-Gobert = Saint Gobert
+				Saint-Michel = Saint Michel
+				Saint-Pierre-Aigle = Saint Pierre Aigle
+				Saint-Quentin = Saint Quentin  = St Quentin
+				Saint-Rémy-Blanzy = Saint Rémy Blanzy
+				Septmonts
+				Septvaux
+				Sinceny
+				Sissonne
+				Soissons
+				Tartiers
+				Tergnier
+				Thuys
+				Trosly-Loire
+				Trucy
+				Urcel
+				Vailly-sur-Aisne = Vailly sur Aisne
+				Vasseny
+				Vaux-sous-Laon = Vaux sous Laon
+				Vauxrot
+				Venizel
+				Vervins
+				Vic-sur-Aisne = Vic sur Aisne
+				Vierzy
+				Villemoyenne
+				Villeneuve-Saint-Germain = Villeneuve Saint Germain
+				Villeneuve-sur-Fère = Villeneuve sur Fère
+				Villers-Cotterêts = Villers Cotterêts
+				Villers-Hélon = Villers Hélon
+				Villesavoye
+				Vincelles
+				Vorges
+			Oise = 60
+				Agnetz
+				Andeville
+				Attigny 60
+				Baugy
+				Beauvais
+				Beauvaisis
+				Betz
+				Bonneuil-en-Valois = Bonneuil en Valois
+				Boubiers
+				Bouconvillers
+				Boursonne
+				Campagne 60
+				Canly
+				Chantilly
+				Chelles
+				Cires-lès-Mello = Cires lès Mello
+				Compiègne
+				Coye-la-Forêt = Coye la Forêt
+				Creil
+				Crépy-en-Valois = Crépy en Valois
+				Cuise-la-Motte = Cuise la Motte
+				Cuts
+				Esquennoy
+				Estrées-Saint-Denis
+				Feuquières
+				Fontaine-Chaalis
+				Goincourt
+				La Boissière-en-Thelle = La Boissière en Thelle
+				La Chapelle-aux-Pots = La Chapelle aux Pots
+				La Neuville-d'Aumont = La Neuville d'Aumont  = Neuville d'Aumont  = Neuville-d'Aumont
+				Latainville
+				Liancourt
+				Lierville
+				Marolles
+				Mesnil-Théribus = Mesnil Théribus
+				Montataire
+				Montépilloy
+				Morienval
+				Mortefontaine
+				Mouy
+				Méru
+				Neuilly-en-Thelle
+				Noailles
+				Noyon
+				Pierrefonds
+				Ponchon
+				Pontoise
+				Rantigny
+				Ravenel
+				Reilly
+				Saint-Crépin-Ibouvillers = Saint Crépin Ibouvillers
+				Saint-Just-des-Marais = Saint Just des Marais
+				Saint-Just-en-Chaussée = Saint Just en Chaussée
+				Saint-Leu-d'Esserent = Saint Leu d'Esserent
+				Saint-Paul = Saint Paul  = St Paul
+				Saint-Samson-la-Poterie = Saint Samson la Poterie
+				Saint-Sauveur = Saint Sauveur
+				Saint-Simon-la-Poterie = Saint Simon la Poterie
+				Saint-Vaast-de-Longmont
+				Sainte-Geneviève
+				Saintines
+				Savignies
+				Senlis
+				Tarcy-le-Pont = Tarcy le Pont
+				Thury-en-Valois
+				Tourly
+				Trie-Château = Trie Château
+				Ully-Saint-Georges = Ully Saint Georges
+				Valdampierre
+				Verneuil-en-Halatte = Verneuil en Halatte
+				Vez
+				Vieux-Moulin
+				Voisinlieu
+			Somme = 80
+				Abbeville
+				Albert
+				Amiens
+				Ault
+				Beuvraignes
+				Canaples
+				Contre
+				Corbie
+				Doullens
+				Fins
+				Fort-Mahon-Plage
+				Gamache
+				Hallencourt
+				Ham
+				Hornoy-le-Bourg = Hornoy le Bourg
+				Le Crotoy = Crotoy
+				Matigny
+				Mers-les-Bains = Mers les Bains
+				Montdidier
+				Moreuil
+				Nouvion
+				Prouville
+				Péronne
+				Sénarpont
+				Vron
+				Yvrench
+		Poitou-Charentes = Poitou Charentes
+			Charente = 16
+				Angoulême
+				Cognac
+				Saint-Angeau = Saint Angeau
+				Saint-Maurice-des-Lions = Saint Maurice des Lions  = St Maurice des Lions
+			Charente-Maritime = 17  = Charente Maritime
+				Ile-de-Ré = Ile de Ré
+				Jonzac
+				La Rochelle = Rochelle
+				Marans
+				Oléron
+				Rochefort
+				Royan
+				Saint-Jean-d'Angély = Saint Jean d'Angély  = St Jean d'Angély
+				Saintes
+				Siecq
+			Deux-Sèvres = 79  = Deux Sèvres
+				Augé
+				Beauvoir-sur-Niort = Beauvoir sur Niort
+				Coulon
+				L'Hermitain = Hermitain
+				La Crèche = Crèche
+				Melle
+				Niort
+				Parthenay
+				Saint-Jouin-de-Marne = Saint Jouin de Marne  = St Jouin de Marne
+				Sauzé-Vaussais
+				Thouars
+			Vienne = 86
+				Angles-sur-l'Anglin = Angles sur l'Anglin
+				Antoigné
+				Antran
+				Archigny
+				Bellefonds
+				Bignoux
+				Bonnes
+				Buxeuil
+				Chauvigny
+				Châtellerault
+				Cissé
+				Civaux
+				Colombiers
+				Couhé
+				Coussay-Les-Bois = Coussay Les Bois
+				Ingrandes
+				La Roche-Posay = La Roche Posay  = Roche Posay  = Roche-Posay
+				Les Trois-Moutiers = Les Trois Moutiers  = Trois Moutiers  = Trois-Moutiers
+				Lhommaizé
+				Lésigny
+				Mairé
+				Moussac-sur-Vienne = Moussac sur Vienne
+				Pleumartin
+				Poitiers
+				Saint-Julien-l'Ars = Saint Julien l'Ars  = St Julien l'Ars
+				Saint-Pierre-de-Maillé = Saint Pierre de Maillé  = St Pierre de Maillé
+				Saint-Pierre-les-Eglises = St Pierre les Eglises  = Saint Pierre les Eglises
+				Saint-Savin-sur-Gartempe = St Savin sur Gartempe  = Saint Savin sur Gartempe
+				Scorbé-Clairvaux = Scorbé Clairvaux
+				Senillé
+				Usson-du-Poitou = Usson du Poitou
+				Valdivienne
+		Provence-Alpes-Côte d'Azur = Côte d'Azur  = Provence  = Provence Alpes Côte d'Azur  = Provence Côte d'Azur  = Provence-Côte d'Azur
+			Alpes-Maritimes = 06  = Alpes Maritimes
+				Antibes
+				Belvédère
+				Beuil
+				Biot
+				Cagnes-sur-Mer = Cagnes sur Mer
+				Cannes
+				Fontan
+				Grasse
+				Haut-le-Cagnes = Haut le Cagnes
+				Juan-les-Pins = Juan les Pins
+				La Croix-sur-Roudoule = Croix sur Roudoule  = Croix-sur-Roudoule  = La Croix sur Roudoule
+				Menton
+				Nice
+				Puget-Théniers = Puget Théniers
+				Roquebillière
+				Roquebrune-Cap-Martin = Roquebrune Cap Martin
+				Saint-Etienne-de-Tinée = Saint Etienne de Tinée  = St Etienne de Tinée
+				Saint-Laurent-du-Var = Saint Laurent du Var  = St Laurent du Var
+				Touet-sur-Var = Touet sur Var
+				Vallauris
+				Vence
+				Villefranche-sur-Mer = Villefranche sur Mer
+			Alpes-de-Haute-Provence = 04  = Alpes de Haute Provence
+				Allemagne-en-Provence = Allemagne en Provence
+				Allos
+				Annot
+				Barcelonnette
+				Colmars
+				Digne-les-Bains = Digne les Bains
+				Forcalquier
+				La Foux-Allos
+				Manosque
+				Moustiers-Sainte-Marie
+				Saint-André-les-Alpes = Saint André les Alpes  = St André les Alpes
+				Saint-Etienne-les-Orgues = Saint Etienne les Orgues  = St Etienne les Orgues
+				Saint-Véran = St Véran  = Saint Véran
+				Seyne
+				Sisteron
+			Bouches-du-Rhône = 13
+				Aix-en-Provence = Aix en Provence
+				Arles
+				Barbentane
+				Bellegarde
+				Cassis
+				Charleval
+				Châteaurenard
+				Eyragues
+				Fontvieille
+				Fos-sur-Mer = Fos sur Mer
+				Gémenos
+				La Ciotat = Ciotat
+				Les Baux-de-Provence = Les Baux de Provence
+				Les Saintes-Maries-de-la-Mer = Les Saintes Maries de la Mer
+				Maillane
+				Marseille
+				Martigues
+				Mouriès
+				Port-Saint-Louis-du-Rhône = Port Saint Louis du Rhône
+				Saint-Chamas = Saint Chamas
+				Saint-Martin-de-Crau = Saint Martin de Crau
+				Saint-Mitre-les-Remparts = Saint Mitre les Remparts
+				Saint-Rémy-de-Provence = Saint Rémy de Provence
+				Salin-de-Giraud = Salin de Giraud
+				Salon-de-Provence = Salon de Provence
+				Tarascon-sur-Rhône = Tarascon  = Tarascon sur Rhône
+			Hautes-Alpes = 05  = Hautes Alpes
+				Aiguilles
+				Briançon
+				Château-Ville-Vieille
+				Embrun
+				Gap
+				L'Argentière-la-Bessée = Argentière la Bessée  = Argentière-la-Bessée  = L'Argentière la Bessée
+				La Grave
+				Laragne-Montéglin = Laragne Montéglin
+				Serres
+				Veynes
+			Var = 83
+				Agay
+				Aups
+				Barjols
+				Bauduen
+				La Cadière-d'Azur = La Cadière d'Azur
+				Saint-Cyr-sur-Mer = Saint Cyr sur Mer
+				Saint-Maximin-la-sainte-Baume = Saint Maximin la Sainte Baume  = St Maximin la Sainte Baume
+				Saint-Raphaël = Saint Raphaël  = St Raphaël
+				Saint-Tropez = St Tropez  = Saint Tropez
+				Tamaris
+				Toulon
+			Vaucluse = 84
+				Apt
+				Avignon
+				Carpentras
+				Cavaillon
+				Lourmarin
+				Mazan
+				Modène
+				Orange
+				  - Vaison-la-Romaine = Vaison  = Vaison la Romaine
+				Saint-Saturnin-les-Apt = Saint Saturnin les Apt
+		Rhône-Alpes = Rhône Alpes
+			Ain = 01
+				Ars-sur-Formans = Ars sur Formans
+				Beaupont
+				Bellegarde-sur-Valserine = Bellegarde sur Valserine
+				Bouligneux
+				Bourg-en-Bresse = Bourg en Bresse
+				Chalamont
+				Chaveyriat
+				Culoz
+				Divonne-les-Bains = Divonne les Bains
+				Ferney-Voltaire = Ferney Voltaire
+				Gex
+				Lent
+				Meillonnas
+				Montmerle-sur-Saône = Montmerle sur Saône
+				Nantua
+				Oyonnax
+				Pont-de-Vaux = Pont de Vaux
+				Saint-Bénigne = Saint Bénigne  = St Bénigne
+				Saint-Jean-le-Vieux = Saint Jean le Vieux
+				Thoissey
+				Villebois
+				Viriat
+			Ardèche = 07
+				Alba-la-Romaine = Alba la Romaine
+				Alboussière
+				Annonay
+				Arlebosc
+				Aubenas
+				Bidon
+				Chalençon
+				Charmes-sur-Rhône = Charmes sur Rhône
+				Issarles
+				Joyeuse
+				La Voulte-sur-Rhône = La Voulte sur Rhône  = Voulte sur Rhône  = Voulte-sur-Rhône
+				Lamastre
+				Le Teil = Teil
+				Les Vans = Vans
+				Ruoms
+				Saint-Agrève = Saint Agrève  = St Agrève
+				Saint-Félicien = Saint Félicien  = St Félicien
+				Serrières
+				Tence
+				Tournon-sur-Rhône = Tournon sur Rhône
+				Vallon-Pont-d'Arc = Vallon Pont d'Arc
+				Vals-les-Bains = Vals les Bains
+			Drôme = 26
+				Aiguebelle
+				Dieulefit
+				La Coucourde
+				La Roche-Saint-Secret-Béconne
+				Mollans-sur-Ouvèze = Mollans sur Ouvèze
+				Montélimar
+				Romans = Romans-sur-Isère
+				Saint-Vallier = St Vallier  = Saint Vallier
+				Valence
+			Haute-Savoie = 74  = Haute Savoie
+				Annemasse
+				Evian-les-Bains = Evian les Bains
+				Féternes
+				Rumilly
+			Isère = 38
+				Grenoble
+				La Tronche
+				Lalley
+				Le Bourg-d'Oisans = Bourg-d'Oisans  = Le Bourg d'Oisans  = Bourg d'Oisans
+				Pont-de-Chéruy = Pont de Chéruy
+				Pont-en-Royans = Pont en Royans
+				Saint-Marcellin = Saint Marcellin
+			Loire = 42
+				Feurs
+				Lorette
+				Roanne
+				Saint-Etienne = Saint Etienne  = St Etienne
+				Saint-Etienne-le-Molard = Saint Etienne le Molard
+			Rhône = 69
+				Beaujolais
+				Belleville-sur-Saône = Belleville sur Saône
+				Bron
+				Caluire-et-Cuire
+				Givors
+				Lyon
+				Neuville-sur-Saône = Neuville sur Saône
+				Saint-Genis-Laval = Saint Genis Laval
+				Saint-Georges-de-Reneins
+				Saint-Priest
+				Tarare
+				Villefranche-sur-Saône = Villefranche sur Saône
+				Villeurbanne
+			Savoie = 73
+				Aix-les-Bains
+				Albertville
+				Chambéry
+				Jarrier
+				Moutiers
+				Saint-Génix-sur-Guiers
+				Saint-Jean-d'Arves = Saint Jean d'Arves
+				Sainte-Hélène-sur-Isère
+				Séez
+				Termignon
+		Saint-Pierre-et-Miquelon
+	 Groenland
+	 Groënland
+	 Grèce = Ellas  = Hellada  = Hellas
+		Crète = Kriti
+			Héraklion
+		Epire
+		Gidol
+		Ile Chios = Chios
+		Ile de Ceos
+			Karthaia
+		Ile de Corfou = Corfou
+		Iles Egéennes = Nisoi Aiyaiou
+			Cyclades = Kyklades
+				Délos = Dilos
+				Keos = Kea
+				  - Ajia Irini = Ayia Irini
+				Mélos = Milo  = Milos
+				Naxos
+				Paros
+				Syros = Siros
+				Théra = Thira  = Santorin  = Santorini
+			Sporades
+				Cos = Kos
+				Rhodes = Rodos
+				Samos
+			Thrace = Thraki
+		Ionie
+		Macédoine = Makedonia
+		Péloponnèse = Peloponnisos
+			Achaïe
+				Patras
+			Arcadie = Arkadia
+				Lycosoura = Lycosura  = Lycossoura
+				Tégée = Alea  = Tegea
+			Argolide
+			Corinthe[Nome]
+				Corinthe = Korinthia  = Korinthos
+				Olympie = Olympia
+			Laconie = Lakonia
+			Mycènes
+			Sparte
+		Sterea Hellas Evoia = Stéréa Ellas Evvoia
+			Attique = Attike[Nome]  = Attiki
+				Athènes = Athenae  = Athinai  = Athéna
+			Béotie = Beotia  = Boiotia  = Voiotia
+				Tanagra
+				Thèbes de Béotie = Thebae  = Thebai  = Thiva  = Thivai
+			Eubée = Evvoias
+				Chalcis = Chalkis  = Khalkis
+				Erétrie = Eretria
+			Sounion
+				Mégare = Megara
+		Thessalie = Thessalia
+			Larissa
+	 Géorgie
+		Tbilissi
+	 Hongrie
+		Budapest
+	 Irlande = Eire
+		Dublin
+	 Islande
+	 Italie = Italia
+		Abruzzes
+			Castelli
+		Basilicate = Lucanie
+			Metaponte
+		Breuil-Cervinia
+		Calabre = Calabria
+			Locres = Hipponion  = Locri  = Locri Epizefiri  = Medma
+			Rhegium
+		Campanie = Campania
+			Cales
+			Capoue = Capua  = Casilinum
+			Capri
+			Castellamare di Stabia
+			Cumes = Cuma  = Cumae  = Kyme
+			Ischia
+			Naples = Napoli  = Neapel  = Neapolis
+			Nola
+			Paestum = Pesto  = Poseidonia
+			Pompéi = Pompeii
+			Salerne
+			Teano
+		Elée
+		Emilie = Emilia  = Emilia-Romagna  = Emilie Romagne
+			Bologne = Bologna
+			Faenza
+			Forli
+			Parme = Parma
+			Plaisance = Piacenza
+			Ravenne
+			Reggio nell' Emila
+		Isernia
+			Rocchetta-al-Volturno
+		Latium = Lazio
+			Albano
+			Borghetto
+			Castel Gandolfo
+			Cervara
+			Cerveteri = Caere
+			Civita Castellana
+			Civitella
+			Ferentino
+			Fiumicino
+			Gaète
+			Genzano di Roma
+			Grottaferrata
+			Palestrina = Praeneste  = Préneste
+			Rome = Roma
+			San Vito
+			Subiaco
+			Tarquinia = Corneto  = Corneto Tarquinia  = Tarquinies  = Tarquinii
+			Terracine = Terracina
+			Tivoli
+			Velletri
+			Viterbe
+			Vulci
+		Ligurie = Liguria
+			Albisola
+			Gênes
+			San Remo
+			Savone
+		Lombardie = Lombardia
+			Bergame
+			Brescia
+			Cento
+			Côme = Como
+			Ferrare
+			Gardone Val Trompia
+			Golasecca
+			Mantoue = Mantova
+			Milan
+			Pavie = Pavia
+		Marches = Marche
+			Ancône
+			Pesaro
+			Picenum = Ascoli Piceno  = Ascolum Picenum
+			Urbino = Urbin
+		Modena
+			Castelnuovo
+		Ombrie = Umbria
+			Assise
+			Deruta
+			Gubbio
+			Orvieto = Velsuna  = Volsinii Veteres
+			Pérouse
+			Spello
+			Spoleto
+		Piémont
+			Turin
+		Pouilles = Apulia  = Apulie  = Pouille  = Puglia
+			Brindisi
+			Canosa Di Puglia = Canosa  = Canusion  = Canusium
+			Gnathia = Egnatia  = Egnazia
+			Ruvo = Rubi  = Ruvo Di Puglia
+			Tarente = Taranto  = Tarentum
+		Sardaigne = Sardegna
+		Sicile = Sicilia
+			Agrigente = Agrigento  = Agrigentum  = Akragas  = Grigenti
+			Iles Eoliennes = Eolie  = Iles Eoliennes ou Lipari
+				Lipari = Lipara
+			Megara Hyblaea
+			Messine
+			Morgantina
+			Palerme
+			Syracuse = Siracuse
+			Taormina = Taormine
+		Toscane = Toscana
+			Arezzo
+			Carrare
+			Chiusi = Chamaras  = Clusium
+			Florence = Firenze
+			Livourne
+			Lucques
+			Montelupô
+			Pise
+			Prato
+			Reggello
+			Seravezza
+			Sienne
+			Volterra = Volaterrae
+		Trentin-Haut-Adige
+			Trente
+		Val d'Aoste
+			Aoste
+		Vénétie = Venetie Euganea  = Vénétie Euganéenne
+			Bassano del Grappa
+			Nove di Bassano
+			Padoue = Padova
+			Trieste
+			Trévise
+			Venise = Venezia
+			Vicence = Vicenza
+			Vérone
+	 Laponie
+	 Lettonie
+	 Lituanie
+	 Luxembourg
+		Tëtelbierg
+		Wiltz
+	 Malte
+	 Monaco = Principauté de Monaco
+	 Monténégro
+	 Pays-Bas = Hollande  = Pays Bas
+		Amsterdam
+		Bois-le-Duc = Bois le Duc
+		Delft
+		Gueldre
+		Haarlem
+		Leyde
+		Maastricht
+		Makkum
+		Utrecht
+		Zaandam
+	 Pologne
+		Haute-Silésie
+		Radom
+		Silésie 2
+			Proskau
+		Varsovie
+	 Portugal
+		Braga
+		Lisbonne
+		Madère = Ile de Madère
+		Porto
+	 Roumanie
+		Dobroudgea
+		Tulcea
+	 Royaume Uni = Royaume-Uni  = United Kingdom
+		Grande-Bretagne
+			Angleterre
+				Battersea
+				Birmingham
+				Blackburn
+				Bradford
+				Brighton
+				Burton-on-Trent
+				Canterbury = Cantorbéry
+				Caughley
+				Chelmsford
+				Chester
+				Chislehurst
+				Cornouailles
+				  - Saint-Ives
+				Coventry
+				Etruria
+				Folkestone
+				Greenwich
+				Lane End
+				Leeds
+				Liverpool
+				Londres
+				Morpeth
+				Nottingham
+				Oxford
+				Plymouth
+				Ramsgate
+				Saint Albans
+				Salisbury
+				Sheffield
+				Smethwick
+				Staffordshire
+				Stonehouse
+				Twickenham
+				York
+			Ecosse = Scotland
+				Aberdeen
+				Whiltshire
+			Ile de Guernesey = Guernesey
+			Ile de Jersey = Jersey
+			Irlande du Nord
+			Pays de Galles
+	 Russie
+		Belixa
+		Borisovka
+		Caucase
+		Koursk
+		Moscou
+		Saint-Pétersbourg = Léningrad
+		Tula
+	 Scandinavie
+		Danemark
+			Copenhague
+		Norvège
+		Suède
+			Carl
+			Stockholm
+	 Serbie
+	 Slovaquie
+	 Suisse
+		Appenzell
+		Arbon
+		Arenenberg
+		Berne
+		Bienne
+		Bâle
+		Coppet
+		Delémont
+		Genève
+		La Chaux-de-Fonds = La Chaux de Fonds
+		Lausanne
+		Le Locle
+		Lengnau
+		Lucerne
+		Lugano
+		Montreux
+		Neuchâtel
+		Neuhausen-am-Rheinfall
+		Oberland
+			Oberland bernois
+		Rheinthal
+		Schaffhouse
+		Thurgau
+		Tour-de-Peilz
+		Valais
+		Vallée de Joux
+		Vevey
+		Zoffingen
+		Zürich
+	 Tchécoslovaquie = République Tchèque
+		Bohême
+		Ezerland
+		Karlsbad
+		Prague
+		Zwodau
+	 Ukraine
+		Crimée
+		Kiev
+	 Vatican
+	 Yougoslavie
+		Croatie
+			Sisak
+			Spalato
+		Dalmatie
+		Frusko-Gora
+		Galicnik
+		Kosmet
+		Metohija
+		Nemenikuce
+		Prizren
+		Sumadija
+		Vojvodina
+Océanie
+	 Australie
+		Iles du détroit de Torres
+	 Micronésie
+		Iles Belau = Iles Palau
+		Iles Carolines
+		Iles Gilbert = Iles Kiribati  = Kiribati
+	 Mélanésie
+		Iles Salomon
+			Iles Santa-Cruz = Iles Santa Cruz
+		Nouvelle-Calédonie = Nouvelle Calédonie
+			Ile des Pins
+				Vao
+			Iles Loyauté = Loyauté Iles
+			Nouméa
+		Nouvelle-Guinée = Nouvelle Guinée
+			Irian Jaya
+				Hitadipa
+				Jiwika
+			Papouasie-Nouvelle-Guinée = Papouasie Nouvelle Guinée
+				Iles Trobriand
+				Moyen Sepik
+				Région Massim
+				archipel Bismarck
+				  - Ile de l'Amirauté
+				  - Nouvelle-Bretagne = Nouvelle Bretagne
+					  - Péninsule de la Gazelle
+				  - Nouvelle-Irlande = Nouvelle Irlande
+		archipel de Vanuatu = Nouvelles Hébrides  = Nouvelles-Hébrides
+			Anatom
+			Ile Efate = Efate
+				Port-Vila
+			Ile d'Ambrym
+			Ile de Malekula = Mallicolo
+				Nordsup
+			Ile de Santo = Espiritu Santo
+			Tanna
+				Lenakel
+	 Polynésie
+		Ile de Pâques = Rapa Nui  = Rapa-Nui
+		Iles Cook
+			Ile Aitutaki
+			Ile Mitiaro
+			Ile Rarotonga
+		Iles Fidji
+		Iles Hawaii
+		Iles Samoa
+		Iles Tonga = Iles des Amis
+		Iles de Wallis-et-Futuna = Wallis-et-Futuna
+			Ile d'Alofi
+			Iles Futuna
+		Nouvelle-Zélande = Nouvelle Zélande  = Aotearoa
+			Ile Ika-na-naoui = Ile Ika na Naoui
+		Polynésie française
+			Iles Australes = archipel des Australes
+				Ile Rurutu
+				Iles des Tubuaï
+			Iles Gambier = archipel des Gambier
+				Ile de Mangareva
+			Iles Marquises = archipel des Marquises
+				Ile de Fatu-Hiva = Ile de Fatu Hiva
+				Ile de Hiva-Oa = Ile de Hiva Oa
+				  - Atuana = Atuona
+				Ile de Nuku-Hiva = Ile de Nuku Hiva
+			Iles de la Société = archipel de la Société
+				Ile de Tahiti = Tahiti
+				  - Faatautia
+				  - Hamuta
+			Iles des Tuamotu = archipel des Tuamotu
+
+affixe
+	 ?
+	 central = centrale
+	 environs
+	 environs de
+	 lieu d'expédition
+	 lieu d'impression
+	 lieu d'impression des textes
+	 lieu d'utilisation
+	 lieu d'édition
+	 lieu d'édition du bois
+	 lieu de commande
+	 lieu de création = lieu d'exécution
+		lieu d'exécution du décor
+	 lieu de destination
+	 lieu de diffusion
+	 lieu de fabrication
+	 lieu de prise de vue
+	 lieu de provenance
+	 méridional = méridionale  = sud
+	 occidental = occidentale  = ouest
+	 oriental = est  = orientale
+	 près de
+	 royaume du
+	 région = région de  = région du
+	 septentrional = nord  = septentrionale
