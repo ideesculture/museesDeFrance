@@ -7,7 +7,7 @@
 #
 # Hôte: 127.0.0.1 (MySQL 5.6.24)
 # Base de données: inventaire_annonay
-# Temps de génération: 2015-08-08 13:01:43 +0000
+# Temps de génération: 2015-08-13 05:58:51 +0000
 # ************************************************************
 
 
@@ -61,11 +61,11 @@ CREATE TABLE `inventaire_depot` (
 
 CREATE TABLE `inventaire_depot_photo` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `depot_id` int(11) NOT NULL,
+  `record_id` int(11) NOT NULL,
   `credits` text NOT NULL,
   `file` text NOT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `inventaire_id` (`depot_id`)
+  UNIQUE KEY `inventaire_id` (`record_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
@@ -111,11 +111,11 @@ CREATE TABLE `inventaire_inventaire` (
 
 CREATE TABLE `inventaire_inventaire_photo` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `inventaire_id` int(11) NOT NULL,
-  `credits` text NOT NULL,
+  `record_id` int(11) NOT NULL,
+  `credits` text,
   `file` text NOT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `inventaire_id` (`inventaire_id`)
+  UNIQUE KEY `inventaire_id` (`record_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
