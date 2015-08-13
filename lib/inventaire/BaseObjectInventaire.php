@@ -78,7 +78,9 @@ class BaseObjectInventaire implements InterfaceInventaire {
      * @return bool true (object exists in the DB), false (object doesn't exist)
      */
     private function _exists() {
+        if(!isset($this->id)) return false;
         $qr_res = $this->opo_db->query("SELECT id FROM ".$this->tablename." WHERE id=".$this->id);
+
         if ($qr_res->numRows() > 0) {
             return true;
         } else {
@@ -94,6 +96,7 @@ class BaseObjectInventaire implements InterfaceInventaire {
     private function _load() {
         $num=$this->{$this->numtype};
         $qr_res = $this->opo_db->query("SELECT * FROM ".$this->tablename." WHERE ".$this->numtype." = ? LIMIT 1",$num);
+        //var_dump($vs_request);die();
         if ($qr_res->numRows() > 0) {
             $qr_res->nextRow();
             $va_row = $qr_res->getRow();
@@ -113,6 +116,8 @@ class BaseObjectInventaire implements InterfaceInventaire {
     private function _loadFile() {
         if(!$this->id) return false;
         $vs_request="SELECT file FROM ".$this->tablename."_photo WHERE record_id=".$this->id;
+        //var_dump($vs_request);die();
+
         $qr_res = $this->opo_db->query($vs_request);
         if ($qr_res->numRows() == 1) {
             $qr_res->nextRow();
@@ -130,7 +135,8 @@ class BaseObjectInventaire implements InterfaceInventaire {
      */
     public function loadByCaID($vn_object_id) {
         if(!$vn_object_id) return false;
-        $qr_res = $this->opo_db->query("SELECT * FROM ".$this->tablename." WHERE ca_id = ? LIMIT 1",$vn_object_id);
+        $vs_request = "SELECT * FROM ".$this->tablename." WHERE ca_id = ".$vn_object_id." LIMIT 1";
+        $qr_res = $this->opo_db->query($vs_request);
         if ($qr_res->numRows() > 0) {
             $qr_res->nextRow();
             $va_row = $qr_res->getRow();
@@ -183,8 +189,8 @@ class BaseObjectInventaire implements InterfaceInventaire {
                     if ($values["prefixe"]) {
                         $tempstring .= $values["prefixe"];
                     }
-                    $tempstring .= $pt_object->get($values["field"]);
-
+                    $tempstring .= $pt_object->get($values["field"], array("convertCodesToDisplayText"=>true));
+                    //var_dump($pt_object->get($values["field"], array("convertCodesToDisplayText"=>true)));
                     if ($values["suffixe"]) {
                         $tempstring .= $values["suffixe"];
                     }
@@ -197,6 +203,7 @@ class BaseObjectInventaire implements InterfaceInventaire {
 
     function save() {
         foreach($this->fields as $vs_field) {
+            if ($vs_field == "validated") continue;
             if (property_exists(get_class($this),$vs_field)) {
                 $va_fields[] = $vs_field;
                 $va_values[] = $this->get($vs_field);
@@ -205,7 +212,10 @@ class BaseObjectInventaire implements InterfaceInventaire {
         if (!$this->_exists()) {
             // object doesn't exist, insert
             $vs_request = "INSERT INTO ".$this->tablename." (".implode(", ",$va_fields).") VALUES  (\"".implode("\", \"",$va_values)."\")";
+            //var_dump($vs_request);die();
             $this->opo_db->query($vs_request);
+            $this->loadByCaID($this->ca_id);
+            return $this->id;
         } else {
             // object exists, update
             $vs_request = "UPDATE ".$this->tablename." SET ";
@@ -215,8 +225,8 @@ class BaseObjectInventaire implements InterfaceInventaire {
             // trick : reuse the $i loop var to finish the request without a trailing comma
             $vs_request .= "validated=\"".$this->validated."\"";
             $vs_request .= " WHERE id=".$this->id;
-            //var_dump($vs_request);die();
             $this->opo_db->query($vs_request);
+            return $this->id;
         }
     }
 
@@ -237,6 +247,8 @@ class BaseObjectInventaire implements InterfaceInventaire {
         }
         $file = basename($media["paths"]["large"]);
         $vs_request = "REPLACE INTO ".$this->tablename."_photo (record_id,file) VALUES (".$this->id.",\"".$file."\")";
+        //var_dump($vs_request);die();
+
         $this->opo_db->query($vs_request);
         $return["file"] = $file;
         return $return;
@@ -245,6 +257,8 @@ class BaseObjectInventaire implements InterfaceInventaire {
     function delete() {
         if ($this->validated == true) { return false; }
         $vs_request = "DELETE FROM ".$this->tablename." WHERE id=".$this->get("id");
+        //var_dump($vs_request);die();
+
         $this->opo_db->query($vs_request);
         return true;
     }
