@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="profile.xsd" useForConfiguration="1" base="base" infoUrl="">
-  <profileName>Joconde (y compris thésaurus) - EAD/ISAD-G - documentation</profileName>
+  <profileName>Joconde (sans valeurs de liste dans thésaurus) - EAD/ISAD-G - documentation</profileName>
   <profileDescription>Profil créé le 8 juin 2015 à 11:30:16 par Gautier Michelin</profileDescription>
   <locales>
     <locale lang="en" country="US">English</locale>
@@ -3900,9 +3900,9 @@
               <name_plural>rôle</name_plural>
             </label>
           </labels>
-          
+
         </item>
-        
+
       </items>
     </list>
     <list code="dmf_lexdecv" hierarchical="1" system="0" vocabulary="1">
@@ -3919,7 +3919,7 @@
               <name_plural>méthode de collecte</name_plural>
             </label>
           </labels>
-          
+
         </item>
       </items>
     </list>
@@ -3963,9 +3963,9 @@
                 </label>
               </labels>
             </item>
-            
-            
-            
+
+
+
           </items>
         </item>
       </items>
@@ -4037,7 +4037,7 @@
           </labels>
         </item>
         </items>
-      
+
     </list>
     <list code="dmf_lexinsc" hierarchical="1" system="0" vocabulary="1">
       <labels>
@@ -4107,10 +4107,10 @@
               <name_plural>thèmes</name_plural>
             </label>
           </labels>
-          
+
         </item>
         </items>
-    
+
     </list>
     <list code="dmf_lexsite" hierarchical="1" system="0" vocabulary="1">
       <labels>
@@ -4128,7 +4128,7 @@
           </labels>
         </item>
         </items>
-      
+
     </list>
     <list code="dmf_lexsrep" hierarchical="1" system="0" vocabulary="1">
       <labels>
@@ -4163,7 +4163,7 @@
           </labels>
         </item>
         </items>
-      
+
     </list>
     <list code="dmf_lextech" hierarchical="1" system="0" vocabulary="1">
       <labels>
