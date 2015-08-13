@@ -24,9 +24,9 @@ require_once(__CA_MODELS_DIR__."/ca_locales.php");
 require_once(__CA_MODELS_DIR__."/ca_collections.php");
 require_once(__CA_LIB_DIR__.'/core/Parsers/DelimitedDataParser.php');
 
+require_once(__CA_APP_DIR__."/helpers/utilityHelpers.php");
+
 require_once(__CA_BASE_DIR__.'/app/plugins/museesDeFrance/lib/migration_functionlib.php');
-
-
 
 class InstallProfileThesaurusController extends ActionController
 {
@@ -58,6 +58,8 @@ class InstallProfileThesaurusController extends ActionController
      * Fonction de traitement des fichiers de liste
      ****************************************************************/
     public function traiteFichierDMF($t_filename,$t_idno_prefix,$t_list_description,$nb_lignes_vides=0,$ligne_limite=0) {
+        $thescode = str_replace("lex","",$t_idno_prefix);
+
         global $pn_locale_id, $VERBOSE, $DEBUG;
 
         $t_locale = new ca_locales();
@@ -92,9 +94,32 @@ class InstallProfileThesaurusController extends ActionController
             $data="";
             $parent_selected=0;
 
+            // Tableau pour conserver une trace des codes identiques et suffixer par un nombre : domn_amerique3 par exemple
+            $code_counter = array();
+            setlocale(LC_CTYPE, 'en_US');
+
             while (($data = fgets($handle)) !== FALSE) {
                 $libelle = str_replace("\t", "", $data);
-                $libelle = str_replace("\r\n", "", $libelle);
+                $libelle = str_replace("\n", "", $libelle);
+                $libelle = str_replace("\r", "", $libelle);
+
+                //$encoded_libelle = str_replace(' ', '', iconv('UTF-8', 'ASCII//TRANSLIT', $libelle));
+
+                # to keep letters & numbers
+                $encoded_libelle = caRemoveAccents($libelle);
+                $encoded_libelle=preg_replace('/[^a-z\d]+/i', '_', $encoded_libelle);
+
+                //var_dump($encoded_libelle);die();
+                if (strlen($encoded_libelle) <= 15 ) {
+                    $identifier = $thescode."_".$encoded_libelle;
+                } else {
+                    $encoded_libelle = substr($encoded_libelle,0,15);
+                    if (!isset($code_counter[$encoded_libelle])) {
+                        $code_counter[$encoded_libelle]=1;
+                    }
+                    $identifier = $thescode."_".$encoded_libelle.$code_counter[$encoded_libelle];
+                    $code_counter[$encoded_libelle]++;
+                }
 
                 // comptage du nb de tabulation pour connaître le terme parent
                 $nb_tab = substr_count($data,"\t");
@@ -130,11 +155,8 @@ class InstallProfileThesaurusController extends ActionController
                         $parent_selected=0;
                     }
 
-                    // débuggage
-                    if ($DEBUG) print "(".$parent_selected.") ".$nb_tab." ".$libelle;
-
                     // insertion dans la liste
-                    if ($vn_item_id=getItemID($t_list,$vn_list_id,$vn_list_item_type_concept,$t_idno_prefix."_".($row-$nb_lignes_vides),$libelle,"",1,0, $parent_selected, null, $explode_separator_array )) {
+                    if ($vn_item_id=getItemID($t_list,$vn_list_id,$vn_list_item_type_concept,$identifier,$libelle,"",1,0, $parent_selected, $row - $nb_lignes_vides, $explode_separator_array )) {
                         //if ($VERBOSE) print "LIST ITEM CREATED : ".$libelle."";
                     } else {
                         //print ",\n{ 'LIST ITEM CREATION FAILED' : '".$libelle."'}";
