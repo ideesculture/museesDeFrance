@@ -115,13 +115,7 @@ foreach($vt_registre->getObjects() as $vt_object) {
         <?php print caNavButton($this->request,__CA_NAV_BUTTON_PDF__,"Générer le PDF","", $this->request->getModulePath(), $this->request->getController(), 'GeneratePDF'); ?>
     </div>
     <div class="control-box-right-content">
-        <a class='form-button'>
-            <span class='form-button'>
-                <img src='/themes/default/graphics/buttons/glyphicons_138_picture.png' border='0' class='form-button-left'
-                     style='padding-right: 10px' align='middle'/>
-                Afficher les photos
-            </span>
-        </a>
+        <?php print caNavButton($this->request,__CA_NAV_BUTTON_IMAGE__,"Afficher les photos","", $this->request->getModulePath(), $this->request->getController(), 'Photos'); ?>
     </div>
     <div class="control-box-middle-content">
     </div>
