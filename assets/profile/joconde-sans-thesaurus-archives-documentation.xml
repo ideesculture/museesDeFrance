@@ -23,7 +23,7 @@
           <name>List item types</name>
         </label>
         <label locale="fr_FR">
-          <name>Lister les types d item</name>
+          <name>Lister les types d’item</name>
         </label>
       </labels>
       <items>
@@ -187,7 +187,7 @@
           <name>Set types</name>
         </label>
         <label locale="fr_FR">
-          <name>Types d ensembles</name>
+          <name>Types d’ensembles</name>
         </label>
       </labels>
       <items>
@@ -383,7 +383,7 @@
           <name>Object Types</name>
         </label>
         <label locale="fr_FR">
-          <name>Types d objets</name>
+          <name>Types d’objets</name>
         </label>
       </labels>
       <items>
@@ -721,7 +721,7 @@
           <name>Object Source</name>
         </label>
         <label locale="fr_FR">
-          <name>Sources d objet</name>
+          <name>Sources d’objet</name>
         </label>
       </labels>
       <items>
@@ -757,7 +757,7 @@
           <name>Object statuses</name>
         </label>
         <label locale="fr_FR">
-          <name>Status d objets</name>
+          <name>Status d’objets</name>
         </label>
       </labels>
       <items>
@@ -866,7 +866,7 @@
           <name>Object acquisition types</name>
         </label>
         <label locale="fr_FR">
-          <name>Type d acquisitions d objets</name>
+          <name>Type d’acquisitions d’objets</name>
         </label>
       </labels>
       <items>
@@ -978,7 +978,7 @@
           <name>Object label types</name>
         </label>
         <label locale="fr_FR">
-          <name>Types de libellés d objet</name>
+          <name>Types de libellés d’objet</name>
         </label>
       </labels>
       <items>
@@ -1150,7 +1150,7 @@
           <name>Object access statuses</name>
         </label>
         <label locale="fr_FR">
-          <name>Statuts d accès des objets</name>
+          <name>Statuts d’accès des objets</name>
         </label>
       </labels>
       <items>
@@ -1214,7 +1214,7 @@
           <name>Object lot types</name>
         </label>
         <label locale="fr_FR">
-          <name>Types de lots d objets</name>
+          <name>Types de lots d’objets</name>
         </label>
       </labels>
     </list>
@@ -1234,7 +1234,7 @@
           <name>Object lot statuses</name>
         </label>
         <label locale="fr_FR">
-          <name>Statuts de lots d objets</name>
+          <name>Statuts de lots d’objets</name>
         </label>
       </labels>
       <items>
@@ -1326,7 +1326,7 @@
           <name>Object lot label type values</name>
         </label>
         <label locale="fr_FR">
-          <name>Valeurs de type de libellés pour les lots d objets</name>
+          <name>Valeurs de type de libellés pour les lots d’objets</name>
         </label>
       </labels>
       <items>
@@ -1482,7 +1482,7 @@
           <name>Entity types</name>
         </label>
         <label locale="fr_FR">
-          <name>Types d entités</name>
+          <name>Types d’entités</name>
         </label>
       </labels>
       <items>
@@ -1530,7 +1530,7 @@
           <name>Entity sources</name>
         </label>
         <label locale="fr_FR">
-          <name>Sources d entités</name>
+          <name>Sources d’entités</name>
         </label>
       </labels>
       <items>
@@ -1562,7 +1562,7 @@
           <name>Entity label types</name>
         </label>
         <label locale="fr_FR">
-          <name>Types de libellés d entité</name>
+          <name>Types de libellés d’entité</name>
         </label>
       </labels>
       <items>
@@ -1874,7 +1874,7 @@
           <name>Occurrence types</name>
         </label>
         <label locale="fr_FR">
-          <name>Types d occurences</name>
+          <name>Types d’occurences</name>
         </label>
       </labels>
       <items>
@@ -2016,7 +2016,7 @@
           <name>Occurrence label types</name>
         </label>
         <label locale="fr_FR">
-          <name>Types de libellés d occurences</name>
+          <name>Types de libellés d’occurences</name>
         </label>
       </labels>
       <items>
@@ -2236,7 +2236,7 @@
           <name>Storage location types</name>
         </label>
         <label locale="fr_FR">
-          <name>Types d emplacement de stockage</name>
+          <name>Types d’emplacement de stockage</name>
         </label>
       </labels>
       <items>
@@ -2398,7 +2398,7 @@
           <name>Storage location label type values</name>
         </label>
         <label locale="fr_FR">
-          <name>Valeurs de types de libellé d emplacements de stockage</name>
+          <name>Valeurs de types de libellé d’emplacements de stockage</name>
         </label>
       </labels>
       <items>
@@ -2450,7 +2450,7 @@
           <name>Object representation types</name>
         </label>
         <label locale="fr_FR">
-          <name>Types de représentation d objet</name>
+          <name>Types de représentation d’objet</name>
         </label>
       </labels>
       <items>
@@ -2620,7 +2620,7 @@
           <name>Access category</name>
         </label>
         <label locale="fr_FR">
-          <name>Catégorie d accès</name>
+          <name>Catégorie d’accès</name>
         </label>
       </labels>
       <items>
@@ -2692,7 +2692,7 @@
           <name>address types</name>
         </label>
         <label locale="fr_FR">
-          <name>types d adresses</name>
+          <name>types d’adresses</name>
         </label>
       </labels>
       <items>
@@ -2752,7 +2752,7 @@
           <name>Assessment method types</name>
         </label>
         <label locale="fr_FR">
-          <name>Types de méthode d évaluation</name>
+          <name>Types de méthode d’évaluation</name>
         </label>
       </labels>
       <items>
@@ -2812,7 +2812,7 @@
           <name>Assessment reason types</name>
         </label>
         <label locale="fr_FR">
-          <name>Types de raison d évaluation</name>
+          <name>Types de raison d’évaluation</name>
         </label>
       </labels>
       <items>
@@ -2872,7 +2872,7 @@
           <name>Audience types</name>
         </label>
         <label locale="fr_FR">
-          <name>Types d audience</name>
+          <name>Types d’audience</name>
         </label>
       </labels>
       <items>
@@ -3088,7 +3088,7 @@
           <name>Audit method types</name>
         </label>
         <label locale="fr_FR">
-          <name>Types de méthodes d audit</name>
+          <name>Types de méthodes d’audit</name>
         </label>
       </labels>
       <items>
@@ -3148,7 +3148,7 @@
           <name>Audit types</name>
         </label>
         <label locale="fr_FR">
-          <name>Types d audit</name>
+          <name>Types d’audit</name>
         </label>
       </labels>
       <items>
@@ -3351,7 +3351,7 @@
           <name>Content   event type</name>
         </label>
         <label locale="fr_FR">
-          <name>Contenu   type d événement</name>
+          <name>Contenu   type d’événement</name>
         </label>
       </labels>
       <items>
@@ -3411,7 +3411,7 @@
           <name>Content   object type</name>
         </label>
         <label locale="fr_FR">
-          <name>Contenu   type d objet</name>
+          <name>Contenu   type d’objet</name>
         </label>
       </labels>
       <items>
@@ -3531,7 +3531,7 @@
           <name>date association types</name>
         </label>
         <label locale="fr_FR">
-          <name>Types d association de dates</name>
+          <name>Types d’association de dates</name>
         </label>
       </labels>
       <items>
@@ -3892,312 +3892,111 @@
           <name>DMF   Liste des rôles des auteurs exécutants</name>
         </label>
       </labels>
-      <items>
-        <item idno="lexautrole_2" enabled="1" default="0">
-          <labels>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>rôle</name_singular>
-              <name_plural>rôle</name_plural>
-            </label>
-          </labels>
-
-        </item>
-
-      </items>
     </list>
-    <list code="dmf_lexdecv" hierarchical="1" system="0" vocabulary="1">
+    <list code="dmf_lexdecv" hierarchical="1" system="0" vocabulary="1" defaultSort="1">
       <labels>
         <label locale="fr_FR">
           <name>DMF   Liste des méthodes de collecte</name>
         </label>
       </labels>
-      <items>
-        <item idno="lexdecv_2" enabled="1" default="0">
-          <labels>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>méthode de collecte</name_singular>
-              <name_plural>méthode de collecte</name_plural>
-            </label>
-          </labels>
-
-        </item>
-      </items>
     </list>
-    <list code="dmf_lexdeno" hierarchical="1" system="0" vocabulary="1">
+    <list code="dmf_lexdeno" hierarchical="1" system="0" vocabulary="1" defaultSort="1">
       <labels>
         <label locale="fr_FR">
           <name>DMF   Liste des dénominations</name>
         </label>
       </labels>
-       <items>
-        <item idno="lexdeno_2" enabled="1" default="0">
-          <labels>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>abaisse-langue</name_singular>
-              <name_plural>abaisse-langue</name_plural>
-            </label>
-          </labels>
-        </item>
-        </items>
     </list>
-    <list code="dmf_lexdomn" hierarchical="1" system="0" vocabulary="1">
+    <list code="dmf_lexdomn" hierarchical="1" system="0" vocabulary="1" defaultSort="1">
       <labels>
         <label locale="fr_FR">
           <name>DMF   Liste des domaines</name>
         </label>
       </labels>
-      <items>
-        <item idno="lexdomn_2" enabled="1" default="0">
-          <labels>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>I. domaine par support de conservation</name_singular>
-              <name_plural>I. domaine par support de conservation</name_plural>
-            </label>
-          </labels>
-          <items>
-            <item idno="lexdomn_3" enabled="1" default="0">
-              <labels>
-                <label locale="fr_FR" preferred="1">
-                  <name_singular>art mobilier</name_singular>
-                  <name_plural>art mobilier</name_plural>
-                </label>
-              </labels>
-            </item>
-
-
-
-          </items>
-        </item>
-      </items>
     </list>
-    <list code="dmf_lexecol" hierarchical="1" system="0" vocabulary="1">
+    <list code="dmf_lexecol" hierarchical="1" system="0" vocabulary="1" defaultSort="1">
       <labels>
         <label locale="fr_FR">
           <name>DMF   Liste des écoles</name>
         </label>
       </labels>
-            <items>
-        <item idno="lexecol_2" enabled="1" default="0">
-          <labels>
-            <label locale="fr_FR" preferred="0">
-              <name_singular>africaine</name_singular>
-              <name_plural>africaine</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>Afrique</name_singular>
-              <name_plural>Afrique</name_plural>
-            </label>
-          </labels>
-        </item>
-        </items>
     </list>
-    <list code="dmf_lexepoq" hierarchical="1" system="0" vocabulary="1">
+    <list code="dmf_lexepoq" hierarchical="1" system="0" vocabulary="1" defaultSort="1">
       <labels>
         <label locale="fr_FR">
           <name>DMF   Liste des époques   styles</name>
         </label>
       </labels>
-            <items>
-        <item idno="lexepoq_2" enabled="1" default="0">
-          <labels>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>époque</name_singular>
-              <name_plural>époque</name_plural>
-            </label>
-          </labels>
-          <items>
-            <item idno="lexepoq_3" enabled="1" default="0">
-              <labels>
-                <label locale="fr_FR" preferred="1">
-                  <name_singular>préhistoire Europe occidentale
-</name_singular>
-                  <name_plural>préhistoire Europe occidentale
-</name_plural>
-                </label>
-              </labels>
-              </item>
-          </items>
-        </item>
-        </items>
-
     </list>
-    <list code="dmf_lexgene" hierarchical="1" system="0" vocabulary="1">
+    <list code="dmf_lexgene" hierarchical="1" system="0" vocabulary="1" defaultSort="1">
       <labels>
         <label locale="fr_FR">
           <name>DMF   Liste des stades de création  genèse des oeuvres</name>
         </label>
       </labels>
-      <items>
-        <item idno="lexgene_2" enabled="1" default="0">
-          <labels>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>contexte de création</name_singular>
-              <name_plural>contexte de création</name_plural>
-            </label>
-          </labels>
-        </item>
-        </items>
-
     </list>
-    <list code="dmf_lexinsc" hierarchical="1" system="0" vocabulary="1">
+    <list code="dmf_lexinsc" hierarchical="1" system="0" vocabulary="1" defaultSort="1">
       <labels>
         <label locale="fr_FR">
-          <name>DMF   Liste des types d inscriptions</name>
+          <name>DMF   Liste des types d’inscriptions</name>
         </label>
       </labels>
-      <items>
-        <item idno="lexinsc_2" enabled="1" default="0">
-          <labels>
-            <label locale="fr_FR" preferred="0">
-              <name_singular>daté</name_singular>
-              <name_plural>daté</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>date</name_singular>
-              <name_plural>date</name_plural>
-            </label>
-          </labels>
-        </item>
-        </items>
     </list>
-    <list code="dmf_lexmateriaux" hierarchical="1" system="0" vocabulary="1">
+    <list code="dmf_lexmateriaux" hierarchical="1" system="0" vocabulary="1" defaultSort="1">
       <labels>
         <label locale="fr_FR">
           <name>DMF   Liste des matériaux</name>
         </label>
       </labels>
-            <items>
-        <item idno="lexmateriaux_2" enabled="1" default="0">
-          <labels>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>matériau d'origine animale</name_singular>
-              <name_plural>matériau d'origine animale</name_plural>
-            </label>
-          </labels>
-        </item>
-        </items>
     </list>
-    <list code="dmf_lexperi" hierarchical="1" system="0" vocabulary="1">
+    <list code="dmf_lexperi" hierarchical="1" system="0" vocabulary="1" defaultSort="1">
       <labels>
         <label locale="fr_FR">
-          <name>DMF   Liste des datations en siècle ou millénaire  périodes de création  d exécution et d utilisation</name>
+          <name>DMF   Liste des datations en siècle ou millénaire  périodes de création  d’exécution et d’utilisation</name>
         </label>
       </labels>
-      <items>
-        <item idno="lexperi_2" enabled="1" default="0">
-          <labels>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>35e millénaire av JC</name_singular>
-              <name_plural>35e millénaire av JC</name_plural>
-            </label>
-          </labels>
-        </item></items>
     </list>
-    <list code="dmf_lexrepr" hierarchical="1" system="0" vocabulary="1">
+    <list code="dmf_lexrepr" hierarchical="1" system="0" vocabulary="1" defaultSort="1">
       <labels>
         <label locale="fr_FR">
           <name>DMF   Liste des sujets représentés</name>
         </label>
       </labels>
-            <items>
-        <item idno="lexrepr_3" enabled="1" default="0">
-          <labels>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>thèmes</name_singular>
-              <name_plural>thèmes</name_plural>
-            </label>
-          </labels>
-
-        </item>
-        </items>
-
     </list>
-    <list code="dmf_lexsite" hierarchical="1" system="0" vocabulary="1">
+    <list code="dmf_lexsite" hierarchical="1" system="0" vocabulary="1" defaultSort="1">
       <labels>
         <label locale="fr_FR">
           <name>DMF   Liste des méthodes de types de sites et lieux géographiques de découverte</name>
         </label>
       </labels>
-            <items>
-        <item idno="lexsite_2" enabled="1" default="0">
-          <labels>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>type de site</name_singular>
-              <name_plural>type de site</name_plural>
-            </label>
-          </labels>
-        </item>
-        </items>
-
     </list>
-    <list code="dmf_lexsrep" hierarchical="1" system="0" vocabulary="1">
+    <list code="dmf_lexsrep" hierarchical="1" system="0" vocabulary="1" defaultSort="1">
       <labels>
         <label locale="fr_FR">
           <name>DMF   Liste des sources de la représentation</name>
         </label>
       </labels>
-      <items>
-        <item idno="lexsrep_01" enabled="1" default="0">
-          <labels>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>--</name_singular>
-              <name_plural>--</name_plural>
-            </label>
-          </labels>
-        </item>
-        </items>
     </list>
-    <list code="dmf_lexstat" hierarchical="1" system="0" vocabulary="1">
+    <list code="dmf_lexstat" hierarchical="1" system="0" vocabulary="1" defaultSort="1">
       <labels>
         <label locale="fr_FR">
           <name>DMF   Liste des termes autorisés du statut juridique de l objet</name>
         </label>
       </labels>
-            <items>
-        <item idno="lexstat_2" enabled="1" default="0">
-          <labels>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>statut juridique</name_singular>
-              <name_plural>statut juridique</name_plural>
-            </label>
-          </labels>
-        </item>
-        </items>
-
     </list>
-    <list code="dmf_lextech" hierarchical="1" system="0" vocabulary="1">
+    <list code="dmf_lextech" hierarchical="1" system="0" vocabulary="1" defaultSort="1">
       <labels>
         <label locale="fr_FR">
           <name>DMF   Liste des techniques</name>
         </label>
       </labels>
-            <items>
-        <item idno="lextech_2" enabled="1" default="0">
-          <labels>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>technique bois_ivoire</name_singular>
-              <name_plural>technique bois_ivoire</name_plural>
-            </label>
-          </labels>
-          </item>
-        </items>
     </list>
-    <list code="dmf_lexutil" hierarchical="1" system="0" vocabulary="1">
+    <list code="dmf_lexutil" hierarchical="1" system="0" vocabulary="1" defaultSort="1">
       <labels>
         <label locale="fr_FR">
           <name>DMF   Liste des utilisations   destinations</name>
         </label>
       </labels>
-       <items>
-        <item idno="lexutil_2" enabled="1" default="0">
-          <labels>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>abattage des animaux</name_singular>
-              <name_plural>abattage des animaux</name_plural>
-            </label>
-          </labels>
-        </item>
-        </items>
     </list>
     <list code="entry_method_types" hierarchical="0" system="0" vocabulary="0">
       <labels>
@@ -4205,7 +4004,7 @@
           <name>Entry method types</name>
         </label>
         <label locale="fr_FR">
-          <name>Types de méthodes d entrée</name>
+          <name>Types de méthodes d’entrée</name>
         </label>
       </labels>
       <items>
@@ -4265,7 +4064,7 @@
           <name>Entry reason types</name>
         </label>
         <label locale="fr_FR">
-          <name>Types de raison d entrée</name>
+          <name>Types de raison d’entrée</name>
         </label>
       </labels>
       <items>
@@ -4499,7 +4298,7 @@
     <list code="inscriptions" hierarchical="0" system="0" vocabulary="0">
       <labels>
         <label locale="fr_FR">
-          <name>Présence d inscriptions</name>
+          <name>Présence d’inscriptions</name>
         </label>
       </labels>
       <items>
@@ -4524,7 +4323,7 @@
     <list code="joconde_etat" hierarchical="1" system="0" vocabulary="1">
       <labels>
         <label locale="fr_FR">
-          <name>Liste des défauts d intégrité</name>
+          <name>Liste des défauts d’intégrité</name>
         </label>
       </labels>
       <items>
@@ -4960,7 +4759,7 @@
           <name>Loaned object status types</name>
         </label>
         <label locale="fr_FR">
-          <name>Types de statut d objets prêtés</name>
+          <name>Types de statut d’objets prêtés</name>
         </label>
       </labels>
       <items>
@@ -5032,7 +4831,7 @@
           <name>Location  types</name>
         </label>
         <label locale="fr_FR">
-          <name>Types d emplacement</name>
+          <name>Types d’emplacement</name>
         </label>
       </labels>
       <items>
@@ -5257,7 +5056,7 @@
     <list code="modeacq" hierarchical="1" system="1" vocabulary="0">
       <labels>
         <label locale="fr_FR">
-          <name>Modes d acquisition</name>
+          <name>Modes d’acquisition</name>
         </label>
       </labels>
       <items>
@@ -5612,7 +5411,7 @@
     <list code="numinventaire_marqueetiquette" hierarchical="0" system="1" vocabulary="0" defaultSort="1">
       <labels>
         <label locale="fr_FR">
-          <name>Numéro d inventaire marqué sur l étiquette</name>
+          <name>Numéro d’inventaire marqué sur l étiquette</name>
         </label>
       </labels>
       <items>
@@ -5637,7 +5436,7 @@
     <list code="numinventaire_marqueobjet" hierarchical="0" system="1" vocabulary="0" defaultSort="1">
       <labels>
         <label locale="fr_FR">
-          <name>Numéro d inventaire marqué sur l objet</name>
+          <name>Numéro d’inventaire marqué sur l objet</name>
         </label>
       </labels>
       <items>
@@ -5662,7 +5461,7 @@
     <list code="numinventaire_marquesupport" hierarchical="0" system="1" vocabulary="0" defaultSort="1">
       <labels>
         <label locale="fr_FR">
-          <name>Numéro d inventaire marqué sur un autre support</name>
+          <name>Numéro d’inventaire marqué sur un autre support</name>
         </label>
       </labels>
       <items>
@@ -5687,7 +5486,7 @@
     <list code="numinventaire_nonid" hierarchical="0" system="1" vocabulary="0" defaultSort="1">
       <labels>
         <label locale="fr_FR">
-          <name>Numéro d inventaire non identifiable</name>
+          <name>Numéro d’inventaire non identifiable</name>
         </label>
       </labels>
       <items>
@@ -5715,7 +5514,7 @@
           <name>Object Audit Result</name>
         </label>
         <label locale="fr_FR">
-          <name>Résultat d audit d objet</name>
+          <name>Résultat d’audit d’objet</name>
         </label>
       </labels>
       <items>
@@ -5787,7 +5586,7 @@
           <name>Object Audit Type</name>
         </label>
         <label locale="fr_FR">
-          <name>Type d audit d objet</name>
+          <name>Type d’audit d’objet</name>
         </label>
       </labels>
       <items>
@@ -5859,7 +5658,7 @@
           <name>Object display status</name>
         </label>
         <label locale="fr_FR">
-          <name>Statut d affichage d objet</name>
+          <name>Statut d’affichage d’objet</name>
         </label>
       </labels>
       <items>
@@ -5919,7 +5718,7 @@
           <name>Object event types</name>
         </label>
         <label locale="fr_FR">
-          <name>Types d événements d objet</name>
+          <name>Types d’événements d’objet</name>
         </label>
       </labels>
       <items>
@@ -6031,7 +5830,7 @@
           <name>Organisation function types</name>
         </label>
         <label locale="fr_FR">
-          <name>Types de fonction d organisation</name>
+          <name>Types de fonction d’organisation</name>
         </label>
       </labels>
       <items>
@@ -6091,7 +5890,7 @@
           <name>Organisation group types</name>
         </label>
         <label locale="fr_FR">
-          <name>Types de groupe d organisation</name>
+          <name>Types de groupe d’organisation</name>
         </label>
       </labels>
       <items>
@@ -6151,7 +5950,7 @@
           <name>Other number type</name>
         </label>
         <label locale="fr_FR">
-          <name>Type d autre numéro</name>
+          <name>Type d’autre numéro</name>
         </label>
       </labels>
       <items>
@@ -6288,7 +6087,7 @@
     <list code="pb_identification" hierarchical="0" system="1" vocabulary="0">
       <labels>
         <label locale="fr_FR">
-          <name>Pb d identification</name>
+          <name>Pb d’identification</name>
         </label>
       </labels>
       <items>
@@ -6905,7 +6704,7 @@
     <list code="recol_presence_inventaire_list" hierarchical="0" system="0" vocabulary="0" defaultSort="1">
       <labels>
         <label locale="fr_FR">
-          <name>Présence du numéro d inventaire</name>
+          <name>Présence du numéro d’inventaire</name>
         </label>
       </labels>
       <items>
@@ -6930,7 +6729,7 @@
     <list code="recol_presence_num_liste" hierarchical="0" system="0" vocabulary="1" defaultSort="1">
       <labels>
         <label locale="fr_FR">
-          <name>Présence d un autre numéro</name>
+          <name>Présence d’un autre numéro</name>
         </label>
       </labels>
       <items>
@@ -7205,7 +7004,7 @@
     <list code="recolement_photo_inventaire" hierarchical="0" system="1" vocabulary="0" defaultSort="1">
       <labels>
         <label locale="fr_FR">
-          <name>Photographies du  ou  des numéros d inventaire</name>
+          <name>Photographies du  ou  des numéros d’inventaire</name>
         </label>
       </labels>
       <items>
@@ -7308,7 +7107,7 @@
           <name>record types</name>
         </label>
         <label locale="fr_FR">
-          <name>Types d enregistrements</name>
+          <name>Types d’enregistrements</name>
         </label>
       </labels>
       <items>
@@ -7758,7 +7557,7 @@
           <name>Object valuation type</name>
         </label>
         <label locale="fr_FR">
-          <name>Type d estimation d objet</name>
+          <name>Type d’estimation d’objet</name>
         </label>
       </labels>
       <items>
@@ -8081,7 +7880,7 @@
           <name>use method types</name>
         </label>
         <label locale="fr_FR">
-          <name>Types de méthode d utilisation</name>
+          <name>Types de méthode d’utilisation</name>
         </label>
       </labels>
       <items>
@@ -8141,7 +7940,7 @@
           <name>Object valuation type</name>
         </label>
         <label locale="fr_FR">
-          <name>Type d estimation d objet</name>
+          <name>Type d’estimation d’objet</name>
         </label>
       </labels>
       <items>
