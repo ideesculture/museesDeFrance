@@ -27,6 +27,15 @@ class InventaireBiensAffectesController extends ActionController
         $this->render('inventaire_biens_affectes_index_html.php');
     }
 
+    public function Photos()
+    {
+        $vt_registre = new RegistreBiensAffectes();
+        $this->view->setVar("registre",$vt_registre);
+
+        $this->view->setVar('objects_nb',$vt_registre->count());
+        $this->render('inventaire_biens_affectes_photos_html.php');
+    }
+
     public function Transfer()
     {
         $vs_object_id = $this->request->getParameter("id",pInteger);
@@ -40,8 +49,8 @@ class InventaireBiensAffectesController extends ActionController
         //var_dump($vo_bienaffecte);die();
         $vo_bienaffecte->loadByCaID($vs_object_id);
         $vo_bienaffecte->fill($vt_object);
-        $vo_bienaffecte->copyPhoto($vt_object);
         $vo_bienaffecte->save();
+        $vo_bienaffecte->copyPhoto($vt_object);
 
         $this->view->setVar('idno', $vs_idno);
         $this->view->setVar('name', $vs_name);
