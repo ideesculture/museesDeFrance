@@ -103,10 +103,8 @@ class InstallProfileThesaurusController extends ActionController
                 $libelle = str_replace("\n", "", $libelle);
                 $libelle = str_replace("\r", "", $libelle);
 
-                //$encoded_libelle = str_replace(' ', '', iconv('UTF-8', 'ASCII//TRANSLIT', $libelle));
-
-                # to keep letters & numbers
-                $encoded_libelle = caRemoveAccents($libelle);
+                $libelles = explode(" = ",$libelle);
+                $encoded_libelle = caRemoveAccents($libelles[0]);
                 $encoded_libelle=preg_replace('/[^a-z\d]+/i', '_', $encoded_libelle);
 
                 //var_dump($encoded_libelle);die();
