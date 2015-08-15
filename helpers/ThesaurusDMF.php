@@ -104,8 +104,14 @@ function ThesaurusDMF() {
 		"lexrepr" => array(
 			"filename"=>"lexrepr.txt",
         	"code"=>"lexrepr",
-			"label"=>"DMF : Liste des sujets représentés",
+			"label"=>"DMF : Liste des sujets et personnes représentées",
 			"ignoreFirstLines"=>"7"
+		),
+		"lexpers" => array(
+			"filename"=>"lexpers.txt",
+        	"code"=>"lexrepr",
+			"label"=>"DMF : Liste des sujets et personnes représentées",
+			"ignoreFirstLines"=>"6"
 		),
 		"lexlieux" => array(
 			"filename"=>"lexlieux.txt",

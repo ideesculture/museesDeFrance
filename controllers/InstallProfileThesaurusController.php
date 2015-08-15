@@ -120,6 +120,8 @@ class InstallProfileThesaurusController extends ActionController
                 $libelle = str_replace("\n", "", $libelle);
                 $libelle = str_replace("\r", "", $libelle);
 
+                $libelle = str_replace("'", "’", $libelle);
+
                 $libelles = explode(" = ",$libelle);
                 $encoded_libelle = caRemoveAccents($libelles[0]);
                 $encoded_libelle=preg_replace('/[^a-z\d]+/i', '_', $encoded_libelle);
@@ -139,13 +141,13 @@ class InstallProfileThesaurusController extends ActionController
                 // comptage du nb de tabulation pour connaître le terme parent
                 $nb_tab = substr_count($data,"\t");
                 $row++;
-
+                
                 // Si aucune information n'est à afficher, on affiche une barre de progression
                 //if ((!$DEBUG) && (!$VERBOSE)) {
                 //    show_status($row, $total);
 
                 if ($row % 5 == 0) {
-                    $d = array('message' => "Chargement des termes du thésaurus dmf_".$t_idno_prefix , 'progress' => $pourcentage_debut+round($pourcentage*$row/$total,2));
+                    $d = array('message' => "Chargement des termes du thésaurus dmf_".$t_idno_prefix." (ligne ".$row.")" , 'progress' => $pourcentage_debut+round($pourcentage*$row/$total,2));
                     echo json_encode($d) . PHP_EOL;
                     ob_flush();
                     flush();
@@ -540,14 +542,14 @@ class InstallProfileThesaurusController extends ActionController
         if($vs_thes_code=="lexlieux") {
                 $this->traiteFichierLieuDMF(
                     ThesaurusDMF()[$vs_thes_code]["filename"],
-                    $vs_thes_code,
+                    ThesaurusDMF()[$vs_thes_code]["code"],
                     ThesaurusDMF()[$vs_thes_code]["ignoreFirstLines"],
                     $limitation_fichier
                 );            
         } else {
                 $this->traiteFichierDMF(
                     ThesaurusDMF()[$vs_thes_code]["filename"],
-                    $vs_thes_code,
+                    ThesaurusDMF()[$vs_thes_code]["code"],
                     ThesaurusDMF()[$vs_thes_code]["label"],
                     ThesaurusDMF()[$vs_thes_code]["ignoreFirstLines"],
                     $limitation_fichier
@@ -578,18 +580,18 @@ class InstallProfileThesaurusController extends ActionController
         header('Content-Type: text/octet-stream');
         header('Cache-Control: no-cache'); // recommended to prevent caching of event data.
 
-        $this->moveUsedTermsDMF($vs_thes_code,10,0);
-        $this->deleteUnusedTermsDMF($vs_thes_code,15,10);
+        $this->moveUsedTermsDMF(ThesaurusDMF()[$vs_thes_code]["code"],10,0);
+        $this->deleteUnusedTermsDMF(ThesaurusDMF()[$vs_thes_code]["code"],15,10);
         $this->traiteFichierDMF(
                     ThesaurusDMF()[$vs_thes_code]["filename"],
-                    $vs_thes_code,
+                    ThesaurusDMF()[$vs_thes_code]["code"],
                     ThesaurusDMF()[$vs_thes_code]["label"],
                     ThesaurusDMF()[$vs_thes_code]["ignoreFirstLines"],
                     $limitation_fichier,
                     50,
                     25
                 );
-        $this->reaffectTermsDMF("lexdomn",25,75);
+        $this->reaffectTermsDMF(ThesaurusDMF()[$vs_thes_code]["code"],25,75);
 
         exit();
     }
