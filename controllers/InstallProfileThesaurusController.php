@@ -20,24 +20,41 @@ require_once(__CA_MODELS_DIR__ . '/ca_occurrences.php');
 require_once(__CA_MODELS_DIR__."/ca_entities.php");
 require_once(__CA_MODELS_DIR__."/ca_users.php");
 require_once(__CA_MODELS_DIR__."/ca_lists.php");
+require_once(__CA_MODELS_DIR__."/ca_list_items.php");
 require_once(__CA_MODELS_DIR__."/ca_locales.php");
 require_once(__CA_MODELS_DIR__."/ca_collections.php");
 require_once(__CA_LIB_DIR__.'/core/Parsers/DelimitedDataParser.php');
 
+/*
+ * Helpers
+ */ 
 require_once(__CA_APP_DIR__."/helpers/utilityHelpers.php");
+// defines __CA_MDF_THESAURI__ informations on available thesauri
+require_once(__CA_BASE_DIR__.'/app/plugins/museesDeFrance/helpers/ThesaurusDMF.php');
 
 require_once(__CA_BASE_DIR__.'/app/plugins/museesDeFrance/lib/migration_functionlib.php');
 
+/**
+ * Class InstallProfileThesaurusController
+ */
 class InstallProfileThesaurusController extends ActionController
 {
 	# -------------------------------------------------------
-	protected $opo_config; // plugin configuration file
+
+    // Helper for thesaurus files informations : filename reference, nb of empty lines at its start, etc.
+    protected $opo_config; // plugin configuration file
 	protected $opa_infos_campagnes_par_recolement_decennal;
 
+
 	# -------------------------------------------------------
-	#
+	# InstallProfileThesaurusController constructor
 	# -------------------------------------------------------
-	public function __construct(&$po_request, &$po_response, $pa_view_paths = null)
+    /**
+     * @param RequestHTTP $po_request
+     * @param ResponseHTTP $po_response
+     * @param null $pa_view_paths
+     */
+    public function __construct(&$po_request, &$po_response, $pa_view_paths = null)
 	{
 		parent::__construct($po_request, $po_response, $pa_view_paths);
 
@@ -57,7 +74,7 @@ class InstallProfileThesaurusController extends ActionController
     /****************************************************************
      * Fonction de traitement des fichiers de liste
      ****************************************************************/
-    public function traiteFichierDMF($t_filename,$t_idno_prefix,$t_list_description,$nb_lignes_vides=0,$ligne_limite=0) {
+    public function traiteFichierDMF($t_filename,$t_idno_prefix,$t_list_description,$nb_lignes_vides=0,$ligne_limite=0, $pourcentage=100, $pourcentage_debut=0) {
         $thescode = str_replace("lex","",$t_idno_prefix);
 
         global $pn_locale_id, $VERBOSE, $DEBUG;
@@ -108,10 +125,10 @@ class InstallProfileThesaurusController extends ActionController
                 $encoded_libelle=preg_replace('/[^a-z\d]+/i', '_', $encoded_libelle);
 
                 //var_dump($encoded_libelle);die();
-                if (strlen($encoded_libelle) <= 15 ) {
+                if (strlen($encoded_libelle) <= 30 ) {
                     $identifier = $thescode."_".$encoded_libelle;
                 } else {
-                    $encoded_libelle = substr($encoded_libelle,0,15);
+                    $encoded_libelle = substr($encoded_libelle,0,30);
                     if (!isset($code_counter[$encoded_libelle])) {
                         $code_counter[$encoded_libelle]=1;
                     }
@@ -128,7 +145,7 @@ class InstallProfileThesaurusController extends ActionController
                 //    show_status($row, $total);
 
                 if ($row % 5 == 0) {
-                    $d = array('thesaurus' => "Liste dmf_".$t_idno_prefix , 'progress' => round(100*$row/$total,2));
+                    $d = array('thesaurus' => "Liste dmf_".$t_idno_prefix , 'progress' => $pourcentage_debut+round($pourcentage*$row/$total,2));
                     echo json_encode($d) . PHP_EOL;
                     ob_flush();
                     flush();
@@ -172,7 +189,7 @@ class InstallProfileThesaurusController extends ActionController
             }
             fclose($handle);
             //if ($VERBOSE) { print "dmf_".$t_idno_prefix." treated.\n";}
-            $d = array('thesaurus' => "Liste dmf_".$t_idno_prefix , 'progress' => 100);
+            $d = array('thesaurus' => "Liste dmf_".$t_idno_prefix , 'progress' => $pourcentage_debut+$pourcentage);
             echo json_encode($d) . PHP_EOL;
             ob_flush();
             flush();
@@ -185,6 +202,189 @@ class InstallProfileThesaurusController extends ActionController
             $result=false;
         }
         return $result;
+    }
+
+    /************************************************************************************************
+     * Fonction de nettoyage des listes : déplacement au premier niveau sous __ des termes utilisés
+     ***********************************************************************************************/
+    public function moveUsedTermsDMF($thesaurus_code, $pourcentage=100, $pourcentage_debut=0) {
+
+        $t_locale = new ca_locales();
+        $pn_locale_id = $t_locale->loadLocaleByCode('fr_FR');		// default locale_id
+        $t_list = new ca_lists();
+
+        $vn_list_item_type_concept = $t_list->getItemIDFromList('list_item_types', 'concept');
+        $vn_list_item_label_synonym = $t_list->getItemIDFromList('list_item_label_types', 'uf');
+
+        if (!$vn_list_id=getListID($t_list,"dmf_".$thesaurus_code,"")) {
+            print json_encode("Impossible de trouver la liste dmf_".$thesaurus_code." !.\n");
+            die();
+        }
+
+        // Searching or creating parent for used terms
+        $vn_underscoreunderscore_id=getItemID($t_list,$vn_list_id,$vn_list_item_type_concept,"__used_terms","ALIGN : used_terms","",1,0, 0, null);
+
+        $o_data = new Db();
+        $vs_request = "select distinct ca_list_items.item_id from ca_list_labels LEFT OUTER JOIN ca_lists ON ca_list_labels.list_id = ca_lists.list_id
+                 LEFT OUTER JOIN ca_list_items ON ca_lists.list_id = ca_list_items.list_id
+                 LEFT OUTER JOIN ca_attribute_values ON ca_list_items.item_id = ca_attribute_values.item_id
+                 LEFT OUTER JOIN ca_list_item_labels ON ca_list_item_labels.item_id = ca_attribute_values.item_id
+                 LEFT OUTER JOIN ca_attributes ON ca_attribute_values.attribute_id = ca_attributes.attribute_id
+            WHERE table_num = 57 AND ca_list_labels.list_id = $vn_list_id;";
+        $qr_c = $o_data->query($vs_request);
+        $vn_numrows = $qr_c->numRows();
+        $va_results = $qr_c->getAllRows();
+        $i=0;
+        foreach($va_results as $va_result) {
+            // Progress
+            $d = array('thesaurus' => "Liste dmf_".$thesaurus_code , 'progress' => $pourcentage_debut+round($pourcentage*$i/$vn_numrows,2));
+            echo json_encode($d) . PHP_EOL;
+            ob_flush();
+            flush();
+
+            $vt_list_item = new ca_list_items($va_result["item_id"]);
+            $vt_list_item->setMode(ACCESS_WRITE);
+            $vt_list_item->set(array("parent_id"=>$vn_underscoreunderscore_id));
+            $vt_list_item->update();
+            $i++;
+        }
+        // Progress end
+        $d = array('thesaurus' => "Liste dmf_".$thesaurus_code , 'progress' => $pourcentage_debut+$pourcentage);
+        echo json_encode($d) . PHP_EOL;
+        ob_flush();
+        flush();
+
+        return true;
+    }
+
+    /************************************************************************************************
+     * Fonction de nettoyage des listes : déplacement au premier niveau sous __ des termes utilisés
+     ***********************************************************************************************/
+    public function reaffectTermsDMF($thesaurus_code, $pourcentage=100, $pourcentage_debut=0) {
+
+        $t_locale = new ca_locales();
+        $pn_locale_id = $t_locale->loadLocaleByCode('fr_FR');       // default locale_id
+        $t_list = new ca_lists();
+
+        $vn_list_item_type_concept = $t_list->getItemIDFromList('list_item_types', 'concept');
+        $vn_list_item_label_synonym = $t_list->getItemIDFromList('list_item_label_types', 'uf');
+
+        if (!$vn_list_id=getListID($t_list,"dmf_".$thesaurus_code,"")) {
+            print json_encode("Impossible de trouver la liste dmf_".$thesaurus_code." !.\n");
+            die();
+        }
+
+        // Searching or creating parent for used terms
+        $vn_underscoreunderscore_id=getItemID($t_list,$vn_list_id,$vn_list_item_type_concept,"__used_terms","ALIGN : used_terms","",1,0, 0, null);
+
+        $o_data = new Db();
+
+        $vs_request = "
+            select cali.item_id as 'old', calil.`name_singular`, calil2.name_singular, cali2.item_id as 'new', cali2.list_id from ca_list_items cali left join ca_list_item_labels calil on cali.item_id=calil.item_id left join ca_list_item_labels calil2 on calil2.item_id !=cali.item_id and calil2.name_singular=calil.name_singular join ca_list_items cali2 on cali2.item_id=calil2.item_id and cali2.list_id=$vn_list_id WHERE cali.parent_id = $vn_underscoreunderscore_id;";
+
+        $qr_c = $o_data->query($vs_request);
+        $vn_numrows = $qr_c->numRows();
+        $va_results = $qr_c->getAllRows();
+
+        $i=0;
+        foreach($va_results as $va_result) {
+            // Progress
+            $d = array('thesaurus' => "Liste dmf_".$thesaurus_code , 'progress' => $pourcentage_debut+round($pourcentage*$i/$vn_numrows,2));
+            echo json_encode($d) . PHP_EOL;
+            ob_flush();
+            flush();
+
+            $vt_list_item = new ca_list_items($va_result["old"]);
+            $vt_list_item->setMode(ACCESS_WRITE);
+
+            // update relationships
+            $va_tables = array(
+                'ca_objects', 'ca_entities', 'ca_places', 'ca_occurrences', 'ca_collections', 'ca_storage_locations', 'ca_list_items', 'ca_loans', 'ca_movements', 'ca_tours', 'ca_tour_stops', 'ca_object_representations', 'ca_list_items'
+            );
+            foreach($va_tables as $vs_table) {
+                $results = $vt_list_item->moveRelationships($vs_table, $va_result["new"]);
+            }
+
+            // update existing metadata attributes to use remapped value
+            $results = $vt_list_item->moveAuthorityElementReferences($$va_result["new"]);
+
+            
+            // update simple attributes
+            $vs_cleanup_request = "
+            update ca_attribute_values set item_id=".$va_result["new"].", value_longtext1=".$va_result["new"]."
+            where item_id=".$va_result["old"];
+            $qr_cleanup_c = $o_data->query($vs_cleanup_request);
+
+            // delete old values
+            $vt_list_item->delete(true);
+            $i++;
+        }
+        // Progress end
+        $d = array('thesaurus' => "Liste dmf_".$thesaurus_code , 'progress' => $pourcentage_debut+$pourcentage);
+        echo json_encode($d) . PHP_EOL;
+        ob_flush();
+        flush();
+
+        return true;
+    }
+
+    /************************************************************************************************
+     * Fonction de nettoyage des listes : déplacement au premier niveau sous __ des termes utilisés
+     ***********************************************************************************************/
+    public function deleteUnusedTermsDMF($thesaurus_code, $pourcentage=100, $pourcentage_debut=0) {
+
+        $t_locale = new ca_locales();
+        $pn_locale_id = $t_locale->loadLocaleByCode('fr_FR');		// default locale_id
+        $t_list = new ca_lists();
+
+        $vn_list_item_type_concept = $t_list->getItemIDFromList('list_item_types', 'concept');
+        $vn_list_item_label_synonym = $t_list->getItemIDFromList('list_item_label_types', 'uf');
+
+        if (!$vn_list_id=getListID($t_list,"dmf_".$thesaurus_code,"")) {
+            print json_encode("Impossible de trouver la liste dmf_".$thesaurus_code." !.\n");
+            die();
+        }
+
+        // Searching or creating parent for used terms
+        $vn_underscoreunderscore_id=getItemID($t_list,$vn_list_id,$vn_list_item_type_concept,"__used_terms","ALIGN : used_terms","",1,0, 0, null);
+
+        $o_data = new Db();
+        $vs_request = "select item_id from ca_list_items
+                 WHERE list_id = $vn_list_id AND parent_id IS NOT NULL
+                 AND item_id != $vn_underscoreunderscore_id
+                 AND item_id not in (select distinct ca_list_items.item_id from ca_list_labels
+                  LEFT OUTER JOIN ca_lists ON ca_list_labels.list_id = ca_lists.list_id
+                  LEFT OUTER JOIN ca_list_items ON ca_lists.list_id = ca_list_items.list_id
+                  LEFT OUTER JOIN ca_attribute_values ON ca_list_items.item_id = ca_attribute_values.item_id
+                  LEFT OUTER JOIN ca_list_item_labels ON ca_list_item_labels.item_id = ca_attribute_values.item_id
+                  LEFT OUTER JOIN ca_attributes ON ca_attribute_values.attribute_id = ca_attributes.attribute_id
+                  WHERE table_num = 57 AND ca_list_labels.list_id = $vn_list_id
+                 )";
+
+        $qr_c = $o_data->query($vs_request);
+
+        $vn_numrows = $qr_c->numRows();
+        $va_results = $qr_c->getAllRows();
+        $i=0;
+        foreach($va_results as $va_result) {
+            // Progress
+            $d = array('thesaurus' => "Suppression non utilisés de la liste dmf_".$thesaurus_code , 'progress' => $pourcentage_debut + round($pourcentage*$i/$vn_numrows,2));
+            echo json_encode($d) . PHP_EOL;
+            ob_flush();
+            flush();
+
+            $vt_list_item = new ca_list_items($va_result["item_id"]);
+            $vt_list_item->setMode(ACCESS_WRITE);
+            $vt_list_item->delete(true);
+            $i++;
+        }
+        // Progress end
+        $d = array('thesaurus' => "Suppression non utilisés de la liste dmf_".$thesaurus_code , 'progress' => $pourcentage_debut+$pourcentage);
+        echo json_encode($d) . PHP_EOL;
+        ob_flush();
+        flush();
+
+        return true;
     }
 
 
@@ -270,7 +470,10 @@ class InstallProfileThesaurusController extends ActionController
     }
 
 	# -------------------------------------------------------
-	public function Index()
+    /**
+     *
+     */
+    public function Index()
 	{
 		//$this->view->setVar('campagnes', $this->opa_infos_campagnes);
         if(!is_file(__CA_BASE_DIR__."/install/profiles/xml/joconde-sans-thesaurus.xml")) {
@@ -280,7 +483,10 @@ class InstallProfileThesaurusController extends ActionController
 	}
 
 	# -------------------------------------------------------
-	public function Profile()
+    /**
+     *
+     */
+    public function Profile()
 	{
         if(!is_file(__CA_BASE_DIR__."/install/profiles/xml/joconde-sans-thesaurus.xml")) {
             $this->view->setVar('joconde_available', "false");
@@ -296,88 +502,120 @@ class InstallProfileThesaurusController extends ActionController
 		$this->render('install_profile_html.php');
 	}
 	# -------------------------------------------------------
-	public function Thesaurus()
+    /**
+     *
+     */
+    public function Thesaurus()
 	{
 		$this->view->setVar('variable', "value");
 		$this->render('install_thesaurus_html.php');
 	}
 
+    /**
+     *
+     */
+    public function Align()
+    {
+        $this->view->setVar('variable', "value");
+        $this->render('align_thesaurus_html.php');
+    }
+
+    /**
+     *
+     */
     public function ThesaurusImportAjax()
     {
+        if (__CA_MDF_THESAURI__[$_GET["thesaurus"]] !== null) return false;
+
         global $limitation_fichier;
         //type octet-stream. make sure apache does not gzip this type, else it would get buffered
         header('Content-Type: text/octet-stream');
         header('Cache-Control: no-cache'); // recommended to prevent caching of event data.
 
-        switch($_GET["thesaurus"]) {
-            case "lexdomn" :
-                $this->traiteFichierDMF("lexdomn.txt","lexdomn","DMF : Liste des domaines",16,$limitation_fichier);
-                break;
-            case "lextech" :
-                $this->traiteFichierDMF("lextechA.txt","lextech","DMF : Liste des techniques",5,$limitation_fichier);
-                break;
-            case "lexmateriaux" :
-                $this->traiteFichierDMF("lextechB.txt","lexmateriaux","DMF : Liste des matériaux",5,$limitation_fichier);
-                break;
-            case "lexautr" :
-                $this->traiteFichierDMF("lexautr.txt","lexautr","DMF : Liste des auteurs",6,$limitation_fichier);
-                break;
-            case "lexautrole" :
-                $this->traiteFichierDMF("lexautrole.txt","lexautrole","DMF : Liste des rôles des auteurs/exécutants",5,$limitation_fichier);
-                break;
-            case "lexdecv" :
-                $this->traiteFichierDMF("lexdecvA.txt","lexdecv","DMF : Liste des méthodes de collecte",6,$limitation_fichier);
-                break;
-            case "lexsite" :
-                $this->traiteFichierDMF("lexdecvB.txt","lexsite","DMF : Liste des méthodes de types de sites et lieux géographiques de découverte",5,$limitation_fichier);
-                break;
-            case "lexdeno" :
-                $this->traiteFichierDMF("lexdeno.txt","lexdeno","DMF : Liste des dénominations",5,$limitation_fichier);
-                break;
-            case "lexecol" :
-                $this->traiteFichierDMF("lexecol.txt","lexecol","DMF : Liste des écoles",5,$limitation_fichier);
-                break;
-            case "lexepoq" :
-                $this->traiteFichierDMF("lexepoq.txt","lexepoq","DMF : Liste des époques / styles",4,$limitation_fichier);
-                break;
-            case "lexgene" :
-                $this->traiteFichierDMF("lexgene.txt","lexgene","DMF : Liste des stades de création (genèse des oeuvres)",5,$limitation_fichier);
-                break;
-            case "lexinsc" :
-                $this->traiteFichierDMF("lexinsc.txt","lexinsc","DMF : Liste des types d’inscriptions)",4,$limitation_fichier);
-                break;
-            case "lexperi" :
-                $this->traiteFichierDMF("lexperi.txt","lexperi","DMF : Liste des datations en siècle ou millénaire (périodes de création, d'exécution et d'utilisation)",6,$limitation_fichier);
-                break;
-            case "lexsrep" :
-                $this->traiteFichierDMF("lexsrep.txt","lexsrep","DMF : Liste des sources de la représentation",4,$limitation_fichier);
-                break;
-            case "lexstat" :
-                $this->traiteFichierDMF("lexstat.txt","lexstat","DMF : Liste des termes autorisés du statut juridique de l'objet",5,$limitation_fichier);
-                break;
-            case "lexutil" :
-                $this->traiteFichierDMF("lexutil.txt","lexutil","DMF : Liste des utilisations - destinations",5,$limitation_fichier);
-                break;
-            case "lexrepr" :
-                $this->traiteFichierDMF("lexrepr.txt","lexrepr","DMF : Liste des sujets représentés",7,$limitation_fichier);
-                break;
-            case "lexlieux" :
-                $this->traiteFichierLieuDMF("lexlieux.txt","lexlieux",5,$limitation_fichier);
-                break;
+        $vs_thes_code = $_GET["thesaurus"];
+
+        if($vs_thes_code=="lexlieux") {
+                $this->traiteFichierLieuDMF(
+                    __CA_MDF_THESAURI__[$vs_thes_code]["filename"],
+                    $vs_thes_code,
+                    __CA_MDF_THESAURI__[$vs_thes_code]["ignoreFirstLines"],
+                    $limitation_fichier
+                );            
+        } else {
+                $this->traiteFichierDMF(
+                    __CA_MDF_THESAURI__[$vs_thes_code]["filename"],
+                    $vs_thes_code,
+                    __CA_MDF_THESAURI__[$vs_thes_code]["label"],
+                    __CA_MDF_THESAURI__[$vs_thes_code]["ignoreFirstLines"],
+                    $limitation_fichier
+                );
         }
 
         exit();
     }
 
+    /**
+     *
+     */
+    public function ThesaurusAlignAjax()
+    {
+
+        $vs_thes_code = $_GET["thesaurus"];
+
+        if (__CA_MDF_THESAURI__[$_GET["thesaurus"]] !== null) return false;
+        
+        // This won't do the trick for places thesaurus, so returning false
+        if ($vs_thes_code == "lexlieux") return false;
+
+        global $limitation_fichier;
+        //type octet-stream. make sure apache does not gzip this type, else it would get buffered
+        header('Content-Type: text/octet-stream');
+        header('Cache-Control: no-cache'); // recommended to prevent caching of event data.
+
+        $this->moveUsedTermsDMF($vs_thes_code,10,0);
+        $this->deleteUnusedTermsDMF($vs_thes_code,15,10);
+        $this->traiteFichierDMF(
+                    __CA_MDF_THESAURI__[$vs_thes_code]["filename"],
+                    $vs_thes_code,
+                    __CA_MDF_THESAURI__[$vs_thes_code]["label"],
+                    __CA_MDF_THESAURI__[$vs_thes_code]["ignoreFirstLines"],
+                    $limitation_fichier,
+                    50,
+                    25
+                );
+        $this->reaffectTermsDMF("lexdomn",25,75);
+
+        exit();
+    }
+
+    /**
+     *
+     */
     public function ThesaurusImport()
     {
         $this->view->setVar('thesaurus', $_GET["thesaurus"]);
         $this->render('install_thesaurus_import_html.php');
     }
-	# -------------------------------------------------------
+
+    /**
+     *
+     */
+    public function ThesaurusAlign()
+    {
+        $this->view->setVar('thesaurus', $_GET["thesaurus"]);
+        $this->render('align_thesaurus_launch_html.php');
+    }
+
+
+
+    # -------------------------------------------------------
 	# Sidebar info handler
 	# -------------------------------------------------------
-	public function Info($pa_parameters)
+    /**
+     * @param $pa_parameters
+     * @return mixed|null|string
+     */
+    public function Info($pa_parameters)
 	{
 		$this->view->setVar('variable', "value");
 		return $this->render('widget_install_profile_thesaurus_html.php', true);

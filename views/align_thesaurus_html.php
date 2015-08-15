@@ -1,7 +1,10 @@
-<h1>Installation des thésaurus</h1>
+<h1>Alignement des thésaurus</h1>
 
-<p>Retrouvez ici ces vocabulaires téléchargeables aux formats RTF et TXT pour mieux choisir lesquels installer : <a href="http://www.culture.gouv.fr/documentation/joconde/fr/partenaires/AIDEMUSEES/telechargement.htm">http://www.culture.gouv.fr/documentation/joconde/fr/partenaires/AIDEMUSEES/telechargement.htm</a></p>
-<p>Choisissez ci-dessous les thésaurus à installer :</p>
+<p>Permet la mise à jour d'un thésaurus en déplaçant les termes employés dans une branche spécifique</p>
+<p><b>Attention</b> <i>Ce traitement n'est à utiliser que si vous n'avez utilisé le thésaurus que dans les objets (aucun lien avec les collections, entités, etc.).</i></p>
+<p>Les anciens termes du thésaurus vont être déplacés dans une nouvelle branche, puis raccrochés en se basant sur leur dénomination sur les nouvelles branches du thésaurus. Les thésaurus des Musées de France n'exploitant pas d'identifiant unique, ce traitement est basé uniquement sur les libellés des termes.</p>
+
+<p>Choisissez ci-dessous le thésaurus à aligner :</p>
 
 <?php
 $va_thesauri = array(
@@ -22,8 +25,7 @@ $va_thesauri = array(
     "lexsrep"=>"Liste des sources de la représentation",
     "lexstat"=>"Liste des termes autorisés du statut juridique de l'objet",
     "lexutil"=>"Liste des utilisations - destinations",
-    "lexrepr"=>"Liste des sujets représentés",
-    "lexlieux"=>"Liste des lieux"
+    "lexrepr"=>"Liste des sujets représentés"
 );
 
 foreach($va_thesauri as $vs_code => $vs_desc) : ?>

@@ -53,7 +53,7 @@
             <span>Par désignation <input type="text" size="22"/></span>
 
         </div>
-        <a href="#" id="hideRefine" onclick="jQuery('#searchRefineBox').slideUp();jQuery('#showRefine').show();"><img src="/themes/default/graphics/buttons/glyphicons_191_circle_minus.png" alt="glyphicons_191_circle_minus" border="0"></a>
+        <a href="#" id="hideRefine" onclick="jQuery('#searchRefineBox').slideUp();jQuery('#showRefine').show();"><img src="<?php print __CA_URL_ROOT__; ?>/themes/default/graphics/buttons/glyphicons_191_circle_minus.png" alt="glyphicons_191_circle_minus" border="0"></a>
         <div style="clear:both;"></div>
     </div><!-- end bg --></div>
 <div style="clear: both;"><!-- empty --></div>
@@ -83,10 +83,10 @@ foreach($vt_registre->getObjects() as $vt_object) {
         <td>";
     if (!$vt_object->validated) {
         print "<a href='".caNavUrl($this->request,"museesDeFrance","InventaireBiensAffectes","Validate",array("object_id"=>$vt_object->get("ca_id")))."'>
-        <img src='/themes/default/graphics/buttons/glyphicons_198_ok.png' alt='glyphicons_198_ok' border='0' align='middle'>
+        <img src='".__CA_URL_ROOT__."/themes/default/graphics/buttons/glyphicons_198_ok.png' alt='glyphicons_198_ok' border='0' align='middle'>
         </a>
         <a href='".caNavUrl($this->request,"museesDeFrance","InventaireBiensAffectes","Remove",array("object_id"=>$vt_object->get("ca_id")))."'>
-        <img src='/themes/default/graphics/buttons/glyphicons_197_remove.png' alt='glyphicons_197_remove' border='0' align='middle'>
+        <img src='".__CA_URL_ROOT__."/themes/default/graphics/buttons/glyphicons_197_remove.png' alt='glyphicons_197_remove' border='0' align='middle'>
         </a>";
     }
         print "</td>";
