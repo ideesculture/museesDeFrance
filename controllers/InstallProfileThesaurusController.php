@@ -115,7 +115,7 @@ class InstallProfileThesaurusController extends ActionController
             $code_counter = array();
             setlocale(LC_CTYPE, 'en_US');
 
-            while (($data = fgets($handle)) !== FALSE) {
+            while (($data = fgets($handle))) {
                 $libelle = str_replace("\t", "", $data);
                 $libelle = str_replace("\n", "", $libelle);
                 $libelle = str_replace("\r", "", $libelle);
@@ -145,7 +145,7 @@ class InstallProfileThesaurusController extends ActionController
                 //    show_status($row, $total);
 
                 if ($row % 5 == 0) {
-                    $d = array('thesaurus' => "Liste dmf_".$t_idno_prefix , 'progress' => $pourcentage_debut+round($pourcentage*$row/$total,2));
+                    $d = array('message' => "Chargement des termes du thésaurus dmf_".$t_idno_prefix , 'progress' => $pourcentage_debut+round($pourcentage*$row/$total,2));
                     echo json_encode($d) . PHP_EOL;
                     ob_flush();
                     flush();
@@ -189,7 +189,7 @@ class InstallProfileThesaurusController extends ActionController
             }
             fclose($handle);
             //if ($VERBOSE) { print "dmf_".$t_idno_prefix." treated.\n";}
-            $d = array('thesaurus' => "Liste dmf_".$t_idno_prefix , 'progress' => $pourcentage_debut+$pourcentage);
+            $d = array('message' => "Chargement des termes du thésaurus dmf_".$t_idno_prefix , 'progress' => $pourcentage_debut+$pourcentage);
             echo json_encode($d) . PHP_EOL;
             ob_flush();
             flush();
@@ -237,7 +237,7 @@ class InstallProfileThesaurusController extends ActionController
         $i=0;
         foreach($va_results as $va_result) {
             // Progress
-            $d = array('thesaurus' => "Liste dmf_".$thesaurus_code , 'progress' => $pourcentage_debut+round($pourcentage*$i/$vn_numrows,2));
+            $d = array('message' => "Déplacement des termes utilisés du thésaurus dmf_".$thesaurus_code , 'progress' => $pourcentage_debut+round($pourcentage*$i/$vn_numrows,2));
             echo json_encode($d) . PHP_EOL;
             ob_flush();
             flush();
@@ -249,7 +249,7 @@ class InstallProfileThesaurusController extends ActionController
             $i++;
         }
         // Progress end
-        $d = array('thesaurus' => "Liste dmf_".$thesaurus_code , 'progress' => $pourcentage_debut+$pourcentage);
+        $d = array('message' => "Déplacement des termes utilisés du thésaurus dmf_".$thesaurus_code , 'progress' => $pourcentage_debut+$pourcentage);
         echo json_encode($d) . PHP_EOL;
         ob_flush();
         flush();
@@ -289,7 +289,7 @@ class InstallProfileThesaurusController extends ActionController
         $i=0;
         foreach($va_results as $va_result) {
             // Progress
-            $d = array('thesaurus' => "Liste dmf_".$thesaurus_code , 'progress' => $pourcentage_debut+round($pourcentage*$i/$vn_numrows,2));
+            $d = array('message' => "Mise à jour des indexations avec les nouveaux termes de dmf_".$thesaurus_code , 'progress' => $pourcentage_debut+round($pourcentage*$i/$vn_numrows,2));
             echo json_encode($d) . PHP_EOL;
             ob_flush();
             flush();
@@ -320,7 +320,7 @@ class InstallProfileThesaurusController extends ActionController
             $i++;
         }
         // Progress end
-        $d = array('thesaurus' => "Liste dmf_".$thesaurus_code , 'progress' => $pourcentage_debut+$pourcentage);
+        $d = array('message' => "Mise à jour des indexations avec les nouveaux termes de dmf_".$thesaurus_code , 'progress' => $pourcentage_debut+$pourcentage);
         echo json_encode($d) . PHP_EOL;
         ob_flush();
         flush();
@@ -368,18 +368,19 @@ class InstallProfileThesaurusController extends ActionController
         $i=0;
         foreach($va_results as $va_result) {
             // Progress
-            $d = array('thesaurus' => "Suppression non utilisés de la liste dmf_".$thesaurus_code , 'progress' => $pourcentage_debut + round($pourcentage*$i/$vn_numrows,2));
-            echo json_encode($d) . PHP_EOL;
-            ob_flush();
-            flush();
-
+            if ($i % 5 == 0) {
+                $d = array('message' => "Suppression des termes non utilisés de la liste dmf_".$thesaurus_code , 'progress' => $pourcentage_debut + round($pourcentage*$i/$vn_numrows,2));
+                echo json_encode($d) . PHP_EOL;
+                ob_flush();
+                flush();
+            }
             $vt_list_item = new ca_list_items($va_result["item_id"]);
             $vt_list_item->setMode(ACCESS_WRITE);
             $vt_list_item->delete(true);
             $i++;
         }
         // Progress end
-        $d = array('thesaurus' => "Suppression non utilisés de la liste dmf_".$thesaurus_code , 'progress' => $pourcentage_debut+$pourcentage);
+        $d = array('message' => "Suppression des termes non utilisés de la liste dmf_".$thesaurus_code , 'progress' => $pourcentage_debut+$pourcentage);
         echo json_encode($d) . PHP_EOL;
         ob_flush();
         flush();
@@ -525,7 +526,9 @@ class InstallProfileThesaurusController extends ActionController
      */
     public function ThesaurusImportAjax()
     {
-        if (__CA_MDF_THESAURI__[$_GET["thesaurus"]] !== null) return false;
+        $vs_thes_code = $_GET["thesaurus"];
+        // Thesaurus with that code is not sent back by helper, so not available
+        if (ThesaurusDMF()[$vs_thes_code] === null) return false;
 
         global $limitation_fichier;
         //type octet-stream. make sure apache does not gzip this type, else it would get buffered
@@ -536,17 +539,17 @@ class InstallProfileThesaurusController extends ActionController
 
         if($vs_thes_code=="lexlieux") {
                 $this->traiteFichierLieuDMF(
-                    __CA_MDF_THESAURI__[$vs_thes_code]["filename"],
+                    ThesaurusDMF()[$vs_thes_code]["filename"],
                     $vs_thes_code,
-                    __CA_MDF_THESAURI__[$vs_thes_code]["ignoreFirstLines"],
+                    ThesaurusDMF()[$vs_thes_code]["ignoreFirstLines"],
                     $limitation_fichier
                 );            
         } else {
                 $this->traiteFichierDMF(
-                    __CA_MDF_THESAURI__[$vs_thes_code]["filename"],
+                    ThesaurusDMF()[$vs_thes_code]["filename"],
                     $vs_thes_code,
-                    __CA_MDF_THESAURI__[$vs_thes_code]["label"],
-                    __CA_MDF_THESAURI__[$vs_thes_code]["ignoreFirstLines"],
+                    ThesaurusDMF()[$vs_thes_code]["label"],
+                    ThesaurusDMF()[$vs_thes_code]["ignoreFirstLines"],
                     $limitation_fichier
                 );
         }
@@ -561,11 +564,14 @@ class InstallProfileThesaurusController extends ActionController
     {
 
         $vs_thes_code = $_GET["thesaurus"];
-
-        if (__CA_MDF_THESAURI__[$_GET["thesaurus"]] !== null) return false;
+        // Thesaurus with that code is not sent back by helper, so not available
+        if (ThesaurusDMF()[$vs_thes_code] === null) return false;
         
-        // This won't do the trick for places thesaurus, so returning false
+        global $limitation_fichier;
+
+        // This won't do the trick for places & authors thesauri, so returning false
         if ($vs_thes_code == "lexlieux") return false;
+        if ($vs_thes_code == "lexautr") return false;
 
         global $limitation_fichier;
         //type octet-stream. make sure apache does not gzip this type, else it would get buffered
@@ -575,10 +581,10 @@ class InstallProfileThesaurusController extends ActionController
         $this->moveUsedTermsDMF($vs_thes_code,10,0);
         $this->deleteUnusedTermsDMF($vs_thes_code,15,10);
         $this->traiteFichierDMF(
-                    __CA_MDF_THESAURI__[$vs_thes_code]["filename"],
+                    ThesaurusDMF()[$vs_thes_code]["filename"],
                     $vs_thes_code,
-                    __CA_MDF_THESAURI__[$vs_thes_code]["label"],
-                    __CA_MDF_THESAURI__[$vs_thes_code]["ignoreFirstLines"],
+                    ThesaurusDMF()[$vs_thes_code]["label"],
+                    ThesaurusDMF()[$vs_thes_code]["ignoreFirstLines"],
                     $limitation_fichier,
                     50,
                     25
