@@ -4,19 +4,18 @@ Mise à jour mai 2014
 
 
 
-méthode de collecte
-	collecte ethnologique
-	découverte fortuite
-		travaux
-	fouilles
-		fouilles clandestines
-		fouilles de sauvetage
-		fouilles programmées
-		fouilles sous-marines
-		fouilles subaquatiques
-	prospection
-		prospection aérienne
-		prospection au sol
-		prospection subaquatique
-			dragage
-	sondage
+collecte ethnologique
+découverte fortuite
+	travaux
+fouilles
+	fouilles clandestines
+	fouilles de sauvetage
+	fouilles programmées
+	fouilles sous-marines
+	fouilles subaquatiques
+prospection
+	prospection aérienne
+	prospection au sol
+	prospection subaquatique
+		dragage
+sondage
