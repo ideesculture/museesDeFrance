@@ -109,8 +109,6 @@ type de site
 				tombe collective
 				tombe isolée
 				tumulus
-
-
 nom géographique = lieu de découverte
 	Afrique
 		Afrique du Nord
