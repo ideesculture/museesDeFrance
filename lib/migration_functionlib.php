@@ -79,7 +79,7 @@ function getItemID($t_list,$vn_list_id,$pn_type_id,$ps_idno,$libelle,$comment,$p
 			$t_item->addLabel(array('name_singular' => $libelle, 'name_plural' => $libelle, 'description' => $comment),$pn_locale_id, null, true);									
 		}
 		if ($t_item->numErrors()) {
-			print "PROBLEM WITH ITEM {$ps_idno}: ".join('; ', $t_object->getErrors())."\n";
+			print "PROBLEM WITH ITEM {$ps_idno}: ".join('; ', $t_item->getErrors())."\n";
 		}
 		$vn_item_id=ExistsItemID($t_list,$vn_list_id,$ps_idno);
 	} 
