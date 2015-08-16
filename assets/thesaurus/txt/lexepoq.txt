@@ -712,7 +712,7 @@ mouvement
 
 style
 	alexandrin
--  égyptisant
+	égyptisant
 	hellénisant
 		néo attique
 		peinture murale romaine
