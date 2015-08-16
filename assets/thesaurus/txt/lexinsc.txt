@@ -2,89 +2,89 @@ Liste des types d'inscriptions
 
 Mise à jour mai 2014
 
- date = daté
- échelle
- écriteau
- emblématique
-	 armoiries
+date = daté
+échelle
+écriteau
+emblématique
+	armoiries
 		chiffre emblématique
-	 devise
+	devise
 		écu
-	 emblème
- graffiti
- inscription
-	 acclamation
-	 adresse
-	 annotation = annoté
+	emblème
+graffiti
+inscription
+	acclamation
+	adresse
+	annotation = annoté
 		annotation concernant la représentation
-	 article
-	 autographe
-	 bulle
-	 calligraphie
-	 citation
-	 date apocryphe
-	 décret
-	 dédicace
-	 en-tête
+	article
+	autographe
+	bulle
+	calligraphie
+	citation
+	date apocryphe
+	décret
+	dédicace
+	en-tête
 		en-tête imprimé
-	 ex-libris
-	 graduation
-	 hiéroglyphe
-	 idéogramme
-	 immatriculation
-	 initiale
-	 inscription concernant l'auteur
-	 inscription concernant l'exécutant
+	ex-libris
+	graduation
+	hiéroglyphe
+	idéogramme
+	immatriculation
+	initiale
+	inscription concernant l'auteur
+	inscription concernant l'exécutant
 		nom d'imprimeur inscrit
 		nom d'éditeur inscrit
-	 inscription concernant l'école
-	 inscription concernant l'épreuve
-	 inscription concernant la datation
-	 inscription concernant la représentation
+	inscription concernant l'école
+	inscription concernant l'épreuve
+	inscription concernant la datation
+	inscription concernant la représentation
 		inscription donnant l'identité du modèle
-	 inscription concernant la technique
-	 inscription concernant la vente
+	inscription concernant la technique
+	inscription concernant la vente
 		lieu de vente inscrit
-	 inscription concernant le commanditaire
+	inscription concernant le commanditaire
 		monogramme du commanditaire
-	 inscription concernant le destinataire
+	inscription concernant le destinataire
 		nom du destinataire
-	 inscription concernant le donataire
-	 inscription concernant le donateur
-	 inscription concernant le dédicataire
-	 inscription concernant le fabricant
-	 inscription concernant le lieu d'exécution
+	inscription concernant le donataire
+	inscription concernant le donateur
+	inscription concernant le dédicataire
+	inscription concernant le fabricant
+	inscription concernant le lieu d'exécution
 		lieu d'exécution inscrit
 		lieu d'impression inscrit
 		lieu d'édition inscrit
-	 inscription concernant le lieu d'émission
-	 inscription concernant le lieu de conservation
-	 inscription concernant le lieu de destination
-	 inscription concernant le lieu de découverte
-	 inscription concernant le lieu de provenance
-	 inscription concernant le propriétaire
-	 inscription concernant le type de modèle
-	 inscription concernant les collections = inscription concernant la collection
-	 inscription définissant le contenu
-	 inscription patronymique
-	 inscription votive
-	 invocation
-	 lettre
-	 liste
-	 légende
-	 mesure
-	 mode d'emploi
-	 paraphe
+	inscription concernant le lieu d'émission
+	inscription concernant le lieu de conservation
+	inscription concernant le lieu de destination
+	inscription concernant le lieu de découverte
+	inscription concernant le lieu de provenance
+	inscription concernant le propriétaire
+	inscription concernant le type de modèle
+	inscription concernant les collections = inscription concernant la collection
+	inscription définissant le contenu
+	inscription patronymique
+	inscription votive
+	invocation
+	lettre
+	liste
+	légende
+	mesure
+	mode d'emploi
+	paraphe
 		paraphe d'un conservateur
 		paraphe d'un collectionneur
-	 phylactère
-	 poème
-	 prière
-	 règle du jeu
-	 rébus
-	 signature apocryphe
+	phylactère
+	poème
+	prière
+	règle du jeu
+	rébus
+	signature apocryphe
 		monogramme apocryphe
-	 texte
+	texte
 		cantique
 		chanson
 		chant
@@ -93,15 +93,15 @@ Mise à jour mai 2014
 		texte historique
 		texte manuscrit
 		texte religieux
-	 titre
+	titre
 		sous-titre
-	 épitaphe
- inscription concernant les bateaux
-	 immatriculant = matricule
-	 nom du bateau = nom de bateau  = nom du navire
-	 port d'attache
- marque
-	 cachet
+	épitaphe
+inscription concernant les bateaux
+	immatriculant = matricule
+	nom du bateau = nom de bateau  = nom du navire
+	port d'attache
+marque
+	cachet
 		cachet d'atelier
 			cachet d'atelier usurpé
 		cachet de collectionneur
@@ -110,31 +110,31 @@ Mise à jour mai 2014
 		cachet de manufacture
 		cachet de marchand de couleurs
 		cachet de vente
-	 estampille
+	estampille
 		griffe
-	 logo
-	 marque concernant le support
-	 marque concernant les collections = marque de collection
-	 marque concernant les collections publiques
+	logo
+	marque concernant le support
+	marque concernant les collections = marque de collection
+	marque concernant les collections publiques
 		marque de bibliothèque
 		marque de musée
-	 marque d'atelier
-	 marque d'orfèvre
-	 marque de décorateur
-	 marque de décoration
-	 marque de fabricant
-	 marque de fabrique = marque de fabrication
-	 marque de façonnage
-	 marque de fondeur
-	 marque de jurande
-	 marque de manufacture
-	 marque de modèle
-	 marque de monteur
-	 marque de potier
-	 marque de série
-	 marque de tailleur
-	 marque du propriétaire
-	 marque postale
+	marque d'atelier
+	marque d'orfèvre
+	marque de décorateur
+	marque de décoration
+	marque de fabricant
+	marque de fabrique = marque de fabrication
+	marque de façonnage
+	marque de fondeur
+	marque de jurande
+	marque de manufacture
+	marque de modèle
+	marque de monteur
+	marque de potier
+	marque de série
+	marque de tailleur
+	marque du propriétaire
+	marque postale
 		cachet d'ambulant
 		cachet d'entrée
 		cachet d'oblitération
@@ -161,8 +161,8 @@ Mise à jour mai 2014
 		marque linéaire
 		étoile muette
 		étoile à numéro
-	 marque publicitaire
-	 poinçon
+	marque publicitaire
+	poinçon
 		poinçon d'importation
 		poinçon d'orfèvre
 		poinçon de charge
@@ -177,38 +177,38 @@ Mise à jour mai 2014
 		poinçon de ville
 		poinçon garantie et titre
 		sceau
-	 sigle
-	 tampon
+	sigle
+	tampon
 		tampon sec
-	 timbre
+	timbre
 		timbre de colportage
 		timbre humide
 		timbre sec
- marque de doreur
- marque de résidence
- numéro
-	 numéro d'inventaire
-	 numéro d'ordre
-	 numéro de classement
-	 numéro de décor
-	 numéro de modèle
-	 numéro de série
-	 numéro de tirage
-	 numéro peint
- signature = signé
-	 monogramme = monogrammé
+marque de doreur
+marque de résidence
+numéro
+	numéro d'inventaire
+	numéro d'ordre
+	numéro de classement
+	numéro de décor
+	numéro de modèle
+	numéro de série
+	numéro de tirage
+	numéro peint
+signature = signé
+	monogramme = monogrammé
 		monogramme en caractères typographiques
-	 signature de l'exécutant
-	 signature emblématique
-	 signature en caractères typographiques
-	 signature échoppée
- visa de censure
+	signature de l'exécutant
+	signature emblématique
+	signature en caractères typographiques
+	signature échoppée
+visa de censure
 
- affixe
-	 ?
-	 alphabet
+affixe
+	?
+	alphabet
 		cunéiforme
-	 emplacement
+	emplacement
 		côté
 		côté droit
 		côté gauche
@@ -220,12 +220,12 @@ Mise à jour mai 2014
 		sur cadre
 		sur fond
 		sur l'objet
-	 justification
+	justification
 		ancien = ancienne
 		d'origine
 		faux = fausse
 		récent = récente
-	 langue
+	langue
 		allemand
 		anglais
 		arabe
