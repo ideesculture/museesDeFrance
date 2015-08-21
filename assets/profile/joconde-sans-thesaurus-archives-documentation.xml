@@ -41,10 +41,6 @@
               <name_singular>concept</name_singular>
               <name_plural>concepts</name_plural>
             </label>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>koncept</name_singular>
-              <name_plural>koncept</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="facet" enabled="1" default="0">
@@ -61,18 +57,10 @@
               <name_singular>facette</name_singular>
               <name_plural>facettes</name_plural>
             </label>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>fasett</name_singular>
-              <name_plural>fasetter</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="guide_term" enabled="1" default="0">
           <labels>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>guide term</name_singular>
-              <name_plural>guide termer</name_plural>
-            </label>
             <label locale="en_US" preferred="1">
               <name_singular>guide term</name_singular>
               <name_plural>guide terms</name_plural>
@@ -92,14 +80,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>hierarchy name</name_singular>
               <name_plural>hierarchy names</name_plural>
-            </label>
-            <label locale="en_CA" preferred="1">
-              <name_singular>hierarchy name</name_singular>
-              <name_plural>hierarchy names</name_plural>
-            </label>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>hierarki namn</name_singular>
-              <name_plural>hierarki namn</name_plural>
             </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>nom de hiérarchie</name_singular>
@@ -141,15 +121,7 @@
       <items>
         <item idno="uf" enabled="1" default="1">
           <labels>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>Används för</name_singular>
-              <name_plural>Används för</name_plural>
-            </label>
             <label locale="en_US" preferred="1">
-              <name_singular>Use for</name_singular>
-              <name_plural>Use for</name_plural>
-            </label>
-            <label locale="en_CA" preferred="1">
               <name_singular>Use for</name_singular>
               <name_plural>Use for</name_plural>
             </label>
@@ -165,17 +137,9 @@
               <name_singular>Alternate</name_singular>
               <name_plural>Alternate</name_plural>
             </label>
-            <label locale="en_CA" preferred="1">
-              <name_singular>Alternate</name_singular>
-              <name_plural>Alternate</name_plural>
-            </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>Alternatif</name_singular>
               <name_plural>Alternatifs</name_plural>
-            </label>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>Alternativ</name_singular>
-              <name_plural>Alternativ</name_plural>
             </label>
           </labels>
         </item>
@@ -193,10 +157,6 @@
       <items>
         <item idno="user" enabled="1" default="0">
           <labels>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>Användargruppering</name_singular>
-              <name_plural>Användargrupperingar</name_plural>
-            </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>Ensemble créé par un utilisateur</name_singular>
               <name_plural>Ensembles créés par des utilisateurs</name_plural>
@@ -225,10 +185,6 @@
               <name_singular>Public presentation</name_singular>
               <name_plural>Public presentations</name_plural>
             </label>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>Publik presentation</name_singular>
-              <name_plural>publik presentationer</name_plural>
-            </label>
           </labels>
         </item>
       </items>
@@ -245,10 +201,6 @@
       <items>
         <item idno="slideshow" enabled="1" default="1">
           <labels>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>Bildspel</name_singular>
-              <name_plural>Bildspel</name_plural>
-            </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>Diaporama</name_singular>
               <name_plural>Diaporamas</name_plural>
@@ -269,10 +221,6 @@
               <name_singular>Liste de miniatures d'images</name_singular>
               <name_plural>Listes de miniatures d'images</name_plural>
             </label>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>Miniatyrbild lista</name_singular>
-              <name_plural>Miniatyrbild listor</name_plural>
-            </label>
             <label locale="en_US" preferred="1">
               <name_singular>Thumbnail image list</name_singular>
               <name_plural>Thumbnail image lists</name_plural>
@@ -288,10 +236,6 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>Liste de titres</name_singular>
               <name_plural>Listes de titres</name_plural>
-            </label>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>Titellista</name_singular>
-              <name_plural>Titellistor</name_plural>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>Title list</name_singular>
@@ -317,10 +261,6 @@
               <name_singular>Chronology</name_singular>
               <name_plural>Chronologies</name_plural>
             </label>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>Kronologi</name_singular>
-              <name_plural>Kronologier</name_plural>
-            </label>
           </labels>
         </item>
       </items>
@@ -337,10 +277,6 @@
       <items>
         <item idno="is_primary" enabled="1" default="0">
           <labels>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>Är primär</name_singular>
-              <name_plural>Är primär</name_plural>
-            </label>
             <label locale="en_US" preferred="1">
               <name_singular>Is primary</name_singular>
               <name_plural>Is primary</name_plural>
@@ -357,10 +293,6 @@
         </item>
         <item idno="is_not_primary" enabled="1" default="1">
           <labels>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>Är inte primär</name_singular>
-              <name_plural>Är inte primär</name_plural>
-            </label>
             <label locale="en_US" preferred="1">
               <name_singular>Is not primary</name_singular>
               <name_plural>Is not primary</name_plural>
@@ -767,15 +699,7 @@
               <name_singular>en cours d'acquisition</name_singular>
               <name_plural>en cours d'acquisition</name_plural>
             </label>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>i väntan på nyförvärv</name_singular>
-              <name_plural>i väntan på nyförvärv</name_plural>
-            </label>
             <label locale="en_US" preferred="1">
-              <name_singular>pending accession</name_singular>
-              <name_plural>pending accession</name_plural>
-            </label>
-            <label locale="en_CA" preferred="1">
               <name_singular>pending accession</name_singular>
               <name_plural>pending accession</name_plural>
             </label>
@@ -795,18 +719,10 @@
               <name_singular>acquis</name_singular>
               <name_plural>acquis</name_plural>
             </label>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>nyförvärvad</name_singular>
-              <name_plural>nyförvärvad</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="non_accessioned" enabled="1" default="0">
           <labels>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>ej nyförvärvad</name_singular>
-              <name_plural>ej nyförvärvad</name_plural>
-            </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>non acquis</name_singular>
               <name_plural>non acquis</name_plural>
@@ -834,10 +750,6 @@
             <label locale="en_CA" preferred="1">
               <name_singular>potential acquisition</name_singular>
               <name_plural>potential acquisitions</name_plural>
-            </label>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>potentiella förvärv</name_singular>
-              <name_plural>potentiella förvärv</name_plural>
             </label>
           </labels>
         </item>
@@ -876,10 +788,6 @@
               <name_singular>don</name_singular>
               <name_plural>dons</name_plural>
             </label>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>gåva</name_singular>
-              <name_plural>gåvor</name_plural>
-            </label>
             <label locale="en_US" preferred="1">
               <name_singular>gift</name_singular>
               <name_plural>gifts</name_plural>
@@ -900,10 +808,6 @@
               <name_singular>bequest</name_singular>
               <name_plural>bequests</name_plural>
             </label>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>donation</name_singular>
-              <name_plural>donation</name_plural>
-            </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>leg</name_singular>
               <name_plural>legs</name_plural>
@@ -915,10 +819,6 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>achat</name_singular>
               <name_plural>achats</name_plural>
-            </label>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>köp</name_singular>
-              <name_plural>köp</name_plural>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>purchase</name_singular>
@@ -932,10 +832,6 @@
         </item>
         <item idno="loan" enabled="1" default="0">
           <labels>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>lån</name_singular>
-              <name_plural>lån</name_plural>
-            </label>
             <label locale="en_US" preferred="1">
               <name_singular>loan</name_singular>
               <name_plural>loans</name_plural>
@@ -952,10 +848,6 @@
         </item>
         <item idno="long_term_loan" enabled="1" default="0">
           <labels>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>långfristigt lån</name_singular>
-              <name_plural>långfristigt lån</name_plural>
-            </label>
             <label locale="en_US" preferred="1">
               <name_singular>long-term loan</name_singular>
               <name_plural>long-term loans</name_plural>
@@ -1056,10 +948,6 @@
               <name_singular>nouveau</name_singular>
               <name_plural>nouveaux</name_plural>
             </label>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>ny</name_singular>
-              <name_plural>nya</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="editing_in_progress" enabled="1" default="0" value="1">
@@ -1075,10 +963,6 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>modification en cours</name_singular>
               <name_plural>modifications en cours</name_plural>
-            </label>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>redigering pågår</name_singular>
-              <name_plural>redigering pågår</name_plural>
             </label>
           </labels>
         </item>
@@ -1096,18 +980,10 @@
               <name_singular>modification réalisée</name_singular>
               <name_plural>modifications réalisées</name_plural>
             </label>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>redigering komplett</name_singular>
-              <name_plural>redigering komplett</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="review_in_progress" enabled="1" default="0" value="3">
           <labels>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>granskning pågår</name_singular>
-              <name_plural>granskning pågår</name_plural>
-            </label>
             <label locale="en_US" preferred="1">
               <name_singular>review in progress</name_singular>
               <name_plural>review in progress</name_plural>
@@ -1132,10 +1008,6 @@
               <name_singular>completed</name_singular>
               <name_plural>completed</name_plural>
             </label>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>klar</name_singular>
-              <name_plural>klar</name_plural>
-            </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>validé</name_singular>
               <name_plural>validés</name_plural>
@@ -1156,10 +1028,6 @@
       <items>
         <item idno="internal_only" enabled="1" default="0" value="0">
           <labels>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>inte tillgänglig för allmänheten</name_singular>
-              <name_plural>inte tillgänglig för allmänheten</name_plural>
-            </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>non accessible au public</name_singular>
               <name_plural>non accessibles au public</name_plural>
@@ -1179,10 +1047,6 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>accès restreint</name_singular>
               <name_plural>accès restreint</name_plural>
-            </label>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>begränsad allmän tillgång</name_singular>
-              <name_plural>begränsad allmän tillgång</name_plural>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>restricted public access</name_singular>
@@ -1244,10 +1108,6 @@
               <name_singular>en cours d'acquisition</name_singular>
               <name_plural>en cours d'acquisition</name_plural>
             </label>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>i väntan på nyförvärv</name_singular>
-              <name_plural>i väntan på nyförvärv</name_plural>
-            </label>
             <label locale="en_US" preferred="1">
               <name_singular>pending accession</name_singular>
               <name_plural>pending accession</name_plural>
@@ -1272,18 +1132,10 @@
               <name_singular>acquis</name_singular>
               <name_plural>acquis</name_plural>
             </label>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>nyförvärvad</name_singular>
-              <name_plural>nyförvärvad</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="non_accessioned" enabled="1" default="0">
           <labels>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>ej nyförvärvad</name_singular>
-              <name_plural>ej nyförvärvad</name_plural>
-            </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>non acquis</name_singular>
               <name_plural>non acquis</name_plural>
@@ -1312,10 +1164,6 @@
               <name_singular>potential acquisition</name_singular>
               <name_plural>potential acquisitions</name_plural>
             </label>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>potentiella förvärv</name_singular>
-              <name_plural>potentiella förvärv</name_plural>
-            </label>
           </labels>
         </item>
       </items>
@@ -1332,10 +1180,6 @@
       <items>
         <item idno="uf" enabled="1" default="0">
           <labels>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>använda för</name_singular>
-              <name_plural>använda för</name_plural>
-            </label>
             <label locale="en_US" preferred="1">
               <name_singular>use for</name_singular>
               <name_plural>use for</name_plural>
@@ -1363,10 +1207,6 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>alternatif</name_singular>
               <name_plural>alternatifs</name_plural>
-            </label>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>alternativ</name_singular>
-              <name_plural>alternativa</name_plural>
             </label>
           </labels>
         </item>
@@ -1430,10 +1270,6 @@
       <items>
         <item idno="movement" enabled="1" default="1">
           <labels>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>Förflyttning</name_singular>
-              <name_plural>Förflyttningar</name_plural>
-            </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>Mouvement</name_singular>
               <name_plural>Mouvements</name_plural>
@@ -1568,10 +1404,6 @@
       <items>
         <item idno="uf" enabled="1" default="0">
           <labels>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>använda för</name_singular>
-              <name_plural>använda för</name_plural>
-            </label>
             <label locale="en_US" preferred="1">
               <name_singular>use for</name_singular>
               <name_plural>use for</name_plural>
@@ -1599,10 +1431,6 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>alternatif</name_singular>
               <name_plural>alternatifs</name_plural>
-            </label>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>alternativ</name_singular>
-              <name_plural>alternativa</name_plural>
             </label>
           </labels>
         </item>
@@ -1632,10 +1460,6 @@
               <name_singular>continent</name_singular>
               <name_plural>continents</name_plural>
             </label>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>kontinent</name_singular>
-              <name_plural>kontinenter</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="country" enabled="1" default="1">
@@ -1648,10 +1472,6 @@
               <name_singular>country</name_singular>
               <name_plural>countries</name_plural>
             </label>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>land</name_singular>
-              <name_plural>länder</name_plural>
-            </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>pays</name_singular>
               <name_plural>pays</name_plural>
@@ -1663,10 +1483,6 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>état/région</name_singular>
               <name_plural>état/région</name_plural>
-            </label>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>län/region</name_singular>
-              <name_plural>län/regioner</name_plural>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>state/province</name_singular>
@@ -1688,10 +1504,6 @@
               <name_singular>city</name_singular>
               <name_plural>cities</name_plural>
             </label>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>kommun</name_singular>
-              <name_plural>kommuner</name_plural>
-            </label>
             <label locale="fr_FR" preferred="1">
               <name_singular>ville</name_singular>
               <name_plural>villes</name_plural>
@@ -1700,10 +1512,6 @@
         </item>
         <item idno="neighborhood" enabled="1" default="0">
           <labels>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>kvarter</name_singular>
-              <name_plural>kvarter</name_plural>
-            </label>
             <label locale="en_US" preferred="1">
               <name_singular>neighborhood</name_singular>
               <name_plural>neighborhoods</name_plural>
@@ -1732,10 +1540,6 @@
               <name_singular>location</name_singular>
               <name_plural>locations</name_plural>
             </label>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>plats</name_singular>
-              <name_plural>platser</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="river" enabled="1" default="0">
@@ -1743,10 +1547,6 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>fleuve/rivière</name_singular>
               <name_plural>fleuves/rivières</name_plural>
-            </label>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>flod</name_singular>
-              <name_plural>floder</name_plural>
             </label>
             <label locale="en_US" preferred="1">
               <name_singular>river</name_singular>
@@ -1769,10 +1569,6 @@
               <name_plural>socknar</name_plural>
             </label>
             <label locale="en_CA" preferred="1">
-              <name_singular>socken</name_singular>
-              <name_plural>socknar</name_plural>
-            </label>
-            <label locale="sv_SE" preferred="1">
               <name_singular>socken</name_singular>
               <name_plural>socknar</name_plural>
             </label>
@@ -1804,10 +1600,6 @@
       <items>
         <item idno="uf" enabled="1" default="0">
           <labels>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>använda för</name_singular>
-              <name_plural>använda för</name_plural>
-            </label>
             <label locale="en_US" preferred="1">
               <name_singular>use for</name_singular>
               <name_plural>use for</name_plural>
@@ -1831,10 +1623,6 @@
             <label locale="fr_FR" preferred="1">
               <name_singular>alternatif</name_singular>
               <name_plural>alternatifs</name_plural>
-            </label>
-            <label locale="sv_SE" preferred="1">
-              <name_singular>alternativ</name_singular>
-              <name_plural>alternativa</name_plural>
             </label>
           </labels>
         </item>
@@ -32234,9 +32022,6 @@ If appropriate, include information on where to obtain a copy.</description>
         <label locale="en_CA">
           <name>Extended search</name>
         </label>
-        <label locale="sv_SE">
-          <name>Utökad sökning</name>
-        </label>
       </labels>
       <settings>
         <setting name="form_width">3</setting>
@@ -32272,9 +32057,6 @@ If appropriate, include information on where to obtain a copy.</description>
         </label>
         <label locale="en_CA">
           <name>Extended search</name>
-        </label>
-        <label locale="sv_SE">
-          <name>Utökad sökning</name>
         </label>
       </labels>
       <settings>
@@ -32312,9 +32094,6 @@ If appropriate, include information on where to obtain a copy.</description>
         <label locale="en_CA">
           <name>Extended search</name>
         </label>
-        <label locale="sv_SE">
-          <name>Utökad sökning</name>
-        </label>
       </labels>
       <settings>
         <setting name="form_width">3</setting>
@@ -32344,9 +32123,6 @@ If appropriate, include information on where to obtain a copy.</description>
         </label>
         <label locale="en_CA">
           <name>Extended search</name>
-        </label>
-        <label locale="sv_SE">
-          <name>Utökad sökning</name>
         </label>
       </labels>
       <settings>
@@ -32378,9 +32154,6 @@ If appropriate, include information on where to obtain a copy.</description>
         <label locale="en_CA">
           <name>Extended search</name>
         </label>
-        <label locale="sv_SE">
-          <name>Utökad sökning</name>
-        </label>
       </labels>
       <settings>
         <setting name="form_width">3</setting>
@@ -32411,9 +32184,6 @@ If appropriate, include information on where to obtain a copy.</description>
         <label locale="en_CA">
           <name>Extended search</name>
         </label>
-        <label locale="sv_SE">
-          <name>Utökad sökning</name>
-        </label>
       </labels>
       <settings>
         <setting name="form_width">3</setting>
@@ -32434,9 +32204,6 @@ If appropriate, include information on where to obtain a copy.</description>
         </label>
         <label locale="en_CA">
           <name>Extended search</name>
-        </label>
-        <label locale="sv_SE">
-          <name>Utökad sökning</name>
         </label>
       </labels>
       <settings>
@@ -32461,9 +32228,6 @@ If appropriate, include information on where to obtain a copy.</description>
         </label>
         <label locale="en_CA">
           <name>Extended search</name>
-        </label>
-        <label locale="sv_SE">
-          <name>Utökad sökning</name>
         </label>
       </labels>
       <settings>
