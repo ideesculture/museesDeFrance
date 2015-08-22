@@ -11,13 +11,6 @@
 ?>
 
 <h1>Inventaire des biens affectés</h1>
-<?php print caFormControlBox(
-    caNavButton($this->request, __CA_NAV_BUTTON_EDIT__, "Importer mettre à jour un objet", "", "*", "*", "*").
-    caNavButton($this->request, __CA_NAV_BUTTON_BATCH_EDIT__, "Importer mettre à jour un ensemble", "", "*", "*", "*"),
-    null,
-    null
-);
-?>
 <?php switch ($vn_obj_nb) { ?>
 <?php case "0": ?>
 <?php break; ?>

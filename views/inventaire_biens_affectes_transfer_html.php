@@ -7,7 +7,7 @@
     MetaTagManager::addLink('stylesheet', __CA_URL_ROOT__."/app/plugins/museesDeFrance/assets/css/museesDeFrance.css",'text/css');
 
 ?>
-<h1><?php print $vs_name." [".$vs_idno."]"; ?> <br/><small>Transfert dans l'inventaire des biens affectés</small></h1>
+<h1><?php print $vs_name." [".$vs_idno."]"; ?></h1>
 <table class="inventaire-object-display">
     <thead>
     <tr>
@@ -51,23 +51,9 @@
 <p>Attention, ces données ne seront définitivement écrites qu'à la validation de l'objet dans l'inventaire.</p>
 <p>Une fois l'objet validé, vous ne pourrez plus modifier ses informations.</p>
 <p>Voulez vous valider l'ajout de l'objet dans l'inventaire ?</p>
-<?php
-    print caNavButton(
-        $this->request,
-        __CA_NAV_BUTTON_APPROVE__,
-        "Valider",
-        '*',
-        '*',
-        "*",
-        'Validate',
-        array("id"=>$vn_id));
-    print caNavButton(
-        $this->request,
-        __CA_NAV_BUTTON_CANCEL__,
-        "Retour",
-        '*',
-        '*',
-        '*',
-        'Index');
+<?php print caFormControlBox(
+    caNavButton($this->request, __CA_NAV_BUTTON_SCROLL_LT__, "Retour", "", "*", "*", "Index"),
+    null,
+    caNavButton($this->request, __CA_NAV_BUTTON_COMMIT__, "Valider", "", "*", "*", 'Validate',array("id"=>$vn_id))
+);
 ?>
-

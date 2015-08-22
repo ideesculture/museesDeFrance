@@ -196,6 +196,10 @@ class BaseObjectInventaire implements InterfaceInventaire {
                     }
                 }
             }
+            // Converting quotes to french typographic quotes
+            $tempstring = str_replace("'","’",$tempstring);
+            // Escaping double quotes to allow safe MySQL insertion
+            $tempstring = str_replace("\"","\\\"",$tempstring);
             if ($tempstring) $this->set($name, $tempstring);
         }
         return  true;
@@ -226,6 +230,7 @@ class BaseObjectInventaire implements InterfaceInventaire {
             $vs_request .= "validated=\"".$this->validated."\"";
             $vs_request .= " WHERE id=".$this->id;
             $this->opo_db->query($vs_request);
+
             return $this->id;
         }
     }

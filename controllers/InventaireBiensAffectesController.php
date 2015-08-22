@@ -59,6 +59,61 @@ class InventaireBiensAffectesController extends ActionController
         $this->render('inventaire_biens_affectes_transfer_html.php');
     }
 
+    public function TransferSetAjax()
+    {
+        // Force error_reporting if errors are printed on screen
+        error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT);
+
+        $vs_set_id = $this->request->getParameter("id",pInteger);
+
+        $vt_set = new ca_sets($vs_set_id);
+
+        $va_object_ids = array_keys($vt_set->getItemRowIDs());
+        $progression = 0;
+        $max_progression = count($va_object_ids);
+
+        //type octet-stream. make sure apache does not gzip this type, else it would get buffered
+        header('Content-Type: text/octet-stream');
+        header('Cache-Control: no-cache'); // recommended to prevent caching of event data.
+
+        foreach($va_object_ids as $vs_object_id) {
+            // Progress
+            $d = array('message' => "Transfert des objets depuis l'ensemble ".$vs_set_id , 'progress' => round($progression/$max_progression,2)*100);
+            echo json_encode($d) . PHP_EOL;
+            ob_flush();
+            flush();
+
+            $vt_object = new ca_objects($vs_object_id);
+
+            $vs_idno = $vt_object->get("idno");
+            $vs_name = $vt_object->get("ca_objects.preferred_labels.name");
+
+            $vo_bienaffecte = new BienAffecte();
+            //var_dump($vo_bienaffecte);die();
+            $vo_bienaffecte->loadByCaID($vs_object_id);
+            $vo_bienaffecte->fill($vt_object);
+            $vo_bienaffecte->save();
+            $vo_bienaffecte->copyPhoto($vt_object);
+            $progression++;
+        }
+        // Progress end
+        $d = array('message' => "Transfert des objets depuis l'ensemble ".$vs_set_id , 'progress' => 100);
+        echo json_encode($d) . PHP_EOL;
+        ob_flush();
+        flush();
+
+        exit();
+    }
+
+    public function TransferSet()
+    {
+        $vs_set_id = $this->request->getParameter("id",pInteger);
+
+        $this->view->setVar('id', $vs_set_id);
+
+        $this->render('inventaire_biens_affectes_transfer_set_html.php');
+    }
+
     public function Validate()
     {
         $vs_object_id = $this->request->getParameter("object_id",pInteger);
