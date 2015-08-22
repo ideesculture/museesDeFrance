@@ -13,7 +13,9 @@
 <h1>Inventaire des biens affectés</h1>
 <?php print caFormControlBox(
     caNavButton($this->request, __CA_NAV_BUTTON_EDIT__, "Importer mettre à jour un objet", "", "*", "*", "*").
-    caNavButton($this->request, __CA_NAV_BUTTON_BATCH_EDIT__, "Importer mettre à jour un ensemble", "", "*", "*", "*")
+    caNavButton($this->request, __CA_NAV_BUTTON_BATCH_EDIT__, "Importer mettre à jour un ensemble", "", "*", "*", "*"),
+    null,
+    null
 );
 ?>
 <?php switch ($vn_obj_nb) { ?>
@@ -69,7 +71,7 @@ foreach($vt_registre->getObjects() as $vt_object) {
         print "<br/><img src=\"".__CA_URL_ROOT__."/app/plugins/museesDeFrance/assets/photos/".$vt_object->file."\" style=\"width:50px;\">";
     }
     print "</td>
-        <td>".$vt_object->designation_display."</td>
+        <td><a href='".caNavUrl($this->request,"*","*","Transfer",array("id"=>$vt_object->get("ca_id")))."'>".$vt_object->designation_display."</a></td>
         <td>".$vt_object->auteur_display."</td>
         <td>".$vt_object->date_inscription_display."</td>
         <td>";
@@ -102,13 +104,9 @@ foreach($vt_registre->getObjects() as $vt_object) {
 </div>
 </div>
 
-<div class="control-box rounded">
-    <div class="control-box-left-content">
-        <?php print caNavButton($this->request,__CA_NAV_BUTTON_PDF__,"Générer le PDF","", $this->request->getModulePath(), $this->request->getController(), 'GeneratePDF'); ?>
-    </div>
-    <div class="control-box-right-content">
-        <?php print caNavButton($this->request,__CA_NAV_BUTTON_IMAGE__,"Afficher les photos","", $this->request->getModulePath(), $this->request->getController(), 'Photos'); ?>
-    </div>
-    <div class="control-box-middle-content">
-    </div>
-</div>
+<?php print caFormControlBox(
+    caNavButton($this->request,__CA_NAV_BUTTON_PDF__,"Générer le PDF","", "*", '*', 'GeneratePDF').
+    caNavButton($this->request, __CA_NAV_BUTTON_IMAGE__, "Afficher les photos", "", "*", "*", "*", 'Photos'),
+    null,
+    null
+); ?>

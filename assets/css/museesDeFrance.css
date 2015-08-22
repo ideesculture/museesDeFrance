@@ -28,4 +28,8 @@ table#registre_biens_affectes {
     margin-bottom: 8px;
 }
 
-
+.inventaire-object-display table {width:100%;}
+.inventaire-object-display td.photo {vertical-align: top;text-align: right;font-size: 10px;width:320px;}
+.inventaire-object-display td.label {background:#f0f0f0;color:#555555;font-size: 10px;width:420px;text-align:right;text-transform:lowercase;padding:1pt 3pt 1pt 3pt;}
+.inventaire-object-display td.content {font-size: 12px;width:100%; }
+.inventaire-object-display td.content b {font-size: 12px;font-weight: bold;}

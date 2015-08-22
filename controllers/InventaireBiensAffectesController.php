@@ -55,6 +55,7 @@ class InventaireBiensAffectesController extends ActionController
         $this->view->setVar('idno', $vs_idno);
         $this->view->setVar('name', $vs_name);
         $this->view->setVar('id', $vs_object_id);
+        $this->view->setVar('object', $vo_bienaffecte);
         $this->render('inventaire_biens_affectes_transfer_html.php');
     }
 
