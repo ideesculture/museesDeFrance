@@ -64,3 +64,7 @@ table#registre_biens_affectes {
 .searchNav.inventaireNav .parpage {
     margin-top:-4px;
 }
+
+#searchRefineBox.inventaireRefineBox a {
+    width: auto;
+}

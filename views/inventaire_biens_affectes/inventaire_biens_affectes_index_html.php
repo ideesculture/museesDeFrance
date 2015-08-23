@@ -1,7 +1,14 @@
 <?php
     $vs_plugin_dir = $this->getVar("plugin_dir");
     $vt_registre = $this->getVar("registre");
-    $vn_obj_nb = $this->getVar("objects_nb");
+    $vn_obj_nb = $vt_registre->count();
+    $va_years = $vt_registre->getYears();
+
+    $vs_year = $this->getVar("year");
+    $vb_hide_drafts = $this->getVar("hide_drafts");
+
+    $num_start = $this->getVar("num_start");
+    $designation = $this->getVar("designation");
 
     MetaTagManager::addLink('stylesheet', __CA_URL_ROOT__."/app/plugins/museesDeFrance/assets/css/museesDeFrance.css",'text/css');
     MetaTagManager::addLink('stylesheet', __CA_URL_ROOT__."/app/plugins/museesDeFrance/assets/css/themes/blue/style.css",'text/css');
@@ -41,23 +48,28 @@
 <?php } ?>
 <div class="divide"><!-- empty --></div>
 <div style="clear: both;"><!-- empty --></div>
-<div id="searchRefineBox" style="display: none;">
+<div id="searchRefineBox" class="inventaireRefineBox" style="display: none;">
     <div class="bg">
-        <div id="searchRefineContent"><div class="startBrowsingBy">Filtrer les résultats</div>
-            <span><input type="checkbox" name="showDrafts"/> Afficher les brouillons</span>
+        <div id="searchRefineContent">
+            <div class="startBrowsingBy">Filtrer les résultats</div>
 
-            <span>Filtrer par année <SELECT name="year" size="1">
-                    <OPTION>2013
-                    <OPTION>2014
-                    <OPTION>2015
-                </SELECT></span>
+            <?php print caFormTag($this->request,"Index", "inventaire_filter",null,"post","multipart/form-data","_top", array("submitOnReturn"=>true)); ?>
+                <span><input type="checkbox" name="hidedrafts" <?php if ($vb_hide_drafts) print "checked"; ?>/> Masquer les brouillons</span>
 
-            <span>Par numéro de dépôt <input type="text" size="8"/></span>
+                <span>Filtrer par année <SELECT name="year" size="1">
+                        <OPTION value="">-</OPTION>
+                        <?php foreach($va_years as $year) {
+                            print "<OPTION ".($year==$vs_year ? "SELECTED" :"").">".$year."</OPTION>";
+                        } ?>
+                    </SELECT></span>
 
-            <span>Par désignation <input type="text" size="22"/></span>
+                <span>Par début de numéro <input name="num_start" type="text" size="14" value="<?php print $num_start; ?>" /></span>
 
+                <span>Par désignation <input name="designation" type="text" size="22" value="<?php print $designation; ?>" /></span>
+            </form>
         </div>
         <a href="#" id="hideRefine" onclick="jQuery('#searchRefineBox').slideUp();jQuery('#showRefine').show();"><img src="<?php print __CA_URL_ROOT__; ?>/themes/default/graphics/buttons/glyphicons_191_circle_minus.png" alt="glyphicons_191_circle_minus" border="0"></a>
+        <a href="#" id="hideRefine" onclick="jQuery('#inventaire_filter').submit();"><img src="<?php print __CA_URL_ROOT__; ?>/themes/default/graphics/buttons/glyphicons_193_circle_ok.png" alt="glyphicons_193_circle_ok.png" border="0"></a>
         <div style="clear:both;"></div>
     </div><!-- end bg -->
 </div>
@@ -77,7 +89,10 @@
     <tbody>
     <?php
     $i = 0;
-    foreach($vt_registre->getObjects() as $vt_object) {
+    foreach($vt_registre->getObjects($vs_year, $num_start, $designation) as $vt_object) {
+        // Ignore object if draft mode is off and object hasn't been validated
+        if($vb_hide_drafts && $vt_object->get(validated) === "0") continue;
+
         print ($i % 2 == 0 ? "<tr>" : "<tr class='odd'>" );
 
         print "<td><a href='".caNavUrl($this->request,"editor/objects","ObjectEditor","Edit",array("object_id"=>$vt_object->get("ca_id")))."'>".$vt_object->numinv_display."</a>";

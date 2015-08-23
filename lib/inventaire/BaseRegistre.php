@@ -57,7 +57,7 @@ class BaseRegistre implements InterfaceRegistre {
     }
 
     public function count() {
-        $qr_res = $this->opo_db->query("SELECT count(*) as number FROM ".$this->tablename);
+        $qr_res = $this->opo_db->query("SELECT count(*) as number FROM ".$this->tablename." WHERE validated=1");
         if ($qr_res->numRows() > 0) {
             $qr_res->nextRow();
             return $qr_res->get("number");
@@ -66,8 +66,30 @@ class BaseRegistre implements InterfaceRegistre {
         }
     }
 
-    function getObjects($year = null) {
-        $qr_res = $this->opo_db->query("SELECT ca_id FROM ".$this->tablename);
+    public function getYears() {
+        $qr_res = $this->opo_db->query("SELECT distinct right(date_inscription_display,4) as years FROM ".$this->tablename);
+        $va_results=array();
+        if ($qr_res->numRows() > 0) {
+            while($qr_res->nextRow()) {
+                $va_results[] = $qr_res->get("years");
+            }
+            return $va_results;
+        } else {
+            return false;
+        }
+    }
+
+
+    function getObjects($year = null, $num_start = null, $designation = null) {
+        $vs_request = "SELECT ca_id FROM ".$this->tablename;
+        if($year) $vs_request_where =" WHERE right(date_inscription_display,4)=\"".$year."\"";
+        if($num_start) $vs_request_where .=
+            ($vs_request_where == "" ? " WHERE ": " AND ")
+            .$this->numtype."_display LIKE \"".$num_start."%\"";
+        if($designation) $vs_request_where .=
+            ($vs_request_where == "" ? " WHERE ": " AND ")
+            ."designation LIKE \"%".$designation."%\"";
+        $qr_res = $this->opo_db->query($vs_request.$vs_request_where);
         $va_results = array();
         if ($qr_res->numRows() > 0) {
             while($qr_res->nextRow()) {

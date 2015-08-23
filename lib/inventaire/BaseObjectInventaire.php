@@ -180,9 +180,14 @@ class BaseObjectInventaire implements InterfaceInventaire {
         return false;
     }
 
-    function fill($pt_object) {
-        $this->set("ca_id", $pt_object->get("object_id"));
-        foreach($this->mapping  as $name => $field) {
+    function fill($t_object) {
+        $t_locale = new \ca_locales();
+        $locale_id = $t_locale->loadLocaleByCode('fr_FR'); // Stockage explicite en français
+        unset($t_locale);
+
+        $this->set("ca_id", $t_object->get("object_id"));
+
+        /*foreach($this->mapping  as $name => $field) {
             $tempstring = "";
             foreach ($field as $values) {
                 if($pt_object->get($values["field"])){
@@ -201,7 +206,96 @@ class BaseObjectInventaire implements InterfaceInventaire {
             // Escaping double quotes to allow safe MySQL insertion
             $tempstring = str_replace("\"","\\\"",$tempstring);
             if ($tempstring) $this->set($name, $tempstring);
+        }*/
+
+       foreach ($this->mapping as $target => $fields) {
+            $response_global = "";
+            foreach($fields as $attribute) {
+                $response = "";
+                $field = $attribute["field"];
+                $data = explode(".",$field);
+
+                switch($data[0]) {
+                    case "ca_entities" :
+                        $entities = $t_object->getRelatedItems("ca_entities",array("restrictToRelationshipTypes"=>$attribute["relationshipTypes"]));
+                        foreach($entities as $entity) {
+                            $response = ($response ? $response.", " : "").$entity["displayname"];
+                        }
+                        break;
+                    case "ca_places" :
+                        $places = $t_object->getRelatedItems("ca_places",array("restrictToRelationshipTypes"=>$attribute["relationshipTypes"]));
+                        foreach($places as $place) {
+                            $response = ($response ? $response.", " : "").$place["name"];
+                        }
+                        break;
+                    case "ca_objects" :
+                    default:
+                        if ($field != "ca_objects.nonpreferred_labels") {
+                            // GESTION DES OPTIONS POUR LE get()
+                            $options = array("convertCodesToDisplayText"=>"true", "locale"=>$locale_id);
+                            if ($attribute["options"]) $options = array_merge($options,$attribute["options"]);
+                            // RECUPERATION DU CHAMP POUR L'AFFICHAGE
+
+                            $response = $t_object->get($field, $options);
+
+                            // POST-TRAITEMENT
+                            if (($attribute["post-treatment"]) && ($response)) {
+                                switch($attribute["post-treatment"]) {
+                                    // Conversion monétaire
+                                    case 'convertcurrencytoeuros' :
+                                        if ($response) {
+                                            preg_match('/([[:graph:]]*) ([[:graph:]]*)/i',$response, $matches);
+                                            if ($matches[1] != "EUR") {
+                                                $conversionresult = $this->convertcurrency($matches[1], "EUR", $matches[2]);
+                                                if($conversionresult) {
+                                                    $response=$conversionresult;
+                                                } else {
+                                                    throw new \Exception("Erreur dans la conversion de devise de ".$response." en euros ($response).");
+                                                }
+                                            } else {
+                                                $response = $matches[2];
+                                            }
+                                            // Remplacement du point par la virgule
+                                            $response = str_replace(".", ",",$response)." €";
+                                        }
+                                        break;
+                                    // Conversion vers une date au format JJ/MM/AAAA
+                                    case 'caDateToUnixTimestamp' :
+                                        $response = date('d/m/Y',caDateToUnixTimestamp($response));
+                                        break;
+                                    // Post-traitement non reconnu
+                                    default :
+                                        throw new \Exception("Post-traitement non reconnu : ".$attribute["post-treatment"]);
+                                }
+                            }
+                        } else {
+                            // non preferred_labels
+                            $nonpreferred_labels = $t_object->get('ca_objects.nonpreferred_labels', array('returnAsArray' => true));
+                            if (sizeof($nonpreferred_labels)>0) { $nonpreferred_labels = reset($nonpreferred_labels); }
+                            //var_dump($attribute["otherLabelTypeId"]);
+                            //var_dump($nonpreferred_labels);
+                            //die();
+                            if (sizeof($nonpreferred_labels)>0) {
+                                foreach($nonpreferred_labels as $nonpreferred_label) {
+                                    if ($nonpreferred_label["type_id"] == $attribute["otherLabelTypeId"]) {
+                                        $response .= ($response ? ", ": "").$nonpreferred_label["name"];
+                                    }
+                                }
+                            }
+                        }
+                        break;
+                }
+                $response_global .= ($response ? $attribute["prefixe"].$response.$attribute["suffixe"] : "");
+            }
+           // Converting quotes to french typographic quotes
+           $response_global = str_replace("'","’",$response_global);
+           // Escaping double quotes to allow safe MySQL insertion
+           $response_global = str_replace("\"","\\\"",$response_global);
+
+            // DEFINITION DE L'ATTRIBUT
+            $this->set($target, !$response_global ? "non renseigné" : $response_global);
         }
+
         return  true;
     }
 
@@ -224,10 +318,13 @@ class BaseObjectInventaire implements InterfaceInventaire {
             // object exists, update
             $vs_request = "UPDATE ".$this->tablename." SET ";
             for ($i = 0, $size = count($va_fields); $i < $size; $i++) {
-                $vs_request .= $va_fields[$i]."=\"".$va_values[$i]."\", ";
+                // escaping the result for valid SQL
+                $vs_value = str_replace("\"","\\\"",$va_values[$i]);
+                // inserting the value inside the request
+                $vs_request .= $va_fields[$i]."=\"".$vs_value."\", ";
             }
             // trick : reuse the $i loop var to finish the request without a trailing comma
-            $vs_request .= "validated=\"".$this->validated."\"";
+            $vs_request .= "validated=\"".($this->validated ? 1 : 0)."\"";
             $vs_request .= " WHERE id=".$this->id;
             $this->opo_db->query($vs_request);
 

@@ -4,10 +4,18 @@
     $vs_name = $this->getVar("name");
     $vt_object = $this->getVar("object");
 
+    $vb_is_validated = ($vt_object->get("validated") == "1");
+
     MetaTagManager::addLink('stylesheet', __CA_URL_ROOT__."/app/plugins/museesDeFrance/assets/css/museesDeFrance.css",'text/css');
 
 ?>
 <h1><?php print $vs_name." [".$vs_idno."]"; ?></h1>
+<?php if($vb_is_validated): ?>
+<p>Cet objet est inscrit dans le registre d'inventaire, cette fiche n'est plus modifiable.</p>
+<?php else : ?>
+<p>Cet objet est en attente d'inscription dans le registre d'inventaire.</p>
+<?php endif; ?>
+
 <table class="inventaire-object-display">
     <thead>
     <tr>
@@ -48,12 +56,9 @@
     </tbody>
 </table>
 
-<p>Attention, ces données ne seront définitivement écrites qu'à la validation de l'objet dans l'inventaire.</p>
-<p>Une fois l'objet validé, vous ne pourrez plus modifier ses informations.</p>
-<p>Voulez vous valider l'ajout de l'objet dans l'inventaire ?</p>
 <?php print caFormControlBox(
     caNavButton($this->request, __CA_NAV_BUTTON_SCROLL_LT__, "Retour", "", "*", "*", "Index"),
     null,
-    caNavButton($this->request, __CA_NAV_BUTTON_COMMIT__, "Valider", "", "*", "*", 'Validate',array("id"=>$vn_id))
+    (!$vb_is_validated ? caNavButton($this->request, __CA_NAV_BUTTON_COMMIT__, "Inscrire à l'inventaire", "", "*", "*", 'Validate',array("id"=>$vn_id)) : null)
 );
 ?>

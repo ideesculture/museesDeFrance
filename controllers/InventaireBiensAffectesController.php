@@ -20,10 +20,25 @@ class InventaireBiensAffectesController extends ActionController
 
     public function Index()
     {
+        // Check if draft parameter is strictly equal to 0, every other value allows to display drafts
+        $vb_hide_drafts = false;
+        if (($this->request->getParameter("draft",pInteger) === "0") || ($this->request->getParameter("hidedrafts",pString) === "on")) {
+            $vb_hide_drafts = true;
+        }
+        $this->view->setVar("hide_drafts",$vb_hide_drafts);
+
+        $year = $this->request->getParameter("year",pString);
+        $this->view->setVar("year",$year);
+
+        $num_start = $this->request->getParameter("num_start",pString);
+        $this->view->setVar("num_start",$num_start);
+
+        $designation = $this->request->getParameter("designation",pString);
+        $this->view->setVar("designation",$designation);
+
         $vt_registre = new RegistreBiensAffectes();
         $this->view->setVar("registre",$vt_registre);
 
-        $this->view->setVar('objects_nb',$vt_registre->count());
         $this->render('inventaire_biens_affectes/inventaire_biens_affectes_index_html.php');
     }
 
@@ -133,6 +148,16 @@ class InventaireBiensAffectesController extends ActionController
         $this->render('inventaire_biens_affectes/inventaire_biens_affectes_validate_html.php');
     }
 
+    public function ValidateAll()
+    {
+        $vt_registre = new RegistreBiensAffectes();
+        $va_objects = $vt_registre->getObjects();
+        foreach($va_objects as $vt_inventaire_object) {
+            $vt_inventaire_object->validate();
+        }
+        exit();
+    }
+
     public function Unvalidate()
     {
         $vs_object_id = $this->request->getParameter("object_id",pInteger);
@@ -185,19 +210,6 @@ class InventaireBiensAffectesController extends ActionController
         $vo_bienaffecte->save();
     }
 
-    public function Creation()
-    {
-        $vo_bienaffecte = new BienAffecte("2");
-        $vo_bienaffecte->set("designation","Titre 2");
-        $vo_bienaffecte->set("epoque","Louis XVI");
-        $vo_bienaffecte->save();
-        $vo_bienaffecte->set("avis","bon");
-        $vo_bienaffecte->save();
-        $vo_bienaffecte->validate();
-        $vo_bienaffecte->set("avis","mauvais");
-        $vo_bienaffecte->save();
-    }
-
     public function About() {
         $this->render('inventaire_about_html.php');
     }
@@ -217,6 +229,8 @@ class InventaireBiensAffectesController extends ActionController
         $this->view->setVar('marginLeft', '1cm');
 
         $vs_content = $this->render("inventaire_biens_affectes_pdf.php");
+        var_dump($vs_content);
+        die();
 
         $dompdf->load_html($vs_content);
         $dompdf->render();
