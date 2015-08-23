@@ -11,22 +11,7 @@
 ?>
 
 <h1>Inventaire des biens affectés</h1>
-<div class="control-box rounded">
-    <div class="control-box-left-content">
-        <a class='form-button'>
-            <span class='form-button'>
-                <img src='/themes/default/graphics/buttons/glyphicons_036_file.png' border='0' class='form-button-left' style='padding-right: 10px' align='middle'/>
-                Importer/mettre à jour un objet
-            </span>
-        </a>
-        <a class='form-button'>
-            <span class='form-button'>
-                <img src='/themes/default/graphics/buttons/glyphicons_319_sort.png' border='0' class='form-button-left' style='padding-right: 10px' align='middle' />
-                Importer/mettre à jour un ensemble
-            </span>
-        </a>
-    </div>
-</div>
+
 <?php switch ($vn_obj_nb) { ?>
 <?php case "0": ?>
 <?php break; ?>
@@ -58,7 +43,9 @@
     </div><!-- end bg --></div>
 <div style="clear: both;"><!-- empty --></div>
 <div class="sectionBox">
-<a href="#" id="showRefine" onclick="jQuery('#searchRefineBox').slideDown();jQuery('#showRefine').hide();" data-original-title="Affiner les résultats" style="display: block;"><img src="/themes/default/graphics/buttons/glyphicons_119_table.png" alt="glyphicons_119_table" border="0"></a>
+<a href="#" id="showRefine" onclick="jQuery('#searchRefineBox').slideDown();jQuery('#showRefine').hide();" data-original-title="Affiner les résultats" style="display: block;">
+    <?php print caNavIcon($this->request,__CA_NAV_BUTTON_FILTER__); ?>
+</a>
 <?php
     $vs_registre_class = $vt_registre->objectmodel;
     $vt_object = new $vs_registre_class;
@@ -84,12 +71,11 @@ foreach($vt_registre->getObjects() as $vt_object) {
 
 </div>
 
-<div class="control-box rounded">
-    <div class="control-box-left-content">
-    </div>
-    <div class="control-box-right-content">
-        <?php print caNavButton($this->request,__CA_NAV_BUTTON_RIGHT_ARROW__,"Afficher le registre","", $this->request->getModulePath(), $this->request->getController(), 'Index'); ?>
-    </div>
-    <div class="control-box-middle-content">
-    </div>
-</div>
+<?php print caFormControlBox(
+    null,
+    null,
+    caNavButton($this->request,__CA_NAV_BUTTON_RIGHT_ARROW__,"Afficher le registre","", $this->request->getModulePath(), $this->request->getController(), 'Index')
+); ?>
+
+<div class="editorBottomPadding"><!-- empty --></div>
+<div class="editorBottomPadding"><!-- empty --></div>

@@ -28,10 +28,10 @@
     </div>
     <span class="parpage" style="float:left;">
         <select class="pagesize">
-            <option selected="selected"  value="12">12</option>
-            <option value="24">24</option>
-            <option value="36">36</option>
-            <option  value="48">48</option>
+            <option selected="selected" value="10">10</option>
+            <option value="20">20</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
         </select>
         objets par page
     </span>
@@ -67,7 +67,7 @@
         <?php print caNavIcon($this->request,__CA_NAV_BUTTON_FILTER__); ?>
 
     </a>
-    <table id="registre_biens_affectes" class="tablesorter">
+    <table id="registre_biens_affectes" class="listtable">
     <?php
         $vs_registre_class = $vt_registre->objectmodel;
         $vt_object = new $vs_registre_class;
@@ -113,13 +113,17 @@
                 jQuery("#registre_biens_affectes").tablesorter().tablesorterPager({container: $("#searchNav")}); ;
             }
         );
+
     </script>
 
 </div>
 
 <?php print caFormControlBox(
     caNavButton($this->request,__CA_NAV_BUTTON_PDF__,"Générer le PDF","", "*", '*', 'GeneratePDF').
-    caNavButton($this->request, __CA_NAV_BUTTON_IMAGE__, "Afficher les photos", "", "*", "*", "*", 'Photos'),
+    caNavButton($this->request, __CA_NAV_BUTTON_IMAGE__, "Afficher les photos", "", "*", "*", "Photos"),
     null,
     null
 ); ?>
+
+<div class="editorBottomPadding"><!-- empty --></div>
+<div class="editorBottomPadding"><!-- empty --></div>

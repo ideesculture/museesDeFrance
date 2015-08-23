@@ -50,6 +50,6 @@ class BienAffecte extends BaseObjectInventaire {
     }
 
     function getHtmlTableHeaderRow() {
-        return "<thead><tr><th>Numéro d'inventaire</th><th>Désignation</th><th>Auteur</th><th>Date d'inscription</th><th>Fonctions</th></tr></thead>";
+        return "<thead><tr><th class='list-header-unsorted'>Numéro d'inventaire</th><th class='list-header-unsorted'>Désignation</th><th class='list-header-unsorted'>Auteur</th><th class='list-header-unsorted'>Date d'inscription</th><th class='list-header-nosort'>Fonctions</th></tr></thead>";
     }
 }
