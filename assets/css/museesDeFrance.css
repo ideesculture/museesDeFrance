@@ -40,3 +40,27 @@ table#registre_biens_affectes {
     margin:6px;
     padding:4px 10px;
 }
+
+.searchNav #pager input.pagedisplay {
+    font:inherit;
+    margin:0;
+    padding:0;
+    border:none;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+    width: 50px !important;
+    transition:none;
+}
+
+.searchNav.inventaireNav form {
+    width: 100%;
+    text-align: center;
+
+    padding: 5px;
+}
+.searchNav.inventaireNav .nav {
+    width: auto;
+}
+.searchNav.inventaireNav .parpage {
+    margin-top:-4px;
+}
