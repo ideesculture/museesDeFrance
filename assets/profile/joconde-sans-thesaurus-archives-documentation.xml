@@ -6026,10 +6026,14 @@
       <items>
         <item idno="isadg" enabled="1" default="1">
           <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>ISADG Places Authority</name_singular>
-              <name_plural>ISADG Coverage Authority</name_plural>
+            <label locale="en_US">
+              <name_singular>Places</name_singular>
+              <name_plural>Places</name_plural>
             </label>
+            <label locale="fr_FR">
+              <name_singular>Lieux</name_singular>
+              <name_plural>Lieux</name_plural>
+            </label>            
           </labels>
         </item>
       </items>
