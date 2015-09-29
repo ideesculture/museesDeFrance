@@ -68,3 +68,7 @@ table#registre_biens_affectes {
 #searchRefineBox.inventaireRefineBox a {
     width: auto;
 }
+
+#leftNav h2 a.sf-menu-selected {
+    height:auto !important;
+}
