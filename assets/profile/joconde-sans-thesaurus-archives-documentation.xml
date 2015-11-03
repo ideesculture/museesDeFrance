@@ -6026,11 +6026,11 @@
       <items>
         <item idno="isadg" enabled="1" default="1">
           <labels>
-            <label locale="en_US">
+            <label locale="en_US" preferred="1">
               <name_singular>Places</name_singular>
               <name_plural>Places</name_plural>
             </label>
-            <label locale="fr_FR">
+            <label locale="fr_FR" preferred="1">
               <name_singular>Lieux</name_singular>
               <name_plural>Lieux</name_plural>
             </label>            
