@@ -1322,7 +1322,7 @@
         </label>
       </labels>
       <items>
-        <item idno="ind" enabled="1" default="0">
+        <item idno="ind" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>individual (person)</name_singular>
@@ -22887,7 +22887,7 @@ If appropriate, include information on where to obtain a copy.</description>
               <bundle>preferred_labels</bundle>
               <settings>
                 <setting name="label" locale="fr_FR">Désignation principale&lt;/span&gt;&lt;span class='formLabelDocumentationLink'&gt;&lt;a href=http://www.culture.gouv.fr/documentation/joconde/fr/partenaires/AIDEMUSEES/methode.htm#TITR target='_blank'&gt;?&lt;/a&gt;</setting>
-                <setting name="add_label" locale="fr_FR">Titre</setting>
+                <setting name="add_label" locale="fr_FR">Ajouter une désignation principale</setting>
               </settings>
             </placement>
             <placement code="nonpreferred_labels5">
