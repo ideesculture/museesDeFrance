@@ -20616,7 +20616,6 @@ If appropriate, include information on where to obtain a copy.</description>
       </labels>
       <settings>
         <setting name="listWidth">100</setting>
-        <setting name="requireValue">1</setting>
         <setting name="render">horiz_hierbrowser_with_search</setting>
         <setting name="displayDelimiter">; </setting>
       </settings>
