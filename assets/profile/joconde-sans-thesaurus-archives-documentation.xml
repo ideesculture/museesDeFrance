@@ -3470,6 +3470,10 @@
               <name_singular>Date available</name_singular>
               <name_plural>Date available</name_plural>
             </label>
+            <label locale="fr_FR" preferred="1">
+              <name_singular>Date de disponibilité</name_singular>
+              <name_plural>Date de disponibilité</name_plural>
+            </label>
           </labels>
         </item>
         <item idno="creation" enabled="1" default="1">
@@ -3477,6 +3481,10 @@
             <label locale="en_US" preferred="1">
               <name_singular>Date(s) of creation</name_singular>
               <name_plural>Date(s) creation</name_plural>
+            </label>
+            <label locale="fr_FR" preferred="1">
+              <name_singular>Date(s) de création</name_singular>
+              <name_plural>Date(s) de création</name_plural>
             </label>
           </labels>
         </item>
@@ -3486,6 +3494,10 @@
               <name_singular>Date(s) of record-keeping activity</name_singular>
               <name_plural>Date(s) of record-keeping activity</name_plural>
             </label>
+            <label locale="fr_FR" preferred="1">
+              <name_singular>Date(s) d'archivage</name_singular>
+              <name_plural>Date(s) d'archivage</name_plural>
+            </label>
           </labels>
         </item>
         <item idno="publication" enabled="1" default="0">
@@ -3493,6 +3505,10 @@
             <label locale="en_US" preferred="1">
               <name_singular>Date(s) of publication</name_singular>
               <name_plural>Date(s) of publication</name_plural>
+            </label>
+            <label locale="fr_FR" preferred="1">
+              <name_singular>Date(s) de publication</name_singular>
+              <name_plural>Date(s) de publication</name_plural>
             </label>
           </labels>
         </item>
@@ -3502,6 +3518,10 @@
               <name_singular>Date(s) broadcast</name_singular>
               <name_plural>Date(s) broadcast</name_plural>
             </label>
+            <label locale="fr_FR" preferred="1">
+              <name_singular>Date(s) de diffusion</name_singular>
+              <name_plural>Date(s) de diffusion</name_plural>
+            </label>
           </labels>
         </item>
         <item idno="bulk" enabled="1" default="0">
@@ -3509,6 +3529,10 @@
             <label locale="en_US" preferred="1">
               <name_singular>Bulk date(s)</name_singular>
               <name_plural>Bulk date(s)</name_plural>
+            </label>
+            <label locale="fr_FR" preferred="1">
+              <name_singular>Date(s) englobante(s)</name_singular>
+              <name_plural>Date(s) englobante(s)</name_plural>
             </label>
           </labels>
         </item>
@@ -3518,6 +3542,10 @@
               <name_singular>Normal date(s)</name_singular>
               <name_plural>Normal date(s)</name_plural>
             </label>
+            <label locale="fr_FR" preferred="1">
+              <name_singular>Date(s) normée(s)</name_singular>
+              <name_plural>Date(s) normée(s)</name_plural>
+            </label>            
           </labels>
         </item>
         <item idno="inclusive" enabled="1" default="0">
@@ -3525,6 +3553,10 @@
             <label locale="en_US" preferred="1">
               <name_singular>Inclusive date(s)</name_singular>
               <name_plural>Inclusive date(s)</name_plural>
+            </label>
+            <label locale="fr_FR" preferred="1">
+              <name_singular>Date(s) inclusive(s)</name_singular>
+              <name_plural>Date(s) inclusive(s)</name_plural>
             </label>
           </labels>
         </item>
@@ -25932,6 +25964,9 @@ If appropriate, include information on where to obtain a copy.</description>
           <labels>
             <label locale="en_US">
               <name>Access and Use</name>
+            </label>
+            <label locale="fr_FR">
+              <name>Accès et utilisation</name>
             </label>
           </labels>
           <bundlePlacements>
