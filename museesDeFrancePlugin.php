@@ -11,7 +11,7 @@ class museesDeFrancePlugin extends BaseApplicationPlugin
 	public function __construct($ps_plugin_path)
 	{
 		$this->ops_plugin_path = $ps_plugin_path;
-		$this->description = _t('Permet de générer les PV de récolement.');
+		$this->description = _t('Fonctionnalités pour les musées labellisés Musées de France par le Ministère de la Culture français.');
 		parent::__construct();
 		$ps_plugin_path = __CA_BASE_DIR__ . "/app/plugins/museesDeFrance";
 
@@ -192,20 +192,6 @@ class museesDeFrancePlugin extends BaseApplicationPlugin
 
 		return $pa_menu_bar;
 	}
-	# -------------------------------------------------------
-	/**
-	 * Add plugin user actions
-	 */
-	public function hookGetRoleActionList($pa_role_list)
-	{
-		$pa_role_list['plugin_recolementsmf'] = array(
-			'label' => _t('plugin Récolement SMF'),
-			'description' => _t('Actions pour le plugin Récolement SMF'),
-			'actions' => museesDeFrancePlugin::getRoleActionList()
-		);
-
-		return $pa_role_list;
-	}
 
 	public function hookRenderWidgets($pa_widgets_config)
 	{
@@ -251,16 +237,29 @@ class museesDeFrancePlugin extends BaseApplicationPlugin
 	/**
 	 * Get plugin user actions
 	 */
-	static public function getRoleActionList()
-	{
+
+	static public function getRoleActionList() {
 		return array(
 			'can_use_recolementsmf_plugin' => array(
-				'label' => _t('Peut utiliser les fonctions du plugin Musées de France'),
-				'description' => _t('L\'utilisateur peut utiliser les fonctions du plugin Musées de France.')
-			)
+				'label' => "Can use MuseesDeFrance plugin",
+				'description' => "Can use MuseesDeFrance plugin"
+			),
 		);
 	}
+
 	# -------------------------------------------------------
+	/**
+	 * Add plugin user actions
+	 */
+	public function hookGetRoleActionList($pa_role_list) {
+		$pa_role_list['plugin_museesDeFrancePlugin'] = array(
+			'label' => _t('Plugin MuseesDeFrance'),
+			'description' => _t('Actions pour le plugin MuseesDeFrance'),
+			'actions' => museesDeFrancePlugin::getRoleActionList()
+		);
+
+		return $pa_role_list;
+	}
 }
 
 ?>
