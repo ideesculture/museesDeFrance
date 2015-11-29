@@ -16,7 +16,7 @@ class ExternalController extends ActionController
 		parent::__construct($po_request, $po_response, $pa_view_paths);
 
 		if (!$this->request->user->canDoAction('can_use_recolementsmf_plugin')) {
-			$this->response->setRedirect($this->request->config->get('error_display_url') . '/n/3000?r=' . urlencode($this->request->getFullUrlPath()));
+			$this->response->setRedirect($this->request->config->get('error_display_url') . '/n/2320?r=' . urlencode($this->request->getFullUrlPath()));
 			return;
 		}
 
