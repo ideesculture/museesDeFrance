@@ -219,7 +219,7 @@ class InventaireBiensAffectesController extends ActionController
         $this->view->setVar("registre",$vt_registre);
 
         $dompdf = new DOMPDF();
-        $this->view->setVar('PDFRenderer', $o_pdf->getCurrentRendererCode());
+        //$this->view->setVar('PDFRenderer', $dompdf->getCurrentRendererCode());
 
         $this->view->setVar('pageWidth', "210mm");
         $this->view->setVar('pageHeight', "297mm");
@@ -229,7 +229,8 @@ class InventaireBiensAffectesController extends ActionController
         $this->view->setVar('marginLeft', '1cm');
 
         $vs_content = $this->render("inventaire_biens_affectes_pdf.php");
-
+        var_dump($vs_content );
+        die();
         $dompdf->load_html($vs_content);
         $dompdf->render();
         $dompdf->stream("inventaire_biens_affectes.pdf");
