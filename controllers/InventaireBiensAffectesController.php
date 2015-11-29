@@ -6,6 +6,8 @@ require_once(__CA_MODELS_DIR__."/ca_objects.php");
 
 class InventaireBiensAffectesController extends ActionController
 {
+    private $opo_config;
+
     # -------------------------------------------------------
     #
     # -------------------------------------------------------
@@ -16,6 +18,15 @@ class InventaireBiensAffectesController extends ActionController
         // Global vars for all children views
         $this->view->setVar('plugin_dir', __CA_BASE_DIR__."/app/plugins/museesDeFrance");
         $this->view->setVar('plugin_url', __CA_URL_ROOT__."/app/plugins/museesDeFrance");
+
+        $ps_plugin_path = __CA_BASE_DIR__ . "/app/plugins/museesDeFrance";
+
+        if (file_exists($ps_plugin_path . '/conf/local/museesDeFrance.conf')) {
+            $this->opo_config = Configuration::load($ps_plugin_path . '/conf/local/museesDeFrance.conf');
+        } else {
+            $this->opo_config = Configuration::load($ps_plugin_path . '/conf/museesDeFrance.conf');
+        }
+
     }
 
     public function Index()
@@ -38,6 +49,15 @@ class InventaireBiensAffectesController extends ActionController
 
         $vt_registre = new RegistreBiensAffectes();
         $this->view->setVar("registre",$vt_registre);
+
+        if (in_array(
+            $this->opo_request->getUserID(),
+            $this->opo_config->get('ValidatorsIDs')
+        )) {
+            $this->view->setVar("validator",true);
+        } else {
+            $this->view->setVar("validator",false);
+        }
 
         $this->render('inventaire_biens_affectes_index_html.php');
     }
@@ -132,6 +152,13 @@ class InventaireBiensAffectesController extends ActionController
     public function Validate()
     {
         $vs_object_id = $this->request->getParameter("object_id",pInteger);
+        if (!in_array(
+            $this->opo_request->getUserID(),
+            $this->opo_config->get('ValidatorsIDs')
+        )) {
+            die("User should not been there. This incicent will be reported. Please email to <a href=\"contact@ideesculture.com\">contact@ideesculture.com</a> for more information.");
+        }
+
 
         $vt_object = new ca_objects($vs_object_id);
         $vs_idno = $vt_object->get("idno");
@@ -160,7 +187,7 @@ class InventaireBiensAffectesController extends ActionController
 
     public function Unvalidate()
     {
-        $vs_object_id = $this->request->getParameter("object_id",pInteger);
+        $vs_object_id = $this->request->getParameter("id",pInteger);
 
         $vt_object = new ca_objects($vs_object_id);
         $vs_idno = $vt_object->get("idno");
@@ -169,8 +196,6 @@ class InventaireBiensAffectesController extends ActionController
         $vo_bienaffecte = new BienAffecte();
         $vo_bienaffecte->loadByCaID($vs_object_id);
         $vo_bienaffecte->unvalidate();
-        //var_dump($vo_bienaffecte);
-        //die();
 
         $this->view->setVar('idno', $vs_idno);
         $this->view->setVar('name', $vs_name);
