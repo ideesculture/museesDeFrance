@@ -10,6 +10,8 @@
     $num_start = $this->getVar("num_start");
     $designation = $this->getVar("designation");
 
+    $is_validator = $this->getVar("validator");
+
     MetaTagManager::addLink('stylesheet', __CA_URL_ROOT__."/app/plugins/museesDeFrance/assets/css/museesDeFrance.css",'text/css');
     MetaTagManager::addLink('stylesheet', __CA_URL_ROOT__."/app/plugins/museesDeFrance/assets/css/themes/blue/style.css",'text/css');
     AssetLoadManager::register('tableList');
@@ -104,7 +106,7 @@
             <td>".$vt_object->auteur_display."</td>
             <td>".$vt_object->date_inscription_display."</td>
             <td>";
-        if (!$vt_object->validated) {
+        if ((!$vt_object->validated) && ($is_validator)) {
             print "<a href='".caNavUrl($this->request,"museesDeFrance","InventaireBiensAffectes","Validate",array("object_id"=>$vt_object->get("ca_id")))."'>
             <img src='".__CA_URL_ROOT__."/themes/default/graphics/buttons/glyphicons_198_ok.png' alt='glyphicons_198_ok' border='0' align='middle'>
             </a>
