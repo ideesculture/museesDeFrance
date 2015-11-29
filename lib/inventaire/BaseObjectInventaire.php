@@ -25,6 +25,10 @@ class BaseObjectInventaire implements InterfaceInventaire {
     public $epoque;
     public $utilisation;
     public $provenance;
+
+    public $date_inscription;
+    public $date_inscription_display;
+
     public $validated;
 
     // photo asset
@@ -367,6 +371,8 @@ class BaseObjectInventaire implements InterfaceInventaire {
 
     function validate($pb_save = true) {
         if ($this->validated == false) {
+            $this->date_inscription=date("Y-m-d");
+            $this->date_inscription_display=date("d/m/Y");
             $this->validated = true;
             $this->save();
         } else {
@@ -377,6 +383,10 @@ class BaseObjectInventaire implements InterfaceInventaire {
     function unvalidate($pb_save = true) {
         if ($this->validated == true) {
             $this->validated = false;
+
+            $this->date_inscription="";
+            $this->date_inscription_display="";
+
             if ($pb_save) $this->save();
             return true;
         } else {

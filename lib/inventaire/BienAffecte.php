@@ -24,8 +24,8 @@ class BienAffecte extends BaseObjectInventaire {
     public $date_acquisition;
     public $avis;
     public $prix;
-    public $date_inscription;
-    public $date_inscription_display;
+    //public $date_inscription;
+    //public $date_inscription_display;
     public $observations;
     public $inscriptions;
     //public $materiaux;
