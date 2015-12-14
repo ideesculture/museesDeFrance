@@ -57,63 +57,66 @@ class museesDeFrancePlugin extends BaseApplicationPlugin
 
 		$vs_table_name = $t_item->tableName();
 		$vn_item_id = $t_item->getPrimaryKey();
-		$vn_code = $t_item->getTypeCode();
+		if(method_exists($t_item,"getTypeCode")) {
+			$vn_code = $t_item->getTypeCode();
 
 
 
-		if ($vs_table_name == "ca_objects") {
+			if ($vs_table_name == "ca_objects") {
 
-			$vs_inventaire_url = caNavUrl($this->getRequest(), "museesDeFrance", "InventaireBiensAffectes", "Transfer", array("id"=>$vn_item_id));
-			$vs_depot_url = caNavUrl($this->getRequest(), "museesDeFrance", "InventaireBiensDeposes", "Transfer", array("id"=>$vn_item_id));
+				$vs_inventaire_url = caNavUrl($this->getRequest(), "museesDeFrance", "InventaireBiensAffectes", "Transfer", array("id"=>$vn_item_id));
+				$vs_depot_url = caNavUrl($this->getRequest(), "museesDeFrance", "InventaireBiensDeposes", "Transfer", array("id"=>$vn_item_id));
 
-			if (in_array($vn_code, $this->opo_config->get('TypesInventaire'))) {
-				// biens acquis
-				$vs_inventaire_link_text_affectes = "Afficher dans l'inventaire";
+				if (in_array($vn_code, $this->opo_config->get('TypesInventaire'))) {
+					// biens acquis
+					$vs_inventaire_link_text_affectes = "Afficher dans l'inventaire";
 
-			} elseif (in_array($vn_code, $this->opo_config->get('TypesEnsembleComplexe'))) {
-				// ensemble complexe
-				$vs_inventaire_link_text = "Recopier dans l'inventaire";
-			} elseif (in_array($vn_code, $this->opo_config->get('TypesDepot'))) {
-				// biens déposés
-				$vs_inventaire_link_text_deposes = "Afficher dans le registre des biens&nbsp;déposés";
+				} elseif (in_array($vn_code, $this->opo_config->get('TypesEnsembleComplexe'))) {
+					// ensemble complexe
+					$vs_inventaire_link_text = "Recopier dans l'inventaire";
+				} elseif (in_array($vn_code, $this->opo_config->get('TypesDepot'))) {
+					// biens déposés
+					$vs_inventaire_link_text_deposes = "Afficher dans le registre des biens&nbsp;déposés";
+				}
+
+				if ($vs_inventaire_link_text_affectes)
+					$vs_buf = "<div style=\"text-align:center;width:100%;margin-top:10px;\">"
+						. "<a href=\"" . $vs_inventaire_url . "\" class='form-button-gradient'>"
+						. "<img class='form-button-left' src=\"" . __CA_URL_ROOT__ . "/app/plugins/museesDeFrance/views/images/inventaire_16x16.png\" border='0'>"
+						. $vs_inventaire_link_text_affectes
+						. "</a></div>";
+				if ($vs_inventaire_link_text_deposes)
+					$vs_buf = "<div style=\"text-align:center;width:100%;margin-top:10px;\">"
+						. "<a href=\"" . $vs_depot_url . "\" class='form-button-gradient'>"
+						. "<img class='form-button-left' src=\"" . __CA_URL_ROOT__ . "/app/plugins/museesDeFrance/views/images/inventaire_16x16.png\" border='0'>"
+						. $vs_inventaire_link_text_deposes
+						. "</a></div>";
+
 			}
 
-			if ($vs_inventaire_link_text_affectes)
-				$vs_buf = "<div style=\"text-align:center;width:100%;margin-top:10px;\">"
-					. "<a href=\"" . $vs_inventaire_url . "\" class='form-button-gradient'>"
-					. "<img class='form-button-left' src=\"" . __CA_URL_ROOT__ . "/app/plugins/museesDeFrance/views/images/inventaire_16x16.png\" border='0'>"
-					. $vs_inventaire_link_text_affectes
-					. "</a></div>";
-            if ($vs_inventaire_link_text_deposes)
-                $vs_buf = "<div style=\"text-align:center;width:100%;margin-top:10px;\">"
-                    . "<a href=\"" . $vs_depot_url . "\" class='form-button-gradient'>"
-                    . "<img class='form-button-left' src=\"" . __CA_URL_ROOT__ . "/app/plugins/museesDeFrance/views/images/inventaire_16x16.png\" border='0'>"
-                    . $vs_inventaire_link_text_deposes
-                    . "</a></div>";
+			if ($vs_table_name == "ca_sets") {
 
-		}
+				$vs_inventaire_url = caNavUrl($this->getRequest(), "museesDeFrance", "InventaireBiensAffectes", "TransferSet", array("id"=>$vn_item_id));
+				$vs_depot_url = caNavUrl($this->getRequest(), "museesDeFrance", "InventaireBiensDeposes", "TransferSet", array("id"=>$vn_item_id));
 
-		if ($vs_table_name == "ca_sets") {
+				// Check if set content is objects from table_num value, 57 = ca_objects, see ca_models/ca_sets.php L.89
+				if ($t_item->get("table_num") == "57") {
+					$vs_action = "updateSet/" . $vn_item_id;
 
-			$vs_inventaire_url = caNavUrl($this->getRequest(), "museesDeFrance", "InventaireBiensAffectes", "TransferSet", array("id"=>$vn_item_id));
-			$vs_depot_url = caNavUrl($this->getRequest(), "museesDeFrance", "InventaireBiensDeposes", "TransferSet", array("id"=>$vn_item_id));
-
-			// Check if set content is objects from table_num value, 57 = ca_objects, see ca_models/ca_sets.php L.89
-			if ($t_item->get("table_num") == "57") {
-				$vs_action = "updateSet/" . $vn_item_id;
-
-				$vs_buf = "<div style=\"text-align:center;width:100%;margin-top:10px;\">"
-					. "<a href=\"" . $vs_inventaire_url . "\" class='form-button-gradient'>"
-					. "<img class='form-button-left' src=\"" . __CA_URL_ROOT__ . "/app/plugins/museesDeFrance/views/images/inventaire_16x16.png\" border='0'>"
-					. "Importer dans l'inventaire<br/> des <b>biens affectés</b>"
-					. "</a><a href=\"" . $vs_depot_url . "\" class='form-button-gradient'>"
-					. "<img class='form-button-left' src=\"" . __CA_URL_ROOT__ . "/app/plugins/museesDeFrance/views/images/inventaire_16x16.png\" border='0'>"
-					. "Importer dans l'inventaire<br/> des <b>biens déposés</b>"
-					. "</a></div>";
+					$vs_buf = "<div style=\"text-align:center;width:100%;margin-top:10px;\">"
+						. "<a href=\"" . $vs_inventaire_url . "\" class='form-button-gradient'>"
+						. "<img class='form-button-left' src=\"" . __CA_URL_ROOT__ . "/app/plugins/museesDeFrance/views/images/inventaire_16x16.png\" border='0'>"
+						. "Importer dans l'inventaire<br/> des <b>biens affectés</b>"
+						. "</a><a href=\"" . $vs_depot_url . "\" class='form-button-gradient'>"
+						. "<img class='form-button-left' src=\"" . __CA_URL_ROOT__ . "/app/plugins/museesDeFrance/views/images/inventaire_16x16.png\" border='0'>"
+						. "Importer dans l'inventaire<br/> des <b>biens déposés</b>"
+						. "</a></div>";
+				}
 			}
+
+			$va_params["caEditorInspectorAppend"] = $vs_buf;
 		}
 
-		$va_params["caEditorInspectorAppend"] = $vs_buf;
 		return $va_params;
 
 	}
