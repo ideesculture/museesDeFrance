@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="profile.xsd" useForConfiguration="1" base="base" infoUrl="">
-  <profileName>Joconde (sans valeurs de liste dans thésaurus) - EAD/ISAD-G - documentation</profileName>
+  <profileName>Joconde</profileName>
   <profileDescription>Profil créé le 8 juin 2015 à 11:30:16 par Gautier Michelin</profileDescription>
   <locales>
     <locale lang="en" country="US">English</locale>
