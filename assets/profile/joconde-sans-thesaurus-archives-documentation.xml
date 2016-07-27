@@ -30126,7 +30126,6 @@ If appropriate, include information on where to obtain a copy.</description>
         <permission table="ca_objects" bundle="ca_attribute_book_format" access="edit"/>
         <permission table="ca_objects" bundle="ca_attribute_book_importance" access="edit"/>
         <permission table="ca_objects" bundle="ca_collections" access="edit"/>
-        <permission table="ca_objects" bundle="ca_commerce_order_history" access="edit"/>
         <permission table="ca_objects" bundle="ca_entities" access="edit"/>
         <permission table="ca_objects" bundle="ca_list_items" access="edit"/>
         <permission table="ca_objects" bundle="ca_loans" access="edit"/>
