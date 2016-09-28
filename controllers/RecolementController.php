@@ -168,7 +168,7 @@ class RecolementController extends ActionController
 		}
 	}
 
-	private function CalculerPv($idno, $options = array(), $page = 1, $filter=null)
+	private function CalculerPv($idno, $options = array(), $page = 0, $filter=null)
 	{
         $idno_campagne = $idno;
 		if (isset($options["liste_annexes"]) && $options["liste_annexes"]) {
@@ -407,7 +407,7 @@ class RecolementController extends ActionController
 		if (isset($_GET["page"]) && ($_GET["page"]>1)) {
 			$page = $_GET["page"];
 		} else {
-			$page = 1;
+			$page = 0;
 		}
 		$InfosPv = $this->CalculerPv($_GET["idno"],array(), $page, $_GET["f"]);
 		if ($InfosPv === false) die("Impossible de récupérer les informations de la campagne de récolement " . $_GET["idno"]);
