@@ -5,7 +5,7 @@ require_once(__CA_MODELS_DIR__ . '/ca_objects.php');
 require_once(__CA_MODELS_DIR__ . '/ca_occurrences.php');
 require_once(__CA_LIB_DIR__ . '/ca/Search/OccurrenceSearch.php');
 require_once(__CA_LIB_DIR__ . '/ca/Search/SetSearch.php');
-
+require_once(__CA_MODELS_DIR__ . '/ca_sets.php');
 
 class RecolementController extends ActionController
 {
