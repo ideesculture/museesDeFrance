@@ -5,7 +5,7 @@ require_once(__CA_MODELS_DIR__ . '/ca_objects.php');
 require_once(__CA_MODELS_DIR__ . '/ca_occurrences.php');
 require_once(__CA_LIB_DIR__ . '/ca/Search/OccurrenceSearch.php');
 require_once(__CA_LIB_DIR__ . '/ca/Search/SetSearch.php');
-
+require_once(__CA_MODELS_DIR__ . '/ca_sets.php');
 
 class RecolementController extends ActionController
 {
@@ -323,16 +323,11 @@ class RecolementController extends ActionController
 		if (!$filter) {
 			$query.=$query_limite;
 		}
-
 		$qr_result = $o_data->query($query);
-		$total = $o_data->query("SELECT * FROM ca_occurrences_x_occurrences WHERE occurrence_right_id=$campagne_id")->numRows();
-        /*if ($page > 1) $pagination = "<a href='".__CA_URL_ROOT__."/index.php/museesDeFrance/Recolement/Pv/?idno=${idno_campagne}&page=".($page -1 )."&f=".$filter."'><img src=".__CA_URL_ROOT__."/themes/default/graphics/arrows/arrow_left_gray.gif
-        ' alt=''/> Page précédente</a>;
-        /*if ($page*$limite_liste_recolements < $total )
-            $pagination .= "<a href='".__CA_URL_ROOT__."/index.php/museesDeFrance/Recolement/Pv/?idno=${idno_campagne}&page=".($page +1 )."&f=".$filter."'>Page suivante <img src=".__CA_URL_ROOT__."/themes/default/graphics/arrows/arrow_right_gray.gif
-        ' alt=''/></a>";*/
+		$total = $o_data->query($query)->numRows();
 
 		$pv_info["liste_objets_html"] .= $pagination;
+
 		if (!$filter) $pv_info["liste_objets_html"] .= "<table class=\"listtable\">" .
 			"<tr><th></th><th>Identifiant</th><th>Titre</th><th>Récolé <a href='".__CA_URL_ROOT__."/index.php/museesDeFrance/Recolement/Pv/?idno=${idno_campagne}&f=r'>oui</a> /
 			 <a href='".__CA_URL_ROOT__."/index.php/museesDeFrance/Recolement/Pv/?idno=${idno_campagne}&f=nr'>non</a>
@@ -349,6 +344,7 @@ class RecolementController extends ActionController
         $count_lines = 0;
 		while($qr_result->nextRow()) {
 			$recolement = new ca_occurrences($qr_result->get('id'));
+			$occurrence_id = $qr_result->get('id');
 			if((!$filter) || ($recolement->get('done', array("convertCodesToDisplayText" => true)) == $filter_value)) {
                 $count_lines++;
 				$line++;
@@ -381,6 +377,7 @@ class RecolementController extends ActionController
 		}
 		$pv_info["info"]["recolements_done"] = $vn_recolements;
 
+
 		return $pv_info;
 	}
 
@@ -411,7 +408,6 @@ class RecolementController extends ActionController
 		}
 		$InfosPv = $this->CalculerPv($_GET["idno"],array(), $page, $_GET["f"]);
 		if ($InfosPv === false) die("Impossible de récupérer les informations de la campagne de récolement " . $_GET["idno"]);
-
 		$this->view->setVar('InfosPv', $InfosPv);
 		$this->render('recolement_pv_html.php');
 	}

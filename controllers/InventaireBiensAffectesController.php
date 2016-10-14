@@ -3,6 +3,7 @@ require_once(__CA_APP_DIR__."/plugins/museesDeFrance/lib/inventaire/BienAffecte.
 require_once(__CA_APP_DIR__."/plugins/museesDeFrance/lib/inventaire/RegistreBiensAffectes.php");
 require_once(__CA_LIB_DIR__.'/core/Parsers/dompdf/dompdf_config.inc.php');
 require_once(__CA_MODELS_DIR__."/ca_objects.php");
+require_once(__CA_MODELS_DIR__."/ca_sets.php");
 
 class InventaireBiensAffectesController extends ActionController
 {
