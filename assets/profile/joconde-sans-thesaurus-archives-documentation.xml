@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="profile.xsd" useForConfiguration="1" base="base" infoUrl="">
-  <profileName>Joconde</profileName>
+  <profileName>Joconde (sans valeurs de liste dans thésaurus) - EAD/ISAD-G - documentation</profileName>
   <profileDescription>Profil créé le 8 juin 2015 à 11:30:16 par Gautier Michelin</profileDescription>
   <locales>
     <locale lang="en" country="US">English</locale>
@@ -1284,7 +1284,7 @@
             </label>
           </labels>
         </item>
-        <item idno="internal" enabled="1" default="0">
+        <item idno="Root_node_for_movement_types" enabled="1" default="0">
           <labels>
             <label locale="fr_FR" preferred="1">
               <name_singular>Mouvement interne</name_singular>
@@ -1292,7 +1292,7 @@
             </label>
           </labels>
         </item>
-        <item idno="external" enabled="1" default="0">
+        <item idno="Root_node_for_movement_types" enabled="1" default="0">
           <labels>
             <label locale="fr_FR" preferred="1">
               <name_singular>Mouvement externe</name_singular>
@@ -2112,7 +2112,63 @@
             </label>
           </labels>
         </item>
-   </items>
+        <item idno="campus" enabled="1" default="1">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>campus</name_singular>
+              <name_plural>campuses</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="building" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>building</name_singular>
+              <name_plural>buildings</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="floor" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>floor</name_singular>
+              <name_plural>floors</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="room" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>room</name_singular>
+              <name_plural>rooms</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="cabinet" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>cabinet</name_singular>
+              <name_plural>cabinets</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="drawer" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>drawer</name_singular>
+              <name_plural>drawer</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="shelf" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>shelf</name_singular>
+              <name_plural>shelf</name_plural>
+            </label>
+          </labels>
+        </item>
+      </items>
     </list>
     <list code="storage_location_sources" hierarchical="1" system="0" vocabulary="0">
       <labels>
@@ -2966,7 +3022,7 @@
         </label>
       </labels>
       <items>
-        <item idno="res_interne" enabled="1" default="0">
+        <item idno="Root_node_for_campagne_caracte" enabled="1" default="0">
           <labels>
             <label locale="fr_FR" preferred="1">
               <name_singular>Réserve interne</name_singular>
@@ -2974,7 +3030,7 @@
             </label>
           </labels>
         </item>
-        <item idno="res_externe" enabled="1" default="0">
+        <item idno="Root_node_for_campagne_caracte" enabled="1" default="0">
           <labels>
             <label locale="fr_FR" preferred="1">
               <name_singular>Réserve externe</name_singular>
@@ -2982,7 +3038,7 @@
             </label>
           </labels>
         </item>
-        <item idno="ouvert_au_public" enabled="1" default="0">
+        <item idno="Root_node_for_campagne_caracte" enabled="1" default="0">
           <labels>
             <label locale="fr_FR" preferred="1">
               <name_singular>Ouvert au public</name_singular>
@@ -30126,6 +30182,7 @@ If appropriate, include information on where to obtain a copy.</description>
         <permission table="ca_objects" bundle="ca_attribute_book_format" access="edit"/>
         <permission table="ca_objects" bundle="ca_attribute_book_importance" access="edit"/>
         <permission table="ca_objects" bundle="ca_collections" access="edit"/>
+        <permission table="ca_objects" bundle="ca_commerce_order_history" access="edit"/>
         <permission table="ca_objects" bundle="ca_entities" access="edit"/>
         <permission table="ca_objects" bundle="ca_list_items" access="edit"/>
         <permission table="ca_objects" bundle="ca_loans" access="edit"/>
