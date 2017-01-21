@@ -265,10 +265,11 @@ function getOccurrenceID($ps_occurrence, $ps_occurrence_idno, $pn_occurrence_typ
 	return $vn_occurrence_id;
 }
 // ----------------------------------------------------------------------	
-function getPlaceID($ps_place, $ps_place_idno, $pn_place_type_id, $ps_place_parent_id=1, $explode_separator_array=NULL, $ps_place_hierarchy_id=NULL ) {
-	global $pn_locale_id, $t_list;
+function getPlaceID($t_list, $ps_place, $ps_place_idno, $pn_place_type_id, $ps_place_parent_id=1, $explode_separator_array=NULL, $ps_place_hierarchy_id=NULL ) {
+	global $pn_locale_id;
 	global $VERBOSE, $DEBUG;
-	
+	$VERBOSE=1;
+	$DEBUG=1;
 	if ($explode_separator_array) $label_type = $explode_separator_array[1]["label_type"];
 	
 	$t_loc_valuetoparse="";
@@ -297,18 +298,22 @@ function getPlaceID($ps_place, $ps_place_idno, $pn_place_type_id, $ps_place_pare
 		if (($explode_separator_array) && ( strpos($ps_place,$explode_separator_array[1]["separator"]) > 0) ) {			
 			// Un séparateur défini et trouvé dans le libellé, on casse selon le séparateur et on crée les titres secondaires avec le bon type
 			$libelles = explode($explode_separator_array[1]["separator"],$ps_place);
+			//var_dump($libelles);die();
+
 			// Pour chaque libellé individuel, si numéro 0 : libellé principal, si numéro > 0 synonyme
 			foreach( $libelles as $key => $value){
 				$t_loc->addLabel(array('name' => $value),$pn_locale_id, ($key == 0 ? null : $label_type) , ($key == 0 ? true : false));
 				// La valeur a utiliser pour le géoréférencement est la première
 				if ($key==0) $t_loc_valuetoparse=$value;
 			}
+			
 		} else {
 			// 1 seul libellé, libellé principal
+				$ps_place=trim($ps_place);
 				$t_loc->addLabel(array('name' => $ps_place),$pn_locale_id, null, true);
 				$t_loc_valuetoparse=$ps_place;
 		}
-		
+		$t_loc->update();
 		if ($t_loc->numErrors()) {
 			print "ERROR INSERTING PLACE ($ps_place): ".join('; ', $t_loc->getErrors())."\n";
 			return null;
@@ -317,6 +322,7 @@ function getPlaceID($ps_place, $ps_place_idno, $pn_place_type_id, $ps_place_pare
 		$vn_place_id = $t_loc->getPrimaryKey();
 		
 		// Georeferencing
+		
 		$t_loc_coordinates = new GeocodeAttributeValue();
 		if ($DEBUG) print "georéférencement : ".$t_loc_valuetoparse."\n";
 		$t_loc_coordinates_values = $t_loc_coordinates->parseValue($t_loc_valuetoparse, null);
@@ -330,7 +336,7 @@ function getPlaceID($ps_place, $ps_place_idno, $pn_place_type_id, $ps_place_pare
 			$t_loc->update();
 			if ($t_loc->numErrors()) {
 				print "\tERROR UPDATING {$t_loc_valuetoparse} WITH GEOREF '{$t_loc_coordinates_display}': ".join('; ', $t_loc->getErrors())."\n";
-				//continue;
+				continue;
 			}
 			if ($DEBUG) print $t_loc_coordinates_display."\n";
 		}
