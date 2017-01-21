@@ -5,6 +5,7 @@ $DEBUG = false;
 // Affiche plus d'informations à l'écran
 $VERBOSE = false;
 
+
 // Limitation en nb de lignes des traitements de fichier pour le débuggage
 $limitation_fichier = 0;
 
@@ -397,8 +398,11 @@ class InstallProfileThesaurusController extends ActionController
     private function traiteFichierLieuDMF($t_filename,$t_idno_prefix,$nb_lignes_vides=0,$ligne_limite=0) {
         global $pn_locale_id, $VERBOSE, $DEBUG;
         global $vn_list_item_type_concept,$vn_list_item_label_synonym,$vn_place_other;
-        global $t_list;
-
+		$t_list = new ca_lists();
+		
+		$t_locale = new ca_locales();
+		$pn_locale_id = $t_locale->loadLocaleByCode('fr_FR');		// default locale_id
+        
         $result= 0;
         $row = 1;
         $parent = array ();
@@ -409,9 +413,9 @@ class InstallProfileThesaurusController extends ActionController
         $explode_separator_array[1]["label_type"]=$vn_list_item_label_synonym;
 
         print "traitement des lieux\n";
-        print __CA_BASE_DIR__."/app/plugins/museesDeFrance/assets/thesaurus/txt/".$t_filename."<br/>";die();
+        //print __CA_BASE_DIR__."/app/plugins/museesDeFrance/assets/thesaurus/txt/".$t_filename."<br/>";die();
         if (($handle = fopen(__CA_BASE_DIR__."/app/plugins/museesDeFrance/assets/thesaurus/txt/".$t_filename, "r")) !== FALSE) {
-            $contenu_fichier = file_get_contents($t_filename);
+            $contenu_fichier = file_get_contents(__CA_BASE_DIR__."/app/plugins/museesDeFrance/assets/thesaurus/txt/".$t_filename);
             $total=substr_count($contenu_fichier, "\n");
             $contenu_fichier="";
 
@@ -446,11 +450,14 @@ class InstallProfileThesaurusController extends ActionController
                         $parent_selected=1;
                     }
 
+					$VERBOSE=1;
+					$DEBUG=1;
+
                     // débuggage
                     if ($DEBUG) print "(".$parent_selected.") ".$nb_tab." ".$libelle;
-
                     // insertion dans la liste
-                    if ($vn_place_id=getPlaceID($libelle, $t_idno_prefix."_".($row-$nb_lignes_vides), $vn_place_other, $parent_selected, $explode_separator_array)) {
+                    if ($vn_place_id=getPlaceID($t_list, $libelle, $t_idno_prefix."_".($row-$nb_lignes_vides), $vn_place_other, $parent_selected, $explode_separator_array)) {
+						if ($VERBOSE) print "PLACE CREATED : ".$libelle."\n";	                    
                     } else {
                         print "PLACE CREATION FAILED : ".$libelle." ";
                         die();
