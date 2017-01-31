@@ -98,7 +98,6 @@ class ExportLabeledText extends BaseExportFormat {
 	}
 	# ------------------------------------------------------
 }
-
 BaseExportFormat::$s_format_settings['LABELEDTXT'] = array(
 	'LABELEDTXT_record_separator' => array(
 		'formatType' => FT_TEXT,
@@ -115,4 +114,7 @@ BaseExportFormat::$s_format_settings['LABELEDTXT'] = array(
 		'width' => 40, 'height' => 1,
 		'takesLocale' => false,
 		'default' => '"',
-		
+		'label' => _t('End of line characters'),
+		'description' => _t('End of line characters. Defaut to \n (carriage return).')
+	)
+);
