@@ -41,7 +41,7 @@ if (!isset($campagnes) || !$campagnes) {
 			animation: progress 8s linear infinite;
 		}
 	</style>
-	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
 	<script type="text/javascript">
 		google.load("visualization", "1", {packages: ["corechart"]});
 		google.setOnLoadCallback(drawChart);

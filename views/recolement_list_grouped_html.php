@@ -97,7 +97,7 @@ if (!isset($campagnes_par_rd) || !$campagnes_par_rd) {
 	
 	</script>
 	
-	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
 	<script src='<?php print __CA_URL_ROOT__; ?>/js/jquery/jQueryRotateCompressed.2.2.js'
 	        type='text/javascript'></script>
 
