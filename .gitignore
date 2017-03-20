@@ -6,3 +6,4 @@ command-line/aquarelle
 .idea
 assets/photos/*.jpg
 conf/local/*.conf
+/download/tableau-suivi.xlsx
