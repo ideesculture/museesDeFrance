@@ -12445,6 +12445,103 @@
         </item>
       </items>
     </list>
+    <list code="dmf_lexautrole" hierarchical="1" system="0" vocabulary="1">
+      <labels>
+        <label locale="fr_FR">
+          <name>SMF   Liste des rôles des auteurs exécutants</name>
+        </label>
+      </labels>
+    </list><list code="dmf_lexdecv" hierarchical="1" system="0" vocabulary="1" defaultSort="1">
+      <labels>
+        <label locale="fr_FR">
+          <name>SMF   Liste des méthodes de collecte</name>
+        </label>
+      </labels>
+    </list><list code="dmf_lexdeno" hierarchical="1" system="0" vocabulary="1" defaultSort="1">
+      <labels>
+        <label locale="fr_FR">
+          <name>SMF   Liste des dénominations</name>
+        </label>
+      </labels>
+    </list><list code="dmf_lexdomn" hierarchical="1" system="0" vocabulary="1" defaultSort="1">
+      <labels>
+        <label locale="fr_FR">
+          <name>SMF   Liste des domaines</name>
+        </label>
+      </labels>
+    </list><list code="dmf_lexecol" hierarchical="1" system="0" vocabulary="1" defaultSort="1">
+      <labels>
+        <label locale="fr_FR">
+          <name>SMF   Liste des écoles</name>
+        </label>
+      </labels>
+    </list><list code="dmf_lexepoq" hierarchical="1" system="0" vocabulary="1" defaultSort="1">
+      <labels>
+        <label locale="fr_FR">
+          <name>SMF   Liste des époques   styles</name>
+        </label>
+      </labels>
+    </list><list code="dmf_lexgene" hierarchical="1" system="0" vocabulary="1" defaultSort="1">
+      <labels>
+        <label locale="fr_FR">
+          <name>SMF   Liste des stades de création  genèse des oeuvres</name>
+        </label>
+      </labels>
+    </list><list code="dmf_lexinsc" hierarchical="1" system="0" vocabulary="1" defaultSort="1">
+      <labels>
+        <label locale="fr_FR">
+          <name>SMF   Liste des types d’inscriptions</name>
+        </label>
+      </labels>
+    </list><list code="dmf_lexmateriaux" hierarchical="1" system="0" vocabulary="1" defaultSort="1">
+      <labels>
+        <label locale="fr_FR">
+          <name>SMF   Liste des matériaux</name>
+        </label>
+      </labels>
+    </list><list code="dmf_lexperi" hierarchical="1" system="0" vocabulary="1" defaultSort="1">
+      <labels>
+        <label locale="fr_FR">
+          <name>SMF   Liste des datations en siècle ou millénaire  périodes de création  d’exécution et d’utilisation</name>
+        </label>
+      </labels>
+    </list><list code="dmf_lexrepr" hierarchical="1" system="0" vocabulary="1" defaultSort="1">
+      <labels>
+        <label locale="fr_FR">
+          <name>SMF   Liste des sujets représentés</name>
+        </label>
+      </labels>
+    </list><list code="dmf_lexsite" hierarchical="1" system="0" vocabulary="1" defaultSort="1">
+      <labels>
+        <label locale="fr_FR">
+          <name>SMF   Liste des méthodes de types de sites et lieux géographiques de découverte</name>
+        </label>
+      </labels>
+    </list><list code="dmf_lexsrep" hierarchical="1" system="0" vocabulary="1" defaultSort="1">
+      <labels>
+        <label locale="fr_FR">
+          <name>SMF   Liste des sources de la représentation</name>
+        </label>
+      </labels>
+    </list><list code="dmf_lexstat" hierarchical="1" system="0" vocabulary="1" defaultSort="1">
+      <labels>
+        <label locale="fr_FR">
+          <name>SMF   Liste des termes autorisés du statut juridique de l objet</name>
+        </label>
+      </labels>
+    </list><list code="dmf_lextech" hierarchical="1" system="0" vocabulary="1" defaultSort="1">
+      <labels>
+        <label locale="fr_FR">
+          <name>SMF   Liste des techniques</name>
+        </label>
+      </labels>
+    </list><list code="dmf_lexutil" hierarchical="1" system="0" vocabulary="1" defaultSort="1">
+      <labels>
+        <label locale="fr_FR">
+          <name>SMF   Liste des utilisations   destinations</name>
+        </label>
+      </labels>
+    </list>
   </lists>
   <elementSets>
     <metadataElement code="set_description" datatype="Text">
