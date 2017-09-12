@@ -34849,10 +34849,6 @@ x ø ^ca_objects.dimensions.circumference [^ca_objects.dimensions.type_dimension
           <name>Saisie artothèque</name>
         </label>
       </labels>
-      <userAccess>
-        <permission user="admin" access="edit"/>
-        <permission user="Ariane" access="edit"/>
-      </userAccess>
       <screens>
         <screen idno="screen_39_0" default="1" typeRestrictions="artotheque" includeSubtypes="0">
           <labels>
@@ -44572,9 +44568,6 @@ x ø ^ca_objects.dimensions.circumference [^ca_objects.dimensions.type_dimension
       <settings>
         <setting name="show_empty_values"><![CDATA[1]]></setting>
       </settings>
-      <userAccess>
-        <permission user="admin" access="edit"/>
-      </userAccess>
       <bundlePlacements>
         <placement code="ca_object_representations_media_icon">
           <bundle>ca_object_representations.media.icon</bundle>
@@ -44662,10 +44655,6 @@ x ø ^ca_objects.dimensions.circumference [^ca_objects.dimensions.type_dimension
       <settings>
         <setting name="show_empty_values"><![CDATA[0]]></setting>
       </settings>
-      <userAccess>
-        <permission user="admin" access="edit"/>
-        <permission user="Marlène" access="edit"/>
-      </userAccess>
       <bundlePlacements>
         <placement code="ca_object_representations_media_icon">
           <bundle>ca_object_representations.media.icon</bundle>
@@ -45038,10 +45027,6 @@ x ø ^ca_objects.dimensions.circumference [^ca_objects.dimensions.type_dimension
       <settings>
         <setting name="show_empty_values"><![CDATA[1]]></setting>
       </settings>
-      <userAccess>
-        <permission user="Mélanie" access="read"/>
-        <permission user="Marlène" access="edit"/>
-      </userAccess>
       <bundlePlacements>
         <placement code="ca_representation_annotations_annotation_id">
           <bundle>ca_representation_annotations.annotation_id</bundle>
@@ -45536,10 +45521,6 @@ x ø ^ca_objects.dimensions.circumference [^ca_objects.dimensions.type_dimension
         <setting name="show_empty_values"><![CDATA[0]]></setting>
         <setting name="bottom_line"><![CDATA[]]></setting>
       </settings>
-      <userAccess>
-        <permission user="Marlène" access="edit"/>
-        <permission user="Bernadette" access="edit"/>
-      </userAccess>
       <bundlePlacements>
         <placement code="ca_object_representations_media_icon">
           <bundle>ca_object_representations.media.icon</bundle>
@@ -46297,9 +46278,6 @@ x ø ^ca_objects.dimensions.circumference [^ca_objects.dimensions.type_dimension
       <settings>
         <setting name="form_width">3</setting>
       </settings>
-      <userAccess>
-        <permission user="admin" access="edit"/>
-      </userAccess>
       <bundlePlacements>
         <placement code="p49">
           <bundle>ca_objects.idno</bundle>
@@ -46315,9 +46293,6 @@ x ø ^ca_objects.dimensions.circumference [^ca_objects.dimensions.type_dimension
       <settings>
         <setting name="form_width">3</setting>
       </settings>
-      <userAccess>
-        <permission user="admin" access="edit"/>
-      </userAccess>
       <bundlePlacements>
         <placement code="p53">
           <bundle>ca_objects.type_id</bundle>
@@ -46336,9 +46311,6 @@ x ø ^ca_objects.dimensions.circumference [^ca_objects.dimensions.type_dimension
       <settings>
         <setting name="form_width">3</setting>
       </settings>
-      <userAccess>
-        <permission user="admin" access="edit"/>
-      </userAccess>
       <bundlePlacements>
         <placement code="p60">
           <bundle>ca_objects.idno</bundle>
