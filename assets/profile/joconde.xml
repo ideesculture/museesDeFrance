@@ -38380,7 +38380,6 @@ x ø ^ca_objects.dimensions.circumference [^ca_objects.dimensions.type_dimension
         <permission table="ca_objects" type="artotheque" access="read"/>
         <permission table="ca_objects" type="acq_art" access="edit"/>
         <permission table="ca_objects" type="audio" access="edit"/>
-        <permission table="ca_objects" type="acq_other" access="edit"/>
         <permission table="ca_objects" type="dep_other" access="edit"/>
         <permission table="ca_objects" type="acq" access="edit"/>
         <permission table="ca_objects" type="dep" access="edit"/>
@@ -40385,7 +40384,6 @@ x ø ^ca_objects.dimensions.circumference [^ca_objects.dimensions.type_dimension
         <permission table="ca_objects" type="dep_other" access="read"/>
         <permission table="ca_objects" type="acq" access="read"/>
         <permission table="ca_objects" type="dep" access="read"/>
-        <permission table="ca_objects" type="acq_costume" access="read"/>
         <permission table="ca_objects" type="dep_costume" access="read"/>
         <permission table="ca_objects" type="file" access="read"/>
         <permission table="ca_objects" type="acq_complexe" access="read"/>
@@ -41730,7 +41728,6 @@ x ø ^ca_objects.dimensions.circumference [^ca_objects.dimensions.type_dimension
         <permission table="ca_objects" bundle="ca_attribute_nombre_parties_composantes" access="edit"/>
         <permission table="ca_objects" bundle="nonpreferred_labels" access="edit"/>
         <permission table="ca_objects" bundle="ca_attribute_note" access="edit"/>
-        <permission table="ca_objects" bundle="ca_attribute_numéro_de_la_revue" access="edit"/>
         <permission table="ca_objects" bundle="ca_attribute_objectComponent" access="edit"/>
         <permission table="ca_objects" bundle="ca_attribute_objectProductionDate" access="edit"/>
         <permission table="ca_objects" bundle="object_id" access="edit"/>
@@ -43477,23 +43474,19 @@ x ø ^ca_objects.dimensions.circumference [^ca_objects.dimensions.type_dimension
         <permission table="ca_objects" type="artotheque" access="none"/>
         <permission table="ca_objects" type="acq_art" access="none"/>
         <permission table="ca_objects" type="audio" access="none"/>
-        <permission table="ca_objects" type="acq_other" access="none"/>
         <permission table="ca_objects" type="dep_other" access="none"/>
         <permission table="ca_objects" type="acq" access="none"/>
         <permission table="ca_objects" type="dep" access="none"/>
-        <permission table="ca_objects" type="acq_costume" access="none"/>
         <permission table="ca_objects" type="dep_costume" access="none"/>
         <permission table="ca_objects" type="file" access="none"/>
         <permission table="ca_objects" type="acq_complexe" access="none"/>
         <permission table="ca_objects" type="dep_complexe" access="none"/>
-        <permission table="ca_objects" type="acq_ethno" access="none"/>
         <permission table="ca_objects" type="dep_ethno" access="none"/>
         <permission table="ca_objects" type="fonds" access="none"/>
         <permission table="ca_objects" type="dep_archeo" access="none"/>
         <permission table="ca_objects" type="item" access="none"/>
         <permission table="ca_objects" type="book" access="none"/>
         <permission table="ca_objects" type="musee" access="none"/>
-        <permission table="ca_objects" type="acq_nat" access="none"/>
         <permission table="ca_objects" type="issue" access="none"/>
         <permission table="ca_objects" type="serial" access="none"/>
         <permission table="ca_objects" type="Root node for object_types" access="none"/>
@@ -44464,7 +44457,6 @@ x ø ^ca_objects.dimensions.circumference [^ca_objects.dimensions.type_dimension
         <permission table="ca_objects" type="series" access="edit"/>
         <permission table="ca_objects" type="subfonds" access="edit"/>
         <permission table="ca_objects" type="subseries" access="edit"/>
-        <permission table="ca_objects" type="acq_peinture" access="edit"/>
         <permission table="ca_objects" type="dep_peinture" access="edit"/>
         <permission table="ca_objects" type="acq_techno" access="edit"/>
         <permission table="ca_objects" type="dep_techno" access="edit"/>
