@@ -54,7 +54,7 @@ function getMappingBiensAffectes() {
         'date_acquisition'=>array( //date_acteAcquisition
             array(
                 "field" => 'ca_objects.date_ref_acteAcquisition.date_acteAcquisition',
-                "post-treatment" => 'caDateToUnixTimestamp',
+                "post-treatment" => 'ddmmYYYY',
                 "prefixe" => "date de l'acte d'acquisition : <b>",
                 "suffixe" => "</b><br/>"
             ),
@@ -216,7 +216,7 @@ function getMappingBiensAffectes() {
             ),
             array(
                 "field" => 'ca_objects.constatEtat.constat_date',
-                "post-treatment" => 'caDateToUnixTimestamp',
+                "post-treatment" => 'keepOnlyFirstValue',
                 "prefixe" => "date du constat d'état : <b>",
                 "suffixe" => "</b><br/>"
             )
@@ -272,9 +272,8 @@ function getMappingBiensAffectes() {
                 "suffixe" => "</b><br/>"
             ),
             array(
-                "field" => 'ca_objects.useDate',
-                "post-treatment" => 'caDateToUnixTimestamp',
-                "prefixe" => "Date d'utilisation ou de découverte : <b>",
+                "field" => 'ca_objects.objectProductionDate',
+                "prefixe" => "Datation précise : <b>",
                 "suffixe" => "</b><br/>"
             )
         ),
@@ -333,6 +332,11 @@ function getMappingBiensAffectes() {
             array(
                 "field" => 'ca_objects.otherNumber',
                 "prefixe" => "ancien ou autre numéro d'inventaire : <b>",
+                "suffixe" => "</b><br/>"
+            ),
+            array(
+                "field" => 'ca_objects.observations',
+                "prefixe" => "observations : <b>",
                 "suffixe" => "</b><br/>"
             ),
             array(

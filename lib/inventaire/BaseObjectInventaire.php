@@ -218,7 +218,6 @@ class BaseObjectInventaire implements InterfaceInventaire {
                 $response = "";
                 $field = $attribute["field"];
                 $data = explode(".",$field);
-
                 switch($data[0]) {
                     case "ca_entities" :
                         $entities = $t_object->getRelatedItems("ca_entities",array("restrictToRelationshipTypes"=>$attribute["relationshipTypes"]));
@@ -267,6 +266,21 @@ class BaseObjectInventaire implements InterfaceInventaire {
                                     case 'caDateToUnixTimestamp' :
                                         $response = date('d/m/Y',caDateToUnixTimestamp($response));
                                         break;
+                                    case 'keepOnlyFirstValue':
+	                                    $response=reset(explode(";", $response));
+	                                    break;
+                                    case 'ddmmYYYY':
+                                        $o_tep = new TimeExpressionParser();
+                                        $o_tep->setLanguage("en_US");
+                                        $o_tep->parse($response);
+                                        $parsed_date = reset($o_tep->getHistoricTimestamps());
+                                        $year_parsed_date = round($parsed_date);
+                                        $month_parsed_date = substr("0".(round($parsed_date*100 - $year_parsed_date*100)),-2);
+                                        $day_parsed_date = round($parsed_date*10000 - $year_parsed_date*10000 - $month_parsed_date*100);
+                                        $response = $day_parsed_date."/".$month_parsed_date."/".$year_parsed_date;
+                                        //var_dump(caDateToHistoricTimestamps($response));
+										break;
+
                                     // Post-traitement non reconnu
                                     default :
                                         throw new \Exception("Post-traitement non reconnu : ".$attribute["post-treatment"]);
@@ -299,7 +313,7 @@ class BaseObjectInventaire implements InterfaceInventaire {
             // DEFINITION DE L'ATTRIBUT
             $this->set($target, !$response_global ? "non renseigné" : $response_global);
         }
-
+		//die();
         return  true;
     }
 
