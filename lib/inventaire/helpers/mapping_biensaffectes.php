@@ -203,6 +203,8 @@ function getMappingBiensAffectes() {
             // COLONNE 12
             array(
                 "field" => 'ca_objects.dimensions',
+                "template"=> "<unit relativeTo='ca_objects.dimensions'><ifdef code='ca_objects.dimensions.dimensions_width'>L. ^ca_objects.dimensions.dimensions_width</ifdef><ifdef code='ca_objects.dimensions.dimensions_height'>, H. ^ca_objects.dimensions.dimensions_height</ifdef><ifdef code='ca_objects.dimensions.dimensions_depth'>, P. ^ca_objects.dimensions.dimensions_depth</ifdef><ifdef code='ca_objects.dimensions.dimensions_poids'>, Poids ^ca_objects.dimensions.dimensions_poids</ifdef><ifdef code='ca_objects.dimensions.type_dimensions'> (^ca_objects.dimensions.type_dimensions)</ifdef></unit>
+",
                 "prefixe" => "dimensions : <b>",
                 "suffixe" => "</b><br/>"
             )

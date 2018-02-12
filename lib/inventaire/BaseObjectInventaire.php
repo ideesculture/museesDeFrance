@@ -20,7 +20,7 @@ class BaseObjectInventaire implements InterfaceInventaire {
     public $designation_display;
     public $materiaux;
     public $techniques;
-    public $mesure;
+    public $mesures;
     public $etat;
     public $epoque;
     public $utilisation;
@@ -217,8 +217,18 @@ class BaseObjectInventaire implements InterfaceInventaire {
             foreach($fields as $attribute) {
                 $response = "";
                 $field = $attribute["field"];
+                
+                /*if($field == "ca_objects.dimensions") {
+	                var_dump($t_object->get("$field"));
+	                die();
+                }*/
                 $data = explode(".",$field);
-                switch($data[0]) {
+                if(isset($attribute["template"])) {
+	                $response = $t_object->getWithTemplate($attribute["template"]);
+	                $response_global .= $attribute["prefixe"].$response.$attribute["suffixe"];
+	                continue;
+                } else {
+	                switch($data[0]) {
                     case "ca_entities" :
                         $entities = $t_object->getRelatedItems("ca_entities",array("restrictToRelationshipTypes"=>$attribute["relationshipTypes"]));
                         foreach($entities as $entity) {
@@ -238,7 +248,6 @@ class BaseObjectInventaire implements InterfaceInventaire {
                             $options = array("convertCodesToDisplayText"=>"true", "locale"=>$locale_id);
                             if ($attribute["options"]) $options = array_merge($options,$attribute["options"]);
                             // RECUPERATION DU CHAMP POUR L'AFFICHAGE
-
                             $response = $t_object->get($field, $options);
 
                             // POST-TRAITEMENT
@@ -303,7 +312,8 @@ class BaseObjectInventaire implements InterfaceInventaire {
                         }
                         break;
                 }
-                $response_global .= ($response ? $attribute["prefixe"].$response.$attribute["suffixe"] : "");
+                }
+                $response_global .= ($response !="" ? $attribute["prefixe"].$response.$attribute["suffixe"] : "");
             }
            // Converting quotes to french typographic quotes
            $response_global = str_replace("'","’",$response_global);
