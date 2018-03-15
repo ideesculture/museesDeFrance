@@ -136,8 +136,8 @@
 </div>
 
 <?php print caFormControlBox(
-    caNavButton($this->request,__CA_NAV_BUTTON_PDF__,"Générer le PDF","", "*", '*', 'GeneratePDF').
-    caNavButton($this->request, __CA_NAV_BUTTON_IMAGE__, "Afficher les photos", "", "*", "*", "Photos"),
+    caNavButton($this->request,__CA_NAV_ICON_PDF__,"Générer le PDF","", "*", '*', 'GeneratePDF').
+    caNavButton($this->request, __CA_NAV_ICON_IMAGE__, "Afficher les photos", "", "*", "*", "Photos"),
     null,
     null
 ); ?>
