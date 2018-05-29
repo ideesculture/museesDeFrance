@@ -87,7 +87,7 @@ class RecolementController extends ActionController
 	{
 		$o_search = new OccurrenceSearch();
 		//$qr_hits = $o_search->search("ca_occurrences.type_id:118");
-        $qr_hits = $o_search->search("ca_occurrences.type_id:141");
+        $qr_hits = $o_search->search($this->opo_config->get("type_occurrence_campagne"));
 		while ($qr_hits->nextHit()) {
 			$global["nb_campagnes"]++;
 			$idno = $qr_hits->get('ca_occurrences.idno');
