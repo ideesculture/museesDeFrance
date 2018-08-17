@@ -57,8 +57,8 @@
 </table>
 
 <?php print caFormControlBox(
-    caNavButton($this->request, __CA_NAV_BUTTON_SCROLL_LT__, "Retour", "", "*", "*", "Index"),
+    caNavButton($this->request, __CA_NAV_ICON_SCROLL_LT__, "Retour", "", "*", "*", "Index"),
     null,
-    (!$vb_is_validated ? caNavButton($this->request, __CA_NAV_BUTTON_COMMIT__, "Inscrire à l'inventaire", "", "*", "*", 'Validate',array("id"=>$vn_id)) : null)
+    (!$vb_is_validated ? caNavButton($this->request, __CA_NAV_ICON_SCROLL_LT__, "Inscrire à l'inventaire", "", "*", "*", 'Validate',array("id"=>$vn_id)) : null)
 );
 ?>
