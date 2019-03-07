@@ -336,7 +336,7 @@ function getPlaceID($t_list, $ps_place, $ps_place_idno, $pn_place_type_id, $ps_p
 			$t_loc->update();
 			if ($t_loc->numErrors()) {
 				print "\tERROR UPDATING {$t_loc_valuetoparse} WITH GEOREF '{$t_loc_coordinates_display}': ".join('; ', $t_loc->getErrors())."\n";
-				continue;
+				//continue;
 			}
 			if ($DEBUG) print $t_loc_coordinates_display."\n";
 		}
