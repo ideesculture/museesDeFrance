@@ -280,15 +280,16 @@ class BaseObjectInventaire implements InterfaceInventaire {
 	                                    break;
                                     case 'ddmmYYYY':
                                         $o_tep = new TimeExpressionParser();
-                                        $o_tep->setLanguage("en_US");
+                                        $o_tep->setLanguage("fr_FR");
                                         $o_tep->parse($response);
-                                        $parsed_date = reset($o_tep->getHistoricTimestamps());
+                                        $parsed_date = reset($o_tep->getHistoricTimestamps()); 
                                         $year_parsed_date = round($parsed_date);
                                         $month_parsed_date = substr("0".(round($parsed_date*100 - $year_parsed_date*100)),-2);
-                                        $day_parsed_date = round($parsed_date*10000 - $year_parsed_date*10000 - $month_parsed_date*100);
-                                        $response = $day_parsed_date."/".$month_parsed_date."/".$year_parsed_date;
+                                        $day_parsed_date = substr("0".round($parsed_date*10000 - $year_parsed_date*10000 - $month_parsed_date*100), -2);
+                                        $response = $year_parsed_date."/".$month_parsed_date."/".$day_parsed_date;
                                         //var_dump(caDateToHistoricTimestamps($response));
 										break;
+										
 
                                     // Post-traitement non reconnu
                                     default :
