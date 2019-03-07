@@ -268,9 +268,15 @@ function getMappingBiensAffectes() {
                 "suffixe" => "</b><br/>"
             ),
             array(
-                "field" => 'ca_objects.dateMillesime',
+                "field" => 'ca_objects.dateMillesime.dateMillesime_datation',
                 "post-treatment" => 'caDateToUnixTimestamp',
                 "prefixe" => "millésime : <b>",
+                "suffixe" => "</b><br/>"
+            ),
+            array(
+                "field" => 'ca_objects.dateMillesime.dateMillesime_type',
+                //"post-treatment" => 'caDateToUnixTimestamp',
+                "prefixe" => " <b>",
                 "suffixe" => "</b><br/>"
             ),
             array(
