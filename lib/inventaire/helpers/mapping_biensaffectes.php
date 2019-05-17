@@ -54,7 +54,7 @@ function getMappingBiensAffectes() {
         'date_acquisition'=>array( //date_acteAcquisition
             array(
                 "field" => 'ca_objects.date_ref_acteAcquisition.date_acteAcquisition',
-                "post-treatment" => 'ddmmYYYY',
+                "post-treatment" => 'caDateToUnixTimestamp',
                 "prefixe" => "date de l'acte d'acquisition : <b>",
                 "suffixe" => "</b><br/>"
             ),
@@ -203,8 +203,6 @@ function getMappingBiensAffectes() {
             // COLONNE 12
             array(
                 "field" => 'ca_objects.dimensions',
-                "template"=> "<unit relativeTo='ca_objects.dimensions'><ifdef code='ca_objects.dimensions.dimensions_width'>L. ^ca_objects.dimensions.dimensions_width</ifdef><ifdef code='ca_objects.dimensions.dimensions_height'>, H. ^ca_objects.dimensions.dimensions_height</ifdef><ifdef code='ca_objects.dimensions.dimensions_depth'>, P. ^ca_objects.dimensions.dimensions_depth</ifdef><ifdef code='ca_objects.dimensions.dimensions_poids'>, Poids ^ca_objects.dimensions.dimensions_poids</ifdef><ifdef code='ca_objects.dimensions.type_dimensions'> (^ca_objects.dimensions.type_dimensions)</ifdef></unit>
-",
                 "prefixe" => "dimensions : <b>",
                 "suffixe" => "</b><br/>"
             )
@@ -218,7 +216,7 @@ function getMappingBiensAffectes() {
             ),
             array(
                 "field" => 'ca_objects.constatEtat.constat_date',
-                "post-treatment" => 'keepOnlyFirstValue',
+                "post-treatment" => 'caDateToUnixTimestamp',
                 "prefixe" => "date du constat d'état : <b>",
                 "suffixe" => "</b><br/>"
             )
@@ -268,20 +266,15 @@ function getMappingBiensAffectes() {
                 "suffixe" => "</b><br/>"
             ),
             array(
-                "field" => 'ca_objects.dateMillesime.dateMillesime_datation',
+                "field" => 'ca_objects.dateMillesime',
                 "post-treatment" => 'caDateToUnixTimestamp',
                 "prefixe" => "millésime : <b>",
                 "suffixe" => "</b><br/>"
             ),
             array(
-                "field" => 'ca_objects.dateMillesime.dateMillesime_type',
-                //"post-treatment" => 'caDateToUnixTimestamp',
-                "prefixe" => " <b>",
-                "suffixe" => "</b><br/>"
-            ),
-            array(
-                "field" => 'ca_objects.objectProductionDate',
-                "prefixe" => "Datation précise : <b>",
+                "field" => 'ca_objects.useDate',
+                "post-treatment" => 'caDateToUnixTimestamp',
+                "prefixe" => "Date d'utilisation ou de découverte : <b>",
                 "suffixe" => "</b><br/>"
             )
         ),
@@ -340,11 +333,6 @@ function getMappingBiensAffectes() {
             array(
                 "field" => 'ca_objects.otherNumber',
                 "prefixe" => "ancien ou autre numéro d'inventaire : <b>",
-                "suffixe" => "</b><br/>"
-            ),
-            array(
-                "field" => 'ca_objects.observations',
-                "prefixe" => "observations : <b>",
                 "suffixe" => "</b><br/>"
             ),
             array(
