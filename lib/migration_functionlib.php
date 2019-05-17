@@ -1,5 +1,5 @@
 <?php
-require_once(__CA_LIB_DIR__."/ca/Search/EntitySearch.php");
+require_once(__CA_LIB_DIR__."/Search/EntitySearch.php");
 
 // ----------------------------------------------------------------------
 function getListID($t_list,$list_code,$list_name="") {
@@ -264,91 +264,7 @@ function getOccurrenceID($ps_occurrence, $ps_occurrence_idno, $pn_occurrence_typ
 	
 	return $vn_occurrence_id;
 }
-// ----------------------------------------------------------------------	
-function getPlaceID($t_list, $ps_place, $ps_place_idno, $pn_place_type_id, $ps_place_parent_id=1, $explode_separator_array=NULL, $ps_place_hierarchy_id=NULL ) {
-	global $pn_locale_id;
-	global $VERBOSE, $DEBUG;
-	$VERBOSE=1;
-	$DEBUG=1;
-	if ($explode_separator_array) $label_type = $explode_separator_array[1]["label_type"];
-	
-	$t_loc_valuetoparse="";
-	$t_loc = new ca_places();
-	$t_label = $t_loc->getLabelTableInstance();
 
-	if (!$pl_place_hierarchy_id) $ps_place_hierarchy_id = $t_list->getItemIDFromList('place_hierarchies', 'root');
-
-	
-	if (!$t_label->load(array('name' => $ps_place))) {
-		if ($VERBOSE) print "\tCREATING PLACE {$ps_place}\n";
-		// insert place
-		$t_loc->setMode(ACCESS_WRITE);
-		$t_loc->set('locale_id', $pn_locale_id);
-		$t_loc->set('type_id', $pn_place_type_id);
-		$t_loc->set('access', 1);
-		$t_loc->set('status', 2);
-		$t_loc->set('idno', $ps_place_idno);
-		$t_loc->set('parent_id', $ps_place_parent_id);
-		$t_loc->set('hierarchy_id', $ps_place_hierarchy_id);
-
-		//Insertion
-		$t_loc->insert();
-		
-		//var_dump($t_item);
-		if (($explode_separator_array) && ( strpos($ps_place,$explode_separator_array[1]["separator"]) > 0) ) {			
-			// Un séparateur défini et trouvé dans le libellé, on casse selon le séparateur et on crée les titres secondaires avec le bon type
-			$libelles = explode($explode_separator_array[1]["separator"],$ps_place);
-			//var_dump($libelles);die();
-
-			// Pour chaque libellé individuel, si numéro 0 : libellé principal, si numéro > 0 synonyme
-			foreach( $libelles as $key => $value){
-				$t_loc->addLabel(array('name' => $value),$pn_locale_id, ($key == 0 ? null : $label_type) , ($key == 0 ? true : false));
-				// La valeur a utiliser pour le géoréférencement est la première
-				if ($key==0) $t_loc_valuetoparse=$value;
-			}
-			
-		} else {
-			// 1 seul libellé, libellé principal
-				$ps_place=trim($ps_place);
-				$t_loc->addLabel(array('name' => $ps_place),$pn_locale_id, null, true);
-				$t_loc_valuetoparse=$ps_place;
-		}
-		$t_loc->update();
-		if ($t_loc->numErrors()) {
-			print "ERROR INSERTING PLACE ($ps_place): ".join('; ', $t_loc->getErrors())."\n";
-			return null;
-		}
-		
-		$vn_place_id = $t_loc->getPrimaryKey();
-		
-		// Georeferencing
-		
-		$t_loc_coordinates = new GeocodeAttributeValue();
-		if ($DEBUG) print "georéférencement : ".$t_loc_valuetoparse."\n";
-		$t_loc_coordinates_values = $t_loc_coordinates->parseValue($t_loc_valuetoparse, null);
-		//getDisplayValue($t_loc_coordinates_values);
-		if ($t_loc_coordinates_values["value_longtext2"]) {
-			$t_loc_coordinates_display=sprintf("%s [%s]",$t_loc_coordinates_values["value_longtext1"],$t_loc_coordinates_values["value_longtext2"]);
-			$t_loc->addAttribute(array(
-				'locale_id' => $pn_locale_id,
-				georeference => $t_loc_coordinates_display
-			), 'georeference');
-			$t_loc->update();
-			if ($t_loc->numErrors()) {
-				print "\tERROR UPDATING {$t_loc_valuetoparse} WITH GEOREF '{$t_loc_coordinates_display}': ".join('; ', $t_loc->getErrors())."\n";
-				//continue;
-			}
-			if ($DEBUG) print $t_loc_coordinates_display."\n";
-		}
-		$t_loc_coordinates = null;
-		
-	} else {
-		if ($VERBOSE) print "\tFound Place {$ps_place}\n";
-		$vn_place_id = $t_label->get('place_id');
-	}
-	
-	return $vn_place_id;
-}
 // ----------------------------------------------------------------------
 function getEntityID($ps_forename, $ps_surname_with_date, $pn_type_id, $pn_source_id, $other_fields = null) {
 	global $pn_locale_id, $vn_date_created, $vn_date_dateUnspecified, $vn_individual, $vn_undefined;
