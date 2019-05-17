@@ -5,6 +5,10 @@ plugin museesDeFrance pour CollectiveAccess
 Nous avons bâti autour de CollectiveAccess un plugin spécifique et cohérent permettant de réaliser la génération des registres de l'inventaire informatisé suivant les normes des musées de France, mais aussi d'assurer la réalisation et le suivi du récolement des collections.
 Tout cela dans une interface simple et agréable.
 
+**IMPORTANT** 
+
+La version actuelle de ce plugin ne supporte plus les versions de Providence antérieures à la version 1.7.7.
+
 ## Les fonctionnalités
 
 ### Dans CollectiveAccess
