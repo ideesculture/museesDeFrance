@@ -7,7 +7,7 @@
  */
 
 require_once("InterfaceInventaire.php");
-require_once(__CA_LIB_DIR__."/core/Db.php");
+require_once(__CA_LIB_DIR__."/Db.php");
 
 class BaseObjectInventaire implements InterfaceInventaire {
 
@@ -20,15 +20,11 @@ class BaseObjectInventaire implements InterfaceInventaire {
     public $designation_display;
     public $materiaux;
     public $techniques;
-    public $mesures;
+    public $mesure;
     public $etat;
     public $epoque;
     public $utilisation;
     public $provenance;
-
-    public $date_inscription;
-    public $date_inscription_display;
-
     public $validated;
 
     // photo asset
@@ -217,18 +213,9 @@ class BaseObjectInventaire implements InterfaceInventaire {
             foreach($fields as $attribute) {
                 $response = "";
                 $field = $attribute["field"];
-                
-                /*if($field == "ca_objects.dimensions") {
-	                var_dump($t_object->get("$field"));
-	                die();
-                }*/
                 $data = explode(".",$field);
-                if(isset($attribute["template"])) {
-	                $response = $t_object->getWithTemplate($attribute["template"]);
-	                $response_global .= $attribute["prefixe"].$response.$attribute["suffixe"];
-	                continue;
-                } else {
-	                switch($data[0]) {
+
+                switch($data[0]) {
                     case "ca_entities" :
                         $entities = $t_object->getRelatedItems("ca_entities",array("restrictToRelationshipTypes"=>$attribute["relationshipTypes"]));
                         foreach($entities as $entity) {
@@ -248,6 +235,7 @@ class BaseObjectInventaire implements InterfaceInventaire {
                             $options = array("convertCodesToDisplayText"=>"true", "locale"=>$locale_id);
                             if ($attribute["options"]) $options = array_merge($options,$attribute["options"]);
                             // RECUPERATION DU CHAMP POUR L'AFFICHAGE
+
                             $response = $t_object->get($field, $options);
 
                             // POST-TRAITEMENT
@@ -275,22 +263,6 @@ class BaseObjectInventaire implements InterfaceInventaire {
                                     case 'caDateToUnixTimestamp' :
                                         $response = date('d/m/Y',caDateToUnixTimestamp($response));
                                         break;
-                                    case 'keepOnlyFirstValue':
-	                                    $response=reset(explode(";", $response));
-	                                    break;
-                                    case 'ddmmYYYY':
-                                        $o_tep = new TimeExpressionParser();
-                                        $o_tep->setLanguage("fr_FR");
-                                        $o_tep->parse($response);
-                                        $parsed_date = reset($o_tep->getHistoricTimestamps()); 
-                                        $year_parsed_date = round($parsed_date);
-                                        $month_parsed_date = substr("0".(round($parsed_date*100 - $year_parsed_date*100)),-2);
-                                        $day_parsed_date = substr("0".round($parsed_date*10000 - $year_parsed_date*10000 - $month_parsed_date*100), -2);
-                                        $response = $year_parsed_date."/".$month_parsed_date."/".$day_parsed_date;
-                                        //var_dump(caDateToHistoricTimestamps($response));
-										break;
-										
-
                                     // Post-traitement non reconnu
                                     default :
                                         throw new \Exception("Post-traitement non reconnu : ".$attribute["post-treatment"]);
@@ -313,8 +285,7 @@ class BaseObjectInventaire implements InterfaceInventaire {
                         }
                         break;
                 }
-                }
-                $response_global .= ($response !="" ? $attribute["prefixe"].$response.$attribute["suffixe"] : "");
+                $response_global .= ($response ? $attribute["prefixe"].$response.$attribute["suffixe"] : "");
             }
            // Converting quotes to french typographic quotes
            $response_global = str_replace("'","’",$response_global);
@@ -324,7 +295,7 @@ class BaseObjectInventaire implements InterfaceInventaire {
             // DEFINITION DE L'ATTRIBUT
             $this->set($target, !$response_global ? "non renseigné" : $response_global);
         }
-		//die();
+
         return  true;
     }
 
@@ -396,8 +367,6 @@ class BaseObjectInventaire implements InterfaceInventaire {
 
     function validate($pb_save = true) {
         if ($this->validated == false) {
-            $this->date_inscription=date("Y-m-d");
-            $this->date_inscription_display=date("d/m/Y");
             $this->validated = true;
             $this->save();
         } else {
@@ -408,10 +377,6 @@ class BaseObjectInventaire implements InterfaceInventaire {
     function unvalidate($pb_save = true) {
         if ($this->validated == true) {
             $this->validated = false;
-
-            $this->date_inscription="";
-            $this->date_inscription_display="";
-
             if ($pb_save) $this->save();
             return true;
         } else {
