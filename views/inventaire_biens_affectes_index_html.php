@@ -1,7 +1,8 @@
 <?php
     $vs_plugin_dir = $this->getVar("plugin_dir");
     $vt_registre = $this->getVar("registre");
-    $vn_obj_nb = $vt_registre->count();
+    $vt_objects = $vt_registre->getObjects($vs_year, $num_start, $designation);
+    $vn_obj_nb = count($vt_objects);
     $va_years = $vt_registre->getYears();
 
     $vs_year = $this->getVar("year");
