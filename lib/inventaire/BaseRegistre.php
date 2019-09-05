@@ -89,7 +89,8 @@ class BaseRegistre implements InterfaceRegistre {
         if($designation) $vs_request_where .=
             ($vs_request_where == "" ? " WHERE ": " AND ")
             ."designation LIKE \"%".$designation."%\"";
-        $qr_res = $this->opo_db->query($vs_request.$vs_request_where);
+        $vs_request_order = " ORDER BY numinv_sort ASC";    
+        $qr_res = $this->opo_db->query($vs_request.$vs_request_where.$vs_request_order);
         $va_results = array();
         if ($qr_res->numRows() > 0) {
             while($qr_res->nextRow()) {
