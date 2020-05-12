@@ -117,12 +117,10 @@
                 <td>" . $vt_object->date_inscription_display . "</td>
                 <td>";
             if ((!$vt_object->validated) && ($is_validator)) {
-                print "<a href='" . caNavUrl($this->request, "museesDeFrance", "InventaireBiensAffectes", "Validate", array("object_id" => $vt_object->get("ca_id"))) . "'>
-                <img src='" . __CA_URL_ROOT__ . "/themes/default/graphics/buttons/glyphicons_198_ok.png' alt='glyphicons_198_ok' border='0' align='middle'>
-                </a>
-                <a href='" . caNavUrl($this->request, "museesDeFrance", "InventaireBiensAffectes", "Remove", array("object_id" => $vt_object->get("ca_id"))) . "'>
-                <img src='" . __CA_URL_ROOT__ . "/themes/default/graphics/buttons/glyphicons_197_remove.png' alt='glyphicons_197_remove' border='0' align='middle'>
-                </a>";
+                print "<a alt='valider' title='valider' href='" . caNavUrl($this->request, "museesDeFrance", "InventaireBiensAffectes", "Validate", array("object_id" => $vt_object->get("ca_id"))) . "'>
+                ".caNavIcon(__CA_NAV_ICON_COMMIT__, 1)."</a>
+                <a  alt='retirer' title='retirer' href='" . caNavUrl($this->request, "museesDeFrance", "InventaireBiensAffectes", "Remove", array("object_id" => $vt_object->get("ca_id"))) . "'>
+                ".caNavIcon(__CA_NAV_ICON_DELETE__, 1)."</a>";
             }
             print "</td>";
             print "</tr>";
