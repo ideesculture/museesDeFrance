@@ -3,7 +3,7 @@
     $vt_registre = $this->getVar("registre");
     $vt_objects = $vt_registre->getObjects($vs_year = null, $num_start = null , $designation = null);
 
-    if(is_object($vt_objects)) {
+    if(is_array($vt_objects)) {
         $vn_obj_nb = count($vt_objects);
     } else {
         $vn_obj_nb = 0;
@@ -99,7 +99,8 @@
     <?php
     $i = 0;
     $va_objects = $vt_registre->getObjects($vs_year, $num_start, $designation);
-    if(is_object($va_objects)) {
+
+    if(is_array($va_objects)) {
         foreach ($va_objects as $vt_object) {
             // Ignore object if draft mode is off and object hasn't been validated
             if ($vb_hide_drafts && $vt_object->get(validated) === "0") continue;
