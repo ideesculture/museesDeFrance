@@ -7,11 +7,12 @@
  */
 
 require_once("BaseObjectInventaire.php");
-if(is_file("helpers/local/mapping_biensdeposes.php")) {
-    require_once("helpers/local/mapping_biensdeposes.php");
+if(is_file(__CA_APP_DIR__."/plugins/museesDeFrance/lib/inventaire/helpers/local/mapping_biensdeposes.php")) {
+    require_once(__CA_APP_DIR__."/plugins/museesDeFrance/lib/inventaire/helpers/local/mapping_biensdeposes.php");
 } else {
-    require_once("helpers/mapping_biensdeposes.php");
+    require_once(__CA_APP_DIR__."/plugins/museesDeFrance/lib/inventaire/helpers/mapping_biensdeposes.php");
 }
+
 
 class BienDepose extends BaseObjectInventaire {
     public $numdep;

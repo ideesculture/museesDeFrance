@@ -7,10 +7,11 @@
  */
 
 require_once("BaseObjectInventaire.php");
-if(is_file("helpers/local/mapping_biensaffectes.php")) {
-    require_once("helpers/local/mapping_biensaffectes.php");
+
+if(is_file(__CA_APP_DIR__."/plugins/museesDeFrance/lib/inventaire/helpers/local/mapping_biensaffectes.php")) {
+    require_once(__CA_APP_DIR__."/plugins/museesDeFrance/lib/inventaire/helpers/local/mapping_biensaffectes.php");
 } else {
-    require_once("helpers/mapping_biensaffectes.php");
+    require_once(__CA_APP_DIR__."/plugins/museesDeFrance/lib/inventaire/helpers/mapping_biensaffectes.php");
 }
 
 
