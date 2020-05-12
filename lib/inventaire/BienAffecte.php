@@ -7,7 +7,12 @@
  */
 
 require_once("BaseObjectInventaire.php");
-require_once("helpers/mapping_biensaffectes.php");
+if(is_file("helpers/local/mapping_biensaffectes.php")) {
+    require_once("helpers/local/mapping_biensaffectes.php");
+} else {
+    require_once("helpers/mapping_biensaffectes.php");
+}
+
 
 class BienAffecte extends BaseObjectInventaire {
     // serie of basic content properties

@@ -7,7 +7,11 @@
  */
 
 require_once("BaseObjectInventaire.php");
-require_once("helpers/mapping_biensdeposes.php");
+if(is_file("helpers/local/mapping_biensdeposes.php")) {
+    require_once("helpers/local/mapping_biensdeposes.php");
+} else {
+    require_once("helpers/mapping_biensdeposes.php");
+}
 
 class BienDepose extends BaseObjectInventaire {
     public $numdep;
