@@ -41,7 +41,7 @@ function liveExecuteCommand($cmd)
                     'output'       => str_replace("Exit status : " . $matches[0], '', $complete_output)
                  );
 }
-$command = 'cd '.__DIR__.'/tmp/ && /usr/local/bin/wkhtmltopdf --footer-right [page]/[topage] --footer-font-size 8 inventaire.html inventaire.pdf';
+$command = 'cd '.__DIR__.'/tmp/ && wkhtmltopdf --footer-right [page]/[topage] --footer-font-size 8 inventaire.html inventaire.pdf';
 var_dump($command);
 $result = liveExecuteCommand($command);
 
