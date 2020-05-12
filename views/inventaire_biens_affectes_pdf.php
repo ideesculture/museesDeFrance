@@ -41,22 +41,34 @@ $vt_registre = $this->getVar("registre");
         #page-de-titre {font-size:7pt;}
         #page-de-titre .placeholder {background:#f5f5f5;margin-top:2pt;margin-bottom:2pt;padding:5pt;height:1.5cm;}
         #page-de-titre DIV {width:4.2cm;}
-        #page-de-titre H3 {color:#f5f5f5;font-size:9pt;line-height:5pt;margin:0pt;padding:0pt;}
+        #page-de-titre H3 {display:none;}
         #page-de-titre H4.surtitre {color:#d5d5d5;font-size:18pt;line-height:7pt;letter-spacing:3pt;margin:0pt;padding:0pt;}
-        #page-de-titre #titre {position:absolute;top:4cm;left:5cm;width:9cm;font-size:9pt;}
-        #page-de-titre #titre H1 {color:#68B604;}
-        #page-de-titre #dates-registre {position:absolute;top:12cm;left:5cm;width:9cm;font-size:9pt;}
+        #page-de-titre #titre {padding-top:4cm;margin-left:5cm;width:12cm;font-size:9pt;}
+        #page-de-titre #titre H1 {text-align:center;color:#68B604;}
+        #page-de-titre #dates-registre {margin-left:5cm;width:12cm;font-size:9pt;}
         #page-de-titre #dates-registre H3,
         #page-de-titre #dates-registre H4 {display:none;}
-        #page-de-titre #nom-adresse-musee {position:absolute;bottom:0cm;left:0cm;}
-        #page-de-titre #nom-adresse-personnemorale {position:absolute;bottom:0cm;left:4.75cm;}
-        #page-de-titre #lieu-conservation {position:absolute;bottom:0cm;left:9.45cm;}
-        #page-de-titre #paraphe-responsable-scientifique {position:absolute;bottom:0cm;left:14.2cm;}
+        #page-de-titre #nom-adresse-musee {display:inline-block;width:23%;}
+        #page-de-titre #nom-adresse-personnemorale {display:inline-block;width:23%;}
+        #page-de-titre #lieu-conservation {display:inline-block;width:23%;}
+        #page-de-titre #paraphe-responsable-scientifique {display:inline-block;width:23%;}
         .center {text-align:center;}
         .fin-impression {background:gray;text-align:right;color:white;font-size:7pt;}
         .page-break {page-break-before: always;}
         #footer {position: fixed; bottom:0;left:0;width:100%;height:2.2cm;padding: 0;margin-bottom:-3.5cm; margin-left: -1cm;margin-right: -1cm;background-color:#ffffff;z-index:10;}
         #paraphe {position: fixed; bottom:0;left:0;border:1px solid gray;width:4.3cm;margin-bottom:-2cm;z-index:11;font:7pt helvetica;height:1.7cm;}
+		.new-page {
+		    page-break-after: always;
+		}
+		#infos-bas {
+			margin-top:3cm;	
+		}
+		#infos-bas,
+		#infos-bas tr,
+		#infos-bas div {
+			font-size:10pt;
+			
+		}
     </style>
 </head>
 <body>
@@ -80,25 +92,30 @@ $vt_registre = $this->getVar("registre");
         include("inventaire_templates_pdf/insertions-pdf-commun/dates-registre.html");
         ?>
     </div>
-    <div id="nom-adresse-musee">
-        <?php
-        include("inventaire_templates_pdf/insertions-pdf-commun/nom-adresse-musee.html");
-        ?>
-    </div>
-    <div id="nom-adresse-personnemorale">
-        <?php
-        include("inventaire_templates_pdf/insertions-pdf-commun/nom-adresse-personnemorale.html");
-        ?>
-    </div>
-    <div id="lieu-conservation">
-        <?php
-        include("inventaire_templates_pdf/insertions-pdf-inventaire/lieu-conservation.html");
-        ?>
-    </div>
-    <div id="paraphe-responsable-scientifique">
-        <?php
-        include("inventaire_templates_pdf/insertions-pdf-inventaire/paraphe-responsable-scientifique.html");
-        ?>
+    <table id="infos-bas" style="width:100% !important;">
+	    <tr>
+		    <td style="width:25% !important;vertical-align: bottom;">
+	        <?php
+	        include("inventaire_templates_pdf/insertions-pdf-commun/nom-adresse-musee.html");
+	        ?>
+		    </td>
+		    <td style="width:25% !important;vertical-align: bottom;">
+	        <?php
+	        include("inventaire_templates_pdf/insertions-pdf-commun/nom-adresse-personnemorale.html");
+	        ?>
+			</td>
+		    <td style="width:25% !important;vertical-align: bottom;">
+	        <?php
+	        include("inventaire_templates_pdf/insertions-pdf-inventaire/lieu-conservation.html");
+	        ?>
+			</td>
+		    <td style="width:25% !important;vertical-align: bottom;">
+	        <?php
+	        include("inventaire_templates_pdf/insertions-pdf-inventaire/paraphe-responsable-scientifique.html");
+	        ?>
+			</td>
+	    </tr>
+    </table>
     </div>
 </div>
 
