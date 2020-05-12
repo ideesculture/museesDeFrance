@@ -254,13 +254,24 @@ class InventaireBiensAffectesController extends ActionController {
         $this->view->setVar('marginBottom', '3cm');
         $this->view->setVar('marginLeft', '1cm');
 
-        $vs_content = $this->render("inventaire_biens_affectes_pdf.php");
-
-        $dompdf->load_html($vs_content);
-        $dompdf->render();
-        $dompdf->stream("inventaire_biens_affectes.pdf");
+        $vs_content = $this->render("inventaire_biens_affectes_pdf.php", true);
+        //var_dump($vs_content);
+        $file = __CA_APP_DIR__."/plugins/museesDeFrance/tmp/inventaire.html";
+		file_put_contents($file, $vs_content);
+		
+		$this->render("inventaire_biens_affectes_pdfgenere.php");
     }
+    
+   public function GeneratePDFajax() {
+   		$command = "cd ".__CA_APP_DIR__."/plugins/museesDeFrance/tmp/ && rm inventaire.pdf && rm inventaire.html";
+		exec($command, $output);
+		$command = "cd ".__CA_APP_DIR__."/plugins/museesDeFrance/tmp/ && /usr/local/bin/wkhtmltoimage --footer-right \"[page]/[topage]\" --footer-font-size 8 inventaire.html inventaire.pdf";
+		exec($command, $output);
 
+		return json_encode(["result"=>"ok", "message"=>"<p><a href='".__CA_URL_ROOT__."/app/plugins/museesDeFrance/tmp/inventaire.pdf'>inventaire g&eacute;n&eacute;r&eacute;</a></p>"]);
+		die();
+        
+    }
     # -------------------------------------------------------
     # Sidebar info handler
     # -------------------------------------------------------
