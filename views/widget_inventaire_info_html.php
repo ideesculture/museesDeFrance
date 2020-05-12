@@ -50,3 +50,11 @@
 		<a class='button' href="mailto:contact@ideesculture.com">contact@ideesculture.com</a><br/>
 	</div>
 </h3>
+<h3>Documentation utilisateur :
+    <p><a class='button' href="https://www.notion.so/ideesculture/Mus-es-de-France-Inventaire-80655394ec1a476196006c2366a8ed57" target="_blank">🏛 Musées de France : Inventaire</a></p>
+</h3>
+<style>
+    #leftNav #widgets h3 {
+        padding-top: 20px;
+    }
+</style>
