@@ -1,8 +1,14 @@
 <?php
     $vs_plugin_dir = $this->getVar("plugin_dir");
     $vt_registre = $this->getVar("registre");
-    $vt_objects = $vt_registre->getObjects($vs_year, $num_start, $designation);
-    $vn_obj_nb = count($vt_objects);
+    $vt_objects = $vt_registre->getObjects($vs_year = null, $num_start = null , $designation = null);
+
+    if(is_object($vt_objects)) {
+        $vn_obj_nb = count($vt_objects);
+    } else {
+        $vn_obj_nb = 0;
+    }
+
     $va_years = $vt_registre->getYears();
 
     $vs_year = $this->getVar("year");
@@ -79,7 +85,7 @@
 <div style="clear: both;"><!-- empty --></div>
 <div class="sectionBox">
     <a href="#" id="showRefine" onclick="jQuery('#searchRefineBox').slideDown();jQuery('#showRefine').hide();" data-original-title="Affiner les résultats" style="display: block;">
-        <?php print caNavIcon($this->request,__CA_NAV_BUTTON_FILTER__); ?>
+        <?php print caNavIcon($this->request,__CA_NAV_ICON_FILTER__); ?>
 
     </a>
     <table id="registre_biens_affectes" class="listtable">
@@ -92,32 +98,35 @@
     <tbody>
     <?php
     $i = 0;
-    foreach($vt_registre->getObjects($vs_year, $num_start, $designation) as $vt_object) {
-        // Ignore object if draft mode is off and object hasn't been validated
-        if($vb_hide_drafts && $vt_object->get(validated) === "0") continue;
+    $va_objects = $vt_registre->getObjects($vs_year, $num_start, $designation);
+    if(is_object($va_objects)) {
+        foreach ($va_objects as $vt_object) {
+            // Ignore object if draft mode is off and object hasn't been validated
+            if ($vb_hide_drafts && $vt_object->get(validated) === "0") continue;
 
-        print ($i % 2 == 0 ? "<tr>" : "<tr class='odd'>" );
+            print ($i % 2 == 0 ? "<tr>" : "<tr class='odd'>");
 
-        print "<td><a href='".caNavUrl($this->request,"editor/objects","ObjectEditor","Edit",array("object_id"=>$vt_object->get("ca_id")))."'>".$vt_object->numinv_display."</a>";
-        if($vt_object->file) {
-            print "<br/><img src=\"".__CA_URL_ROOT__."/app/plugins/museesDeFrance/assets/photos/".$vt_object->file."\" style=\"width:50px;\">";
-        }
-        print "</td>
-            <td><a href='".caNavUrl($this->request,"*","*","Transfer",array("id"=>$vt_object->get("ca_id")))."'>".$vt_object->designation_display."</a></td>
-            <td>".$vt_object->auteur_display."</td>
-            <td>".$vt_object->date_inscription_display."</td>
-            <td>";
-        if ((!$vt_object->validated) && ($is_validator)) {
-            print "<a href='".caNavUrl($this->request,"museesDeFrance","InventaireBiensAffectes","Validate",array("object_id"=>$vt_object->get("ca_id")))."'>
-            <img src='".__CA_URL_ROOT__."/themes/default/graphics/buttons/glyphicons_198_ok.png' alt='glyphicons_198_ok' border='0' align='middle'>
-            </a>
-            <a href='".caNavUrl($this->request,"museesDeFrance","InventaireBiensAffectes","Remove",array("object_id"=>$vt_object->get("ca_id")))."'>
-            <img src='".__CA_URL_ROOT__."/themes/default/graphics/buttons/glyphicons_197_remove.png' alt='glyphicons_197_remove' border='0' align='middle'>
-            </a>";
-        }
+            print "<td><a href='" . caNavUrl($this->request, "editor/objects", "ObjectEditor", "Edit", array("object_id" => $vt_object->get("ca_id"))) . "'>" . $vt_object->numinv_display . "</a>";
+            if ($vt_object->file) {
+                print "<br/><img src=\"" . __CA_URL_ROOT__ . "/app/plugins/museesDeFrance/assets/photos/" . $vt_object->file . "\" style=\"width:50px;\">";
+            }
+            print "</td>
+                <td><a href='" . caNavUrl($this->request, "*", "*", "Transfer", array("id" => $vt_object->get("ca_id"))) . "'>" . $vt_object->designation_display . "</a></td>
+                <td>" . $vt_object->auteur_display . "</td>
+                <td>" . $vt_object->date_inscription_display . "</td>
+                <td>";
+            if ((!$vt_object->validated) && ($is_validator)) {
+                print "<a href='" . caNavUrl($this->request, "museesDeFrance", "InventaireBiensAffectes", "Validate", array("object_id" => $vt_object->get("ca_id"))) . "'>
+                <img src='" . __CA_URL_ROOT__ . "/themes/default/graphics/buttons/glyphicons_198_ok.png' alt='glyphicons_198_ok' border='0' align='middle'>
+                </a>
+                <a href='" . caNavUrl($this->request, "museesDeFrance", "InventaireBiensAffectes", "Remove", array("object_id" => $vt_object->get("ca_id"))) . "'>
+                <img src='" . __CA_URL_ROOT__ . "/themes/default/graphics/buttons/glyphicons_197_remove.png' alt='glyphicons_197_remove' border='0' align='middle'>
+                </a>";
+            }
             print "</td>";
-        print "</tr>";
-        $i++;
+            print "</tr>";
+            $i++;
+        }
     }
     ?>
     </tbody>
