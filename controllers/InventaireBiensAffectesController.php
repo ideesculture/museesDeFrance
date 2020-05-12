@@ -1,7 +1,8 @@
 <?php
+if(__CollectiveAccess_Schema_Rev__>=178) { $vb_prefix = true;} else { $vb_prefix = false;}
 require_once __CA_APP_DIR__ . "/plugins/museesDeFrance/lib/inventaire/BienAffecte.php";
 require_once __CA_APP_DIR__ . "/plugins/museesDeFrance/lib/inventaire/RegistreBiensAffectes.php";
-require_once __CA_LIB_DIR__ . '/core/Parsers/dompdf/dompdf_config.inc.php';
+require_once __CA_APP_DIR__ . "/plugins/museesDeFrance/lib/dompdf/dompdf_config.inc.php";
 require_once __CA_MODELS_DIR__ . "/ca_objects.php";
 
 class InventaireBiensAffectesController extends ActionController {
