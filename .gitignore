@@ -24,3 +24,4 @@ conf/PV_recolement/*.*
 /conf/PV_recolement/word/document.xml
 /conf/PV_recolement/word/_rels
 lib/inventaire/helpers/local/mapping_biensaffectes.php
+tmp/inventaire.*
