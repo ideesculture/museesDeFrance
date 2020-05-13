@@ -351,12 +351,12 @@ class RecolementController extends ActionController
                 $count_lines++;
 				$line++;
 				$pv_info["liste_objets_html"] .=
-					"<tr " . ($line == 1 ? " class=odd" : "") . "><td>${count_lines}<a href=\"" . __CA_URL_ROOT__ . "/index.php/editor/occurrences/OccurrenceEditor/Edit/occurrence_id/" . $occurrence_id . "\"><img src=\"" . __CA_URL_ROOT__ . "/themes/default/graphics/buttons/edit.png\"></td>" .
+					"<tr " . ($line == 1 ? " class=odd" : "") . "><td>${count_lines}<a href=\"" . __CA_URL_ROOT__ . "/index.php/editor/occurrences/OccurrenceEditor/Edit/occurrence_id/" . $occurrence_id . "\">".caNavIcon(__CA_NAV_ICON_EDIT__,2)."</a></td>" .
 					"<td><b>" . $recolement->get("idno") . "</b>" .
                     "<td><b>" . $recolement->get("preferred_labels") . "</b>" .
 					($recolement->get('done', array("convertCodesToDisplayText" => true)) == "oui" ? "<span class='done'></span>" : "<span class='todo'></span>").
 					"</td>" .
-					"<td>" . $recolement->get("recolement", array("convertCodesToDisplayText" => 1)) . "</td>" .
+					"<td>" . $recolement->get('done', array("convertCodesToDisplayText" => true)) . "</td>" .
 					"<td>" . $recolement->get("presence_bien", array("convertCodesToDisplayText" => 1)) . "</td>" .
 					"<td>" . $recolement->get("mention_localisation", array("convertCodesToDisplayText" => 1)) . "</b></td>";
 				if ($line == 2) $line = 0;
