@@ -1,7 +1,6 @@
 <?php
-
-require_once __CA_BASE_DIR__ . '/app/lib/core/Parsers/PHPExcel/PHPExcel.php';
-require_once __CA_BASE_DIR__ . '/app/lib/core/Parsers/PHPExcel/PHPExcel/Writer/Excel2007.php';
+require_once __CA_BASE_DIR__ . '/vendor/phpoffice/phpexcel/Classes/PHPExcel.php';
+require_once __CA_BASE_DIR__ . '/vendor/phpoffice/phpexcel/Classes/PHPExcel/Writer/Excel2007.php';
 
 $campagnes = $this->getVar('campagnes');
 $rd = $this->getVar('rd');
