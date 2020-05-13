@@ -1,14 +1,14 @@
 <?php
 
-require_once(__CA_LIB_DIR__ . '/core/Configuration.php');
+require_once(__CA_LIB_DIR__ . '/Configuration.php');
 require_once(__CA_MODELS_DIR__ . '/ca_objects.php');
 require_once(__CA_MODELS_DIR__ . '/ca_sets.php');
 require_once(__CA_MODELS_DIR__ . '/ca_occurrences.php');
-require_once(__CA_LIB_DIR__ . '/ca/Search/ObjectSearch.php');
-require_once(__CA_LIB_DIR__ . '/ca/Search/OccurrenceSearch.php');
-require_once(__CA_LIB_DIR__ . '/ca/Search/SetSearch.php');
+require_once(__CA_LIB_DIR__ . '/Search/ObjectSearch.php');
+require_once(__CA_LIB_DIR__ . '/Search/OccurrenceSearch.php');
+require_once(__CA_LIB_DIR__ . '/Search/SetSearch.php');
 require_once(__CA_MODELS_DIR__. '/ca_data_exporters.php');
-require_once(__CA_LIB_DIR__ . '/ca/Search/SetSearch.php');
+require_once(__CA_LIB_DIR__ . '/Search/SetSearch.php');
 
 function Zip($source, $destination)
 {
