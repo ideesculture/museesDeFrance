@@ -24,7 +24,7 @@
 <?php endforeach; ?>
 </ul>
 
-<p><a href="<?php print __CA_URL_ROOT__; ?>/index.php/museesDeFrance/Joconde/Export" class="form-button 1487955007"><span class="form-button"><img src="/gestion/themes/default/graphics/buttons/glyphicons_198_ok.png" border="0" class="form-button-left" style="padding-right: 10px">Générer un export Joconde</span></a></p>
+<p><a href="<?php print __CA_URL_ROOT__; ?>/index.php/museesDeFrance/Joconde/Export" class="form-button 1487955007"><span class="form-button"><?php print caNavIcon(__CA_NAV_ICON_GO__); ?> Générer un export Joconde</span></a></p>
 
 <hr/>
 <small>
