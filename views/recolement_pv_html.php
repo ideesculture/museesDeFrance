@@ -7,7 +7,7 @@ $InfosPv = $this->getVar('InfosPv');
 
 <h2>
 	<a href="<?php print __CA_URL_ROOT__; ?>/index.php/editor/occurrences/OccurrenceEditor/Summary/occurrence_id/<?php print $InfosPv["info"]["occurrence_id"]; ?>">
-		<img src="<?php print __CA_URL_ROOT__; ?>/themes/default/graphics/buttons/edit.png"></a>
+        <?php print caNavIcon(__CA_NAV_ICON_EDIT__); ?></a>
 	<?php print $InfosPv["info"]["campagne_nom"] ?>
 </h2>
 
@@ -98,10 +98,16 @@ $InfosPv = $this->getVar('InfosPv');
 				    max="<?php print $InfosPv["info"]["recolements_total"]; ?>"></progress>
 			<br/>
 			<?php print (int)$InfosPv["info"]["recolements_done"]."/".$InfosPv["info"]["recolements_total"]; ?>
-			<?php print "(".round($InfosPv["info"]["recolements_done"] / $InfosPv["info"]["recolements_total"] * 100)."%)"; ?>
+			<?php
+            if($InfosPv["info"]["recolements_total"]) {
+                print "(".round($InfosPv["info"]["recolements_done"] / $InfosPv["info"]["recolements_total"] * 100)."%)";
+            } else {
+                print "(0%)";
+            }
+             ?>
 			<a href="<?php print __CA_URL_ROOT__ . "/index.php/museesDeFrance/Recolement/PreparerCampagne/?idno=" .$InfosPv["info"]["idno"]; ?>"
 				title="Générer des fiches de récolements depuis un ensemble d'objets" style="float:right;">
-			<img src="<?php print __CA_URL_ROOT__ ?>/themes/default/graphics/buttons/add.png"/>
+                <?php print caNavIcon(__CA_NAV_ICON_ADD__,1); ?>
 			</a>
 		</td>
 	</tr>
