@@ -25,3 +25,7 @@ conf/PV_recolement/*.*
 /conf/PV_recolement/word/_rels
 lib/inventaire/helpers/local/mapping_biensaffectes.php
 tmp/inventaire.*
+export-joconde/*/rapport.txt
+export-joconde/_referentiel/.dateexport
+export-joconde/_referentiel/.numexport
+export-joconde/*.zip
