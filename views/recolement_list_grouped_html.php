@@ -230,8 +230,7 @@ if (!isset($campagnes_par_rd) || !$campagnes_par_rd) {
                                     <span style="float:right;">
 									<a href="<?php print __CA_URL_ROOT__ . "/index.php/museesDeFrance/Recolement/PreparerCampagne/?idno=" . $campagne["idno"]; ?>"
                                        title="Générer des fiches de récolements depuis un ensemble d'objets">
-                                        <img
-                                            src="<?php print __CA_URL_ROOT__ ?>/themes/default/graphics/buttons/add.png"/>
+                                        <?php print caNavIcon(__CA_NAV_ICON_ADD__, 2); ?>
                                     </a>
 								</span>
                                 <?php

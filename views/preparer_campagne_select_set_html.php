@@ -3,7 +3,7 @@ $va_setList = $this->getVar('SetList');
 $vs_campagne_idno = $this->getVar('CampagneIdno');
 ?>
 
-<h1>Choisir un ensemble d'objet pour préparer le récolement</h1>
+<h1>Choisir un ensemble d'objets pour préparer le récolement</h1>
 <p>Tous les objets présents dans l'ensemble vont se voir attribuer une nouvelle fiche de récolement.</p>
 <p>Cette action ne peut pas être annulée.</p>
 <form action="<?php print __CA_URL_ROOT__ . "/index.php/museesDeFrance/Recolement/PreparerCampagne/"; ?>" method="post">
@@ -17,5 +17,5 @@ $vs_campagne_idno = $this->getVar('CampagneIdno');
 		endforeach;
 		?>
 	</select>
-	<input type="submit" value="Submit">
+    <button type="submit" value="Submit">Valider</button>
 </form>
