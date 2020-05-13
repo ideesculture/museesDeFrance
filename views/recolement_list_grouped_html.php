@@ -105,8 +105,7 @@ if (!isset($campagnes_par_rd) || !$campagnes_par_rd) {
         <?php $i++; ?>
         <h1 id="museesDeFrance_rc<?php _p($i); ?>_h1"
             style="display:block;width:730px;background-color:#e6e6e6;border-radius:6px;padding:8px;">
-            <img id="museesDeFrance_rc<?php _p($i); ?>_img"
-                 src="<?php print __CA_URL_ROOT__; ?>/themes/default/graphics/arrows/expand.jpg"> <?php print $rd_name; ?>
+            <span id="museesDeFrance_rc<?php _p($i); ?>_img"> <?php print $rd_name; ?></span>
         </h1>
         <script type="text/javascript">
             $("#museesDeFrance_rc<?php _p($i);?>_h1").click(function () {
@@ -189,7 +188,7 @@ if (!isset($campagnes_par_rd) || !$campagnes_par_rd) {
                             <td>
                                 <a href="<?php print __CA_URL_ROOT__; ?>/index.php/editor/occurrences/OccurrenceEditor/Summary/occurrence_id/<?php print $campagne["occurrence_id"]; ?>"
                                    title="Modifier la campagne">
-                                    <img src="<?php print __CA_URL_ROOT__; ?>/themes/default/graphics/buttons/edit.png">
+                                    <?php print caNavIcon(__CA_NAV_ICON_EDIT__); ?>
                                 </a>
                             </td>
                             <td>
