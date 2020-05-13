@@ -103,7 +103,7 @@ class JocondeController extends ActionController
 	public function Export() {
 		$museo = $this->opo_config->get('museo');
 		
-		$numexport = file_get_contents(__CA_APP_DIR__."/plugins/museesDeFrance/export-joconde/_referentiel/.numexport");
+		@$numexport = file_get_contents(__CA_APP_DIR__."/plugins/museesDeFrance/export-joconde/_referentiel/.numexport");
 		$numexport=$numexport*1+1;
 		file_put_contents(__CA_APP_DIR__."/plugins/museesDeFrance/export-joconde/_referentiel/.numexport", $numexport);
 		
