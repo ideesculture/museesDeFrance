@@ -5,8 +5,56 @@ require_once __CA_APP_DIR__ . "/plugins/museesDeFrance/lib/inventaire/RegistreBi
 require_once __CA_APP_DIR__ . "/plugins/museesDeFrance/lib/dompdf/dompdf_config.inc.php";
 require_once __CA_MODELS_DIR__ . "/ca_objects.php";
 
+
+/**
+ * Execute the given command by displaying console output live to the user.
+ *  @param  string  cmd          :  command to be executed
+ *  @return array   exit_status  :  exit status of the executed command
+ *                  output       :  console output of the executed command
+ */
+function liveExecuteWkhtmlToPdfCommand($cmd)
+{
+
+    while (@ ob_end_flush()); // end all output buffers if any
+
+    $proc = popen("$cmd 2>&1 ; echo Exit status : $?", 'r');
+
+    $live_output     = "";
+    $complete_output = "";
+
+    while (!feof($proc))
+    {
+        $live_output     = fread($proc, 500);
+        $complete_output = $complete_output . $live_output;
+        $live_output=str_replace(["[","]",">","="],"",$live_output);
+        $live_output=str_replace("      ","  ",$live_output);
+        $live_output=str_replace("     ","  ",$live_output);
+        $live_output=str_replace("    ","  ",$live_output);
+        $live_output=str_replace("   ","  ",$live_output);
+        $live_output=str_replace("  "," ",$live_output);
+        $live_output=str_replace("  "," ",$live_output);
+        //$live_output=str_replace(" ",".",$live_output);
+        if($live_output != " " && $live_output !="") {
+            echo "$live_output<br/>";
+        }
+        @ flush();
+    }
+
+    pclose($proc);
+
+    // get exit status
+    preg_match('/[0-9]+$/', $complete_output, $matches);
+
+    // return exit status and intended output
+    return array (
+        'exit_status'  => intval($matches[0]),
+        'output'       => str_replace("Exit status : " . $matches[0], '', $complete_output)
+    );
+}
+
 class InventaireBiensAffectesController extends ActionController {
     private $opo_config;
+    private $opo_external_app_config;
 
     # -------------------------------------------------------
     #
@@ -17,6 +65,7 @@ class InventaireBiensAffectesController extends ActionController {
         // Global vars for all children views
         $this->view->setVar('plugin_dir', __CA_BASE_DIR__ . "/app/plugins/museesDeFrance");
         $this->view->setVar('plugin_url', __CA_URL_ROOT__ . "/app/plugins/museesDeFrance");
+        $this->opo_external_app_config = Configuration::load(__CA_CONF_DIR__.'/external_applications.conf');
 
         $ps_plugin_path = __CA_BASE_DIR__ . "/app/plugins/museesDeFrance";
 
@@ -262,7 +311,7 @@ class InventaireBiensAffectesController extends ActionController {
 		$this->render("inventaire_biens_affectes_pdfgenere.php");
     }
     
-   public function GeneratePDFajax() {
+    public function GeneratePDFajax() {
    		$command = "cd ".__CA_APP_DIR__."/plugins/museesDeFrance/tmp/ && rm inventaire.pdf && rm inventaire.html";
 		exec($command, $output);
 		$command = "cd ".__CA_APP_DIR__."/plugins/museesDeFrance/tmp/ && /usr/local/bin/wkhtmltoimage --footer-right \"[page]/[topage]\" --footer-font-size 8 inventaire.html inventaire.pdf";
@@ -277,6 +326,24 @@ class InventaireBiensAffectesController extends ActionController {
     # -------------------------------------------------------
     public function Info($pa_parameters) {
         return $this->render('widget_inventaire_info_html.php', true);
+    }
+
+    public function RenderPdf() {
+        $wkhtmltopdf_app = $this->opo_external_app_config->get('wkhtmltopdf_app');
+        print "<style>html, body {font-family: monospace;}</style>";
+        $command = 'cd '.__CA_APP_DIR__.'/plugins/museesDeFrance/tmp/ && '.$wkhtmltopdf_app.' --footer-right "[page]/[topage]" --footer-font-size 8 inventaire.html inventaire.pdf';
+        //print $command;
+        $result = liveExecuteWkhtmlToPdfCommand($command);
+
+        if($result['exit_status'] === 0){
+            // do something if command execution succeeds
+            print "---------------------<br/>";
+            print "<a target='_blank' href='".__CA_URL_ROOT__."/app/plugins/museesDeFrance/tmp/inventaire.pdf'>Télécharger l'inventaire généré</a> <small>Attention, fichier souvent de plus 100 MO.</small>";
+
+        } else {
+            print "Error : ".$result['exit_status'];
+        }
+        die();
     }
 
 }
