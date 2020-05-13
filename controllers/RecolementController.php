@@ -1,10 +1,10 @@
 <?php
-
-require_once(__CA_LIB_DIR__ . '/core/Configuration.php');
+if(__CollectiveAccess_Schema_Rev__>=178) { $vb_prefix = true;} else { $vb_prefix = false;}
+require_once(__CA_LIB_DIR__ . ($vb_prefix ? "/core" : "").'/Configuration.php');
 require_once(__CA_MODELS_DIR__ . '/ca_objects.php');
 require_once(__CA_MODELS_DIR__ . '/ca_occurrences.php');
-require_once(__CA_LIB_DIR__ . '/ca/Search/OccurrenceSearch.php');
-require_once(__CA_LIB_DIR__ . '/ca/Search/SetSearch.php');
+require_once(__CA_LIB_DIR__ . ($vb_prefix ? "/ca" : "").'/Search/OccurrenceSearch.php');
+require_once(__CA_LIB_DIR__ . ($vb_prefix ? "/ca" : "").'/Search/SetSearch.php');
 require_once(__CA_MODELS_DIR__ . '/ca_sets.php');
 
 class RecolementController extends ActionController
@@ -88,6 +88,8 @@ class RecolementController extends ActionController
 		$o_search = new OccurrenceSearch();
 		//$qr_hits = $o_search->search("ca_occurrences.type_id:118");
         $qr_hits = $o_search->search($this->opo_config->get("type_occurrence_campagne"));
+        //var_dump($qr_hits->numHits());die();
+		$global=[];
 		while ($qr_hits->nextHit()) {
 			$global["nb_campagnes"]++;
 			$idno = $qr_hits->get('ca_occurrences.idno');
