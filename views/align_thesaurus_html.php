@@ -19,7 +19,7 @@ foreach($va_thesauri as $vs_thes_code => $va_thesaurus) :
 <a href='http://<?php print __CA_SITE_HOSTNAME__.__CA_URL_ROOT__;?>/index.php/museesDeFrance/InstallProfileThesaurus/ThesaurusAlign?thesaurus=<?php print $vs_thes_code ?>'
    class='form-button'>
     <span class='form-button'>
-        <img src='<?php print __CA_URL_ROOT__; ?>/themes/default/graphics/buttons/go.png' border='0' alt='Save' class='form-button-left' style='padding-right: 10px;'/> <?php print $va_thesaurus["label"]; ?> <small style="color:lightgray;"><?php print $vs_thes_code ?></small> 
+        <img src='<?php print __CA_URL_ROOT__; ?>/themes/default/graphics/arrows/breadcrumbloc.png' border='0' alt='Save' class='form-button-left' style='padding-right: 10px;'/> <?php print $va_thesaurus["label"]; ?> <small style="color:lightgray;"><?php print $vs_thes_code ?></small> 
     </span>
 </a>
 <br/>

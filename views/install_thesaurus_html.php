@@ -31,7 +31,7 @@ foreach($va_thesauri as $vs_code => $vs_desc) : ?>
 <a href='http://<?php print __CA_SITE_HOSTNAME__.__CA_URL_ROOT__;?>/index.php/museesDeFrance/InstallProfileThesaurus/ThesaurusImport?thesaurus=<?php print $vs_code ?>'
    class='form-button'>
     <span class='form-button'>
-        <img src='<?php print __CA_URL_ROOT__; ?>/themes/default/graphics/buttons/go.png' border='0' alt='Save' class='form-button-left' style='padding-right: 10px;'/> <?php print $vs_desc ?>
+        <img src='<?php print __CA_URL_ROOT__; ?>/themes/default/graphics/arrows/breadcrumbloc.png' border='0' alt='Save' class='form-button-left' style='padding-right: 10px;'/> <?php print $vs_desc ?>
     </span>
 </a>
 <br/>
