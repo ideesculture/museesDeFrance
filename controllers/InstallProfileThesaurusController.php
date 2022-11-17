@@ -12,7 +12,7 @@ $limitation_fichier = 0;
 // Désactivation de l'indexation pour la recherche
 //define("__CA_DONT_DO_SEARCH_INDEXING__", true);
 
-require_once(__CA_LIB_DIR__ . '/core/Configuration.php');
+require_once(__CA_LIB_DIR__ . '/Configuration.php');
 // Inclusions nécessaires des fichiers de providence
 //require_once(__CA_LIB_DIR__.'/core/Db.php');
 require_once(__CA_MODELS_DIR__."/ca_storage_locations.php");
@@ -24,7 +24,7 @@ require_once(__CA_MODELS_DIR__."/ca_lists.php");
 require_once(__CA_MODELS_DIR__."/ca_list_items.php");
 require_once(__CA_MODELS_DIR__."/ca_locales.php");
 require_once(__CA_MODELS_DIR__."/ca_collections.php");
-require_once(__CA_LIB_DIR__.'/core/Parsers/DelimitedDataParser.php');
+require_once(__CA_LIB_DIR__.'/Parsers/DelimitedDataParser.php');
 
 /*
  * Helpers
