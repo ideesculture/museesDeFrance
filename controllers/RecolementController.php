@@ -316,11 +316,13 @@ class RecolementController extends ActionController
 		$campagne_id = $campagne->get("occurrence_id");
 
 		$o_data = new Db();
-		$query_limite = "LIMIT $page, $limite_liste_recolements";
 		$query = "
-    		SELECT occurrence_left_id as id
-    		FROM ca_occurrences_x_occurrences
-    		WHERE occurrence_right_id=$campagne_id
+		SELECT coo.occurrence_left_id as id 
+		FROM ca_occurrences co 
+		LEFT JOIN ca_occurrences_x_occurrences coo on co.occurrence_id = coo.occurrence_left_id 
+		WHERE deleted =0 
+		AND relation_id is not null 
+		AND occurrence_right_id =$campagne_id
  		";
 		if (!$filter) {
 			$query.=$query_limite;
