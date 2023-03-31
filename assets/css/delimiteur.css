@@ -1,0 +1,21 @@
+.delimiteur-titre.bundleLabel {
+    text-transform: uppercase;
+    background-color: #666;
+    color: white;
+    padding: 5px !important;
+    margin: 0 !important;
+    margin-bottom: 10px !important;
+}
+
+.delimiteur-titre .bundleContainer,.delimiteur-soustitre .bundleContainer{
+    display: none;
+}
+
+.delimiteur-soustitre.bundleLabel {
+    background-color: rgb(177, 175, 175);
+    color: black;
+    margin: 0 !important;
+    margin-left: 5% !important;
+    margin-bottom: 10px !important;
+    padding: 5px !important;
+}

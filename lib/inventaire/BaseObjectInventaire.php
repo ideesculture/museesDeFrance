@@ -20,7 +20,8 @@ class BaseObjectInventaire implements InterfaceInventaire {
     public $designation_display;
     public $materiaux;
     public $techniques;
-    public $mesure;
+    public $inscription;
+    public $mesures;
     public $etat;
     public $epoque;
     public $utilisation;
@@ -213,6 +214,29 @@ class BaseObjectInventaire implements InterfaceInventaire {
             foreach($fields as $attribute) {
                 $response = "";
                 $field = $attribute["field"];
+                if (strpos($field, "^") !== false){
+                    $response = $t_object->getWithTemplate($field);
+                    $response = trim($response, ", ");
+                    if ($attribute["explodeNReplace"]){
+                        $response = explode(" ; ", $response);
+                        foreach ($response as $key=>$part){
+                            $response[$key] = str_replace(";", ", ", $part);
+                        }
+                        $response = implode(" ; ", $response);
+                    }
+                    $response_global .= (trim($response) ? $attribute["prefixe"].$response.$attribute["suffixe"] : "");
+                    // Converting quotes to french typographic quotes
+                    $response_global = str_replace("'","’",$response_global);
+                    // Escaping double quotes to allow safe MySQL insertion
+                    $response_global = str_replace("\"","\\\"",$response_global);
+                    
+                    
+
+                    // DEFINITION DE L'ATTRIBUT
+                    $this->set($target, !$response_global ? "non renseigné" : $response_global);
+
+                    continue;
+                }
                 $data = explode(".",$field);
 
                 switch($data[0]) {

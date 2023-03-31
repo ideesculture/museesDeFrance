@@ -103,7 +103,7 @@ class JocondeController extends ActionController
 	public function Export() {
 		$museo = $this->opo_config->get('museo');
 		
-		@$numexport = file_get_contents(__CA_APP_DIR__."/plugins/museesDeFrance/export-joconde/_referentiel/.numexport");
+		$numexport = file_get_contents(__CA_APP_DIR__."/plugins/museesDeFrance/export-joconde/_referentiel/.numexport");
 		$numexport=$numexport*1+1;
 		file_put_contents(__CA_APP_DIR__."/plugins/museesDeFrance/export-joconde/_referentiel/.numexport", $numexport);
 		
@@ -123,53 +123,200 @@ class JocondeController extends ActionController
 		
 		$vt_sl_search = new ObjectSearch();
 		$qr_results = $vt_sl_search->search('set:"joconde"');
-		
+
+		$vt_set = new ca_sets();
+		$vt_set->load(["deleted" => 0, "set_code" => "joconde"]);
+		$setitems = explode(";", $vt_set->getWithTemplate("<unit relativeTo='ca_set_items'>^ca_set_items.row_id</unit>"));
 		$exporter = new ca_data_exporters();	
 		
 		@mkdir(__CA_APP_DIR__."/plugins/museesDeFrance/export-joconde/".$refexport);
 		@mkdir(__CA_APP_DIR__."/plugins/museesDeFrance/export-joconde/".$refexport."/media");
 
+		$results =[];
+
 		// Exporting the medias
 		$object_nb = 0;
 		$images_nb = 0;
-		$images_non_exportees_nb = "";
-		while ($qr_results->nextHit()) {
+		$nb_sans_img = 0;
+		$nb_sans_credits = 0;
+		$images_non_exportees_nb = 0;
+		$results = [];
+		foreach ($setitems as $item) {
 			$object_nb++;
-			$vt_object = new ca_objects($qr_results->get("object_id"));
-			
+			$vt_object = new ca_objects($item);
 			$representation_id = $vt_object->getPrimaryRepresentationID();
-			
+			$medianame = "";
 			if($representation_id) {
 				//print $representation_id.",";
 				$images_nb++;
 				$vt_representation = new ca_object_representations($representation_id);
-				$vs_media_path = $vt_representation->getMediaPath("media","joconde1200px");
-				copy($vs_media_path, __CA_APP_DIR__."/plugins/museesDeFrance/export-joconde/".$refexport."/media/".$museo."00_".$representation_id."_1.jpg");
-				// Si image pas exportable :
+				$vs_media_name = $vt_representation->get("original_filename");
+				$vs_media_path = $vt_representation->getMediaPath("media","large");
+				$medianame = $museo."00_".$representation_id."_1.jpg";
+				$mediapath = __CA_APP_DIR__."/plugins/museesDeFrance/export-joconde/".$refexport."/media/".$medianame;
+				$mediaSize = getimagesize($vs_media_path);
+				if($mediaSize[0] >= $mediaSize[1]){
+					// Cas 1 : l'image est plus haute que large (portrait) ou bien carrée
+
+					if ($mediaSize[0] > 1200){
+						// Retaille l'image
+						$percent = $mediaSize[0] / 1200;
+						
+						if(copy($vs_media_path, $mediapath) == true){
+							$img = resize_image($mediapath, $mediaSize[1]*$percent, $mediaSize[0]*$percent);
+						}else{
+							$medianame = "";
+							$images_non_exportees_nb++; 
+						}
+					}elseif ($mediaSize[0] <= 1200 && $mediaSize[0] >= 480){
+						if (!copy($vs_media_path, $mediapath)){
+							$images_non_exportees_nb++; 
+						}
+					}else {
+						$medianame = "";
+						$imgTooSmall[] = [$vs_media_name,$vt_object->getWithTemplate("^ca_objects.idno"),$museo.$item,"taille inférieure à 640 x 480 pixels"];
+						$images_non_exportees_nb++; 
+					}
+				}else{
+					// Cas 2 : l'image est plus large que haute (paysage)
+					if ($mediaSize[1] > 1600 ){
+						$percent = $mediaSize[1] / 1600;
+						if(copy($vs_media_path, $mediapath) == true){
+							$img = resize_image($mediapath, $mediaSize[1]*$percent, $mediaSize[0]*$percent);
+							$test2 = getimagesize($mediapath);
+							if ($test2[0] > 1200){
+								$percent = $test2[0] / 1200;
+								$img = resize_image($mediapath, $mediaSize[1]*$percent, $mediaSize[0]*$percent);
+							}
+						}else{
+							$medianame = "";
+							$images_non_exportees_nb++; 
+						}					
+					} elseif( $mediaSize[1] <= 1600 && $mediaSize[1] >= 640){
+						if (!copy($vs_media_path, $mediapath)){
+							$images_non_exportees_nb++; 
+							$medianame = "";
+						}
+					}else{
+						$images_non_exportees_nb++; 
+						$medianame = "";
+						$imgTooSmall[] = [$vs_media_name,$vt_object->getWithTemplate("^ca_objects.idno"),$museo.$item,"taille inférieure à 640 x 480 pixels"];
+
+					}
+
+				}
+
 				// $images_non_exportees_nb++; 
 			} else {
 				// Pas d'image
+				$nb_sans_img++;
 				//print "Pas d'image\n";
 			}
+			$credits = $vt_object->get("credits_photo");
+			if (empty($credits) && $medianame != ""){
+				$nb_sans_credits++;
+				$sans_credit[] =[$medianame, $vt_object->getWithTemplate("^ca_objects.idno"),$museo.$item];
+			}
+			$image = "Non";
+			if ($medianame != ""){
+				$image = "Oui";
+			}
+			$results[] = [
+				$museo.$item,
+				$vt_object->getWithTemplate("^ca_objects.idno <ifdef code='ca_objects.otherNumber.objectNo'>; <unit relativeto='ca_objects.otherNumber'> ^ca_objects.otherNumber.objectNo (^ca_objects.otherNumber.objectNumberType)</unit></ifdef>"),
+				$vt_object->getWithTemplate("^ca_objects.domaine"),
+				$vt_object->getWithTemplate("<unit relativeTo='ca_objects.joconde_denomination_c'>^ca_objects.joconde_denomination_c.joconde_denomination (^ca_objects.joconde_denomination_c.precisions_deno)</unit>"),
+				$vt_object->getWithTemplate("^ca_objects.appellation"),
+				$vt_object->getWithTemplate("^ca_objects.preferred_labels"),
+				$vt_object->getWithTemplate("<unit relativeTo='ca_entities' restrictToRelationshipTypes='creation_auteur, creation_createur'>^ca_entities.preferred_labels.displayname (^relationship_typename)</unit>"),
+				$vt_object->getWithTemplate("<unit relativeTo='ca_entities' restrictToRelationshipTypes='creation_auteur, creation_createur' delimiter='#'>^ca_entities.preferred_labels.surname : ^ca_entities.vitalDates.lieu_naissance, ^ca_entities.vitalDates.birth <ifdef code='ca_entities.vitalDates.death'>; ^ca_entities.vitalDates.lieu_deces, ^ca_entities.vitalDates.death</ifdef></unit>"),
+				$vt_object->getWithTemplate("^ca_objects.ecole"),
+				$vt_object->getWithTemplate("^ca_objects.anciennes_attributions"),
+				$vt_object->getWithTemplate(""), // TODO: Lieux quand bonne hiérarchie
+				$vt_object->getWithTemplate(""), // TODO: Préicison Lieux quand bonne hiérarchie
+				$vt_object->getWithTemplate("^ca_objects.objectProductionDate"),
+				$vt_object->getWithTemplate("^ca_objects.dateMillesime"),
+				$vt_object->getWithTemplate("^ca_objects.per_orig_copir_joconde"),
+				$vt_object->getWithTemplate("^ca_objects.epoque"),
+				$vt_object->getWithTemplate("^ca_objects.util_dest"),
+				$vt_object->getWithTemplate("^ca_objects.precisions_utili_dest"),
+				$vt_object->getWithTemplate("^ca_objects.datePeriod_dest.datePeriod_datation_dest"),
+				$vt_object->getWithTemplate("^ca_objects.dateutil"),
+				$vt_object->getWithTemplate("<unit relativeTo='ca_objects.materiaux_tech_c'>^ca_objects.materiaux_tech_c.materiaux (^ca_objects.materiaux_tech_c.techniques)</unit>"),
+				$vt_object->getWithTemplate("<unit relativeTo='ca_objects.dimensions'><ifdef code='ca_objects.dimensions.circumference'>Dia. ^ca_objects.dimensions.circumference ;</ifdef><ifdef code='ca_objects.dimensions.dimensions_depth'>Pr. ^ca_objects.dimensions.dimensions_depth ; </ifdef><ifdef code='ca_objects.dimensions.dimensions_height'>H. ^ca_objects.dimensions.dimensions_height <ifdef code='ca_objects.dimensions.type_dimensions'>(^ca_objects.dimensions.type_dimensions)</ifdef>;</ifdef><ifdef code='ca_objects.dimensions.dimensions_poids'>P. ^ca_objects.dimensions.dimensions_poids ;</ifdef><ifdef code='ca_objects.dimensions.dimensions_width'>l. ^ca_objects.dimensions.dimensions_width ;</ifdef><ifdef code='ca_objects.dimensions.dimensions_length'>L. ^ca_objects.dimensions.dimensions_length ; </ifdef><ifdef code='ca_objects.dimensions.epaisseur'>Ep. ^ca_objects.dimensions.epaisseur</ifdef></unit>"),
+				$vt_object->getWithTemplate("<unit relativeTo='ca_objects.joconde_etat_c'>^ca_objects.joconde_etat_c.joconde_etat (^ca_objects.joconde_etat_c.joconde_etat_date) </unit>"),
+				$vt_object->getWithTemplate("^ca_objects.description"),
+				$vt_object->getWithTemplate("^ca_objects.genese"),
+				$vt_object->getWithTemplate("^ca_objects.historique"),
+				$vt_object->getWithTemplate("^ca_objects.geoHistorique"),
+				$vt_object->getWithTemplate("TODO LIEU (lieu de découverte) ; ^ca_objects.site_type ; ^ca_objects.useMethod ; ^ca_objects.useDate.useDate_date (^ca_objects.useDate.useDate_type) ; <unit relativeTo='ca_entities' restrictToRelationshipTypes='decouvreur'>^ca_entities.preferred_labels.displayname (^relationship_typename)</unit>"), // TODO : LIEU DE DECOUVERTE EN ATTENTE REFONTE LIEU
+				$vt_object->getWithTemplate("^ca_objects.precision_decouverte"), 
+				$vt_object->getWithTemplate("^ca_objects.element_decoratif.element_decoratif_decor"),
+				$vt_object->getWithTemplate("^ca_objects.element_decoratif.element_decoratif_precisions"),
+				$vt_object->getWithTemplate("^ca_objects.element_decoratif.element_decoratif_date"),
+				$vt_object->getWithTemplate("^ca_objects.source_repr"), 
+				$vt_object->getWithTemplate("^ca_objects.onomastique"),
+				$vt_object->getWithTemplate("<unit relativeTo='ca_storage_locations' restrictToRelationshipTypes='stockage'>^ca_storage_locations.preferred_labels</unit>"),
+				$vt_object->getWithTemplate("^ca_objects.type_propriete ; ^ca_objects.AcquisitionMode.AcquisitionMode_l ; <unit relativeTo='ca_entities' restrictToRelationshipTypes='proprietaire'>^ca_entities.preferred_labels.displayname</unit> ; <unit relativeTo='ca_entities' restrictToRelationshipTypes='etablissement'>^ca_entities.preferred_labels.displayname</unit> "),
+				$vt_object->getWithTemplate("<ifdef code='ca_objects.date_inventaire'> ^ca_objects.date_inventaire (Date d'inscription au registre d'inventaire) ;</ifdef> <ifdef code='ca_objects.date_ref_acteAcquisition'>^ca_objects.date_ref_acteAcquisition.date_acteAcquisition -  ca_objects.date_ref_acteAcquisition.ref_acteAcquisition (Date et références de l'acte d'acquisition) </ifdef>"), 
+				$vt_object->getWithTemplate("<unit relativeTo='ca_entities' restrictToRelationshipTypes='depositaire'>^ca_entities.address.city ; ^ca_entities.preferred_labels.displayname</unit>"),
+				$vt_object->getWithTemplate("^ca_objects.date_ref_acteDepot.date_acteDepot"),
+				$vt_object->getWithTemplate("^ca_objects.anciensDepots"),
+				$vt_object->getWithTemplate("^ca_objects.anciennes_appartenances"),
+				$vt_object->getWithTemplate("^ca_objects.exposition"),
+				$vt_object->getWithTemplate("^ca_objects.bibliography"),
+				$vt_object->getWithTemplate("^ca_objects.comments"),
+				$credits,
+				$image,
+				$museo, 
+				$vt_object->getWithTemplate("<unit relativeTo='ca_entities' restrictToRelationshipTypes='notice_redacteur'>^ca_entities.preferred_labels.displayname</unit>"),
+				$medianame
+			];
+
 		}
+		$headers = ["REF", "INV", "DOMN", "DENO","APPL", "TITR", "AUTR", "PAUT", "ECOL", "ATTR", "LIEUX","PLIEUX", "PERI", "MILL", "PEOC", "EPOQ", "UTIL", "PUTI", "PERU", "MILU", "TECH", "DIMS", "ETAT", "DESC", "GENE", "HIST", "GEOHI", "DECV", "PDEC", "REPR","PREP" , "DREP", "SREP", "ONOM", "LOCA", "STAT", "DACQ","DEPO", "DDPT", "ADPT", "APTN", "EXPO","BIBL", "COMM", "COPY", "PHOT", "IMAGE", "MUSEO", "REDA", "REFIM"  ];
+
+		$textFile = fopen(__CA_APP_DIR__."/plugins/museesDeFrance/export-joconde/".$refexport."/media/".$refexport.".txt", "w");
+		$text = join("|", $headers)."\n";
+		foreach ($results as $result){
+			$text .= join ('|', $result)."\n";
+		}
+		$textFile = fwrite($textFile, $text);
+
+		fclose($textFile);
+		//var_dump($results);die();
 		//die();
 		$qr_results = $vt_sl_search->search('set:"joconde"');
 
-		$result = $exporter->exportRecordsFromSearchResult("export_joconde", $qr_results, __CA_APP_DIR__."/plugins/museesDeFrance/export-joconde/".$refexport."/".$refexport.".txt");
+		$result = $exporter->exportRecordsFromSearchResult("export_joconde", $setitems, __CA_APP_DIR__."/plugins/museesDeFrance/export-joconde/".$refexport."/".$refexport.".txt");
 		//die();
 		
 		$zipFile = __CA_APP_DIR__."/plugins/museesDeFrance/export-joconde/".$refexport.".zip";
 		$dirToZip = __CA_APP_DIR__."/plugins/museesDeFrance/export-joconde/".$refexport;
-		
+		$date = date("j/m/Y");
 		// RAPPORT	
 		$rapport = $this->opo_config->get('NomMusee').", ".$this->opo_config->get('Commune').", ".$this->opo_config->get('museo')."\n";
-		$rapport .= $date."\n";
+		$rapport .= "Date de l'export : ".$date."\n";
 		$rapport .= $refexport."\n";
 		$rapport .= $object_nb." notices exportées/".$object_nb." notices sélectionnées\n";
 		$rapport .= "\n";
 		$rapport .= ((int) $images_non_exportees_nb)." image(s) non exportée(s)\n";
-		//$rapport .= "[EN COURS] ici nom de fichier des images non exportées, numéro d'inventaire de l'objet concerné, référence de la notice associée\n";
-		$rapport .= "0 image(s) dont le champ PHOT n'est pas renseigné.\n";
+		$rapport .= "NOMIMAGE|NUMINV|REF|RAISON \n";
+		foreach ($imgTooSmall as $img){
+			$rapport .= join("|", $img)."\n";
+		}
+		$rapport .= "\n";
+		$rapport .= $nb_sans_credits." images sans crédits\n";
+		$rapport .= "NOMIMAGE|NUMINV|REF\n";
+		foreach ($sans_credit as $img){
+			$rapport .= join("|", $img)."\n";
+		}
+		$rapport .= "\n";
+		//$rapport .= ((int) $nb_sans_img)." notices sans image(s)\n";
+		//$rapport .= "NUMINV|REF\n";
+
+
+		//$rapport .= "0 image(s) dont le champ PHOT n'est pas renseigné.\n";
 		
 		file_put_contents(__CA_APP_DIR__."/plugins/museesDeFrance/export-joconde/".$refexport."/rapport.txt", $rapport);
 

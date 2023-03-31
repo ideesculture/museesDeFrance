@@ -198,6 +198,10 @@ class museesDeFrancePlugin extends BaseApplicationPlugin
 				'navigation' => $va_menu_items
 			);
 		}
+	
+		print "<script type='text/javascript'>".file_get_contents(__CA_APP_DIR__."/plugins/museesDeFrance/assets/js/delimiteur.js")."</script>";
+		print "<link rel='stylesheet' href='".__CA_URL_ROOT__."/app/plugins/museesDeFrance/assets/css/delimiteur.css' type='text/css' media='all'> yea";
+
 
 		return $pa_menu_bar;
 	}

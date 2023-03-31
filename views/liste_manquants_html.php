@@ -7,7 +7,7 @@ $InfosPv = $this->getVar('InfosPv');
 
 <h2>
 	<a href="<?php print __CA_URL_ROOT__; ?>/index.php/editor/occurrences/OccurrenceEditor/Summary/occurrence_id/<?php print $InfosPv["info"]["occurrence_id"]; ?>">
-		<img src="<?php print __CA_URL_ROOT__; ?>/themes/default/graphics/buttons/edit.png"></a>
+		<img src="<?php print __CA_URL_ROOT__; ?>/app/plugins/museesDeFrance/assets/icons/edit.png"></a>
 	<?php print $InfosPv["info"]["campagne_nom"] ?>
 </h2>
 <table class="listtable">

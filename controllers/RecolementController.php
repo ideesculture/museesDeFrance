@@ -324,13 +324,13 @@ class RecolementController extends ActionController
 		AND relation_id is not null 
 		AND occurrence_right_id =$campagne_id
  		";
-		if (!$filter) {
+		/*if (!$filter) {
 			$query.=$query_limite;
-		}
+		}*/
 		$qr_result = $o_data->query($query);
 		$total = $o_data->query($query)->numRows();
 
-		$pv_info["liste_objets_html"] .= $pagination;
+		//$pv_info["liste_objets_html"] .= $pagination;
 
 		if (!$filter) $pv_info["liste_objets_html"] .= "<table class=\"listtable\">" .
 			"<tr><th></th><th>Identifiant</th><th>Titre</th><th>Récolé <a href='".__CA_URL_ROOT__."/index.php/museesDeFrance/Recolement/Pv/?idno=${idno_campagne}&f=r'>oui</a> /
@@ -367,7 +367,7 @@ class RecolementController extends ActionController
 		}
 		$pv_info["liste_objets_html"] .= "</table>";
 
-		$pv_info["liste_objets_html"] .= $pagination;
+		//$pv_info["liste_objets_html"] .= $pagination;
 
 		$va_recolements_idnos = $campagne->get("ca_occurrences.related.idno", array("returnAsArray" => 1));
 		$pv_info["info"]["recolements_total"] = count($va_recolements_idnos);
@@ -390,7 +390,7 @@ class RecolementController extends ActionController
 	{
 		//$this->view->setVar('campagnes', $this->opa_infos_campagnes);
 		$this->view->setVar('campagnes_par_rd', $this->opa_infos_campagnes_par_recolement_decennal);
-		$this->render('recolement_list_grouped_html.php');
+		$this->render('recolement/recolement_list_grouped_html.php');
 	}
 
 	# -------------------------------------------------------
@@ -400,7 +400,7 @@ class RecolementController extends ActionController
 
 		$this->view->setVar('campagnes', $this->opa_infos_campagnes_par_recolement_decennal[$ps_rd]["recolements"]);
 		$this->view->setVar('rd', $ps_rd);
-		$this->render('recolement_tableau_suivi_html.php');
+		$this->render('recolement/recolement_tableau_suivi_html.php');
 	}
 	# -------------------------------------------------------
 	public function Pv()
@@ -413,7 +413,7 @@ class RecolementController extends ActionController
 		$InfosPv = $this->CalculerPv($_GET["idno"],array(), $page, $_GET["f"]);
 		if ($InfosPv === false) die("Impossible de récupérer les informations de la campagne de récolement " . $_GET["idno"]);
 		$this->view->setVar('InfosPv', $InfosPv);
-		$this->render('recolement_pv_html.php');
+		$this->render('recolement/recolement_pv_html.php');
 	}
 	# -------------------------------------------------------
 	private function _createRecolement($vn_object_id = null, $vn_campagne_id = null, $vn_former_recolement_id = null)
@@ -562,7 +562,7 @@ class RecolementController extends ActionController
 			}
 			$this->view->setVar('SetList', $va_setList);
 			$this->view->setVar('CampagneIdno', $vs_campagne_idno);
-			$this->render('preparer_campagne_select_set_html.php');
+			$this->render('recolement/preparer_campagne_select_set_html.php');
 		} else {
 			// do a search and create Recolement for all found objects
 			$set = new ca_sets($vs_set_id);
@@ -615,7 +615,7 @@ class RecolementController extends ActionController
 
 			$this->view->setVar('RecolementsCrees', count($va_object_ids));
 			$this->view->setVar('Campagne', $va_campagne);
-			$this->render('preparer_campagne_results_html.php');
+			$this->render('recolement/preparer_campagne_results_html.php');
 		}
 	}
 
@@ -625,7 +625,7 @@ class RecolementController extends ActionController
 		$InfosPv = $this->CalculerPv($_GET["idno"], array("liste_annexes" => true));
 		if ($InfosPv === false) die("Impossible de récupérer les informations de la campagne de récolement " . $_GET["idno"]);
 		$this->view->setVar('InfosPv', $InfosPv);
-		$this->render('recolement_pv_word_html.php');
+		$this->render('recolement/recolement_pv_word_html.php');
 	}
 
 	# -------------------------------------------------------
@@ -634,7 +634,7 @@ class RecolementController extends ActionController
 	public function Info($pa_parameters)
 	{
 		$this->view->setVar('campagnes_rd', $this->opa_infos_campagnes_par_recolement_decennal);
-		return $this->render('widget_recolement_info_html.php', true);
+		return $this->render('recolement/widget_recolement_info_html.php', true);
 	}
 }
 

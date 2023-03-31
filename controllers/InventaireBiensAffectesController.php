@@ -106,7 +106,7 @@ class InventaireBiensAffectesController extends ActionController {
             $this->view->setVar("validator", false);
         }
 
-        $this->render('inventaire_biens_affectes_index_html.php');
+        $this->render('inventaireBiensAffectes/inventaire_biens_affectes_index_html.php');
     }
 
     public function Photos() {
@@ -114,7 +114,7 @@ class InventaireBiensAffectesController extends ActionController {
         $this->view->setVar("registre", $vt_registre);
 
         $this->view->setVar('objects_nb', $vt_registre->count());
-        $this->render('inventaire_biens_affectes_photos_html.php');
+        $this->render('inventaireBiensAffectes/inventaire_biens_affectes_photos_html.php');
     }
 
     public function Transfer() {
@@ -136,7 +136,7 @@ class InventaireBiensAffectesController extends ActionController {
         $this->view->setVar('name', $vs_name);
         $this->view->setVar('id', $vs_object_id);
         $this->view->setVar('object', $vo_bienaffecte);
-        $this->render('inventaire_biens_affectes_transfer_html.php');
+        $this->render('inventaireBiensAffectes/inventaire_biens_affectes_transfer_html.php');
     }
 
     public function TransferSetAjax() {
@@ -200,7 +200,7 @@ class InventaireBiensAffectesController extends ActionController {
 
         $this->view->setVar('id', $vs_set_id);
 
-        $this->render('inventaire_biens_affectes_transfer_set_html.php');
+        $this->render('inventaireBiensAffectes/inventaire_biens_affectes_transfer_set_html.php');
     }
 
     public function Validate() {
@@ -224,7 +224,7 @@ class InventaireBiensAffectesController extends ActionController {
         $this->view->setVar('name', $vs_name);
         $this->view->setVar('id', $vs_object_id);
 
-        $this->render('inventaire_biens_affectes_validate_html.php');
+        $this->render('inventaireBiensAffectes/inventaire_biens_affectes_validate_html.php');
     }
 
     public function ValidateAll() {
@@ -251,7 +251,7 @@ class InventaireBiensAffectesController extends ActionController {
         $this->view->setVar('name', $vs_name);
         $this->view->setVar('id', $vs_object_id);
 
-        $this->render('inventaire_biens_affectes_unvalidate_html.php');
+        $this->render('inventaireBiensAffectes/inventaire_biens_affectes_unvalidate_html.php');
     }
 
     public function Remove() {
@@ -275,7 +275,7 @@ class InventaireBiensAffectesController extends ActionController {
         $this->view->setVar('name', $vs_name);
         $this->view->setVar('id', $vs_object_id);
 
-        $this->render('inventaire_biens_affectes_remove_html.php');
+        $this->render('inventaireBiensAffectes/inventaire_biens_affectes_remove_html.php');
     }
 
     public function Modify() {
@@ -286,7 +286,7 @@ class InventaireBiensAffectesController extends ActionController {
     }
 
     public function About() {
-        $this->render('inventaire_about_html.php');
+        $this->render('inventaireBiensAffectes/inventaire_about_html.php');
     }
 
     public function GeneratePDF() {
@@ -325,7 +325,7 @@ class InventaireBiensAffectesController extends ActionController {
     # Sidebar info handler
     # -------------------------------------------------------
     public function Info($pa_parameters) {
-        return $this->render('widget_inventaire_info_html.php', true);
+        return $this->render('inventaireBiensAffectes/widget_inventaire_info_html.php', true);
     }
 
     public function RenderPdf() {

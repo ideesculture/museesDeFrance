@@ -97,7 +97,7 @@ function getMappingBiensAffectes() {
             array(
                 "field" => 'ca_objects.prix',
                 "prefixe" => "prix : <b>",
-                "suffixe" => " EUR</b><br/>"
+                "suffixe" => " </b><br/>"
             ), //OK
             array(
                 "field" => 'ca_objects.mentionConcours',
@@ -161,40 +161,21 @@ function getMappingBiensAffectes() {
         ),
         'inscription'=>array(
             array(
-                "field" => 'ca_objects.inscription_c.inscription_type',
-                "prefixe" => "type d'inscriptions ou de marque : <b>",
+                "field" => '<unit relativeTo="ca_objects.inscription_c">^ca_objects.inscription_c.inscription_type <ifdef code="ca_objects.inscription_c.inscription_alphabet|ca_objects.inscription_c.inscription_langue">(</ifdef>^ca_objects.inscription_c.inscription_alphabet <ifdef code="ca_objects.inscription_c.inscription_alphabet,ca_objects.inscription_c.inscription_langue">, </ifdef>^ca_objects.inscription_c.inscription_langue <ifdef code="ca_objects.inscription_c.inscription_alphabet|ca_objects.inscription_c.inscription_langue">)</ifdef></unit>',
+                "prefixe" => "Inscriptions : <b>",
                 "suffixe" => "</b><br/>"
             ),
             array(
-                "field" => 'ca_objects.inscription_c.inscription_txt',
-                "prefixe" => "transcription de l'inscription : <b>",
+                "field" => '<unit relativeTo="ca_objects.inscription_c">^ca_objects.inscription_c.inscription_txt<ifdef code="ca_objects.inscription_c.inscription_emplacement"> (^ca_objects.inscription_c.inscription_emplacement)</ifdef></unit> <ifdef="ca_objects.pins">; ^ca_objects.pins</ifdef>',
+                "prefixe" => "Précisions sur les inscriptions : <b>",
                 "suffixe" => "</b><br/>"
             ),
-            array(
-                "field" => 'ca_objects.inscription_c.inscription_langue',
-                "prefixe" => "Langue : <b>",
-                "suffixe" => "</b><br/>"
-            ),
-            array(
-                "field" => 'ca_objects.inscription_c.inscription_alphabet',
-                "prefixe" => "alphabet : <b>",
-                "suffixe" => "</b><br/>"
-            ),
-            array(
-                "field" => 'ca_objects.inscription_c.inscription_emplacement',
-                "prefixe" => "emplacement de l'inscription : <b>",
-                "suffixe" => "</b><br/>"
-            ),
-            array(
-                "field" => 'ca_objects.inscription_info_c',
-                "prefixe" => "précisions : <b>",
-                "suffixe" => "</b><br/>"
-            )
+            
         ),
         'materiaux'=>array(
             // COLONNE 10
             array(
-                "field" => 'ca_objects.materiaux_tech_c',
+                "field" => '<unit relativeTo="ca_objects.materiaux_tech_c" delimiter=";">^ca_objects.materiaux_tech_c.materiaux <ifdef code="ca_objects.materiaux_tech_c.techniques|ca_objects.materiaux_tech_c.materiaux_affixe1|ca_objects.materiaux_tech_c.materiaux_affixe2">(</ifdef>^ca_objects.materiaux_tech_c.techniques<ifdef code="ca_objects.materiaux_tech_c.techniques,ca_objects.materiaux_tech_c.materiaux_affixe1">,</ifdef> ^ca_objects.materiaux_tech_c.materiaux_affixe1<ifdef code="ca_objects.materiaux_tech_c.materiaux_affixe1,ca_objects.materiaux_tech_c.materiaux_affixe2">,</ifdef>^ca_objects.materiaux_tech_c.materiaux_affixe2<ifdef code="ca_objects.materiaux_tech_c.techniques|ca_objects.materiaux_tech_c.materiaux_affixe1|ca_objects.materiaux_tech_c.materiaux_affixe2">)</ifdef></unit></unit>',
                 "prefixe" => "matériaux/techniques : <b>",
                 "suffixe" => "</b><br/>"
             )
@@ -202,15 +183,15 @@ function getMappingBiensAffectes() {
         'mesures'=>array(
             // COLONNE 12
             array(
-                "field" => 'ca_objects.dimensions',
-                "prefixe" => "dimensions : <b>",
-                "suffixe" => "</b><br/>"
+                "field" => '<unit relativeTo="ca_objects.dimensions" delimiter=";"><ifdef code="ca_objects.dimensions.circumference">D. ^ca_objects.dimensions.circumference, </ifdef><ifdef code="ca_objects.dimensions.dimensions_depth">P. ^ca_objects.dimensions.dimensions_depth, </ifdef><ifdef code="ca_objects.dimensions.dimensions_height">H. ^ca_objects.dimensions.dimensions_height, </ifdef><ifdef code="ca_objects.dimensions.dimensions_poids">Pds. ^ca_objects.dimensions.dimensions_poids, </ifdef><ifdef code="ca_objects.dimensions.dimensions_width">l. ^ca_objects.dimensions.dimensions_width</ifdef><ifdef code="ca_objects.dimensions.type_dimensions"> (^ca_objects.dimensions.type_dimensions)</ifdef></unit>',
+                "prefixe" => "dimensions : ",
+                "suffixe" => "<br/>"
             )
         ),
         'etat'=>array(
             // COLONNE 13
             array(
-                "field" => 'ca_objects.constatEtat.constat_etat',
+                "field" => 'ca_objects.etat_acqui_depot',
                 "prefixe" => "etat au moment de l'acquisition : <b>",
                 "suffixe" => "</b><br/>"
             ),
@@ -242,8 +223,8 @@ function getMappingBiensAffectes() {
                 "suffixe" => "</b><br/>"
             ),
             array(
-                "field" => 'ca_objects.ecole',
-                "prefixe" => "ecole : <b>",
+                "field" => '<unit relativeTo="ca_objects.ecole">^ca_objects.ecole.ecole_ecole<ifdef code="ca_objects.ecole.ecole_affixe1|ca_objects.ecole.ecole_affixe2"> (</ifdef> ^ca_objects.ecole.ecole_affixe1<ifdef code="ca_objects.ecole.ecole_affixe1,ca_objects.ecole.ecole_affixe2">,</ifdef> ^ca_objects.ecole.ecole_affixe2<ifdef code="ca_objects.ecole.ecole_affixe1|ca_objects.ecole.ecole_affixe2">)</ifdef></unit>',
+                "prefixe" => "école : <b>",
                 "suffixe" => "</b><br/>"
             )
         ),
@@ -256,37 +237,48 @@ function getMappingBiensAffectes() {
         'epoque'=>array(
             // COLONNE 15
             array(
-                "field" => 'ca_objects.datePeriod.datePeriod_datation',
-                "prefixe" => "période : <b>",
+                "field" => 'ca_objects.periode_crea_exec',
+                "prefixe" => "Période de création / exécution  : <b>",
                 "suffixe" => "</b><br/>"
             ),
             array(
-                "field" => 'ca_objects.epoque',
-                "prefixe" => "époque / style / mouvement : <b>",
+                "field" => 'ca_objects.peru',
+                "prefixe" => "Période d'utilisation / destination  : <b>",
                 "suffixe" => "</b><br/>"
             ),
             array(
                 "field" => 'ca_objects.dateMillesime',
-                "post-treatment" => 'caDateToUnixTimestamp',
-                "prefixe" => "millésime : <b>",
+                "prefixe" => "Millésime de création / exécution :  <b>",
+                "suffixe" => "</b><br/>"
+            ),
+            array(
+                "field" => 'ca_objects.milu',
+                "prefixe" => "Millésime d'utilisation / destination : <b>",
+                "suffixe" => "</b><br/>"
+            ),
+            array(
+                "field" => '<unit relativeTo="ca_objects.epoque"><ifdef code="ca_objects.epoque.epoque_epoque">Epoque : ^ca_objects.epoque.epoque_epoque, </ifdef>
+                <ifdef code="ca_objects.epoque.epoque_style">Style : ^ca_objects.epoque.epoque_style,</ifdef>
+                <ifdef code="ca_objects.epoque.epoque_style">Mouvement : ^ca_objects.epoque.epoque_mouvement</ifdef></unit>',
+                "prefixe" => "Epoque / style / mouvement  : <b>",
                 "suffixe" => "</b><br/>"
             ),
             array(
                 "field" => 'ca_objects.useDate',
                 "post-treatment" => 'caDateToUnixTimestamp',
-                "prefixe" => "Date d'utilisation ou de découverte : <b>",
+                "prefixe" => "Date de collecte ou de découverte : <b>",
                 "suffixe" => "</b><br/>"
             )
         ),
         'utilisation'=>array(
             // COLONNE 16
             array(
-                "field" => 'ca_objects.fonctions',
+                "field" => '<unit relativeTo="ca_objects.util">^ca_objects.util.util_util <ifdef code="ca_objects.util.util_affixe2 ">(^ca_objects.util.util_affixe2)</ifdef></unit>',
                 "prefixe" => "fonction d'usage : <b>",
                 "suffixe" => "</b><br/>"
             ),
             array(
-                "field" => 'ca_objects.precisionFonction',
+                "field" => 'ca_objects.puti',
                 "prefixe" => "précisions : <b>",
                 "suffixe" => "</b><br/>"
             )
@@ -296,7 +288,12 @@ function getMappingBiensAffectes() {
             array(
                 "field" => 'ca_places.preferred_labels',
                 "relationshipTypes" => "created",
-                "prefixe" => "lieux de création ou d'éxécution : <b>",
+                "prefixe" => "Lieux de création ou d'éxécution : <b>",
+                "suffixe" => "</b><br/>"
+            ),
+            array(
+                "field" => 'ca_objects.preci_lieu_crea_exec',
+                "prefixe" => "Précisions sur le lieux de création ou d'éxécution : <b>",
                 "suffixe" => "</b><br/>"
             ),
             array(
@@ -311,8 +308,13 @@ function getMappingBiensAffectes() {
                 "suffixe" => "</b><br/>"
             ),
             array(
+                "field" => 'ca_objects.preci_lieu_util_dest',
+                "prefixe" => "Précisions sur le lieux d'utilisation ou de destination : <b>",
+                "suffixe" => "</b><br/>"
+            ),
+            array(
                 "field" => 'ca_places.preferred_labels',
-                "relationshipTypes" => "decouverte",
+                "relationshipTypes" => "decouverte,collecte,recolte",
                 "prefixe" => "lieu de découverte, collecte, récolte : <b>",
                 "suffixe" => "</b><br/>"
             )
