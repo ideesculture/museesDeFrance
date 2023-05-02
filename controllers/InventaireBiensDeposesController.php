@@ -19,7 +19,7 @@ class InventaireBiensDeposesController extends ActionController
 
     public function Index()
     {
-        $this->render('inventaire_biens_deposes_index_html.php');
+        $this->render('inv_bd/inventaire_biens_deposes_index_html.php');
     }
     public function Transfert()
     {
@@ -34,7 +34,7 @@ class InventaireBiensDeposesController extends ActionController
         $vo_biendepose->save();
         $this->view->setVar('idno', $vs_idno);
         $this->view->setVar('name', $vs_name);
-        $this->render('inventaire_biens_deposes_transfert_html.php');
+        $this->render('inv_bd/inventaire_biens_deposes_transfert_html.php');
     }
 
     public function Modification()
@@ -56,5 +56,30 @@ class InventaireBiensDeposesController extends ActionController
         $vo_biendepose->validate();
         $vo_biendepose->set("avis","mauvais");
         $vo_biendepose->save();
+    }
+
+    # -------------------------------------------------------
+    # Sidebar info handler
+    # -------------------------------------------------------
+    public function Info($pa_parameters) {
+        return $this->render('inventaireBiensAffectes/widget_inventaire_info_html.php', true);
+    }
+
+    public function RenderPdf() {
+        $wkhtmltopdf_app = $this->opo_external_app_config->get('wkhtmltopdf_app');
+        print "<style>html, body {font-family: monospace;}</style>";
+        $command = 'cd '.__CA_APP_DIR__.'/plugins/museesDeFrance/tmp/ && '.$wkhtmltopdf_app.' --footer-right "[page]/[topage]" --footer-font-size 8 inventaire.html inventaire.pdf';
+        //print $command;
+        $result = liveExecuteWkhtmlToPdfCommand($command);
+
+        if($result['exit_status'] === 0){
+            // do something if command execution succeeds
+            print "---------------------<br/>";
+            print "<a target='_blank' href='".__CA_URL_ROOT__."/app/plugins/museesDeFrance/tmp/inventaire.pdf'>Télécharger l'inventaire généré</a> <small>Attention, fichier souvent de plus 100 MO.</small>";
+
+        } else {
+            print "Error : ".$result['exit_status'];
+        }
+        die();
     }
 }
