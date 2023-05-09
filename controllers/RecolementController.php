@@ -96,6 +96,7 @@ class RecolementController extends ActionController
 			//print $idno."\n";
 			$campagne = new ca_occurrences();
 			$campagne->load(array('idno' => $idno));
+			if ($campagne->get("type_id") !== $this->opo_config->get("type_occurrence_campagne")) continue;
 			$recolement_decennal = $campagne->get("recolement_decennal", array("convertCodesToDisplayText" => true));
 
 			// freaky thing just to be sure we always have the recolement_decennal value, even inside infos of a recolement via $idno
