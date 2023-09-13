@@ -55,6 +55,10 @@ class museesDeFrancePlugin extends BaseApplicationPlugin
 			$vs_buf = "";
 		}
 
+		if($va_params["caEditorInspectorAppend"]) {
+			$vs_buf = $va_params["caEditorInspectorAppend"];
+		}
+		
 		$vs_table_name = $t_item->tableName();
 		$vn_item_id = $t_item->getPrimaryKey();
 		$vn_code = $t_item->getTypeCode();
