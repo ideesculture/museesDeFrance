@@ -180,6 +180,92 @@ function getStorageLocationID($ps_location, $vn_loc_type_id, $ps_location_altern
 	
 	return $vn_location_id;
 }
+
+
+function getStorageLocationID2($ps_location_idno, $ps_location_name, $vn_loc_type_id, $ps_location_alternate="", $options = null) {
+	global $pn_locale_id;
+	global $VERBOSE;
+	
+	$t_loc = new ca_storage_locations();
+	$t_label = $t_loc->getLabelTableInstance();
+	
+	$loading_info = ['idno' => $ps_location_idno];
+	$loading_info['deleted'] = false;
+	
+	if (!$t_loc->load($loading_info)) {
+		if ($VERBOSE && $ps_location_alternate) {
+			print "CREATING LOCATION $ps_location_name|$ps_location_alternate\n";
+		} elseif ($VERBOSE) {
+			print "CREATING LOCATION $ps_location_name\n";
+		}
+
+		// insert location
+		$t_loc->setMode(ACCESS_WRITE);
+		$t_loc->set('locale_id', $pn_locale_id);
+		$t_loc->set('type_id', $vn_loc_type_id);
+		$t_loc->set('access', 1);
+		$t_loc->set('status', 2);
+		$t_loc->set('idno', $ps_location_idno);
+		/*$t_loc->addAttribute(array(
+			'locale_id' => $pn_locale_id,
+			'altID' => $ps_location
+		), 'altID');*/
+
+		/*if ($ps_location_alternate != "") {
+			$t_loc->addAttribute(array(
+				'locale_id' => $pn_locale_id,
+				'description' => $ps_location_alternate
+			), 'description');
+		}*/
+		
+		$t_loc->insert();
+		
+		if ($t_loc->numErrors()) {
+			print "ERROR INSERTING location ($ps_location_name|$ps_location_alternate): ".join('; ', $t_loc->getErrors())."\n";
+			return null;
+		}
+		$t_loc->addLabel(array(
+			'name' => $ps_location_name
+		), $pn_locale_id, null, true);
+		
+		$vn_location_id = $t_loc->getPrimaryKey();
+	} else {
+		if ($VERBOSE) print "\tFound Location $ps_location_name\n";
+		$vn_location_id = $t_loc->get('location_id');
+	}
+
+	// Ancestors : if present, create when needed and update the hierarchy relation
+	if (isset($options['ancestors'])) {
+		$ancestors = $options['ancestors'];
+		$current_id = $vn_location_id;
+		foreach($ancestors as $ancestor) {
+			if(!$ancestor['idno']) {
+				$ancestor['idno'] = $ancestor['name'];
+			}
+			if(!$ancestor["name"]) {
+				die("ERROR : ancestor name is missing");
+			}
+			if(!$ancestor["type_id"]) {
+				die("ERROR : ancestor type_id is missing");
+			}
+			$ancestor_id = getStorageLocationID2($ancestor['idno'], $ancestor['name'], $ancestor['type_id']);
+			//var_dump($ancestor_id);
+			if(!$ancestor_id) {
+				die("ERROR : creation of the ancestor has failed");
+			}
+			$vt_location = new ca_storage_locations($current_id);
+			$vt_location->setMode(ACCESS_WRITE);
+			$vt_location->set('parent_id', $ancestor_id);
+			$vt_location->update();
+			$current_id = $ancestor_id;
+		}
+
+	}
+	
+	return $vn_location_id;
+}
+
+
 // ----------------------------------------------------------------------	
 function getCollectionID($ps_collection, $ps_collection_idno, $pn_collection_type_id) {
 	global $pn_locale_id;
