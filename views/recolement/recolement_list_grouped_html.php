@@ -127,7 +127,7 @@ if (!isset($campagnes_par_rd) || !$campagnes_par_rd) {
                         <?php
                         foreach ($rd["recolements"] as $campagne) :
                         ?>
-                        ['<?php print $campagne["name"]; ?>', <?php print (int) $campagne["recolements_done"]; ?>, <?php print $campagne["recolements_total"] - $campagne["recolements_done"]; ?>, '<?php print $campagne["idno"]; ?>'],
+                        ['<?php print htmlentities($campagne["name"]); ?>', <?php print (int) $campagne["recolements_done"]; ?>, <?php print $campagne["recolements_total"] - $campagne["recolements_done"]; ?>, '<?php print $campagne["idno"]; ?>'],
                         <?php
                         endforeach;
                         ?>
