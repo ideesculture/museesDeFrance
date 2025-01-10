@@ -7,7 +7,7 @@ Tout cela dans une interface simple et agréable.
 
 **IMPORTANT** 
 
-La version actuelle de ce plugin ne supporte plus les versions de Providence antérieures à la version 1.7.7.
+La version actuelle de ce plugin ne supporte plus les versions de Providence antérieures à la **version 2**
 
 ## Les fonctionnalités
 
