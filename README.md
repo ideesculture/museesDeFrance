@@ -2,6 +2,13 @@ plugin museesDeFrance pour CollectiveAccess
 ================================
 ![image](https://raw.githubusercontent.com/ideesculture/museesDeFrance/master/museesDeFrance.png)
 
+## Attention, Providence v2 requis
+
+Attention, à partir de 2025, la V2 de Providence est disponible depuis https://github.com/collectiveaccess/providence/releases 
+Cette version est requise pour le plugin Musées De France d'IdéesCulture.
+
+## Introduction
+
 Nous avons bâti autour de CollectiveAccess un plugin spécifique et cohérent permettant de réaliser la génération des registres de l'inventaire informatisé suivant les normes des musées de France, mais aussi d'assurer la réalisation et le suivi du récolement des collections.
 Tout cela dans une interface simple et agréable.
 
