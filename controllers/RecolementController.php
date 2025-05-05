@@ -1,5 +1,5 @@
 <?php
-if(__CollectiveAccess_Schema_Rev__>=178) { $vb_prefix = true;} else { $vb_prefix = false;}
+if(__CollectiveAccess_Schema_Rev__<178) { $vb_prefix = true;} else { $vb_prefix = false;}
 require_once(__CA_LIB_DIR__ . ($vb_prefix ? "/core" : "").'/Configuration.php');
 require_once(__CA_MODELS_DIR__ . '/ca_objects.php');
 require_once(__CA_MODELS_DIR__ . '/ca_occurrences.php');
