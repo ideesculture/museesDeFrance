@@ -33,7 +33,9 @@ $va_campagnes_rd = $this->getVar('campagnes_rd');
 ?>
 <h3>Statistiques :
 	<div>
-		<?php foreach($va_campagnes_rd as $rd => $va_campagnes) : ?>
+		<?php foreach($va_campagnes_rd as $rd => $va_campagnes) : 
+			if(!$va_campagnes["recolements"]) continue;
+		?>
 		<p>
 			<b><?php print $rd; ?></b><br/>
 			<?php print (int)count($va_campagnes["recolements"]); ?> campagnes<br/>
