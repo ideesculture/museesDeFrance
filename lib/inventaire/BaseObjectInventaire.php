@@ -295,6 +295,12 @@ class BaseObjectInventaire implements InterfaceInventaire {
                         } else {
                             // non preferred_labels
                             $nonpreferred_labels = $t_object->get('ca_objects.nonpreferred_labels', array('returnAsArray' => true));
+                            
+                            // GM fix 08/09/2025, errors breaks the Ajax fetch
+                            error_reporting(E_ERROR);
+                            if(!is_array($nonpreferred_labels)) { $nonpreferred_labels = []; }
+                            // end GM fix 08/09/2025
+                            
                             if (sizeof($nonpreferred_labels)>0) { $nonpreferred_labels = reset($nonpreferred_labels); }
                             //var_dump($attribute["otherLabelTypeId"]);
                             //var_dump($nonpreferred_labels);
