@@ -17,12 +17,13 @@ La version actuelle de ce plugin ne supporte plus les versions de Providence ant
 
 - depuis le menu Procédures réglementaires : réaliser un PV de récolement, accéder au Registre des biens affectés ou au Registre des biens déposés
 
-### Dans l'application inventaire
+### Dans le menu "Procédures réglementaires" du plugin Musées de France
 
 - gestion des utilisateurs (droit de validation spécifique défini dans la configuration, droits d'accès gérés dans les droits d'accès classiques de CollectiveAccess)
 - biens acquis/affectés : transférer un objet à l'inventaire, valider un objet,
 - afficher la liste d'un objet (paginée, filtrable validés/validés+brouillons)
 - actions possibles : inscrire à l'inventaire, retirer de la sélection, afficher dans CA, afficher en planche contact les photos des objets, afficher les détails d'un objet
+- réaliser les exports au format joconde (zip, avec texte autopiloté des valeurs) depuis un ensemble de notices
 
 ## Un stockage spécifique pour les données de l'inventaire
 
