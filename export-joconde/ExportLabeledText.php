@@ -56,13 +56,21 @@ class ExportLabeledText extends BaseExportFormat {
 		$va_replaced_characters = array('\n','\r','\t');
 		$va_replacement_characters = array("\n","\r","\t");
 
-		$vs_eol = (isset($pa_options['settings']['LABELEDTXT_record_separator']) ? $pa_options['settings']['LABELEDTXT_end_of_line'] : "\n");
-		$vs_record_separator = (isset($pa_options['settings']['LABELEDTXT_record_separator']) ? $pa_options['settings']['LABELEDTXT_record_separator'] : "\n");
+		// Use paragraph mark (¶) as end of line character for Joconde format
+		$vs_eol = (isset($pa_options['settings']['LABELEDTXT_end_of_line']) ? $pa_options['settings']['LABELEDTXT_end_of_line'] : "¶\n");
+		// Use // as record separator for Joconde format
+		$vs_record_separator = (isset($pa_options['settings']['LABELEDTXT_record_separator']) ? $pa_options['settings']['LABELEDTXT_record_separator'] : "//¶\n");
+
 		// Doing simple search & replace for \n, \r and \t
 		$vs_eol = str_replace($va_replaced_characters,$va_replacement_characters,$vs_eol);
 		$vs_record_separator = str_replace($va_replaced_characters,$va_replacement_characters,$vs_record_separator);
 
 		foreach($pa_data as $pa_item){
+			// Skip empty fields as per Joconde specification
+			if(empty($pa_item['text']) && $pa_item['text'] !== '0') {
+				continue;
+			}
+
 			switch($pa_item['element']) {
 				case 'REF':
 				default:
@@ -104,17 +112,17 @@ BaseExportFormat::$s_format_settings['LABELEDTXT'] = array(
 		'displayType' => DT_SELECT,
 		'width' => 40, 'height' => 1,
 		'takesLocale' => false,
-		'default' => '"',
+		'default' => '//¶\n',
 		'label' => _t('Record separator'),
-		'description' => _t('Record separator. Default to \n (carriage return).')
+		'description' => _t('Record separator. Default for Joconde format: //¶ (double slash + paragraph mark).')
 	),
 	'LABELEDTXT_end_of_line' => array(
 		'formatType' => FT_TEXT,
 		'displayType' => DT_SELECT,
 		'width' => 40, 'height' => 1,
 		'takesLocale' => false,
-		'default' => '"',
+		'default' => '¶\n',
 		'label' => _t('End of line characters'),
-		'description' => _t('End of line characters. Defaut to \n (carriage return).')
+		'description' => _t('End of line characters. Default for Joconde format: ¶ (paragraph mark).')
 	)
 );

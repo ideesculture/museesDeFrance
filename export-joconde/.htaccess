@@ -1,0 +1,3 @@
+<FilesMatch "\.txt$">
+    Header always set Content-Type "text/plain; charset=utf-8"
+</FilesMatch>

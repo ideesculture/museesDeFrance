@@ -11,7 +11,12 @@
 
 <ul>
 <?php foreach($folders as $folder) : ?>
-	<li><?php print $folder; ?> <a href="<?php print $base_url."/".$folder.".zip"; ?>"><span style="color:white;background:darkgrey;font-size:8px;padding:2px 4px;border-radius:6px;">ZIP</span></a</li>
+	<li><?php print $folder; ?>
+		<a href="<?php print $base_url."/".$folder.".zip"; ?>"><span style="color:white;background:darkgrey;font-size:8px;padding:2px 4px;border-radius:6px;">ZIP</span></a>
+		<a href="<?php print __CA_URL_ROOT__; ?>/index.php/museesDeFrance/Joconde/deleteExport/export/<?php print urlencode($folder); ?>"
+		   onclick="return confirm('Êtes-vous sûr de vouloir supprimer l\'export <?php print htmlspecialchars($folder, ENT_QUOTES); ?> ?');"
+		   style="color:white;background:darkred;font-size:8px;padding:2px 4px;border-radius:6px;text-decoration:none;margin-left:5px;">✕</a>
+	</li>
 <?php if($folders_contents[$folder]) : ?>
 	<ul>
 <?php	foreach($folders_contents[$folder] as $key=>$content) :
@@ -28,5 +33,5 @@
 
 <hr/>
 <small>
-<p>Le module museesDeFrance pour CollectiveAccess est réalisé par <a href="http://www.ideesculture.com">idéesculture</a> – <a href="http://www.culture.gouv.fr/documentation/joconde/fr/partenaires/AIDEMUSEES/format-export.htm#refmis">Documentation de l'export Joconde</a></p>
+<p>Le module museesDeFrance pour CollectiveAccess est réalisé par <a href="https://www.ideesculture.com">idéesculture</a> – <a href="https://www.culture.gouv.fr/thematiques/musees/pour-les-professionnels/rendre-les-collections-accessibles-aux-publics/assurer-la-diffusion-numerique-des-collections/participer-a-joconde-catalogue-collectif-des-collections-des-musees-de-france/informations-techniques-liees-a-la-participation-d-un-musee-de-france-a-joconde-catalogue-collectif-des-collections-des-musees-de-france/specifications-d-export-vers-joconde-catalogue-collectif-des-collections-des-musees-de-france">Documentation de l'export Joconde</a></p>
 </small>
