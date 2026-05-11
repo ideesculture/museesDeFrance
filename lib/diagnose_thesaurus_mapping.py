@@ -181,12 +181,16 @@ def load_source_list(creds, list_code, element_code):
         sys.exit(f"Element '{element_code}' not found in ca_metadata_elements.")
     element_id = elem_rows[0]["element_id"]
 
+    # Restrict to the preferred label per item — legacy lists may carry
+    # alt-label rows (e.g. `mobilier` as alt of `ameublement`) which would
+    # double-count items and inflate usage totals.
     rows = mysql_query(creds, f"""
         SELECT li.item_id, li.idno, lil.name_singular AS label,
                (SELECT COUNT(*) FROM ca_attribute_values av
                 WHERE av.element_id = {element_id} AND av.item_id = li.item_id) AS n_objects
         FROM ca_list_items li
-        LEFT JOIN ca_list_item_labels lil ON lil.item_id = li.item_id
+        LEFT JOIN ca_list_item_labels lil
+               ON lil.item_id = li.item_id AND lil.is_preferred = 1
         WHERE li.list_id = {list_id} AND li.deleted = 0
         ORDER BY lil.name_singular
     """)
