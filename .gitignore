@@ -29,3 +29,6 @@ export-joconde/*/rapport.txt
 export-joconde/_referentiel/.dateexport
 export-joconde/_referentiel/.numexport
 export-joconde/*.zip
+museesDeFrance.tgz
+conf/local/PV_recolement.docx
+export-joconde/*
