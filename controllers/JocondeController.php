@@ -478,19 +478,15 @@ class JocondeController extends ActionController
 						$value = preg_replace('/\s+/u', '', $value);
 					}
 
-					// 7. Special processing for STAT: format per official Joconde spec (2024-03-25)
-					// Syntax: ‹type de propriété› ; ‹mode d'acquisition› ; ‹propriétaire› ; ‹établissement affectataire›
-					// Vocabulary in lowercase, proper nouns preserved.
-					// Example: propriété de la commune ; don manuel ; Mayenne ; musée du château
+					// 7. Special processing for STAT: format demandé par Isabelle Peretti (SMF) le 2026-05-11
+					// Forme attendue: Propriété de la commune, don manuel, Mayenne, musée du château
+					// — première portion conservée telle quelle (capitale initiale)
+					// — séparateur de rejointure: ", "
 					if ($fieldName === 'STAT' && !empty($value)) {
 						$parts = array_map('trim', explode(';', $value));
 						foreach ($parts as $i => $p) {
 							switch ($i) {
-								case 0: // type de propriété — vocabulaire contrôlé
-									$parts[$i] = mb_strtolower($p, 'UTF-8');
-									break;
-								case 1: // mode d'acquisition — vocabulaire contrôlé
-									// CA "Don" (legacy) maps to Joconde "don manuel"
+								case 1: // mode d'acquisition — CA "Don" (legacy) → Joconde "don manuel"
 									if ($p === 'Don') {
 										$parts[$i] = 'don manuel';
 									} else {
@@ -510,7 +506,7 @@ class JocondeController extends ActionController
 							}
 						}
 						$parts = array_filter($parts, function($p) { return $p !== ''; });
-						$value = implode(' ; ', $parts);
+						$value = implode(', ', $parts);
 					}
 
 					// 8. Special processing for DIMS: format according to Joconde specifications
