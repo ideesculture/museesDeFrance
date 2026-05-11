@@ -2,7 +2,12 @@
 
 $InfosPv = $this->getVar('InfosPv');
 require_once __CA_BASE_DIR__ . '/app/plugins/museesDeFrance/helpers/Template.php';
-$template = new PHPWord_Template(__CA_BASE_DIR__ . "/app/plugins/museesDeFrance/conf/PV_recolement.docx");
+$ps_plugin_path = __CA_BASE_DIR__ . "/app/plugins/museesDeFrance";
+if (file_exists($ps_plugin_path . "/conf/local/PV_recolement.docx")) {
+	$template = new PHPWord_Template($ps_plugin_path . "/conf/local/PV_recolement.docx");
+} else {
+	$template = new PHPWord_Template($ps_plugin_path . "/conf/PV_recolement.docx");
+}
 
 /*
  * Définition des valeurs
