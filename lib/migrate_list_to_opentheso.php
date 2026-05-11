@@ -613,6 +613,29 @@ function repoint_element(int $elementId, int $targetListId, string $mode): void 
                $targetListId, $elementId);
 }
 
+/**
+ * Soft-delete the source list and every list item it contained.
+ * Called after the attribute_values have been remapped and the
+ * metadata element has been repointed — at that stage the list is
+ * unreferenced and can be hidden from the UI.
+ */
+function disable_source_list(int $sourceListId, string $mode): array {
+    $db = new Db();
+    $itemsRes = $db->query("SELECT COUNT(*) AS n FROM ca_list_items WHERE list_id = ? AND deleted = 0", $sourceListId);
+    $itemsRes->nextRow();
+    $itemCount = (int)$itemsRes->get('n');
+
+    if ($mode === 'dry-run') {
+        out("  [dry-run] UPDATE ca_list_items SET deleted=1 WHERE list_id={$sourceListId} ({$itemCount} items)");
+        out("  [dry-run] UPDATE ca_lists SET deleted=1 WHERE list_id={$sourceListId}");
+        return ['items_deleted' => $itemCount, 'list_deleted' => 1];
+    }
+    $db->query("UPDATE ca_list_items SET deleted = 1 WHERE list_id = ?", $sourceListId);
+    $itemsAffected = $db->affectedRows();
+    $db->query("UPDATE ca_lists SET deleted = 1 WHERE list_id = ?", $sourceListId);
+    return ['items_deleted' => $itemsAffected, 'list_deleted' => $db->affectedRows()];
+}
+
 // ---------------------------------------------------------------------------
 // Main
 // ---------------------------------------------------------------------------
@@ -732,6 +755,11 @@ out("  Rows " . ($mode === 'apply' ? 'updated' : 'that would be updated') . " : 
 out("");
 out("=== Step: repoint element to new list ===");
 repoint_element($sourceList['element_id'], $targetListId, $mode);
+
+out("");
+out("=== Step: soft-delete source list ===");
+$disableStats = disable_source_list($sourceList['list_id'], $mode);
+out("  Source list_id={$sourceList['list_id']} : {$disableStats['items_deleted']} items + 1 list flagged deleted=1");
 
 out("");
 if ($mode === 'dry-run') {
