@@ -423,20 +423,9 @@ class JocondeController extends ActionController
 
 		}
 
-		// Export media list for internal reference (pipe-separated format for easy reading)
-		// Headers are now loaded from joconde_templates.php configuration file
-
-		$mediaListFile = fopen(__CA_APP_DIR__."/plugins/museesDeFrance/export-joconde/".$refexport."/media/liste_media_".$refexport.".txt", "w");
-		$mediaListText = join("|", $headers)."\n";
-		foreach ($results as $result){
-			$mediaListText .= join ('|', $result)."\n";
-		}
-		fwrite($mediaListFile, $mediaListText);
-		fclose($mediaListFile);
-		@chmod(__CA_APP_DIR__."/plugins/museesDeFrance/export-joconde/".$refexport."/media/liste_media_".$refexport.".txt", 0664);
-
-		// Generate Joconde format export (paragraph-mark separated)
-		$jocondeFile = fopen(__CA_APP_DIR__."/plugins/museesDeFrance/export-joconde/".$refexport."/".$refexport.".txt", "w");
+		// Generate Joconde format export (paragraph-mark separated) inside media/
+		// (placed next to images so SMF can drag-and-drop the whole media folder into POP)
+		$jocondeFile = fopen(__CA_APP_DIR__."/plugins/museesDeFrance/export-joconde/".$refexport."/media/".$refexport.".txt", "w");
 
 		// Write UTF-8 BOM to ensure proper encoding detection by browsers
 		fwrite($jocondeFile, "\xEF\xBB\xBF");
@@ -484,7 +473,47 @@ class JocondeController extends ActionController
 						}
 					}
 
-					// 6. Special processing for DIMS: format according to Joconde specifications
+					// 6. Special processing for REF: strip any whitespace (REF must be a single token)
+					if ($fieldName === 'REF' && !empty($value)) {
+						$value = preg_replace('/\s+/u', '', $value);
+					}
+
+					// 7. Special processing for STAT: format per official Joconde spec (2024-03-25)
+					// Syntax: ‹type de propriété› ; ‹mode d'acquisition› ; ‹propriétaire› ; ‹établissement affectataire›
+					// Vocabulary in lowercase, proper nouns preserved.
+					// Example: propriété de la commune ; don manuel ; Mayenne ; musée du château
+					if ($fieldName === 'STAT' && !empty($value)) {
+						$parts = array_map('trim', explode(';', $value));
+						foreach ($parts as $i => $p) {
+							switch ($i) {
+								case 0: // type de propriété — vocabulaire contrôlé
+									$parts[$i] = mb_strtolower($p, 'UTF-8');
+									break;
+								case 1: // mode d'acquisition — vocabulaire contrôlé
+									// CA "Don" (legacy) maps to Joconde "don manuel"
+									if ($p === 'Don') {
+										$parts[$i] = 'don manuel';
+									} else {
+										$parts[$i] = mb_strtolower($p, 'UTF-8');
+									}
+									break;
+								case 2: // propriétaire — normalize "Ville de XXX" / "Commune de XXX" to city name
+									if (preg_match('/^(?:Ville|Commune) de\s+(.+)$/iu', $p, $m)) {
+										$parts[$i] = mb_convert_case(mb_strtolower($m[1], 'UTF-8'), MB_CASE_TITLE, 'UTF-8');
+									}
+									break;
+								case 3: // établissement affectataire — known museum value lowercased
+									if (strcasecmp($p, 'Musée du Château de Mayenne') === 0) {
+										$parts[$i] = 'musée du château';
+									}
+									break;
+							}
+						}
+						$parts = array_filter($parts, function($p) { return $p !== ''; });
+						$value = implode(' ; ', $parts);
+					}
+
+					// 8. Special processing for DIMS: format according to Joconde specifications
 					if ($fieldName === 'DIMS' && !empty($value)) {
 						// Remove poids (weight) dimension as it's not needed for Joconde
 						$value = preg_replace('/P\.\s*[0-9,\.]+\s*cm\s*;?\s*/i', '', $value);
@@ -514,18 +543,18 @@ class JocondeController extends ActionController
 					continue;
 				}
 
-				// Write field name + paragraph mark + newline
-				$jocondeText .= $fieldName . "¶\n";
-				// Write field value + paragraph mark + newline
-				$jocondeText .= $value . "¶\n";
+				// Write field name + newline (paragraph mark ¶ dropped per SMF request 2026-05-11)
+				$jocondeText .= $fieldName . "\n";
+				// Write field value + newline
+				$jocondeText .= $value . "\n";
 			}
-			// Add record separator: // + paragraph mark + newline
-			$jocondeText .= "//¶\n";
+			// Record separator: // + newline (paragraph mark ¶ dropped per SMF request 2026-05-11)
+			$jocondeText .= "//\n";
 		}
 
 		fwrite($jocondeFile, $jocondeText);
 		fclose($jocondeFile);
-		@chmod(__CA_APP_DIR__."/plugins/museesDeFrance/export-joconde/".$refexport."/".$refexport.".txt", 0664);
+		@chmod(__CA_APP_DIR__."/plugins/museesDeFrance/export-joconde/".$refexport."/media/".$refexport.".txt", 0664);
 
 		// Keep the old exporter call for compatibility (will fail silently if exporter doesn't exist)
 		// $result = $exporter->exportRecordsFromSearchResult("export_joconde", $setitems, __CA_APP_DIR__."/plugins/museesDeFrance/export-joconde/".$refexport."/".$refexport.".txt");
@@ -605,29 +634,4 @@ function resize_image($file, $w, $h, $crop=FALSE) {
     return $dst;
 }
 
-function resize_image($file, $w, $h, $crop=FALSE) {
-    list($width, $height) = getimagesize($file);
-    $r = $width / $height;
-    if ($crop) {
-        if ($width > $height) {
-            $width = ceil($width-($width*abs($r-$w/$h)));
-        } else {
-            $height = ceil($height-($height*abs($r-$w/$h)));
-        }
-        $newwidth = $w;
-        $newheight = $h;
-    } else {
-        if ($w/$h > $r) {
-            $newwidth = $h*$r;
-            $newheight = $h;
-        } else {
-            $newheight = $w/$r;
-            $newwidth = $w;
-        }
-    }
-    $src = imagecreatefromjpeg($file);
-    $dst = imagecreatetruecolor($newwidth, $newheight);
-    imagecopyresampled($dst, $src, 0, 0, 0, 0, $newwidth, $newheight, $width, $height);
-
-    return $dst;
-}
+?>
