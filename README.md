@@ -1,38 +1,64 @@
-plugin museesDeFrance pour CollectiveAccess
-================================
+# Plugin museesDeFrance pour CollectiveAccess
+
 ![image](https://raw.githubusercontent.com/ideesculture/museesDeFrance/master/museesDeFrance.png)
 
-Nous avons bâti autour de CollectiveAccess un plugin spécifique et cohérent permettant de réaliser la génération des registres de l'inventaire informatisé suivant les normes des musées de France, mais aussi d'assurer la réalisation et le suivi du récolement des collections.
-Tout cela dans une interface simple et agréable.
+**Plugin officiellement validé par le Service des Musées de France (SMF) du Ministère de la Culture français**, listé sur [culture.gouv.fr](https://www.culture.gouv.fr) :
 
-**IMPORTANT** 
+- **Édition informatisée des registres d'inventaire** : validation [décembre 2013](https://www.culture.gouv.fr/thematiques/musees/pour-les-professionnels/conserver-et-gerer-les-collections/informatiser-les-collections-d-un-musee-de-france/informatisation-reglementaire-des-collections-d-un-musee-de-france/procedure-de-validation-des-fonctionnalites-d-edition-informatisee-des-registres-d-inventaire-et-de-depots-des-outils-informatiques-des-musees-de-f)
+- **Fonctionnalités liées au récolement décennal** : validation [janvier 2014](https://www.culture.gouv.fr/thematiques/musees/pour-les-professionnels/conserver-et-gerer-les-collections/informatiser-les-collections-d-un-musee-de-france/informatisation-reglementaire-des-collections-d-un-musee-de-france/procedure-de-validation-des-fonctionnalites-liees-au-recolement-decennal-des-collections-des-musees-de-france)
+- **Export Joconde direct** : validation en cours, premier déploiement au Musée du Château de Mayenne
 
-La version actuelle de ce plugin ne supporte plus les versions de Providence antérieures à la **version 2**
+Ce plugin construit autour de [CollectiveAccess](https://collectiveaccess.org) (référencé sur le [SILL ID 498](https://code.gouv.fr/sill/detail?id=498) depuis mai 2024) répond aux quatre obligations majeures imposées par la loi française du 4 janvier 2002 sur les Musées de France : inventaire réglementaire infalsifiable, marquage des pièces, suivi des dépôts, récolement décennal.
 
-## Les fonctionnalités
+> Maintenu par [IdéesCulture](https://www.ideesculture.com) (SAS française, Le Mans, depuis 2012) — intégrateur de CollectiveAccess pour les institutions culturelles francophones. 107 institutions accompagnées, dont 5 ministères français.
+
+**IMPORTANT** : La version actuelle de ce plugin ne supporte plus les versions de Providence antérieures à la **version 2**.
+
+## Fonctionnalités principales
 
 ### Dans CollectiveAccess
 
-- de l'écran Vue d'un objet : bouton Afficher dans l'inventaire (réalise un import si l'objet n'est pas déjà présent dans l'inventaire, met à jour si l'objet est présent et n'est pas encore validé)
+- depuis l'écran Vue d'un objet : bouton **Afficher dans l'inventaire** (import si nouveau, mise à jour si présent et non encore validé)
+- depuis le menu **Procédures réglementaires** : réaliser un PV de récolement, accéder au Registre des biens affectés ou au Registre des biens déposés
 
-- depuis le menu Procédures réglementaires : réaliser un PV de récolement, accéder au Registre des biens affectés ou au Registre des biens déposés
+### Menu « Procédures réglementaires » du plugin
 
-### Dans le menu "Procédures réglementaires" du plugin Musées de France
+- gestion des utilisateurs avec droit de validation spécifique
+- biens acquis/affectés : transfert à l'inventaire, validation, liste paginée filtrable
+- **inscription au registre d'inventaire** avec verrouillage réglementaire post-inscription (la ligne devient infalsifiable — exigence loi 2002)
+- numérotation à 3 segments (année.lot.objet) conforme SMF
+- **récolement décennal** : campagnes, statut par pièce (vu sur place, vu hors les murs, manquant, détruit, en restauration…), génération automatique des PV au format SMF
+- gestion des dépôts entrants/sortants (registres séparés)
+- **export POP / Joconde** : mapping natif vers la nomenclature nationale, transfert XML conforme
 
-- gestion des utilisateurs (droit de validation spécifique défini dans la configuration, droits d'accès gérés dans les droits d'accès classiques de CollectiveAccess)
-- biens acquis/affectés : transférer un objet à l'inventaire, valider un objet,
-- afficher la liste d'un objet (paginée, filtrable validés/validés+brouillons)
-- actions possibles : inscrire à l'inventaire, retirer de la sélection, afficher dans CA, afficher en planche contact les photos des objets, afficher les détails d'un objet
-- réaliser les exports au format joconde (zip, avec texte autopiloté des valeurs) depuis un ensemble de notices
+## Déploiements documentés
 
-## Un stockage spécifique pour les données de l'inventaire
+| Institution | Spécificité |
+|---|---|
+| Musée du Château de Mayenne | Archéologie médiévale, premier export Joconde en cours |
+| Musée des Alpilles | Fonds ethnographique, connecteur POP |
+| Musée de l'Imprimerie et de la Communication Graphique (Lyon) | Imprimés rares + bibliothèque d'étude unifiée |
+| Musée Malartre | Véhicules photographiés + scans 3D intégrés aux fiches |
+| Centre d'Histoire de la Résistance et de la Déportation (Lyon) | Objets + archives + témoignages oraux dans la même base |
+| Communauté de l'Ouest Rhodanien | Mutualisation Écomusée du Haut-Beaujolais + Musée Thimonnier |
 
-Une fois qu'un objet est inscrit à l'inventaire, cette ligne de l'inventaire n'est plus censée être modifiable. CollectiveAccess permet cette modification à tout moment. Lors de l'ajout d'un objet à l'inventaire les données de celui-ci sont recopiées dans un deuxième, soit dans la même base (comportement par défaut, surtout à des fins de de test), soit dans une base de données spécifique distincte.
+## Installation et configuration
 
-## La documentation
+Cf. la documentation française complète sur [museesDeFranceDocumentation](https://github.com/ideesculture/museesDeFranceDocumentation).
 
-Ce projet a un wiki sur github : https://github.com/ideesculture/museesDeFrance/wiki
+## Licence
 
-## Rapporter un bug
+GPL v3 — compatible avec la licence amont de CollectiveAccess.
 
-Contactez nous par email à contact@ideesculture.com ou mieux, saisissez un ticket sur github : https://github.com/ideesculture/museesDeFrance/issues
+## Support et intégration
+
+- Documentation utilisateur : [museesDeFranceDocumentation](https://github.com/ideesculture/museesDeFranceDocumentation)
+- Support institutionnel : [contact@ideesculture.com](mailto:contact@ideesculture.com)
+- Site IdéesCulture : [www.ideesculture.com](https://www.ideesculture.com/fr/musees-de-france)
+- Fiche Wikidata du plugin (à venir) — fiche [CollectiveAccess Q2982932](https://www.wikidata.org/wiki/Q2982932)
+
+## Liens institutionnels
+
+- [Service des Musées de France — Procédures de validation](https://www.culture.gouv.fr/thematiques/musees/pour-les-professionnels/conserver-et-gerer-les-collections/informatiser-les-collections-d-un-musee-de-france)
+- [SILL — Socle Interministériel des Logiciels Libres, ID 498](https://code.gouv.fr/sill/detail?id=498)
+- [Comptoir du Libre — fiche CollectiveAccess](https://comptoir-du-libre.org/fr/softwares/877)
