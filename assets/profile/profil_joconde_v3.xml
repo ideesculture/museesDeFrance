@@ -12734,9 +12734,9 @@
         <restriction>
           <table>ca_occurrences</table>
           <settings>
-            <setting name="minAttributesPerRow">1</setting>
+            <setting name="minAttributesPerRow">0</setting>
             <setting name="maxAttributesPerRow">1</setting>
-            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+            <setting name="minimumAttributeBundlesToDisplay">0</setting>
           </settings>
         </restriction>
       </typeRestrictions>
