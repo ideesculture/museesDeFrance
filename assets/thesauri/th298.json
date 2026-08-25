@@ -1,0 +1,1708 @@
+{
+    "meta": {
+        "id": "th298",
+        "source_url": "https://opentheso.huma-num.fr/opentheso/api/all/theso?id=th298&format=json",
+        "concept_count": 150
+    },
+    "concepts": {
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/2b2b0a9a-8d0b-4ee4-939d-2d4899bc0584": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/2b2b0a9a-8d0b-4ee4-939d-2d4899bc0584",
+            "id": "2b2b0a9a-8d0b-4ee4-939d-2d4899bc0584",
+            "prefLabel": "objet en rapport",
+            "altLabels": [],
+            "broader": [],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/73cf62a1-c0b4-4e5e-9f62-9145b92fe7d7": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/73cf62a1-c0b4-4e5e-9f62-9145b92fe7d7",
+            "id": "73cf62a1-c0b4-4e5e-9f62-9145b92fe7d7",
+            "prefLabel": "édition revue et augmentée",
+            "altLabels": [
+                "éd. rev.et augm."
+            ],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-116"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-1": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-1",
+            "id": "T506-1",
+            "prefLabel": "contexte de création",
+            "altLabels": [],
+            "broader": [],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-163",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-168",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-169",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-2",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-24",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-25",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-26",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-3",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-43",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-44",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-45",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-5",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-8",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/flj99bqllj8sdj94k1lh-8"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-10": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-10",
+            "id": "T506-10",
+            "prefLabel": "épreuve d'essai",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-8"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-103": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-103",
+            "id": "T506-103",
+            "prefLabel": "œuvre de reproduction",
+            "altLabels": [
+                "oeuvre de reproduction"
+            ],
+            "broader": [],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-104",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-105",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-116",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-124",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-125",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-126",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-127",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-128",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-130",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-131",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-132",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-135",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-136",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-137",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-138",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-162",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-164"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-104": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-104",
+            "id": "T506-104",
+            "prefLabel": "contretype",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-103"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-105": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-105",
+            "id": "T506-105",
+            "prefLabel": "copie",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-103"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-106",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-108",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-109",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-110",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-111",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-112",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-113",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-114",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-115"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-106": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-106",
+            "id": "T506-106",
+            "prefLabel": "agrandissement",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-105"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-107"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-107": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-107",
+            "id": "T506-107",
+            "prefLabel": "agrandissement mécanique",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-106"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-108": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-108",
+            "id": "T506-108",
+            "prefLabel": "contre-épreuve",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-105"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-109": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-109",
+            "id": "T506-109",
+            "prefLabel": "contrefaçon",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-105"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-11": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-11",
+            "id": "T506-11",
+            "prefLabel": "épreuve d'état",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-8"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-12",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-13",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-14",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-15",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-16",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-165",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-17",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-176",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-18",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-19",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-20",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-21"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-110": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-110",
+            "id": "T506-110",
+            "prefLabel": "copie d'étude",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-105"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-111": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-111",
+            "id": "T506-111",
+            "prefLabel": "copie interprétée",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-105"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-112": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-112",
+            "id": "T506-112",
+            "prefLabel": "copie partielle",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-105"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-113": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-113",
+            "id": "T506-113",
+            "prefLabel": "copie réduite",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-105"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-114": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-114",
+            "id": "T506-114",
+            "prefLabel": "copie servile",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-105"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-115": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-115",
+            "id": "T506-115",
+            "prefLabel": "d'après l'antique",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-105"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-116": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-116",
+            "id": "T506-116",
+            "prefLabel": "édition",
+            "altLabels": [
+                "épreuve d'édition"
+            ],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-103"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/73cf62a1-c0b4-4e5e-9f62-9145b92fe7d7",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-117",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-119",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-120",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-121",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-122"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-117": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-117",
+            "id": "T506-117",
+            "prefLabel": "1e édition",
+            "altLabels": [
+                "1ère édition"
+            ],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-116"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-119": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-119",
+            "id": "T506-119",
+            "prefLabel": "2e édition",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-116"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-12": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-12",
+            "id": "T506-12",
+            "prefLabel": "1er état",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-120": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-120",
+            "id": "T506-120",
+            "prefLabel": "3e édition",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-116"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-121": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-121",
+            "id": "T506-121",
+            "prefLabel": "4e édition",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-116"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-122": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-122",
+            "id": "T506-122",
+            "prefLabel": "édition limitée",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-116"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-124": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-124",
+            "id": "T506-124",
+            "prefLabel": "imitation photomécanique",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-103"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-125": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-125",
+            "id": "T506-125",
+            "prefLabel": "interprétation",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-103"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-126": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-126",
+            "id": "T506-126",
+            "prefLabel": "maquette de reproduction",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-103"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-127": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-127",
+            "id": "T506-127",
+            "prefLabel": "moulage d'édition",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-103"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-128": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-128",
+            "id": "T506-128",
+            "prefLabel": "réduction",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-103"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-129"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-129": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-129",
+            "id": "T506-129",
+            "prefLabel": "réduction mécanique",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-128"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-13": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-13",
+            "id": "T506-13",
+            "prefLabel": "2e état",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-130": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-130",
+            "id": "T506-130",
+            "prefLabel": "relevé",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-103"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-131": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-131",
+            "id": "T506-131",
+            "prefLabel": "répétition",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-103"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-132": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-132",
+            "id": "T506-132",
+            "prefLabel": "réplique",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-103"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-133",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-134"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-133": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-133",
+            "id": "T506-133",
+            "prefLabel": "réplique réduite",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-132"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-134": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-134",
+            "id": "T506-134",
+            "prefLabel": "réplique agrandie",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-132"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-135": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-135",
+            "id": "T506-135",
+            "prefLabel": "reproduction",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-103"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-136": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-136",
+            "id": "T506-136",
+            "prefLabel": "pastiche",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-103"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-137": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-137",
+            "id": "T506-137",
+            "prefLabel": "retirage",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-103"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-138": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-138",
+            "id": "T506-138",
+            "prefLabel": "ricordo",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-103"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-139": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-139",
+            "id": "T506-139",
+            "prefLabel": "œuvre reproduite",
+            "altLabels": [
+                "oeuvre reproduite"
+            ],
+            "broader": [],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-140",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-141",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-142",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-143",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-144",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-145",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-146",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-147",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-148",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-149",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-150",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-151",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-152",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-153",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-154"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-14": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-14",
+            "id": "T506-14",
+            "prefLabel": "3e état",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-140": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-140",
+            "id": "T506-140",
+            "prefLabel": "reproduit en céramique",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-139"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-141": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-141",
+            "id": "T506-141",
+            "prefLabel": "reproduit en dessin",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-139"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-142": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-142",
+            "id": "T506-142",
+            "prefLabel": "reproduit en glace peinte",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-139"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-143": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-143",
+            "id": "T506-143",
+            "prefLabel": "reproduit en gravure",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-139"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-144": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-144",
+            "id": "T506-144",
+            "prefLabel": "reproduit en lithographie",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-139"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-145": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-145",
+            "id": "T506-145",
+            "prefLabel": "reproduit en peinture",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-139"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-146": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-146",
+            "id": "T506-146",
+            "prefLabel": "reproduit en procédé photomécanique",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-139"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-147": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-147",
+            "id": "T506-147",
+            "prefLabel": "reproduit en photographie",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-139"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-148": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-148",
+            "id": "T506-148",
+            "prefLabel": "reproduit en zincographie",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-139"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-149": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-149",
+            "id": "T506-149",
+            "prefLabel": "reproduit sur textile",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-139"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-15": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-15",
+            "id": "T506-15",
+            "prefLabel": "4e état",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-150": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-150",
+            "id": "T506-150",
+            "prefLabel": "traduit en dentelle",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-139"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-151": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-151",
+            "id": "T506-151",
+            "prefLabel": "traduit en ébénisterie",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-139"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-152": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-152",
+            "id": "T506-152",
+            "prefLabel": "traduit en mosaïque",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-139"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-153": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-153",
+            "id": "T506-153",
+            "prefLabel": "traduit en sculpture",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-139"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-154": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-154",
+            "id": "T506-154",
+            "prefLabel": "traduit en tapisserie",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-139"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-155": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-155",
+            "id": "T506-155",
+            "prefLabel": "œuvre en rapport",
+            "altLabels": [
+                "oeuvre en rapport"
+            ],
+            "broader": [],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-158": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-158",
+            "id": "T506-158",
+            "prefLabel": "œuvre inachevée",
+            "altLabels": [
+                "inachevée",
+                "objet inachevé",
+                "oeuvre inachevée"
+            ],
+            "broader": [],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-16": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-16",
+            "id": "T506-16",
+            "prefLabel": "5e état",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-162": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-162",
+            "id": "T506-162",
+            "prefLabel": "moulage",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-103"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-163": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-163",
+            "id": "T506-163",
+            "prefLabel": "édition originale",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-1"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-164": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-164",
+            "id": "T506-164",
+            "prefLabel": "réédition",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-103"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-165": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-165",
+            "id": "T506-165",
+            "prefLabel": "6e état",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-166": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-166",
+            "id": "T506-166",
+            "prefLabel": "projet de vitrail",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-73"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-167": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-167",
+            "id": "T506-167",
+            "prefLabel": "projet de mosaïque",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-73"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-168": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-168",
+            "id": "T506-168",
+            "prefLabel": "reconstitution",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-1"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-169": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-169",
+            "id": "T506-169",
+            "prefLabel": "pièce d'essai",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-1"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-17": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-17",
+            "id": "T506-17",
+            "prefLabel": "7e état",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-170": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-170",
+            "id": "T506-170",
+            "prefLabel": "projet d'éventail",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-77"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-171": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-171",
+            "id": "T506-171",
+            "prefLabel": "projet de forme",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-73"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-173": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-173",
+            "id": "T506-173",
+            "prefLabel": "projet de costume",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-73"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-174": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-174",
+            "id": "T506-174",
+            "prefLabel": "projet d'affiche",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-76"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-175": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-175",
+            "id": "T506-175",
+            "prefLabel": "photomontage",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-25"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-176": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-176",
+            "id": "T506-176",
+            "prefLabel": "8e état",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-18": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-18",
+            "id": "T506-18",
+            "prefLabel": "9e état",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-19": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-19",
+            "id": "T506-19",
+            "prefLabel": "épreuve d'artiste",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-2": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-2",
+            "id": "T506-2",
+            "prefLabel": "bon à tirer",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-1"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-20": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-20",
+            "id": "T506-20",
+            "prefLabel": "état avant la dédicace",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-21": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-21",
+            "id": "T506-21",
+            "prefLabel": "état avant la lettre",
+            "altLabels": [
+                "épreuve avant la lettre"
+            ],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-22": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-22",
+            "id": "T506-22",
+            "prefLabel": "première épreuve",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-8"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-23": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-23",
+            "id": "T506-23",
+            "prefLabel": "épreuve unique",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-8"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-24": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-24",
+            "id": "T506-24",
+            "prefLabel": "marcottage",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-1"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-25": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-25",
+            "id": "T506-25",
+            "prefLabel": "montage",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-1"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-175"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-26": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-26",
+            "id": "T506-26",
+            "prefLabel": "œuvre primée à un concours",
+            "altLabels": [
+                "concours",
+                "oeuvre primée à un concours"
+            ],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-1"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-27",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-28",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-29",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-30",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-31",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-32",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-41"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-27": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-27",
+            "id": "T506-27",
+            "prefLabel": "concours du génie rural",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-26"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-28": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-28",
+            "id": "T506-28",
+            "prefLabel": "grand prix de l'école des beaux-arts de Toulouse",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-26"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-29": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-29",
+            "id": "T506-29",
+            "prefLabel": "morceau de réception",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-26"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-3": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-3",
+            "id": "T506-3",
+            "prefLabel": "commande",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-1"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-30": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-30",
+            "id": "T506-30",
+            "prefLabel": "morceau d'agrément",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-26"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-31": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-31",
+            "id": "T506-31",
+            "prefLabel": "prix de peinture d'après le modèle vivant",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-26"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-32": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-32",
+            "id": "T506-32",
+            "prefLabel": "prix de Rome",
+            "altLabels": [
+                "prix de peinture de l'académie royale"
+            ],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-26"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-33",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-34",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-35",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-37"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-33": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-33",
+            "id": "T506-33",
+            "prefLabel": "prix de Rome de paysage historique",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-32"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-34": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-34",
+            "id": "T506-34",
+            "prefLabel": "prix de Rome de peinture",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-32"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-35": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-35",
+            "id": "T506-35",
+            "prefLabel": "premier grand prix",
+            "altLabels": [
+                "1er grand prix"
+            ],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-32"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-37": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-37",
+            "id": "T506-37",
+            "prefLabel": "second grand prix",
+            "altLabels": [
+                "2d grand prix"
+            ],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-32"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-38"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-38": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-38",
+            "id": "T506-38",
+            "prefLabel": "premier second grand prix",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-37"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-41": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-41",
+            "id": "T506-41",
+            "prefLabel": "prix de la tête d'expression",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-26"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-43": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-43",
+            "id": "T506-43",
+            "prefLabel": "pièce unique",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-1"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-44": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-44",
+            "id": "T506-44",
+            "prefLabel": "prototype",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-1"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-45": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-45",
+            "id": "T506-45",
+            "prefLabel": "tirage d'époque",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-1"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-46": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-46",
+            "id": "T506-46",
+            "prefLabel": "œuvre préparatoire",
+            "altLabels": [
+                "oeuvre préparatoire"
+            ],
+            "broader": [],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-47",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-48",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-53",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-54",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-55",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-56",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-71",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-72",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-73"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-47": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-47",
+            "id": "T506-47",
+            "prefLabel": "croquis",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-46"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-48": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-48",
+            "id": "T506-48",
+            "prefLabel": "dessin pour le report",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-46"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-49",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-50",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-51",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-52"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-49": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-49",
+            "id": "T506-49",
+            "prefLabel": "dessin incisé pour le report",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-48"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-5": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-5",
+            "id": "T506-5",
+            "prefLabel": "décor déposé",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-1"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-6",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-7"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-50": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-50",
+            "id": "T506-50",
+            "prefLabel": "dessin mis aux carreaux",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-48"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-51": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-51",
+            "id": "T506-51",
+            "prefLabel": "dessin piqué pour le report",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-48"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-52": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-52",
+            "id": "T506-52",
+            "prefLabel": "dessin sur calque",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-48"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-53": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-53",
+            "id": "T506-53",
+            "prefLabel": "ébauche",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-46"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-54": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-54",
+            "id": "T506-54",
+            "prefLabel": "esquisse",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-46"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-55": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-55",
+            "id": "T506-55",
+            "prefLabel": "étude",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-46"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-56": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-56",
+            "id": "T506-56",
+            "prefLabel": "modèle",
+            "altLabels": [
+                "carton",
+                "poncif"
+            ],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-46"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-57",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-59",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-60",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-61",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-63",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-64",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-65",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-67"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-57": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-57",
+            "id": "T506-57",
+            "prefLabel": "carton de broderie",
+            "altLabels": [
+                "modèle de broderie"
+            ],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-56"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-59": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-59",
+            "id": "T506-59",
+            "prefLabel": "carton de dentelle",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-56"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-6": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-6",
+            "id": "T506-6",
+            "prefLabel": "ensemble concerté",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-5"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-60": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-60",
+            "id": "T506-60",
+            "prefLabel": "carton de peinture",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-56"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-61": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-61",
+            "id": "T506-61",
+            "prefLabel": "carton de tapisserie",
+            "altLabels": [
+                "modèle de tapisserie"
+            ],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-56"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-63": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-63",
+            "id": "T506-63",
+            "prefLabel": "carton de tissu",
+            "altLabels": [
+                "modèle de tissu"
+            ],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-56"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-64": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-64",
+            "id": "T506-64",
+            "prefLabel": "carton de vitrail",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-56"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-65": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-65",
+            "id": "T506-65",
+            "prefLabel": "modèle d'atelier",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-56"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-67": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-67",
+            "id": "T506-67",
+            "prefLabel": "modèle original",
+            "altLabels": [
+                "original"
+            ],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-56"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-7": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-7",
+            "id": "T506-7",
+            "prefLabel": "ensemble homogène",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-5"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-71": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-71",
+            "id": "T506-71",
+            "prefLabel": "peinture mise aux carreaux",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-46"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-72": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-72",
+            "id": "T506-72",
+            "prefLabel": "pochade",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-46"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-73": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-73",
+            "id": "T506-73",
+            "prefLabel": "projet",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-46"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-166",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-167",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-171",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-173",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-74",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-75",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-76",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-77",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-87",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-89",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-92",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-93",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-94",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-95"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-74": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-74",
+            "id": "T506-74",
+            "prefLabel": "modello",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-73"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-75": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-75",
+            "id": "T506-75",
+            "prefLabel": "projet d'architecture",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-73"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-76": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-76",
+            "id": "T506-76",
+            "prefLabel": "projet d'illustration",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-73"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-174"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-77": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-77",
+            "id": "T506-77",
+            "prefLabel": "projet de décor",
+            "altLabels": [
+                "projet de décoration"
+            ],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-73"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-170",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-81",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-82",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-84",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-85"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-8": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-8",
+            "id": "T506-8",
+            "prefLabel": "épreuve",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-1"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-10",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-11",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-22",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-23",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-9",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/ea5ag3xf6vlhgfttluub"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-81": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-81",
+            "id": "T506-81",
+            "prefLabel": "projet de décor de céramique",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-77"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-82": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-82",
+            "id": "T506-82",
+            "prefLabel": "projet de décor éphémère",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-77"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-83"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-83": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-83",
+            "id": "T506-83",
+            "prefLabel": "projet de décor de théâtre",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-82"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-84": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-84",
+            "id": "T506-84",
+            "prefLabel": "projet de décor de paquebot",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-77"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-85": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-85",
+            "id": "T506-85",
+            "prefLabel": "projet de décor de tissu",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-77"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-87": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-87",
+            "id": "T506-87",
+            "prefLabel": "projet de mobilier",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-73"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-89": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-89",
+            "id": "T506-89",
+            "prefLabel": "projet de papier peint",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-73"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-9": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-9",
+            "id": "T506-9",
+            "prefLabel": "épreuve barrée",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-8"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-92": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-92",
+            "id": "T506-92",
+            "prefLabel": "projet de sculpture",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-73"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-93": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-93",
+            "id": "T506-93",
+            "prefLabel": "projet de tapis",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-73"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-94": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-94",
+            "id": "T506-94",
+            "prefLabel": "projet de tapisserie",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-73"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-95": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-95",
+            "id": "T506-95",
+            "prefLabel": "projet pour un objet",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-73"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/ea5ag3xf6vlhgfttluub": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/ea5ag3xf6vlhgfttluub",
+            "id": "332470",
+            "prefLabel": "épreuve d'édition",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-8"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/flj99bqllj8sdj94k1lh-8": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/flj99bqllj8sdj94k1lh-8",
+            "id": "886641",
+            "prefLabel": "travail d'élève",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-1"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/tk4vk3728jf3msk59f8p-p": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/tk4vk3728jf3msk59f8p-p",
+            "id": "928357",
+            "prefLabel": "chef-d'œuvre",
+            "altLabels": [],
+            "broader": [],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/xf2du2ngkwfgcpjv5sxj": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/xf2du2ngkwfgcpjv5sxj",
+            "id": "398941",
+            "prefLabel": "affixe",
+            "altLabels": [],
+            "broader": [],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/z89k1qjf79k2key4zhhg"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/z89k1qjf79k2key4zhhg": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/z89k1qjf79k2key4zhhg",
+            "id": "398942",
+            "prefLabel": "incertain",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/xf2du2ngkwfgcpjv5sxj"
+            ],
+            "narrower": []
+        }
+    },
+    "roots": [
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/2b2b0a9a-8d0b-4ee4-939d-2d4899bc0584",
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-1",
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-103",
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-139",
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-155",
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-158",
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T506-46",
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/tk4vk3728jf3msk59f8p-p",
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/xf2du2ngkwfgcpjv5sxj"
+    ]
+}
