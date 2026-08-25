@@ -41,10 +41,10 @@ if (!isset($campagnes) || !$campagnes) {
 			animation: progress 8s linear infinite;
 		}
 	</style>
-	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 	<script type="text/javascript">
-		google.load("visualization", "1", {packages: ["corechart"]});
-		google.setOnLoadCallback(drawChart);
+		google.charts.load("current", {packages: ["corechart"]});
+		google.charts.setOnLoadCallback(drawChart);
 		function drawChart() {
 			var data = google.visualization.arrayToDataTable([
 				['Récolés', 'Récolés', 'A récoler', { role: 'annotation' } ],
