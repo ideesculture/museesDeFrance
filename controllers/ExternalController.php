@@ -1,8 +1,10 @@
 <?php
 
-require_once(__CA_LIB_DIR__ . '/core/Configuration.php');
+// Détecte la structure de la librairie : ancienne (app/lib/core/, app/lib/ca/) vs plate (app/lib/).
+$vb_prefix = file_exists(__CA_LIB_DIR__ . '/core/Configuration.php');
+require_once(__CA_LIB_DIR__ . ($vb_prefix ? "/core" : "") . '/Configuration.php');
 require_once(__CA_MODELS_DIR__ . '/ca_occurrences.php');
-require_once(__CA_LIB_DIR__ . '/ca/Search/OccurrenceSearch.php');
+require_once(__CA_LIB_DIR__ . ($vb_prefix ? "/ca" : "") . '/Search/OccurrenceSearch.php');
 
 class ExternalController extends ActionController
 {

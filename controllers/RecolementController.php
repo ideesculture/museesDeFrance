@@ -1,5 +1,7 @@
 <?php
-if(__CollectiveAccess_Schema_Rev__<178) { $vb_prefix = true;} else { $vb_prefix = false;}
+// Détecte la structure de la librairie : ancienne (app/lib/core/, app/lib/ca/) vs plate (app/lib/).
+// Basé sur l'existence réelle du fichier plutôt que sur la révision de schéma (seuil peu fiable selon les installs).
+$vb_prefix = file_exists(__CA_LIB_DIR__ . '/core/Configuration.php');
 require_once(__CA_LIB_DIR__ . ($vb_prefix ? "/core" : "").'/Configuration.php');
 require_once(__CA_MODELS_DIR__ . '/ca_objects.php');
 require_once(__CA_MODELS_DIR__ . '/ca_occurrences.php');
