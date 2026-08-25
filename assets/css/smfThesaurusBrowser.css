@@ -152,3 +152,11 @@
     text-decoration: none;
 }
 .smf-tb-open-btn:hover { background: #e9f1fc; border-color: #3b7dd8; }
+
+/* Lazy-mode inline states (loading children / searching) */
+.smf-tb-loading .smf-tb-crumb,
+.smf-tb-noresult {
+    color: #888;
+    font-style: italic;
+}
+.smf-tb-loading { pointer-events: none; }

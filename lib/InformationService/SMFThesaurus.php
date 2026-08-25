@@ -24,6 +24,7 @@
 
 require_once(__CA_LIB_DIR__."/Plugins/IWLPlugInformationService.php");
 require_once(__CA_LIB_DIR__."/Plugins/InformationService/BaseInformationServicePlugin.php");
+require_once(__DIR__."/SMFThesaurusStore.php");
 
 global $g_information_service_settings_SMFThesaurus;
 $g_information_service_settings_SMFThesaurus = array(
@@ -96,9 +97,7 @@ class WLPlugInformationServiceSMFThesaurus extends BaseInformationServicePlugin 
 	 * @return string|null validated id or null if invalid
 	 */
 	private function validateThesaurusId($pm_thesaurus) {
-		if (!is_string($pm_thesaurus)) { return null; }
-		if (!preg_match('/^th[0-9]+$/', $pm_thesaurus)) { return null; }
-		return $pm_thesaurus;
+		return SMFThesaurusStore::validateThesaurusId($pm_thesaurus);
 	}
 	# ------------------------------------------------
 	/**
@@ -116,103 +115,20 @@ class WLPlugInformationServiceSMFThesaurus extends BaseInformationServicePlugin 
 	}
 	# ------------------------------------------------
 	/**
-	 * Absolute path to the flat store for a (validated) thesaurus id.
-	 *
-	 * @param string $ps_thesaurus already-validated id
-	 * @return string
-	 */
-	private function storePath($ps_thesaurus) {
-		// __FILE__ = .../museesDeFrance/lib/InformationService/SMFThesaurus.php
-		// store   = .../museesDeFrance/assets/thesauri/<id>.json
-		return dirname(__FILE__, 3) . '/assets/thesauri/' . $ps_thesaurus . '.json';
-	}
-	# ------------------------------------------------
-	/**
-	 * Load + decode + cache the flat store for a thesaurus. Read-only.
+	 * Load the COMPACT derived bundle (persistent-cached; the full 17 MB JSON is
+	 * only re-parsed on a cache miss). This is what lookup()/resolution use so a
+	 * native autocomplete keystroke on th285 never re-parses the whole store.
 	 *
 	 * @param array $pa_settings
-	 * @return array|null decoded store or null on failure
+	 * @return array|null compact bundle or null on failure
 	 */
-	private function loadStore($pa_settings) {
+	private function loadCompact($pa_settings) {
 		$vs_thesaurus = $this->getThesaurusId($pa_settings);
 		if ($vs_thesaurus === null) { return null; }
-
-		if (isset(WLPlugInformationServiceSMFThesaurus::$s_store_cache[$vs_thesaurus])) {
-			return WLPlugInformationServiceSMFThesaurus::$s_store_cache[$vs_thesaurus];
-		}
-
-		$vs_path = $this->storePath($vs_thesaurus);
-		if (!is_file($vs_path) || !is_readable($vs_path)) {
-			return null;
-		}
-
-		$vs_raw = @file_get_contents($vs_path);
-		if ($vs_raw === false) { return null; }
-
-		// JSON only — never unserialize external data.
-		$va_store = json_decode($vs_raw, true);
-		if (!is_array($va_store) || !isset($va_store['concepts']) || !is_array($va_store['concepts'])) {
-			return null;
-		}
-
-		WLPlugInformationServiceSMFThesaurus::$s_store_cache[$vs_thesaurus] = $va_store;
-		return $va_store;
-	}
-	# ------------------------------------------------
-	# Text normalization
-	# ------------------------------------------------
-	/**
-	 * Case- and accent-insensitive normalization. Does not rely on intl/iconv
-	 * (not guaranteed here); uses an explicit transliteration table + mb_strtolower.
-	 *
-	 * @param string $ps_text
-	 * @return string
-	 */
-	private function normalize($ps_text) {
-		if (!is_string($ps_text) || $ps_text === '') { return ''; }
-
-		$vs = function_exists('mb_strtolower') ? mb_strtolower($ps_text, 'UTF-8') : strtolower($ps_text);
-
-		static $va_map = null;
-		if ($va_map === null) {
-			$va_map = array(
-				'à'=>'a','á'=>'a','â'=>'a','ã'=>'a','ä'=>'a','å'=>'a','ā'=>'a','ă'=>'a','ą'=>'a',
-				'ç'=>'c','ć'=>'c','č'=>'c',
-				'è'=>'e','é'=>'e','ê'=>'e','ë'=>'e','ē'=>'e','ė'=>'e','ę'=>'e','ě'=>'e',
-				'ì'=>'i','í'=>'i','î'=>'i','ï'=>'i','ī'=>'i','į'=>'i',
-				'ñ'=>'n','ń'=>'n',
-				'ò'=>'o','ó'=>'o','ô'=>'o','õ'=>'o','ö'=>'o','ø'=>'o','ō'=>'o','œ'=>'oe',
-				'ù'=>'u','ú'=>'u','û'=>'u','ü'=>'u','ū'=>'u','ů'=>'u',
-				'ý'=>'y','ÿ'=>'y',
-				'ß'=>'ss','æ'=>'ae',
-			);
-		}
-		$vs = strtr($vs, $va_map);
-		// Collapse runs of whitespace for stable prefix/substring matching.
-		$vs = preg_replace('/\s+/u', ' ', $vs);
-		return trim($vs);
+		return SMFThesaurusStore::compact($vs_thesaurus);
 	}
 	# ------------------------------------------------
 	# Data
-	# ------------------------------------------------
-	/**
-	 * Find a single concept by exact URI or exact id.
-	 *
-	 * @param array $pa_store
-	 * @param string $ps_needle
-	 * @return array|null concept node or null
-	 */
-	private function resolveExact($pa_store, $ps_needle) {
-		if (isset($pa_store['concepts'][$ps_needle])) {
-			return $pa_store['concepts'][$ps_needle];
-		}
-		foreach ($pa_store['concepts'] as $va_concept) {
-			if (isset($va_concept['id']) && (string) $va_concept['id'] === (string) $ps_needle) {
-				return $va_concept;
-			}
-		}
-		return null;
-	}
 	# ------------------------------------------------
 	/**
 	 * Perform lookup against the flat SMF thesaurus store.
@@ -237,18 +153,20 @@ class WLPlugInformationServiceSMFThesaurus extends BaseInformationServicePlugin 
 		if (!is_array($pa_options)) { $pa_options = array(); }
 		$va_return = array('results' => array());
 
-		$va_store = $this->loadStore($pa_settings);
-		if ($va_store === null) { return $va_return; }
+		// Served entirely from the COMPACT bundle (persistent-cached): a keystroke
+		// on the 17 MB th285 store does NOT re-parse the full JSON.
+		$va_compact = $this->loadCompact($pa_settings);
+		if ($va_compact === null) { return $va_return; }
 
 		$ps_search = is_string($ps_search) ? trim($ps_search) : '';
 		if ($ps_search === '') { return $va_return; }
 
 		// --- 1) exact resolution by URI or id -------------------------------
-		$va_exact = $this->resolveExact($va_store, $ps_search);
+		$va_exact = SMFThesaurusStore::resolveExactC($va_compact, $ps_search);
 		if (isURL($ps_search) || $va_exact !== null) {
 			if ($va_exact !== null) {
 				$va_return['results'][] = array(
-					'label' => (string) $va_exact['prefLabel'],
+					'label' => (string) $va_exact['label'],
 					'url'   => (string) $va_exact['uri'],
 					'idno'  => '',
 				);
@@ -256,7 +174,7 @@ class WLPlugInformationServiceSMFThesaurus extends BaseInformationServicePlugin 
 			return $va_return;
 		}
 
-		// --- 2) case/accent-insensitive text search -------------------------
+		// --- 2) case/accent-insensitive text search (compact searchIndex) ---
 		$vn_limit = (int) caGetOption('limit', $pa_options, 0);
 		if ($vn_limit <= 0) {
 			$vn_limit = (int) (is_array($pa_settings) && isset($pa_settings['limit']) && (int)$pa_settings['limit'] > 0
@@ -264,44 +182,7 @@ class WLPlugInformationServiceSMFThesaurus extends BaseInformationServicePlugin 
 				: WLPlugInformationServiceSMFThesaurus::$s_settings['limit']['default']);
 		}
 
-		$vs_needle = $this->normalize($ps_search);
-		if ($vs_needle === '') { return $va_return; }
-
-		$va_prefix = array();
-		$va_substr = array();
-
-		foreach ($va_store['concepts'] as $va_concept) {
-			$va_haystacks = array((string) $va_concept['prefLabel']);
-			if (isset($va_concept['altLabels']) && is_array($va_concept['altLabels'])) {
-				foreach ($va_concept['altLabels'] as $vs_alt) { $va_haystacks[] = (string) $vs_alt; }
-			}
-
-			$vb_prefix = false;
-			$vb_substr = false;
-			foreach ($va_haystacks as $vs_h) {
-				$vs_hn = $this->normalize($vs_h);
-				if ($vs_hn === '') { continue; }
-				$vn_pos = mb_strpos($vs_hn, $vs_needle, 0, 'UTF-8');
-				if ($vn_pos === 0)          { $vb_prefix = true; break; }
-				if ($vn_pos !== false)      { $vb_substr = true; }
-			}
-
-			if ($vb_prefix || $vb_substr) {
-				$va_row = array(
-					'label' => (string) $va_concept['prefLabel'],
-					'url'   => (string) $va_concept['uri'],
-					'idno'  => '',
-				);
-				if ($vb_prefix) { $va_prefix[] = $va_row; } else { $va_substr[] = $va_row; }
-			}
-		}
-
-		$va_results = array_merge($va_prefix, $va_substr);
-		if (count($va_results) > $vn_limit) {
-			$va_results = array_slice($va_results, 0, $vn_limit);
-		}
-
-		$va_return['results'] = $va_results;
+		$va_return['results'] = SMFThesaurusStore::lookupTextC($va_compact, $ps_search, $vn_limit);
 		return $va_return;
 	}
 	# ------------------------------------------------
@@ -325,13 +206,13 @@ class WLPlugInformationServiceSMFThesaurus extends BaseInformationServicePlugin 
 	 * @return array
 	 */
 	public function getDataForSearchIndexing($pa_settings, $ps_url) {
-		$va_store = $this->loadStore($pa_settings);
-		if ($va_store === null || !is_string($ps_url) || $ps_url === '') { return array(); }
+		$va_compact = $this->loadCompact($pa_settings);
+		if ($va_compact === null || !is_string($ps_url) || $ps_url === '') { return array(); }
 
-		$va_concept = $this->resolveExact($va_store, $ps_url);
+		$va_concept = SMFThesaurusStore::resolveExactC($va_compact, $ps_url);
 		if ($va_concept === null) { return array(); }
 
-		$vs_label = (string) $va_concept['prefLabel'];
+		$vs_label = (string) $va_concept['label'];
 		return $vs_label !== '' ? array($vs_label) : array();
 	}
 	# ------------------------------------------------
@@ -344,32 +225,32 @@ class WLPlugInformationServiceSMFThesaurus extends BaseInformationServicePlugin 
 	 * @return array
 	 */
 	public function getExtraInfo($pa_settings, $ps_url) {
-		$va_store = $this->loadStore($pa_settings);
-		if ($va_store === null || !is_string($ps_url) || $ps_url === '') { return array(); }
+		$va_compact = $this->loadCompact($pa_settings);
+		if ($va_compact === null || !is_string($ps_url) || $ps_url === '') { return array(); }
 
-		$va_concept = $this->resolveExact($va_store, $ps_url);
+		$va_concept = SMFThesaurusStore::resolveExactC($va_compact, $ps_url);
 		if ($va_concept === null) { return array(); }
+		$vs_uri = (string) $va_concept['uri'];
 
-		// Walk the broader chain up to roots (guard against cycles).
-		$va_path = array();
-		$vs_cur = (string) $va_concept['uri'];
-		$va_seen = array();
-		while ($vs_cur !== '' && isset($va_store['concepts'][$vs_cur]) && !isset($va_seen[$vs_cur])) {
-			$va_seen[$vs_cur] = true;
-			$va_node = $va_store['concepts'][$vs_cur];
-			array_unshift($va_path, (string) $va_node['prefLabel']);
-			$vs_cur = (isset($va_node['broader'][0])) ? (string) $va_node['broader'][0] : '';
-		}
+		// Delegate the breadcrumb to the shared helper's compact path (follows the
+		// FIRST VALID broader edge with a cycle guard, from the persistent-cached
+		// bundle), so the fil d'ariane matches the browse widget exactly without a
+		// 17 MB re-parse.
+		$va_path_rows = SMFThesaurusStore::pathC($va_compact, $vs_uri);
 
 		$va_path_escaped = array();
-		foreach ($va_path as $vs_p) {
-			$va_path_escaped[] = htmlspecialchars($vs_p, ENT_QUOTES, 'UTF-8');
+		foreach ($va_path_rows as $va_row) {
+			$va_path_escaped[] = htmlspecialchars((string) $va_row['label'], ENT_QUOTES, 'UTF-8');
 		}
 
 		// 'id' here is a free-form informational blob for the detail panel (NOT a
-		// lookup result key mapped to value_decimal1); it carries the Opentheso id.
+		// lookup result key mapped to value_decimal1); it carries the Opentheso id,
+		// which is the trailing segment of the concept URI.
+		$va_seg = explode('/', $vs_uri);
+		$vs_id  = (string) end($va_seg);
+
 		return array(
-			'id'   => (string) $va_concept['id'],
+			'id'   => $vs_id,
 			'path' => join(' &raquo; ', $va_path_escaped),
 		);
 	}
@@ -383,15 +264,15 @@ class WLPlugInformationServiceSMFThesaurus extends BaseInformationServicePlugin 
 	 * @return array array('display' => html)
 	 */
 	public function getExtendedInformation($pa_settings, $ps_url) {
-		$va_store = $this->loadStore($pa_settings);
-		if ($va_store === null || !is_string($ps_url) || $ps_url === '') {
+		$va_compact = $this->loadCompact($pa_settings);
+		if ($va_compact === null || !is_string($ps_url) || $ps_url === '') {
 			return array('display' => '');
 		}
 
-		$va_concept = $this->resolveExact($va_store, $ps_url);
+		$va_concept = SMFThesaurusStore::resolveExactC($va_compact, $ps_url);
 		if ($va_concept === null) { return array('display' => ''); }
 
-		$vs_label = htmlspecialchars((string) $va_concept['prefLabel'], ENT_QUOTES, 'UTF-8');
+		$vs_label = htmlspecialchars((string) $va_concept['label'], ENT_QUOTES, 'UTF-8');
 		$vs_url   = htmlspecialchars((string) $va_concept['uri'], ENT_QUOTES, 'UTF-8');
 
 		$va_extra = $this->getExtraInfo($pa_settings, $ps_url);
