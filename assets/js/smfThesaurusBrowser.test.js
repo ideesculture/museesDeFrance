@@ -175,6 +175,145 @@ test('every stored concept produces a parseable 3-segment value', function () {
     });
 });
 
-console.log('\n== Summary ==');
-console.log('  passed: ' + passed + ', failed: ' + failed);
-process.exit(failed === 0 ? 0 : 1);
+console.log('\n== HEAD version probe (fetchStoreVersion) ==');
+
+// Minimal Headers-like shim (case-insensitive get) for the stubbed fetch.
+function fakeHeaders(map) {
+    var lower = {};
+    Object.keys(map || {}).forEach(function (k) { lower[k.toLowerCase()] = map[k]; });
+    return { get: function (k) { var v = lower[String(k).toLowerCase()]; return (v === undefined) ? null : v; } };
+}
+function withFetch(stub, fn) {
+    var prev = global.fetch;
+    global.fetch = stub;
+    return Promise.resolve().then(fn).then(
+        function (v) { global.fetch = prev; return v; },
+        function (e) { global.fetch = prev; throw e; }
+    );
+}
+// Tiny async test runner: collects promises, reports at the end.
+var asyncChain = Promise.resolve();
+function atest(name, fn) {
+    asyncChain = asyncChain.then(function () {
+        return Promise.resolve().then(fn).then(
+            function () { passed++; console.log('  ok   - ' + name); },
+            function (e) { failed++; console.log('  FAIL - ' + name + '\n         ' + (e && e.message ? e.message : e)); }
+        );
+    });
+}
+
+atest('fetchStoreVersion returns lm:<Last-Modified> when present', function () {
+    return withFetch(function (url, opts) {
+        assert.strictEqual(opts.method, 'HEAD');
+        assert.strictEqual(opts.credentials, 'same-origin');
+        return Promise.resolve({ ok: true, headers: fakeHeaders({ 'Last-Modified': 'Mon, 01 Jan 2024 00:00:00 GMT' }) });
+    }, function () {
+        return SMF.fetchStoreVersion('/x/th1.json').then(function (v) {
+            assert.strictEqual(v, 'lm:Mon, 01 Jan 2024 00:00:00 GMT');
+        });
+    });
+});
+
+atest('fetchStoreVersion falls back to et:<ETag> when no Last-Modified', function () {
+    return withFetch(function () {
+        return Promise.resolve({ ok: true, headers: fakeHeaders({ 'ETag': '"abc123"' }) });
+    }, function () {
+        return SMF.fetchStoreVersion('/x/th1.json').then(function (v) { assert.strictEqual(v, 'et:"abc123"'); });
+    });
+});
+
+atest('fetchStoreVersion resolves null on network error (caller will GET)', function () {
+    return withFetch(function () { return Promise.reject(new Error('offline')); }, function () {
+        return SMF.fetchStoreVersion('/x/th1.json').then(function (v) { assert.strictEqual(v, null); });
+    });
+});
+
+console.log('\n== ClientProvider: IndexedDB freshness + fallback ==');
+
+var MINI_STORE = { meta: { concept_count: 1 }, roots: ['u1'], concepts: { u1: { uri: 'u1', prefLabel: 'Root', broader: [], narrower: [] } } };
+
+atest('inline data builds without any network', function () {
+    return withFetch(function () { throw new Error('must not fetch'); }, function () {
+        var p = new SMF.ClientProvider({ data: MINI_STORE });
+        return p.ready().then(function () { return p.getRoots(); }).then(function (rows) {
+            assert.strictEqual(rows.length, 1);
+            assert.strictEqual(rows[0].label, 'Root');
+        });
+    });
+});
+
+atest('no thesaurus id -> plain GET (no HEAD, no IndexedDB)', function () {
+    var calls = [];
+    return withFetch(function (url, opts) {
+        calls.push((opts && opts.method) || 'GET');
+        return Promise.resolve({ ok: true, json: function () { return Promise.resolve(MINI_STORE); } });
+    }, function () {
+        var p = new SMF.ClientProvider({ url: '/x/th1.json' });   // no thesaurus -> idb path skipped
+        return p.ready().then(function () {
+            assert.deepStrictEqual(calls, ['GET'], 'expected a single GET, got: ' + calls.join(','));
+            return p.getRoots();
+        }).then(function (rows) { assert.strictEqual(rows[0].uri, 'u1'); });
+    });
+});
+
+// A fake `indexedDB` whose open() errors: it makes idbAvailable() true (so the
+// provider takes the HEAD + IDB path) while idbGet()/idbPut() reject, exercising
+// the transparent GET fallback. The true "served from IndexedDB, no GET" path is
+// browser-only (structured clone) and is left for human validation.
+function withFakeIndexedDB(fn) {
+    var prev = global.indexedDB;
+    global.indexedDB = {
+        open: function () {
+            var req = {};
+            setTimeout(function () { if (typeof req.onerror === 'function') { req.error = new Error('idb open failed'); req.onerror(); } }, 0);
+            return req;
+        }
+    };
+    return Promise.resolve().then(fn).then(
+        function (v) { global.indexedDB = prev; return v; },
+        function (e) { global.indexedDB = prev; throw e; }
+    );
+}
+
+atest('IndexedDB available: HEAD is probed, then IDB error -> GET fallback', function () {
+    var methods = [];
+    return withFakeIndexedDB(function () {
+        return withFetch(function (url, opts) {
+            var m = (opts && opts.method) || 'GET';
+            methods.push(m);
+            if (m === 'HEAD') { return Promise.resolve({ ok: true, headers: fakeHeaders({ 'Last-Modified': 'V1' }) }); }
+            return Promise.resolve({ ok: true, json: function () { return Promise.resolve(MINI_STORE); } });
+        }, function () {
+            var p = new SMF.ClientProvider({ thesaurus: 'th1', url: '/x/th1.json' });
+            return p.ready().then(function () {
+                assert.ok(methods.indexOf('HEAD') !== -1, 'expected a HEAD probe, got: ' + methods.join(','));
+                assert.ok(methods.indexOf('GET') !== -1, 'expected a GET fallback, got: ' + methods.join(','));
+                return p.getRoots();
+            }).then(function (rows) { assert.strictEqual(rows[0].uri, 'u1'); });
+        });
+    });
+});
+
+atest('HEAD rejects -> transparent fallback to a direct GET', function () {
+    var methods = [];
+    return withFakeIndexedDB(function () {
+        return withFetch(function (url, opts) {
+            var m = (opts && opts.method) || 'GET';
+            methods.push(m);
+            if (m === 'HEAD') { return Promise.reject(new Error('no HEAD')); }
+            return Promise.resolve({ ok: true, json: function () { return Promise.resolve(MINI_STORE); } });
+        }, function () {
+            var p = new SMF.ClientProvider({ thesaurus: 'th1', url: '/x/th1.json' });
+            return p.ready().then(function () {
+                assert.ok(methods.indexOf('GET') !== -1, 'expected a GET fallback, got: ' + methods.join(','));
+                return p.getRoots();
+            }).then(function (rows) { assert.strictEqual(rows[0].uri, 'u1'); });
+        });
+    });
+});
+
+asyncChain.then(function () {
+    console.log('\n== Summary ==');
+    console.log('  passed: ' + passed + ', failed: ' + failed);
+    process.exit(failed === 0 ? 0 : 1);
+});

@@ -206,16 +206,76 @@ class museesDeFrancePlugin extends BaseApplicationPlugin
 		print "<script type='text/javascript'>".file_get_contents(__CA_APP_DIR__."/plugins/museesDeFrance/assets/js/delimiteur.js")."</script>";
 		print "<link rel='stylesheet' href='".__CA_URL_ROOT__."/app/plugins/museesDeFrance/assets/css/delimiteur.css' type='text/css' media='all'> yea";
 
-		// --- Arborescent thesaurus picker (element 174 "domaine", service SMFThesaurus) ---
-		// Loaded globally; the attach script is a no-op on pages without an element-174 field.
+		// --- Arborescent thesaurus picker (ALL SMFThesaurus InformationService elements) ---
+		// Loaded globally; the attach script is a no-op on pages that contain no
+		// matching InformationService field. Instead of pinning a single element
+		// (174) / thesaurus (th294), we publish a MAP element_id -> thesaurus_id
+		// for EVERY datatype=20 metadata element whose service is SMFThesaurus,
+		// so the widget attaches to domaine/epoque/fonctions/useMethod and any
+		// future SMFThesaurus element. Every thesaurus (th285 included) is served
+		// by the SAME "tout client + IndexedDB" path from the static JSON stores
+		// under SMF_THESAURUS_BASE_URL; there is no server browse endpoint.
 		$vs_mdf_base = __CA_URL_ROOT__."/app/plugins/museesDeFrance/assets";
+		$va_thesaurus_map = $this->getSMFThesaurusMap();
 		print "<link rel='stylesheet' href='".$vs_mdf_base."/css/smfThesaurusBrowser.css' type='text/css' media='all'>";
-		print "<script type='text/javascript'>window.SMF_THESAURUS_URL = ".json_encode($vs_mdf_base."/thesauri/th294.json").";</script>";
+		print "<script type='text/javascript'>"
+			."window.SMF_THESAURUS_MAP = ".json_encode($va_thesaurus_map, JSON_UNESCAPED_SLASHES).";"
+			."window.SMF_THESAURUS_BASE_URL = ".json_encode($vs_mdf_base."/thesauri").";"
+			."</script>";
 		print "<script type='text/javascript' src='".$vs_mdf_base."/js/smfThesaurusBrowser.js'></script>";
 		print "<script type='text/javascript' src='".$vs_mdf_base."/js/smfThesaurusAttach.js'></script>";
 
 		return $pa_menu_bar;
 	}
+
+	# -------------------------------------------------------
+	/**
+	 * Build the element_id -> thesaurus_id map for every InformationService
+	 * (datatype 20) metadata element whose service is "SMFThesaurus".
+	 *
+	 * Candidate element_ids are fetched with a PREPARED query on
+	 * ca_metadata_elements (datatype 20 only); the per-element `service` and
+	 * `thesaurus` values are then read through the ca_metadata_elements MODEL
+	 * API (getSetting), never by unserializing the raw `settings` blob here.
+	 *
+	 * @return array { "<element_id>": "<thesaurus_id>", ... }
+	 */
+	private function getSMFThesaurusMap() {
+		$va_map = array();
+		try {
+			if (!class_exists('ca_metadata_elements') && defined('__CA_MODELS_DIR__')) {
+				require_once(__CA_MODELS_DIR__ . '/ca_metadata_elements.php');
+			}
+			$o_db = new Db();
+			// datatype 20 = InformationService (see attribute_types.conf).
+			$qr = $o_db->query(
+				"SELECT element_id FROM ca_metadata_elements WHERE datatype = ?",
+				array(20)
+			);
+			if (!$qr) { return $va_map; }
+
+			while ($qr->nextRow()) {
+				$vn_element_id = (int) $qr->get('element_id');
+				if ($vn_element_id <= 0) { continue; }
+
+				$t_element = new ca_metadata_elements($vn_element_id);
+				if (!$t_element->getPrimaryKey()) { continue; }
+
+				$vs_service = trim((string) $t_element->getSetting('service'));
+				if ($vs_service !== 'SMFThesaurus') { continue; }
+
+				$vs_thesaurus = trim((string) $t_element->getSetting('thesaurus'));
+				if ($vs_thesaurus === '' || !preg_match('/^th[0-9]+$/', $vs_thesaurus)) { continue; }
+
+				$va_map[(string) $vn_element_id] = $vs_thesaurus;
+			}
+		} catch (Exception $e) {
+			// Non-fatal: on any failure the widget simply attaches to nothing.
+			return array();
+		}
+		return $va_map;
+	}
+	# -------------------------------------------------------
 
 	public function hookRenderWidgets($pa_widgets_config)
 	{

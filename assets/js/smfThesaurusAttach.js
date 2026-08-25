@@ -4,26 +4,26 @@
  * CollectiveAccess integration glue for the arborescent thesaurus picker.
  *
  * Augments (does NOT replace) the stock InformationService autocomplete field
- * for the "domaine" element (element_id 174, service SMFThesaurus) in the
- * object editor: it injects a "Parcourir l'arbre" button next to each IS
- * input. Clicking it opens a modal hosting smfThesaurusBrowser. On selection
- * the widget writes the EXACT `prefLabel||uri` string into the attribute's
- * HIDDEN input and mirrors the label into the visible autocomplete input,
- * then fires the `change` event CollectiveAccess listens for.
+ * for EVERY metadata element served by the SMFThesaurus InformationService
+ * plugin (domaine/epoque/fonctions/useMethod and any future one). For each such
+ * IS input it injects a "Parcourir l'arbre" button; clicking it opens a modal
+ * hosting smfThesaurusBrowser. On selection the widget writes the EXACT
+ * `prefLabel||uri` string into the attribute's HIDDEN input and mirrors the
+ * label into the visible autocomplete input, then fires `change`.
  *
- * Loaded globally by museesDeFrancePlugin::hookRenderMenuBar (same mechanism
- * already used for delimiteur.js/css). It is a no-op on pages that contain no
- * element-174 InformationService field, so it is safe to load everywhere.
+ * The element -> thesaurus wiring is data-driven: the plugin hook publishes
+ *   window.SMF_THESAURUS_MAP  = { "<element_id>": "<thesaurus_id>", ... }
+ *   window.SMF_THESAURUS_BASE_URL = base URL of the static JSON stores
+ * We scan for inputs whose id looks like `infoservice_<element_id>_autocomplete*`,
+ * extract <element_id>, and only decorate it if it is present in the map. Every
+ * thesaurus (th285 included) opens with the SAME "tout client + IndexedDB"
+ * ClientProvider: the static store JSON is downloaded once, persisted in
+ * IndexedDB, and reloaded from there on subsequent opens (freshness checked by a
+ * HEAD/Last-Modified probe inside the provider). No server browse endpoint.
  *
- * IMPORTANT (DOM contract — see rapport, must be visually verified in a
- * browser): CollectiveAccess renders, per attribute value:
- *   - a visible text input   id="infoservice_174_autocomplete<N>"
- *     (class from htmlFormElement, e.g. "lookupBg")
- *   - a hidden input         id="<fieldNamePrefix>174_<N>"  name="...174_<N>"
- *     -> this is the field parseValue() reads; we write `prefLabel||uri` here
- *   - a "More" link          class="caInformationServiceMoreLink"
- * The visible input id is the stable anchor. The hidden input is found as the
- * input[type=hidden] sibling whose id ends with the same "_<N>" suffix.
+ * Loaded globally by museesDeFrancePlugin::hookRenderMenuBar. It is a no-op on
+ * pages without a matching SMFThesaurus field, so it is safe to load everywhere.
+ * Idempotent + MutationObserver for dynamically added attribute-value rows.
  *
  * @package museesDeFrance
  * @license http://www.gnu.org/copyleft/gpl.html GNU Public License version 3
@@ -32,12 +32,11 @@
 (function () {
     'use strict';
 
-    var ELEMENT_ID = '174';          // "domaine"
-    var THESAURUS_URL = null;         // resolved lazily (see resolveUrl)
     var LABELS = {
         open: 'Parcourir l’arbre',
         title: 'Choisir un terme du thésaurus',
-        close: 'Fermer'
+        close: 'Fermer',
+        loading: 'Chargement du thésaurus…'
     };
 
     if (typeof window.SMFThesaurusBrowser === 'undefined') {
@@ -46,59 +45,66 @@
         return;
     }
 
-    /**
-     * Resolve the JSON url. The plugin is served under
-     *   <root>/app/plugins/museesDeFrance/assets/thesauri/th294.json
-     * We build it from the current script location if possible, else fall back
-     * to a root-relative path that works for the /gestion2 alias.
-     */
-    function resolveUrl() {
-        if (THESAURUS_URL) { return THESAURUS_URL; }
-        // If the plugin exposed a base via a global, prefer it.
-        if (window.SMF_THESAURUS_URL) { THESAURUS_URL = window.SMF_THESAURUS_URL; return THESAURUS_URL; }
-        // Try to derive from this script's own src.
+    /** element_id -> thesaurus_id map published by the plugin hook. */
+    function thesaurusMap() {
+        return (window.SMF_THESAURUS_MAP && typeof window.SMF_THESAURUS_MAP === 'object')
+            ? window.SMF_THESAURUS_MAP : {};
+    }
+
+    /** Thesaurus id for an element_id, or null if not an SMFThesaurus element. */
+    function thesaurusForElement(elementId) {
+        var map = thesaurusMap();
+        var t = map[String(elementId)];
+        return (typeof t === 'string' && /^th[0-9]+$/.test(t)) ? t : null;
+    }
+
+    /** Base URL for the flat JSON stores (client mode), e.g. ".../assets/thesauri". */
+    function storeBaseUrl() {
+        if (window.SMF_THESAURUS_BASE_URL) { return String(window.SMF_THESAURUS_BASE_URL).replace(/\/+$/, ''); }
+        // Derive from this script's own src as a fallback.
         var scripts = document.getElementsByTagName('script');
         for (var i = 0; i < scripts.length; i++) {
             var src = scripts[i].src || '';
             var m = src.match(/^(.*\/app\/plugins\/museesDeFrance\/assets\/)js\/smfThesaurusAttach\.js/);
-            if (m) { THESAURUS_URL = m[1] + 'thesauri/th294.json'; return THESAURUS_URL; }
+            if (m) { return m[1] + 'thesauri'; }
         }
-        // Fallback: absolute path via the gestion2 alias / providence root.
-        // (Adjust if the app is mounted under a different base.)
-        THESAURUS_URL = '/gestion2/app/plugins/museesDeFrance/assets/thesauri/th294.json';
-        return THESAURUS_URL;
+        return '/gestion2/app/plugins/museesDeFrance/assets/thesauri';
     }
 
-    /** Find the hidden input paired with a visible autocomplete input. */
-    function findHiddenFor(visibleInput) {
-        // visible id: infoservice_174_autocomplete<SUFFIX>
+    /** Static JSON store URL for a thesaurus id. */
+    function storeUrlFor(thesaurusId) {
+        return storeBaseUrl() + '/' + thesaurusId + '.json';
+    }
+
+    function escapeRe(s) { return String(s).replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+
+    /**
+     * Find the hidden input paired with a visible autocomplete input, for a
+     * given element id. Visible id: infoservice_<eid>_autocomplete<SUFFIX>.
+     */
+    function findHiddenFor(visibleInput, elementId) {
         var vid = visibleInput.id || '';
-        var m = vid.match(/^infoservice_174_autocomplete(.*)$/);
+        var re1 = new RegExp('^infoservice_' + escapeRe(elementId) + '_autocomplete(.*)$');
+        var m = vid.match(re1);
         var suffix = m ? m[1] : '';
-        // Search the enclosing attribute block for a hidden input ending with
-        // "174_<suffix>" (the fieldNamePrefix precedes "174").
         var scope = visibleInput.closest('.caInformationServiceDetail, .attributeListItem, .roundedRel, form') || document;
         var hiddens = scope.querySelectorAll('input[type=hidden]');
         for (var i = 0; i < hiddens.length; i++) {
             var h = hiddens[i];
             var id = h.id || '';
             var name = h.name || '';
-            // Match ...174_<suffix> but NOT the _autocomplete input.
-            var re = new RegExp('174_' + escapeRe(suffix) + '$');
+            var re = new RegExp(escapeRe(elementId) + '_' + escapeRe(suffix) + '$');
             if ((re.test(id) || re.test(name)) && id.indexOf('autocomplete') === -1) {
                 return h;
             }
         }
-        // Last resort: the input immediately following the wrapper div.
-        var wrap = document.getElementById('infoservice_174_input' + suffix);
+        var wrap = document.getElementById('infoservice_' + elementId + '_input' + suffix);
         if (wrap) {
             var sib = wrap.querySelector('input[type=hidden]');
             if (sib) { return sib; }
         }
         return null;
     }
-
-    function escapeRe(s) { return String(s).replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
 
     /** Write value into CA hidden input + mirror label, then fire change. */
     function applySelection(visibleInput, hiddenInput, sel) {
@@ -117,7 +123,6 @@
         try { ev = new Event('change', { bubbles: true }); }
         catch (e) { ev = document.createEvent('HTMLEvents'); ev.initEvent('change', true, false); }
         node.dispatchEvent(ev);
-        // Also nudge jQuery listeners CA may have bound.
         if (window.jQuery) { window.jQuery(node).trigger('change'); }
     }
 
@@ -125,7 +130,7 @@
 
     var openModal = null;
 
-    function openBrowser(visibleInput, hiddenInput) {
+    function openBrowser(visibleInput, hiddenInput, thesaurusId) {
         closeBrowser();
         var backdrop = document.createElement('div');
         backdrop.className = 'smf-tb-modal-backdrop';
@@ -155,16 +160,28 @@
 
         openModal = backdrop;
 
-        window.SMFThesaurusBrowser.mount({
+        var onSelect = function (sel) {
+            applySelection(visibleInput, hiddenInput, sel);
+            closeBrowser();
+            if (visibleInput) { visibleInput.focus(); }
+        };
+
+        host.textContent = '';
+
+        // Single "tout client + IndexedDB" path for EVERY thesaurus: the provider
+        // downloads the static store once, persists it in IndexedDB, and reloads
+        // from there on later opens (freshness via a HEAD/Last-Modified probe).
+        var provider = new window.SMFThesaurusBrowser.ClientProvider({
+            thesaurus: thesaurusId,
+            url: storeUrlFor(thesaurusId)
+        });
+        var w = new window.SMFThesaurusBrowser.Widget({
             container: host,
-            url: resolveUrl(),
-            onSelect: function (sel) {
-                applySelection(visibleInput, hiddenInput, sel);
-                closeBrowser();
-                if (visibleInput) { visibleInput.focus(); }
-            },
+            provider: provider,
+            onSelect: onSelect,
             onClose: closeBrowser
         });
+        w.load();
     }
 
     function closeBrowser() {
@@ -178,14 +195,23 @@
 
     // ---- Button injection ----------------------------------------------
 
+    // Matches infoservice_<element_id>_autocomplete<suffix>; captures the id.
+    var VISIBLE_ID_RE = /^infoservice_([0-9]+)_autocomplete/;
+
     function decorate(visibleInput) {
         if (!visibleInput || visibleInput.getAttribute('data-smf-tb') === '1') { return; }
-        // Only the "template" input (with literal {n}) should be skipped; real
-        // instances have {n} substituted. Skip un-substituted templates.
-        if ((visibleInput.id || '').indexOf('{n}') !== -1) { return; }
+        var vid = visibleInput.id || '';
+        // Skip un-substituted CA templates (literal {n}).
+        if (vid.indexOf('{n}') !== -1) { return; }
+        var m = vid.match(VISIBLE_ID_RE);
+        if (!m) { return; }
+        var elementId = m[1];
+        var thesaurusId = thesaurusForElement(elementId);
+        if (!thesaurusId) { return; }   // not an SMFThesaurus element -> no-op
+
         visibleInput.setAttribute('data-smf-tb', '1');
 
-        var hidden = findHiddenFor(visibleInput);
+        var hidden = findHiddenFor(visibleInput, elementId);
 
         var btn = document.createElement('a');
         btn.href = '#';
@@ -193,12 +219,10 @@
         btn.textContent = LABELS.open;
         btn.addEventListener('click', function (e) {
             e.preventDefault();
-            // Re-resolve hidden at click time (DOM may have changed).
-            var h = hidden || findHiddenFor(visibleInput);
-            openBrowser(visibleInput, h);
+            var h = hidden || findHiddenFor(visibleInput, elementId);
+            openBrowser(visibleInput, h, thesaurusId);
         });
 
-        // Insert right after the visible input (before the "More" link if any).
         if (visibleInput.nextSibling) {
             visibleInput.parentNode.insertBefore(btn, visibleInput.nextSibling);
         } else {
@@ -208,13 +232,13 @@
 
     function scan(rootEl) {
         var root = rootEl || document;
-        var inputs = root.querySelectorAll('input[id^="infoservice_174_autocomplete"]');
+        var inputs = root.querySelectorAll('input[id^="infoservice_"][id*="_autocomplete"]');
         for (var i = 0; i < inputs.length; i++) { decorate(inputs[i]); }
     }
 
     function init() {
+        // Nothing to do if the map is empty (no SMFThesaurus elements configured).
         scan(document);
-        // CA adds attribute value rows dynamically ("Add value"); watch for them.
         if (window.MutationObserver) {
             var mo = new MutationObserver(function (muts) {
                 for (var i = 0; i < muts.length; i++) {
