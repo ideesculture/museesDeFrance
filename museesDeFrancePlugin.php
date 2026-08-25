@@ -206,6 +206,13 @@ class museesDeFrancePlugin extends BaseApplicationPlugin
 		print "<script type='text/javascript'>".file_get_contents(__CA_APP_DIR__."/plugins/museesDeFrance/assets/js/delimiteur.js")."</script>";
 		print "<link rel='stylesheet' href='".__CA_URL_ROOT__."/app/plugins/museesDeFrance/assets/css/delimiteur.css' type='text/css' media='all'> yea";
 
+		// --- Arborescent thesaurus picker (element 174 "domaine", service SMFThesaurus) ---
+		// Loaded globally; the attach script is a no-op on pages without an element-174 field.
+		$vs_mdf_base = __CA_URL_ROOT__."/app/plugins/museesDeFrance/assets";
+		print "<link rel='stylesheet' href='".$vs_mdf_base."/css/smfThesaurusBrowser.css' type='text/css' media='all'>";
+		print "<script type='text/javascript'>window.SMF_THESAURUS_URL = ".json_encode($vs_mdf_base."/thesauri/th294.json").";</script>";
+		print "<script type='text/javascript' src='".$vs_mdf_base."/js/smfThesaurusBrowser.js'></script>";
+		print "<script type='text/javascript' src='".$vs_mdf_base."/js/smfThesaurusAttach.js'></script>";
 
 		return $pa_menu_bar;
 	}
