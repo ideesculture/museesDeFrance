@@ -97,9 +97,10 @@ if (!isset($campagnes_par_rd) || !$campagnes_par_rd) {
 	
 	</script>
 	
-	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 	<script src='<?php print __CA_URL_ROOT__; ?>/js/jquery/jQueryRotateCompressed.2.2.js'
 	        type='text/javascript'></script>
+	<script type="text/javascript">google.charts.load("current", {packages: ["corechart"]});</script>
 
 	<?php if ($campagnes_par_rd) {foreach ($campagnes_par_rd as $rd_name => $rd) { ?>
         <?php $i++; ?>
@@ -119,8 +120,7 @@ if (!isset($campagnes_par_rd) || !$campagnes_par_rd) {
         </script>
         <div id="museesDeFrance_rc<?php _p($i); ?>" style="<?php print ($i != 1 ? "display:none;" : ""); ?>">
             <script type="text/javascript">
-                google.load("visualization", "1", {packages: ["corechart"]});
-                google.setOnLoadCallback(drawChart);
+                google.charts.setOnLoadCallback(drawChart);
                 function drawChart() {
                     var data<?php _p($i);?> = google.visualization.arrayToDataTable([
                         ['Récolés', 'Récolés', 'A récoler', {role: 'annotation'}],
