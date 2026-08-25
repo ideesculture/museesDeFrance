@@ -39,7 +39,25 @@ $tableauDeCorrespondance = [
     ["nom" => "Liste d'autorités Source de la représentation", "list_code" => "th286"],
     ["nom" => "Liste d'autorités Représentation", "list_code" => "th285"]
 ];
+// Garde-fou : recenser les thésaurus déjà externalisés en InformationService (plugin SMFThesaurus).
+// En profil v4, les champs SMF sont servis en IS -> inutile (et indésirable) de les charger dans ca_list_items.
+require_once(__CA_MODELS_DIR__ . '/ca_metadata_elements.php');
+$externalized_thesauri = [];
+$qr_is = (new Db())->query("SELECT element_id FROM ca_metadata_elements WHERE datatype = 20");
+while ($qr_is->nextRow()) {
+    $t_el = new ca_metadata_elements((int)$qr_is->get('element_id'));
+    if ($t_el->getPrimaryKey() && $t_el->getSetting('service') === 'SMFThesaurus') {
+        $th_code = trim((string)$t_el->getSetting('thesaurus'));
+        if ($th_code !== '') { $externalized_thesauri[$th_code] = true; }
+    }
+}
+
 foreach ($files as $file_key => $file) {
+    $list_code = $tableauDeCorrespondance[$file_key]["list_code"];
+    if (isset($externalized_thesauri[$list_code])) {
+        fwrite(STDERR, "ERREUR : le thésaurus $list_code est servi via InformationService (SMFThesaurus) — import dans ca_list_items ignoré (inutile en profil v4).\n");
+        continue;
+    }
     $json = file_get_contents($file);
 
     $datas = json_decode($json, true);

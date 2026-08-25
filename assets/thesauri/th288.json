@@ -1,0 +1,2955 @@
+{
+    "meta": {
+        "id": "th288",
+        "source_url": "https://opentheso.huma-num.fr/opentheso/api/all/theso?id=th288&format=json",
+        "concept_count": 261
+    },
+    "concepts": {
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/810161f1-bc08-4bc2-90b6-1f83ecc84a55": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/810161f1-bc08-4bc2-90b6-1f83ecc84a55",
+            "id": "810161f1-bc08-4bc2-90b6-1f83ecc84a55",
+            "prefLabel": "néant",
+            "altLabels": [
+                "Néant"
+            ],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/86f9d1e6-dc8f-4fc4-9057-a3da4e3aee38": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/86f9d1e6-dc8f-4fc4-9057-a3da4e3aee38",
+            "id": "86f9d1e6-dc8f-4fc4-9057-a3da4e3aee38",
+            "prefLabel": "étiquette",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-139"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-1": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-1",
+            "id": "T520-1",
+            "prefLabel": "date",
+            "altLabels": [
+                "daté"
+            ],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-10": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-10",
+            "id": "T520-10",
+            "prefLabel": "graffiti",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-100": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-100",
+            "id": "T520-100",
+            "prefLabel": "marque de tailleur",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-72"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-101": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-101",
+            "id": "T520-101",
+            "prefLabel": "marque publicitaire",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-72"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-102": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-102",
+            "id": "T520-102",
+            "prefLabel": "poinçon",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-72"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-103",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-104",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-107",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-108",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-109",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-111",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-112",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-113",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-114",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-115",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-206",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-259",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-303"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-103": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-103",
+            "id": "T520-103",
+            "prefLabel": "poinçon de charge",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-102"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-104": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-104",
+            "id": "T520-104",
+            "prefLabel": "poinçon de communauté",
+            "altLabels": [
+                "poinçon de jurande"
+            ],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-102"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-105"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-105": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-105",
+            "id": "T520-105",
+            "prefLabel": "lettre-date",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-104"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-107": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-107",
+            "id": "T520-107",
+            "prefLabel": "poinçon de décharge",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-102"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-108": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-108",
+            "id": "T520-108",
+            "prefLabel": "poinçon de garantie",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-102"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-109": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-109",
+            "id": "T520-109",
+            "prefLabel": "poinçon de maître",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-102"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11",
+            "id": "T520-11",
+            "prefLabel": "inscription",
+            "altLabels": [],
+            "broader": [],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/810161f1-bc08-4bc2-90b6-1f83ecc84a55",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-1",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-10",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-12",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-13",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-15",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-16",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-17",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-18",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-19",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-196",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-197",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-198",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-20",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-204",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-208",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-209",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-21",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-210",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-213",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-23",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-24",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-25",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-26",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-260",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-265",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-271",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-272",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-278",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-28",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-282",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-297",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-298",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-299",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-30",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-300",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-304",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-307",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-308",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-309",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-32",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-33",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-34",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-37",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-40",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-41",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-42",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-43",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-44",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-45",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-46",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-47",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-48",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-49",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-50",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-51",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-54",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-55",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-56",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-57",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-58",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-59",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-62",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-70"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-111": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-111",
+            "id": "T520-111",
+            "prefLabel": "poinçon de recense",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-102"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-112": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-112",
+            "id": "T520-112",
+            "prefLabel": "poinçon de titre",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-102"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-113": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-113",
+            "id": "T520-113",
+            "prefLabel": "poinçon de ville",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-102"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-114": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-114",
+            "id": "T520-114",
+            "prefLabel": "poinçon d'orfèvre",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-102"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-115": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-115",
+            "id": "T520-115",
+            "prefLabel": "sceau",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-102"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-116": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-116",
+            "id": "T520-116",
+            "prefLabel": "sigle",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-72"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-117": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-117",
+            "id": "T520-117",
+            "prefLabel": "tampon",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-72"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-118"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-118": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-118",
+            "id": "T520-118",
+            "prefLabel": "tampon sec",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-117"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-119": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-119",
+            "id": "T520-119",
+            "prefLabel": "timbre",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-72"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-120",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-121",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-202"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-12": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-12",
+            "id": "T520-12",
+            "prefLabel": "acclamation",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-120": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-120",
+            "id": "T520-120",
+            "prefLabel": "timbre de colportage",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-119"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-121": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-121",
+            "id": "T520-121",
+            "prefLabel": "timbre sec",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-119"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-122": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-122",
+            "id": "T520-122",
+            "prefLabel": "numéro",
+            "altLabels": [],
+            "broader": [],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-123",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-124",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-125",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-126",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-127",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-128",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-289",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-301"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-123": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-123",
+            "id": "T520-123",
+            "prefLabel": "numéro d'inventaire",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-122"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-124": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-124",
+            "id": "T520-124",
+            "prefLabel": "numéro de décor",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-122"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-125": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-125",
+            "id": "T520-125",
+            "prefLabel": "numéro de modèle",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-122"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-126": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-126",
+            "id": "T520-126",
+            "prefLabel": "numéro peint",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-122"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-127": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-127",
+            "id": "T520-127",
+            "prefLabel": "numéro d'ordre",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-122"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-128": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-128",
+            "id": "T520-128",
+            "prefLabel": "numéro de série",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-122"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-129": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-129",
+            "id": "T520-129",
+            "prefLabel": "signature",
+            "altLabels": [
+                "signé"
+            ],
+            "broader": [],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-130",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-133",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-134",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-135",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-136"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-13": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-13",
+            "id": "T520-13",
+            "prefLabel": "annotation",
+            "altLabels": [
+                "annoté"
+            ],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-14"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-130": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-130",
+            "id": "T520-130",
+            "prefLabel": "monogramme",
+            "altLabels": [
+                "monogrammé"
+            ],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-129"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-131"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-131": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-131",
+            "id": "T520-131",
+            "prefLabel": "monogramme en caractères typographiques",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-130"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-133": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-133",
+            "id": "T520-133",
+            "prefLabel": "signature de l'exécutant",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-129"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-134": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-134",
+            "id": "T520-134",
+            "prefLabel": "signature emblématique",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-129"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-135": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-135",
+            "id": "T520-135",
+            "prefLabel": "signature en caractères typographiques",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-129"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-136": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-136",
+            "id": "T520-136",
+            "prefLabel": "signature échoppée",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-129"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-138": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-138",
+            "id": "T520-138",
+            "prefLabel": "visa de censure",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-72"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-139": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-139",
+            "id": "T520-139",
+            "prefLabel": "affixe",
+            "altLabels": [],
+            "broader": [],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/86f9d1e6-dc8f-4fc4-9057-a3da4e3aee38",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-140",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-146",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-154",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-177"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-14": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-14",
+            "id": "T520-14",
+            "prefLabel": "annotation concernant la représentation",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-13"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-140": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-140",
+            "id": "T520-140",
+            "prefLabel": "alphabet",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-139"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-141"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-141": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-141",
+            "id": "T520-141",
+            "prefLabel": "cunéiforme",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-140"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-146": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-146",
+            "id": "T520-146",
+            "prefLabel": "justification",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-139"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-147",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-149",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-150",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-152"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-147": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-147",
+            "id": "T520-147",
+            "prefLabel": "ancien",
+            "altLabels": [
+                "ancienne"
+            ],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-146"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-149": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-149",
+            "id": "T520-149",
+            "prefLabel": "d'origine",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-146"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-15": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-15",
+            "id": "T520-15",
+            "prefLabel": "article",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-150": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-150",
+            "id": "T520-150",
+            "prefLabel": "faux",
+            "altLabels": [
+                "fausse"
+            ],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-146"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-152": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-152",
+            "id": "T520-152",
+            "prefLabel": "récent",
+            "altLabels": [
+                "récente"
+            ],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-146"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-154": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-154",
+            "id": "T520-154",
+            "prefLabel": "langue",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-139"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-155",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-156",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-157",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-158",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-159",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-160",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-161",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-164",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-165",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-166",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-167",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-168",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-169",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-170",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-171",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-172",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-173",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-174",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-175",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-176",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-199",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-201",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-203",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-266",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-277",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-283",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-284",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-285",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-286",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-290",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-310"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-155": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-155",
+            "id": "T520-155",
+            "prefLabel": "allemand",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-154"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-156": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-156",
+            "id": "T520-156",
+            "prefLabel": "anglais",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-154"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-157": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-157",
+            "id": "T520-157",
+            "prefLabel": "arabe",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-154"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-158": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-158",
+            "id": "T520-158",
+            "prefLabel": "basque",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-154"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-159": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-159",
+            "id": "T520-159",
+            "prefLabel": "catalan",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-154"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-16": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-16",
+            "id": "T520-16",
+            "prefLabel": "bulle",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-160": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-160",
+            "id": "T520-160",
+            "prefLabel": "chinois",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-154"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-161": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-161",
+            "id": "T520-161",
+            "prefLabel": "égyptien",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-154"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-162"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-162": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-162",
+            "id": "T520-162",
+            "prefLabel": "égyptien ancien",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-161"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-163",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-302"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-163": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-163",
+            "id": "T520-163",
+            "prefLabel": "hiéroglyphique",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-162"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-164": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-164",
+            "id": "T520-164",
+            "prefLabel": "espagnol",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-154"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-165": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-165",
+            "id": "T520-165",
+            "prefLabel": "français",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-154"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-200"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-166": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-166",
+            "id": "T520-166",
+            "prefLabel": "gothique",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-154"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-167": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-167",
+            "id": "T520-167",
+            "prefLabel": "hongrois",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-154"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-168": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-168",
+            "id": "T520-168",
+            "prefLabel": "italien",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-154"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-169": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-169",
+            "id": "T520-169",
+            "prefLabel": "japonais",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-154"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-17": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-17",
+            "id": "T520-17",
+            "prefLabel": "date apocryphe",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-170": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-170",
+            "id": "T520-170",
+            "prefLabel": "latin",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-154"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-171": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-171",
+            "id": "T520-171",
+            "prefLabel": "ottoman",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-154"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-172": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-172",
+            "id": "T520-172",
+            "prefLabel": "portugais",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-154"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-173": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-173",
+            "id": "T520-173",
+            "prefLabel": "provençal",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-154"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-174": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-174",
+            "id": "T520-174",
+            "prefLabel": "russe",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-154"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-175": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-175",
+            "id": "T520-175",
+            "prefLabel": "slavon",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-154"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-176": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-176",
+            "id": "T520-176",
+            "prefLabel": "sumérien",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-154"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-177": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-177",
+            "id": "T520-177",
+            "prefLabel": "emplacement",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-139"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-178",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-179",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-180",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-181",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-184",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-186",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-187",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-190",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-192",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-193",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-194",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-3"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-178": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-178",
+            "id": "T520-178",
+            "prefLabel": "côté",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-177"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-179": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-179",
+            "id": "T520-179",
+            "prefLabel": "côté droit",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-177"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-18": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-18",
+            "id": "T520-18",
+            "prefLabel": "décret",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-180": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-180",
+            "id": "T520-180",
+            "prefLabel": "côté gauche",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-177"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-181": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-181",
+            "id": "T520-181",
+            "prefLabel": "face",
+            "altLabels": [
+                "avers",
+                "recto"
+            ],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-177"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-184": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-184",
+            "id": "T520-184",
+            "prefLabel": "face du montage",
+            "altLabels": [
+                "face montage"
+            ],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-177"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-186": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-186",
+            "id": "T520-186",
+            "prefLabel": "face reliure",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-177"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-187": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-187",
+            "id": "T520-187",
+            "prefLabel": "dos",
+            "altLabels": [
+                "revers",
+                "verso"
+            ],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-177"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-19": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-19",
+            "id": "T520-19",
+            "prefLabel": "dédicace",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-190": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-190",
+            "id": "T520-190",
+            "prefLabel": "revers du montage",
+            "altLabels": [
+                "revers montage"
+            ],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-177"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-192": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-192",
+            "id": "T520-192",
+            "prefLabel": "sur cadre",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-177"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-193": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-193",
+            "id": "T520-193",
+            "prefLabel": "sur fond",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-177"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-194": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-194",
+            "id": "T520-194",
+            "prefLabel": "sur l'objet",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-177"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-196": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-196",
+            "id": "T520-196",
+            "prefLabel": "inscription concernant le dédicataire",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-197": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-197",
+            "id": "T520-197",
+            "prefLabel": "citation",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-198": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-198",
+            "id": "T520-198",
+            "prefLabel": "invocation",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-199": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-199",
+            "id": "T520-199",
+            "prefLabel": "turc",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-154"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-20": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-20",
+            "id": "T520-20",
+            "prefLabel": "épitaphe",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-200": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-200",
+            "id": "T520-200",
+            "prefLabel": "vieux français",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-165"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-201": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-201",
+            "id": "T520-201",
+            "prefLabel": "hébraïque",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-154"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-202": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-202",
+            "id": "T520-202",
+            "prefLabel": "timbre humide",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-119"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-203": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-203",
+            "id": "T520-203",
+            "prefLabel": "roumain",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-154"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-204": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-204",
+            "id": "T520-204",
+            "prefLabel": "inscription concernant le lieu de conservation",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-205": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-205",
+            "id": "T520-205",
+            "prefLabel": "marque du propriétaire",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-72"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-206": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-206",
+            "id": "T520-206",
+            "prefLabel": "poinçon d'importation",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-102"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-207": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-207",
+            "id": "T520-207",
+            "prefLabel": "chant",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-62"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-208": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-208",
+            "id": "T520-208",
+            "prefLabel": "adresse",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-209": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-209",
+            "id": "T520-209",
+            "prefLabel": "inscription concernant le lieu de destination",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-21": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-21",
+            "id": "T520-21",
+            "prefLabel": "en-tête",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-22"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-210": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-210",
+            "id": "T520-210",
+            "prefLabel": "inscription concernant le destinataire",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-211"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-211": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-211",
+            "id": "T520-211",
+            "prefLabel": "nom du destinataire",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-210"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-213": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-213",
+            "id": "T520-213",
+            "prefLabel": "inscription concernant le lieu d'émission",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-22": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-22",
+            "id": "T520-22",
+            "prefLabel": "en-tête imprimé",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-21"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-223": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-223",
+            "id": "T520-223",
+            "prefLabel": "marque postale",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-72"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-224",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-226",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-229",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-230",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-231",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-233",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-236",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-238",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-239",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-242",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-243",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-250",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-251",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-252",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-253",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-257",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-258"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-224": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-224",
+            "id": "T520-224",
+            "prefLabel": "cachet de départ",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-223"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-226": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-226",
+            "id": "T520-226",
+            "prefLabel": "étoile à numéro",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-223"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-229": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-229",
+            "id": "T520-229",
+            "prefLabel": "marque de purification",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-223"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-23": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-23",
+            "id": "T520-23",
+            "prefLabel": "hiéroglyphe",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-230": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-230",
+            "id": "T520-230",
+            "prefLabel": "marque linéaire",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-223"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-231": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-231",
+            "id": "T520-231",
+            "prefLabel": "marque de taxation",
+            "altLabels": [
+                "chiffre-taxe"
+            ],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-223"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-233": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-233",
+            "id": "T520-233",
+            "prefLabel": "cachet d'oblitération",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-223"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-241",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-244"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-236": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-236",
+            "id": "T520-236",
+            "prefLabel": "cachet à date",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-223"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-237"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-237": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-237",
+            "id": "T520-237",
+            "prefLabel": "oblitération Prermier Jour",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-236"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-238": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-238",
+            "id": "T520-238",
+            "prefLabel": "cachet paquebot",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-223"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-239": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-239",
+            "id": "T520-239",
+            "prefLabel": "marque de transit",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-223"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-24": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-24",
+            "id": "T520-24",
+            "prefLabel": "idéogramme",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-241": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-241",
+            "id": "T520-241",
+            "prefLabel": "grille sans fin",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-233"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-242": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-242",
+            "id": "T520-242",
+            "prefLabel": "cachet de port",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-223"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-255",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-256"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-243": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-243",
+            "id": "T520-243",
+            "prefLabel": "cachet de recette",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-223"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-244": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-244",
+            "id": "T520-244",
+            "prefLabel": "losange oblitérant",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-233"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-245",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-246",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-248"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-245": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-245",
+            "id": "T520-245",
+            "prefLabel": "losange grille",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-244"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-246": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-246",
+            "id": "T520-246",
+            "prefLabel": "losange gros chiffres",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-244"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-248": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-248",
+            "id": "T520-248",
+            "prefLabel": "losange petits chiffres",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-244"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-25": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-25",
+            "id": "T520-25",
+            "prefLabel": "initiale",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-250": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-250",
+            "id": "T520-250",
+            "prefLabel": "marque de déboursé",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-223"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-251": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-251",
+            "id": "T520-251",
+            "prefLabel": "cachet d'entrée",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-223"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-252": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-252",
+            "id": "T520-252",
+            "prefLabel": "étoile muette",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-223"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-253": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-253",
+            "id": "T520-253",
+            "prefLabel": "marque d'armée",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-223"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-254"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-254": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-254",
+            "id": "T520-254",
+            "prefLabel": "marque d'armée en déboursé",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-253"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-255": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-255",
+            "id": "T520-255",
+            "prefLabel": "port dû",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-242"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-256": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-256",
+            "id": "T520-256",
+            "prefLabel": "port payé",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-242"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-257": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-257",
+            "id": "T520-257",
+            "prefLabel": "cachet d'ambulant",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-223"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-258": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-258",
+            "id": "T520-258",
+            "prefLabel": "cachet octogonal",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-223"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-259": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-259",
+            "id": "T520-259",
+            "prefLabel": "poinçon de fabricant",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-102"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-26": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-26",
+            "id": "T520-26",
+            "prefLabel": "inscription concernant la représentation",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-27"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-260": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-260",
+            "id": "T520-260",
+            "prefLabel": "calligraphie",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-261": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-261",
+            "id": "T520-261",
+            "prefLabel": "inscription concernant les bateaux",
+            "altLabels": [],
+            "broader": [],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-262",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-263",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-281"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-262": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-262",
+            "id": "T520-262",
+            "prefLabel": "nom du bateau",
+            "altLabels": [
+                "nom de bateau",
+                "nom du navire"
+            ],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-261"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-263": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-263",
+            "id": "T520-263",
+            "prefLabel": "port d'attache",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-261"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-265": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-265",
+            "id": "T520-265",
+            "prefLabel": "immatriculation",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-266": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-266",
+            "id": "T520-266",
+            "prefLabel": "danois",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-154"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-268": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-268",
+            "id": "T520-268",
+            "prefLabel": "marque de fabricant",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-72"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-269": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-269",
+            "id": "T520-269",
+            "prefLabel": "lieu d'exécution inscrit",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-37"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-27": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-27",
+            "id": "T520-27",
+            "prefLabel": "inscription donnant l'identité du modèle",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-26"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-271": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-271",
+            "id": "T520-271",
+            "prefLabel": "ex-libris",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-272": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-272",
+            "id": "T520-272",
+            "prefLabel": "autographe",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-273": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-273",
+            "id": "T520-273",
+            "prefLabel": "marque de doreur",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-72"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-275": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-275",
+            "id": "T520-275",
+            "prefLabel": "marque de résidence",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-72"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-276": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-276",
+            "id": "T520-276",
+            "prefLabel": "marque de décoration",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-72"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-277": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-277",
+            "id": "T520-277",
+            "prefLabel": "hollandais",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-154"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-278": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-278",
+            "id": "T520-278",
+            "prefLabel": "échelle",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-28": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-28",
+            "id": "T520-28",
+            "prefLabel": "inscription concernant la vente",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-29"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-281": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-281",
+            "id": "T520-281",
+            "prefLabel": "immatriculant",
+            "altLabels": [
+                "matricule"
+            ],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-261"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-282": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-282",
+            "id": "T520-282",
+            "prefLabel": "lettre",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-283": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-283",
+            "id": "T520-283",
+            "prefLabel": "grec",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-154"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-292",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-293"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-284": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-284",
+            "id": "T520-284",
+            "prefLabel": "hébreu",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-154"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-285": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-285",
+            "id": "T520-285",
+            "prefLabel": "cyrillique",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-154"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-286": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-286",
+            "id": "T520-286",
+            "prefLabel": "celtique",
+            "altLabels": [
+                "celte"
+            ],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-154"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-287": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-287",
+            "id": "T520-287",
+            "prefLabel": "logo",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-72"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-289": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-289",
+            "id": "T520-289",
+            "prefLabel": "numéro de tirage",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-122"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-29": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-29",
+            "id": "T520-29",
+            "prefLabel": "lieu de vente inscrit",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-28"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-290": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-290",
+            "id": "T520-290",
+            "prefLabel": "langue d'oc",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-154"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-291": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-291",
+            "id": "T520-291",
+            "prefLabel": "marque de jurande",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-72"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-292": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-292",
+            "id": "T520-292",
+            "prefLabel": "grec ancien",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-283"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-293": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-293",
+            "id": "T520-293",
+            "prefLabel": "grec cursif",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-283"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-294": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-294",
+            "id": "T520-294",
+            "prefLabel": "marque de modèle",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-72"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-297": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-297",
+            "id": "T520-297",
+            "prefLabel": "inscription concernant le propriétaire",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-298": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-298",
+            "id": "T520-298",
+            "prefLabel": "inscription concernant l'école",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-299": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-299",
+            "id": "T520-299",
+            "prefLabel": "inscription concernant la datation",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-3": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-3",
+            "id": "T520-3",
+            "prefLabel": "écriteau",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-177"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-30": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-30",
+            "id": "T520-30",
+            "prefLabel": "inscription concernant le commanditaire",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-31"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-300": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-300",
+            "id": "T520-300",
+            "prefLabel": "inscription concernant l'auteur",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-301": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-301",
+            "id": "T520-301",
+            "prefLabel": "numéro de classement",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-122"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-302": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-302",
+            "id": "T520-302",
+            "prefLabel": "démotique",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-162"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-303": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-303",
+            "id": "T520-303",
+            "prefLabel": "poinçon garantie et titre",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-102"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-304": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-304",
+            "id": "T520-304",
+            "prefLabel": "inscription concernant le lieu de découverte",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-307": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-307",
+            "id": "T520-307",
+            "prefLabel": "inscription concernant le fabricant",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-308": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-308",
+            "id": "T520-308",
+            "prefLabel": "graduation",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-309": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-309",
+            "id": "T520-309",
+            "prefLabel": "inscription concernant le type de modèle",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-31": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-31",
+            "id": "T520-31",
+            "prefLabel": "monogramme du commanditaire",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-30"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-310": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-310",
+            "id": "T520-310",
+            "prefLabel": "romain",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-154"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-32": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-32",
+            "id": "T520-32",
+            "prefLabel": "inscription concernant le donataire",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-33": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-33",
+            "id": "T520-33",
+            "prefLabel": "inscription concernant le donateur",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-34": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-34",
+            "id": "T520-34",
+            "prefLabel": "inscription concernant l'exécutant",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-35",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-36"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-35": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-35",
+            "id": "T520-35",
+            "prefLabel": "nom d'éditeur inscrit",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-34"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-36": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-36",
+            "id": "T520-36",
+            "prefLabel": "nom d'imprimeur inscrit",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-34"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-37": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-37",
+            "id": "T520-37",
+            "prefLabel": "inscription concernant le lieu d'exécution",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-269",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-38",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-39"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-38": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-38",
+            "id": "T520-38",
+            "prefLabel": "lieu d'édition inscrit",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-37"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-39": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-39",
+            "id": "T520-39",
+            "prefLabel": "lieu d'impression inscrit",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-37"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-4": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-4",
+            "id": "T520-4",
+            "prefLabel": "emblématique",
+            "altLabels": [],
+            "broader": [],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-5",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-7",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-9"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-40": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-40",
+            "id": "T520-40",
+            "prefLabel": "inscription concernant le lieu de provenance",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-41": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-41",
+            "id": "T520-41",
+            "prefLabel": "inscription concernant la technique",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-42": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-42",
+            "id": "T520-42",
+            "prefLabel": "inscription concernant les collections",
+            "altLabels": [
+                "inscription concernant la collection"
+            ],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-43": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-43",
+            "id": "T520-43",
+            "prefLabel": "inscription concernant l'épreuve",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-44": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-44",
+            "id": "T520-44",
+            "prefLabel": "inscription définissant le contenu",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-45": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-45",
+            "id": "T520-45",
+            "prefLabel": "inscription patronymique",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-46": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-46",
+            "id": "T520-46",
+            "prefLabel": "inscription votive",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-47": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-47",
+            "id": "T520-47",
+            "prefLabel": "légende",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-48": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-48",
+            "id": "T520-48",
+            "prefLabel": "liste",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-49": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-49",
+            "id": "T520-49",
+            "prefLabel": "mesure",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-5": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-5",
+            "id": "T520-5",
+            "prefLabel": "armoiries",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-4"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-6"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-50": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-50",
+            "id": "T520-50",
+            "prefLabel": "mode d'emploi",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-51": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-51",
+            "id": "T520-51",
+            "prefLabel": "paraphe",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-52",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-53"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-52": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-52",
+            "id": "T520-52",
+            "prefLabel": "paraphe d'un collectionneur",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-51"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-53": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-53",
+            "id": "T520-53",
+            "prefLabel": "paraphe d'un conservateur",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-51"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-54": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-54",
+            "id": "T520-54",
+            "prefLabel": "phylactère",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-55": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-55",
+            "id": "T520-55",
+            "prefLabel": "poème",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-56": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-56",
+            "id": "T520-56",
+            "prefLabel": "prière",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-57": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-57",
+            "id": "T520-57",
+            "prefLabel": "rébus",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-58": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-58",
+            "id": "T520-58",
+            "prefLabel": "règle du jeu",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-59": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-59",
+            "id": "T520-59",
+            "prefLabel": "signature apocryphe",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-60"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-6": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-6",
+            "id": "T520-6",
+            "prefLabel": "chiffre emblématique",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-5"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-60": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-60",
+            "id": "T520-60",
+            "prefLabel": "monogramme apocryphe",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-59"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-62": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-62",
+            "id": "T520-62",
+            "prefLabel": "texte",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-207",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-63",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-64",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-65",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-66",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-67",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-68",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-69"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-63": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-63",
+            "id": "T520-63",
+            "prefLabel": "cantique",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-62"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-64": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-64",
+            "id": "T520-64",
+            "prefLabel": "chanson",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-62"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-65": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-65",
+            "id": "T520-65",
+            "prefLabel": "complainte",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-62"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-66": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-66",
+            "id": "T520-66",
+            "prefLabel": "oraison",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-62"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-67": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-67",
+            "id": "T520-67",
+            "prefLabel": "texte historique",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-62"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-68": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-68",
+            "id": "T520-68",
+            "prefLabel": "texte manuscrit",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-62"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-69": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-69",
+            "id": "T520-69",
+            "prefLabel": "texte religieux",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-62"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-7": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-7",
+            "id": "T520-7",
+            "prefLabel": "devise",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-4"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-8"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-70": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-70",
+            "id": "T520-70",
+            "prefLabel": "titre",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-71"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-71": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-71",
+            "id": "T520-71",
+            "prefLabel": "sous-titre",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-70"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-72": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-72",
+            "id": "T520-72",
+            "prefLabel": "marque",
+            "altLabels": [],
+            "broader": [],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-100",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-101",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-102",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-116",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-117",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-119",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-138",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-205",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-223",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-268",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-273",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-275",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-276",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-287",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-291",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-294",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-73",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-82",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-84",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-85",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-87",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-90",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-91",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-92",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-93",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-94",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-95",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-96",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-97",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-98",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-99"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-73": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-73",
+            "id": "T520-73",
+            "prefLabel": "cachet",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-72"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-74",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-75",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-76",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-77",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-78",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-79",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-80"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-74": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-74",
+            "id": "T520-74",
+            "prefLabel": "cachet de collectionneur",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-73"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-75": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-75",
+            "id": "T520-75",
+            "prefLabel": "cachet de douane",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-73"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-76": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-76",
+            "id": "T520-76",
+            "prefLabel": "cachet de fondeur",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-73"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-77": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-77",
+            "id": "T520-77",
+            "prefLabel": "cachet de marchand de couleurs",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-73"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-78": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-78",
+            "id": "T520-78",
+            "prefLabel": "cachet de manufacture",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-73"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-79": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-79",
+            "id": "T520-79",
+            "prefLabel": "cachet de vente",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-73"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-8": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-8",
+            "id": "T520-8",
+            "prefLabel": "écu",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-7"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-80": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-80",
+            "id": "T520-80",
+            "prefLabel": "cachet d'atelier",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-73"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-81"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-81": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-81",
+            "id": "T520-81",
+            "prefLabel": "cachet d'atelier usurpé",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-80"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-82": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-82",
+            "id": "T520-82",
+            "prefLabel": "estampille",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-72"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-83"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-83": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-83",
+            "id": "T520-83",
+            "prefLabel": "griffe",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-82"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-84": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-84",
+            "id": "T520-84",
+            "prefLabel": "marque concernant le support",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-72"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-85": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-85",
+            "id": "T520-85",
+            "prefLabel": "marque concernant les collections",
+            "altLabels": [
+                "marque de collection"
+            ],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-72"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-87": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-87",
+            "id": "T520-87",
+            "prefLabel": "marque concernant les collections publiques",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-72"
+            ],
+            "narrower": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-88",
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-89"
+            ]
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-88": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-88",
+            "id": "T520-88",
+            "prefLabel": "marque de musée",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-87"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-89": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-89",
+            "id": "T520-89",
+            "prefLabel": "marque de bibliothèque",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-87"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-9": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-9",
+            "id": "T520-9",
+            "prefLabel": "emblème",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-4"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-90": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-90",
+            "id": "T520-90",
+            "prefLabel": "marque d'atelier",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-72"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-91": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-91",
+            "id": "T520-91",
+            "prefLabel": "marque de décorateur",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-72"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-92": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-92",
+            "id": "T520-92",
+            "prefLabel": "marque de fabrique",
+            "altLabels": [
+                "marque de fabrication"
+            ],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-72"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-93": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-93",
+            "id": "T520-93",
+            "prefLabel": "marque de façonnage",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-72"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-94": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-94",
+            "id": "T520-94",
+            "prefLabel": "marque de fondeur",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-72"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-95": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-95",
+            "id": "T520-95",
+            "prefLabel": "marque d'orfèvre",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-72"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-96": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-96",
+            "id": "T520-96",
+            "prefLabel": "marque de manufacture",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-72"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-97": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-97",
+            "id": "T520-97",
+            "prefLabel": "marque de monteur",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-72"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-98": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-98",
+            "id": "T520-98",
+            "prefLabel": "marque de potier",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-72"
+            ],
+            "narrower": []
+        },
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-99": {
+            "uri": "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-99",
+            "id": "T520-99",
+            "prefLabel": "marque de série",
+            "altLabels": [],
+            "broader": [
+                "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-72"
+            ],
+            "narrower": []
+        }
+    },
+    "roots": [
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-11",
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-122",
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-129",
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-139",
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-261",
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-4",
+        "http://data.culture.fr/thesaurus/resource/ark:/67717/T520-72"
+    ]
+}

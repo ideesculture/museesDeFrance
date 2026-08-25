@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Démo — Sélecteur arborescent de thésaurus SMF (th294)</title>
+    <link rel="stylesheet" href="../css/smfThesaurusBrowser.css">
+    <style>
+        body { font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif; margin: 24px; color: #222; }
+        h1 { font-size: 18px; }
+        .out { margin-top: 16px; padding: 10px; background: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 6px; }
+        .out code { font-family: Menlo, Consolas, monospace; font-size: 13px; word-break: break-all; }
+        .hint { color: #666; font-size: 12px; margin: 4px 0 16px; }
+        label { font-weight: 600; font-size: 12px; }
+        input#target { width: 100%; padding: 6px; font-family: Menlo, Consolas, monospace; font-size: 12px; }
+        kbd { background:#eee;border:1px solid #ccc;border-radius:3px;padding:1px 4px;font-size:11px; }
+    </style>
+</head>
+<body>
+    <h1>Sélecteur arborescent de thésaurus SMF — démo autonome</h1>
+    <p class="hint">
+        Charge <code>../thesauri/th294.json</code> (chemin relatif). Ouvrez cette page via un serveur local
+        (les <code>fetch()</code> <code>file://</code> sont bloqués par certains navigateurs&nbsp;; en <code>file://</code>
+        la démo bascule automatiquement sur un chargement <code>&lt;script&gt;</code> de secours si présent).<br>
+        Clavier&nbsp;: <kbd>↑</kbd>/<kbd>↓</kbd> parcourir · <kbd>→</kbd> déplier · <kbd>←</kbd> replier/remonter ·
+        <kbd>Entrée</kbd> choisir · <kbd>Échap</kbd> fermer.
+    </p>
+
+    <div id="widget"></div>
+
+    <div class="out">
+        <label for="target">Valeur écrite dans l’input caché CA (format <code>prefLabel||uri</code>)&nbsp;:</label><br>
+        <input id="target" type="text" readonly value="">
+        <div id="path" class="hint"></div>
+    </div>
+
+    <script src="../js/smfThesaurusBrowser.js"></script>
+    <script>
+        (function () {
+            var target = document.getElementById('target');
+            var pathEl = document.getElementById('path');
+
+            function onSelect(sel) {
+                // This is exactly what the CA integration does: write `prefLabel||uri`
+                // to the target input and fire a change event.
+                target.value = sel.value;
+                target.dispatchEvent(new Event('change', { bubbles: true }));
+                pathEl.textContent = 'Chemin : ' + sel.path.map(function (p) { return p.prefLabel; }).join(' › ');
+            }
+
+            SMFThesaurusBrowser.mount({
+                container: document.getElementById('widget'),
+                url: '../thesauri/th294.json',
+                onSelect: onSelect,
+                onClose: function () { /* demo: no-op */ }
+            });
+        })();
+    </script>
+</body>
+</html>
