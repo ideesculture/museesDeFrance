@@ -46,6 +46,14 @@ Ce plugin construit autour de [CollectiveAccess](https://collectiveaccess.org) (
 
 Cf. la documentation française complète sur [museesDeFranceDocumentation](https://github.com/ideesculture/museesDeFranceDocumentation).
 
+### Thésaurus SMF externalisés (profil Joconde v4)
+
+À partir du profil `profil_joconde_v4`, les thésaurus SMF/Joconde (hébergés sur Opentheso) sont servis via **InformationService** — lus depuis des stores JSON livrés avec le plugin — au lieu d'être chargés dans `ca_list_items`. L'installation est nettement plus légère (pas de harvest en base, index de recherche non gonflé) et la saisie est assistée par un widget de sélection arborescent.
+
+Procédure de déploiement complète (pré-requis serveur, install d'une nouvelle instance, migration d'une instance existante, vérifications) : **[DEPLOIEMENT_thesaurus_v4.md](DEPLOIEMENT_thesaurus_v4.md)**.
+
+> Ce document est destiné à être repris dans une page du [wiki du dépôt](https://github.com/ideesculture/museesDeFrance/wiki).
+
 ## Licence
 
 GPL v3 — compatible avec la licence amont de CollectiveAccess.
