@@ -2,7 +2,6 @@
 if(__CollectiveAccess_Schema_Rev__>=178) { $vb_prefix = true;} else { $vb_prefix = false;}
 require_once __CA_APP_DIR__ . "/plugins/museesDeFrance/lib/inventaire/BienAffecte.php";
 require_once __CA_APP_DIR__ . "/plugins/museesDeFrance/lib/inventaire/RegistreBiensAffectes.php";
-require_once __CA_APP_DIR__ . "/plugins/museesDeFrance/lib/dompdf/dompdf_config.inc.php";
 require_once __CA_MODELS_DIR__ . "/ca_objects.php";
 
 
@@ -292,9 +291,6 @@ class InventaireBiensAffectesController extends ActionController {
     public function GeneratePDF() {
         $vt_registre = new RegistreBiensAffectes();
         $this->view->setVar("registre", $vt_registre);
-
-        $dompdf = new DOMPDF();
-        //$this->view->setVar('PDFRenderer', $dompdf->getCurrentRendererCode());
 
         $this->view->setVar('pageWidth', "210mm");
         $this->view->setVar('pageHeight', "297mm");
