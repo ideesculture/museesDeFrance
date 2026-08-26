@@ -131,17 +131,22 @@ if (is_file($profile)) {
 	warn("profil v4 introuvable : $profile");
 }
 
-// 3b. redis (cache compact serveur des gros thésaurus) — via setup.php
+// 3b. Cache serveur de l'index compact (autocomplétion NATIVE des gros thésaurus).
+//     Le widget arborescent est 100% client et n'en dépend pas. N'importe quel backend
+//     CA convient ; le défaut 'file' suffit. redis = optionnel (plus rapide en forte concurrence).
 require_once($base_dir . '/setup.php');
-if (defined('__CA_CACHE_BACKEND__') && __CA_CACHE_BACKEND__ === 'redis') {
+$backend = defined('__CA_CACHE_BACKEND__') ? __CA_CACHE_BACKEND__ : 'file';
+if (!class_exists('ExternalCache')) {
+	warn("cache CA (ExternalCache) indisponible — l'autocomplétion native d'un gros thésaurus reparsera le JSON (fonctionnel, plus lent).");
+} elseif ($backend === 'redis') {
 	$h = defined('__CA_REDIS_HOST__') ? __CA_REDIS_HOST__ : 'localhost';
 	$p = defined('__CA_REDIS_PORT__') ? (int)__CA_REDIS_PORT__ : 6379;
 	if (class_exists('Redis')) {
-		try { $r = new Redis(); $r->connect($h, $p, 1.0); $r->ping(); ok("redis joignable ($h:$p) — cache compact OK."); $r->close(); }
-		catch (Throwable $e) { warn("redis injoignable ($h:$p) : l'autocomplétion des gros thésaurus sera plus lente (fallback parse). " . $e->getMessage()); }
-	} else { warn("extension PHP redis absente — cache compact indisponible (fallback parse)."); }
+		try { $r = new Redis(); $r->connect($h, $p, 1.0); $r->ping(); ok("cache serveur = redis ($h:$p) — optimal."); $r->close(); }
+		catch (Throwable $e) { warn("backend 'redis' configuré mais injoignable ($h:$p) — vérifier le service. " . $e->getMessage()); }
+	} else { warn("backend 'redis' configuré mais extension PHP redis absente."); }
 } else {
-	warn("cache backend != redis — le cache compact des gros thésaurus (th285…) sera moins efficace. Configurer redis est recommandé.");
+	ok("cache serveur = '$backend' — suffisant (redis optionnel ; ce cache ne sert qu'à l'autocomplétion native des gros thésaurus).");
 }
 
 // 3c. gzip / mod_deflate sur application/json (perf du 1er téléchargement client)

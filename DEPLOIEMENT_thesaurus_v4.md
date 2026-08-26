@@ -12,9 +12,13 @@ sélection assistée par un widget arborescent côté client.
 
 ## 1. Prérequis serveur
 
-- **PHP** avec extensions **redis** et **mbstring** (gd déjà requis par CA). *(pas de sqlite requis)*
-- **redis** en service (utilisé pour le cache compact serveur des gros thésaurus, ex. th285).
-  À défaut, l'autocomplétion native des gros thésaurus retombe sur un parse complet (plus lent).
+- **PHP** avec **mbstring** (gd déjà requis par CA). *(pas de sqlite requis)*
+- **Un cache CA fonctionnel** — le défaut `file` (cache disque) **suffit**. Le widget arborescent est
+  100 % client (JSON statique + IndexedDB) et ne dépend d'aucun cache serveur. Le seul usage serveur
+  est l'**autocomplétion native** du champ, qui met en cache un index compact via `ExternalCache`
+  (backend configuré de CA). **redis n'est donc PAS requis** ; il n'est qu'un *plus* (cache plus rapide)
+  recommandé uniquement en forte concurrence sur un très gros thésaurus (ex. th285). Sans redis, le
+  cache fichier fait le travail.
 - **Apache mod_deflate** avec compression de `application/json` (1er téléchargement des stores :
   th285 passe de ~17 Mo à ~0,9 Mo). Exemple de drop-in :
   ```apache
