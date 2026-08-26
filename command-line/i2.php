@@ -25,6 +25,11 @@
  *
  * ----------------------------------------------------------------------
  */
+if (PHP_SAPI !== 'cli') {
+    http_response_code(403);
+    exit(1);
+}
+
 	require_once("../setup.php");
 	$_SERVER['HTTP_HOST'] = 'localhost';
 	

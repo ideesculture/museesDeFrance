@@ -25,6 +25,11 @@
  */
 
 
+if (PHP_SAPI !== 'cli') {
+    http_response_code(403);
+    exit(1);
+}
+
 error_reporting(E_ERROR | E_PARSE | E_NOTICE);
 	
 require_once("../../setup.php");
