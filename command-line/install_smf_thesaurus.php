@@ -22,7 +22,10 @@
  * @package museesDeFrance
  */
 
-if (PHP_SAPI !== 'cli') { fwrite(STDERR, "CLI only.\n"); exit(1); }
+if (PHP_SAPI !== 'cli') {
+    http_response_code(403);
+    exit(1);
+}
 
 $opts     = getopt('', ['base-dir:', 'apply']);
 $apply    = isset($opts['apply']);

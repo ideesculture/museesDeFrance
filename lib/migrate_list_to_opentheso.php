@@ -48,7 +48,7 @@
  */
 
 if (PHP_SAPI !== 'cli') {
-    fwrite(STDERR, "This script is CLI-only.\n");
+    http_response_code(403);
     exit(1);
 }
 
