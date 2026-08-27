@@ -36136,6 +36136,10 @@
               <typename>publisher</typename>
               <typename_reverse>publisher</typename_reverse>
             </label>
+            <label locale="fr_FR">
+              <typename>Editeur</typename>
+              <typename_reverse>Editeur</typename_reverse>
+            </label>
           </labels>
         </type>
         <type code="contributor" default="0">
@@ -36173,8 +36177,8 @@
               <typename_reverse>was creator of</typename_reverse>
             </label>
             <label locale="fr_FR">
-              <typename>créateur</typename>
-              <typename_reverse>créateur</typename_reverse>
+              <typename>Créateur</typename>
+              <typename_reverse>Créateur</typename_reverse>
             </label>
           </labels>
         </type>
