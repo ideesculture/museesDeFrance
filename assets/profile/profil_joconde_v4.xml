@@ -13039,7 +13039,7 @@
     <metadataElement code="epoque" datatype="Container">
       <labels>
         <label locale="fr_FR">
-          <name>Epoque, styles</name>
+          <name>Epoque et style</name>
         </label>
       </labels>
       <settings>
@@ -36124,6 +36124,10 @@
               <typename>creator</typename>
               <typename_reverse>creator</typename_reverse>
             </label>
+            <label locale="fr_FR">
+              <typename>Créateur</typename>
+              <typename_reverse>Créateur</typename_reverse>
+            </label>
           </labels>
         </type>
         <type code="publisher" default="0">
@@ -39023,8 +39027,10 @@
         <placement code="ca_entities">
           <bundle>ca_entities</bundle>
           <settings>
-            <setting name="label" locale="en_US">Donateur, testateur, vendeur</setting>
-            <setting name="label" locale="fr_FR">Donateur, testateur, vendeur</setting>
+            <setting name="label" locale="en_US">Auteurs et personnes liées</setting>
+            <setting name="label" locale="fr_FR">Auteurs et personnes liées</setting>
+            <setting name="format"><![CDATA[<unit relativeTo="ca_objects_x_entities" delimiter=" ; ">^ca_entities.preferred_labels (^relationship_typename)</unit>]]></setting>
+            <setting name="delimiter"><![CDATA[ ; ]]></setting>
             <setting name="hierarchy_order"><![CDATA[ASC]]></setting>
             <setting name="hierarchical_delimiter"><![CDATA[ ➔ ]]></setting>
             <setting name="show_hierarchy"><![CDATA[0]]></setting>
@@ -39078,8 +39084,8 @@
         <placement code="ca_objects_nonpreferred_labels">
           <bundle>ca_objects.nonpreferred_labels</bundle>
           <settings>
-            <setting name="label" locale="en_US">Appellation, dénomination</setting>
-            <setting name="label" locale="fr_FR">Appellation, dénomination</setting>
+            <setting name="label" locale="en_US">Appellation et dénomination</setting>
+            <setting name="label" locale="fr_FR">Appellation et dénomination</setting>
             <setting name="maximum_length"><![CDATA[100]]></setting>
           </settings>
         </placement>
@@ -39113,24 +39119,6 @@
           <settings>
             <setting name="label" locale="fr_FR">Etat au moment de l'acquisition</setting>
             <setting name="maximum_length"><![CDATA[2048]]></setting>
-          </settings>
-        </placement>
-        <placement code="ca_entities">
-          <bundle>ca_entities</bundle>
-          <settings>
-            <setting name="label" locale="en_US">Auteur</setting>
-            <setting name="label" locale="fr_FR">Auteur</setting>
-            <setting name="restrict_to_relationship_types"><![CDATA[creator]]></setting>
-            <setting name="restrict_to_relationship_types"><![CDATA[creation_createur]]></setting>
-            <setting name="restrict_to_relationship_types"><![CDATA[creation_auteur]]></setting>
-            <setting name="restrict_to_relationship_types"><![CDATA[notice_redacteur]]></setting>
-            <setting name="restrict_to_relationship_types"><![CDATA[origine_decouvreur]]></setting>
-            <setting name="restrict_to_relationship_types"><![CDATA[executant]]></setting>
-            <setting name="hierarchy_order"><![CDATA[ASC]]></setting>
-            <setting name="hierarchical_delimiter"><![CDATA[ ➔ ]]></setting>
-            <setting name="show_hierarchy"><![CDATA[0]]></setting>
-            <setting name="remove_first_items"><![CDATA[0]]></setting>
-            <setting name="hierarchy_limit"><![CDATA[0]]></setting>
           </settings>
         </placement>
         <placement code="ca_objects_useDate">
@@ -39168,19 +39156,10 @@
         <placement code="ca_places">
           <bundle>ca_places</bundle>
           <settings>
-            <setting name="label" locale="en_US">Lieux de création / exécution</setting>
-            <setting name="label" locale="fr_FR">Lieux de création / exécution</setting>
-            <setting name="hierarchy_order"><![CDATA[ASC]]></setting>
-            <setting name="hierarchical_delimiter"><![CDATA[ ➔ ]]></setting>
-            <setting name="show_hierarchy"><![CDATA[0]]></setting>
-            <setting name="remove_first_items"><![CDATA[0]]></setting>
-            <setting name="hierarchy_limit"><![CDATA[0]]></setting>
-          </settings>
-        </placement>
-        <placement code="ca_places">
-          <bundle>ca_places</bundle>
-          <settings>
-            <setting name="label" locale="fr_FR">Lieux d'utilisation / destination</setting>
+            <setting name="label" locale="en_US">Lieux liés</setting>
+            <setting name="label" locale="fr_FR">Lieux liés</setting>
+            <setting name="format"><![CDATA[<unit relativeTo="ca_objects_x_places" delimiter=", ">^ca_places.preferred_labels (^relationship_typename)</unit>]]></setting>
+            <setting name="delimiter"><![CDATA[, ]]></setting>
             <setting name="hierarchy_order"><![CDATA[ASC]]></setting>
             <setting name="hierarchical_delimiter"><![CDATA[ ➔ ]]></setting>
             <setting name="show_hierarchy"><![CDATA[0]]></setting>
